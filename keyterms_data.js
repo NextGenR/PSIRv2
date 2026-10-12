@@ -1,17 +1,17 @@
 /* ==========================================================================
    TOP 100 HIGH-YIELD POLITICAL SCIENCE SLANGS & INTELLECTUAL HOOKS
    Curated for UPSC CSE PSIR Optional (Paper 1A, 1B, 2A, 2B)
-   Batches 1, 2 & 3 of 5: Slangs 1 to 60 (Power, Statecraft, Political Economy)
+   Batches 1 to 4 of 5: Slangs 1 to 80 (Power, Statecraft, Political Economy, Geopolitics)
    ========================================================================== */
 
 window.KEYTERMS_DATA = {
   "metadata": {
     "title": "Top 100 Political Science Slangs & High-Yield Hooks",
     "subtitle": "Intellectual catchphrases, conceptual metaphors, and answer-cracking hooks",
-    "currentBatch": 3,
+    "currentBatch": 4,
     "totalBatches": 5,
     "batchSize": 20,
-    "totalTerms": 60,
+    "totalTerms": 80,
     "finalTarget": 100
   },
   "batches": [
@@ -31,13 +31,13 @@ window.KEYTERMS_DATA = {
       "batch": 3,
       "title": "Batch 3: Political Economy & Social Stratification (41–60)",
       "range": "41–60",
-      "status": "active"
+      "status": "completed"
     },
     {
       "batch": 4,
       "title": "Batch 4: Global Order, Geopolitics & Strategy (61–80)",
       "range": "61–80",
-      "status": "upcoming"
+      "status": "active"
     },
     {
       "batch": 5,
@@ -1286,6 +1286,430 @@ window.KEYTERMS_DATA = {
         "caste politics",
         "agrarian power"
       ]
+    },
+    {
+      "id": "slang_61",
+      "number": 61,
+      "batch": 4,
+      "term": "Offensive Realism & Tragedy of Great Power Politics",
+      "scholar": "John J. Mearsheimer",
+      "category": "International Relations",
+      "paper": "Paper 2A",
+      "topic": "Theories of IR: Structural Realism & US–China Rivalry",
+      "hook": "In an anarchic international system without a global 911 emergency number to call, great powers are structurally condemned to maximize relative power and pursue regional hegemony.",
+      "definition": "John Mearsheimer's offensive structural realism asserts that sovereign states are never satisfied with mere survival or status-quo power balances (contra defensive realism). Because intentions of other states are inherently uncertain, security is zero-sum. The only rational strategy for a great power is to relentlessly accumulate offensive military superiority, achieve regional hegemony, and aggressively prevent peer competitors from dominating other regions (e.g., US containing China in Asia).",
+      "exam_utility": "Must-have for Paper 2A on Realist Theories, Hegemony, and the Rise of China: 'John Mearsheimer's theory of \"offensive realism\" provides the premier analytical paradigm for explaining Sino-American structural conflict, demonstrating that great power collision stems not from ideological friction but from the tragic imperatives of international anarchy.'",
+      "keywords": [
+        "mearsheimer",
+        "offensive realism",
+        "tragedy of great power politics",
+        "structural realism",
+        "hegemony",
+        "anarchy"
+      ]
+    },
+    {
+      "id": "slang_62",
+      "number": 62,
+      "batch": 4,
+      "term": "Security Dilemma",
+      "scholar": "Robert Jervis / John H. Herz",
+      "category": "International Relations",
+      "paper": "Paper 2A",
+      "topic": "Theories of IR: Defensive Realism, Perceptions & Misperceptions",
+      "hook": "In striving to attain security for itself, a state inadvertently threatens others, producing a tragic spiral where actions taken to feel safe make everyone less secure.",
+      "definition": "Formulated by John Herz and elaborated by Robert Jervis, the 'Security Dilemma' explains how rational defensive measures (arming, forming alliances) by State A are perceived as aggressive offensive threats by State B. State B reacts by arming itself, leading to costly arms races and heightened crisis instability where neither state wanted war. Jervis demonstrated that the severity of the dilemma hinges on two variables: whether offensive and defensive weapons can be distinguished, and whether defense or offense has the tactical advantage.",
+      "exam_utility": "Paper 2A on Theories of IR; Paper 2B on India–Pakistan & India–China Arms Races: 'Robert Jervis's concept of the \"security dilemma\" elucidates why conventional military modernizations in South Asia inevitably trigger reactive escalations, trapping regional rivals in structural cycles of mutual mistrust.'",
+      "keywords": [
+        "security dilemma",
+        "jervis",
+        "herz",
+        "defensive realism",
+        "arms race",
+        "crisis instability"
+      ]
+    },
+    {
+      "id": "slang_63",
+      "number": 63,
+      "batch": 4,
+      "term": "Democratic Peace Theory",
+      "scholar": "Michael W. Doyle / Immanuel Kant",
+      "category": "International Relations",
+      "paper": "Paper 2A",
+      "topic": "Liberalism in IR, Perpetual Peace & Institutionalism",
+      "hook": "Democracies rarely fight other democracies because constitutional checks and shared commercial interdependence transform mutual distrust into institutionalized pacific union.",
+      "definition": "Grounded in Immanuel Kant's 1795 essay 'Perpetual Peace' and revived empirically by Michael Doyle, Democratic Peace Theory posits that constitutional democracies do not go to war against one another. This pacific union rests on three pillars: institutional constraints (leaders are accountable to voters who bear the human costs of war), shared normative culture (domestic norms of peaceful compromise and rule of law are externalized to other democracies), and dense economic interdependence.",
+      "exam_utility": "Paper 2A on Liberal International Theory, Critiques of Realism, and Global Democratization: 'Michael Doyle's empirical revival of Kantian \"Democratic Peace Theory\" challenges realist fatalism, asserting that democratic governance and institutional transparency foster durable zones of interstate peace.'",
+      "keywords": [
+        "democratic peace theory",
+        "doyle",
+        "kant",
+        "liberalism",
+        "perpetual peace",
+        "pacific union"
+      ]
+    },
+    {
+      "id": "slang_64",
+      "number": 64,
+      "batch": 4,
+      "term": "String of Pearls vs. Necklace of Diamonds",
+      "scholar": "C. Raja Mohan / Gurpreet S. Khurana / Booz Allen Hamilton",
+      "category": "International Relations",
+      "paper": "Paper 2B",
+      "topic": "India's Foreign Policy, Indian Ocean Geopolitics & Maritime Security",
+      "hook": "To counter China's maritime 'String of Pearls' encircling the sub-continent, India weaves an assertive 'Necklace of Diamonds' anchoring strategic access from Duqm and Chabahar to Changi and Sabang.",
+      "definition": "China's 'String of Pearls' refers to its strategic commercial-military maritime network encircling India (Gwadar in Pakistan, Hambantota in Sri Lanka, Chittagong in Bangladesh, Kyaukpyu in Myanmar). In response, Indian strategic planners formulated the 'Necklace of Diamonds' strategy: securing counter-access agreements to critical choke points across the Indo-Pacific—including Duqm (Oman), Chabahar (Iran), Assumption Island (Seychelles), Agaléga (Mauritius), Changi Naval Base (Singapore), and Sabang (Indonesia).",
+      "exam_utility": "Unbeatable opener for Paper 2B on India in the Indian Ocean Region, SAGAR Doctrine, and Sino-Indian Maritime Rivalry: 'India counters Beijing's encirclement (\"String of Pearls\") through its proactive \"Necklace of Diamonds\" strategy, converting strategic logistics agreements across littoral choke points into a credible maritime security architecture.'",
+      "keywords": [
+        "string of pearls",
+        "necklace of diamonds",
+        "raja mohan",
+        "indian ocean",
+        "indo-pacific",
+        "maritime security",
+        "gwadar"
+      ]
+    },
+    {
+      "id": "slang_65",
+      "number": 65,
+      "batch": 4,
+      "term": "Heartland Theory",
+      "scholar": "Sir Halford J. Mackinder",
+      "category": "International Relations",
+      "paper": "Paper 2A & 2B",
+      "topic": "Classical Geopolitics, Continental Power & Eurasia",
+      "hook": "Who rules East Europe commands the Heartland; who rules the Heartland commands the World-Island; who rules the World-Island commands the world.",
+      "definition": "Halford Mackinder's 1904 address 'The Geographical Pivot of History' laid the foundation of classical continental geopolitics. Mackinder argued that the era of dominant maritime sea power was ending due to transcontinental railways. The vast, resource-rich interior of Eurasia (the 'Heartland'), invulnerable to naval sea power, represented the pivotal citadel of global power. If a single continental empire (or Russo-German/Russo-Chinese alliance) unified this pivot, it could outbuild maritime powers and conquer the world.",
+      "exam_utility": "Paper 2A on Geopolitical Theories; Paper 2B on INSTC, Central Asia, and the Russia–China Eurasian Axis: 'Halford Mackinder's classic \"Heartland Theory\" experiences a 21st-century resurgence as the Russia–China \"no limits\" partnership and BRI infrastructure networks consolidate continental hegemony across the Eurasian landmass.'",
+      "keywords": [
+        "mackinder",
+        "heartland theory",
+        "geopolitics",
+        "eurasia",
+        "world island",
+        "continental power"
+      ]
+    },
+    {
+      "id": "slang_66",
+      "number": 66,
+      "batch": 4,
+      "term": "Rimland Theory",
+      "scholar": "Nicholas J. Spykman",
+      "category": "International Relations",
+      "paper": "Paper 2A & 2B",
+      "topic": "Geopolitics, Maritime Containment & The Indo-Pacific",
+      "hook": "Who controls the Rimland rules Eurasia; who rules Eurasia controls the destinies of the world—shifting geopolitical primacy from the frozen steppe to maritime coastal buffers.",
+      "definition": "Nicholas Spykman formulated the 'Rimland Theory' as a direct critique and modification of Mackinder. Spykman argued that the Heartland's extreme climate, permafrost, and low population limit its power. The true decisive arena of global geopolitics is the 'Rimland'—the dense maritime coastal strip of Europe, the Middle East, South Asia, and East Asia buffering Eurasia. Because the Rimland combines massive industrial populations, ports, and access to both land and sea routes, controlling it is the key to global dominance (the basis of US Cold War containment and modern Indo-Pacific strategy).",
+      "exam_utility": "Paper 2A on Classical Geopolitical Theories; Paper 2B on the Strategic Importance of the Indo-Pacific & Quad: 'Nicholas Spykman's \"Rimland Theory\" underpins the contemporary Indo-Pacific construct, establishing that global equilibrium depends on preventing any single revisionist hegemon from dominating the maritime littoral rim of Eurasia.'",
+      "keywords": [
+        "spykman",
+        "rimland theory",
+        "geopolitics",
+        "indo-pacific",
+        "containment",
+        "maritime power"
+      ]
+    },
+    {
+      "id": "slang_67",
+      "number": 67,
+      "batch": 4,
+      "term": "Nuclear Taboo & Deterrence Ethics",
+      "scholar": "Nina Tannenwald / Thomas C. Schelling",
+      "category": "International Relations",
+      "paper": "Paper 2A",
+      "topic": "Nuclear Weapons, Arms Control, Deterrence & Ethics in IR",
+      "hook": "What prevents nuclear warfare is not merely fear of mutually assured destruction, but the emergence of a de-facto normative 'nuclear taboo' delegitimizing atomic arms as uncivilized.",
+      "definition": "Constructivist scholar Nina Tannenwald demonstrates that material realist calculations of Mutually Assured Destruction (MAD) are insufficient to explain why nuclear weapons have not been used since 1945, even in asymmetric conflicts where nuclear states suffered humiliating conventional defeats (US in Vietnam, USSR in Afghanistan). The non-use of nuclear weapons is anchored in a deeply internalized moral and reputational prohibition—the 'Nuclear Taboo'—which classifies atomic weapons as uniquely catastrophic, stigmatized, and taboo.",
+      "exam_utility": "Paper 2A on Nuclear Proliferation, Deterrence Theory, and Constructivism in IR: 'Nina Tannenwald's formulation of the \"nuclear taboo\" highlights the primacy of normative constructivism in global security, demonstrating that unwritten moral opprobrium restrains nuclear deployment far more effectively than formal legal treaties.'",
+      "keywords": [
+        "nuclear taboo",
+        "tannenwald",
+        "schelling",
+        "nuclear deterrence",
+        "constructivism",
+        "arms control"
+      ]
+    },
+    {
+      "id": "slang_68",
+      "number": 68,
+      "batch": 4,
+      "term": "Stability-Instability Paradox",
+      "scholar": "Glenn H. Snyder / Sumit Ganguly & P.R. Chari",
+      "category": "International Relations",
+      "paper": "Paper 2A & 2B",
+      "topic": "Nuclear Weapons in South Asia, Kargil & Sub-Conventional War",
+      "hook": "Strategic nuclear parity prevents all-out conventional war at the high end, but perversely emboldens revisionist states to sponsor proxy terrorism and low-intensity border skirmishes.",
+      "definition": "Glenn Snyder theorized that when two adversarial states achieve invulnerable second-strike nuclear deterrence, strategic stability at the highest level (neither state dares launch a full-scale nuclear assault) breeds instability at lower levels. Because both sides know the other will not escalate to nuclear annihilation over minor provocations, revisionist states feel emboldened to engage in sub-conventional proxy warfare, cross-border terrorism, and limited border skirmishes (e.g., Pakistan's Kargil incursions and cross-border terrorism against India).",
+      "exam_utility": "Gold standard for Paper 2B on India's Nuclear Doctrine, Cold Start Doctrine, and Surgical Strikes: 'Sumit Ganguly and P.R. Chari demonstrate how South Asia perfectly validates Glenn Snyder's \"stability-instability paradox\", wherein strategic nuclear deterrence shields Rawalpindi's sub-conventional proxy provocations against New Delhi.'",
+      "keywords": [
+        "stability-instability paradox",
+        "snyder",
+        "ganguly",
+        "nuclear deterrence",
+        "kargil",
+        "cross-border terrorism"
+      ]
+    },
+    {
+      "id": "slang_69",
+      "number": 69,
+      "batch": 4,
+      "term": "Strategic Hedging & The Middle Power Play",
+      "scholar": "Evelyn Goh / Rory Medcalf",
+      "category": "International Relations",
+      "paper": "Paper 2A & 2B",
+      "topic": "Indo-Pacific Geopolitics, ASEAN Centrality & Middle Powers",
+      "hook": "Rather than choosing between rigid balancing or subservient bandwagoning, middle powers practice 'strategic hedging'—simultaneously cultivating economic ties with Beijing while deepening defense interoperability with Washington.",
+      "definition": "Evelyn Goh conceptualizes 'Strategic Hedging' to explain the sophisticated geopolitical maneuvers of secondary and middle powers (e.g., ASEAN nations, South Korea, India, Australia). Rejecting neorealist structural binaries that force states into either military balancing or diplomatic bandwagoning, hedging adopts a multi-pronged portfolio: economic engagement with China to fuel domestic growth, coupled with indirect defense balancing and plurilateral naval alignments with the US to deter Chinese coercion.",
+      "exam_utility": "Paper 2A on Middle Powers in Global Politics; Paper 2B on India's Look East / Act East Policy and ASEAN: 'Evelyn Goh's theory of \"strategic hedging\" provides the definitive blueprint for decoding Indo-Pacific middle power diplomacy, proving that regional states refuse binary Cold War alliance traps in favor of multi-aligned strategic insurance.'",
+      "keywords": [
+        "strategic hedging",
+        "evelyn goh",
+        "middle powers",
+        "indo-pacific",
+        "asean",
+        "balancing vs bandwagoning"
+      ]
+    },
+    {
+      "id": "slang_70",
+      "number": 70,
+      "batch": 4,
+      "term": "Hegemonic Stability Theory & Free Riding",
+      "scholar": "Charles P. Kindleberger / Robert Gilpin",
+      "category": "International Relations",
+      "paper": "Paper 2A",
+      "topic": "International Political Economy, Public Goods & Hegemony",
+      "hook": "An open, stable world economy requires a single hegemonic stabilizer willing to bear the disproportionate costs of providing global public goods while preventing opportunistic free riding.",
+      "definition": "Economic historian Charles Kindleberger famously concluded that the Great Depression was caused not by too much capitalism, but by the absence of a global hegemon: Britain was unable to stabilize the international financial system, and the rising United States was unwilling. Hegemonic Stability Theory posits that open global markets are public goods (requiring free trade regimes, stable currencies, open sea lanes, and crisis lender-of-last-resort facilities) that only a commanding hegemon can establish and enforce against free riders.",
+      "exam_utility": "Paper 2A on Hegemonic Stability Theory, Bretton Woods Institutions, and US Hegemony: 'Charles Kindleberger's \"Hegemonic Stability Theory\" demonstrates that global economic openness is not self-sustaining, but depends on a dominant superpower underwriting international public goods against predatory free riding.'",
+      "keywords": [
+        "hegemonic stability theory",
+        "kindleberger",
+        "gilpin",
+        "public goods",
+        "free riding",
+        "political economy"
+      ]
+    },
+    {
+      "id": "slang_71",
+      "number": 71,
+      "batch": 4,
+      "term": "Kindleberger Trap",
+      "scholar": "Joseph S. Nye Jr.",
+      "category": "International Relations",
+      "paper": "Paper 2A",
+      "topic": "Global Governance, Rise of China & Hegemonic Transitions",
+      "hook": "While the Thucydides Trap fears an aggressive rising China, the 'Kindleberger Trap' fears a rising power that is too weak or unwilling to underwrite global public goods, creating a chaotic governance vacuum.",
+      "definition": "Joseph Nye introduced the 'Kindleberger Trap' as a crucial counterpoint to Graham Allison's 'Thucydides Trap'. Nye argues that the primary threat to 21st-century international stability might not be an overly ambitious revisionist China starting a war of displacement, but an inward-looking, free-riding China that refuses to shoulder the burdens of global order (climate mitigation, crisis financing, maritime freedom) while the weary US withdraws, leaving the world order leaderless and vulnerable to systemic breakdown.",
+      "exam_utility": "Paper 2A on Theories of Hegemony, Future of Global Governance, and US–China Transition: 'Joseph Nye's warning of the \"Kindleberger Trap\" shifts analytical focus from kinetic great power war to structural governance failure, warning that an anarchic vacuum of public goods represents the premier hazard of hegemonic transition.'",
+      "keywords": [
+        "kindleberger trap",
+        "joseph nye",
+        "thucydides trap",
+        "global public goods",
+        "us-china",
+        "hegemony"
+      ]
+    },
+    {
+      "id": "slang_72",
+      "number": 72,
+      "batch": 4,
+      "term": "Transactional Diplomacy & Post-Ideological Realpolitik",
+      "scholar": "S. Jaishankar / Henry Kissinger",
+      "category": "International Relations",
+      "paper": "Paper 2A & 2B",
+      "topic": "India's Foreign Policy, Multi-Alignment & The New World Order",
+      "hook": "Departing from post-Cold War liberal moralizing, 21st-century statecraft embraces transactional realpolitik—forming flexible plurilateral coalitions of interest rather than rigid alliances of values.",
+      "definition": "External Affairs Minister S. Jaishankar in 'The India Way' articulates modern Indian statecraft as unapologetic realpolitik. In a fractured world order where multilateralism is dysfunctional, states engage in 'transactional diplomacy': cultivating multiple partnerships on an issue-by-issue basis without ideological dogma. India collaborates with the Quad on maritime security, purchases Russian crude oil for domestic energy security, and leads the Global South on multilateral debt reform simultaneously.",
+      "exam_utility": "Paper 2B on India's Foreign Policy Principles, Multi-Alignment, and Non-Alignment 2.0: 'S. Jaishankar articulates India's transition to \"transactional multi-alignment\", demonstrating that in an era of geopolitical turbulence, national interest is maximized through issue-based plurilateral coalitions rather than sentimental ideological allegiances.'",
+      "keywords": [
+        "transactional diplomacy",
+        "jaishankar",
+        "multi-alignment",
+        "india way",
+        "realpolitik",
+        "foreign policy"
+      ]
+    },
+    {
+      "id": "slang_73",
+      "number": 73,
+      "batch": 4,
+      "term": "Security Community",
+      "scholar": "Karl W. Deutsch / Emanuel Adler & Michael Barnett",
+      "category": "International Relations",
+      "paper": "Paper 2A",
+      "topic": "Constructivism, Regional Integration & Democratic Alliances",
+      "hook": "A security community emerges when integrated sovereign states develop a dependable expectation of peaceful change, rendering war between them not merely improbable, but socially unthinkable.",
+      "definition": "Karl Deutsch introduced the 'Security Community' to describe groups of sovereign states that have achieved genuine integration without necessarily forming a single government. Within a security community (e.g., European Union, US-Canada border, Nordic countries), common values, shared institutions, mutual responsiveness, and dense social transactions foster a collective identity where disputes are settled exclusively through peaceful compromise, and military defense against members is completely abolished.",
+      "exam_utility": "Paper 2A on Theories of Regional Integration, Constructivism, and the European Union: 'Karl Deutsch's paradigm of the \"security community\" demonstrates that sovereign states can transcend the realist security dilemma through normative social integration, rendering armed conflict between members culturally unthinkable.'",
+      "keywords": [
+        "security community",
+        "deutsch",
+        "adler",
+        "barnett",
+        "constructivism",
+        "regional integration",
+        "peace"
+      ]
+    },
+    {
+      "id": "slang_74",
+      "number": 74,
+      "batch": 4,
+      "term": "Complex Interdependence",
+      "scholar": "Robert O. Keohane & Joseph S. Nye Jr.",
+      "category": "International Relations",
+      "paper": "Paper 2A",
+      "topic": "Neoliberal Institutionalism & Transnational Relations",
+      "hook": "In a world characterized by multiple channels of contact, the absence of hierarchy among issues, and the declining utility of military force, complex interdependence transforms traditional realist statecraft.",
+      "definition": "In 'Power and Interdependence' (1977), Keohane and Nye mounted the definitive neoliberal challenge to classical realism. They formulated 'Complex Interdependence' as an ideal type featuring three distinct conditions: multiple transnational channels of contact (interstate, transgovernmental, and transnational corporations); an absence of hierarchy among issues (military security does not consistently dominate economic, environmental, or energy concerns); and the minor or counterproductive utility of military force in resolving disputes between interdependent partners.",
+      "exam_utility": "Foundation of Paper 2A on Neoliberal Institutionalism, Transnational Actors, and Critiques of Realism: 'Keohane and Nye's theory of \"complex interdependence\" systematically dismantles realist state-centric assumptions, proving that transnational flows and issue-specific regimes constrain unilateral military statecraft in an interdependent global economy.'",
+      "keywords": [
+        "complex interdependence",
+        "keohane",
+        "nye",
+        "neoliberal institutionalism",
+        "transnational",
+        "power"
+      ]
+    },
+    {
+      "id": "slang_75",
+      "number": 75,
+      "batch": 4,
+      "term": "Anarchy is What States Make of It",
+      "scholar": "Alexander Wendt",
+      "category": "International Relations",
+      "paper": "Paper 2A",
+      "topic": "Social Constructivism in IR, Intersubjectivity & Norms",
+      "hook": "International anarchy does not inherently dictate ruthless Hobbesian self-help; identity, shared social interactions, and discursive norms determine whether anarchy breeds enmity, rivalry, or friendship.",
+      "definition": "Alexander Wendt's 1992 foundational article 'Anarchy is what States Make of it: The Social Construction of Power Politics' launched social constructivism into the core of IR theory. Wendt refuted Kenneth Waltz's structural realist assertion that anarchy automatically mandates aggressive power-seeking. Anarchy is an empty vessel: states construct intersubjective cultures of anarchy through historical social interactions—producing either a Hobbesian culture (enemies seeking mutual destruction), a Lockean culture (rivals respecting sovereignty), or a Kantian culture (friends committed to mutual security).",
+      "exam_utility": "Absolute gold standard for Paper 2A on Constructivism in International Relations: 'Alexander Wendt's iconic dictum that \"anarchy is what states make of it\" dismantles neorealist structural determinism, demonstrating that international reality is an ongoing intersubjective social construction shaped by collective identities and norms.'",
+      "keywords": [
+        "alexander wendt",
+        "anarchy is what states make of it",
+        "constructivism",
+        "intersubjectivity",
+        "norms",
+        "social construction"
+      ]
+    },
+    {
+      "id": "slang_76",
+      "number": 76,
+      "batch": 4,
+      "term": "Indo-Pacific Re-balancing / The Pivot",
+      "scholar": "Kurt M. Campbell / Hillary Clinton",
+      "category": "International Relations",
+      "paper": "Paper 2A & 2B",
+      "topic": "Geostrategy, US Foreign Policy & Regional Order",
+      "hook": "The geopolitical center of gravity has decisively shifted from the transatlantic theater to the Indo-Pacific—the maritime nexus where the 21st century's balance of power will be contested.",
+      "definition": "The 'Pivot to Asia' (later expanded to the Free and Open Indo-Pacific construct) represents the historic re-balancing of global grand strategy away from Middle Eastern ground interventions and European theaters toward the maritime expanse linking the Indian and Pacific Oceans. Recognized by major powers (US, India, Japan, Australia), the Indo-Pacific frame integrates the maritime security of the Malacca Strait, South China Sea, and Indian Ocean, treating India as an indispensable net security provider.",
+      "exam_utility": "Paper 2A & 2B on Indo-Pacific Strategy, Quad, SAGAR, and Great Power Dynamics: 'The institutionalization of the \"Indo-Pacific\" paradigm formally recognizes the merger of South Asian and East Asian security theaters, positioning India at the central hinge of 21st-century global maritime balancing.'",
+      "keywords": [
+        "indo-pacific",
+        "pivot to asia",
+        "campbell",
+        "maritime security",
+        "quad",
+        "net security provider"
+      ]
+    },
+    {
+      "id": "slang_77",
+      "number": 77,
+      "batch": 4,
+      "term": "Debt-Trap Diplomacy",
+      "scholar": "Brahma Chellaney",
+      "category": "International Relations",
+      "paper": "Paper 2A & 2B",
+      "topic": "China's Belt and Road Initiative (BRI) & South Asian Security",
+      "hook": "By extending predatory, opaque infrastructure loans for financially unviable projects, Beijing ensnares vulnerable developing nations into debt traps, subsequently seizing sovereign strategic assets like Sri Lanka's Hambantota port.",
+      "definition": "Strategic analyst Brahma Chellaney coined 'Debt-Trap Diplomacy' to critique China's Belt and Road Initiative (BRI). Chellaney argues that China purposefully finances unviable, overpriced infrastructure projects (ports, airports, highways) in strategically located developing nations (Sri Lanka, Pakistan, Djibouti, Maldives). When borrowing states face balance-of-payments crises and default, Beijing leverages debt renegotiations to demand equity-for-debt swaps, securing long-term sovereign leases on dual-use commercial-military ports.",
+      "exam_utility": "Paper 2B on China in South Asia, Belt and Road Initiative, and India's Neighborhood First Policy: 'Brahma Chellaney's critique of China's \"debt-trap diplomacy\" underscores the strategic vulnerabilities created by non-transparent developmental financing in South Asia, prompting India to champion transparent, sustainable infrastructure partnerships.'",
+      "keywords": [
+        "debt-trap diplomacy",
+        "chellaney",
+        "belt and road initiative",
+        "hambantota",
+        "china in south asia",
+        "bri"
+      ]
+    },
+    {
+      "id": "slang_78",
+      "number": 78,
+      "batch": 4,
+      "term": "Minilateralism & Coalitions of the Willing",
+      "scholar": "Moisés Naím / C. Raja Mohan",
+      "category": "International Relations",
+      "paper": "Paper 2A & 2B",
+      "topic": "Multilateralism Crisis, The Quad, AUKUS & I2U2",
+      "hook": "As gridlocked universal multilateralism paralyzes global consensus, nimble minilateral coalitions of the willing (the Quad, AUKUS, I2U2) replace cumbersome treaties with targeted functional delivery.",
+      "definition": "Moisés Naím conceptualized 'Minilateralism' as the smartest alternative to paralyzed universal multilateralism (the UN, WTO). Instead of seeking universal consensus among 193 nations with conflicting vetos, minilateralism convenes the smallest number of critical countries needed to have the largest impact on a specific problem (e.g., the Quad for maritime domain awareness and vaccine delivery; AUKUS for advanced nuclear propulsion; I2U2 for food and energy security).",
+      "exam_utility": "Paper 2A on Crisis of Multilateralism and UN Reforms; Paper 2B on India's Minilateral Coalitions (Quad, I2U2, BRICS): 'C. Raja Mohan and Moisés Naím identify \"minilateralism\" as the defining institutional architecture of contemporary global governance, where targeted coalitions of the willing bypass paralyzed multilateral consensus to deliver concrete public goods.'",
+      "keywords": [
+        "minilateralism",
+        "naim",
+        "raja mohan",
+        "quad",
+        "aukus",
+        "multilateralism",
+        "coalitions of the willing"
+      ]
+    },
+    {
+      "id": "slang_79",
+      "number": 79,
+      "batch": 4,
+      "term": "Geoeconomics & Economic Statecraft",
+      "scholar": "Edward N. Luttwak / David A. Baldwin",
+      "category": "International Relations",
+      "paper": "Paper 2A",
+      "topic": "International Political Economy, Sanctions & Strategic Competition",
+      "hook": "War by economic means: the logic of geopolitical conflict persists, but the grammar of combat shifts from artillery and territory to investment screening, export controls, and currency weaponization.",
+      "definition": "Strategist Edward Luttwak announced the arrival of 'Geoeconomics' at the close of the Cold War. Luttwak argued that while territorial conquest has become prohibitively costly, interstate rivalry has not disappeared; it has simply adopted economic weapons. Geoeconomics uses economic instruments (investment bans, targeted tariffs, semiconductor chip embargoes, sovereign wealth fund maneuvers, critical mineral supply-chain controls) to achieve traditional geopolitical objectives and diminish the sovereign capabilities of rivals.",
+      "exam_utility": "Paper 2A on International Political Economy, Sanctions, and US–China Economic Decoupling; Paper 2B on Atmanirbhar Bharat: 'Edward Luttwak's theory of \"geoeconomics\" accurately captures the contemporary weaponization of global trade, proving that supply-chain resilience and export restrictions have superseded conventional territorial rivalry as the primary arena of great power competition.'",
+      "keywords": [
+        "geoeconomics",
+        "luttwak",
+        "economic statecraft",
+        "export controls",
+        "sanctions",
+        "trade war"
+      ]
+    },
+    {
+      "id": "slang_80",
+      "number": 80,
+      "batch": 4,
+      "term": "Indian Strategic Culture: Moralism vs. Realpolitik",
+      "scholar": "George K. Tanham / Kanti Bajpai / Shivshankar Menon",
+      "category": "Indian Politics",
+      "paper": "Paper 2B",
+      "topic": "Determinants of India's Foreign Policy & Strategic Thinking",
+      "hook": "India's strategic culture is a dynamic polyphony—oscillating between Nehruvian moral exceptionalism, Gandhian Ahimsa, and an ancient, ruthless Kautilyan realpolitik of Mandala statecraft.",
+      "definition": "In 1992, RAND analyst George Tanham controversially claimed that India lacked a formal strategic culture due to fatalistic Hindu philosophy and insular defense planning. Indian scholars (Kanti Bajpai, Shivshankar Menon, Bharat Karnad) decisively refuted Tanham, demonstrating that India possesses rich, competing strategic traditions: Moralism/Nehruvian Internationalism (faith in disarmament and international law), Gandhian Ahimsa, and Kautilyan Realpolitik (Arthashastra's mandala theory of regional balancing, intelligence, and ruthless state preservation).",
+      "exam_utility": "Cornerstone opening for Paper 2B on Determinants of India's Foreign Policy and Grand Strategy: 'Rebutting George Tanham's thesis of strategic absence, scholars Kanti Bajpai and Shivshankar Menon establish that India's strategic culture is a sophisticated synthesis of Nehruvian moral internationalism and Kautilyan Arthashastra realpolitik.'",
+      "keywords": [
+        "strategic culture",
+        "tanham",
+        "bajpai",
+        "kautilya",
+        "menon",
+        "foreign policy",
+        "mandala theory"
+      ]
     }
   ],
   "checkpoints": [
@@ -1372,6 +1796,34 @@ window.KEYTERMS_DATA = {
       ],
       "correctIndex": 1,
       "explanation": "M.N. Srinivas formulated the concept of 'Dominant Caste' to explain how castes with numerical preponderance, substantial landholding, and political muscle exercise local and regional hegemony in Indian democracy."
+    },
+    {
+      "id": "cp_slang_7",
+      "afterIndex": 70,
+      "batch": 4,
+      "question": "In nuclear strategy and deterrence theory, which concept formulated by Glenn Snyder explains why robust nuclear deterrence between two adversaries prevents full-scale war, but simultaneously emboldens revisionist states to initiate low-intensity proxy conflict and border skirmishes?",
+      "options": [
+        "Nuclear Taboo",
+        "Mutually Assured Destruction (MAD)",
+        "Stability-Instability Paradox",
+        "Security Dilemma"
+      ],
+      "correctIndex": 2,
+      "explanation": "Glenn Snyder theorized the 'Stability-Instability Paradox', demonstrating that while strategic nuclear parity creates stability at the highest level of conflict, it removes the fear of full-scale escalation, perversely encouraging sub-conventional proxy warfare and low-intensity conflict."
+    },
+    {
+      "id": "cp_slang_8",
+      "afterIndex": 80,
+      "batch": 4,
+      "question": "Which iconic statement by Alexander Wendt revolutionized International Relations theory by establishing the Social Constructivist challenge to structural neorealism?",
+      "options": [
+        "'Who rules the Heartland commands the World-Island'",
+        "'Anarchy is what states make of it'",
+        "'Who says organization, says oligarchy'",
+        "'Democracies do not fight other democracies'"
+      ],
+      "correctIndex": 1,
+      "explanation": "Alexander Wendt's landmark 1992 declaration 'Anarchy is what states make of it' established that international anarchy has no inherent logic of violent self-help, but is an ongoing intersubjective social construction shaped by collective identities and norms."
     }
   ]
 };

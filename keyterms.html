@@ -1493,13 +1493,13 @@
       </div>
       <div class="brand-title-wrap">
         <h1 class="brand-title">POLITICAL SLANGS & HOOKS</h1>
-        <div class="brand-sub">100 High-Yield PSIR Catchphrases • Batches 1, 2 & 3 Active (1–60)</div>
+        <div class="brand-sub">100 High-Yield PSIR Catchphrases • Batches 1 to 4 Active (1–80)</div>
       </div>
     </div>
 
     <!-- Filters on Top Bar -->
     <div class="topbar-filters">
-      <button class="top-filter-btn active" data-filter="all">All Slangs (<span id="ktCountAll">60</span>)</button>
+      <button class="top-filter-btn active" data-filter="all">All Slangs (<span id="ktCountAll">80</span>)</button>
       <button class="top-filter-btn" data-filter="right">Mastered ✓ (<span id="ktCountRight">0</span>)</button>
       <button class="top-filter-btn" data-filter="wrong">Revise ✕ (<span id="ktCountWrong">0</span>)</button>
       <button class="top-filter-btn" data-filter="circle">In Review ○ (<span id="ktCountCircle">0</span>)</button>
@@ -1581,9 +1581,9 @@
         <div class="sidebar-batch-card active-batch" id="batchBtn_all" onclick="filterByBatch('all')">
           <div style="display: flex; justify-content: space-between; align-items: center;">
             <strong>📚 All Batches (Active)</strong>
-            <span class="batch-status-tag active" style="background: rgba(2, 132, 199, 0.12); color: var(--brand-primary);">60 Slangs</span>
+            <span class="batch-status-tag active" style="background: rgba(2, 132, 199, 0.12); color: var(--brand-primary);">80 Slangs</span>
           </div>
-          <span style="font-size: 11px; color: var(--text-muted);">Batches 1, 2 & 3 • 6 Checkpoint MCQs</span>
+          <span style="font-size: 11px; color: var(--text-muted);">Batches 1 to 4 • 8 Checkpoint MCQs</span>
         </div>
 
         <div class="sidebar-batch-card" id="batchBtn_1" onclick="filterByBatch(1)">
@@ -1610,12 +1610,12 @@
           <span style="font-size: 11px; color: var(--text-muted);">20 Slangs • 2 Checkpoints</span>
         </div>
 
-        <div class="sidebar-batch-card" style="opacity: 0.65; cursor: default;">
+        <div class="sidebar-batch-card" id="batchBtn_4" onclick="filterByBatch(4)">
           <div style="display: flex; justify-content: space-between; align-items: center;">
-            <strong>Batch 4: Global Order & Strategy</strong>
-            <span class="batch-status-tag upcoming">Upcoming</span>
+            <strong style="color: var(--accent-heading);">Batch 4: Global Order, Strategy & Nuclear</strong>
+            <span class="batch-status-tag active">Slangs 61–80</span>
           </div>
-          <span style="font-size: 11px; color: var(--text-muted);">Slangs 61–80 (Awaiting user go-ahead)</span>
+          <span style="font-size: 11px; color: var(--text-muted);">20 Slangs • 2 Checkpoints</span>
         </div>
 
         <div class="sidebar-batch-card" style="opacity: 0.65; cursor: default;">
@@ -1623,7 +1623,7 @@
             <strong>Batch 5: Radical Critique & Theory</strong>
             <span class="batch-status-tag upcoming">Upcoming</span>
           </div>
-          <span style="font-size: 11px; color: var(--text-muted);">Slangs 81–100</span>
+          <span style="font-size: 11px; color: var(--text-muted);">Slangs 81–100 (Awaiting user go-ahead)</span>
         </div>
 
         <div style="display:flex; justify-content:space-between; align-items:center; margin-top: 10px;">
@@ -1648,7 +1648,7 @@
           
           <div class="deck-counter-badge" id="deckCounterBadge" title="Current Key Term Position">
             <span class="deck-icon">🎴</span>
-            <span class="deck-text">Slang <strong id="deckCurIdx">1</strong> of <span id="deckTotalCount" class="total-digits">60</span></span>
+            <span class="deck-text">Slang <strong id="deckCurIdx">1</strong> of <span id="deckTotalCount" class="total-digits">80</span></span>
           </div>
           
           <button class="deck-nav-btn deck-next-btn" id="deckNextBtn" title="Next Key Term Card" aria-label="Next">
@@ -2247,7 +2247,7 @@
         renderSidebarSlangsList();
         renderKeyterms();
         if (window.innerWidth <= 900 && typeof closeSidebar === 'function') closeSidebar();
-        showToast(b === 'all' ? 'All Active Slangs (1–60)' : `Batch ${b} Filtered (20 Slangs)`);
+        showToast(b === 'all' ? 'All Active Slangs (1–80)' : `Batch ${b} Filtered (20 Slangs)`);
       };
 
       window.filterSlangDirectory = function(q) {
