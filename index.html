@@ -62,6 +62,7 @@
 
       --sidebar-width: 320px;
       --transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      --card-font-scale: 1;
     }
 
     /* THEME: Sleek Dark / Night Mode */
@@ -287,37 +288,80 @@
       border-color: var(--accent-heading);
     }
 
-    /* KEY TERMS BUTTON */
-    .keyterms-nav-btn {
+    /* TOPBAR KEY TERMS NAVIGATION BADGE */
+    .topbar-keyterms-nav {
       background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
       color: #ffffff !important;
-      border: none;
-      padding: 6px 13px;
-      box-shadow: 0 2px 8px rgba(2, 132, 199, 0.3);
-    }
-    .keyterms-nav-btn:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.45);
-      border-color: transparent !important;
-    }
-
-    /* MASTER PROGRESS PILL */
-    .header-score-pill {
-      background: var(--green-bg);
-      border: 1px solid var(--green-border);
-      color: var(--green-check);
-      font-size: 11.5px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 5px 11px;
+      border-radius: 8px;
+      font-size: 12px;
       font-weight: 800;
-      padding: 6px 12px;
-      border-radius: 999px;
-      display: flex;
+      display: inline-flex;
       align-items: center;
       gap: 6px;
-      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 2px 7px rgba(2, 132, 199, 0.35);
       transition: var(--transition);
+      white-space: nowrap;
     }
-    .header-score-pill:hover {
-      transform: scale(1.03);
+    .topbar-keyterms-nav:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.5);
+    }
+
+    /* TEXT SIZE ADJUSTER (A- / A+) */
+    .font-size-adjuster {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--paper-border);
+      border-radius: 8px;
+      padding: 2px;
+      gap: 2px;
+    }
+    body.dark-mode .font-size-adjuster {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: #30363d;
+    }
+    .font-size-action-btn {
+      background: transparent !important;
+      border: none !important;
+      padding: 4px 7px !important;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px !important;
+      color: var(--text-main) !important;
+      transition: var(--transition);
+      line-height: 1;
+    }
+    .font-size-action-btn:hover {
+      background: var(--accent-bg) !important;
+      color: var(--accent-heading) !important;
+    }
+    .font-size-icon {
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+      display: inline-flex;
+      align-items: baseline;
+    }
+    .fs-mark {
+      font-size: 11px;
+      font-weight: 900;
+      margin-left: 1px;
+    }
+
+    /* COMPACT ICON-ONLY HEADER BUTTONS */
+    .icon-only-btn {
+      padding: 6px 9px !important;
+      font-size: 14px !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
     }
 
     /* FONT PICKER DROPDOWN */
@@ -612,13 +656,495 @@
        ======================================================== */
     .main-content-area {
       flex: 1;
-      padding: 24px 28px 100px;
-      max-width: 980px;
+      padding: 16px 20px 80px;
+      max-width: 860px;
       margin: 0 auto;
       width: 100%;
+      box-sizing: border-box;
       display: flex;
       flex-direction: column;
-      gap: 32px;
+      gap: 16px;
+    }
+
+    /* ========================================================
+       FULL NOTES HORIZONTAL SLIDER DECK CONTROLLER TOOLBAR
+       ======================================================== */
+    .mobile-deck-toolbar {
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      border-radius: 14px;
+      padding: 8px 14px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      position: sticky;
+      top: 60px;
+      z-index: 60;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: var(--transition);
+      width: 100%;
+      box-sizing: border-box;
+    }
+    body.dark-mode .mobile-deck-toolbar {
+      background: rgba(22, 27, 34, 0.95);
+      border-color: #30363d;
+      box-shadow: 0 6px 22px rgba(0, 0, 0, 0.5);
+    }
+    .deck-controls-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+    }
+    .deck-nav-btn {
+      background: rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--paper-border);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 12.5px;
+      font-weight: 700;
+      padding: 6px 13px;
+      border-radius: 9px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: var(--transition);
+      flex-shrink: 0;
+      user-select: none;
+    }
+    body.dark-mode .deck-nav-btn {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: #30363d;
+      color: #c9d1d9;
+    }
+    .deck-nav-btn:hover:not(:disabled) {
+      background: var(--accent-bg);
+      color: var(--accent-heading);
+      border-color: var(--accent-border);
+      transform: translateY(-1px);
+    }
+    .deck-nav-btn:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+      transform: none;
+    }
+    .deck-counter-badge {
+      background: var(--accent-bg);
+      border: 1px solid var(--accent-border);
+      color: var(--accent-heading);
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-size: 11.5px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
+    .deck-counter-badge strong {
+      font-family: var(--font-mono);
+      font-size: 13.5px;
+    }
+    .deck-counter-badge span.total-digits {
+      font-family: var(--font-mono);
+    }
+    .deck-mode-toggle-btn {
+      background: transparent;
+      border: 1px dashed var(--paper-border);
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 5px 9px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: var(--transition);
+      flex-shrink: 0;
+      margin-left: auto;
+    }
+    .deck-mode-toggle-btn:hover {
+      background: rgba(0, 0, 0, 0.04);
+      color: var(--text-main);
+      border-color: var(--accent-heading);
+    }
+    .deck-progress-track {
+      width: 100%;
+      height: 3.5px;
+      background: rgba(0, 0, 0, 0.05);
+      border-radius: 999px;
+      overflow: hidden;
+      position: relative;
+    }
+    body.dark-mode .deck-progress-track {
+      background: rgba(255, 255, 255, 0.08);
+    }
+    .deck-progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent-heading) 0%, #0284c7 100%);
+      border-radius: 999px;
+      transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* FULL NOTES SLIDER MODE CONTAINER (100% Width, Zero Right Gap) */
+    #dynamicPdfChaptersContainer.slider-mode {
+      display: flex !important;
+      flex-direction: row !important;
+      overflow-x: auto !important;
+      overflow-y: hidden !important;
+      scroll-snap-type: x mandatory !important;
+      -webkit-overflow-scrolling: touch !important;
+      scroll-behavior: smooth !important;
+      gap: 16px !important;
+      padding: 4px 0 24px 0 !important;
+      margin: 0 !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+      scrollbar-width: thin;
+      scrollbar-color: var(--accent-heading) transparent;
+    }
+    #dynamicPdfChaptersContainer.slider-mode::-webkit-scrollbar {
+      height: 5px;
+    }
+    #dynamicPdfChaptersContainer.slider-mode::-webkit-scrollbar-thumb {
+      background: var(--accent-heading);
+      border-radius: 999px;
+    }
+
+    /* SLIDE CARD STYLES */
+    .notes-slide-card {
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      border-radius: 18px;
+      padding: 24px 28px;
+      box-shadow: var(--paper-shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      transition: var(--transition);
+      box-sizing: border-box;
+      width: 100%;
+    }
+    #dynamicPdfChaptersContainer.slider-mode .notes-slide-card {
+      flex: 0 0 100% !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: 100% !important;
+      scroll-snap-align: start !important;
+      scroll-snap-stop: always !important;
+      min-height: 380px !important;
+      max-height: calc(100vh - 190px) !important;
+      overflow-y: auto !important;
+      margin: 0 !important;
+      box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.08), 0 0 1px rgba(0, 0, 0, 0.1) !important;
+    }
+    body.dark-mode #dynamicPdfChaptersContainer.slider-mode .notes-slide-card {
+      box-shadow: 0 12px 35px -5px rgba(0, 0, 0, 0.6) !important;
+    }
+    @media (max-width: 640px) {
+      #dynamicPdfChaptersContainer.slider-mode .notes-slide-card {
+        padding: 16px 14px !important;
+        border-radius: 14px !important;
+        min-height: 300px !important;
+      }
+    }
+
+    .slide-card-topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--paper-border);
+      flex-wrap: wrap;
+    }
+    .slide-meta-pills {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .slide-ch-badge {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--accent-heading);
+      background: var(--accent-bg);
+      border: 1px solid var(--accent-border);
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+    .slide-idx-pill {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--brand-primary);
+      background: rgba(2, 132, 199, 0.08);
+      padding: 2px 7px;
+      border-radius: 6px;
+    }
+    .slide-card-bottom-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding-top: 10px;
+      margin-top: auto;
+      border-top: 1px dashed var(--paper-border);
+      font-size: 11px;
+    }
+    .slide-status-badge {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-dim);
+    }
+    .swipe-hint-text {
+      font-size: 10.5px;
+      color: var(--text-dim);
+      font-family: var(--font-mono);
+      opacity: 0.75;
+    }
+
+    /* ========================================================
+       JOURNEY MAP ("BOY WALKING ON A PATH") STYLES
+       ======================================================== */
+    .journey-map-card {
+      background: linear-gradient(145deg, var(--paper-bg) 0%, rgba(2, 132, 199, 0.04) 100%) !important;
+      border: 1.5px solid var(--accent-border) !important;
+      position: relative;
+      overflow-y: auto !important;
+    }
+    body.dark-mode .journey-map-card {
+      background: linear-gradient(145deg, #0d1117 0%, #161b22 100%) !important;
+      border-color: rgba(56, 189, 248, 0.3) !important;
+    }
+    .journey-header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 800;
+      color: #0284c7;
+      background: rgba(2, 132, 199, 0.1);
+      border: 1px solid rgba(2, 132, 199, 0.25);
+      padding: 3px 10px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    body.dark-mode .journey-header-badge {
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.12);
+      border-color: rgba(56, 189, 248, 0.3);
+    }
+    .journey-title {
+      font-family: var(--font-display);
+      font-size: 19px;
+      font-weight: 800;
+      color: var(--accent-heading);
+      margin: 4px 0 2px 0;
+      letter-spacing: -0.3px;
+    }
+    .journey-sub {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .journey-path-wrap {
+      background: rgba(0, 0, 0, 0.02);
+      border: 1px dashed var(--paper-border);
+      border-radius: 14px;
+      padding: 16px 14px;
+      margin: 8px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      position: relative;
+    }
+    body.dark-mode .journey-path-wrap {
+      background: rgba(255, 255, 255, 0.02);
+    }
+    .walking-boy-avatar {
+      font-size: 26px;
+      display: inline-block;
+      animation: boyWalkBounce 1.2s infinite ease-in-out;
+      transform-origin: bottom center;
+      filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));
+    }
+    @keyframes boyWalkBounce {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      25% { transform: translateY(-4px) rotate(-4deg); }
+      75% { transform: translateY(-3px) rotate(4deg); }
+    }
+    .path-steps-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: relative;
+      padding-left: 28px;
+    }
+    .path-steps-list::before {
+      content: '';
+      position: absolute;
+      top: 12px;
+      bottom: 12px;
+      left: 11px;
+      width: 2px;
+      background: linear-gradient(180deg, #10b981 0%, #0284c7 60%, var(--paper-border) 100%);
+      border-radius: 999px;
+    }
+    .path-step-node {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      position: relative;
+      font-size: 12.5px;
+    }
+    .path-node-dot {
+      position: absolute;
+      left: -28px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 800;
+      background: var(--paper-bg);
+      border: 2px solid var(--paper-border);
+      color: var(--text-dim);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+      transition: var(--transition);
+    }
+    .path-step-node.completed .path-node-dot {
+      background: #10b981;
+      border-color: #10b981;
+      color: #ffffff;
+    }
+    .path-step-node.current .path-node-dot {
+      background: #0284c7;
+      border-color: #38bdf8;
+      color: #ffffff;
+      box-shadow: 0 0 0 4px rgba(2, 132, 199, 0.2);
+    }
+    .path-step-node.upcoming .path-node-dot {
+      background: var(--paper-bg);
+      border-color: var(--paper-border);
+      color: var(--text-dim);
+    }
+    .path-step-label {
+      flex: 1;
+      font-weight: 600;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      line-height: 1.4;
+    }
+    .path-step-status-pill {
+      font-size: 10.5px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+    .path-step-status-pill.status-done {
+      background: rgba(16, 185, 129, 0.12);
+      color: #10b981;
+      border: 1px solid rgba(16, 185, 129, 0.25);
+    }
+    .path-step-status-pill.status-current {
+      background: rgba(2, 132, 199, 0.12);
+      color: #0284c7;
+      border: 1px solid rgba(2, 132, 199, 0.25);
+    }
+    .path-step-status-pill.status-pending {
+      background: rgba(0, 0, 0, 0.04);
+      color: var(--text-dim);
+      border: 1px dashed var(--paper-border);
+    }
+    body.dark-mode .path-step-status-pill.status-pending {
+      background: rgba(255, 255, 255, 0.04);
+    }
+    .ahead-chapters-box {
+      background: rgba(2, 132, 199, 0.05);
+      border: 1px solid rgba(2, 132, 199, 0.18);
+      border-radius: 12px;
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 4px;
+    }
+    body.dark-mode .ahead-chapters-box {
+      background: rgba(2, 132, 199, 0.1);
+      border-color: rgba(56, 189, 248, 0.25);
+    }
+    .ahead-box-title {
+      font-size: 11.5px;
+      font-weight: 800;
+      color: #0284c7;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    body.dark-mode .ahead-box-title {
+      color: #38bdf8;
+    }
+    .ahead-items-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .ahead-pill {
+      font-size: 11px;
+      font-weight: 700;
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      color: var(--text-main);
+      padding: 3px 8px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .journey-action-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid var(--paper-border);
+    }
+    .journey-primary-btn {
+      background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+      color: #ffffff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 9px;
+      font-family: inherit;
+      font-size: 12.5px;
+      font-weight: 800;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.35);
+      transition: var(--transition);
+      margin-left: auto;
+    }
+    .journey-primary-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(2, 132, 199, 0.5);
     }
 
     /* ========================================================
@@ -633,16 +1159,6 @@
       .brand-section {
         gap: 8px;
         flex: 1 1 auto;
-      }
-      .brand-title {
-        font-size: 13px;
-      }
-      .brand-sub {
-        font-size: 10px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 170px;
       }
       .topbar-filters {
         order: 3;
@@ -671,13 +1187,6 @@
         padding: 5px 8px;
         font-size: 11px;
       }
-      .keyterms-nav-btn {
-        padding: 5px 10px;
-      }
-      .header-score-pill {
-        font-size: 11px;
-        padding: 5px 9px;
-      }
       
       /* Sidebar slide-over drawer */
       .syllabus-sidebar {
@@ -701,8 +1210,10 @@
       }
       
       .main-content-area {
-        padding: 14px 10px 80px;
+        padding: 12px 12px 80px;
         max-width: 100%;
+        gap: 12px;
+        box-sizing: border-box;
       }
       .font-picker-menu {
         right: -10px;
@@ -715,19 +1226,6 @@
         padding: 6px 8px;
         gap: 6px;
       }
-      .brand-title {
-        font-size: 12px;
-      }
-      .brand-sub {
-        display: none;
-      }
-      .brand-badge-icon {
-        padding: 2px 6px;
-        border-radius: 6px;
-      }
-      .psir-badge-text {
-        font-size: 11px;
-      }
       .toggle-sidebar-btn {
         padding: 5px 8px;
         font-size: 11.5px;
@@ -738,15 +1236,6 @@
       .header-action-btn {
         padding: 5px 7px;
         font-size: 11px;
-      }
-      .header-score-pill {
-        padding: 4px 7px;
-        font-size: 10.5px;
-      }
-      .pdf-sheet {
-        padding: 18px 12px;
-        border-radius: 12px;
-        gap: 20px;
       }
       .chapter-title-text {
         font-size: 20px;
@@ -796,20 +1285,6 @@
       .mcq-expl-text {
         font-size: 12px;
       }
-      .celebration-hero-card {
-        flex-direction: column;
-        text-align: center;
-        padding: 16px;
-        gap: 10px;
-      }
-      .celebration-badge-icon {
-        width: 48px;
-        height: 48px;
-        font-size: 28px;
-      }
-      .celebration-hero-title {
-        font-size: 16px;
-      }
       .toast-pill {
         font-size: 11.5px;
         padding: 7px 14px;
@@ -818,12 +1293,8 @@
     }
 
     @media (max-width: 420px) {
-      .header-actions .header-action-btn:not(#nightModeToggleBtn):not(.keyterms-nav-btn) span:not(:first-child) {
+      .header-actions .header-action-btn:not(#nightModeToggleBtn):not(.font-size-action-btn) span:not(:first-child) {
         display: none;
-      }
-      .keyterms-nav-btn {
-        padding: 5px 8px;
-        font-size: 10.5px;
       }
       .top-filter-btn {
         font-size: 10.5px;
@@ -980,7 +1451,7 @@
     }
     .section-title-heading {
       font-family: var(--font-display);
-      font-size: 18.5px;
+      font-size: calc(18.5px * var(--card-font-scale, 1));
       font-weight: 800;
       color: var(--accent-heading);
       letter-spacing: -0.2px;
@@ -997,7 +1468,7 @@
     }
 
     .section-intro-text {
-      font-size: 15px;
+      font-size: calc(15px * var(--card-font-scale, 1));
       line-height: 1.7;
       color: var(--text-main);
     }
@@ -1127,7 +1598,7 @@
     /* Bullet Content Text */
     .bullet-content-body {
       flex: 1;
-      font-size: 14.5px;
+      font-size: calc(14.5px * var(--card-font-scale, 1));
       line-height: 1.6;
       color: var(--text-main);
     }
@@ -1148,7 +1619,7 @@
       border-left: 3px solid var(--brand-primary);
       padding: 8px 14px;
       border-radius: 0 8px 8px 0;
-      font-size: 13.5px;
+      font-size: calc(13.5px * var(--card-font-scale, 1));
       color: var(--text-muted);
     }
     .subbullet-box strong {
@@ -1240,7 +1711,7 @@
     }
 
     .mcq-question-text {
-      font-size: 14.5px;
+      font-size: calc(14.5px * var(--card-font-scale, 1));
       line-height: 1.65;
       font-weight: 600;
       color: var(--text-main);
@@ -1259,7 +1730,7 @@
       border-radius: 9px;
       padding: 9px 12px;
       font-family: inherit;
-      font-size: 13.5px;
+      font-size: calc(13.5px * var(--card-font-scale, 1));
       color: var(--text-main);
       cursor: pointer;
       display: flex;
@@ -1348,7 +1819,7 @@
       letter-spacing: 0.3px;
     }
     .mcq-expl-text {
-      font-size: 13px;
+      font-size: calc(13px * var(--card-font-scale, 1));
       line-height: 1.6;
       color: var(--text-main);
     }
@@ -1561,37 +2032,36 @@
       <div class="brand-badge-icon" title="PSIR Optional Exam Suite">
         <span class="psir-badge-text">PSIR</span>
       </div>
-      <div class="brand-title-wrap">
-        <h1 class="brand-title">MASTER SUITE</h1>
-        <div class="brand-sub">6 Chapters • 77 Pages</div>
-      </div>
+      <!-- Key Terms navigation placed prominently where Master Suite was -->
+      <a href="keyterms.html" class="topbar-keyterms-nav" title="Switch to Key Terms Flashcard System">
+        <span>📖</span> <span>Key Terms</span>
+      </a>
     </div>
 
-    <!-- Filter View Options on Top Bar -->
+    <!-- Filter View Options on Top Bar (Total 852 removed) -->
     <div class="topbar-filters">
-      <button class="top-filter-btn active" data-filter="all">All Points (<span id="countAll">852</span>)</button>
+      <button class="top-filter-btn active" data-filter="all">All Points</button>
       <button class="top-filter-btn" data-filter="right">Mastered ✓ (<span id="countRight">0</span>)</button>
       <button class="top-filter-btn" data-filter="wrong">Needs Work ✕ (<span id="countWrong">0</span>)</button>
       <button class="top-filter-btn" data-filter="circle">In Review ○ (<span id="countCircle">0</span>)</button>
     </div>
 
-    <!-- Actions & Reader Tools -->
+    <!-- Actions & Reader Tools (Icon-Only without text to adjust space) -->
     <div class="header-actions">
-      <!-- Master Score Pill -->
-      <div id="masterScorePill" class="header-score-pill" title="Mastered Bullet Points">
-        <span>🌸</span>
-        <span id="masteredScoreText">0 / 852</span>
+      <!-- Font Size Scaler Icons (A- / A+) -->
+      <div class="font-size-adjuster" title="Adjust text size">
+        <button id="decreaseFontBtn" class="font-size-action-btn" title="Decrease font size" aria-label="Decrease font size">
+          <span class="font-size-icon">A<span class="fs-mark">−</span></span>
+        </button>
+        <button id="increaseFontBtn" class="font-size-action-btn" title="Increase font size" aria-label="Increase font size">
+          <span class="font-size-icon">A<span class="fs-mark">+</span></span>
+        </button>
       </div>
 
-      <!-- Key Terms Page Navigation Button -->
-      <a href="keyterms.html" class="header-action-btn keyterms-nav-btn" title="Open Key Terms Flashcards & Review System">
-        <span>📖</span> Key Terms
-      </a>
-
-      <!-- 10 Reader Fonts Picker -->
+      <!-- 10 Reader Fonts Picker (Icon Only) -->
       <div class="font-picker-wrapper">
-        <button id="fontPickerBtn" class="header-action-btn" title="Change Reader Font (10 Curated Fonts)">
-          <span>🔤</span> Font
+        <button id="fontPickerBtn" class="header-action-btn icon-only-btn" title="Change Reader Font (10 Curated Fonts)" aria-label="Font Type">
+          <span>🔤</span>
         </button>
         <div class="font-picker-menu" id="fontPickerMenu">
           <div class="font-picker-title">Select Reader Font</div>
@@ -1608,19 +2078,19 @@
         </div>
       </div>
 
-      <!-- Highlighter Tool Toggle -->
-      <button id="highlighterToggleBtn" class="header-action-btn" title="Toggle Text Highlighter (Select text to highlight)">
-        <span>🖍️</span> Highlighter
+      <!-- Highlighter Tool Toggle (Icon Only) -->
+      <button id="highlighterToggleBtn" class="header-action-btn icon-only-btn" title="Toggle Text Highlighter" aria-label="Highlighter">
+        <span>🖍️</span>
       </button>
 
-      <!-- Night Mode Toggle Icon -->
-      <button id="nightModeToggleBtn" class="header-action-btn" title="Toggle Night Theme">
+      <!-- Night Mode Toggle Icon (Icon Only) -->
+      <button id="nightModeToggleBtn" class="header-action-btn icon-only-btn" title="Toggle Night Theme" aria-label="Toggle Night Mode">
         <span id="nightIcon">🌙</span>
       </button>
 
       <!-- Chrome Install App Button -->
-      <button id="installAppBtn" class="header-action-btn" title="Install as Chrome Web App" style="display: none;">
-        <span>📲</span> Install
+      <button id="installAppBtn" class="header-action-btn icon-only-btn" title="Install as Chrome Web App" style="display: none;" aria-label="Install App">
+        <span>📲</span>
       </button>
     </div>
   </header>
@@ -1663,6 +2133,30 @@
     <!-- MAIN PDF CONTENT VIEWPORT -->
     <main class="main-content-area" id="mainContentArea">
 
+      <!-- Horizontal Slider Deck Controller Toolbar -->
+      <div class="mobile-deck-toolbar" id="mobileDeckToolbar">
+        <div class="deck-controls-row">
+          <button id="deckPrevBtn" class="deck-nav-btn" title="Previous Slide (← Arrow Key)">
+            <span>◀</span> Prev
+          </button>
+          
+          <div class="deck-counter-badge" id="deckCounterBadge">
+            <span>Slide</span> <strong id="currentSlideNum">1</strong> <span>/</span> <span class="total-digits" id="totalSlidesNum">--</span>
+          </div>
+
+          <button id="deckNextBtn" class="deck-nav-btn" title="Next Slide (→ Arrow Key or Swipe)">
+            Next <span>▶</span>
+          </button>
+
+          <button id="deckModeToggleBtn" class="deck-mode-toggle-btn" title="Switch between Horizontal Slider and Continuous List Mode">
+            <span id="deckModeIcon">📑</span> <span id="deckModeLabel">List</span>
+          </button>
+        </div>
+        <div class="deck-progress-track">
+          <div class="deck-progress-fill" id="deckProgressFill" style="width: 0%;"></div>
+        </div>
+      </div>
+
       <!-- HERO CELEBRATION CARD FOR CORE MARXIST CONCEPTS -->
       <div id="coreMarxistCelebrationBanner" class="celebration-hero-card">
         <div class="celebration-badge-icon">🌸</div>
@@ -1673,8 +2167,8 @@
         <button class="celebration-btn" onclick="resetCoreMarxist()">Reset Section</button>
       </div>
 
-      <!-- Container where all 6 chapters & PDF sheets are dynamically rendered -->
-      <div id="dynamicPdfChaptersContainer" style="display: flex; flex-direction: column; gap: 36px;">
+      <!-- Container where all sections are dynamically rendered as slide cards -->
+      <div id="dynamicPdfChaptersContainer" class="slider-mode">
         <!-- Filled by renderContent() -->
       </div>
 
@@ -2126,21 +2620,46 @@
         const wrongCount = allBullets.filter(id => scores[id] === 'wrong').length;
         const circleCount = allBullets.filter(id => scores[id] === 'circle').length;
 
-        document.getElementById('masteredScoreText').textContent = `${rightCount} / ${totalCount}`;
-        document.getElementById('countAll').textContent = totalCount;
-        document.getElementById('countRight').textContent = rightCount;
-        document.getElementById('countWrong').textContent = wrongCount;
-        document.getElementById('countCircle').textContent = circleCount;
+        const masterScoreEl = document.getElementById('masteredScoreText');
+        if (masterScoreEl) masterScoreEl.textContent = `${rightCount} / ${totalCount}`;
+        const countAllEl = document.getElementById('countAll');
+        if (countAllEl) countAllEl.textContent = totalCount;
+        const countRightEl = document.getElementById('countRight');
+        if (countRightEl) countRightEl.textContent = rightCount;
+        const countWrongEl = document.getElementById('countWrong');
+        if (countWrongEl) countWrongEl.textContent = wrongCount;
+        const countCircleEl = document.getElementById('countCircle');
+        if (countCircleEl) countCircleEl.textContent = circleCount;
 
-        document.getElementById('sideStatMastered').textContent = rightCount;
-        document.getElementById('sideStatReview').textContent = wrongCount;
-        document.getElementById('sideStatFlagged').textContent = circleCount;
+        const sideMasteredEl = document.getElementById('sideStatMastered');
+        if (sideMasteredEl) sideMasteredEl.textContent = rightCount;
+        const sideReviewEl = document.getElementById('sideStatReview');
+        if (sideReviewEl) sideReviewEl.textContent = wrongCount;
+        const sideFlaggedEl = document.getElementById('sideStatFlagged');
+        if (sideFlaggedEl) sideFlaggedEl.textContent = circleCount;
       }
 
       // ========================================================
-      // RENDERING APP FROM DATA
+      // FONT SCALE CONTROLLER (A- / A+)
+      // ========================================================
+      let currentFontScale = parseFloat(localStorage.getItem('psir_notes_font_scale')) || 1.0;
+      function applyFontScale(scale) {
+        currentFontScale = Math.min(Math.max(scale, 0.8), 1.5);
+        document.documentElement.style.setProperty('--card-font-scale', currentFontScale);
+        localStorage.setItem('psir_notes_font_scale', currentFontScale);
+      }
+      const decFontBtn = document.getElementById('decreaseFontBtn');
+      if (decFontBtn) decFontBtn.addEventListener('click', () => applyFontScale(currentFontScale - 0.1));
+      const incFontBtn = document.getElementById('increaseFontBtn');
+      if (incFontBtn) incFontBtn.addEventListener('click', () => applyFontScale(currentFontScale + 0.1));
+      applyFontScale(currentFontScale);
+
+      // ========================================================
+      // RENDERING APP FROM DATA & HORIZONTAL SLIDE DECK
       // ========================================================
       let activeFilter = 'all';
+      let currentSlideIndex = 0;
+      let isSliderMode = true;
 
       function renderApp() {
         if (!window.SARRTHI_DATA) return;
@@ -2161,8 +2680,19 @@
             <span style="font-family: var(--font-mono); font-size: 11px; opacity: 0.8;">${ch.total_bullets} pts</span>
           `;
           chBtn.addEventListener('click', () => {
-            const el = document.getElementById(`chapter_${ch.id}`);
-            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            const firstSec = ch.sections[0];
+            if (firstSec) {
+              const el = document.getElementById(`sec_${firstSec.id}`);
+              if (el) {
+                if (isSliderMode) {
+                  const slides = Array.from(document.querySelectorAll('.notes-slide-card'));
+                  const targetIdx = slides.indexOf(el);
+                  if (targetIdx !== -1) goToSlide(targetIdx);
+                } else {
+                  el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+              }
+            }
             if (window.innerWidth <= 900) closeSidebar();
           });
           group.appendChild(chBtn);
@@ -2180,7 +2710,15 @@
             link.addEventListener('click', (e) => {
               e.preventDefault();
               const el = document.getElementById(`sec_${sec.id}`);
-              if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              if (el) {
+                if (isSliderMode) {
+                  const slides = Array.from(document.querySelectorAll('.notes-slide-card'));
+                  const targetIdx = slides.indexOf(el);
+                  if (targetIdx !== -1) goToSlide(targetIdx);
+                } else {
+                  el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+              }
               if (window.innerWidth <= 900) closeSidebar();
             });
             sublist.appendChild(link);
@@ -2198,161 +2736,340 @@
         container.innerHTML = '';
 
         const data = window.SARRTHI_DATA;
+        if (!data || !data.chapters) return;
 
+        // Gather all active section items across all chapters
+        const allSectionItems = [];
         data.chapters.forEach(ch => {
-          const sheet = document.createElement('section');
-          sheet.className = 'pdf-sheet';
-          sheet.id = `chapter_${ch.id}`;
-
-          // Sheet Header
-          sheet.innerHTML = `
-            <div class="pdf-page-header">
-              <span>PSIR • Class Notes by Vivek Waghmare</span>
-              <span class="pdf-source-tag">${ch.page_range} • Total ${ch.total_bullets} Points</span>
-            </div>
-            
-            <div class="chapter-main-header">
-              <span class="chapter-eyebrow">UPSC PSIR PAPER 1A • CHAPTER ${ch.num}</span>
-              <h2 class="chapter-title-text">${ch.title}</h2>
-              <p class="chapter-subtitle-text">${ch.subtitle}</p>
-            </div>
-          `;
-
-          // Render Sections in this Chapter
           ch.sections.forEach(sec => {
-            const secBlock = document.createElement('div');
-            secBlock.className = 'pdf-section-block';
-            secBlock.id = `sec_${sec.id}`;
-
             let visibleBullets = sec.bullets;
             if (activeFilter !== 'all') {
               visibleBullets = visibleBullets.filter(b => scores[b.id] === activeFilter);
             }
+            if (activeFilter === 'all' || visibleBullets.length > 0) {
+              allSectionItems.push({ ch, sec, visibleBullets });
+            }
+          });
+        });
 
-            // Section Header Bar
-            let secHtml = `
-              <div class="section-title-bar">
-                <h3 class="section-title-heading">${sec.title}</h3>
-                <span class="section-page-badge">Page ${sec.start_page}</span>
+        if (allSectionItems.length === 0) {
+          container.innerHTML = `<div style="text-align: center; padding: 40px; color: var(--text-muted);">No topics match the selected filter.</div>`;
+          updateSliderIndicator();
+          return;
+        }
+
+        // ========================================================
+        // 1. JOURNEY START MAP (Before Slide 1)
+        // ========================================================
+        const startMapCard = document.createElement('div');
+        startMapCard.className = 'notes-slide-card journey-map-card';
+        startMapCard.id = 'journey_start_map';
+
+        startMapCard.innerHTML = `
+          <div class="slide-card-topbar">
+            <span class="journey-header-badge">🧭 EXPEDITION LAUNCHPAD</span>
+            <span class="slide-idx-pill">6 Milestone Chapters Ahead</span>
+          </div>
+
+          <div style="margin: 8px 0 4px 0;">
+            <h2 class="journey-title">The Path of Political Theory</h2>
+            <p class="journey-sub">Follow the footsteps of an aspirant walking the path of political thought. Every 5 slides you will encounter a milestone waypoint reviewing your progress!</p>
+          </div>
+
+          <!-- The Walking Boy at the Start Line -->
+          <div class="journey-path-wrap">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; background: rgba(2, 132, 199, 0.08); padding: 12px 14px; border-radius: 12px;">
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <div class="walking-boy-avatar">🚶‍♂️</div>
+                <div>
+                  <strong style="font-size: 13.5px; color: var(--accent-heading);">The Aspirant's Footsteps</strong>
+                  <div style="font-size: 11.5px; color: var(--text-muted);">Starting at Chapter 1: Political Theory & Core Marxist Foundations</div>
+                </div>
+              </div>
+              <span class="path-step-status-pill status-current">Expedition Start</span>
+            </div>
+
+            <div style="font-size: 11px; font-weight: 800; color: var(--text-dim); text-transform: uppercase; margin-top: 6px;">Next 5 Steps on Your Immediate Path:</div>
+            <div class="path-steps-list">
+              ${allSectionItems.slice(0, 5).map((item, idx) => `
+                <div class="path-step-node upcoming">
+                  <div class="path-node-dot">${idx + 1}</div>
+                  <div class="path-step-label">
+                    <span style="font-family: var(--font-mono); font-size: 10px; color: var(--brand-primary);">P.${item.sec.start_page}</span>
+                    <span>${item.sec.title}</span>
+                  </div>
+                  <span class="path-step-status-pill status-pending">Ready</span>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- 6 Landmark Chapters Ahead -->
+          <div class="ahead-chapters-box">
+            <div class="ahead-box-title"><span>🗺️</span> 6 Foundational Peaks Ahead on this Expedition:</div>
+            <div class="ahead-items-row">
+              <span class="ahead-pill"><span>🏛️</span> Ch 1: Political Theory & Marx</span>
+              <span class="ahead-pill"><span>⚖️</span> Ch 2: Theories of the State</span>
+              <span class="ahead-pill"><span>👑</span> Ch 3: Theories of Justice</span>
+              <span class="ahead-pill"><span>🤝</span> Ch 4: Equality & Dworkin</span>
+              <span class="ahead-pill"><span>📜</span> Ch 5: Three Generations of Rights</span>
+              <span class="ahead-pill"><span>🗳️</span> Ch 6: Models of Democracy</span>
+            </div>
+          </div>
+
+          <div class="journey-action-bar">
+            <span class="swipe-hint-text">Swipe left or click button to start ➔</span>
+            <button class="journey-primary-btn" onclick="window.slideNext()">
+              <span>Begin Walk</span> <span>▶</span>
+            </button>
+          </div>
+        `;
+        container.appendChild(startMapCard);
+
+        // ========================================================
+        // 2. RENDER SECTIONS & INJECT WAYPOINT MAPS EVERY 5 SLIDES
+        // ========================================================
+        let topicCount = 0;
+
+        allSectionItems.forEach((item, secIdx) => {
+          topicCount++;
+          const { ch, sec, visibleBullets } = item;
+
+          const card = document.createElement('div');
+          card.className = 'notes-slide-card';
+          card.id = `sec_${sec.id}`;
+          card.setAttribute('data-chapter', ch.id);
+
+          let cardHtml = `
+            <!-- Slide Header Meta Bar -->
+            <div class="slide-card-topbar">
+              <div class="slide-meta-pills">
+                <span class="slide-ch-badge">Ch ${ch.num}: ${ch.title}</span>
+                <span class="slide-idx-pill">Page ${sec.start_page}</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--text-dim);">${sec.bullets.length} Points</span>
+              </div>
+            </div>
+
+            <!-- Section Title Heading -->
+            <div class="section-title-bar" style="margin-top: 4px;">
+              <h3 class="section-title-heading">${sec.title}</h3>
+            </div>
+          `;
+
+          // Section Intro Paragraphs
+          if (sec.paragraphs && sec.paragraphs.length > 0) {
+            sec.paragraphs.forEach(p => {
+              cardHtml += `<p class="section-intro-text">${p.text}</p>`;
+            });
+          }
+
+          // Interactive Bullet Items List
+          cardHtml += `<div class="interactive-bullets-list">`;
+          visibleBullets.forEach(b => {
+            const choice = scores[b.id];
+            const statusClass = choice ? `status-${choice}` : '';
+            cardHtml += `
+              <div class="bullet-row-item ${statusClass}" data-id="${b.id}" data-chapter="${ch.id}">
+                <div class="bullet-eval-selector">
+                  <button class="eval-choice-btn eval-btn-right ${choice === 'right' ? 'selected-right' : ''}" 
+                          title="Mastered (Right Sign - Flower & Heart Shower!)" 
+                          onclick="setBulletScore('${b.id}', 'right')">✓</button>
+                  <button class="eval-choice-btn eval-btn-wrong ${choice === 'wrong' ? 'selected-wrong' : ''}" 
+                          title="Needs Revision (Wrong Sign)" 
+                          onclick="setBulletScore('${b.id}', 'wrong')">✕</button>
+                  <button class="eval-choice-btn eval-btn-circle ${choice === 'circle' ? 'selected-circle' : ''}" 
+                          title="In Progress / Question Flagged (Circle Sign)" 
+                          onclick="setBulletScore('${b.id}', 'circle')">○</button>
+                </div>
+                <div class="bullet-content-body">
+                  ${b.label ? `<span class="bullet-label-tag">${b.label}</span>` : ''}
+                  ${b.text}
+                </div>
               </div>
             `;
+          });
+          cardHtml += `</div>`;
 
-            // Section Intro Paragraphs
-            if (sec.paragraphs && sec.paragraphs.length > 0) {
-              sec.paragraphs.forEach(p => {
-                secHtml += `<p class="section-intro-text">${p.text}</p>`;
-              });
-            }
-
-            // Bullet Items
-            secHtml += `<div class="interactive-bullets-list">`;
-            visibleBullets.forEach(b => {
-              const choice = scores[b.id];
-              const statusClass = choice ? `status-${choice}` : '';
-              secHtml += `
-                <div class="bullet-row-item ${statusClass}" data-id="${b.id}" data-chapter="${ch.id}">
-                  <div class="bullet-eval-selector">
-                    <button class="eval-choice-btn eval-btn-right ${choice === 'right' ? 'selected-right' : ''}" 
-                            title="Mastered (Right Sign - Flower & Heart Shower!)" 
-                            onclick="setBulletScore('${b.id}', 'right')">✓</button>
-                    <button class="eval-choice-btn eval-btn-wrong ${choice === 'wrong' ? 'selected-wrong' : ''}" 
-                            title="Needs Revision (Wrong Sign)" 
-                            onclick="setBulletScore('${b.id}', 'wrong')">✕</button>
-                    <button class="eval-choice-btn eval-btn-circle ${choice === 'circle' ? 'selected-circle' : ''}" 
-                            title="In Progress / Question Flagged (Circle Sign)" 
-                            onclick="setBulletScore('${b.id}', 'circle')">○</button>
-                  </div>
-                  <div class="bullet-content-body">
-                    ${b.label ? `<span class="bullet-label-tag">${b.label}</span>` : ''}
-                    ${b.text}
-                  </div>
+          // Subbullets / Examples
+          if (sec.subbullets && sec.subbullets.length > 0) {
+            sec.subbullets.forEach(sb => {
+              cardHtml += `
+                <div class="subbullet-box">
+                  <strong>${sb.label || 'Example'}</strong>: ${sb.text}
                 </div>
               `;
             });
-            secHtml += `</div>`;
+          }
 
-            // Subbullets / Examples
-            if (sec.subbullets && sec.subbullets.length > 0) {
-              sec.subbullets.forEach(sb => {
-                secHtml += `
-                  <div class="subbullet-box">
-                    <strong>${sb.label || 'Example'}</strong>: ${sb.text}
+          // Toughest UPSC PSIR MCQs for this Topic / Section
+          if (sec.mcqs && sec.mcqs.length > 0) {
+            cardHtml += `
+              <div class="section-mcq-container">
+                <div class="mcq-section-header">
+                  <span class="mcq-badge-tag">🎯 UPSC CONCEPTUAL MASTERY TEST</span>
+                  <span class="mcq-header-title">2 Toughest Section Questions</span>
+                </div>
+                <div class="mcq-cards-grid">
+            `;
+            const letters = ['A', 'B', 'C', 'D'];
+            sec.mcqs.forEach((mcq, mIdx) => {
+              const savedAns = mcqAnswers[mcq.id];
+              cardHtml += `
+                <div class="mcq-question-card" id="card_${mcq.id}" data-mcq-id="${mcq.id}">
+                  <div class="mcq-card-top">
+                    <span class="mcq-num-pill">Question ${mIdx + 1} of ${sec.mcqs.length}</span>
+                    <span class="mcq-difficulty-pill">🔥 Toughest UPSC Standard</span>
                   </div>
+                  <div class="mcq-question-text">${mcq.question.replace(/\n/g, '<br>')}</div>
+                  <div class="mcq-options-list">
+              `;
+              mcq.options.forEach((opt, oIdx) => {
+                let optClass = '';
+                if (savedAns !== undefined) {
+                  if (oIdx === mcq.correctIndex) optClass = (savedAns === mcq.correctIndex) ? 'selected-correct' : 'reveal-correct';
+                  if (savedAns === oIdx && savedAns !== mcq.correctIndex) optClass = 'selected-wrong';
+                }
+                cardHtml += `
+                  <button class="mcq-option-btn ${optClass}" 
+                          data-mcq-id="${mcq.id}" 
+                          data-opt-index="${oIdx}" 
+                          onclick="handleMcqChoice('${mcq.id}', ${oIdx}, ${mcq.correctIndex})">
+                    <span class="mcq-opt-letter">${letters[oIdx]}</span>
+                    <span class="mcq-opt-text">${opt}</span>
+                  </button>
                 `;
               });
-            }
+              cardHtml += `</div>`;
 
-            // Toughest UPSC PSIR MCQs for this Topic / Section
-            if (sec.mcqs && sec.mcqs.length > 0) {
-              secHtml += `
-                <div class="section-mcq-container">
-                  <div class="mcq-section-header">
-                    <span class="mcq-badge-tag">🎯 UPSC CONCEPTUAL MASTERY TEST</span>
-                    <span class="mcq-header-title">2 Toughest Section Questions</span>
-                  </div>
-                  <div class="mcq-cards-grid">
+              const showExpl = savedAns !== undefined ? 'style="display: flex;"' : 'style="display: none;"';
+              cardHtml += `
+                <div class="mcq-explanation-box" id="expl_${mcq.id}" ${showExpl}>
+                  <div class="mcq-expl-title">💡 Detailed Conceptual Explanation & Source:</div>
+                  <div class="mcq-expl-text">${mcq.explanation}</div>
+                </div>
+              </div>
               `;
-              const letters = ['A', 'B', 'C', 'D'];
-              sec.mcqs.forEach((mcq, mIdx) => {
-                const savedAns = mcqAnswers[mcq.id];
-                secHtml += `
-                  <div class="mcq-question-card" id="card_${mcq.id}" data-mcq-id="${mcq.id}">
-                    <div class="mcq-card-top">
-                      <span class="mcq-num-pill">Question ${mIdx + 1} of ${sec.mcqs.length}</span>
-                      <span class="mcq-difficulty-pill">🔥 Toughest UPSC Standard</span>
-                    </div>
-                    <div class="mcq-question-text">${mcq.question.replace(/\n/g, '<br>')}</div>
-                    <div class="mcq-options-list">
-                `;
-                mcq.options.forEach((opt, oIdx) => {
-                  let optClass = '';
-                  if (savedAns !== undefined) {
-                    if (oIdx === mcq.correctIndex) optClass = (savedAns === mcq.correctIndex) ? 'selected-correct' : 'reveal-correct';
-                    if (savedAns === oIdx && savedAns !== mcq.correctIndex) optClass = 'selected-wrong';
-                  }
-                  secHtml += `
-                    <button class="mcq-option-btn ${optClass}" 
-                            data-mcq-id="${mcq.id}" 
-                            data-opt-index="${oIdx}" 
-                            onclick="handleMcqChoice('${mcq.id}', ${oIdx}, ${mcq.correctIndex})">
-                      <span class="mcq-opt-letter">${letters[oIdx]}</span>
-                      <span class="mcq-opt-text">${opt}</span>
-                    </button>
-                  `;
-                });
-                secHtml += `</div>`;
+            });
+            cardHtml += `</div></div>`;
+          }
 
-                const showExpl = savedAns !== undefined ? 'style="display: flex;"' : 'style="display: none;"';
-                secHtml += `
-                  <div class="mcq-explanation-box" id="expl_${mcq.id}" ${showExpl}>
-                    <div class="mcq-expl-title">💡 Detailed Conceptual Explanation & Source:</div>
-                    <div class="mcq-expl-text">${mcq.explanation}</div>
+          // Bottom bar of slide card
+          cardHtml += `
+            <div class="slide-card-bottom-bar">
+              <span class="slide-status-badge">Topic ${topicCount}</span>
+              <span class="swipe-hint-text">Swipe / Use ▶ for Next Slide ➔</span>
+            </div>
+          `;
+
+          card.innerHTML = cardHtml;
+          container.appendChild(card);
+
+          // After every 5 topics, inject a MILESTONE WAYPOINT MAP CARD
+          if ((secIdx + 1) % 5 === 0) {
+            const batchNum = Math.floor((secIdx + 1) / 5);
+            const batchItems = allSectionItems.slice(secIdx - 4, secIdx + 1);
+            const upcomingItems = allSectionItems.slice(secIdx + 1, secIdx + 6);
+
+            // Determine read/unread status for topics in this leg
+            let readCount = 0;
+            const batchNodesHtml = batchItems.map((bItem, bIdx) => {
+              const isRead = bItem.sec.bullets.some(b => scores[b.id] !== undefined);
+              if (isRead) readCount++;
+              return `
+                <div class="path-step-node ${isRead ? 'completed' : 'upcoming'}">
+                  <div class="path-node-dot">${isRead ? '✓' : bIdx + 1}</div>
+                  <div class="path-step-label">
+                    <span style="font-family: var(--font-mono); font-size: 10px; color: var(--brand-primary);">P.${bItem.sec.start_page}</span>
+                    <span>${bItem.sec.title}</span>
+                  </div>
+                  <span class="path-step-status-pill ${isRead ? 'status-done' : 'status-pending'}">
+                    ${isRead ? '✓ Read' : '○ Pending'}
+                  </span>
+                </div>
+              `;
+            }).join('');
+
+            const upcomingChapters = data.chapters.filter(c => c.num >= item.ch.num);
+
+            const waypointCard = document.createElement('div');
+            waypointCard.className = 'notes-slide-card journey-map-card';
+            waypointCard.setAttribute('data-milestone-batch', batchNum);
+
+            waypointCard.innerHTML = `
+              <div class="slide-card-topbar">
+                <span class="journey-header-badge">🚶‍♂️ MILESTONE WAYPOINT #${batchNum}</span>
+                <span class="slide-idx-pill">${readCount} of 5 Read in this Leg</span>
+              </div>
+
+              <div style="margin: 6px 0;">
+                <h2 class="journey-title">Milestone Waypoint #${batchNum}</h2>
+                <p class="journey-sub">Look back at the topics you just walked through, then explore the upcoming chapters & concepts ahead!</p>
+              </div>
+
+              <!-- Walking Boy & Topics in This Leg -->
+              <div class="journey-path-wrap">
+                <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; background: rgba(2, 132, 199, 0.08); padding: 10px 14px; border-radius: 12px;">
+                  <div style="display: flex; align-items: center; gap: 10px;">
+                    <div class="walking-boy-avatar">🚶‍♂️</div>
+                    <div>
+                      <strong style="font-size: 13.5px; color: var(--accent-heading);">The Aspirant on the Trail</strong>
+                      <div style="font-size: 11.5px; color: var(--text-muted);">${readCount >= 5 ? 'All 5 topics thoroughly reviewed! 🌸' : `${5 - readCount} topics awaiting review`}</div>
+                    </div>
+                  </div>
+                  <span class="path-step-status-pill ${readCount >= 5 ? 'status-done' : 'status-current'}">${readCount}/5 Explored</span>
+                </div>
+
+                <div style="font-size: 11px; font-weight: 800; color: var(--text-dim); text-transform: uppercase; margin-top: 4px;">Topics in This Leg:</div>
+                <div class="path-steps-list">
+                  ${batchNodesHtml}
+                </div>
+              </div>
+
+              <!-- Upcoming Topics Ahead -->
+              ${upcomingItems.length > 0 ? `
+                <div class="ahead-chapters-box">
+                  <div class="ahead-box-title"><span>🏔️</span> Ahead on Your Immediate Path (Next 5 Topics):</div>
+                  <div class="ahead-items-row">
+                    ${upcomingItems.map(u => `<span class="ahead-pill"><span>➔</span> ${u.sec.title.length > 28 ? u.sec.title.slice(0, 28) + '...' : u.sec.title}</span>`).join('')}
                   </div>
                 </div>
-                `;
-              });
-              secHtml += `</div></div>`;
-            }
+              ` : ''}
 
-            secBlock.innerHTML = secHtml;
-            sheet.appendChild(secBlock);
-          });
+              <!-- Landmark Chapters Horizon -->
+              <div class="ahead-chapters-box" style="margin-top: 6px;">
+                <div class="ahead-box-title"><span>🗺️</span> Landmark Chapters on the Horizon:</div>
+                <div class="ahead-items-row">
+                  ${upcomingChapters.slice(0, 4).map(c => `<span class="ahead-pill"><span>Ch ${c.num}:</span> ${c.title}</span>`).join('')}
+                </div>
+              </div>
 
-          // Sheet Footer
-          const footer = document.createElement('div');
-          footer.className = 'pdf-page-footer';
-          footer.innerHTML = `
-            <div>PSIR Master Suite • Political Theory</div>
-            <div>${ch.page_range}</div>
-          `;
-          sheet.appendChild(footer);
-
-          container.appendChild(sheet);
+              <div class="journey-action-bar">
+                <button class="deck-nav-btn" onclick="window.slidePrev()">
+                  <span>◀</span> Previous Slide
+                </button>
+                <button class="journey-primary-btn" onclick="window.slideNext()">
+                  <span>Continue Walking</span> <span>▶</span>
+                </button>
+              </div>
+            `;
+            container.appendChild(waypointCard);
+          }
         });
 
         applyScoresToDOM();
         updateScoreBadges();
         checkCoreMarxistCompletion();
+        updateSliderIndicator();
+
+        const totalSlides = container.querySelectorAll('.notes-slide-card').length;
+        if (currentSlideIndex >= totalSlides) {
+          currentSlideIndex = 0;
+        }
+        if (isSliderMode && totalSlides > 0) {
+          goToSlide(currentSlideIndex);
+        }
       }
 
       // Top Filter Buttons Click Handling
@@ -2363,6 +3080,111 @@
           activeFilter = btn.getAttribute('data-filter');
           renderContent();
         });
+      });
+
+      // ========================================================
+      // SLIDER DECK CONTROLS & NAVIGATION ENGINE
+      // ========================================================
+      function updateSliderIndicator() {
+        const container = document.getElementById('dynamicPdfChaptersContainer');
+        const slides = container.querySelectorAll('.notes-slide-card');
+        const total = slides.length;
+        const currentSlideNumEl = document.getElementById('currentSlideNum');
+        const totalSlidesNumEl = document.getElementById('totalSlidesNum');
+        const fillEl = document.getElementById('deckProgressFill');
+        const prevBtn = document.getElementById('deckPrevBtn');
+        const nextBtn = document.getElementById('deckNextBtn');
+
+        if (totalSlidesNumEl) totalSlidesNumEl.textContent = total;
+        if (currentSlideNumEl) currentSlideNumEl.textContent = total === 0 ? 0 : currentSlideIndex + 1;
+        if (fillEl) {
+          const pct = total <= 1 ? 100 : Math.round((currentSlideIndex / (total - 1)) * 100);
+          fillEl.style.width = `${pct}%`;
+        }
+        if (prevBtn) prevBtn.disabled = currentSlideIndex <= 0;
+        if (nextBtn) nextBtn.disabled = currentSlideIndex >= total - 1;
+      }
+
+      function goToSlide(index) {
+        const container = document.getElementById('dynamicPdfChaptersContainer');
+        const slides = container.querySelectorAll('.notes-slide-card');
+        if (!slides.length) return;
+        const clamped = Math.max(0, Math.min(index, slides.length - 1));
+        currentSlideIndex = clamped;
+        slides[clamped].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+        updateSliderIndicator();
+      }
+
+      window.slideNext = function () {
+        goToSlide(currentSlideIndex + 1);
+      };
+
+      window.slidePrev = function () {
+        goToSlide(currentSlideIndex - 1);
+      };
+
+      const deckPrevBtn = document.getElementById('deckPrevBtn');
+      if (deckPrevBtn) deckPrevBtn.addEventListener('click', window.slidePrev);
+      const deckNextBtn = document.getElementById('deckNextBtn');
+      if (deckNextBtn) deckNextBtn.addEventListener('click', window.slideNext);
+
+      // Deck Mode Toggle (Slider vs List)
+      const deckModeToggleBtn = document.getElementById('deckModeToggleBtn');
+      const deckModeIcon = document.getElementById('deckModeIcon');
+      const deckModeLabel = document.getElementById('deckModeLabel');
+      const container = document.getElementById('dynamicPdfChaptersContainer');
+
+      function setDeckMode(slider) {
+        isSliderMode = slider;
+        container.classList.toggle('slider-mode', slider);
+        if (deckModeIcon) deckModeIcon.textContent = slider ? '📑' : '🎴';
+        if (deckModeLabel) deckModeLabel.textContent = slider ? 'List' : 'Slides';
+        if (slider) {
+          goToSlide(currentSlideIndex);
+        }
+      }
+
+      if (deckModeToggleBtn) {
+        deckModeToggleBtn.addEventListener('click', () => {
+          setDeckMode(!isSliderMode);
+          showToast(isSliderMode ? 'Horizontal Slide Mode Enabled' : 'Continuous List Mode Enabled');
+        });
+      }
+
+      // Debounced scroll listener to update slide indicator on horizontal swipe
+      let scrollDebounce = null;
+      container.addEventListener('scroll', () => {
+        if (!isSliderMode) return;
+        clearTimeout(scrollDebounce);
+        scrollDebounce = setTimeout(() => {
+          const slides = Array.from(container.querySelectorAll('.notes-slide-card'));
+          if (!slides.length) return;
+          const containerLeft = container.getBoundingClientRect().left;
+          let closestIdx = 0;
+          let minDiff = Infinity;
+          slides.forEach((sl, idx) => {
+            const diff = Math.abs(sl.getBoundingClientRect().left - containerLeft);
+            if (diff < minDiff) {
+              minDiff = diff;
+              closestIdx = idx;
+            }
+          });
+          if (closestIdx !== currentSlideIndex) {
+            currentSlideIndex = closestIdx;
+            updateSliderIndicator();
+          }
+        }, 60);
+      }, { passive: true });
+
+      // Keyboard arrow keys for slide navigation
+      window.addEventListener('keydown', (e) => {
+        if (['INPUT', 'TEXTAREA'].includes(document.activeElement?.tagName)) return;
+        if (!isSliderMode) return;
+        if (e.key === 'ArrowRight') {
+          window.slideNext();
+        } else if (e.key === 'ArrowLeft') {
+          window.slidePrev();
+        }
       });
 
       // Sidebar Drawer & Mobile Controls
