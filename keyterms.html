@@ -1493,13 +1493,13 @@
       </div>
       <div class="brand-title-wrap">
         <h1 class="brand-title">POLITICAL SLANGS & HOOKS</h1>
-        <div class="brand-sub">100 High-Yield PSIR Catchphrases • Batches 1, 2 & 3 Active (1–60 Ultra-Crisp)</div>
+        <div class="brand-sub">100 High-Yield PSIR Catchphrases • Batches 1 to 4 Active (1–80 Ultra-Crisp)</div>
       </div>
     </div>
 
     <!-- Filters on Top Bar -->
     <div class="topbar-filters">
-      <button class="top-filter-btn active" data-filter="all">All Slangs (<span id="ktCountAll">60</span>)</button>
+      <button class="top-filter-btn active" data-filter="all">All Slangs (<span id="ktCountAll">80</span>)</button>
       <button class="top-filter-btn" data-filter="right">Mastered ✓ (<span id="ktCountRight">0</span>)</button>
       <button class="top-filter-btn" data-filter="wrong">Revise ✕ (<span id="ktCountWrong">0</span>)</button>
       <button class="top-filter-btn" data-filter="circle">In Review ○ (<span id="ktCountCircle">0</span>)</button>
@@ -1578,12 +1578,12 @@
         
         <div style="font-size: 11px; font-weight: 800; color: var(--text-dim); text-transform: uppercase; margin: 4px 0 2px;">Curated Batches (5 × 20)</div>
         
-                                <div class="sidebar-batch-card active-batch" id="batchBtn_all" onclick="filterByBatch('all')">
+                                        <div class="sidebar-batch-card active-batch" id="batchBtn_all" onclick="filterByBatch('all')">
           <div style="display: flex; justify-content: space-between; align-items: center;">
             <strong>📚 All Batches (Active)</strong>
-            <span class="batch-status-tag active" style="background: rgba(2, 132, 199, 0.12); color: var(--brand-primary);">60 Slangs</span>
+            <span class="batch-status-tag active" style="background: rgba(2, 132, 199, 0.12); color: var(--brand-primary);">80 Slangs</span>
           </div>
-          <span style="font-size: 11px; color: var(--text-muted);">Batches 1, 2 & 3 (Ultra-Crisp) • 6 Checkpoints</span>
+          <span style="font-size: 11px; color: var(--text-muted);">Batches 1–4 (Ultra-Crisp) • 8 Checkpoints</span>
         </div>
 
         <div class="sidebar-batch-card" id="batchBtn_1" onclick="filterByBatch(1)">
@@ -1610,12 +1610,12 @@
           <span style="font-size: 11px; color: var(--text-muted);">20 Slangs • 2 Checkpoints</span>
         </div>
 
-        <div class="sidebar-batch-card" style="opacity: 0.65; cursor: default;">
+        <div class="sidebar-batch-card" id="batchBtn_4" onclick="filterByBatch(4)">
           <div style="display: flex; justify-content: space-between; align-items: center;">
-            <strong>Batch 4: Global Order & Strategy</strong>
-            <span class="batch-status-tag upcoming">Upcoming</span>
+            <strong style="color: var(--accent-heading);">Batch 4: Global Order & Strategy</strong>
+            <span class="batch-status-tag active">Slangs 61–80</span>
           </div>
-          <span style="font-size: 11px; color: var(--text-muted);">Slangs 61–80 (Awaiting user go-ahead)</span>
+          <span style="font-size: 11px; color: var(--text-muted);">20 Slangs • 2 Checkpoints</span>
         </div>
 
         <div class="sidebar-batch-card" style="opacity: 0.65; cursor: default;">
@@ -1623,7 +1623,7 @@
             <strong>Batch 5: Radical Critique & Theory</strong>
             <span class="batch-status-tag upcoming">Upcoming</span>
           </div>
-          <span style="font-size: 11px; color: var(--text-muted);">Slangs 81–100</span>
+          <span style="font-size: 11px; color: var(--text-muted);">Slangs 81–100 (Final Batch)</span>
         </div>
 
         <div style="display:flex; justify-content:space-between; align-items:center; margin-top: 10px;">
@@ -1932,6 +1932,106 @@
             <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Dominant Caste</span>
             <span style="font-size: 10px; color: var(--text-dim);"></span>
           </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_61')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#61</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Offensive Realism &amp; Tragedy of Great Power Politics</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_62')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#62</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Security Dilemma</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_63')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#63</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Democratic Peace Theory</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_64')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#64</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">String of Pearls vs. Necklace of Diamonds</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_65')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#65</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Heartland Theory</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_66')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#66</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Rimland Theory</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_67')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#67</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Nuclear Taboo &amp; Deterrence Ethics</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_68')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#68</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Stability-Instability Paradox</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_69')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#69</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Strategic Hedging &amp; The Middle Power Play</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_70')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#70</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Hegemonic Stability Theory &amp; Free Riding</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_71')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#71</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Kindleberger Trap</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_72')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#72</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Transactional Diplomacy &amp; Post-Ideological Realpolitik</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_73')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#73</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Security Community</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_74')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#74</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Complex Interdependence</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_75')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#75</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Anarchy is What States Make of It</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_76')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#76</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Indo-Pacific Re-balancing / The Pivot</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_77')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#77</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Debt-Trap Diplomacy</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_78')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#78</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Minilateralism &amp; Coalitions of the Willing</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_79')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#79</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Geoeconomics &amp; Economic Statecraft</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_80')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#80</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Indian Strategic Culture: Moralism vs. Realpolitik</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
         </div>
       </div>
     </aside>
@@ -1947,7 +2047,7 @@
           
           <div class="deck-counter-badge" id="deckCounterBadge" title="Current Key Term Position">
             <span class="deck-icon">🎴</span>
-            <span class="deck-text">Slang <strong id="deckCurIdx">1</strong> of <span id="deckTotalCount" class="total-digits">60</span></span>
+            <span class="deck-text">Slang <strong id="deckCurIdx">1</strong> of <span id="deckTotalCount" class="total-digits">80</span></span>
           </div>
           
           <button class="deck-nav-btn deck-next-btn" id="deckNextBtn" title="Next Key Term Card" aria-label="Next">
@@ -1971,7 +2071,7 @@
         <div class="keyterm-card" data-id="slang_1" data-card-index="1">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#1 of 60</span>
+              <span class="kt-idx-pill">#1 of 80</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">Indian Politics</span>
@@ -2032,7 +2132,7 @@
         <div class="keyterm-card" data-id="slang_2" data-card-index="2">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#2 of 60</span>
+              <span class="kt-idx-pill">#2 of 80</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 2A</span>
               <span class="category-pill">International Relations</span>
@@ -2093,7 +2193,7 @@
         <div class="keyterm-card" data-id="slang_3" data-card-index="3">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#3 of 60</span>
+              <span class="kt-idx-pill">#3 of 80</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">State &amp; Governance</span>
@@ -2154,7 +2254,7 @@
         <div class="keyterm-card" data-id="slang_4" data-card-index="4">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#4 of 60</span>
+              <span class="kt-idx-pill">#4 of 80</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1A &amp; 1B</span>
               <span class="category-pill">Political Theory</span>
@@ -2215,7 +2315,7 @@
         <div class="keyterm-card" data-id="slang_5" data-card-index="5">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#5 of 60</span>
+              <span class="kt-idx-pill">#5 of 80</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">Indian Politics</span>
@@ -2276,7 +2376,7 @@
         <div class="keyterm-card" data-id="slang_6" data-card-index="6">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#6 of 60</span>
+              <span class="kt-idx-pill">#6 of 80</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">Indian Politics</span>
@@ -2337,7 +2437,7 @@
         <div class="keyterm-card" data-id="slang_7" data-card-index="7">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#7 of 60</span>
+              <span class="kt-idx-pill">#7 of 80</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1A &amp; 1B</span>
               <span class="category-pill">Political Theory</span>
@@ -2398,7 +2498,7 @@
         <div class="keyterm-card" data-id="slang_8" data-card-index="8">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#8 of 60</span>
+              <span class="kt-idx-pill">#8 of 80</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">State &amp; Governance</span>
@@ -2459,7 +2559,7 @@
         <div class="keyterm-card" data-id="slang_9" data-card-index="9">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#9 of 60</span>
+              <span class="kt-idx-pill">#9 of 80</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 2A</span>
               <span class="category-pill">International Relations</span>
@@ -2520,7 +2620,7 @@
         <div class="keyterm-card" data-id="slang_10" data-card-index="10">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#10 of 60</span>
+              <span class="kt-idx-pill">#10 of 80</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">State &amp; Governance</span>
@@ -2626,7 +2726,7 @@
         <div class="keyterm-card" data-id="slang_11" data-card-index="11">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#11 of 60</span>
+              <span class="kt-idx-pill">#11 of 80</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">Indian Politics</span>
@@ -2687,7 +2787,7 @@
         <div class="keyterm-card" data-id="slang_12" data-card-index="12">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#12 of 60</span>
+              <span class="kt-idx-pill">#12 of 80</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">Indian Politics</span>
@@ -2748,7 +2848,7 @@
         <div class="keyterm-card" data-id="slang_13" data-card-index="13">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#13 of 60</span>
+              <span class="kt-idx-pill">#13 of 80</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">Indian Politics</span>
@@ -2809,7 +2909,7 @@
         <div class="keyterm-card" data-id="slang_14" data-card-index="14">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#14 of 60</span>
+              <span class="kt-idx-pill">#14 of 80</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">Indian Politics</span>
@@ -2870,7 +2970,7 @@
         <div class="keyterm-card" data-id="slang_15" data-card-index="15">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#15 of 60</span>
+              <span class="kt-idx-pill">#15 of 80</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">Indian Politics</span>
@@ -2931,7 +3031,7 @@
         <div class="keyterm-card" data-id="slang_16" data-card-index="16">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#16 of 60</span>
+              <span class="kt-idx-pill">#16 of 80</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 2B</span>
               <span class="category-pill">International Relations</span>
@@ -2992,7 +3092,7 @@
         <div class="keyterm-card" data-id="slang_17" data-card-index="17">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#17 of 60</span>
+              <span class="kt-idx-pill">#17 of 80</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 2A</span>
               <span class="category-pill">International Relations</span>
@@ -3053,7 +3153,7 @@
         <div class="keyterm-card" data-id="slang_18" data-card-index="18">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#18 of 60</span>
+              <span class="kt-idx-pill">#18 of 80</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1A</span>
               <span class="category-pill">Political Theory</span>
@@ -3114,7 +3214,7 @@
         <div class="keyterm-card" data-id="slang_19" data-card-index="19">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#19 of 60</span>
+              <span class="kt-idx-pill">#19 of 80</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1A</span>
               <span class="category-pill">Political Theory</span>
@@ -3175,7 +3275,7 @@
         <div class="keyterm-card" data-id="slang_20" data-card-index="20">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#20 of 60</span>
+              <span class="kt-idx-pill">#20 of 80</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1A &amp; 2A</span>
               <span class="category-pill">Political Theory</span>
@@ -3281,7 +3381,7 @@
         <div class="keyterm-card" data-id="slang_21" data-card-index="21">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#21 of 60</span>
+              <span class="kt-idx-pill">#21 of 80</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1A</span>
               <span class="category-pill">Political Theory</span>
@@ -3342,7 +3442,7 @@
         <div class="keyterm-card" data-id="slang_22" data-card-index="22">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#22 of 60</span>
+              <span class="kt-idx-pill">#22 of 80</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1B &amp; 2A</span>
               <span class="category-pill">State &amp; Governance</span>
@@ -3403,7 +3503,7 @@
         <div class="keyterm-card" data-id="slang_23" data-card-index="23">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#23 of 60</span>
+              <span class="kt-idx-pill">#23 of 80</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1A &amp; 1B</span>
               <span class="category-pill">Political Theory</span>
@@ -3464,7 +3564,7 @@
         <div class="keyterm-card" data-id="slang_24" data-card-index="24">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#24 of 60</span>
+              <span class="kt-idx-pill">#24 of 80</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1A &amp; 2A</span>
               <span class="category-pill">Political Theory</span>
@@ -3525,7 +3625,7 @@
         <div class="keyterm-card" data-id="slang_25" data-card-index="25">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#25 of 60</span>
+              <span class="kt-idx-pill">#25 of 80</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1A</span>
               <span class="category-pill">Political Theory</span>
@@ -3586,7 +3686,7 @@
         <div class="keyterm-card" data-id="slang_26" data-card-index="26">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#26 of 60</span>
+              <span class="kt-idx-pill">#26 of 80</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1A &amp; 1B</span>
               <span class="category-pill">State &amp; Governance</span>
@@ -3647,7 +3747,7 @@
         <div class="keyterm-card" data-id="slang_27" data-card-index="27">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#27 of 60</span>
+              <span class="kt-idx-pill">#27 of 80</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1A</span>
               <span class="category-pill">Political Theory</span>
@@ -3708,7 +3808,7 @@
         <div class="keyterm-card" data-id="slang_28" data-card-index="28">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#28 of 60</span>
+              <span class="kt-idx-pill">#28 of 80</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1A</span>
               <span class="category-pill">Political Theory</span>
@@ -3769,7 +3869,7 @@
         <div class="keyterm-card" data-id="slang_29" data-card-index="29">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#29 of 60</span>
+              <span class="kt-idx-pill">#29 of 80</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1A</span>
               <span class="category-pill">Political Theory</span>
@@ -3830,7 +3930,7 @@
         <div class="keyterm-card" data-id="slang_30" data-card-index="30">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#30 of 60</span>
+              <span class="kt-idx-pill">#30 of 80</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 2A &amp; 2B</span>
               <span class="category-pill">International Relations</span>
@@ -3936,7 +4036,7 @@
         <div class="keyterm-card" data-id="slang_31" data-card-index="31">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#31 of 60</span>
+              <span class="kt-idx-pill">#31 of 80</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1A &amp; 1B</span>
               <span class="category-pill">Indian Politics</span>
@@ -3997,7 +4097,7 @@
         <div class="keyterm-card" data-id="slang_32" data-card-index="32">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#32 of 60</span>
+              <span class="kt-idx-pill">#32 of 80</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1A &amp; 2A</span>
               <span class="category-pill">State &amp; Governance</span>
@@ -4058,7 +4158,7 @@
         <div class="keyterm-card" data-id="slang_33" data-card-index="33">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#33 of 60</span>
+              <span class="kt-idx-pill">#33 of 80</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 2A</span>
               <span class="category-pill">International Relations</span>
@@ -4119,7 +4219,7 @@
         <div class="keyterm-card" data-id="slang_34" data-card-index="34">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#34 of 60</span>
+              <span class="kt-idx-pill">#34 of 80</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 2A</span>
               <span class="category-pill">International Relations</span>
@@ -4180,7 +4280,7 @@
         <div class="keyterm-card" data-id="slang_35" data-card-index="35">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#35 of 60</span>
+              <span class="kt-idx-pill">#35 of 80</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 2A &amp; 2B</span>
               <span class="category-pill">International Relations</span>
@@ -4241,7 +4341,7 @@
         <div class="keyterm-card" data-id="slang_36" data-card-index="36">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#36 of 60</span>
+              <span class="kt-idx-pill">#36 of 80</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">Indian Politics</span>
@@ -4302,7 +4402,7 @@
         <div class="keyterm-card" data-id="slang_37" data-card-index="37">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#37 of 60</span>
+              <span class="kt-idx-pill">#37 of 80</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1A</span>
               <span class="category-pill">Political Theory</span>
@@ -4363,7 +4463,7 @@
         <div class="keyterm-card" data-id="slang_38" data-card-index="38">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#38 of 60</span>
+              <span class="kt-idx-pill">#38 of 80</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1A</span>
               <span class="category-pill">Political Theory</span>
@@ -4424,7 +4524,7 @@
         <div class="keyterm-card" data-id="slang_39" data-card-index="39">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#39 of 60</span>
+              <span class="kt-idx-pill">#39 of 80</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1A &amp; 1B</span>
               <span class="category-pill">Political Theory</span>
@@ -4485,7 +4585,7 @@
         <div class="keyterm-card" data-id="slang_40" data-card-index="40">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#40 of 60</span>
+              <span class="kt-idx-pill">#40 of 80</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 2A &amp; 2B</span>
               <span class="category-pill">International Relations</span>
@@ -4591,7 +4691,7 @@
         <div class="keyterm-card" data-id="slang_41" data-card-index="41">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#41 of 60</span>
+              <span class="kt-idx-pill">#41 of 80</span>
               <span class="batch-badge">BATCH 3</span>
               <span class="paper-pill">Paper 1A &amp; 1B</span>
               <span class="category-pill">State &amp; Governance</span>
@@ -4652,7 +4752,7 @@
         <div class="keyterm-card" data-id="slang_42" data-card-index="42">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#42 of 60</span>
+              <span class="kt-idx-pill">#42 of 80</span>
               <span class="batch-badge">BATCH 3</span>
               <span class="paper-pill">Paper 1B &amp; 2A</span>
               <span class="category-pill">State &amp; Governance</span>
@@ -4713,7 +4813,7 @@
         <div class="keyterm-card" data-id="slang_43" data-card-index="43">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#43 of 60</span>
+              <span class="kt-idx-pill">#43 of 80</span>
               <span class="batch-badge">BATCH 3</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">State &amp; Governance</span>
@@ -4774,7 +4874,7 @@
         <div class="keyterm-card" data-id="slang_44" data-card-index="44">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#44 of 60</span>
+              <span class="kt-idx-pill">#44 of 80</span>
               <span class="batch-badge">BATCH 3</span>
               <span class="paper-pill">Paper 1A &amp; 2A</span>
               <span class="category-pill">Political Theory</span>
@@ -4835,7 +4935,7 @@
         <div class="keyterm-card" data-id="slang_45" data-card-index="45">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#45 of 60</span>
+              <span class="kt-idx-pill">#45 of 80</span>
               <span class="batch-badge">BATCH 3</span>
               <span class="paper-pill">Paper 1A &amp; 1B</span>
               <span class="category-pill">State &amp; Governance</span>
@@ -4896,7 +4996,7 @@
         <div class="keyterm-card" data-id="slang_46" data-card-index="46">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#46 of 60</span>
+              <span class="kt-idx-pill">#46 of 80</span>
               <span class="batch-badge">BATCH 3</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">Indian Politics</span>
@@ -4957,7 +5057,7 @@
         <div class="keyterm-card" data-id="slang_47" data-card-index="47">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#47 of 60</span>
+              <span class="kt-idx-pill">#47 of 80</span>
               <span class="batch-badge">BATCH 3</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">Indian Politics</span>
@@ -5018,7 +5118,7 @@
         <div class="keyterm-card" data-id="slang_48" data-card-index="48">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#48 of 60</span>
+              <span class="kt-idx-pill">#48 of 80</span>
               <span class="batch-badge">BATCH 3</span>
               <span class="paper-pill">Paper 1A &amp; 1B</span>
               <span class="category-pill">Political Theory</span>
@@ -5079,7 +5179,7 @@
         <div class="keyterm-card" data-id="slang_49" data-card-index="49">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#49 of 60</span>
+              <span class="kt-idx-pill">#49 of 80</span>
               <span class="batch-badge">BATCH 3</span>
               <span class="paper-pill">Paper 1A</span>
               <span class="category-pill">Political Theory</span>
@@ -5140,7 +5240,7 @@
         <div class="keyterm-card" data-id="slang_50" data-card-index="50">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#50 of 60</span>
+              <span class="kt-idx-pill">#50 of 80</span>
               <span class="batch-badge">BATCH 3</span>
               <span class="paper-pill">Paper 1A &amp; 1B</span>
               <span class="category-pill">Political Theory</span>
@@ -5246,7 +5346,7 @@
         <div class="keyterm-card" data-id="slang_51" data-card-index="51">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#51 of 60</span>
+              <span class="kt-idx-pill">#51 of 80</span>
               <span class="batch-badge">BATCH 3</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">Indian Politics</span>
@@ -5307,7 +5407,7 @@
         <div class="keyterm-card" data-id="slang_52" data-card-index="52">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#52 of 60</span>
+              <span class="kt-idx-pill">#52 of 80</span>
               <span class="batch-badge">BATCH 3</span>
               <span class="paper-pill">Paper 1A</span>
               <span class="category-pill">Political Theory</span>
@@ -5368,7 +5468,7 @@
         <div class="keyterm-card" data-id="slang_53" data-card-index="53">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#53 of 60</span>
+              <span class="kt-idx-pill">#53 of 80</span>
               <span class="batch-badge">BATCH 3</span>
               <span class="paper-pill">Paper 1A &amp; 2A</span>
               <span class="category-pill">State &amp; Governance</span>
@@ -5429,7 +5529,7 @@
         <div class="keyterm-card" data-id="slang_54" data-card-index="54">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#54 of 60</span>
+              <span class="kt-idx-pill">#54 of 80</span>
               <span class="batch-badge">BATCH 3</span>
               <span class="paper-pill">Paper 1A</span>
               <span class="category-pill">Political Theory</span>
@@ -5490,7 +5590,7 @@
         <div class="keyterm-card" data-id="slang_55" data-card-index="55">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#55 of 60</span>
+              <span class="kt-idx-pill">#55 of 80</span>
               <span class="batch-badge">BATCH 3</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">Indian Politics</span>
@@ -5551,7 +5651,7 @@
         <div class="keyterm-card" data-id="slang_56" data-card-index="56">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#56 of 60</span>
+              <span class="kt-idx-pill">#56 of 80</span>
               <span class="batch-badge">BATCH 3</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">Indian Politics</span>
@@ -5612,7 +5712,7 @@
         <div class="keyterm-card" data-id="slang_57" data-card-index="57">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#57 of 60</span>
+              <span class="kt-idx-pill">#57 of 80</span>
               <span class="batch-badge">BATCH 3</span>
               <span class="paper-pill">Paper 1A &amp; 1B</span>
               <span class="category-pill">Political Theory</span>
@@ -5673,7 +5773,7 @@
         <div class="keyterm-card" data-id="slang_58" data-card-index="58">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#58 of 60</span>
+              <span class="kt-idx-pill">#58 of 80</span>
               <span class="batch-badge">BATCH 3</span>
               <span class="paper-pill">Paper 1A</span>
               <span class="category-pill">Political Theory</span>
@@ -5734,7 +5834,7 @@
         <div class="keyterm-card" data-id="slang_59" data-card-index="59">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#59 of 60</span>
+              <span class="kt-idx-pill">#59 of 80</span>
               <span class="batch-badge">BATCH 3</span>
               <span class="paper-pill">Paper 1A</span>
               <span class="category-pill">Political Theory</span>
@@ -5795,7 +5895,7 @@
         <div class="keyterm-card" data-id="slang_60" data-card-index="60">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#60 of 60</span>
+              <span class="kt-idx-pill">#60 of 80</span>
               <span class="batch-badge">BATCH 3</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">Indian Politics</span>
@@ -5896,6 +5996,1316 @@
             <span class="swipe-hint-text">⟵ Swipe ⟶</span>
           </div>
         </div>
+
+        <!-- SLANG #61: Offensive Realism &amp; Tragedy of Great Power Politics -->
+        <div class="keyterm-card" data-id="slang_61" data-card-index="61">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#61 of 80</span>
+              <span class="batch-badge">BATCH 4</span>
+              <span class="paper-pill">Paper 2A</span>
+              <span class="category-pill">International Relations</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_61', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_61', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_61', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Offensive Realism &amp; Tragedy of Great Power Politics</span>
+              <span class="scholar-tag">🎓 John J. Mearsheimer</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_61')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"In international anarchy without a global 911, great powers are condemned to maximize power toward regional hegemony."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">States cannot trust rival intentions. Survival demands relentless accumulation of offensive military superiority to achieve regional dominance and block distant peer competitors.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 2A • Theories of IR: Structural Realism &amp; US–China Rivalry)</span>
+              </div>
+              <div class="exam-utility-content">Paper 2A (Realism): &#x27;Mearsheimer&#x27;s &quot;offensive realism&quot; explains US–China collision as structural inevitability rather than ideological friction.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#mearsheimer</span><span class="kt-keyword-pill">#offensive realism</span><span class="kt-keyword-pill">#tragedy of great power politics</span><span class="kt-keyword-pill">#structural realism</span><span class="kt-keyword-pill">#hegemony</span><span class="kt-keyword-pill">#anarchy</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #62: Security Dilemma -->
+        <div class="keyterm-card" data-id="slang_62" data-card-index="62">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#62 of 80</span>
+              <span class="batch-badge">BATCH 4</span>
+              <span class="paper-pill">Paper 2A</span>
+              <span class="category-pill">International Relations</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_62', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_62', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_62', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Security Dilemma</span>
+              <span class="scholar-tag">🎓 Robert Jervis / John H. Herz</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_62')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Measures taken by one state to increase its security inadvertently decrease the security of others, spiraling into mutual peril."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Defensive arming by State A is perceived as offensive intent by State B. Both arm defensively, worsening crisis instability without either wanting war.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 2A • Theories of IR: Defensive Realism, Perceptions &amp; Misperceptions)</span>
+              </div>
+              <div class="exam-utility-content">Paper 2A &amp; 2B (Arms Races): &#x27;Jervis&#x27;s &quot;security dilemma&quot; explains why India–Pakistan military modernizations trigger reactive escalations despite defensive rationales.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#security dilemma</span><span class="kt-keyword-pill">#jervis</span><span class="kt-keyword-pill">#herz</span><span class="kt-keyword-pill">#defensive realism</span><span class="kt-keyword-pill">#arms race</span><span class="kt-keyword-pill">#crisis instability</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #63: Democratic Peace Theory -->
+        <div class="keyterm-card" data-id="slang_63" data-card-index="63">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#63 of 80</span>
+              <span class="batch-badge">BATCH 4</span>
+              <span class="paper-pill">Paper 2A</span>
+              <span class="category-pill">International Relations</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_63', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_63', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_63', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Democratic Peace Theory</span>
+              <span class="scholar-tag">🎓 Michael W. Doyle / Immanuel Kant</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_63')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Constitutional democracies rarely fight one another, bound by republican institutional constraints and shared commercial norms."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Kantian pacific union rests on three pillars: voter accountability restraining warlike leaders, domestic culture of rule of law, and dense economic interdependence.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 2A • Liberalism in IR, Perpetual Peace &amp; Institutionalism)</span>
+              </div>
+              <div class="exam-utility-content">Paper 2A (Liberalism): &#x27;Doyle&#x27;s &quot;Democratic Peace Theory&quot; challenges realist fatalism, showing that shared democratic institutions establish zones of durable interstate peace.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#democratic peace theory</span><span class="kt-keyword-pill">#doyle</span><span class="kt-keyword-pill">#kant</span><span class="kt-keyword-pill">#liberalism</span><span class="kt-keyword-pill">#perpetual peace</span><span class="kt-keyword-pill">#pacific union</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #64: String of Pearls vs. Necklace of Diamonds -->
+        <div class="keyterm-card" data-id="slang_64" data-card-index="64">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#64 of 80</span>
+              <span class="batch-badge">BATCH 4</span>
+              <span class="paper-pill">Paper 2B</span>
+              <span class="category-pill">International Relations</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_64', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_64', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_64', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">String of Pearls vs. Necklace of Diamonds</span>
+              <span class="scholar-tag">🎓 C. Raja Mohan / Gurpreet S. Khurana</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_64')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"India counters China&#x27;s maritime encirclement by securing strategic access to critical choke points from Duqm to Changi."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Beijing builds commercial-naval outposts (Gwadar, Hambantota) around India (&#x27;String of Pearls&#x27;). New Delhi answers with &#x27;Necklace of Diamonds&#x27;, accessing Oman, Iran, Mauritius, and Singapore.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 2B • India&#x27;s Foreign Policy, Indian Ocean Geopolitics &amp; Maritime Security)</span>
+              </div>
+              <div class="exam-utility-content">Paper 2B (Maritime Security): &#x27;India counters Beijing&#x27;s &quot;String of Pearls&quot; through its &quot;Necklace of Diamonds&quot; strategy across key Indo-Pacific choke points.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#string of pearls</span><span class="kt-keyword-pill">#necklace of diamonds</span><span class="kt-keyword-pill">#raja mohan</span><span class="kt-keyword-pill">#indian ocean</span><span class="kt-keyword-pill">#indo-pacific</span><span class="kt-keyword-pill">#maritime security</span><span class="kt-keyword-pill">#gwadar</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #65: Heartland Theory -->
+        <div class="keyterm-card" data-id="slang_65" data-card-index="65">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#65 of 80</span>
+              <span class="batch-badge">BATCH 4</span>
+              <span class="paper-pill">Paper 2A &amp; 2B</span>
+              <span class="category-pill">International Relations</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_65', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_65', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_65', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Heartland Theory</span>
+              <span class="scholar-tag">🎓 Sir Halford J. Mackinder</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_65')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Who rules the Heartland commands the World-Island; who rules the World-Island commands the world."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">The vast Eurasian continental interior, invulnerable to sea power and linked by railways, constitutes the strategic pivot of world politics.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 2A &amp; 2B • Classical Geopolitics, Continental Power &amp; Eurasia)</span>
+              </div>
+              <div class="exam-utility-content">Paper 2A &amp; 2B (Geopolitics): &#x27;Mackinder&#x27;s &quot;Heartland Theory&quot; revives as China&#x27;s BRI and the Russia–China axis consolidate continental Eurasian connectivity.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#mackinder</span><span class="kt-keyword-pill">#heartland theory</span><span class="kt-keyword-pill">#geopolitics</span><span class="kt-keyword-pill">#eurasia</span><span class="kt-keyword-pill">#world island</span><span class="kt-keyword-pill">#continental power</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #66: Rimland Theory -->
+        <div class="keyterm-card" data-id="slang_66" data-card-index="66">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#66 of 80</span>
+              <span class="batch-badge">BATCH 4</span>
+              <span class="paper-pill">Paper 2A &amp; 2B</span>
+              <span class="category-pill">International Relations</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_66', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_66', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_66', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Rimland Theory</span>
+              <span class="scholar-tag">🎓 Nicholas J. Spykman</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_66')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Who controls the Rimland rules Eurasia; who rules Eurasia controls the destinies of the world."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">The maritime coastal rim of Europe, Middle East, and Asia has greater population and wealth than the Heartland, making it the primary theater of global dominance.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 2A &amp; 2B • Geopolitics, Maritime Containment &amp; The Indo-Pacific)</span>
+              </div>
+              <div class="exam-utility-content">Paper 2A &amp; 2B (Indo-Pacific): &#x27;Spykman&#x27;s &quot;Rimland Theory&quot; provides the geopolitical rationale for the Quad and maritime containment of continental revisionists.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#spykman</span><span class="kt-keyword-pill">#rimland theory</span><span class="kt-keyword-pill">#geopolitics</span><span class="kt-keyword-pill">#indo-pacific</span><span class="kt-keyword-pill">#containment</span><span class="kt-keyword-pill">#maritime power</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #67: Nuclear Taboo &amp; Deterrence Ethics -->
+        <div class="keyterm-card" data-id="slang_67" data-card-index="67">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#67 of 80</span>
+              <span class="batch-badge">BATCH 4</span>
+              <span class="paper-pill">Paper 2A</span>
+              <span class="category-pill">International Relations</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_67', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_67', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_67', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Nuclear Taboo &amp; Deterrence Ethics</span>
+              <span class="scholar-tag">🎓 Nina Tannenwald / Thomas Schelling</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_67')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Nuclear non-use is governed not merely by mutual destruction, but by an internalized normative taboo stigmatizing atomic arms as uncivilized."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Constructivist ethics explain why nuclear states avoided using atomic weapons even during humiliating conventional retreats (US in Vietnam, USSR in Afghanistan).</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 2A • Nuclear Weapons, Arms Control, Deterrence &amp; Ethics in IR)</span>
+              </div>
+              <div class="exam-utility-content">Paper 2A (Nuclear Strategy): &#x27;Tannenwald&#x27;s &quot;nuclear taboo&quot; demonstrates that unwritten normative prohibitions restrain atomic weapons far more effectively than formal treaties.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#nuclear taboo</span><span class="kt-keyword-pill">#tannenwald</span><span class="kt-keyword-pill">#schelling</span><span class="kt-keyword-pill">#nuclear deterrence</span><span class="kt-keyword-pill">#constructivism</span><span class="kt-keyword-pill">#arms control</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #68: Stability-Instability Paradox -->
+        <div class="keyterm-card" data-id="slang_68" data-card-index="68">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#68 of 80</span>
+              <span class="batch-badge">BATCH 4</span>
+              <span class="paper-pill">Paper 2A &amp; 2B</span>
+              <span class="category-pill">International Relations</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_68', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_68', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_68', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Stability-Instability Paradox</span>
+              <span class="scholar-tag">🎓 Glenn H. Snyder / Sumit Ganguly</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_68')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Strategic nuclear parity prevents full-scale war, but perversely emboldens revisionist states to sponsor sub-conventional proxy conflicts."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Mutual second-strike capability creates stability at the high end, removing escalation fears and encouraging low-intensity cross-border terrorism and limited border skirmishes.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 2A &amp; 2B • Nuclear Weapons in South Asia, Kargil &amp; Sub-Conventional War)</span>
+              </div>
+              <div class="exam-utility-content">Paper 2B (Nuclear South Asia): &#x27;Snyder&#x27;s &quot;stability-instability paradox&quot; explains how Pakistan&#x27;s nuclear shield enabled Kargil incursions and cross-border terrorism against India.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#stability-instability paradox</span><span class="kt-keyword-pill">#snyder</span><span class="kt-keyword-pill">#ganguly</span><span class="kt-keyword-pill">#nuclear deterrence</span><span class="kt-keyword-pill">#kargil</span><span class="kt-keyword-pill">#cross-border terrorism</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #69: Strategic Hedging &amp; The Middle Power Play -->
+        <div class="keyterm-card" data-id="slang_69" data-card-index="69">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#69 of 80</span>
+              <span class="batch-badge">BATCH 4</span>
+              <span class="paper-pill">Paper 2A &amp; 2B</span>
+              <span class="category-pill">International Relations</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_69', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_69', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_69', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Strategic Hedging &amp; The Middle Power Play</span>
+              <span class="scholar-tag">🎓 Evelyn Goh / Rory Medcalf</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_69')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Rejecting rigid balancing or subservient bandwagoning, middle powers maximize security through multi-aligned economic engagement and defense insurance."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Secondary states (ASEAN, India) trade with Beijing for economic growth while deepening defense interoperability with Washington, avoiding single-power entrapment.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 2A &amp; 2B • Indo-Pacific Geopolitics, ASEAN Centrality &amp; Middle Powers)</span>
+              </div>
+              <div class="exam-utility-content">Paper 2A &amp; 2B (Indo-Pacific): &#x27;Evelyn Goh&#x27;s &quot;strategic hedging&quot; decodes Asian middle-power diplomacy, proving nations prefer flexible multi-alignment over Cold War bloc alliances.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#strategic hedging</span><span class="kt-keyword-pill">#evelyn goh</span><span class="kt-keyword-pill">#middle powers</span><span class="kt-keyword-pill">#indo-pacific</span><span class="kt-keyword-pill">#asean</span><span class="kt-keyword-pill">#balancing vs bandwagoning</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #70: Hegemonic Stability Theory &amp; Free Riding -->
+        <div class="keyterm-card" data-id="slang_70" data-card-index="70">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#70 of 80</span>
+              <span class="batch-badge">BATCH 4</span>
+              <span class="paper-pill">Paper 2A</span>
+              <span class="category-pill">International Relations</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_70', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_70', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_70', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Hegemonic Stability Theory &amp; Free Riding</span>
+              <span class="scholar-tag">🎓 Charles P. Kindleberger / Robert Gilpin</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_70')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"An open world economy requires a commanding hegemon to underwrite global public goods and suppress predatory free riding."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Open sea lanes, free trade, and lender-of-last-resort finance are public goods. Without a dominant power bearing enforcement costs, international economic stability collapses.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 2A • International Political Economy, Public Goods &amp; Hegemony)</span>
+              </div>
+              <div class="exam-utility-content">Paper 2A (IPE): &#x27;Kindleberger&#x27;s &quot;Hegemonic Stability Theory&quot; proves that global financial order demands a leading superpower willing to absorb systemic costs.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#hegemonic stability theory</span><span class="kt-keyword-pill">#kindleberger</span><span class="kt-keyword-pill">#gilpin</span><span class="kt-keyword-pill">#public goods</span><span class="kt-keyword-pill">#free riding</span><span class="kt-keyword-pill">#political economy</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- CHECKPOINT QUIZ #7 (After Slang #70) -->
+        <div class="checkpoint-mcq-wrap" id="cp_cp_slang_7">
+          <div class="checkpoint-banner">
+            <span class="checkpoint-tag">🎯 CHECKPOINT QUIZ #7</span>
+            <span style="font-size: 11px; font-weight: 800; color: var(--accent-heading); background: rgba(139, 58, 43, 0.08); padding: 3px 8px; border-radius: 6px; letter-spacing: 0.3px;">🎯 UPSC PSIR CONCEPT CHECKPOINT</span>
+          </div>
+          <div class="checkpoint-q-text">In nuclear strategy and deterrence theory, which concept formulated by Glenn Snyder explains why robust nuclear deterrence between two adversaries prevents full-scale war, but simultaneously emboldens revisionist states to initiate low-intensity proxy conflict and border skirmishes?</div>
+          <div class="checkpoint-options-grid">
+            <button class="cp-option-btn " 
+                    data-opt-index="0" 
+                    onclick="handleCheckpointChoice('cp_slang_7', 0, 2)">
+              <span class="cp-letter">A</span>
+              <span>Nuclear Taboo</span>
+            </button>
+            <button class="cp-option-btn " 
+                    data-opt-index="1" 
+                    onclick="handleCheckpointChoice('cp_slang_7', 1, 2)">
+              <span class="cp-letter">B</span>
+              <span>Mutually Assured Destruction (MAD)</span>
+            </button>
+            <button class="cp-option-btn " 
+                    data-opt-index="2" 
+                    onclick="handleCheckpointChoice('cp_slang_7', 2, 2)">
+              <span class="cp-letter">C</span>
+              <span>Stability-Instability Paradox</span>
+            </button>
+            <button class="cp-option-btn " 
+                    data-opt-index="3" 
+                    onclick="handleCheckpointChoice('cp_slang_7', 3, 2)">
+              <span class="cp-letter">D</span>
+              <span>Security Dilemma</span>
+            </button>
+          </div>
+          <div class="cp-explanation-box" id="expl_cp_slang_7" style="display: none;">
+            <div style="font-weight: 800; font-size: 11px; color: var(--accent-heading); margin-bottom: 4px; text-transform: uppercase;">
+              💡 Conceptual Source & Answer Explanation:
+            </div>
+            <div>Glenn Snyder theorized the &#x27;Stability-Instability Paradox&#x27;, demonstrating that while strategic nuclear parity creates stability at the highest level of conflict, it removes the fear of full-scale escalation, perversely encouraging sub-conventional proxy warfare and low-intensity conflict.</div>
+          </div>
+          <div class="keyterm-card-bottom-bar" style="margin-top: auto;">
+            <span class="card-status-badge" style="color: var(--brand-primary); font-weight: 800;">10-Slang Checkpoint</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #71: Kindleberger Trap -->
+        <div class="keyterm-card" data-id="slang_71" data-card-index="71">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#71 of 80</span>
+              <span class="batch-badge">BATCH 4</span>
+              <span class="paper-pill">Paper 2A</span>
+              <span class="category-pill">International Relations</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_71', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_71', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_71', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Kindleberger Trap</span>
+              <span class="scholar-tag">🎓 Joseph S. Nye Jr.</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_71')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"The premier danger of hegemonic transition is not an aggressive rising power, but one too weak or unwilling to provide global public goods."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Countering the Thucydides Trap, Nye warns that a rising China refusing global burdens combined with a retreating US produces a catastrophic leadership vacuum.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 2A • Global Governance, Rise of China &amp; Hegemonic Transitions)</span>
+              </div>
+              <div class="exam-utility-content">Paper 2A (Global Governance): &#x27;Nye&#x27;s &quot;Kindleberger Trap&quot; warns that under-provision of global public goods poses a greater threat to world order than bilateral conflict.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#kindleberger trap</span><span class="kt-keyword-pill">#joseph nye</span><span class="kt-keyword-pill">#thucydides trap</span><span class="kt-keyword-pill">#global public goods</span><span class="kt-keyword-pill">#us-china</span><span class="kt-keyword-pill">#hegemony</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #72: Transactional Diplomacy &amp; Post-Ideological Realpolitik -->
+        <div class="keyterm-card" data-id="slang_72" data-card-index="72">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#72 of 80</span>
+              <span class="batch-badge">BATCH 4</span>
+              <span class="paper-pill">Paper 2A &amp; 2B</span>
+              <span class="category-pill">International Relations</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_72', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_72', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_72', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Transactional Diplomacy &amp; Post-Ideological Realpolitik</span>
+              <span class="scholar-tag">🎓 S. Jaishankar</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_72')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Navigating a fractured world through flexible plurilateral issue-based coalitions of interest rather than rigid ideological alliances."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Modern statecraft is unapologetic realpolitik. India engages the Quad for maritime security, buys Russian oil for energy needs, and champions Global South debt relief simultaneously.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 2A &amp; 2B • India&#x27;s Foreign Policy, Multi-Alignment &amp; The New World Order)</span>
+              </div>
+              <div class="exam-utility-content">Paper 2B (Indian Foreign Policy): &#x27;Jaishankar&#x27;s &quot;transactional multi-alignment&quot; maximizes national interest by replacing sentimental non-alignment with nimble issue-specific coalitions.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#transactional diplomacy</span><span class="kt-keyword-pill">#jaishankar</span><span class="kt-keyword-pill">#multi-alignment</span><span class="kt-keyword-pill">#india way</span><span class="kt-keyword-pill">#realpolitik</span><span class="kt-keyword-pill">#foreign policy</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #73: Security Community -->
+        <div class="keyterm-card" data-id="slang_73" data-card-index="73">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#73 of 80</span>
+              <span class="batch-badge">BATCH 4</span>
+              <span class="paper-pill">Paper 2A</span>
+              <span class="category-pill">International Relations</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_73', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_73', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_73', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Security Community</span>
+              <span class="scholar-tag">🎓 Karl W. Deutsch / Adler &amp; Barnett</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_73')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Integrated sovereign states developing dependable expectations of peaceful change, rendering war between them socially unthinkable."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Shared democratic norms, mutual responsiveness, and dense social transactions dissolve the security dilemma, making military defense against community members entirely obsolete (e.g., EU, Nordic states).</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 2A • Constructivism, Regional Integration &amp; Democratic Alliances)</span>
+              </div>
+              <div class="exam-utility-content">Paper 2A (Regional Integration): &#x27;Deutsch&#x27;s &quot;security community&quot; proves that sovereign states can transcend anarchy through normative social integration, abolishing armed conflict internally.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#security community</span><span class="kt-keyword-pill">#deutsch</span><span class="kt-keyword-pill">#adler</span><span class="kt-keyword-pill">#barnett</span><span class="kt-keyword-pill">#constructivism</span><span class="kt-keyword-pill">#regional integration</span><span class="kt-keyword-pill">#peace</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #74: Complex Interdependence -->
+        <div class="keyterm-card" data-id="slang_74" data-card-index="74">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#74 of 80</span>
+              <span class="batch-badge">BATCH 4</span>
+              <span class="paper-pill">Paper 2A</span>
+              <span class="category-pill">International Relations</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_74', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_74', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_74', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Complex Interdependence</span>
+              <span class="scholar-tag">🎓 Robert O. Keohane &amp; Joseph S. Nye Jr.</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_74')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Transnational channels, absence of issue hierarchy, and declining utility of military force fundamentally constrain classical realist statecraft."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Neoliberal institutionalist critique of realism: states are interconnected by corporate, civic, and governmental ties where economic and environmental issues often outweigh military power.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 2A • Neoliberal Institutionalism &amp; Transnational Relations)</span>
+              </div>
+              <div class="exam-utility-content">Paper 2A (Liberal Institutionalism): &#x27;Keohane and Nye&#x27;s &quot;complex interdependence&quot; shows that cross-border economic regimes constrain unilateral militarism in a globalized world.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#complex interdependence</span><span class="kt-keyword-pill">#keohane</span><span class="kt-keyword-pill">#nye</span><span class="kt-keyword-pill">#neoliberal institutionalism</span><span class="kt-keyword-pill">#transnational</span><span class="kt-keyword-pill">#power</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #75: Anarchy is What States Make of It -->
+        <div class="keyterm-card" data-id="slang_75" data-card-index="75">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#75 of 80</span>
+              <span class="batch-badge">BATCH 4</span>
+              <span class="paper-pill">Paper 2A</span>
+              <span class="category-pill">International Relations</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_75', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_75', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_75', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Anarchy is What States Make of It</span>
+              <span class="scholar-tag">🎓 Alexander Wendt</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_75')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"International anarchy does not mandate ruthless self-help; shared social interactions determine whether anarchy breeds enmity, rivalry, or friendship."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Social constructivist breakthrough: anarchy is an empty structure. Intersubjective social interactions construct distinct cultures of anarchy—Hobbesian (enemies), Lockean (rivals), or Kantian (friends).</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 2A • Social Constructivism in IR, Intersubjectivity &amp; Norms)</span>
+              </div>
+              <div class="exam-utility-content">Paper 2A (Constructivism): &#x27;Wendt&#x27;s dictum &quot;anarchy is what states make of it&quot; dismantles neorealist structural determinism, revealing power politics as socially constructed.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#alexander wendt</span><span class="kt-keyword-pill">#anarchy is what states make of it</span><span class="kt-keyword-pill">#constructivism</span><span class="kt-keyword-pill">#intersubjectivity</span><span class="kt-keyword-pill">#norms</span><span class="kt-keyword-pill">#social construction</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #76: Indo-Pacific Re-balancing / The Pivot -->
+        <div class="keyterm-card" data-id="slang_76" data-card-index="76">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#76 of 80</span>
+              <span class="batch-badge">BATCH 4</span>
+              <span class="paper-pill">Paper 2A &amp; 2B</span>
+              <span class="category-pill">International Relations</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_76', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_76', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_76', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Indo-Pacific Re-balancing / The Pivot</span>
+              <span class="scholar-tag">🎓 Kurt M. Campbell / Hillary Clinton</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_76')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Global grand strategy decisively pivots from Middle Eastern ground interventions to the maritime Indo-Pacific hinge."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Recognizing that the 21st-century balance of power resides in the sea lines between the Indian and Pacific Oceans, elevating India as a net security provider.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 2A &amp; 2B • Geostrategy, US Foreign Policy &amp; Regional Order)</span>
+              </div>
+              <div class="exam-utility-content">Paper 2A &amp; 2B (Geostrategy): &#x27;The &quot;Indo-Pacific&quot; construct links South and East Asian theaters, placing India at the central pivot of global maritime balancing.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#indo-pacific</span><span class="kt-keyword-pill">#pivot to asia</span><span class="kt-keyword-pill">#campbell</span><span class="kt-keyword-pill">#maritime security</span><span class="kt-keyword-pill">#quad</span><span class="kt-keyword-pill">#net security provider</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #77: Debt-Trap Diplomacy -->
+        <div class="keyterm-card" data-id="slang_77" data-card-index="77">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#77 of 80</span>
+              <span class="batch-badge">BATCH 4</span>
+              <span class="paper-pill">Paper 2A &amp; 2B</span>
+              <span class="category-pill">International Relations</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_77', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_77', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_77', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Debt-Trap Diplomacy</span>
+              <span class="scholar-tag">🎓 Brahma Chellaney</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_77')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Extending opaque loans for unviable projects to ensnare developing nations, subsequently seizing sovereign strategic assets like Hambantota port."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Beijing finances overpriced infrastructure in strategically located states (Sri Lanka, Djibouti). When borrowers default, debt renegotiations convert loans into long-term sovereign leases on dual-use ports.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 2A &amp; 2B • China&#x27;s Belt and Road Initiative (BRI) &amp; South Asian Security)</span>
+              </div>
+              <div class="exam-utility-content">Paper 2B (BRI &amp; South Asia): &#x27;Chellaney&#x27;s &quot;debt-trap diplomacy&quot; critiques Chinese developmental financing in South Asia, highlighting risks to sovereign asset integrity.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#debt-trap diplomacy</span><span class="kt-keyword-pill">#chellaney</span><span class="kt-keyword-pill">#belt and road initiative</span><span class="kt-keyword-pill">#hambantota</span><span class="kt-keyword-pill">#china in south asia</span><span class="kt-keyword-pill">#bri</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #78: Minilateralism &amp; Coalitions of the Willing -->
+        <div class="keyterm-card" data-id="slang_78" data-card-index="78">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#78 of 80</span>
+              <span class="batch-badge">BATCH 4</span>
+              <span class="paper-pill">Paper 2A &amp; 2B</span>
+              <span class="category-pill">International Relations</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_78', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_78', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_78', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Minilateralism &amp; Coalitions of the Willing</span>
+              <span class="scholar-tag">🎓 Moisés Naím / C. Raja Mohan</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_78')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Bypassing paralyzed universal multilateralism through nimble, task-specific coalitions of the willing like the Quad, AUKUS, and I2U2."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Convenes the smallest number of critical states needed to achieve maximum impact on specific challenges (maritime security, supply chains, vaccines) without requiring 193-country UN consensus.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 2A &amp; 2B • Multilateralism Crisis, The Quad, AUKUS &amp; I2U2)</span>
+              </div>
+              <div class="exam-utility-content">Paper 2A &amp; 2B (Global Governance): &#x27;Naím and Raja Mohan view &quot;minilateralism&quot; as modern statecraft&#x27;s pragmatic answer to the institutional paralysis of universal multilateralism.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#minilateralism</span><span class="kt-keyword-pill">#naim</span><span class="kt-keyword-pill">#raja mohan</span><span class="kt-keyword-pill">#quad</span><span class="kt-keyword-pill">#aukus</span><span class="kt-keyword-pill">#multilateralism</span><span class="kt-keyword-pill">#coalitions of the willing</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #79: Geoeconomics &amp; Economic Statecraft -->
+        <div class="keyterm-card" data-id="slang_79" data-card-index="79">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#79 of 80</span>
+              <span class="batch-badge">BATCH 4</span>
+              <span class="paper-pill">Paper 2A</span>
+              <span class="category-pill">International Relations</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_79', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_79', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_79', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Geoeconomics &amp; Economic Statecraft</span>
+              <span class="scholar-tag">🎓 Edward N. Luttwak / David A. Baldwin</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_79')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"The logic of interstate conflict persists, but weapons shift from artillery and territory to investment screening, export controls, and currency weaponization."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Traditional geopolitical rivalry pursued through economic instruments: semiconductor export bans, critical mineral embargoes, supply-chain restructuring, and targeted sanctions.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 2A • International Political Economy, Sanctions &amp; Strategic Competition)</span>
+              </div>
+              <div class="exam-utility-content">Paper 2A (IPE): &#x27;Luttwak&#x27;s &quot;geoeconomics&quot; captures how supply-chain choke points and technology controls have replaced territorial battles in great power rivalry.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#geoeconomics</span><span class="kt-keyword-pill">#luttwak</span><span class="kt-keyword-pill">#economic statecraft</span><span class="kt-keyword-pill">#export controls</span><span class="kt-keyword-pill">#sanctions</span><span class="kt-keyword-pill">#trade war</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #80: Indian Strategic Culture: Moralism vs. Realpolitik -->
+        <div class="keyterm-card" data-id="slang_80" data-card-index="80">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#80 of 80</span>
+              <span class="batch-badge">BATCH 4</span>
+              <span class="paper-pill">Paper 2B</span>
+              <span class="category-pill">Indian Politics</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_80', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_80', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_80', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Indian Strategic Culture: Moralism vs. Realpolitik</span>
+              <span class="scholar-tag">🎓 George K. Tanham / Kanti Bajpai / Shivshankar Menon</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_80')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"India&#x27;s strategic thought is a polyphony—synthesizing Nehruvian moral internationalism, Gandhian Ahimsa, and Kautilyan Arthashastra realpolitik."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Rebutting George Tanham&#x27;s thesis of strategic absence, scholars show that India combines normative commitment to international law and non-violence with pragmatic Mandala realpolitik.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 2B • Determinants of India&#x27;s Foreign Policy &amp; Strategic Thinking)</span>
+              </div>
+              <div class="exam-utility-content">Paper 2B (Indian Foreign Policy): &#x27;Bajpai and Menon prove that India&#x27;s strategic culture synthesizes Nehruvian moral internationalism with Kautilyan Arthashastra realpolitik.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#strategic culture</span><span class="kt-keyword-pill">#tanham</span><span class="kt-keyword-pill">#bajpai</span><span class="kt-keyword-pill">#kautilya</span><span class="kt-keyword-pill">#menon</span><span class="kt-keyword-pill">#foreign policy</span><span class="kt-keyword-pill">#mandala theory</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- CHECKPOINT QUIZ #8 (After Slang #80) -->
+        <div class="checkpoint-mcq-wrap" id="cp_cp_slang_8">
+          <div class="checkpoint-banner">
+            <span class="checkpoint-tag">🎯 CHECKPOINT QUIZ #8</span>
+            <span style="font-size: 11px; font-weight: 800; color: var(--accent-heading); background: rgba(139, 58, 43, 0.08); padding: 3px 8px; border-radius: 6px; letter-spacing: 0.3px;">🎯 UPSC PSIR CONCEPT CHECKPOINT</span>
+          </div>
+          <div class="checkpoint-q-text">Which iconic statement by Alexander Wendt revolutionized International Relations theory by establishing the Social Constructivist challenge to structural neorealism?</div>
+          <div class="checkpoint-options-grid">
+            <button class="cp-option-btn " 
+                    data-opt-index="0" 
+                    onclick="handleCheckpointChoice('cp_slang_8', 0, 1)">
+              <span class="cp-letter">A</span>
+              <span>&#x27;Who rules the Heartland commands the World-Island&#x27;</span>
+            </button>
+            <button class="cp-option-btn " 
+                    data-opt-index="1" 
+                    onclick="handleCheckpointChoice('cp_slang_8', 1, 1)">
+              <span class="cp-letter">B</span>
+              <span>&#x27;Anarchy is what states make of it&#x27;</span>
+            </button>
+            <button class="cp-option-btn " 
+                    data-opt-index="2" 
+                    onclick="handleCheckpointChoice('cp_slang_8', 2, 1)">
+              <span class="cp-letter">C</span>
+              <span>&#x27;Who says organization, says oligarchy&#x27;</span>
+            </button>
+            <button class="cp-option-btn " 
+                    data-opt-index="3" 
+                    onclick="handleCheckpointChoice('cp_slang_8', 3, 1)">
+              <span class="cp-letter">D</span>
+              <span>&#x27;Democracies do not fight other democracies&#x27;</span>
+            </button>
+          </div>
+          <div class="cp-explanation-box" id="expl_cp_slang_8" style="display: none;">
+            <div style="font-weight: 800; font-size: 11px; color: var(--accent-heading); margin-bottom: 4px; text-transform: uppercase;">
+              💡 Conceptual Source & Answer Explanation:
+            </div>
+            <div>Alexander Wendt&#x27;s landmark 1992 declaration &#x27;Anarchy is what states make of it&#x27; established that international anarchy has no inherent logic of violent self-help, but is an ongoing intersubjective social construction shaped by collective identities and norms.</div>
+          </div>
+          <div class="keyterm-card-bottom-bar" style="margin-top: auto;">
+            <span class="card-status-badge" style="color: var(--brand-primary); font-weight: 800;">10-Slang Checkpoint</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
       </div>
     </main>
 
@@ -5911,10 +7321,10 @@
   "metadata": {
     "title": "Top 100 Political Science Slangs & High-Yield Hooks",
     "subtitle": "Ultra-Crisp Micro Hooks & Answer-Cracking Metaphors (Batches 1 & 2 Active)",
-    "currentBatch": 3,
+    "currentBatch": 4,
     "totalBatches": 5,
     "batchSize": 20,
-    "totalTerms": 60,
+    "totalTerms": 80,
     "finalTarget": 100
   },
   "batches": [
@@ -5934,13 +7344,13 @@
       "batch": 3,
       "title": "Batch 3: Political Economy & Stratification (41–60)",
       "range": "41–60",
-      "status": "active"
+      "status": "completed"
     },
     {
       "batch": 4,
       "title": "Batch 4: Global Order, Strategy & Nuclear (61–80)",
       "range": "61–80",
-      "status": "upcoming"
+      "status": "active"
     },
     {
       "batch": 5,
@@ -7144,6 +8554,430 @@
         "caste politics",
         "agrarian power"
       ]
+    },
+    {
+      "id": "slang_61",
+      "number": 61,
+      "batch": 4,
+      "term": "Offensive Realism & Tragedy of Great Power Politics",
+      "scholar": "John J. Mearsheimer",
+      "category": "International Relations",
+      "paper": "Paper 2A",
+      "topic": "Theories of IR: Structural Realism & US–China Rivalry",
+      "hook": "In international anarchy without a global 911, great powers are condemned to maximize power toward regional hegemony.",
+      "definition": "States cannot trust rival intentions. Survival demands relentless accumulation of offensive military superiority to achieve regional dominance and block distant peer competitors.",
+      "exam_utility": "Paper 2A (Realism): 'Mearsheimer's \"offensive realism\" explains US–China collision as structural inevitability rather than ideological friction.'",
+      "keywords": [
+        "mearsheimer",
+        "offensive realism",
+        "tragedy of great power politics",
+        "structural realism",
+        "hegemony",
+        "anarchy"
+      ]
+    },
+    {
+      "id": "slang_62",
+      "number": 62,
+      "batch": 4,
+      "term": "Security Dilemma",
+      "scholar": "Robert Jervis / John H. Herz",
+      "category": "International Relations",
+      "paper": "Paper 2A",
+      "topic": "Theories of IR: Defensive Realism, Perceptions & Misperceptions",
+      "hook": "Measures taken by one state to increase its security inadvertently decrease the security of others, spiraling into mutual peril.",
+      "definition": "Defensive arming by State A is perceived as offensive intent by State B. Both arm defensively, worsening crisis instability without either wanting war.",
+      "exam_utility": "Paper 2A & 2B (Arms Races): 'Jervis's \"security dilemma\" explains why India–Pakistan military modernizations trigger reactive escalations despite defensive rationales.'",
+      "keywords": [
+        "security dilemma",
+        "jervis",
+        "herz",
+        "defensive realism",
+        "arms race",
+        "crisis instability"
+      ]
+    },
+    {
+      "id": "slang_63",
+      "number": 63,
+      "batch": 4,
+      "term": "Democratic Peace Theory",
+      "scholar": "Michael W. Doyle / Immanuel Kant",
+      "category": "International Relations",
+      "paper": "Paper 2A",
+      "topic": "Liberalism in IR, Perpetual Peace & Institutionalism",
+      "hook": "Constitutional democracies rarely fight one another, bound by republican institutional constraints and shared commercial norms.",
+      "definition": "Kantian pacific union rests on three pillars: voter accountability restraining warlike leaders, domestic culture of rule of law, and dense economic interdependence.",
+      "exam_utility": "Paper 2A (Liberalism): 'Doyle's \"Democratic Peace Theory\" challenges realist fatalism, showing that shared democratic institutions establish zones of durable interstate peace.'",
+      "keywords": [
+        "democratic peace theory",
+        "doyle",
+        "kant",
+        "liberalism",
+        "perpetual peace",
+        "pacific union"
+      ]
+    },
+    {
+      "id": "slang_64",
+      "number": 64,
+      "batch": 4,
+      "term": "String of Pearls vs. Necklace of Diamonds",
+      "scholar": "C. Raja Mohan / Gurpreet S. Khurana",
+      "category": "International Relations",
+      "paper": "Paper 2B",
+      "topic": "India's Foreign Policy, Indian Ocean Geopolitics & Maritime Security",
+      "hook": "India counters China's maritime encirclement by securing strategic access to critical choke points from Duqm to Changi.",
+      "definition": "Beijing builds commercial-naval outposts (Gwadar, Hambantota) around India ('String of Pearls'). New Delhi answers with 'Necklace of Diamonds', accessing Oman, Iran, Mauritius, and Singapore.",
+      "exam_utility": "Paper 2B (Maritime Security): 'India counters Beijing's \"String of Pearls\" through its \"Necklace of Diamonds\" strategy across key Indo-Pacific choke points.'",
+      "keywords": [
+        "string of pearls",
+        "necklace of diamonds",
+        "raja mohan",
+        "indian ocean",
+        "indo-pacific",
+        "maritime security",
+        "gwadar"
+      ]
+    },
+    {
+      "id": "slang_65",
+      "number": 65,
+      "batch": 4,
+      "term": "Heartland Theory",
+      "scholar": "Sir Halford J. Mackinder",
+      "category": "International Relations",
+      "paper": "Paper 2A & 2B",
+      "topic": "Classical Geopolitics, Continental Power & Eurasia",
+      "hook": "Who rules the Heartland commands the World-Island; who rules the World-Island commands the world.",
+      "definition": "The vast Eurasian continental interior, invulnerable to sea power and linked by railways, constitutes the strategic pivot of world politics.",
+      "exam_utility": "Paper 2A & 2B (Geopolitics): 'Mackinder's \"Heartland Theory\" revives as China's BRI and the Russia–China axis consolidate continental Eurasian connectivity.'",
+      "keywords": [
+        "mackinder",
+        "heartland theory",
+        "geopolitics",
+        "eurasia",
+        "world island",
+        "continental power"
+      ]
+    },
+    {
+      "id": "slang_66",
+      "number": 66,
+      "batch": 4,
+      "term": "Rimland Theory",
+      "scholar": "Nicholas J. Spykman",
+      "category": "International Relations",
+      "paper": "Paper 2A & 2B",
+      "topic": "Geopolitics, Maritime Containment & The Indo-Pacific",
+      "hook": "Who controls the Rimland rules Eurasia; who rules Eurasia controls the destinies of the world.",
+      "definition": "The maritime coastal rim of Europe, Middle East, and Asia has greater population and wealth than the Heartland, making it the primary theater of global dominance.",
+      "exam_utility": "Paper 2A & 2B (Indo-Pacific): 'Spykman's \"Rimland Theory\" provides the geopolitical rationale for the Quad and maritime containment of continental revisionists.'",
+      "keywords": [
+        "spykman",
+        "rimland theory",
+        "geopolitics",
+        "indo-pacific",
+        "containment",
+        "maritime power"
+      ]
+    },
+    {
+      "id": "slang_67",
+      "number": 67,
+      "batch": 4,
+      "term": "Nuclear Taboo & Deterrence Ethics",
+      "scholar": "Nina Tannenwald / Thomas Schelling",
+      "category": "International Relations",
+      "paper": "Paper 2A",
+      "topic": "Nuclear Weapons, Arms Control, Deterrence & Ethics in IR",
+      "hook": "Nuclear non-use is governed not merely by mutual destruction, but by an internalized normative taboo stigmatizing atomic arms as uncivilized.",
+      "definition": "Constructivist ethics explain why nuclear states avoided using atomic weapons even during humiliating conventional retreats (US in Vietnam, USSR in Afghanistan).",
+      "exam_utility": "Paper 2A (Nuclear Strategy): 'Tannenwald's \"nuclear taboo\" demonstrates that unwritten normative prohibitions restrain atomic weapons far more effectively than formal treaties.'",
+      "keywords": [
+        "nuclear taboo",
+        "tannenwald",
+        "schelling",
+        "nuclear deterrence",
+        "constructivism",
+        "arms control"
+      ]
+    },
+    {
+      "id": "slang_68",
+      "number": 68,
+      "batch": 4,
+      "term": "Stability-Instability Paradox",
+      "scholar": "Glenn H. Snyder / Sumit Ganguly",
+      "category": "International Relations",
+      "paper": "Paper 2A & 2B",
+      "topic": "Nuclear Weapons in South Asia, Kargil & Sub-Conventional War",
+      "hook": "Strategic nuclear parity prevents full-scale war, but perversely emboldens revisionist states to sponsor sub-conventional proxy conflicts.",
+      "definition": "Mutual second-strike capability creates stability at the high end, removing escalation fears and encouraging low-intensity cross-border terrorism and limited border skirmishes.",
+      "exam_utility": "Paper 2B (Nuclear South Asia): 'Snyder's \"stability-instability paradox\" explains how Pakistan's nuclear shield enabled Kargil incursions and cross-border terrorism against India.'",
+      "keywords": [
+        "stability-instability paradox",
+        "snyder",
+        "ganguly",
+        "nuclear deterrence",
+        "kargil",
+        "cross-border terrorism"
+      ]
+    },
+    {
+      "id": "slang_69",
+      "number": 69,
+      "batch": 4,
+      "term": "Strategic Hedging & The Middle Power Play",
+      "scholar": "Evelyn Goh / Rory Medcalf",
+      "category": "International Relations",
+      "paper": "Paper 2A & 2B",
+      "topic": "Indo-Pacific Geopolitics, ASEAN Centrality & Middle Powers",
+      "hook": "Rejecting rigid balancing or subservient bandwagoning, middle powers maximize security through multi-aligned economic engagement and defense insurance.",
+      "definition": "Secondary states (ASEAN, India) trade with Beijing for economic growth while deepening defense interoperability with Washington, avoiding single-power entrapment.",
+      "exam_utility": "Paper 2A & 2B (Indo-Pacific): 'Evelyn Goh's \"strategic hedging\" decodes Asian middle-power diplomacy, proving nations prefer flexible multi-alignment over Cold War bloc alliances.'",
+      "keywords": [
+        "strategic hedging",
+        "evelyn goh",
+        "middle powers",
+        "indo-pacific",
+        "asean",
+        "balancing vs bandwagoning"
+      ]
+    },
+    {
+      "id": "slang_70",
+      "number": 70,
+      "batch": 4,
+      "term": "Hegemonic Stability Theory & Free Riding",
+      "scholar": "Charles P. Kindleberger / Robert Gilpin",
+      "category": "International Relations",
+      "paper": "Paper 2A",
+      "topic": "International Political Economy, Public Goods & Hegemony",
+      "hook": "An open world economy requires a commanding hegemon to underwrite global public goods and suppress predatory free riding.",
+      "definition": "Open sea lanes, free trade, and lender-of-last-resort finance are public goods. Without a dominant power bearing enforcement costs, international economic stability collapses.",
+      "exam_utility": "Paper 2A (IPE): 'Kindleberger's \"Hegemonic Stability Theory\" proves that global financial order demands a leading superpower willing to absorb systemic costs.'",
+      "keywords": [
+        "hegemonic stability theory",
+        "kindleberger",
+        "gilpin",
+        "public goods",
+        "free riding",
+        "political economy"
+      ]
+    },
+    {
+      "id": "slang_71",
+      "number": 71,
+      "batch": 4,
+      "term": "Kindleberger Trap",
+      "scholar": "Joseph S. Nye Jr.",
+      "category": "International Relations",
+      "paper": "Paper 2A",
+      "topic": "Global Governance, Rise of China & Hegemonic Transitions",
+      "hook": "The premier danger of hegemonic transition is not an aggressive rising power, but one too weak or unwilling to provide global public goods.",
+      "definition": "Countering the Thucydides Trap, Nye warns that a rising China refusing global burdens combined with a retreating US produces a catastrophic leadership vacuum.",
+      "exam_utility": "Paper 2A (Global Governance): 'Nye's \"Kindleberger Trap\" warns that under-provision of global public goods poses a greater threat to world order than bilateral conflict.'",
+      "keywords": [
+        "kindleberger trap",
+        "joseph nye",
+        "thucydides trap",
+        "global public goods",
+        "us-china",
+        "hegemony"
+      ]
+    },
+    {
+      "id": "slang_72",
+      "number": 72,
+      "batch": 4,
+      "term": "Transactional Diplomacy & Post-Ideological Realpolitik",
+      "scholar": "S. Jaishankar",
+      "category": "International Relations",
+      "paper": "Paper 2A & 2B",
+      "topic": "India's Foreign Policy, Multi-Alignment & The New World Order",
+      "hook": "Navigating a fractured world through flexible plurilateral issue-based coalitions of interest rather than rigid ideological alliances.",
+      "definition": "Modern statecraft is unapologetic realpolitik. India engages the Quad for maritime security, buys Russian oil for energy needs, and champions Global South debt relief simultaneously.",
+      "exam_utility": "Paper 2B (Indian Foreign Policy): 'Jaishankar's \"transactional multi-alignment\" maximizes national interest by replacing sentimental non-alignment with nimble issue-specific coalitions.'",
+      "keywords": [
+        "transactional diplomacy",
+        "jaishankar",
+        "multi-alignment",
+        "india way",
+        "realpolitik",
+        "foreign policy"
+      ]
+    },
+    {
+      "id": "slang_73",
+      "number": 73,
+      "batch": 4,
+      "term": "Security Community",
+      "scholar": "Karl W. Deutsch / Adler & Barnett",
+      "category": "International Relations",
+      "paper": "Paper 2A",
+      "topic": "Constructivism, Regional Integration & Democratic Alliances",
+      "hook": "Integrated sovereign states developing dependable expectations of peaceful change, rendering war between them socially unthinkable.",
+      "definition": "Shared democratic norms, mutual responsiveness, and dense social transactions dissolve the security dilemma, making military defense against community members entirely obsolete (e.g., EU, Nordic states).",
+      "exam_utility": "Paper 2A (Regional Integration): 'Deutsch's \"security community\" proves that sovereign states can transcend anarchy through normative social integration, abolishing armed conflict internally.'",
+      "keywords": [
+        "security community",
+        "deutsch",
+        "adler",
+        "barnett",
+        "constructivism",
+        "regional integration",
+        "peace"
+      ]
+    },
+    {
+      "id": "slang_74",
+      "number": 74,
+      "batch": 4,
+      "term": "Complex Interdependence",
+      "scholar": "Robert O. Keohane & Joseph S. Nye Jr.",
+      "category": "International Relations",
+      "paper": "Paper 2A",
+      "topic": "Neoliberal Institutionalism & Transnational Relations",
+      "hook": "Transnational channels, absence of issue hierarchy, and declining utility of military force fundamentally constrain classical realist statecraft.",
+      "definition": "Neoliberal institutionalist critique of realism: states are interconnected by corporate, civic, and governmental ties where economic and environmental issues often outweigh military power.",
+      "exam_utility": "Paper 2A (Liberal Institutionalism): 'Keohane and Nye's \"complex interdependence\" shows that cross-border economic regimes constrain unilateral militarism in a globalized world.'",
+      "keywords": [
+        "complex interdependence",
+        "keohane",
+        "nye",
+        "neoliberal institutionalism",
+        "transnational",
+        "power"
+      ]
+    },
+    {
+      "id": "slang_75",
+      "number": 75,
+      "batch": 4,
+      "term": "Anarchy is What States Make of It",
+      "scholar": "Alexander Wendt",
+      "category": "International Relations",
+      "paper": "Paper 2A",
+      "topic": "Social Constructivism in IR, Intersubjectivity & Norms",
+      "hook": "International anarchy does not mandate ruthless self-help; shared social interactions determine whether anarchy breeds enmity, rivalry, or friendship.",
+      "definition": "Social constructivist breakthrough: anarchy is an empty structure. Intersubjective social interactions construct distinct cultures of anarchy—Hobbesian (enemies), Lockean (rivals), or Kantian (friends).",
+      "exam_utility": "Paper 2A (Constructivism): 'Wendt's dictum \"anarchy is what states make of it\" dismantles neorealist structural determinism, revealing power politics as socially constructed.'",
+      "keywords": [
+        "alexander wendt",
+        "anarchy is what states make of it",
+        "constructivism",
+        "intersubjectivity",
+        "norms",
+        "social construction"
+      ]
+    },
+    {
+      "id": "slang_76",
+      "number": 76,
+      "batch": 4,
+      "term": "Indo-Pacific Re-balancing / The Pivot",
+      "scholar": "Kurt M. Campbell / Hillary Clinton",
+      "category": "International Relations",
+      "paper": "Paper 2A & 2B",
+      "topic": "Geostrategy, US Foreign Policy & Regional Order",
+      "hook": "Global grand strategy decisively pivots from Middle Eastern ground interventions to the maritime Indo-Pacific hinge.",
+      "definition": "Recognizing that the 21st-century balance of power resides in the sea lines between the Indian and Pacific Oceans, elevating India as a net security provider.",
+      "exam_utility": "Paper 2A & 2B (Geostrategy): 'The \"Indo-Pacific\" construct links South and East Asian theaters, placing India at the central pivot of global maritime balancing.'",
+      "keywords": [
+        "indo-pacific",
+        "pivot to asia",
+        "campbell",
+        "maritime security",
+        "quad",
+        "net security provider"
+      ]
+    },
+    {
+      "id": "slang_77",
+      "number": 77,
+      "batch": 4,
+      "term": "Debt-Trap Diplomacy",
+      "scholar": "Brahma Chellaney",
+      "category": "International Relations",
+      "paper": "Paper 2A & 2B",
+      "topic": "China's Belt and Road Initiative (BRI) & South Asian Security",
+      "hook": "Extending opaque loans for unviable projects to ensnare developing nations, subsequently seizing sovereign strategic assets like Hambantota port.",
+      "definition": "Beijing finances overpriced infrastructure in strategically located states (Sri Lanka, Djibouti). When borrowers default, debt renegotiations convert loans into long-term sovereign leases on dual-use ports.",
+      "exam_utility": "Paper 2B (BRI & South Asia): 'Chellaney's \"debt-trap diplomacy\" critiques Chinese developmental financing in South Asia, highlighting risks to sovereign asset integrity.'",
+      "keywords": [
+        "debt-trap diplomacy",
+        "chellaney",
+        "belt and road initiative",
+        "hambantota",
+        "china in south asia",
+        "bri"
+      ]
+    },
+    {
+      "id": "slang_78",
+      "number": 78,
+      "batch": 4,
+      "term": "Minilateralism & Coalitions of the Willing",
+      "scholar": "Moisés Naím / C. Raja Mohan",
+      "category": "International Relations",
+      "paper": "Paper 2A & 2B",
+      "topic": "Multilateralism Crisis, The Quad, AUKUS & I2U2",
+      "hook": "Bypassing paralyzed universal multilateralism through nimble, task-specific coalitions of the willing like the Quad, AUKUS, and I2U2.",
+      "definition": "Convenes the smallest number of critical states needed to achieve maximum impact on specific challenges (maritime security, supply chains, vaccines) without requiring 193-country UN consensus.",
+      "exam_utility": "Paper 2A & 2B (Global Governance): 'Naím and Raja Mohan view \"minilateralism\" as modern statecraft's pragmatic answer to the institutional paralysis of universal multilateralism.'",
+      "keywords": [
+        "minilateralism",
+        "naim",
+        "raja mohan",
+        "quad",
+        "aukus",
+        "multilateralism",
+        "coalitions of the willing"
+      ]
+    },
+    {
+      "id": "slang_79",
+      "number": 79,
+      "batch": 4,
+      "term": "Geoeconomics & Economic Statecraft",
+      "scholar": "Edward N. Luttwak / David A. Baldwin",
+      "category": "International Relations",
+      "paper": "Paper 2A",
+      "topic": "International Political Economy, Sanctions & Strategic Competition",
+      "hook": "The logic of interstate conflict persists, but weapons shift from artillery and territory to investment screening, export controls, and currency weaponization.",
+      "definition": "Traditional geopolitical rivalry pursued through economic instruments: semiconductor export bans, critical mineral embargoes, supply-chain restructuring, and targeted sanctions.",
+      "exam_utility": "Paper 2A (IPE): 'Luttwak's \"geoeconomics\" captures how supply-chain choke points and technology controls have replaced territorial battles in great power rivalry.'",
+      "keywords": [
+        "geoeconomics",
+        "luttwak",
+        "economic statecraft",
+        "export controls",
+        "sanctions",
+        "trade war"
+      ]
+    },
+    {
+      "id": "slang_80",
+      "number": 80,
+      "batch": 4,
+      "term": "Indian Strategic Culture: Moralism vs. Realpolitik",
+      "scholar": "George K. Tanham / Kanti Bajpai / Shivshankar Menon",
+      "category": "Indian Politics",
+      "paper": "Paper 2B",
+      "topic": "Determinants of India's Foreign Policy & Strategic Thinking",
+      "hook": "India's strategic thought is a polyphony—synthesizing Nehruvian moral internationalism, Gandhian Ahimsa, and Kautilyan Arthashastra realpolitik.",
+      "definition": "Rebutting George Tanham's thesis of strategic absence, scholars show that India combines normative commitment to international law and non-violence with pragmatic Mandala realpolitik.",
+      "exam_utility": "Paper 2B (Indian Foreign Policy): 'Bajpai and Menon prove that India's strategic culture synthesizes Nehruvian moral internationalism with Kautilyan Arthashastra realpolitik.'",
+      "keywords": [
+        "strategic culture",
+        "tanham",
+        "bajpai",
+        "kautilya",
+        "menon",
+        "foreign policy",
+        "mandala theory"
+      ]
     }
   ],
   "checkpoints": [
@@ -7230,6 +9064,34 @@
       ],
       "correctIndex": 1,
       "explanation": "M.N. Srinivas formulated the concept of 'Dominant Caste' to explain how castes with numerical preponderance, landholding, and political muscle exercise local hegemony in Indian democracy."
+    },
+    {
+      "id": "cp_slang_7",
+      "afterIndex": 70,
+      "batch": 4,
+      "question": "In nuclear strategy and deterrence theory, which concept formulated by Glenn Snyder explains why robust nuclear deterrence between two adversaries prevents full-scale war, but simultaneously emboldens revisionist states to initiate low-intensity proxy conflict and border skirmishes?",
+      "options": [
+        "Nuclear Taboo",
+        "Mutually Assured Destruction (MAD)",
+        "Stability-Instability Paradox",
+        "Security Dilemma"
+      ],
+      "correctIndex": 2,
+      "explanation": "Glenn Snyder theorized the 'Stability-Instability Paradox', demonstrating that while strategic nuclear parity creates stability at the highest level of conflict, it removes the fear of full-scale escalation, perversely encouraging sub-conventional proxy warfare and low-intensity conflict."
+    },
+    {
+      "id": "cp_slang_8",
+      "afterIndex": 80,
+      "batch": 4,
+      "question": "Which iconic statement by Alexander Wendt revolutionized International Relations theory by establishing the Social Constructivist challenge to structural neorealism?",
+      "options": [
+        "'Who rules the Heartland commands the World-Island'",
+        "'Anarchy is what states make of it'",
+        "'Who says organization, says oligarchy'",
+        "'Democracies do not fight other democracies'"
+      ],
+      "correctIndex": 1,
+      "explanation": "Alexander Wendt's landmark 1992 declaration 'Anarchy is what states make of it' established that international anarchy has no inherent logic of violent self-help, but is an ongoing intersubjective social construction shaped by collective identities and norms."
     }
   ]
 };
@@ -7804,7 +9666,7 @@
         renderSidebarSlangsList();
         renderKeyterms();
         if (window.innerWidth <= 900 && typeof closeSidebar === 'function') closeSidebar();
-        showToast(b === 'all' ? 'All Active Slangs (1–60)' : `Batch ${b} Filtered (20 Slangs)`);
+        showToast(b === 'all' ? 'All Active Slangs (1–80)' : `Batch ${b} Filtered (20 Slangs)`);
       };
 
       window.filterSlangDirectory = function(q) {
