@@ -897,6 +897,204 @@
       color: var(--brand-primary);
     }
 
+    /* ========================================================
+       ACTIVE RECALL: TOUGH UPSC PSIR MCQ CHALLENGE CARDS
+       ======================================================== */
+    .section-mcq-container {
+      margin-top: 18px;
+      background: rgba(0, 0, 0, 0.02);
+      border: 1px solid var(--paper-border);
+      border-radius: 14px;
+      padding: 20px 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    body.dark-mode .section-mcq-container {
+      background: rgba(255, 255, 255, 0.02);
+    }
+    .mcq-section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px dashed var(--paper-border);
+      padding-bottom: 10px;
+    }
+    .mcq-badge-tag {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: var(--accent-heading);
+      background: var(--accent-bg);
+      padding: 3px 8px;
+      border-radius: 6px;
+      border: 1px solid var(--accent-border);
+    }
+    .mcq-header-title {
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .mcq-cards-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .mcq-question-card {
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      border-radius: 12px;
+      padding: 16px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+    .mcq-card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .mcq-num-pill {
+      background: rgba(0, 0, 0, 0.05);
+      padding: 2px 8px;
+      border-radius: 6px;
+      color: var(--text-dim);
+    }
+    body.dark-mode .mcq-num-pill {
+      background: rgba(255, 255, 255, 0.06);
+    }
+    .mcq-difficulty-pill {
+      color: #b45309;
+      background: #fef3c7;
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-weight: 800;
+    }
+    body.dark-mode .mcq-difficulty-pill {
+      color: #fde68a;
+      background: rgba(245, 158, 11, 0.15);
+    }
+
+    .mcq-question-text {
+      font-size: 14.5px;
+      line-height: 1.65;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .mcq-options-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .mcq-option-btn {
+      width: 100%;
+      text-align: left;
+      background: rgba(0, 0, 0, 0.015);
+      border: 1px solid var(--paper-border);
+      border-radius: 9px;
+      padding: 9px 12px;
+      font-family: inherit;
+      font-size: 13.5px;
+      color: var(--text-main);
+      cursor: pointer;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      transition: var(--transition);
+      line-height: 1.5;
+    }
+    body.dark-mode .mcq-option-btn {
+      background: rgba(255, 255, 255, 0.02);
+    }
+    .mcq-option-btn:hover {
+      background: rgba(0, 0, 0, 0.04);
+      border-color: var(--accent-heading);
+    }
+    body.dark-mode .mcq-option-btn:hover {
+      background: rgba(255, 255, 255, 0.05);
+    }
+    .mcq-opt-letter {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--text-dim);
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    body.dark-mode .mcq-opt-letter {
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    /* MCQ Option States */
+    .mcq-option-btn.selected-correct {
+      background: var(--green-bg) !important;
+      border-color: var(--green-check) !important;
+      color: var(--green-check) !important;
+      font-weight: 700;
+    }
+    .mcq-option-btn.selected-correct .mcq-opt-letter {
+      background: var(--green-check);
+      color: #ffffff;
+    }
+
+    .mcq-option-btn.selected-wrong {
+      background: var(--red-bg) !important;
+      border-color: var(--red-wrong) !important;
+      color: var(--red-wrong) !important;
+      font-weight: 700;
+    }
+    .mcq-option-btn.selected-wrong .mcq-opt-letter {
+      background: var(--red-wrong);
+      color: #ffffff;
+    }
+
+    .mcq-option-btn.reveal-correct {
+      background: var(--green-bg) !important;
+      border-color: var(--green-border) !important;
+      color: var(--green-check) !important;
+    }
+
+    /* Explanation Card */
+    .mcq-explanation-box {
+      background: var(--accent-bg);
+      border-left: 3px solid var(--accent-heading);
+      border-radius: 0 8px 8px 0;
+      padding: 10px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      animation: fadeIn 0.2s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .mcq-expl-title {
+      font-size: 11.5px;
+      font-weight: 800;
+      color: var(--accent-heading);
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+    .mcq-expl-text {
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--text-main);
+    }
+
     /* PDF SHEET FOOTER */
     .pdf-page-footer {
       display: flex;
@@ -1411,6 +1609,49 @@
         showToast('Core Marxist Concepts Reset');
       };
 
+      // ========================================================
+      // ACTIVE RECALL: TOUGH UPSC MCQ QUIZ LOGIC
+      // ========================================================
+      const MCQ_STORAGE_KEY = 'psir_mcq_answers';
+      let mcqAnswers = {};
+      try {
+        const storedMcq = localStorage.getItem(MCQ_STORAGE_KEY);
+        if (storedMcq) mcqAnswers = JSON.parse(storedMcq);
+      } catch (e) {
+        mcqAnswers = {};
+      }
+
+      window.handleMcqChoice = function (mcqId, chosenIndex, correctIndex) {
+        mcqAnswers[mcqId] = chosenIndex;
+        try {
+          localStorage.setItem(MCQ_STORAGE_KEY, JSON.stringify(mcqAnswers));
+        } catch (e) {}
+
+        const card = document.getElementById(`card_${mcqId}`);
+        if (!card) return;
+
+        const buttons = card.querySelectorAll('.mcq-option-btn');
+        buttons.forEach(btn => {
+          const idx = parseInt(btn.getAttribute('data-opt-index'), 10);
+          btn.classList.remove('selected-correct', 'selected-wrong', 'reveal-correct');
+          if (idx === correctIndex) {
+            btn.classList.add(chosenIndex === correctIndex ? 'selected-correct' : 'reveal-correct');
+          } else if (idx === chosenIndex) {
+            btn.classList.add('selected-wrong');
+          }
+        });
+
+        const explBox = document.getElementById(`expl_${mcqId}`);
+        if (explBox) explBox.style.display = 'flex';
+
+        if (chosenIndex === correctIndex) {
+          window.triggerCelebrationShower(75);
+          showToast('🎯 Correct! Tough Question Mastered 🌸❤️');
+        } else {
+          showToast('❌ Incorrect. Review the explanation below!');
+        }
+      };
+
       function applyScoresToDOM() {
         document.querySelectorAll('.bullet-row-item').forEach(row => {
           const id = row.getAttribute('data-id');
@@ -1613,6 +1854,58 @@
                   </div>
                 `;
               });
+            }
+
+            // Toughest UPSC PSIR MCQs for this Topic / Section
+            if (sec.mcqs && sec.mcqs.length > 0) {
+              secHtml += `
+                <div class="section-mcq-container">
+                  <div class="mcq-section-header">
+                    <span class="mcq-badge-tag">🎯 UPSC CONCEPTUAL MASTERY TEST</span>
+                    <span class="mcq-header-title">2 Toughest Section Questions</span>
+                  </div>
+                  <div class="mcq-cards-grid">
+              `;
+              const letters = ['A', 'B', 'C', 'D'];
+              sec.mcqs.forEach((mcq, mIdx) => {
+                const savedAns = mcqAnswers[mcq.id];
+                secHtml += `
+                  <div class="mcq-question-card" id="card_${mcq.id}" data-mcq-id="${mcq.id}">
+                    <div class="mcq-card-top">
+                      <span class="mcq-num-pill">Question ${mIdx + 1} of ${sec.mcqs.length}</span>
+                      <span class="mcq-difficulty-pill">🔥 Toughest UPSC Standard</span>
+                    </div>
+                    <div class="mcq-question-text">${mcq.question.replace(/\n/g, '<br>')}</div>
+                    <div class="mcq-options-list">
+                `;
+                mcq.options.forEach((opt, oIdx) => {
+                  let optClass = '';
+                  if (savedAns !== undefined) {
+                    if (oIdx === mcq.correctIndex) optClass = (savedAns === mcq.correctIndex) ? 'selected-correct' : 'reveal-correct';
+                    if (savedAns === oIdx && savedAns !== mcq.correctIndex) optClass = 'selected-wrong';
+                  }
+                  secHtml += `
+                    <button class="mcq-option-btn ${optClass}" 
+                            data-mcq-id="${mcq.id}" 
+                            data-opt-index="${oIdx}" 
+                            onclick="handleMcqChoice('${mcq.id}', ${oIdx}, ${mcq.correctIndex})">
+                      <span class="mcq-opt-letter">${letters[oIdx]}</span>
+                      <span class="mcq-opt-text">${opt}</span>
+                    </button>
+                  `;
+                });
+                secHtml += `</div>`;
+
+                const showExpl = savedAns !== undefined ? 'style="display: flex;"' : 'style="display: none;"';
+                secHtml += `
+                  <div class="mcq-explanation-box" id="expl_${mcq.id}" ${showExpl}>
+                    <div class="mcq-expl-title">💡 Detailed Conceptual Explanation & Source:</div>
+                    <div class="mcq-expl-text">${mcq.explanation}</div>
+                  </div>
+                </div>
+                `;
+              });
+              secHtml += `</div></div>`;
             }
 
             secBlock.innerHTML = secHtml;

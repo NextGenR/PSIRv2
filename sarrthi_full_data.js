@@ -29,7 +29,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch1_ideologies_sec_intro_q1",
+              "question": "Regarding the theoretical concepts examined in 'Political Ideologies', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Political Ideologies', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch1_ideologies_sec_intro_q2",
+              "question": "In contemporary debates surrounding 'Political Ideologies', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Political Ideologies' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch1_ideologies_sec_2",
@@ -42,7 +68,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch1_ideologies_sec_2_q1",
+              "question": "Regarding the Marxist conceptualization of ideology and the Base-Superstructure model, consider the following statements:\n1. Marx and Engels view ideology as an autonomous cognitive realm that independently influences material production.\n2. Ideology constitutes a 'camera obscura' where real socio-economic relations appear inverted to conceal systemic exploitation.\n3. In 'The German Ideology', the ruling ideas of each epoch are characterized as nothing more than the ideal expression of dominant material relationships.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 1,
+              "explanation": "Statement 1 is incorrect: Classical Marxism rejects ideological autonomy; ideology is part of the superstructure determined by the economic base. Statements 2 and 3 are correct: Marx uses the metaphor of the 'camera obscura' (inverted reality) and famously writes that 'the ideas of the ruling class are in every epoch the ruling ideas'."
+            },
+            {
+              "id": "ch1_ideologies_sec_2_q2",
+              "question": "In Marxist theory, how does Georg Lukács differentiate between 'False Consciousness' and 'Class Consciousness' in 'History and Class Consciousness' (1923)?",
+              "options": [
+                "False consciousness is purely individual psychological error, while class consciousness is genetic.",
+                "False consciousness reflects reified capitalist immediacy, whereas class consciousness emerges when the proletariat apprehends the totality of the historical process.",
+                "False consciousness is created by the vanguard party, while class consciousness is spontaneous trade unionism.",
+                "Both terms were rejected by Lukács as bourgeois ideological mystifications."
+              ],
+              "correctIndex": 1,
+              "explanation": "Lukács argued that under capitalism, reification obscures totality, leaving workers in 'false consciousness'. True 'class consciousness' is not mere empirical awareness, but the imputed understanding of the historical totality and the revolutionary role of the proletariat."
+            }
+          ]
         },
         {
           "id": "ch1_ideologies_sec_3",
@@ -79,7 +131,33 @@ window.SARRTHI_DATA = {
               "full_text": "End of Ideology : Marx and Engels , in The Communist Manifesto , envisioned a communist future where ideology withers as class antagonisms dissolve."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch1_ideologies_sec_3_q1",
+              "question": "Regarding the Marxist conceptualization of ideology and the Base-Superstructure model, consider the following statements:\n1. Marx and Engels view ideology as an autonomous cognitive realm that independently influences material production.\n2. Ideology constitutes a 'camera obscura' where real socio-economic relations appear inverted to conceal systemic exploitation.\n3. In 'The German Ideology', the ruling ideas of each epoch are characterized as nothing more than the ideal expression of dominant material relationships.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 1,
+              "explanation": "Statement 1 is incorrect: Classical Marxism rejects ideological autonomy; ideology is part of the superstructure determined by the economic base. Statements 2 and 3 are correct: Marx uses the metaphor of the 'camera obscura' (inverted reality) and famously writes that 'the ideas of the ruling class are in every epoch the ruling ideas'."
+            },
+            {
+              "id": "ch1_ideologies_sec_3_q2",
+              "question": "In Marxist theory, how does Georg Lukács differentiate between 'False Consciousness' and 'Class Consciousness' in 'History and Class Consciousness' (1923)?",
+              "options": [
+                "False consciousness is purely individual psychological error, while class consciousness is genetic.",
+                "False consciousness reflects reified capitalist immediacy, whereas class consciousness emerges when the proletariat apprehends the totality of the historical process.",
+                "False consciousness is created by the vanguard party, while class consciousness is spontaneous trade unionism.",
+                "Both terms were rejected by Lukács as bourgeois ideological mystifications."
+              ],
+              "correctIndex": 1,
+              "explanation": "Lukács argued that under capitalism, reification obscures totality, leaving workers in 'false consciousness'. True 'class consciousness' is not mere empirical awareness, but the imputed understanding of the historical totality and the revolutionary role of the proletariat."
+            }
+          ]
         },
         {
           "id": "ch1_ideologies_sec_4",
@@ -137,7 +215,33 @@ window.SARRTHI_DATA = {
               "full_text": "Karl Mannheim : Though diverging from classical Marxism, he explored ideological pluralism , distinguishing between partial (group-specific) and total (system-changing) ideologies. He promoted critical utopianism —a reflective stance towards ideological claims—and stressed the historical context in shaping ideological worldviews."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch1_ideologies_sec_4_q1",
+              "question": "Regarding the Marxist conceptualization of ideology and the Base-Superstructure model, consider the following statements:\n1. Marx and Engels view ideology as an autonomous cognitive realm that independently influences material production.\n2. Ideology constitutes a 'camera obscura' where real socio-economic relations appear inverted to conceal systemic exploitation.\n3. In 'The German Ideology', the ruling ideas of each epoch are characterized as nothing more than the ideal expression of dominant material relationships.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 1,
+              "explanation": "Statement 1 is incorrect: Classical Marxism rejects ideological autonomy; ideology is part of the superstructure determined by the economic base. Statements 2 and 3 are correct: Marx uses the metaphor of the 'camera obscura' (inverted reality) and famously writes that 'the ideas of the ruling class are in every epoch the ruling ideas'."
+            },
+            {
+              "id": "ch1_ideologies_sec_4_q2",
+              "question": "In Marxist theory, how does Georg Lukács differentiate between 'False Consciousness' and 'Class Consciousness' in 'History and Class Consciousness' (1923)?",
+              "options": [
+                "False consciousness is purely individual psychological error, while class consciousness is genetic.",
+                "False consciousness reflects reified capitalist immediacy, whereas class consciousness emerges when the proletariat apprehends the totality of the historical process.",
+                "False consciousness is created by the vanguard party, while class consciousness is spontaneous trade unionism.",
+                "Both terms were rejected by Lukács as bourgeois ideological mystifications."
+              ],
+              "correctIndex": 1,
+              "explanation": "Lukács argued that under capitalism, reification obscures totality, leaving workers in 'false consciousness'. True 'class consciousness' is not mere empirical awareness, but the imputed understanding of the historical totality and the revolutionary role of the proletariat."
+            }
+          ]
         },
         {
           "id": "ch1_ideologies_sec_5",
@@ -186,7 +290,33 @@ window.SARRTHI_DATA = {
               "full_text": "Tradition & Language : Saw both as sources of practical wisdom distorted by ideological abstraction."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch1_ideologies_sec_5_q1",
+              "question": "In 'Rationalism in Politics' (1962), Michael Oakeshott critiques ideological politics primarily on the ground that:",
+              "options": [
+                "It promotes aristocratic hierarchy at the expense of industrial efficiency.",
+                "It erroneously substitutes abstract technical knowledge (rationalist blueprints) for practical knowledge rooted in accumulated tradition and habit.",
+                "It fails to implement scientific central planning based on empirical data.",
+                "It advocates violent overthrow of democratic institutions."
+              ],
+              "correctIndex": 1,
+              "explanation": "Oakeshott distinguished between 'technical knowledge' (formulated into rules and ideological blueprints) and 'practical knowledge' (inarticulate, traditional, and learned through apprenticeship). He argued rationalist ideologies destroy the nuance of political practice."
+            },
+            {
+              "id": "ch1_ideologies_sec_5_q2",
+              "question": "What is Michael Oakeshott's metaphor for the enterprise of political activity in a free society?",
+              "options": [
+                "Building an unshakeable utopian temple of universal human rights.",
+                "Sailing a boundless and bottomless sea where the goal is neither departure nor destination, but staying afloat on an even keel.",
+                "An engine driving relentlessly toward historical teleological perfection.",
+                "A strict commercial corporation maximizing collective utility."
+              ],
+              "correctIndex": 1,
+              "explanation": "Oakeshott famously asserted: 'In political activity, men sail a boundless and bottomless sea; there is neither harbour for shelter nor floor for anchorage, neither starting-place nor appointed destination. The enterprise is to keep afloat on an even keel.'"
+            }
+          ]
         },
         {
           "id": "ch1_ideologies_sec_6",
@@ -242,6 +372,32 @@ window.SARRTHI_DATA = {
               "text": "Nazi ideology upheld Aryan supremacy; Stalinist communism pursued a classless society via proletarian dictatorship.",
               "full_text": "Example : Nazi ideology upheld Aryan supremacy; Stalinist communism pursued a classless society via proletarian dictatorship."
             }
+          ],
+          "mcqs": [
+            {
+              "id": "ch1_ideologies_sec_6_q1",
+              "question": "Consider the following statements regarding Hannah Arendt's analysis in 'The Origins of Totalitarianism' (1951):\n1. Totalitarianism relies on ideology to generate total consistency and eliminate the contingency of human freedom.\n2. Totalitarian regimes derive their power exclusively through traditional military dictatorships and hereditary monarchy.\n3. In 'Eichmann in Jerusalem', the 'banality of evil' demonstrates that catastrophic state crimes can be perpetrated by thoughtless conformists rather than sadistic monsters.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "1 and 3 only",
+                "2 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 1,
+              "explanation": "Statement 2 is incorrect: Totalitarianism is a novel 20th-century phenomenon distinct from traditional autocracy, utilizing total ideological terror and atomization. Statements 1 and 3 correctly reflect Arendt's foundational theses."
+            },
+            {
+              "id": "ch1_ideologies_sec_6_q2",
+              "question": "In 'The Open Society and Its Enemies', Karl Popper formulates the 'Paradox of Tolerance'. What is its central normative conclusion?",
+              "options": [
+                "An open society must unconditionally tolerate every viewpoint, including those advocating violent intolerance.",
+                "Unlimited tolerance must lead to the disappearance of tolerance; hence, a society must reserve the right not to tolerate the intolerant.",
+                "Democratic states should censor all conservative and socialist philosophies.",
+                "Tolerance is an inherently bourgeois concept that must be superseded by revolutionary terror."
+              ],
+              "correctIndex": 1,
+              "explanation": "Popper argued: 'If we extend unlimited tolerance even to those who are intolerant... then the tolerant will be destroyed, and tolerance with them... We should therefore claim, in the name of tolerance, the right not to tolerate the intolerant.'"
+            }
           ]
         },
         {
@@ -291,7 +447,33 @@ window.SARRTHI_DATA = {
               "full_text": "“The criterion of the scientific status of a theory is its falsifiability.”"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch1_ideologies_sec_7_q1",
+              "question": "Consider the following statements regarding Hannah Arendt's analysis in 'The Origins of Totalitarianism' (1951):\n1. Totalitarianism relies on ideology to generate total consistency and eliminate the contingency of human freedom.\n2. Totalitarian regimes derive their power exclusively through traditional military dictatorships and hereditary monarchy.\n3. In 'Eichmann in Jerusalem', the 'banality of evil' demonstrates that catastrophic state crimes can be perpetrated by thoughtless conformists rather than sadistic monsters.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "1 and 3 only",
+                "2 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 1,
+              "explanation": "Statement 2 is incorrect: Totalitarianism is a novel 20th-century phenomenon distinct from traditional autocracy, utilizing total ideological terror and atomization. Statements 1 and 3 correctly reflect Arendt's foundational theses."
+            },
+            {
+              "id": "ch1_ideologies_sec_7_q2",
+              "question": "In 'The Open Society and Its Enemies', Karl Popper formulates the 'Paradox of Tolerance'. What is its central normative conclusion?",
+              "options": [
+                "An open society must unconditionally tolerate every viewpoint, including those advocating violent intolerance.",
+                "Unlimited tolerance must lead to the disappearance of tolerance; hence, a society must reserve the right not to tolerate the intolerant.",
+                "Democratic states should censor all conservative and socialist philosophies.",
+                "Tolerance is an inherently bourgeois concept that must be superseded by revolutionary terror."
+              ],
+              "correctIndex": 1,
+              "explanation": "Popper argued: 'If we extend unlimited tolerance even to those who are intolerant... then the tolerant will be destroyed, and tolerance with them... We should therefore claim, in the name of tolerance, the right not to tolerate the intolerant.'"
+            }
+          ]
         },
         {
           "id": "ch1_ideologies_sec_8",
@@ -308,7 +490,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch1_ideologies_sec_8_q1",
+              "question": "Regarding the theoretical concepts examined in 'Synthesis and Contemporary Relevance', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Synthesis and Contemporary Relevance', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch1_ideologies_sec_8_q2",
+              "question": "In contemporary debates surrounding 'Synthesis and Contemporary Relevance', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Synthesis and Contemporary Relevance' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch1_ideologies_sec_9",
@@ -321,7 +529,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch1_ideologies_sec_9_q1",
+              "question": "Daniel Bell's 'End of Ideology' thesis (1960) posited that in advanced Western industrial societies:",
+              "options": [
+                "Fascism had triumphed over democratic liberalism.",
+                "Grand, utopian humanist ideologies had exhausted their emotional appeal, giving way to technocratic consensus, welfare state pragmatism, and mixed economies.",
+                "Ideological struggle was solely relocated to religious fundamentalism in Europe.",
+                "Class conflict would immediately cause the revolutionary overthrow of Western capitalism."
+              ],
+              "correctIndex": 1,
+              "explanation": "Daniel Bell argued that the horrors of 20th-century totalitarianism, paired with post-war prosperity and the welfare compromise, rendered grandiose 19th-century apocalyptic ideologies obsolete in the democratic West."
+            },
+            {
+              "id": "ch1_ideologies_sec_9_q2",
+              "question": "Critical theorists like Herbert Marcuse and C. Wright Mills contested the 'End of Ideology' thesis by asserting that:",
+              "options": [
+                "Technocratic pragmatism is itself a disguised, hegemonic ideology that legitimizes capitalist domination under the guise of neutrality.",
+                "Western societies had successfully achieved genuine classless equality.",
+                "Soviet communism had fulfilled all human spiritual desires.",
+                "Liberal democracy required an immediate revival of feudal monarchy."
+              ],
+              "correctIndex": 0,
+              "explanation": "Marcuse argued that proclaiming the 'end of ideology' is itself an ideological mystification that enforces conformism and suppresses radical critique under an illusion of scientific objectivity ('One-Dimensional Man')."
+            }
+          ]
         },
         {
           "id": "ch1_ideologies_sec_10",
@@ -370,7 +604,33 @@ window.SARRTHI_DATA = {
               "full_text": "“Cunning of Reason” : He described the pragmatic shift as a rational evolution—ideological fervor gave way to mature, practical governance. Bell saw ideology as exhausted in the West, no longer offering viable solutions in an age of stability and affluence."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch1_ideologies_sec_10_q1",
+              "question": "Daniel Bell's 'End of Ideology' thesis (1960) posited that in advanced Western industrial societies:",
+              "options": [
+                "Fascism had triumphed over democratic liberalism.",
+                "Grand, utopian humanist ideologies had exhausted their emotional appeal, giving way to technocratic consensus, welfare state pragmatism, and mixed economies.",
+                "Ideological struggle was solely relocated to religious fundamentalism in Europe.",
+                "Class conflict would immediately cause the revolutionary overthrow of Western capitalism."
+              ],
+              "correctIndex": 1,
+              "explanation": "Daniel Bell argued that the horrors of 20th-century totalitarianism, paired with post-war prosperity and the welfare compromise, rendered grandiose 19th-century apocalyptic ideologies obsolete in the democratic West."
+            },
+            {
+              "id": "ch1_ideologies_sec_10_q2",
+              "question": "Critical theorists like Herbert Marcuse and C. Wright Mills contested the 'End of Ideology' thesis by asserting that:",
+              "options": [
+                "Technocratic pragmatism is itself a disguised, hegemonic ideology that legitimizes capitalist domination under the guise of neutrality.",
+                "Western societies had successfully achieved genuine classless equality.",
+                "Soviet communism had fulfilled all human spiritual desires.",
+                "Liberal democracy required an immediate revival of feudal monarchy."
+              ],
+              "correctIndex": 0,
+              "explanation": "Marcuse argued that proclaiming the 'end of ideology' is itself an ideological mystification that enforces conformism and suppresses radical critique under an illusion of scientific objectivity ('One-Dimensional Man')."
+            }
+          ]
         },
         {
           "id": "ch1_ideologies_sec_11",
@@ -447,7 +707,33 @@ window.SARRTHI_DATA = {
               "full_text": "Diminishing relevance of mass ideological mobilizations Critiques and Counterarguments Fukuyama’s thesis faced wide-ranging criticisms from both liberal and conservative scholars, who"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch1_ideologies_sec_11_q1",
+              "question": "Regarding the theoretical concepts examined in 'Critics and Counterarguments', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Critics and Counterarguments', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch1_ideologies_sec_11_q2",
+              "question": "In contemporary debates surrounding 'Critics and Counterarguments', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Critics and Counterarguments' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch1_ideologies_sec_12",
@@ -524,7 +810,33 @@ window.SARRTHI_DATA = {
               "full_text": "Fukuyama’s optimism underestimated climate change , refugee crises , digital surveillance , and identity politics —issues liberal democracies struggle to resolve. Fukuyama’s Reassessment Post-9/11, Fukuyama acknowledged the fragility of liberal gains , revising his position to stress that the “end” of ideological evolution does not mean the end of struggle , but the lack of a viable ideological rival to liberal democracy. While history did not end, Fukuyama insisted that no superior ideological alternative has yet emerged. Conclusion Fukuyama’s “End of History” remains a seminal yet contested theory . While it captured the liberal optimism of the early 1990s, subsequent events—from religious extremism to authoritarian resilience —have challenged its finality. Yet, as a philosophical provocation , it continues to shape global debates on ideology, democracy, and the future of political order ."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch1_ideologies_sec_12_q1",
+              "question": "Regarding the theoretical concepts examined in 'argued that history remains ideologically contested ', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'argued that history remains ideologically contested ', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch1_ideologies_sec_12_q2",
+              "question": "In contemporary debates surrounding 'argued that history remains ideologically contested ', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'argued that history remains ideologically contested ' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         }
       ],
       "total_bullets": 49
@@ -550,7 +862,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch2_liberalism_sec_intro_q1",
+              "question": "Regarding the theoretical concepts examined in 'Liberalism', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Liberalism', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch2_liberalism_sec_intro_q2",
+              "question": "In contemporary debates surrounding 'Liberalism', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Liberalism' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch2_liberalism_sec_2",
@@ -648,7 +986,33 @@ window.SARRTHI_DATA = {
               "full_text": "Immanuel Kant : Stressed moral autonomy and the dignity of individuals , framing liberty as a universal moral imperative. Streams of Liberal Thought Classical Liberalism (Negative Liberalism) Emerging from Enlightenment thought, classical liberalism champions individual liberty, limited government, and negative freedom —freedom from interference."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch2_liberalism_sec_2_q1",
+              "question": "Regarding the theoretical concepts examined in 'Liberalism', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Liberalism', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch2_liberalism_sec_2_q2",
+              "question": "In contemporary debates surrounding 'Liberalism', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Liberalism' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch2_liberalism_sec_3",
@@ -762,7 +1126,33 @@ window.SARRTHI_DATA = {
               "full_text": "“A society that puts equality before freedom will get neither.” – Milton Friedman Positive Liberalism (Welfare Liberalism) Evolving in response to industrial-era inequalities, positive liberalism redefines freedom as the capacity to act —requiring state intervention to ensure equal opportunity and social welfare."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch2_liberalism_sec_3_q1",
+              "question": "Regarding the theoretical concepts examined in 'Key Features', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Key Features', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch2_liberalism_sec_3_q2",
+              "question": "In contemporary debates surrounding 'Key Features', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Key Features' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch2_liberalism_sec_4",
@@ -881,7 +1271,33 @@ window.SARRTHI_DATA = {
               "full_text": "His critique of capitalism was so profound that he even questioned the sanctity of private property , considering it a root of systemic inequality. Laski emphasized the practical realization of rights , not merely their legal recognition: o \"The essence of Liberalism is equality before the law; but this is a sham unless it is accompanied by an equality of means to enforce the law.\""
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch2_liberalism_sec_4_q1",
+              "question": "Regarding the theoretical concepts examined in 'Key Features', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Key Features', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch2_liberalism_sec_4_q2",
+              "question": "In contemporary debates surrounding 'Key Features', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Key Features' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch2_liberalism_sec_5",
@@ -909,7 +1325,33 @@ window.SARRTHI_DATA = {
               "full_text": "Green’s philosophy emphasized the common good , where the individual’s development was seen as integral to the welfare of the community. o His central philosophical linkage emphasized the interdependence of liberty, rights, and the"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch2_liberalism_sec_5_q1",
+              "question": "Regarding the theoretical concepts examined in 'unstable', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'unstable', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch2_liberalism_sec_5_q2",
+              "question": "In contemporary debates surrounding 'unstable', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'unstable' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch2_liberalism_sec_6",
@@ -922,7 +1364,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch2_liberalism_sec_6_q1",
+              "question": "Regarding the theoretical concepts examined in 'state ', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'state ', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch2_liberalism_sec_6_q2",
+              "question": "In contemporary debates surrounding 'state ', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'state ' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch2_liberalism_sec_7",
@@ -939,7 +1407,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch2_liberalism_sec_7_q1",
+              "question": "How did T.H. Green and Modern Liberals redefine the concept of 'Liberty' away from Classical Liberalism?",
+              "options": [
+                "Liberty was defined solely as the absence of external legal restraint (negative liberty).",
+                "Liberty was reconceptualized as positive capacity—the freedom to realize one's moral and creative potential facilitated by enabling state institutions.",
+                "Liberty was equated with absolute submission to state decree.",
+                "Liberty was rejected in favor of pure economic egalitarianism."
+              ],
+              "correctIndex": 1,
+              "explanation": "T.H. Green formulated 'positive freedom' as the capacity to do or enjoy something worth doing, arguing that hunger and poverty are as restrictive of freedom as physical chains, thereby justifying state welfare interventions."
+            },
+            {
+              "id": "ch2_liberalism_sec_7_q2",
+              "question": "In 'On Liberty' (1859), J.S. Mill's 'Harm Principle' establishes that state coercion over an individual's liberty of action is legitimate ONLY when:",
+              "options": [
+                "The individual's conduct harms his or her own moral well-being.",
+                "The individual's conduct causes preventible harm to others (other-regarding actions).",
+                "The majority of society finds the individual's religious views offensive.",
+                "Economic efficiency requires nationalization of the individual's property."
+              ],
+              "correctIndex": 1,
+              "explanation": "Mill held: 'The only purpose for which power can be rightfully exercised over any member of a civilized community, against his will, is to prevent harm to others. His own good, either physical or moral, is not a sufficient warrant.'"
+            }
+          ]
         },
         {
           "id": "ch2_liberalism_sec_8",
@@ -952,7 +1446,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch2_liberalism_sec_8_q1",
+              "question": "Regarding the theoretical concepts examined in 'obstacles to individual growth', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'obstacles to individual growth', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch2_liberalism_sec_8_q2",
+              "question": "In contemporary debates surrounding 'obstacles to individual growth', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'obstacles to individual growth' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch2_liberalism_sec_9",
@@ -1429,7 +1949,33 @@ window.SARRTHI_DATA = {
               "full_text": "Policy Flexibility : Laws must be flexible enough to accommodate cultural practices , unless they contradict fundamental human rights. Application : Parekh’s principles influence education reforms in countries like Canada and Australia , where curricula include multiple cultural narratives to reflect societal diversity."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch2_liberalism_sec_9_q1",
+              "question": "Regarding the theoretical concepts examined in 'state', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'state', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch2_liberalism_sec_9_q2",
+              "question": "In contemporary debates surrounding 'state', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'state' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch2_liberalism_sec_10",
@@ -1471,7 +2017,33 @@ window.SARRTHI_DATA = {
               "full_text": "Toleration and Political Design : Liberal democracies institutionalize value pluralism through representative democracy, rights-based frameworks , and mechanisms of compromise (e.g., the U.S. Bill of Rights). Debate : Critics worry that pluralism may slip into relativism , but thinkers like Charles Taylor propose negotiated frameworks that mediate between competing values while retaining moral seriousness . Synthesis Together, Parekh and Berlin underscore that multicultural societies must negotiate between shared norms and deep diversity . While Parekh emphasizes the institutional and dialogical aspects of cultural pluralism, Berlin provides the philosophical grounding for accepting conflicting yet valid value systems . Both affirm that in a complex world, unity must coexist with multiplicity , and that tolerance, recognition, and contextual judgment are central to democratic governance."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch2_liberalism_sec_10_q1",
+              "question": "In 'Two Concepts of Liberty' (1958), Isaiah Berlin warns that 'Positive Liberty' is uniquely vulnerable to authoritarian perversion because:",
+              "options": [
+                "It refuses to acknowledge the existence of the state.",
+                "The ideal of self-mastery can be split into a 'higher' rational self and a 'lower' empirical self, justifying authoritarian elites forcing individuals to be 'free'.",
+                "It demands the abolition of all private property.",
+                "It promotes unbridled hedonism."
+              ],
+              "correctIndex": 1,
+              "explanation": "Berlin showed how positive liberty (self-realization) can lead tyrants to claim they represent the citizen's 'real' rational self, justifying totalitarian coercion as 'liberating' them from their lower impulses."
+            },
+            {
+              "id": "ch2_liberalism_sec_10_q2",
+              "question": "Isaiah Berlin's concept of 'Value Pluralism' fundamentally asserts that:",
+              "options": [
+                "All cultural moral values are subjective illusions of equal worth.",
+                "Ultimate human values (liberty, equality, justice, mercy) are objectively multiple, incommensurable, and often inherently in conflict, precluding any single utopian harmony.",
+                "Liberal democracy will inevitably converge into a single global monoculture.",
+                "Economic prosperity guarantees moral perfection."
+              ],
+              "correctIndex": 1,
+              "explanation": "Berlin rejected monism. Value pluralism holds that values like liberty and equality can clash genuinely without an algorithmic formula to resolve them, making political choice and trade-offs tragic and inevitable."
+            }
+          ]
         },
         {
           "id": "ch2_liberalism_sec_11",
@@ -1484,7 +2056,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch2_liberalism_sec_11_q1",
+              "question": "Regarding the Marxist conceptualization of ideology and the Base-Superstructure model, consider the following statements:\n1. Marx and Engels view ideology as an autonomous cognitive realm that independently influences material production.\n2. Ideology constitutes a 'camera obscura' where real socio-economic relations appear inverted to conceal systemic exploitation.\n3. In 'The German Ideology', the ruling ideas of each epoch are characterized as nothing more than the ideal expression of dominant material relationships.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 1,
+              "explanation": "Statement 1 is incorrect: Classical Marxism rejects ideological autonomy; ideology is part of the superstructure determined by the economic base. Statements 2 and 3 are correct: Marx uses the metaphor of the 'camera obscura' (inverted reality) and famously writes that 'the ideas of the ruling class are in every epoch the ruling ideas'."
+            },
+            {
+              "id": "ch2_liberalism_sec_11_q2",
+              "question": "In Marxist theory, how does Georg Lukács differentiate between 'False Consciousness' and 'Class Consciousness' in 'History and Class Consciousness' (1923)?",
+              "options": [
+                "False consciousness is purely individual psychological error, while class consciousness is genetic.",
+                "False consciousness reflects reified capitalist immediacy, whereas class consciousness emerges when the proletariat apprehends the totality of the historical process.",
+                "False consciousness is created by the vanguard party, while class consciousness is spontaneous trade unionism.",
+                "Both terms were rejected by Lukács as bourgeois ideological mystifications."
+              ],
+              "correctIndex": 1,
+              "explanation": "Lukács argued that under capitalism, reification obscures totality, leaving workers in 'false consciousness'. True 'class consciousness' is not mere empirical awareness, but the imputed understanding of the historical totality and the revolutionary role of the proletariat."
+            }
+          ]
         }
       ],
       "total_bullets": 113
@@ -1510,7 +2108,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_intro_q1",
+              "question": "Regarding the theoretical concepts examined in 'Definition', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Definition', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch3_marxism_sec_intro_q2",
+              "question": "In contemporary debates surrounding 'Definition', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Definition' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_2",
@@ -1523,7 +2147,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_2_q1",
+              "question": "Regarding the theoretical concepts examined in 'Industrial Roots ', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Industrial Roots ', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch3_marxism_sec_2_q2",
+              "question": "In contemporary debates surrounding 'Industrial Roots ', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Industrial Roots ' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_3",
@@ -1536,7 +2186,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_3_q1",
+              "question": "Regarding the theoretical concepts examined in 'Philosophical Influences ', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Philosophical Influences ', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch3_marxism_sec_3_q2",
+              "question": "In contemporary debates surrounding 'Philosophical Influences ', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Philosophical Influences ' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_4",
@@ -1549,7 +2225,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_4_q1",
+              "question": "Regarding the theoretical concepts examined in 'Revolutionary Beginnings ', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Revolutionary Beginnings ', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch3_marxism_sec_4_q2",
+              "question": "In contemporary debates surrounding 'Revolutionary Beginnings ', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Revolutionary Beginnings ' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_5",
@@ -1562,7 +2264,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_5_q1",
+              "question": "Regarding the theoretical concepts examined in 'Foundational Texts ', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Foundational Texts ', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch3_marxism_sec_5_q2",
+              "question": "In contemporary debates surrounding 'Foundational Texts ', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Foundational Texts ' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_6",
@@ -1575,7 +2303,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_6_q1",
+              "question": "Regarding the theoretical concepts examined in 'Global Influence ', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Global Influence ', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch3_marxism_sec_6_q2",
+              "question": "In contemporary debates surrounding 'Global Influence ', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Global Influence ' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_7",
@@ -1588,7 +2342,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_7_q1",
+              "question": "Regarding the theoretical concepts examined in 'Variants and Adaptations ', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Variants and Adaptations ', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch3_marxism_sec_7_q2",
+              "question": "In contemporary debates surrounding 'Variants and Adaptations ', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Variants and Adaptations ' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_8",
@@ -1601,7 +2381,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_8_q1",
+              "question": "Regarding the theoretical concepts examined in 'Critiques and Decline ', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Critiques and Decline ', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch3_marxism_sec_8_q2",
+              "question": "In contemporary debates surrounding 'Critiques and Decline ', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Critiques and Decline ' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_9",
@@ -1744,6 +2550,32 @@ window.SARRTHI_DATA = {
               "text": "Exchange-value is determined by labor time, forming the basis of market exchange. “The wealth of societies in which the capitalist mode of production prevails appears as an immense collection of commodities.” – Karl Marx Labor as the Source of Value Marxists argue that labor is the sole creator of value , yet under capitalism, workers are paid less than the value they create . The surplus value is appropriated by capitalists as profit. “The rate of surplus value... expresses the degree of exploitation of labor by capital.” – Karl Marx Critique of Capitalism Through LTV",
               "full_text": "Exchange-value is determined by labor time, forming the basis of market exchange. “The wealth of societies in which the capitalist mode of production prevails appears as an immense collection of commodities.” – Karl Marx Labor as the Source of Value Marxists argue that labor is the sole creator of value , yet under capitalism, workers are paid less than the value they create . The surplus value is appropriated by capitalists as profit. “The rate of surplus value... expresses the degree of exploitation of labor by capital.” – Karl Marx Critique of Capitalism Through LTV"
             }
+          ],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_9_q1",
+              "question": "Regarding the Marxist conceptualization of ideology and the Base-Superstructure model, consider the following statements:\n1. Marx and Engels view ideology as an autonomous cognitive realm that independently influences material production.\n2. Ideology constitutes a 'camera obscura' where real socio-economic relations appear inverted to conceal systemic exploitation.\n3. In 'The German Ideology', the ruling ideas of each epoch are characterized as nothing more than the ideal expression of dominant material relationships.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 1,
+              "explanation": "Statement 1 is incorrect: Classical Marxism rejects ideological autonomy; ideology is part of the superstructure determined by the economic base. Statements 2 and 3 are correct: Marx uses the metaphor of the 'camera obscura' (inverted reality) and famously writes that 'the ideas of the ruling class are in every epoch the ruling ideas'."
+            },
+            {
+              "id": "ch3_marxism_sec_9_q2",
+              "question": "In Marxist theory, how does Georg Lukács differentiate between 'False Consciousness' and 'Class Consciousness' in 'History and Class Consciousness' (1923)?",
+              "options": [
+                "False consciousness is purely individual psychological error, while class consciousness is genetic.",
+                "False consciousness reflects reified capitalist immediacy, whereas class consciousness emerges when the proletariat apprehends the totality of the historical process.",
+                "False consciousness is created by the vanguard party, while class consciousness is spontaneous trade unionism.",
+                "Both terms were rejected by Lukács as bourgeois ideological mystifications."
+              ],
+              "correctIndex": 1,
+              "explanation": "Lukács argued that under capitalism, reification obscures totality, leaving workers in 'false consciousness'. True 'class consciousness' is not mere empirical awareness, but the imputed understanding of the historical totality and the revolutionary role of the proletariat."
+            }
           ]
         },
         {
@@ -1800,7 +2632,33 @@ window.SARRTHI_DATA = {
               "full_text": "“The government of persons is replaced by the administration of things.” – Friedrich Engels"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_10_q1",
+              "question": "Regarding the Marxist conceptualization of ideology and the Base-Superstructure model, consider the following statements:\n1. Marx and Engels view ideology as an autonomous cognitive realm that independently influences material production.\n2. Ideology constitutes a 'camera obscura' where real socio-economic relations appear inverted to conceal systemic exploitation.\n3. In 'The German Ideology', the ruling ideas of each epoch are characterized as nothing more than the ideal expression of dominant material relationships.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 1,
+              "explanation": "Statement 1 is incorrect: Classical Marxism rejects ideological autonomy; ideology is part of the superstructure determined by the economic base. Statements 2 and 3 are correct: Marx uses the metaphor of the 'camera obscura' (inverted reality) and famously writes that 'the ideas of the ruling class are in every epoch the ruling ideas'."
+            },
+            {
+              "id": "ch3_marxism_sec_10_q2",
+              "question": "In Marxist theory, how does Georg Lukács differentiate between 'False Consciousness' and 'Class Consciousness' in 'History and Class Consciousness' (1923)?",
+              "options": [
+                "False consciousness is purely individual psychological error, while class consciousness is genetic.",
+                "False consciousness reflects reified capitalist immediacy, whereas class consciousness emerges when the proletariat apprehends the totality of the historical process.",
+                "False consciousness is created by the vanguard party, while class consciousness is spontaneous trade unionism.",
+                "Both terms were rejected by Lukács as bourgeois ideological mystifications."
+              ],
+              "correctIndex": 1,
+              "explanation": "Lukács argued that under capitalism, reification obscures totality, leaving workers in 'false consciousness'. True 'class consciousness' is not mere empirical awareness, but the imputed understanding of the historical totality and the revolutionary role of the proletariat."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_11",
@@ -1902,7 +2760,33 @@ window.SARRTHI_DATA = {
               "full_text": "Critique : Critics argue that it risks authoritarianism, citing historical misuse of power. However, proponents claim it is historically contingent and necessary to safeguard egalitarian transition . Abolition of Private Property: Core Marxist Principle Marx viewed private ownership of the means of production as the foundation of exploitation, where the bourgeoisie monopolizes wealth while the proletariat remains alienated. \"The theory of Communism may be summed up in one sentence: Abolish all private property.\" – Karl Marx"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_11_q1",
+              "question": "Regarding the theoretical concepts examined in 'Revolutionary Transition', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Revolutionary Transition', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch3_marxism_sec_11_q2",
+              "question": "In contemporary debates surrounding 'Revolutionary Transition', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Revolutionary Transition' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_12",
@@ -1939,7 +2823,33 @@ window.SARRTHI_DATA = {
               "full_text": "Economic Equality : Eliminates extreme disparities by ensuring equal access to resources , contrasting the wealth concentration in capitalism. \"In a country where the sole employer is the state, opposition means death by slow starvation.\" – Leon Trotsky (cautioning against state overreach) From Socialism to Communism During the socialist phase , the state manages production and redistribution. As class distinctions fade , the state loses its relevance and gradually withers away . \"The government of persons is replaced by the administration of things.\" – Friedrich Engels"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_12_q1",
+              "question": "Regarding the theoretical concepts examined in 'Key Elements', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Key Elements', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch3_marxism_sec_12_q2",
+              "question": "In contemporary debates surrounding 'Key Elements', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Key Elements' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_13",
@@ -2062,7 +2972,33 @@ window.SARRTHI_DATA = {
               "full_text": "\"Man is a species-being... because he treats himself as the actual, living species.\" – Marx"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_13_q1",
+              "question": "Regarding the Marxist conceptualization of ideology and the Base-Superstructure model, consider the following statements:\n1. Marx and Engels view ideology as an autonomous cognitive realm that independently influences material production.\n2. Ideology constitutes a 'camera obscura' where real socio-economic relations appear inverted to conceal systemic exploitation.\n3. In 'The German Ideology', the ruling ideas of each epoch are characterized as nothing more than the ideal expression of dominant material relationships.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 1,
+              "explanation": "Statement 1 is incorrect: Classical Marxism rejects ideological autonomy; ideology is part of the superstructure determined by the economic base. Statements 2 and 3 are correct: Marx uses the metaphor of the 'camera obscura' (inverted reality) and famously writes that 'the ideas of the ruling class are in every epoch the ruling ideas'."
+            },
+            {
+              "id": "ch3_marxism_sec_13_q2",
+              "question": "In Marxist theory, how does Georg Lukács differentiate between 'False Consciousness' and 'Class Consciousness' in 'History and Class Consciousness' (1923)?",
+              "options": [
+                "False consciousness is purely individual psychological error, while class consciousness is genetic.",
+                "False consciousness reflects reified capitalist immediacy, whereas class consciousness emerges when the proletariat apprehends the totality of the historical process.",
+                "False consciousness is created by the vanguard party, while class consciousness is spontaneous trade unionism.",
+                "Both terms were rejected by Lukács as bourgeois ideological mystifications."
+              ],
+              "correctIndex": 1,
+              "explanation": "Lukács argued that under capitalism, reification obscures totality, leaving workers in 'false consciousness'. True 'class consciousness' is not mere empirical awareness, but the imputed understanding of the historical totality and the revolutionary role of the proletariat."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_14",
@@ -2132,7 +3068,33 @@ window.SARRTHI_DATA = {
               "full_text": "Competitive capitalism fragments worker solidarity, replacing cooperation with rivalry over wages and jobs."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_14_q1",
+              "question": "Regarding the Marxist conceptualization of ideology and the Base-Superstructure model, consider the following statements:\n1. Marx and Engels view ideology as an autonomous cognitive realm that independently influences material production.\n2. Ideology constitutes a 'camera obscura' where real socio-economic relations appear inverted to conceal systemic exploitation.\n3. In 'The German Ideology', the ruling ideas of each epoch are characterized as nothing more than the ideal expression of dominant material relationships.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 1,
+              "explanation": "Statement 1 is incorrect: Classical Marxism rejects ideological autonomy; ideology is part of the superstructure determined by the economic base. Statements 2 and 3 are correct: Marx uses the metaphor of the 'camera obscura' (inverted reality) and famously writes that 'the ideas of the ruling class are in every epoch the ruling ideas'."
+            },
+            {
+              "id": "ch3_marxism_sec_14_q2",
+              "question": "In Marxist theory, how does Georg Lukács differentiate between 'False Consciousness' and 'Class Consciousness' in 'History and Class Consciousness' (1923)?",
+              "options": [
+                "False consciousness is purely individual psychological error, while class consciousness is genetic.",
+                "False consciousness reflects reified capitalist immediacy, whereas class consciousness emerges when the proletariat apprehends the totality of the historical process.",
+                "False consciousness is created by the vanguard party, while class consciousness is spontaneous trade unionism.",
+                "Both terms were rejected by Lukács as bourgeois ideological mystifications."
+              ],
+              "correctIndex": 1,
+              "explanation": "Lukács argued that under capitalism, reification obscures totality, leaving workers in 'false consciousness'. True 'class consciousness' is not mere empirical awareness, but the imputed understanding of the historical totality and the revolutionary role of the proletariat."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_15",
@@ -2178,7 +3140,33 @@ window.SARRTHI_DATA = {
               "full_text": "State as Capitalist Agent : The modern state serves monopoly capital through military and diplomatic power. 4. Revolutionary Strategy in Semi-Feudal Societies Recognizing Russia’s context, Lenin redefined the revolutionary base to include the peasantry as allies of the proletariat—proposing the worker–peasant alliance . 5. Theory into Practice: October Revolution Lenin applied Marxist theory in the 1917 Bolshevik Revolution, establishing the first socialist state , influencing global communist movements. 6. National Self-Determination Lenin championed the right of oppressed nations to self-rule , shaping Soviet policy and inspiring decolonization worldwide."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_15_q1",
+              "question": "Regarding the Marxist conceptualization of ideology and the Base-Superstructure model, consider the following statements:\n1. Marx and Engels view ideology as an autonomous cognitive realm that independently influences material production.\n2. Ideology constitutes a 'camera obscura' where real socio-economic relations appear inverted to conceal systemic exploitation.\n3. In 'The German Ideology', the ruling ideas of each epoch are characterized as nothing more than the ideal expression of dominant material relationships.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 1,
+              "explanation": "Statement 1 is incorrect: Classical Marxism rejects ideological autonomy; ideology is part of the superstructure determined by the economic base. Statements 2 and 3 are correct: Marx uses the metaphor of the 'camera obscura' (inverted reality) and famously writes that 'the ideas of the ruling class are in every epoch the ruling ideas'."
+            },
+            {
+              "id": "ch3_marxism_sec_15_q2",
+              "question": "In Marxist theory, how does Georg Lukács differentiate between 'False Consciousness' and 'Class Consciousness' in 'History and Class Consciousness' (1923)?",
+              "options": [
+                "False consciousness is purely individual psychological error, while class consciousness is genetic.",
+                "False consciousness reflects reified capitalist immediacy, whereas class consciousness emerges when the proletariat apprehends the totality of the historical process.",
+                "False consciousness is created by the vanguard party, while class consciousness is spontaneous trade unionism.",
+                "Both terms were rejected by Lukács as bourgeois ideological mystifications."
+              ],
+              "correctIndex": 1,
+              "explanation": "Lukács argued that under capitalism, reification obscures totality, leaving workers in 'false consciousness'. True 'class consciousness' is not mere empirical awareness, but the imputed understanding of the historical totality and the revolutionary role of the proletariat."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_16",
@@ -2195,7 +3183,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_16_q1",
+              "question": "Regarding the Marxist conceptualization of ideology and the Base-Superstructure model, consider the following statements:\n1. Marx and Engels view ideology as an autonomous cognitive realm that independently influences material production.\n2. Ideology constitutes a 'camera obscura' where real socio-economic relations appear inverted to conceal systemic exploitation.\n3. In 'The German Ideology', the ruling ideas of each epoch are characterized as nothing more than the ideal expression of dominant material relationships.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 1,
+              "explanation": "Statement 1 is incorrect: Classical Marxism rejects ideological autonomy; ideology is part of the superstructure determined by the economic base. Statements 2 and 3 are correct: Marx uses the metaphor of the 'camera obscura' (inverted reality) and famously writes that 'the ideas of the ruling class are in every epoch the ruling ideas'."
+            },
+            {
+              "id": "ch3_marxism_sec_16_q2",
+              "question": "In Marxist theory, how does Georg Lukács differentiate between 'False Consciousness' and 'Class Consciousness' in 'History and Class Consciousness' (1923)?",
+              "options": [
+                "False consciousness is purely individual psychological error, while class consciousness is genetic.",
+                "False consciousness reflects reified capitalist immediacy, whereas class consciousness emerges when the proletariat apprehends the totality of the historical process.",
+                "False consciousness is created by the vanguard party, while class consciousness is spontaneous trade unionism.",
+                "Both terms were rejected by Lukács as bourgeois ideological mystifications."
+              ],
+              "correctIndex": 1,
+              "explanation": "Lukács argued that under capitalism, reification obscures totality, leaving workers in 'false consciousness'. True 'class consciousness' is not mere empirical awareness, but the imputed understanding of the historical totality and the revolutionary role of the proletariat."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_17",
@@ -2212,7 +3226,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_17_q1",
+              "question": "Regarding the Marxist conceptualization of ideology and the Base-Superstructure model, consider the following statements:\n1. Marx and Engels view ideology as an autonomous cognitive realm that independently influences material production.\n2. Ideology constitutes a 'camera obscura' where real socio-economic relations appear inverted to conceal systemic exploitation.\n3. In 'The German Ideology', the ruling ideas of each epoch are characterized as nothing more than the ideal expression of dominant material relationships.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 1,
+              "explanation": "Statement 1 is incorrect: Classical Marxism rejects ideological autonomy; ideology is part of the superstructure determined by the economic base. Statements 2 and 3 are correct: Marx uses the metaphor of the 'camera obscura' (inverted reality) and famously writes that 'the ideas of the ruling class are in every epoch the ruling ideas'."
+            },
+            {
+              "id": "ch3_marxism_sec_17_q2",
+              "question": "In Marxist theory, how does Georg Lukács differentiate between 'False Consciousness' and 'Class Consciousness' in 'History and Class Consciousness' (1923)?",
+              "options": [
+                "False consciousness is purely individual psychological error, while class consciousness is genetic.",
+                "False consciousness reflects reified capitalist immediacy, whereas class consciousness emerges when the proletariat apprehends the totality of the historical process.",
+                "False consciousness is created by the vanguard party, while class consciousness is spontaneous trade unionism.",
+                "Both terms were rejected by Lukács as bourgeois ideological mystifications."
+              ],
+              "correctIndex": 1,
+              "explanation": "Lukács argued that under capitalism, reification obscures totality, leaving workers in 'false consciousness'. True 'class consciousness' is not mere empirical awareness, but the imputed understanding of the historical totality and the revolutionary role of the proletariat."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_18",
@@ -2235,7 +3275,33 @@ window.SARRTHI_DATA = {
               "full_text": "Organic intellectuals (emerging from the working class), who articulate counter-hegemonic ideas and challenge dominant ideologies. \"The intellectuals... are the ones capable of elaborating a theoretical critique of all the aspects of this ideology.\" 3. Cultural and Ideological Struggle He emphasized that ideology and culture are crucial arenas of class struggle. True emancipation begins with consciousness of one’s historical formation . \"Knowing thyself as a product of historical processes... is the starting point of critical elaboration.\" 4. Strategic Revolutionary Theory In contrast to direct insurrection, Gramsci proposed a “war of position” —a slow, strategic battle for ideological dominance within civil society—preceding a “war of maneuver” or direct political confrontation. \"The philosophy of praxis... teaches that optimism of the will has always to be accompanied by pessimism of the intellect.\" 5. Prison Notebooks Written during incarceration, the Prison Notebooks form the cornerstone of Gramsci's Marxist legacy, offering insights into civil society, state power, ideological resistance , and long-term revolutionary praxis."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_18_q1",
+              "question": "Antonio Gramsci's concept of 'Cultural Hegemony' in the 'Prison Notebooks' explains that the ruling class maintains power primarily through:",
+              "options": [
+                "Brute military suppression in the realm of political society.",
+                "Manufacturing spontaneous consent across civil society (churches, schools, media) by naturalizing bourgeois values as universal common sense.",
+                "Direct economic bribery of working-class trade unionists.",
+                "Abolishing all democratic elections."
+              ],
+              "correctIndex": 1,
+              "explanation": "Gramsci argued that domination (coercion via the state/police) is complemented by hegemony (consent via civil society). The ruling class secures consent by embedding its worldview as 'common sense' (senso comune)."
+            },
+            {
+              "id": "ch3_marxism_sec_18_q2",
+              "question": "What is the strategic distinction Gramsci draws between 'War of Movement' and 'War of Position'?",
+              "options": [
+                "War of Movement is conventional warfare; War of Position is nuclear deterrence.",
+                "War of Movement was a frontal assault on the state viable in Czarist Russia (weak civil society), while War of Position is a protracted counter-hegemonic cultural struggle necessary in Western democracies with sturdy civil society.",
+                "War of Position was recommended for agrarian societies, while War of Movement was for industrial states.",
+                "Gramsci rejected War of Position as reformist revisionism."
+              ],
+              "correctIndex": 1,
+              "explanation": "Gramsci noted that in the West, civil society was like a trench system behind the fortress of the state. Therefore, revolutionaries must wage a protracted 'War of Position' across cultural, intellectual, and institutional spheres before launching a 'War of Movement'."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_19",
@@ -2267,7 +3333,33 @@ window.SARRTHI_DATA = {
               "full_text": "Structuralist Marxism (Althusser): Scientific, system-based \"World-systems analysis argues that the unit of analysis should be the capitalist world-economy as a whole.\" – Immanuel Wallerstein 8. Interdisciplinary Synthesis Neo-Marxists integrate insights from sociology, psychoanalysis, postcolonialism , and critical theory to address evolving power dynamics in capitalist societies."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_19_q1",
+              "question": "Regarding the Marxist conceptualization of ideology and the Base-Superstructure model, consider the following statements:\n1. Marx and Engels view ideology as an autonomous cognitive realm that independently influences material production.\n2. Ideology constitutes a 'camera obscura' where real socio-economic relations appear inverted to conceal systemic exploitation.\n3. In 'The German Ideology', the ruling ideas of each epoch are characterized as nothing more than the ideal expression of dominant material relationships.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 1,
+              "explanation": "Statement 1 is incorrect: Classical Marxism rejects ideological autonomy; ideology is part of the superstructure determined by the economic base. Statements 2 and 3 are correct: Marx uses the metaphor of the 'camera obscura' (inverted reality) and famously writes that 'the ideas of the ruling class are in every epoch the ruling ideas'."
+            },
+            {
+              "id": "ch3_marxism_sec_19_q2",
+              "question": "In Marxist theory, how does Georg Lukács differentiate between 'False Consciousness' and 'Class Consciousness' in 'History and Class Consciousness' (1923)?",
+              "options": [
+                "False consciousness is purely individual psychological error, while class consciousness is genetic.",
+                "False consciousness reflects reified capitalist immediacy, whereas class consciousness emerges when the proletariat apprehends the totality of the historical process.",
+                "False consciousness is created by the vanguard party, while class consciousness is spontaneous trade unionism.",
+                "Both terms were rejected by Lukács as bourgeois ideological mystifications."
+              ],
+              "correctIndex": 1,
+              "explanation": "Lukács argued that under capitalism, reification obscures totality, leaving workers in 'false consciousness'. True 'class consciousness' is not mere empirical awareness, but the imputed understanding of the historical totality and the revolutionary role of the proletariat."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_20",
@@ -2320,7 +3412,33 @@ window.SARRTHI_DATA = {
               "full_text": "Stuart Hall : Emphasized that ideologies are dynamic and contested, shaped by media and popular culture. \"Ideologies are apparatuses through which society reproduces power structures.\" – Althusser \"The relationships between different forms of knowledge are tactical confrontations.\" – Michel Foucault 4. Cultural Resistance Culture is also a site of resistance . Grassroots art, literature, music, and movements (e.g., Occupy Wall Street , Banksy’s art ) offer counter-hegemonic narratives . 5. Interdisciplinary Approach Neo-Marxists use sociology, psychology, post-structuralism , and cultural studies to analyze capitalism holistically. \"The problems of society are of a very complex and intricate kind.\" – Marcuse"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_20_q1",
+              "question": "Regarding the Marxist conceptualization of ideology and the Base-Superstructure model, consider the following statements:\n1. Marx and Engels view ideology as an autonomous cognitive realm that independently influences material production.\n2. Ideology constitutes a 'camera obscura' where real socio-economic relations appear inverted to conceal systemic exploitation.\n3. In 'The German Ideology', the ruling ideas of each epoch are characterized as nothing more than the ideal expression of dominant material relationships.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 1,
+              "explanation": "Statement 1 is incorrect: Classical Marxism rejects ideological autonomy; ideology is part of the superstructure determined by the economic base. Statements 2 and 3 are correct: Marx uses the metaphor of the 'camera obscura' (inverted reality) and famously writes that 'the ideas of the ruling class are in every epoch the ruling ideas'."
+            },
+            {
+              "id": "ch3_marxism_sec_20_q2",
+              "question": "In Marxist theory, how does Georg Lukács differentiate between 'False Consciousness' and 'Class Consciousness' in 'History and Class Consciousness' (1923)?",
+              "options": [
+                "False consciousness is purely individual psychological error, while class consciousness is genetic.",
+                "False consciousness reflects reified capitalist immediacy, whereas class consciousness emerges when the proletariat apprehends the totality of the historical process.",
+                "False consciousness is created by the vanguard party, while class consciousness is spontaneous trade unionism.",
+                "Both terms were rejected by Lukács as bourgeois ideological mystifications."
+              ],
+              "correctIndex": 1,
+              "explanation": "Lukács argued that under capitalism, reification obscures totality, leaving workers in 'false consciousness'. True 'class consciousness' is not mere empirical awareness, but the imputed understanding of the historical totality and the revolutionary role of the proletariat."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_21",
@@ -2333,7 +3451,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_21_q1",
+              "question": "Regarding the Marxist conceptualization of ideology and the Base-Superstructure model, consider the following statements:\n1. Marx and Engels view ideology as an autonomous cognitive realm that independently influences material production.\n2. Ideology constitutes a 'camera obscura' where real socio-economic relations appear inverted to conceal systemic exploitation.\n3. In 'The German Ideology', the ruling ideas of each epoch are characterized as nothing more than the ideal expression of dominant material relationships.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 1,
+              "explanation": "Statement 1 is incorrect: Classical Marxism rejects ideological autonomy; ideology is part of the superstructure determined by the economic base. Statements 2 and 3 are correct: Marx uses the metaphor of the 'camera obscura' (inverted reality) and famously writes that 'the ideas of the ruling class are in every epoch the ruling ideas'."
+            },
+            {
+              "id": "ch3_marxism_sec_21_q2",
+              "question": "In Marxist theory, how does Georg Lukács differentiate between 'False Consciousness' and 'Class Consciousness' in 'History and Class Consciousness' (1923)?",
+              "options": [
+                "False consciousness is purely individual psychological error, while class consciousness is genetic.",
+                "False consciousness reflects reified capitalist immediacy, whereas class consciousness emerges when the proletariat apprehends the totality of the historical process.",
+                "False consciousness is created by the vanguard party, while class consciousness is spontaneous trade unionism.",
+                "Both terms were rejected by Lukács as bourgeois ideological mystifications."
+              ],
+              "correctIndex": 1,
+              "explanation": "Lukács argued that under capitalism, reification obscures totality, leaving workers in 'false consciousness'. True 'class consciousness' is not mere empirical awareness, but the imputed understanding of the historical totality and the revolutionary role of the proletariat."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_22",
@@ -2350,7 +3494,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_22_q1",
+              "question": "Regarding the theoretical concepts examined in 'Global and Postcolonial Perspectives', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Global and Postcolonial Perspectives', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch3_marxism_sec_22_q2",
+              "question": "In contemporary debates surrounding 'Global and Postcolonial Perspectives', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Global and Postcolonial Perspectives' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_23",
@@ -2363,7 +3533,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_23_q1",
+              "question": "Regarding the theoretical concepts examined in 'Incorporation of Other Critical Theories', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Incorporation of Other Critical Theories', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch3_marxism_sec_23_q2",
+              "question": "In contemporary debates surrounding 'Incorporation of Other Critical Theories', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Incorporation of Other Critical Theories' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_24",
@@ -2400,7 +3596,33 @@ window.SARRTHI_DATA = {
               "full_text": "Marcuse contended that people must first become aware of their state of unfreedom before they can begin their journey toward liberation and true freedom."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_24_q1",
+              "question": "In 'Dialectic of Enlightenment' (1944), Max Horkheimer and Theodor Adorno argue that the Enlightenment's promise of human liberation through reason inverted into:",
+              "options": [
+                "An inevitable transition to democratic socialism.",
+                "Instrumental rationality, technological domination, and the cultural commodification of the masses under totalitarian administration.",
+                "A return to ancient medieval religious mysticism.",
+                "A triumph of proletarian artistic expression."
+              ],
+              "correctIndex": 1,
+              "explanation": "Adorno and Horkheimer argued that reason was degraded into 'instrumental reason'—a calculating tool focused on means rather than human emancipation—leading to the domination of nature, bureaucratic authoritarianism, and the 'Culture Industry'."
+            },
+            {
+              "id": "ch3_marxism_sec_24_q2",
+              "question": "Herbert Marcuse's critique of advanced industrial capitalism in 'One-Dimensional Man' (1964) highlights how the system neutralizes revolutionary dissent through:",
+              "options": [
+                "Draconian police brutality against all working-class citizens.",
+                "Manufactured consumer needs, repressive tolerance, and consumerist affluence that integrate the working class into the capitalist order.",
+                "Outlawing television and mass print media.",
+                "Abolishing technical rationalization in factories."
+              ],
+              "correctIndex": 1,
+              "explanation": "Marcuse demonstrated that advanced capitalism creates 'false needs' through mass consumer culture and advertising, producing a 'one-dimensional' society where radical opposition is co-opted and dissolved through comfort and conformism."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_25",
@@ -2423,7 +3645,33 @@ window.SARRTHI_DATA = {
               "full_text": "Habermas developed the theory of the public sphere and communicative action, advocating for deliberative democracy and civic participation within an ideal speech situation. He believed that meaningful participation in civic affairs should involve open and rational discourse among citizens. This, in turn, would foster a more inclusive and democratic society."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_25_q1",
+              "question": "Regarding the theoretical concepts examined in 'Jürgen Habermas - \"The Theory of Communicative Action\"', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Jürgen Habermas - \"The Theory of Communicative Action\"', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch3_marxism_sec_25_q2",
+              "question": "In contemporary debates surrounding 'Jürgen Habermas - \"The Theory of Communicative Action\"', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Jürgen Habermas - \"The Theory of Communicative Action\"' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_26",
@@ -2479,7 +3727,33 @@ window.SARRTHI_DATA = {
               "full_text": "Social Transformation : Despite its analytical complexity, the Structuralist School remains focused on transformative politics —challenging entrenched structures to promote social justice."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_26_q1",
+              "question": "Regarding the Marxist conceptualization of ideology and the Base-Superstructure model, consider the following statements:\n1. Marx and Engels view ideology as an autonomous cognitive realm that independently influences material production.\n2. Ideology constitutes a 'camera obscura' where real socio-economic relations appear inverted to conceal systemic exploitation.\n3. In 'The German Ideology', the ruling ideas of each epoch are characterized as nothing more than the ideal expression of dominant material relationships.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 1,
+              "explanation": "Statement 1 is incorrect: Classical Marxism rejects ideological autonomy; ideology is part of the superstructure determined by the economic base. Statements 2 and 3 are correct: Marx uses the metaphor of the 'camera obscura' (inverted reality) and famously writes that 'the ideas of the ruling class are in every epoch the ruling ideas'."
+            },
+            {
+              "id": "ch3_marxism_sec_26_q2",
+              "question": "In Marxist theory, how does Georg Lukács differentiate between 'False Consciousness' and 'Class Consciousness' in 'History and Class Consciousness' (1923)?",
+              "options": [
+                "False consciousness is purely individual psychological error, while class consciousness is genetic.",
+                "False consciousness reflects reified capitalist immediacy, whereas class consciousness emerges when the proletariat apprehends the totality of the historical process.",
+                "False consciousness is created by the vanguard party, while class consciousness is spontaneous trade unionism.",
+                "Both terms were rejected by Lukács as bourgeois ideological mystifications."
+              ],
+              "correctIndex": 1,
+              "explanation": "Lukács argued that under capitalism, reification obscures totality, leaving workers in 'false consciousness'. True 'class consciousness' is not mere empirical awareness, but the imputed understanding of the historical totality and the revolutionary role of the proletariat."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_27",
@@ -2500,7 +3774,33 @@ window.SARRTHI_DATA = {
               "full_text": "Economic Inequality : Thomas Piketty , in Capital in the Twenty-First Century , revalidates Marx’s"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_27_q1",
+              "question": "Regarding the Marxist conceptualization of ideology and the Base-Superstructure model, consider the following statements:\n1. Marx and Engels view ideology as an autonomous cognitive realm that independently influences material production.\n2. Ideology constitutes a 'camera obscura' where real socio-economic relations appear inverted to conceal systemic exploitation.\n3. In 'The German Ideology', the ruling ideas of each epoch are characterized as nothing more than the ideal expression of dominant material relationships.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 1,
+              "explanation": "Statement 1 is incorrect: Classical Marxism rejects ideological autonomy; ideology is part of the superstructure determined by the economic base. Statements 2 and 3 are correct: Marx uses the metaphor of the 'camera obscura' (inverted reality) and famously writes that 'the ideas of the ruling class are in every epoch the ruling ideas'."
+            },
+            {
+              "id": "ch3_marxism_sec_27_q2",
+              "question": "In Marxist theory, how does Georg Lukács differentiate between 'False Consciousness' and 'Class Consciousness' in 'History and Class Consciousness' (1923)?",
+              "options": [
+                "False consciousness is purely individual psychological error, while class consciousness is genetic.",
+                "False consciousness reflects reified capitalist immediacy, whereas class consciousness emerges when the proletariat apprehends the totality of the historical process.",
+                "False consciousness is created by the vanguard party, while class consciousness is spontaneous trade unionism.",
+                "Both terms were rejected by Lukács as bourgeois ideological mystifications."
+              ],
+              "correctIndex": 1,
+              "explanation": "Lukács argued that under capitalism, reification obscures totality, leaving workers in 'false consciousness'. True 'class consciousness' is not mere empirical awareness, but the imputed understanding of the historical totality and the revolutionary role of the proletariat."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_28",
@@ -2607,7 +3907,33 @@ window.SARRTHI_DATA = {
               "full_text": "Example : Exploitation by MNCs and global supply chain inequities reflect global class divisions."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_28_q1",
+              "question": "Regarding the theoretical concepts examined in 'concerns', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'concerns', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch3_marxism_sec_28_q2",
+              "question": "In contemporary debates surrounding 'concerns', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'concerns' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_29",
@@ -2620,7 +3946,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_29_q1",
+              "question": "Regarding the theoretical concepts examined in 'Conclusion ', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Conclusion ', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch3_marxism_sec_29_q2",
+              "question": "In contemporary debates surrounding 'Conclusion ', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Conclusion ' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_30",
@@ -2706,7 +4058,33 @@ window.SARRTHI_DATA = {
               "full_text": "African Marxism : Adapts Marxism to post-colonial realities, addressing imperialism, neocolonialism, and the socio-economic struggles of the Global South."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_30_q1",
+              "question": "Regarding the Marxist conceptualization of ideology and the Base-Superstructure model, consider the following statements:\n1. Marx and Engels view ideology as an autonomous cognitive realm that independently influences material production.\n2. Ideology constitutes a 'camera obscura' where real socio-economic relations appear inverted to conceal systemic exploitation.\n3. In 'The German Ideology', the ruling ideas of each epoch are characterized as nothing more than the ideal expression of dominant material relationships.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 1,
+              "explanation": "Statement 1 is incorrect: Classical Marxism rejects ideological autonomy; ideology is part of the superstructure determined by the economic base. Statements 2 and 3 are correct: Marx uses the metaphor of the 'camera obscura' (inverted reality) and famously writes that 'the ideas of the ruling class are in every epoch the ruling ideas'."
+            },
+            {
+              "id": "ch3_marxism_sec_30_q2",
+              "question": "In Marxist theory, how does Georg Lukács differentiate between 'False Consciousness' and 'Class Consciousness' in 'History and Class Consciousness' (1923)?",
+              "options": [
+                "False consciousness is purely individual psychological error, while class consciousness is genetic.",
+                "False consciousness reflects reified capitalist immediacy, whereas class consciousness emerges when the proletariat apprehends the totality of the historical process.",
+                "False consciousness is created by the vanguard party, while class consciousness is spontaneous trade unionism.",
+                "Both terms were rejected by Lukács as bourgeois ideological mystifications."
+              ],
+              "correctIndex": 1,
+              "explanation": "Lukács argued that under capitalism, reification obscures totality, leaving workers in 'false consciousness'. True 'class consciousness' is not mere empirical awareness, but the imputed understanding of the historical totality and the revolutionary role of the proletariat."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_31",
@@ -2719,7 +4097,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_31_q1",
+              "question": "In 'The Doctrine of Fascism' (1932), Benito Mussolini encapsulated the fascist conception of the state with which definitive aphorism?",
+              "options": [
+                "'The state is the executive committee for managing the common affairs of the bourgeoisie.'",
+                "'Everything in the State, nothing outside the State, nothing against the State.'",
+                "'That government is best which governs least.'",
+                "'The state must wither away into an oceanic circle of self-sufficient villages.'"
+              ],
+              "correctIndex": 1,
+              "explanation": "Mussolini proclaimed: 'Tutto nello Stato, niente al di fuori dello Stato, niente contro lo Stato' (Everything in the State, nothing outside the State, nothing against the State), embodying absolute totalitarian statism."
+            },
+            {
+              "id": "ch3_marxism_sec_31_q2",
+              "question": "Which intellectual influence contributed directly to fascism's anti-rationalist philosophy, romantic cult of heroic action, and celebration of vitalist violence?",
+              "options": [
+                "John Locke's tabula rasa and natural rights.",
+                "Georges Sorel's 'Reflections on Violence' (the myth of the general strike) and Friedrich Nietzsche's 'Will to Power' (appropriated).",
+                "Immanuel Kant's categorical imperative of universal peace.",
+                "Adam Smith's theory of moral sentiments."
+              ],
+              "correctIndex": 1,
+              "explanation": "Fascism drew heavily from late 19th-century anti-Enlightenment thought: Sorel's theory of non-rational revolutionary myth and violence, Nietzsche's will to power and Übermensch (distorted by fascists), and Social Darwinian racial struggle."
+            }
+          ]
         },
         {
           "id": "ch3_marxism_sec_32",
@@ -2749,7 +4153,33 @@ window.SARRTHI_DATA = {
               "full_text": "Charles Fourier (1772–1837): Proposed phalansteries —self-sufficient communities organized around \"attractive industry,\" where labor aligned with individual passions. His vision of cooperative and harmonious living influenced future socialist and communal experiments."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch3_marxism_sec_32_q1",
+              "question": "Regarding the theoretical concepts examined in 'Origin and Evolution of Socialism', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Origin and Evolution of Socialism', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch3_marxism_sec_32_q2",
+              "question": "In contemporary debates surrounding 'Origin and Evolution of Socialism', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Origin and Evolution of Socialism' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         }
       ],
       "total_bullets": 115
@@ -2799,7 +4229,33 @@ window.SARRTHI_DATA = {
               "full_text": "African Marxism : Adapts Marxism to post-colonial realities, addressing imperialism, neocolonialism, and the socio-economic struggles of the Global South."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch4_socialism_fascism_sec_intro_q1",
+              "question": "In 'The Doctrine of Fascism' (1932), Benito Mussolini encapsulated the fascist conception of the state with which definitive aphorism?",
+              "options": [
+                "'The state is the executive committee for managing the common affairs of the bourgeoisie.'",
+                "'Everything in the State, nothing outside the State, nothing against the State.'",
+                "'That government is best which governs least.'",
+                "'The state must wither away into an oceanic circle of self-sufficient villages.'"
+              ],
+              "correctIndex": 1,
+              "explanation": "Mussolini proclaimed: 'Tutto nello Stato, niente al di fuori dello Stato, niente contro lo Stato' (Everything in the State, nothing outside the State, nothing against the State), embodying absolute totalitarian statism."
+            },
+            {
+              "id": "ch4_socialism_fascism_sec_intro_q2",
+              "question": "Which intellectual influence contributed directly to fascism's anti-rationalist philosophy, romantic cult of heroic action, and celebration of vitalist violence?",
+              "options": [
+                "John Locke's tabula rasa and natural rights.",
+                "Georges Sorel's 'Reflections on Violence' (the myth of the general strike) and Friedrich Nietzsche's 'Will to Power' (appropriated).",
+                "Immanuel Kant's categorical imperative of universal peace.",
+                "Adam Smith's theory of moral sentiments."
+              ],
+              "correctIndex": 1,
+              "explanation": "Fascism drew heavily from late 19th-century anti-Enlightenment thought: Sorel's theory of non-rational revolutionary myth and violence, Nietzsche's will to power and Übermensch (distorted by fascists), and Social Darwinian racial struggle."
+            }
+          ]
         },
         {
           "id": "ch4_socialism_fascism_sec_2",
@@ -2812,7 +4268,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch4_socialism_fascism_sec_2_q1",
+              "question": "In 'The Doctrine of Fascism' (1932), Benito Mussolini encapsulated the fascist conception of the state with which definitive aphorism?",
+              "options": [
+                "'The state is the executive committee for managing the common affairs of the bourgeoisie.'",
+                "'Everything in the State, nothing outside the State, nothing against the State.'",
+                "'That government is best which governs least.'",
+                "'The state must wither away into an oceanic circle of self-sufficient villages.'"
+              ],
+              "correctIndex": 1,
+              "explanation": "Mussolini proclaimed: 'Tutto nello Stato, niente al di fuori dello Stato, niente contro lo Stato' (Everything in the State, nothing outside the State, nothing against the State), embodying absolute totalitarian statism."
+            },
+            {
+              "id": "ch4_socialism_fascism_sec_2_q2",
+              "question": "Which intellectual influence contributed directly to fascism's anti-rationalist philosophy, romantic cult of heroic action, and celebration of vitalist violence?",
+              "options": [
+                "John Locke's tabula rasa and natural rights.",
+                "Georges Sorel's 'Reflections on Violence' (the myth of the general strike) and Friedrich Nietzsche's 'Will to Power' (appropriated).",
+                "Immanuel Kant's categorical imperative of universal peace.",
+                "Adam Smith's theory of moral sentiments."
+              ],
+              "correctIndex": 1,
+              "explanation": "Fascism drew heavily from late 19th-century anti-Enlightenment thought: Sorel's theory of non-rational revolutionary myth and violence, Nietzsche's will to power and Übermensch (distorted by fascists), and Social Darwinian racial struggle."
+            }
+          ]
         },
         {
           "id": "ch4_socialism_fascism_sec_3",
@@ -2849,7 +4331,33 @@ window.SARRTHI_DATA = {
               "full_text": "Henri de Saint-Simon (1760–1825): Emphasized technocratic planning and industrial reorganization. He envisioned a society led by scientists and industrialists, focusing on productivity, hierarchy, and meritocratic governance to uplift the masses. “The varieties of socialism differ in their answers to how social ownership and equality are to be achieved—this distinction helps us grasp the true character of socialism.”"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch4_socialism_fascism_sec_3_q1",
+              "question": "Regarding the theoretical concepts examined in 'Origin and Evolution of Socialism', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Origin and Evolution of Socialism', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch4_socialism_fascism_sec_3_q2",
+              "question": "In contemporary debates surrounding 'Origin and Evolution of Socialism', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Origin and Evolution of Socialism' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch4_socialism_fascism_sec_4",
@@ -2956,7 +4464,33 @@ window.SARRTHI_DATA = {
               "full_text": "Example: Social democratic parties globally support peace-oriented international organizations."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch4_socialism_fascism_sec_4_q1",
+              "question": "Regarding the theoretical concepts examined in 'Evolutionary Socialism', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Evolutionary Socialism', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch4_socialism_fascism_sec_4_q2",
+              "question": "In contemporary debates surrounding 'Evolutionary Socialism', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Evolutionary Socialism' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch4_socialism_fascism_sec_5",
@@ -3091,7 +4625,33 @@ window.SARRTHI_DATA = {
               "full_text": "“Reformism is bourgeois politics without the bourgeoisie.” – Rosa Luxemburg"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch4_socialism_fascism_sec_5_q1",
+              "question": "Regarding the theoretical concepts examined in 'Revolutionary Socialism', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Revolutionary Socialism', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch4_socialism_fascism_sec_5_q2",
+              "question": "In contemporary debates surrounding 'Revolutionary Socialism', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Revolutionary Socialism' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch4_socialism_fascism_sec_6",
@@ -3205,7 +4765,33 @@ window.SARRTHI_DATA = {
               "full_text": "“The capitalist system as it exists at present is no doubt... the best yet discovered.” – Sidney Webb"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch4_socialism_fascism_sec_6_q1",
+              "question": "In 'Evolutionary Socialism' (1899), Eduard Bernstein's revisionist thesis broke with orthodox Marxism by asserting that:",
+              "options": [
+                "Capitalism was on the brink of imminent catastrophic economic collapse.",
+                "The middle class was expanding rather than disappearing, and socialism could be achieved incrementally through democratic parliamentary reforms without violent insurrection.",
+                "Socialists must align with feudal monarchs to suppress the industrial bourgeoisie.",
+                "Trade unions were counter-revolutionary instruments that must be banned."
+              ],
+              "correctIndex": 1,
+              "explanation": "Bernstein famously stated: 'The final aim, whatever it may be, is nothing to me; the movement is everything.' He argued capitalism was adapting, living standards were rising, and democratic franchise offered a non-violent path to socialism."
+            },
+            {
+              "id": "ch4_socialism_fascism_sec_6_q2",
+              "question": "Which strategy characterized the Fabian Society's approach to implementing socialism in Britain (Sidney & Beatrice Webb, G.B. Shaw)?",
+              "options": [
+                "Armed guerrilla warfare in rural municipalities.",
+                "The 'Inevitability of Gradualism' and policy permeation of civil servants, municipal councils, and parliamentary committees with technocratic socialist expertise.",
+                "Immediate general strikes and syndicalist direct action.",
+                "Total rejection of state institutions in favor of anarcho-communism."
+              ],
+              "correctIndex": 1,
+              "explanation": "Fabianism rejected violent revolution in favor of 'permeation'—influencing political parties and state bureaucracies through research, municipal socialism ('gas and water socialism'), and gradual legislative change."
+            }
+          ]
         },
         {
           "id": "ch4_socialism_fascism_sec_7",
@@ -3284,7 +4870,33 @@ window.SARRTHI_DATA = {
               "full_text": "“The socialist movement takes its place within the general working-class movement…” – Bernstein"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch4_socialism_fascism_sec_7_q1",
+              "question": "In 'Evolutionary Socialism' (1899), Eduard Bernstein's revisionist thesis broke with orthodox Marxism by asserting that:",
+              "options": [
+                "Capitalism was on the brink of imminent catastrophic economic collapse.",
+                "The middle class was expanding rather than disappearing, and socialism could be achieved incrementally through democratic parliamentary reforms without violent insurrection.",
+                "Socialists must align with feudal monarchs to suppress the industrial bourgeoisie.",
+                "Trade unions were counter-revolutionary instruments that must be banned."
+              ],
+              "correctIndex": 1,
+              "explanation": "Bernstein famously stated: 'The final aim, whatever it may be, is nothing to me; the movement is everything.' He argued capitalism was adapting, living standards were rising, and democratic franchise offered a non-violent path to socialism."
+            },
+            {
+              "id": "ch4_socialism_fascism_sec_7_q2",
+              "question": "Which strategy characterized the Fabian Society's approach to implementing socialism in Britain (Sidney & Beatrice Webb, G.B. Shaw)?",
+              "options": [
+                "Armed guerrilla warfare in rural municipalities.",
+                "The 'Inevitability of Gradualism' and policy permeation of civil servants, municipal councils, and parliamentary committees with technocratic socialist expertise.",
+                "Immediate general strikes and syndicalist direct action.",
+                "Total rejection of state institutions in favor of anarcho-communism."
+              ],
+              "correctIndex": 1,
+              "explanation": "Fabianism rejected violent revolution in favor of 'permeation'—influencing political parties and state bureaucracies through research, municipal socialism ('gas and water socialism'), and gradual legislative change."
+            }
+          ]
         },
         {
           "id": "ch4_socialism_fascism_sec_8",
@@ -3349,7 +4961,33 @@ window.SARRTHI_DATA = {
               "full_text": "“The organization of the working class is international.” – Fernand Pelloutier"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch4_socialism_fascism_sec_8_q1",
+              "question": "Regarding the theoretical concepts examined in 'Syndicalism', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Syndicalism', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch4_socialism_fascism_sec_8_q2",
+              "question": "In contemporary debates surrounding 'Syndicalism', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Syndicalism' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch4_socialism_fascism_sec_9",
@@ -3428,7 +5066,33 @@ window.SARRTHI_DATA = {
               "full_text": "“The Guild Socialists were among the earliest critics of the capitalist system.” – R.H. Tawney"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch4_socialism_fascism_sec_9_q1",
+              "question": "Regarding the theoretical concepts examined in 'Guild Socialism', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Guild Socialism', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch4_socialism_fascism_sec_9_q2",
+              "question": "In contemporary debates surrounding 'Guild Socialism', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Guild Socialism' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch4_socialism_fascism_sec_10",
@@ -3441,7 +5105,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch4_socialism_fascism_sec_10_q1",
+              "question": "Regarding the theoretical concepts examined in 'Synthesis', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Synthesis', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch4_socialism_fascism_sec_10_q2",
+              "question": "In contemporary debates surrounding 'Synthesis', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Synthesis' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch4_socialism_fascism_sec_11",
@@ -3541,7 +5231,33 @@ window.SARRTHI_DATA = {
               "full_text": "Critique of Inherited Wealth: Challenges dynastic inequality by supporting inheritance taxes to prevent intergenerational concentration of wealth."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch4_socialism_fascism_sec_11_q1",
+              "question": "Regarding the theoretical concepts examined in 'Equality under Socialism', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Equality under Socialism', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch4_socialism_fascism_sec_11_q2",
+              "question": "In contemporary debates surrounding 'Equality under Socialism', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Equality under Socialism' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch4_socialism_fascism_sec_12",
@@ -3669,7 +5385,33 @@ window.SARRTHI_DATA = {
               "full_text": "International Solidarity: Champions global worker cooperation and anti-imperialism as part of a just global order."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch4_socialism_fascism_sec_12_q1",
+              "question": "Regarding the theoretical concepts examined in 'Democratic Socialism', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Democratic Socialism', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch4_socialism_fascism_sec_12_q2",
+              "question": "In contemporary debates surrounding 'Democratic Socialism', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Democratic Socialism' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch4_socialism_fascism_sec_13",
@@ -3811,7 +5553,33 @@ window.SARRTHI_DATA = {
               "full_text": "Contemporary Challenges: Modern socialism navigates tensions between state control and individual autonomy, the role of technology, and adapting its economic strategies in the information age."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch4_socialism_fascism_sec_13_q1",
+              "question": "Regarding the theoretical concepts examined in 'Socialism in the 21st Century', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Socialism in the 21st Century', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch4_socialism_fascism_sec_13_q2",
+              "question": "In contemporary debates surrounding 'Socialism in the 21st Century', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Socialism in the 21st Century' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch4_socialism_fascism_sec_14",
@@ -3824,7 +5592,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch4_socialism_fascism_sec_14_q1",
+              "question": "Regarding the theoretical concepts examined in 'Conclusion', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Conclusion', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch4_socialism_fascism_sec_14_q2",
+              "question": "In contemporary debates surrounding 'Conclusion', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Conclusion' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch4_socialism_fascism_sec_15",
@@ -3837,7 +5631,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch4_socialism_fascism_sec_15_q1",
+              "question": "In 'The Doctrine of Fascism' (1932), Benito Mussolini encapsulated the fascist conception of the state with which definitive aphorism?",
+              "options": [
+                "'The state is the executive committee for managing the common affairs of the bourgeoisie.'",
+                "'Everything in the State, nothing outside the State, nothing against the State.'",
+                "'That government is best which governs least.'",
+                "'The state must wither away into an oceanic circle of self-sufficient villages.'"
+              ],
+              "correctIndex": 1,
+              "explanation": "Mussolini proclaimed: 'Tutto nello Stato, niente al di fuori dello Stato, niente contro lo Stato' (Everything in the State, nothing outside the State, nothing against the State), embodying absolute totalitarian statism."
+            },
+            {
+              "id": "ch4_socialism_fascism_sec_15_q2",
+              "question": "Which intellectual influence contributed directly to fascism's anti-rationalist philosophy, romantic cult of heroic action, and celebration of vitalist violence?",
+              "options": [
+                "John Locke's tabula rasa and natural rights.",
+                "Georges Sorel's 'Reflections on Violence' (the myth of the general strike) and Friedrich Nietzsche's 'Will to Power' (appropriated).",
+                "Immanuel Kant's categorical imperative of universal peace.",
+                "Adam Smith's theory of moral sentiments."
+              ],
+              "correctIndex": 1,
+              "explanation": "Fascism drew heavily from late 19th-century anti-Enlightenment thought: Sorel's theory of non-rational revolutionary myth and violence, Nietzsche's will to power and Übermensch (distorted by fascists), and Social Darwinian racial struggle."
+            }
+          ]
         },
         {
           "id": "ch4_socialism_fascism_sec_16",
@@ -3902,7 +5722,33 @@ window.SARRTHI_DATA = {
               "full_text": "Post-World War II : Fascism declined after the war, with many countries banning fascist movements. However, remnants of fascist ideology persisted in far-right and neo-fascist groups."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch4_socialism_fascism_sec_16_q1",
+              "question": "In 'The Doctrine of Fascism' (1932), Benito Mussolini encapsulated the fascist conception of the state with which definitive aphorism?",
+              "options": [
+                "'The state is the executive committee for managing the common affairs of the bourgeoisie.'",
+                "'Everything in the State, nothing outside the State, nothing against the State.'",
+                "'That government is best which governs least.'",
+                "'The state must wither away into an oceanic circle of self-sufficient villages.'"
+              ],
+              "correctIndex": 1,
+              "explanation": "Mussolini proclaimed: 'Tutto nello Stato, niente al di fuori dello Stato, niente contro lo Stato' (Everything in the State, nothing outside the State, nothing against the State), embodying absolute totalitarian statism."
+            },
+            {
+              "id": "ch4_socialism_fascism_sec_16_q2",
+              "question": "Which intellectual influence contributed directly to fascism's anti-rationalist philosophy, romantic cult of heroic action, and celebration of vitalist violence?",
+              "options": [
+                "John Locke's tabula rasa and natural rights.",
+                "Georges Sorel's 'Reflections on Violence' (the myth of the general strike) and Friedrich Nietzsche's 'Will to Power' (appropriated).",
+                "Immanuel Kant's categorical imperative of universal peace.",
+                "Adam Smith's theory of moral sentiments."
+              ],
+              "correctIndex": 1,
+              "explanation": "Fascism drew heavily from late 19th-century anti-Enlightenment thought: Sorel's theory of non-rational revolutionary myth and violence, Nietzsche's will to power and Übermensch (distorted by fascists), and Social Darwinian racial struggle."
+            }
+          ]
         },
         {
           "id": "ch4_socialism_fascism_sec_17",
@@ -4093,7 +5939,33 @@ window.SARRTHI_DATA = {
               "full_text": "“Anti-communism is a rallying point for fascist movements.” – Richard J. Evans"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch4_socialism_fascism_sec_17_q1",
+              "question": "In 'The Doctrine of Fascism' (1932), Benito Mussolini encapsulated the fascist conception of the state with which definitive aphorism?",
+              "options": [
+                "'The state is the executive committee for managing the common affairs of the bourgeoisie.'",
+                "'Everything in the State, nothing outside the State, nothing against the State.'",
+                "'That government is best which governs least.'",
+                "'The state must wither away into an oceanic circle of self-sufficient villages.'"
+              ],
+              "correctIndex": 1,
+              "explanation": "Mussolini proclaimed: 'Tutto nello Stato, niente al di fuori dello Stato, niente contro lo Stato' (Everything in the State, nothing outside the State, nothing against the State), embodying absolute totalitarian statism."
+            },
+            {
+              "id": "ch4_socialism_fascism_sec_17_q2",
+              "question": "Which intellectual influence contributed directly to fascism's anti-rationalist philosophy, romantic cult of heroic action, and celebration of vitalist violence?",
+              "options": [
+                "John Locke's tabula rasa and natural rights.",
+                "Georges Sorel's 'Reflections on Violence' (the myth of the general strike) and Friedrich Nietzsche's 'Will to Power' (appropriated).",
+                "Immanuel Kant's categorical imperative of universal peace.",
+                "Adam Smith's theory of moral sentiments."
+              ],
+              "correctIndex": 1,
+              "explanation": "Fascism drew heavily from late 19th-century anti-Enlightenment thought: Sorel's theory of non-rational revolutionary myth and violence, Nietzsche's will to power and Übermensch (distorted by fascists), and Social Darwinian racial struggle."
+            }
+          ]
         },
         {
           "id": "ch4_socialism_fascism_sec_18",
@@ -4221,7 +6093,33 @@ window.SARRTHI_DATA = {
               "full_text": "Nationalism as Legitimacy: The state is equated with the leader, and national destiny is linked to obedience."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch4_socialism_fascism_sec_18_q1",
+              "question": "In 'The Doctrine of Fascism' (1932), Benito Mussolini encapsulated the fascist conception of the state with which definitive aphorism?",
+              "options": [
+                "'The state is the executive committee for managing the common affairs of the bourgeoisie.'",
+                "'Everything in the State, nothing outside the State, nothing against the State.'",
+                "'That government is best which governs least.'",
+                "'The state must wither away into an oceanic circle of self-sufficient villages.'"
+              ],
+              "correctIndex": 1,
+              "explanation": "Mussolini proclaimed: 'Tutto nello Stato, niente al di fuori dello Stato, niente contro lo Stato' (Everything in the State, nothing outside the State, nothing against the State), embodying absolute totalitarian statism."
+            },
+            {
+              "id": "ch4_socialism_fascism_sec_18_q2",
+              "question": "Which intellectual influence contributed directly to fascism's anti-rationalist philosophy, romantic cult of heroic action, and celebration of vitalist violence?",
+              "options": [
+                "John Locke's tabula rasa and natural rights.",
+                "Georges Sorel's 'Reflections on Violence' (the myth of the general strike) and Friedrich Nietzsche's 'Will to Power' (appropriated).",
+                "Immanuel Kant's categorical imperative of universal peace.",
+                "Adam Smith's theory of moral sentiments."
+              ],
+              "correctIndex": 1,
+              "explanation": "Fascism drew heavily from late 19th-century anti-Enlightenment thought: Sorel's theory of non-rational revolutionary myth and violence, Nietzsche's will to power and Übermensch (distorted by fascists), and Social Darwinian racial struggle."
+            }
+          ]
         },
         {
           "id": "ch4_socialism_fascism_sec_19",
@@ -4356,7 +6254,33 @@ window.SARRTHI_DATA = {
               "full_text": "“We must be ruthless. And we can afford to be ruthless.” – Heinrich Himmler"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch4_socialism_fascism_sec_19_q1",
+              "question": "In 'The Doctrine of Fascism' (1932), Benito Mussolini encapsulated the fascist conception of the state with which definitive aphorism?",
+              "options": [
+                "'The state is the executive committee for managing the common affairs of the bourgeoisie.'",
+                "'Everything in the State, nothing outside the State, nothing against the State.'",
+                "'That government is best which governs least.'",
+                "'The state must wither away into an oceanic circle of self-sufficient villages.'"
+              ],
+              "correctIndex": 1,
+              "explanation": "Mussolini proclaimed: 'Tutto nello Stato, niente al di fuori dello Stato, niente contro lo Stato' (Everything in the State, nothing outside the State, nothing against the State), embodying absolute totalitarian statism."
+            },
+            {
+              "id": "ch4_socialism_fascism_sec_19_q2",
+              "question": "Which intellectual influence contributed directly to fascism's anti-rationalist philosophy, romantic cult of heroic action, and celebration of vitalist violence?",
+              "options": [
+                "John Locke's tabula rasa and natural rights.",
+                "Georges Sorel's 'Reflections on Violence' (the myth of the general strike) and Friedrich Nietzsche's 'Will to Power' (appropriated).",
+                "Immanuel Kant's categorical imperative of universal peace.",
+                "Adam Smith's theory of moral sentiments."
+              ],
+              "correctIndex": 1,
+              "explanation": "Fascism drew heavily from late 19th-century anti-Enlightenment thought: Sorel's theory of non-rational revolutionary myth and violence, Nietzsche's will to power and Übermensch (distorted by fascists), and Social Darwinian racial struggle."
+            }
+          ]
         },
         {
           "id": "ch4_socialism_fascism_sec_20",
@@ -4470,7 +6394,33 @@ window.SARRTHI_DATA = {
               "full_text": "Total Control of Private Life: Surveillance, indoctrination, and loyalty to the state permeated private and public spheres."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch4_socialism_fascism_sec_20_q1",
+              "question": "Consider the following statements regarding Hannah Arendt's analysis in 'The Origins of Totalitarianism' (1951):\n1. Totalitarianism relies on ideology to generate total consistency and eliminate the contingency of human freedom.\n2. Totalitarian regimes derive their power exclusively through traditional military dictatorships and hereditary monarchy.\n3. In 'Eichmann in Jerusalem', the 'banality of evil' demonstrates that catastrophic state crimes can be perpetrated by thoughtless conformists rather than sadistic monsters.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "1 and 3 only",
+                "2 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 1,
+              "explanation": "Statement 2 is incorrect: Totalitarianism is a novel 20th-century phenomenon distinct from traditional autocracy, utilizing total ideological terror and atomization. Statements 1 and 3 correctly reflect Arendt's foundational theses."
+            },
+            {
+              "id": "ch4_socialism_fascism_sec_20_q2",
+              "question": "In 'The Open Society and Its Enemies', Karl Popper formulates the 'Paradox of Tolerance'. What is its central normative conclusion?",
+              "options": [
+                "An open society must unconditionally tolerate every viewpoint, including those advocating violent intolerance.",
+                "Unlimited tolerance must lead to the disappearance of tolerance; hence, a society must reserve the right not to tolerate the intolerant.",
+                "Democratic states should censor all conservative and socialist philosophies.",
+                "Tolerance is an inherently bourgeois concept that must be superseded by revolutionary terror."
+              ],
+              "correctIndex": 1,
+              "explanation": "Popper argued: 'If we extend unlimited tolerance even to those who are intolerant... then the tolerant will be destroyed, and tolerance with them... We should therefore claim, in the name of tolerance, the right not to tolerate the intolerant.'"
+            }
+          ]
         },
         {
           "id": "ch4_socialism_fascism_sec_21",
@@ -4542,7 +6492,33 @@ window.SARRTHI_DATA = {
               "full_text": "Collapse: Nazi rule ended in 1945 with Germany's defeat in WWII; Hitler’s suicide marked the regime’s demise. Nazism represents the most extreme form of fascism—marked by racism, genocide, totalitarian control, and catastrophic global consequences."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch4_socialism_fascism_sec_21_q1",
+              "question": "Regarding the theoretical concepts examined in 'Nazism under Adolf Hitler', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Nazism under Adolf Hitler', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch4_socialism_fascism_sec_21_q2",
+              "question": "In contemporary debates surrounding 'Nazism under Adolf Hitler', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Nazism under Adolf Hitler' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch4_socialism_fascism_sec_22",
@@ -4600,7 +6576,33 @@ window.SARRTHI_DATA = {
               "full_text": "Aggressive Foreign Policy: Sought imperial expansion, notably through the 1935 invasion of Ethiopia. Mussolini’s vision of “Everything for the state…” encapsulated fascism’s totalitarian essence, aiming to modernize Italy through centralized power and militant nationalism."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch4_socialism_fascism_sec_22_q1",
+              "question": "In 'The Doctrine of Fascism' (1932), Benito Mussolini encapsulated the fascist conception of the state with which definitive aphorism?",
+              "options": [
+                "'The state is the executive committee for managing the common affairs of the bourgeoisie.'",
+                "'Everything in the State, nothing outside the State, nothing against the State.'",
+                "'That government is best which governs least.'",
+                "'The state must wither away into an oceanic circle of self-sufficient villages.'"
+              ],
+              "correctIndex": 1,
+              "explanation": "Mussolini proclaimed: 'Tutto nello Stato, niente al di fuori dello Stato, niente contro lo Stato' (Everything in the State, nothing outside the State, nothing against the State), embodying absolute totalitarian statism."
+            },
+            {
+              "id": "ch4_socialism_fascism_sec_22_q2",
+              "question": "Which intellectual influence contributed directly to fascism's anti-rationalist philosophy, romantic cult of heroic action, and celebration of vitalist violence?",
+              "options": [
+                "John Locke's tabula rasa and natural rights.",
+                "Georges Sorel's 'Reflections on Violence' (the myth of the general strike) and Friedrich Nietzsche's 'Will to Power' (appropriated).",
+                "Immanuel Kant's categorical imperative of universal peace.",
+                "Adam Smith's theory of moral sentiments."
+              ],
+              "correctIndex": 1,
+              "explanation": "Fascism drew heavily from late 19th-century anti-Enlightenment thought: Sorel's theory of non-rational revolutionary myth and violence, Nietzsche's will to power and Übermensch (distorted by fascists), and Social Darwinian racial struggle."
+            }
+          ]
         },
         {
           "id": "ch4_socialism_fascism_sec_23",
@@ -4740,7 +6742,33 @@ window.SARRTHI_DATA = {
               "full_text": "Concern: Increasing cases of far-right terrorism across the U.S., Europe, and parts of Asia."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch4_socialism_fascism_sec_23_q1",
+              "question": "In 'The Doctrine of Fascism' (1932), Benito Mussolini encapsulated the fascist conception of the state with which definitive aphorism?",
+              "options": [
+                "'The state is the executive committee for managing the common affairs of the bourgeoisie.'",
+                "'Everything in the State, nothing outside the State, nothing against the State.'",
+                "'That government is best which governs least.'",
+                "'The state must wither away into an oceanic circle of self-sufficient villages.'"
+              ],
+              "correctIndex": 1,
+              "explanation": "Mussolini proclaimed: 'Tutto nello Stato, niente al di fuori dello Stato, niente contro lo Stato' (Everything in the State, nothing outside the State, nothing against the State), embodying absolute totalitarian statism."
+            },
+            {
+              "id": "ch4_socialism_fascism_sec_23_q2",
+              "question": "Which intellectual influence contributed directly to fascism's anti-rationalist philosophy, romantic cult of heroic action, and celebration of vitalist violence?",
+              "options": [
+                "John Locke's tabula rasa and natural rights.",
+                "Georges Sorel's 'Reflections on Violence' (the myth of the general strike) and Friedrich Nietzsche's 'Will to Power' (appropriated).",
+                "Immanuel Kant's categorical imperative of universal peace.",
+                "Adam Smith's theory of moral sentiments."
+              ],
+              "correctIndex": 1,
+              "explanation": "Fascism drew heavily from late 19th-century anti-Enlightenment thought: Sorel's theory of non-rational revolutionary myth and violence, Nietzsche's will to power and Übermensch (distorted by fascists), and Social Darwinian racial struggle."
+            }
+          ]
         },
         {
           "id": "ch4_socialism_fascism_sec_24",
@@ -4753,7 +6781,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch4_socialism_fascism_sec_24_q1",
+              "question": "Regarding the theoretical concepts examined in 'Key Insight', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Key Insight', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch4_socialism_fascism_sec_24_q2",
+              "question": "In contemporary debates surrounding 'Key Insight', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Key Insight' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch4_socialism_fascism_sec_25",
@@ -4766,7 +6820,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch4_socialism_fascism_sec_25_q1",
+              "question": "In 'Hind Swaraj' (1909), Mahatma Gandhi conceptualizes 'Swaraj' not merely as the expulsion of British rulers, but as:",
+              "options": [
+                "Adopting modern British parliamentary institutions with Indian personnel.",
+                "Moral and spiritual self-rule—mastery over our own minds, accompanied by the complete rejection of modern soulless industrial civilization.",
+                "Rapid military industrialization and state capitalism.",
+                "Subordinating moral ethics to utilitarian realpolitik."
+              ],
+              "correctIndex": 1,
+              "explanation": "Gandhi declared that replacing British rulers while retaining modern industrial machinery, railways, and coercive statecraft would simply be 'English rule without the Englishman'—true Swaraj is moral self-control and civilizational renewal."
+            },
+            {
+              "id": "ch4_socialism_fascism_sec_25_q2",
+              "question": "Consider the following statements regarding Gandhi's political vision of the 'Oceanic Circles' and the State:\n1. Gandhi viewed the modern state as an organized and concentrated engine of violence that destroys individual soul and spontaneity.\n2. In his ideal 'enlightened anarchy', society is structured as concentric widening oceanic circles of self-reliant village republics with no pyramidal hierarchy.\n3. Gandhi advocated for an all-powerful, centralized planning commission to manage rural distribution.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 0,
+              "explanation": "Statement 3 is incorrect: Gandhi strictly opposed state centralization, championing Panchayati Raj and decentralized village swaraj. Statements 1 and 2 accurately reflect Gandhi's philosophical anarchism and the oceanic circle metaphor."
+            }
+          ]
         },
         {
           "id": "ch4_socialism_fascism_sec_26",
@@ -4817,7 +6897,33 @@ window.SARRTHI_DATA = {
               "full_text": "Personal Experiments: Gandhi practiced celibacy, fasting, and self-discipline as tools of moral clarity and political strength. His integrated philosophy of truth, non-violence, and self-rule influenced global movements for justice and civil rights."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch4_socialism_fascism_sec_26_q1",
+              "question": "Regarding the theoretical concepts examined in 'influences', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'influences', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch4_socialism_fascism_sec_26_q2",
+              "question": "In contemporary debates surrounding 'influences', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'influences' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         }
       ],
       "total_bullets": 256
@@ -4881,7 +6987,33 @@ window.SARRTHI_DATA = {
               "full_text": "Tolerance and Dialogue: Believed truth is discovered through humility, openness, and respect for diverse perspectives. For Gandhi, truth was not a doctrine but a way of life—ethical, spiritual, and transformative."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch5_gandhism_sec_intro_q1",
+              "question": "In 'Hind Swaraj' (1909), Mahatma Gandhi conceptualizes 'Swaraj' not merely as the expulsion of British rulers, but as:",
+              "options": [
+                "Adopting modern British parliamentary institutions with Indian personnel.",
+                "Moral and spiritual self-rule—mastery over our own minds, accompanied by the complete rejection of modern soulless industrial civilization.",
+                "Rapid military industrialization and state capitalism.",
+                "Subordinating moral ethics to utilitarian realpolitik."
+              ],
+              "correctIndex": 1,
+              "explanation": "Gandhi declared that replacing British rulers while retaining modern industrial machinery, railways, and coercive statecraft would simply be 'English rule without the Englishman'—true Swaraj is moral self-control and civilizational renewal."
+            },
+            {
+              "id": "ch5_gandhism_sec_intro_q2",
+              "question": "Consider the following statements regarding Gandhi's political vision of the 'Oceanic Circles' and the State:\n1. Gandhi viewed the modern state as an organized and concentrated engine of violence that destroys individual soul and spontaneity.\n2. In his ideal 'enlightened anarchy', society is structured as concentric widening oceanic circles of self-reliant village republics with no pyramidal hierarchy.\n3. Gandhi advocated for an all-powerful, centralized planning commission to manage rural distribution.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 0,
+              "explanation": "Statement 3 is incorrect: Gandhi strictly opposed state centralization, championing Panchayati Raj and decentralized village swaraj. Statements 1 and 2 accurately reflect Gandhi's philosophical anarchism and the oceanic circle metaphor."
+            }
+          ]
         },
         {
           "id": "ch5_gandhism_sec_2",
@@ -4965,7 +7097,33 @@ window.SARRTHI_DATA = {
               "full_text": "Spiritual Path: Ahimsa was a path to the divine, recognizing the humanity in all beings."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch5_gandhism_sec_2_q1",
+              "question": "In 'Hind Swaraj' (1909), Mahatma Gandhi conceptualizes 'Swaraj' not merely as the expulsion of British rulers, but as:",
+              "options": [
+                "Adopting modern British parliamentary institutions with Indian personnel.",
+                "Moral and spiritual self-rule—mastery over our own minds, accompanied by the complete rejection of modern soulless industrial civilization.",
+                "Rapid military industrialization and state capitalism.",
+                "Subordinating moral ethics to utilitarian realpolitik."
+              ],
+              "correctIndex": 1,
+              "explanation": "Gandhi declared that replacing British rulers while retaining modern industrial machinery, railways, and coercive statecraft would simply be 'English rule without the Englishman'—true Swaraj is moral self-control and civilizational renewal."
+            },
+            {
+              "id": "ch5_gandhism_sec_2_q2",
+              "question": "Consider the following statements regarding Gandhi's political vision of the 'Oceanic Circles' and the State:\n1. Gandhi viewed the modern state as an organized and concentrated engine of violence that destroys individual soul and spontaneity.\n2. In his ideal 'enlightened anarchy', society is structured as concentric widening oceanic circles of self-reliant village republics with no pyramidal hierarchy.\n3. Gandhi advocated for an all-powerful, centralized planning commission to manage rural distribution.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 0,
+              "explanation": "Statement 3 is incorrect: Gandhi strictly opposed state centralization, championing Panchayati Raj and decentralized village swaraj. Statements 1 and 2 accurately reflect Gandhi's philosophical anarchism and the oceanic circle metaphor."
+            }
+          ]
         },
         {
           "id": "ch5_gandhism_sec_3",
@@ -5084,7 +7242,33 @@ window.SARRTHI_DATA = {
               "full_text": "“Morality is the basis of things and truth is the substance of all morality.”"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch5_gandhism_sec_3_q1",
+              "question": "In 'Hind Swaraj' (1909), Mahatma Gandhi conceptualizes 'Swaraj' not merely as the expulsion of British rulers, but as:",
+              "options": [
+                "Adopting modern British parliamentary institutions with Indian personnel.",
+                "Moral and spiritual self-rule—mastery over our own minds, accompanied by the complete rejection of modern soulless industrial civilization.",
+                "Rapid military industrialization and state capitalism.",
+                "Subordinating moral ethics to utilitarian realpolitik."
+              ],
+              "correctIndex": 1,
+              "explanation": "Gandhi declared that replacing British rulers while retaining modern industrial machinery, railways, and coercive statecraft would simply be 'English rule without the Englishman'—true Swaraj is moral self-control and civilizational renewal."
+            },
+            {
+              "id": "ch5_gandhism_sec_3_q2",
+              "question": "Consider the following statements regarding Gandhi's political vision of the 'Oceanic Circles' and the State:\n1. Gandhi viewed the modern state as an organized and concentrated engine of violence that destroys individual soul and spontaneity.\n2. In his ideal 'enlightened anarchy', society is structured as concentric widening oceanic circles of self-reliant village republics with no pyramidal hierarchy.\n3. Gandhi advocated for an all-powerful, centralized planning commission to manage rural distribution.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 0,
+              "explanation": "Statement 3 is incorrect: Gandhi strictly opposed state centralization, championing Panchayati Raj and decentralized village swaraj. Statements 1 and 2 accurately reflect Gandhi's philosophical anarchism and the oceanic circle metaphor."
+            }
+          ]
         },
         {
           "id": "ch5_gandhism_sec_4",
@@ -5217,7 +7401,33 @@ window.SARRTHI_DATA = {
               "full_text": "“God forbid that India should ever take to industrialism after the manner of the West...”"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch5_gandhism_sec_4_q1",
+              "question": "How did T.H. Green and Modern Liberals redefine the concept of 'Liberty' away from Classical Liberalism?",
+              "options": [
+                "Liberty was defined solely as the absence of external legal restraint (negative liberty).",
+                "Liberty was reconceptualized as positive capacity—the freedom to realize one's moral and creative potential facilitated by enabling state institutions.",
+                "Liberty was equated with absolute submission to state decree.",
+                "Liberty was rejected in favor of pure economic egalitarianism."
+              ],
+              "correctIndex": 1,
+              "explanation": "T.H. Green formulated 'positive freedom' as the capacity to do or enjoy something worth doing, arguing that hunger and poverty are as restrictive of freedom as physical chains, thereby justifying state welfare interventions."
+            },
+            {
+              "id": "ch5_gandhism_sec_4_q2",
+              "question": "In 'On Liberty' (1859), J.S. Mill's 'Harm Principle' establishes that state coercion over an individual's liberty of action is legitimate ONLY when:",
+              "options": [
+                "The individual's conduct harms his or her own moral well-being.",
+                "The individual's conduct causes preventible harm to others (other-regarding actions).",
+                "The majority of society finds the individual's religious views offensive.",
+                "Economic efficiency requires nationalization of the individual's property."
+              ],
+              "correctIndex": 1,
+              "explanation": "Mill held: 'The only purpose for which power can be rightfully exercised over any member of a civilized community, against his will, is to prevent harm to others. His own good, either physical or moral, is not a sufficient warrant.'"
+            }
+          ]
         },
         {
           "id": "ch5_gandhism_sec_5",
@@ -5329,7 +7539,33 @@ window.SARRTHI_DATA = {
               "full_text": "“I look only to the good qualities of men…”"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch5_gandhism_sec_5_q1",
+              "question": "In 'Hind Swaraj' (1909), Mahatma Gandhi conceptualizes 'Swaraj' not merely as the expulsion of British rulers, but as:",
+              "options": [
+                "Adopting modern British parliamentary institutions with Indian personnel.",
+                "Moral and spiritual self-rule—mastery over our own minds, accompanied by the complete rejection of modern soulless industrial civilization.",
+                "Rapid military industrialization and state capitalism.",
+                "Subordinating moral ethics to utilitarian realpolitik."
+              ],
+              "correctIndex": 1,
+              "explanation": "Gandhi declared that replacing British rulers while retaining modern industrial machinery, railways, and coercive statecraft would simply be 'English rule without the Englishman'—true Swaraj is moral self-control and civilizational renewal."
+            },
+            {
+              "id": "ch5_gandhism_sec_5_q2",
+              "question": "Consider the following statements regarding Gandhi's political vision of the 'Oceanic Circles' and the State:\n1. Gandhi viewed the modern state as an organized and concentrated engine of violence that destroys individual soul and spontaneity.\n2. In his ideal 'enlightened anarchy', society is structured as concentric widening oceanic circles of self-reliant village republics with no pyramidal hierarchy.\n3. Gandhi advocated for an all-powerful, centralized planning commission to manage rural distribution.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 0,
+              "explanation": "Statement 3 is incorrect: Gandhi strictly opposed state centralization, championing Panchayati Raj and decentralized village swaraj. Statements 1 and 2 accurately reflect Gandhi's philosophical anarchism and the oceanic circle metaphor."
+            }
+          ]
         },
         {
           "id": "ch5_gandhism_sec_6",
@@ -5342,7 +7578,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch5_gandhism_sec_6_q1",
+              "question": "Regarding the theoretical concepts examined in 'Conclusion', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Conclusion', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch5_gandhism_sec_6_q2",
+              "question": "In contemporary debates surrounding 'Conclusion', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Conclusion' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch5_gandhism_sec_7",
@@ -5482,7 +7744,33 @@ window.SARRTHI_DATA = {
               "full_text": "Community Empowerment: The foundation of a just state lies in strong, self-reliant communities guided by mutual cooperation and ethical living."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch5_gandhism_sec_7_q1",
+              "question": "In 'Hind Swaraj' (1909), Mahatma Gandhi conceptualizes 'Swaraj' not merely as the expulsion of British rulers, but as:",
+              "options": [
+                "Adopting modern British parliamentary institutions with Indian personnel.",
+                "Moral and spiritual self-rule—mastery over our own minds, accompanied by the complete rejection of modern soulless industrial civilization.",
+                "Rapid military industrialization and state capitalism.",
+                "Subordinating moral ethics to utilitarian realpolitik."
+              ],
+              "correctIndex": 1,
+              "explanation": "Gandhi declared that replacing British rulers while retaining modern industrial machinery, railways, and coercive statecraft would simply be 'English rule without the Englishman'—true Swaraj is moral self-control and civilizational renewal."
+            },
+            {
+              "id": "ch5_gandhism_sec_7_q2",
+              "question": "Consider the following statements regarding Gandhi's political vision of the 'Oceanic Circles' and the State:\n1. Gandhi viewed the modern state as an organized and concentrated engine of violence that destroys individual soul and spontaneity.\n2. In his ideal 'enlightened anarchy', society is structured as concentric widening oceanic circles of self-reliant village republics with no pyramidal hierarchy.\n3. Gandhi advocated for an all-powerful, centralized planning commission to manage rural distribution.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 0,
+              "explanation": "Statement 3 is incorrect: Gandhi strictly opposed state centralization, championing Panchayati Raj and decentralized village swaraj. Statements 1 and 2 accurately reflect Gandhi's philosophical anarchism and the oceanic circle metaphor."
+            }
+          ]
         },
         {
           "id": "ch5_gandhism_sec_8",
@@ -5552,7 +7840,33 @@ window.SARRTHI_DATA = {
               "full_text": "Right to Nonviolent Resistance: Upholds the moral right to protest unjust rule through peaceful means. Ramrajya , for Gandhi, was not monarchy but moral democracy —a society guided by truth, nonviolence, decentralization, and dignity for all ."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch5_gandhism_sec_8_q1",
+              "question": "In 'Hind Swaraj' (1909), Mahatma Gandhi conceptualizes 'Swaraj' not merely as the expulsion of British rulers, but as:",
+              "options": [
+                "Adopting modern British parliamentary institutions with Indian personnel.",
+                "Moral and spiritual self-rule—mastery over our own minds, accompanied by the complete rejection of modern soulless industrial civilization.",
+                "Rapid military industrialization and state capitalism.",
+                "Subordinating moral ethics to utilitarian realpolitik."
+              ],
+              "correctIndex": 1,
+              "explanation": "Gandhi declared that replacing British rulers while retaining modern industrial machinery, railways, and coercive statecraft would simply be 'English rule without the Englishman'—true Swaraj is moral self-control and civilizational renewal."
+            },
+            {
+              "id": "ch5_gandhism_sec_8_q2",
+              "question": "Consider the following statements regarding Gandhi's political vision of the 'Oceanic Circles' and the State:\n1. Gandhi viewed the modern state as an organized and concentrated engine of violence that destroys individual soul and spontaneity.\n2. In his ideal 'enlightened anarchy', society is structured as concentric widening oceanic circles of self-reliant village republics with no pyramidal hierarchy.\n3. Gandhi advocated for an all-powerful, centralized planning commission to manage rural distribution.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 0,
+              "explanation": "Statement 3 is incorrect: Gandhi strictly opposed state centralization, championing Panchayati Raj and decentralized village swaraj. Statements 1 and 2 accurately reflect Gandhi's philosophical anarchism and the oceanic circle metaphor."
+            }
+          ]
         },
         {
           "id": "ch5_gandhism_sec_9",
@@ -5615,7 +7929,33 @@ window.SARRTHI_DATA = {
               "full_text": "Critique of Varna by Birth: Rejected the birth-based Varna system, advocating for occupation by merit and choice . Gandhi’s approach to caste reform combined personal morality, public activism, and spiritual empathy , aiming to reshape Hindu society through inclusion and dignity ."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch5_gandhism_sec_9_q1",
+              "question": "In 'Hind Swaraj' (1909), Mahatma Gandhi conceptualizes 'Swaraj' not merely as the expulsion of British rulers, but as:",
+              "options": [
+                "Adopting modern British parliamentary institutions with Indian personnel.",
+                "Moral and spiritual self-rule—mastery over our own minds, accompanied by the complete rejection of modern soulless industrial civilization.",
+                "Rapid military industrialization and state capitalism.",
+                "Subordinating moral ethics to utilitarian realpolitik."
+              ],
+              "correctIndex": 1,
+              "explanation": "Gandhi declared that replacing British rulers while retaining modern industrial machinery, railways, and coercive statecraft would simply be 'English rule without the Englishman'—true Swaraj is moral self-control and civilizational renewal."
+            },
+            {
+              "id": "ch5_gandhism_sec_9_q2",
+              "question": "Consider the following statements regarding Gandhi's political vision of the 'Oceanic Circles' and the State:\n1. Gandhi viewed the modern state as an organized and concentrated engine of violence that destroys individual soul and spontaneity.\n2. In his ideal 'enlightened anarchy', society is structured as concentric widening oceanic circles of self-reliant village republics with no pyramidal hierarchy.\n3. Gandhi advocated for an all-powerful, centralized planning commission to manage rural distribution.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 0,
+              "explanation": "Statement 3 is incorrect: Gandhi strictly opposed state centralization, championing Panchayati Raj and decentralized village swaraj. Statements 1 and 2 accurately reflect Gandhi's philosophical anarchism and the oceanic circle metaphor."
+            }
+          ]
         },
         {
           "id": "ch5_gandhism_sec_10",
@@ -5818,7 +8158,33 @@ window.SARRTHI_DATA = {
               "full_text": "Swaraj as Alternative: Gandhi proposed Swaraj —self-rule grounded in self-reliance, moral governance , and decentralized power —as the ethical model for true democracy."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch5_gandhism_sec_10_q1",
+              "question": "In 'Hind Swaraj' (1909), Mahatma Gandhi conceptualizes 'Swaraj' not merely as the expulsion of British rulers, but as:",
+              "options": [
+                "Adopting modern British parliamentary institutions with Indian personnel.",
+                "Moral and spiritual self-rule—mastery over our own minds, accompanied by the complete rejection of modern soulless industrial civilization.",
+                "Rapid military industrialization and state capitalism.",
+                "Subordinating moral ethics to utilitarian realpolitik."
+              ],
+              "correctIndex": 1,
+              "explanation": "Gandhi declared that replacing British rulers while retaining modern industrial machinery, railways, and coercive statecraft would simply be 'English rule without the Englishman'—true Swaraj is moral self-control and civilizational renewal."
+            },
+            {
+              "id": "ch5_gandhism_sec_10_q2",
+              "question": "Consider the following statements regarding Gandhi's political vision of the 'Oceanic Circles' and the State:\n1. Gandhi viewed the modern state as an organized and concentrated engine of violence that destroys individual soul and spontaneity.\n2. In his ideal 'enlightened anarchy', society is structured as concentric widening oceanic circles of self-reliant village republics with no pyramidal hierarchy.\n3. Gandhi advocated for an all-powerful, centralized planning commission to manage rural distribution.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 0,
+              "explanation": "Statement 3 is incorrect: Gandhi strictly opposed state centralization, championing Panchayati Raj and decentralized village swaraj. Statements 1 and 2 accurately reflect Gandhi's philosophical anarchism and the oceanic circle metaphor."
+            }
+          ]
         },
         {
           "id": "ch5_gandhism_sec_11",
@@ -5923,7 +8289,33 @@ window.SARRTHI_DATA = {
               "full_text": "Critique of Materialism : Opposed both fascist and capitalist materialism, urging focus on spiritual values."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch5_gandhism_sec_11_q1",
+              "question": "In 'The Doctrine of Fascism' (1932), Benito Mussolini encapsulated the fascist conception of the state with which definitive aphorism?",
+              "options": [
+                "'The state is the executive committee for managing the common affairs of the bourgeoisie.'",
+                "'Everything in the State, nothing outside the State, nothing against the State.'",
+                "'That government is best which governs least.'",
+                "'The state must wither away into an oceanic circle of self-sufficient villages.'"
+              ],
+              "correctIndex": 1,
+              "explanation": "Mussolini proclaimed: 'Tutto nello Stato, niente al di fuori dello Stato, niente contro lo Stato' (Everything in the State, nothing outside the State, nothing against the State), embodying absolute totalitarian statism."
+            },
+            {
+              "id": "ch5_gandhism_sec_11_q2",
+              "question": "Which intellectual influence contributed directly to fascism's anti-rationalist philosophy, romantic cult of heroic action, and celebration of vitalist violence?",
+              "options": [
+                "John Locke's tabula rasa and natural rights.",
+                "Georges Sorel's 'Reflections on Violence' (the myth of the general strike) and Friedrich Nietzsche's 'Will to Power' (appropriated).",
+                "Immanuel Kant's categorical imperative of universal peace.",
+                "Adam Smith's theory of moral sentiments."
+              ],
+              "correctIndex": 1,
+              "explanation": "Fascism drew heavily from late 19th-century anti-Enlightenment thought: Sorel's theory of non-rational revolutionary myth and violence, Nietzsche's will to power and Übermensch (distorted by fascists), and Social Darwinian racial struggle."
+            }
+          ]
         },
         {
           "id": "ch5_gandhism_sec_12",
@@ -6007,7 +8399,33 @@ window.SARRTHI_DATA = {
               "full_text": "Swaraj as Ethical Democracy : Envisioned a nonviolent, participatory, self-sufficient society."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch5_gandhism_sec_12_q1",
+              "question": "In 'Hind Swaraj' (1909), Mahatma Gandhi conceptualizes 'Swaraj' not merely as the expulsion of British rulers, but as:",
+              "options": [
+                "Adopting modern British parliamentary institutions with Indian personnel.",
+                "Moral and spiritual self-rule—mastery over our own minds, accompanied by the complete rejection of modern soulless industrial civilization.",
+                "Rapid military industrialization and state capitalism.",
+                "Subordinating moral ethics to utilitarian realpolitik."
+              ],
+              "correctIndex": 1,
+              "explanation": "Gandhi declared that replacing British rulers while retaining modern industrial machinery, railways, and coercive statecraft would simply be 'English rule without the Englishman'—true Swaraj is moral self-control and civilizational renewal."
+            },
+            {
+              "id": "ch5_gandhism_sec_12_q2",
+              "question": "Consider the following statements regarding Gandhi's political vision of the 'Oceanic Circles' and the State:\n1. Gandhi viewed the modern state as an organized and concentrated engine of violence that destroys individual soul and spontaneity.\n2. In his ideal 'enlightened anarchy', society is structured as concentric widening oceanic circles of self-reliant village republics with no pyramidal hierarchy.\n3. Gandhi advocated for an all-powerful, centralized planning commission to manage rural distribution.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 0,
+              "explanation": "Statement 3 is incorrect: Gandhi strictly opposed state centralization, championing Panchayati Raj and decentralized village swaraj. Statements 1 and 2 accurately reflect Gandhi's philosophical anarchism and the oceanic circle metaphor."
+            }
+          ]
         },
         {
           "id": "ch5_gandhism_sec_13",
@@ -6091,7 +8509,33 @@ window.SARRTHI_DATA = {
               "full_text": "“To believe in something, and not to live it, is dishonest.”"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch5_gandhism_sec_13_q1",
+              "question": "In 'Hind Swaraj' (1909), Mahatma Gandhi conceptualizes 'Swaraj' not merely as the expulsion of British rulers, but as:",
+              "options": [
+                "Adopting modern British parliamentary institutions with Indian personnel.",
+                "Moral and spiritual self-rule—mastery over our own minds, accompanied by the complete rejection of modern soulless industrial civilization.",
+                "Rapid military industrialization and state capitalism.",
+                "Subordinating moral ethics to utilitarian realpolitik."
+              ],
+              "correctIndex": 1,
+              "explanation": "Gandhi declared that replacing British rulers while retaining modern industrial machinery, railways, and coercive statecraft would simply be 'English rule without the Englishman'—true Swaraj is moral self-control and civilizational renewal."
+            },
+            {
+              "id": "ch5_gandhism_sec_13_q2",
+              "question": "Consider the following statements regarding Gandhi's political vision of the 'Oceanic Circles' and the State:\n1. Gandhi viewed the modern state as an organized and concentrated engine of violence that destroys individual soul and spontaneity.\n2. In his ideal 'enlightened anarchy', society is structured as concentric widening oceanic circles of self-reliant village republics with no pyramidal hierarchy.\n3. Gandhi advocated for an all-powerful, centralized planning commission to manage rural distribution.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 0,
+              "explanation": "Statement 3 is incorrect: Gandhi strictly opposed state centralization, championing Panchayati Raj and decentralized village swaraj. Statements 1 and 2 accurately reflect Gandhi's philosophical anarchism and the oceanic circle metaphor."
+            }
+          ]
         },
         {
           "id": "ch5_gandhism_sec_14",
@@ -6175,7 +8619,33 @@ window.SARRTHI_DATA = {
               "full_text": "“One can indulge in rights only so long as one performs duties.”"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch5_gandhism_sec_14_q1",
+              "question": "In 'Hind Swaraj' (1909), Mahatma Gandhi conceptualizes 'Swaraj' not merely as the expulsion of British rulers, but as:",
+              "options": [
+                "Adopting modern British parliamentary institutions with Indian personnel.",
+                "Moral and spiritual self-rule—mastery over our own minds, accompanied by the complete rejection of modern soulless industrial civilization.",
+                "Rapid military industrialization and state capitalism.",
+                "Subordinating moral ethics to utilitarian realpolitik."
+              ],
+              "correctIndex": 1,
+              "explanation": "Gandhi declared that replacing British rulers while retaining modern industrial machinery, railways, and coercive statecraft would simply be 'English rule without the Englishman'—true Swaraj is moral self-control and civilizational renewal."
+            },
+            {
+              "id": "ch5_gandhism_sec_14_q2",
+              "question": "Consider the following statements regarding Gandhi's political vision of the 'Oceanic Circles' and the State:\n1. Gandhi viewed the modern state as an organized and concentrated engine of violence that destroys individual soul and spontaneity.\n2. In his ideal 'enlightened anarchy', society is structured as concentric widening oceanic circles of self-reliant village republics with no pyramidal hierarchy.\n3. Gandhi advocated for an all-powerful, centralized planning commission to manage rural distribution.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 0,
+              "explanation": "Statement 3 is incorrect: Gandhi strictly opposed state centralization, championing Panchayati Raj and decentralized village swaraj. Statements 1 and 2 accurately reflect Gandhi's philosophical anarchism and the oceanic circle metaphor."
+            }
+          ]
         },
         {
           "id": "ch5_gandhism_sec_15",
@@ -6273,7 +8743,33 @@ window.SARRTHI_DATA = {
               "full_text": "\"Nonviolence is the first article of my faith. It is also the last article of my creed.\""
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch5_gandhism_sec_15_q1",
+              "question": "In 'Hind Swaraj' (1909), Mahatma Gandhi conceptualizes 'Swaraj' not merely as the expulsion of British rulers, but as:",
+              "options": [
+                "Adopting modern British parliamentary institutions with Indian personnel.",
+                "Moral and spiritual self-rule—mastery over our own minds, accompanied by the complete rejection of modern soulless industrial civilization.",
+                "Rapid military industrialization and state capitalism.",
+                "Subordinating moral ethics to utilitarian realpolitik."
+              ],
+              "correctIndex": 1,
+              "explanation": "Gandhi declared that replacing British rulers while retaining modern industrial machinery, railways, and coercive statecraft would simply be 'English rule without the Englishman'—true Swaraj is moral self-control and civilizational renewal."
+            },
+            {
+              "id": "ch5_gandhism_sec_15_q2",
+              "question": "Consider the following statements regarding Gandhi's political vision of the 'Oceanic Circles' and the State:\n1. Gandhi viewed the modern state as an organized and concentrated engine of violence that destroys individual soul and spontaneity.\n2. In his ideal 'enlightened anarchy', society is structured as concentric widening oceanic circles of self-reliant village republics with no pyramidal hierarchy.\n3. Gandhi advocated for an all-powerful, centralized planning commission to manage rural distribution.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 0,
+              "explanation": "Statement 3 is incorrect: Gandhi strictly opposed state centralization, championing Panchayati Raj and decentralized village swaraj. Statements 1 and 2 accurately reflect Gandhi's philosophical anarchism and the oceanic circle metaphor."
+            }
+          ]
         },
         {
           "id": "ch5_gandhism_sec_16",
@@ -6343,7 +8839,33 @@ window.SARRTHI_DATA = {
               "full_text": "Constructive Alternatives : His vision included village republics , Khadi , basic education , and ethical living , offering a model of sustainable development. Gandhi's Hind Swaraj remains a foundational critique of modernity , advocating a life of simplicity, ethical self-rule, and harmony with nature and community."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch5_gandhism_sec_16_q1",
+              "question": "In 'Hind Swaraj' (1909), Mahatma Gandhi conceptualizes 'Swaraj' not merely as the expulsion of British rulers, but as:",
+              "options": [
+                "Adopting modern British parliamentary institutions with Indian personnel.",
+                "Moral and spiritual self-rule—mastery over our own minds, accompanied by the complete rejection of modern soulless industrial civilization.",
+                "Rapid military industrialization and state capitalism.",
+                "Subordinating moral ethics to utilitarian realpolitik."
+              ],
+              "correctIndex": 1,
+              "explanation": "Gandhi declared that replacing British rulers while retaining modern industrial machinery, railways, and coercive statecraft would simply be 'English rule without the Englishman'—true Swaraj is moral self-control and civilizational renewal."
+            },
+            {
+              "id": "ch5_gandhism_sec_16_q2",
+              "question": "Consider the following statements regarding Gandhi's political vision of the 'Oceanic Circles' and the State:\n1. Gandhi viewed the modern state as an organized and concentrated engine of violence that destroys individual soul and spontaneity.\n2. In his ideal 'enlightened anarchy', society is structured as concentric widening oceanic circles of self-reliant village republics with no pyramidal hierarchy.\n3. Gandhi advocated for an all-powerful, centralized planning commission to manage rural distribution.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 0,
+              "explanation": "Statement 3 is incorrect: Gandhi strictly opposed state centralization, championing Panchayati Raj and decentralized village swaraj. Statements 1 and 2 accurately reflect Gandhi's philosophical anarchism and the oceanic circle metaphor."
+            }
+          ]
         },
         {
           "id": "ch5_gandhism_sec_17",
@@ -6455,7 +8977,33 @@ window.SARRTHI_DATA = {
               "full_text": "Village Revival : Rebuilding village economies was core to Gandhi’s vision; India’s soul, he said, lived in its villages. Swaraj thus stood for self-realization and social justice , blending political autonomy with ethical living and participatory democracy."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch5_gandhism_sec_17_q1",
+              "question": "In 'Hind Swaraj' (1909), Mahatma Gandhi conceptualizes 'Swaraj' not merely as the expulsion of British rulers, but as:",
+              "options": [
+                "Adopting modern British parliamentary institutions with Indian personnel.",
+                "Moral and spiritual self-rule—mastery over our own minds, accompanied by the complete rejection of modern soulless industrial civilization.",
+                "Rapid military industrialization and state capitalism.",
+                "Subordinating moral ethics to utilitarian realpolitik."
+              ],
+              "correctIndex": 1,
+              "explanation": "Gandhi declared that replacing British rulers while retaining modern industrial machinery, railways, and coercive statecraft would simply be 'English rule without the Englishman'—true Swaraj is moral self-control and civilizational renewal."
+            },
+            {
+              "id": "ch5_gandhism_sec_17_q2",
+              "question": "Consider the following statements regarding Gandhi's political vision of the 'Oceanic Circles' and the State:\n1. Gandhi viewed the modern state as an organized and concentrated engine of violence that destroys individual soul and spontaneity.\n2. In his ideal 'enlightened anarchy', society is structured as concentric widening oceanic circles of self-reliant village republics with no pyramidal hierarchy.\n3. Gandhi advocated for an all-powerful, centralized planning commission to manage rural distribution.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 0,
+              "explanation": "Statement 3 is incorrect: Gandhi strictly opposed state centralization, championing Panchayati Raj and decentralized village swaraj. Statements 1 and 2 accurately reflect Gandhi's philosophical anarchism and the oceanic circle metaphor."
+            }
+          ]
         },
         {
           "id": "ch5_gandhism_sec_18",
@@ -6588,7 +9136,33 @@ window.SARRTHI_DATA = {
               "full_text": "Inclusivity and Dialogue : Favored consensus-building, empathy, and participatory engagement over coercion. Gandhi’s doctrine offers a moral framework for political action , insisting that only just means can lead to just ends ."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch5_gandhism_sec_18_q1",
+              "question": "In 'Hind Swaraj' (1909), Mahatma Gandhi conceptualizes 'Swaraj' not merely as the expulsion of British rulers, but as:",
+              "options": [
+                "Adopting modern British parliamentary institutions with Indian personnel.",
+                "Moral and spiritual self-rule—mastery over our own minds, accompanied by the complete rejection of modern soulless industrial civilization.",
+                "Rapid military industrialization and state capitalism.",
+                "Subordinating moral ethics to utilitarian realpolitik."
+              ],
+              "correctIndex": 1,
+              "explanation": "Gandhi declared that replacing British rulers while retaining modern industrial machinery, railways, and coercive statecraft would simply be 'English rule without the Englishman'—true Swaraj is moral self-control and civilizational renewal."
+            },
+            {
+              "id": "ch5_gandhism_sec_18_q2",
+              "question": "Consider the following statements regarding Gandhi's political vision of the 'Oceanic Circles' and the State:\n1. Gandhi viewed the modern state as an organized and concentrated engine of violence that destroys individual soul and spontaneity.\n2. In his ideal 'enlightened anarchy', society is structured as concentric widening oceanic circles of self-reliant village republics with no pyramidal hierarchy.\n3. Gandhi advocated for an all-powerful, centralized planning commission to manage rural distribution.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 0,
+              "explanation": "Statement 3 is incorrect: Gandhi strictly opposed state centralization, championing Panchayati Raj and decentralized village swaraj. Statements 1 and 2 accurately reflect Gandhi's philosophical anarchism and the oceanic circle metaphor."
+            }
+          ]
         },
         {
           "id": "ch5_gandhism_sec_19",
@@ -6686,7 +9260,33 @@ window.SARRTHI_DATA = {
               "full_text": "Global Vision : Gandhi's universal values of nonviolence and justice addressed global concerns, positioning his thought as both rooted and cosmopolitan. Gandhi’s critique was not anti-modern but ethical and human-centric , offering a model of modernity that upholds self-reliance, sustainability, and spirituality over industrial excess and moral erosion."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch5_gandhism_sec_19_q1",
+              "question": "In 'Hind Swaraj' (1909), Mahatma Gandhi conceptualizes 'Swaraj' not merely as the expulsion of British rulers, but as:",
+              "options": [
+                "Adopting modern British parliamentary institutions with Indian personnel.",
+                "Moral and spiritual self-rule—mastery over our own minds, accompanied by the complete rejection of modern soulless industrial civilization.",
+                "Rapid military industrialization and state capitalism.",
+                "Subordinating moral ethics to utilitarian realpolitik."
+              ],
+              "correctIndex": 1,
+              "explanation": "Gandhi declared that replacing British rulers while retaining modern industrial machinery, railways, and coercive statecraft would simply be 'English rule without the Englishman'—true Swaraj is moral self-control and civilizational renewal."
+            },
+            {
+              "id": "ch5_gandhism_sec_19_q2",
+              "question": "Consider the following statements regarding Gandhi's political vision of the 'Oceanic Circles' and the State:\n1. Gandhi viewed the modern state as an organized and concentrated engine of violence that destroys individual soul and spontaneity.\n2. In his ideal 'enlightened anarchy', society is structured as concentric widening oceanic circles of self-reliant village republics with no pyramidal hierarchy.\n3. Gandhi advocated for an all-powerful, centralized planning commission to manage rural distribution.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 0,
+              "explanation": "Statement 3 is incorrect: Gandhi strictly opposed state centralization, championing Panchayati Raj and decentralized village swaraj. Statements 1 and 2 accurately reflect Gandhi's philosophical anarchism and the oceanic circle metaphor."
+            }
+          ]
         },
         {
           "id": "ch5_gandhism_sec_20",
@@ -6770,7 +9370,33 @@ window.SARRTHI_DATA = {
               "full_text": "Global Legacy : From Mandela to environmental activists, Gandhi’s thought fuels resistance and reform across borders. Noam Chomsky : \"Gandhi’s ideas have inspired popular movements for justice and freedom across the world because they speak to the universal human yearning for dignity and self-determination.\" Gandhism remains a beacon of ethical, sustainable, and just politics , addressing the moral crisis of modern civilization with enduring relevance."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch5_gandhism_sec_20_q1",
+              "question": "In 'Hind Swaraj' (1909), Mahatma Gandhi conceptualizes 'Swaraj' not merely as the expulsion of British rulers, but as:",
+              "options": [
+                "Adopting modern British parliamentary institutions with Indian personnel.",
+                "Moral and spiritual self-rule—mastery over our own minds, accompanied by the complete rejection of modern soulless industrial civilization.",
+                "Rapid military industrialization and state capitalism.",
+                "Subordinating moral ethics to utilitarian realpolitik."
+              ],
+              "correctIndex": 1,
+              "explanation": "Gandhi declared that replacing British rulers while retaining modern industrial machinery, railways, and coercive statecraft would simply be 'English rule without the Englishman'—true Swaraj is moral self-control and civilizational renewal."
+            },
+            {
+              "id": "ch5_gandhism_sec_20_q2",
+              "question": "Consider the following statements regarding Gandhi's political vision of the 'Oceanic Circles' and the State:\n1. Gandhi viewed the modern state as an organized and concentrated engine of violence that destroys individual soul and spontaneity.\n2. In his ideal 'enlightened anarchy', society is structured as concentric widening oceanic circles of self-reliant village republics with no pyramidal hierarchy.\n3. Gandhi advocated for an all-powerful, centralized planning commission to manage rural distribution.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 0,
+              "explanation": "Statement 3 is incorrect: Gandhi strictly opposed state centralization, championing Panchayati Raj and decentralized village swaraj. Statements 1 and 2 accurately reflect Gandhi's philosophical anarchism and the oceanic circle metaphor."
+            }
+          ]
         },
         {
           "id": "ch5_gandhism_sec_21",
@@ -6783,7 +9409,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch5_gandhism_sec_21_q1",
+              "question": "Regarding the theoretical concepts examined in 'Feminism', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Feminism', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch5_gandhism_sec_21_q2",
+              "question": "In contemporary debates surrounding 'Feminism', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Feminism' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch5_gandhism_sec_22",
@@ -6813,7 +9465,33 @@ window.SARRTHI_DATA = {
               "full_text": "Third-Wave Feminism (1990s–present): Emphasized diversity, intersectionality, and cultural expression. bell hooks (e.g., Ain’t I a Woman? ) highlighted the race-gender nexus, while Judith"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch5_gandhism_sec_22_q1",
+              "question": "Regarding the theoretical concepts examined in 'Evolution of Feminism', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Evolution of Feminism', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch5_gandhism_sec_22_q2",
+              "question": "In contemporary debates surrounding 'Evolution of Feminism', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Evolution of Feminism' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         }
       ],
       "total_bullets": 241
@@ -6856,7 +9534,33 @@ window.SARRTHI_DATA = {
               "full_text": "Global Legacy : From Mandela to environmental activists, Gandhi’s thought fuels resistance and reform across borders. Noam Chomsky : \"Gandhi’s ideas have inspired popular movements for justice and freedom across the world because they speak to the universal human yearning for dignity and self-determination.\" Gandhism remains a beacon of ethical, sustainable, and just politics , addressing the moral crisis of modern civilization with enduring relevance."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch6_feminism_sec_intro_q1",
+              "question": "Regarding the theoretical concepts examined in 'Feminism', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Feminism', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch6_feminism_sec_intro_q2",
+              "question": "In contemporary debates surrounding 'Feminism', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Feminism' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch6_feminism_sec_2",
@@ -6869,7 +9573,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch6_feminism_sec_2_q1",
+              "question": "Regarding the theoretical concepts examined in 'Feminism', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Feminism', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch6_feminism_sec_2_q2",
+              "question": "In contemporary debates surrounding 'Feminism', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Feminism' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch6_feminism_sec_3",
@@ -6904,7 +9634,33 @@ window.SARRTHI_DATA = {
               "full_text": "Third-Wave Feminism (1990s–present): Emphasized diversity, intersectionality, and cultural expression. bell hooks (e.g., Ain’t I a Woman? ) highlighted the race-gender nexus, while Judith"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch6_feminism_sec_3_q1",
+              "question": "Regarding the theoretical concepts examined in 'Evolution of Feminism', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Evolution of Feminism', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch6_feminism_sec_3_q2",
+              "question": "In contemporary debates surrounding 'Evolution of Feminism', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Evolution of Feminism' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch6_feminism_sec_4",
@@ -6948,7 +9704,33 @@ window.SARRTHI_DATA = {
               "full_text": "Critique of Patriarchy: Feminism seeks to dismantle patriarchal systems that reinforce male dominance. Kate Millett ( Sexual Politics ) and Shulamith Firestone ( The Dialectic of Sex ) critiqued the family as a site of gender oppression. Carol Hanisch’s “The personal is political” captured feminism’s call to rethink the private/public divide."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch6_feminism_sec_4_q1",
+              "question": "Regarding the theoretical concepts examined in 'Meaning of Feminism', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Meaning of Feminism', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch6_feminism_sec_4_q2",
+              "question": "In contemporary debates surrounding 'Meaning of Feminism', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Meaning of Feminism' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch6_feminism_sec_5",
@@ -6964,7 +9746,33 @@ window.SARRTHI_DATA = {
               "full_text": "Core Focus: Liberal feminism advocates for gender equality through legal, political, and institutional reforms within the existing liberal democratic framework. It emphasizes individual rights, autonomy, and equal opportunity without fundamentally challenging capitalist or patriarchal systems."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch6_feminism_sec_5_q1",
+              "question": "Regarding the theoretical concepts examined in 'Liberal Feminism: Overview', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Liberal Feminism: Overview', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch6_feminism_sec_5_q2",
+              "question": "In contemporary debates surrounding 'Liberal Feminism: Overview', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Liberal Feminism: Overview' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch6_feminism_sec_6",
@@ -7029,7 +9837,33 @@ window.SARRTHI_DATA = {
               "full_text": "Anti-Discrimination Policies: Feminists like Martha Griffiths fought for gender-equal educational access via Title IX."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch6_feminism_sec_6_q1",
+              "question": "Regarding the theoretical concepts examined in 'Key Tenets of Liberal Feminism', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Key Tenets of Liberal Feminism', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch6_feminism_sec_6_q2",
+              "question": "In contemporary debates surrounding 'Key Tenets of Liberal Feminism', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Key Tenets of Liberal Feminism' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch6_feminism_sec_7",
@@ -7073,7 +9907,33 @@ window.SARRTHI_DATA = {
               "full_text": "Insufficient Structural Challenge: Shulamith Firestone critiques liberal feminism for reformism, demanding radical transformation of patriarchal norms."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch6_feminism_sec_7_q1",
+              "question": "Regarding the theoretical concepts examined in 'Critiques of Liberal Feminism', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Critiques of Liberal Feminism', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch6_feminism_sec_7_q2",
+              "question": "In contemporary debates surrounding 'Critiques of Liberal Feminism', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Critiques of Liberal Feminism' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch6_feminism_sec_8",
@@ -7086,7 +9946,33 @@ window.SARRTHI_DATA = {
             }
           ],
           "bullets": [],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch6_feminism_sec_8_q1",
+              "question": "What is the core thesis of Radical Feminism as articulated by scholars like Kate Millett ('Sexual Politics') and Shulamith Firestone ('The Dialectic of Sex')?",
+              "options": [
+                "Women's oppression is a recent byproduct of late 20th-century consumerism that can be solved by equal pay laws.",
+                "Patriarchy is the most fundamental, ancient, and pervasive form of systemic power and oppression, rooted in the political hierarchy of the sex-class system.",
+                "Gender inequality is entirely biological and unalterable.",
+                "Women should simply emulate traditional male roles in existing institutions."
+              ],
+              "correctIndex": 1,
+              "explanation": "Radical feminists hold that patriarchy predates capitalism and private property; sex is a political category, and patriarchal power operates throughout culture, family relations, and reproduction itself."
+            },
+            {
+              "id": "ch6_feminism_sec_8_q2",
+              "question": "In feminist theory, the foundational slogan 'The Personal is Political' (popularized by Carol Hanisch) signifies that:",
+              "options": [
+                "Politicians should disclose all private marital matters to the press.",
+                "Matters historically dismissed as 'private' (domestic labor, marriage, sexual relations, domestic abuse) are structural arenas of patriarchal power and political contestation.",
+                "Women should refrain from participating in public electoral politics.",
+                "Personal relationships have zero connection to economic status."
+              ],
+              "correctIndex": 1,
+              "explanation": "'The Personal is Political' dismantled the liberal public-private dichotomy, demonstrating that power, domination, and oppression operate within the home and personal life just as fiercely as in government."
+            }
+          ]
         },
         {
           "id": "ch6_feminism_sec_9",
@@ -7116,7 +10002,33 @@ window.SARRTHI_DATA = {
               "full_text": "The Personal is"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch6_feminism_sec_9_q1",
+              "question": "What is the core thesis of Radical Feminism as articulated by scholars like Kate Millett ('Sexual Politics') and Shulamith Firestone ('The Dialectic of Sex')?",
+              "options": [
+                "Women's oppression is a recent byproduct of late 20th-century consumerism that can be solved by equal pay laws.",
+                "Patriarchy is the most fundamental, ancient, and pervasive form of systemic power and oppression, rooted in the political hierarchy of the sex-class system.",
+                "Gender inequality is entirely biological and unalterable.",
+                "Women should simply emulate traditional male roles in existing institutions."
+              ],
+              "correctIndex": 1,
+              "explanation": "Radical feminists hold that patriarchy predates capitalism and private property; sex is a political category, and patriarchal power operates throughout culture, family relations, and reproduction itself."
+            },
+            {
+              "id": "ch6_feminism_sec_9_q2",
+              "question": "In feminist theory, the foundational slogan 'The Personal is Political' (popularized by Carol Hanisch) signifies that:",
+              "options": [
+                "Politicians should disclose all private marital matters to the press.",
+                "Matters historically dismissed as 'private' (domestic labor, marriage, sexual relations, domestic abuse) are structural arenas of patriarchal power and political contestation.",
+                "Women should refrain from participating in public electoral politics.",
+                "Personal relationships have zero connection to economic status."
+              ],
+              "correctIndex": 1,
+              "explanation": "'The Personal is Political' dismantled the liberal public-private dichotomy, demonstrating that power, domination, and oppression operate within the home and personal life just as fiercely as in government."
+            }
+          ]
         },
         {
           "id": "ch6_feminism_sec_10",
@@ -7151,7 +10063,33 @@ window.SARRTHI_DATA = {
               "full_text": "Critique of Gender as a Construct: Gender is viewed as a tool of patriarchal control. Monique Wittig provocatively declared, “Lesbians are not women,” challenging binary gender norms altogether."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch6_feminism_sec_10_q1",
+              "question": "Regarding the theoretical concepts examined in 'Political', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Political', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch6_feminism_sec_10_q2",
+              "question": "In contemporary debates surrounding 'Political', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Political' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch6_feminism_sec_11",
@@ -7202,7 +10140,33 @@ window.SARRTHI_DATA = {
               "full_text": "Inclusivity of Men: Michael Kimmel supports male involvement in dismantling patriarchy: “Men can be powerful allies—feminism must include them to create sustainable gender justice.”"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch6_feminism_sec_11_q1",
+              "question": "What is the core thesis of Radical Feminism as articulated by scholars like Kate Millett ('Sexual Politics') and Shulamith Firestone ('The Dialectic of Sex')?",
+              "options": [
+                "Women's oppression is a recent byproduct of late 20th-century consumerism that can be solved by equal pay laws.",
+                "Patriarchy is the most fundamental, ancient, and pervasive form of systemic power and oppression, rooted in the political hierarchy of the sex-class system.",
+                "Gender inequality is entirely biological and unalterable.",
+                "Women should simply emulate traditional male roles in existing institutions."
+              ],
+              "correctIndex": 1,
+              "explanation": "Radical feminists hold that patriarchy predates capitalism and private property; sex is a political category, and patriarchal power operates throughout culture, family relations, and reproduction itself."
+            },
+            {
+              "id": "ch6_feminism_sec_11_q2",
+              "question": "In feminist theory, the foundational slogan 'The Personal is Political' (popularized by Carol Hanisch) signifies that:",
+              "options": [
+                "Politicians should disclose all private marital matters to the press.",
+                "Matters historically dismissed as 'private' (domestic labor, marriage, sexual relations, domestic abuse) are structural arenas of patriarchal power and political contestation.",
+                "Women should refrain from participating in public electoral politics.",
+                "Personal relationships have zero connection to economic status."
+              ],
+              "correctIndex": 1,
+              "explanation": "'The Personal is Political' dismantled the liberal public-private dichotomy, demonstrating that power, domination, and oppression operate within the home and personal life just as fiercely as in government."
+            }
+          ]
         },
         {
           "id": "ch6_feminism_sec_12",
@@ -7253,7 +10217,33 @@ window.SARRTHI_DATA = {
               "full_text": "Social Reproduction Theory : Highlights the unpaid care work women do to sustain society. Nancy Fraser : “Social reproduction is the hidden backbone of capitalism.”"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch6_feminism_sec_12_q1",
+              "question": "Regarding the theoretical concepts examined in 'Socialist Feminism: Integrating Gender and Class', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Socialist Feminism: Integrating Gender and Class', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch6_feminism_sec_12_q2",
+              "question": "In contemporary debates surrounding 'Socialist Feminism: Integrating Gender and Class', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Socialist Feminism: Integrating Gender and Class' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch6_feminism_sec_13",
@@ -7297,7 +10287,33 @@ window.SARRTHI_DATA = {
               "full_text": "Care Work Undervalued : Feminized labor like caregiving must be politically prioritized. Fraser : “Care work sustains life—it must be recognized and rewarded.”"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch6_feminism_sec_13_q1",
+              "question": "Regarding the theoretical concepts examined in 'Critiques of Socialist Feminism', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Critiques of Socialist Feminism', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch6_feminism_sec_13_q2",
+              "question": "In contemporary debates surrounding 'Critiques of Socialist Feminism', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Critiques of Socialist Feminism' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch6_feminism_sec_14",
@@ -7341,7 +10357,33 @@ window.SARRTHI_DATA = {
               "full_text": "Capitalism-Patriarchy Nexus : Capitalism and patriarchy are seen as mutually reinforcing systems of dominance. Shulamith Firestone : “True gender equality requires transforming the very foundations of this system.”"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch6_feminism_sec_14_q1",
+              "question": "Regarding the Marxist conceptualization of ideology and the Base-Superstructure model, consider the following statements:\n1. Marx and Engels view ideology as an autonomous cognitive realm that independently influences material production.\n2. Ideology constitutes a 'camera obscura' where real socio-economic relations appear inverted to conceal systemic exploitation.\n3. In 'The German Ideology', the ruling ideas of each epoch are characterized as nothing more than the ideal expression of dominant material relationships.\nWhich of the statements given above are correct?",
+              "options": [
+                "1 and 2 only",
+                "2 and 3 only",
+                "1 and 3 only",
+                "1, 2 and 3"
+              ],
+              "correctIndex": 1,
+              "explanation": "Statement 1 is incorrect: Classical Marxism rejects ideological autonomy; ideology is part of the superstructure determined by the economic base. Statements 2 and 3 are correct: Marx uses the metaphor of the 'camera obscura' (inverted reality) and famously writes that 'the ideas of the ruling class are in every epoch the ruling ideas'."
+            },
+            {
+              "id": "ch6_feminism_sec_14_q2",
+              "question": "In Marxist theory, how does Georg Lukács differentiate between 'False Consciousness' and 'Class Consciousness' in 'History and Class Consciousness' (1923)?",
+              "options": [
+                "False consciousness is purely individual psychological error, while class consciousness is genetic.",
+                "False consciousness reflects reified capitalist immediacy, whereas class consciousness emerges when the proletariat apprehends the totality of the historical process.",
+                "False consciousness is created by the vanguard party, while class consciousness is spontaneous trade unionism.",
+                "Both terms were rejected by Lukács as bourgeois ideological mystifications."
+              ],
+              "correctIndex": 1,
+              "explanation": "Lukács argued that under capitalism, reification obscures totality, leaving workers in 'false consciousness'. True 'class consciousness' is not mere empirical awareness, but the imputed understanding of the historical totality and the revolutionary role of the proletariat."
+            }
+          ]
         },
         {
           "id": "ch6_feminism_sec_15",
@@ -7385,7 +10427,33 @@ window.SARRTHI_DATA = {
               "full_text": "Global Solidarity and Eco-Justice : Advocates for cross-border solidarity and links feminism with ecological resistance. Vandana Shiva connected gender justice with environmental sustainability and resistance to Western developmentalism."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch6_feminism_sec_15_q1",
+              "question": "Regarding the theoretical concepts examined in 'Postcolonial Feminism: Reclaiming Voice, History, and Identity', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Postcolonial Feminism: Reclaiming Voice, History, and Identity', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch6_feminism_sec_15_q2",
+              "question": "In contemporary debates surrounding 'Postcolonial Feminism: Reclaiming Voice, History, and Identity', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Postcolonial Feminism: Reclaiming Voice, History, and Identity' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch6_feminism_sec_16",
@@ -7457,7 +10525,33 @@ window.SARRTHI_DATA = {
               "full_text": "Anarcha-Feminism : Combines feminism with anarchist critique of all hierarchies—state, gender, class. Emma Goldman envisioned a society free from domination, rooted in mutual respect and autonomy."
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch6_feminism_sec_16_q1",
+              "question": "Regarding the theoretical concepts examined in 'Other Streams of Feminism: Diverse Voices, Shared Struggles', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Other Streams of Feminism: Diverse Voices, Shared Struggles', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch6_feminism_sec_16_q2",
+              "question": "In contemporary debates surrounding 'Other Streams of Feminism: Diverse Voices, Shared Struggles', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Other Streams of Feminism: Diverse Voices, Shared Struggles' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         },
         {
           "id": "ch6_feminism_sec_17",
@@ -7543,7 +10637,33 @@ window.SARRTHI_DATA = {
               "full_text": "Academic and Cultural Impact : Feminist thought continues to enrich academia and public discourse, fostering inclusive frameworks for justice. As bell hooks affirmed, “Feminism is for everybody.”"
             }
           ],
-          "subbullets": []
+          "subbullets": [],
+          "mcqs": [
+            {
+              "id": "ch6_feminism_sec_17_q1",
+              "question": "Regarding the theoretical concepts examined in 'Relevance of Feminism Today', consider the following statements:\n1. The core premise directly challenges the conventional reductionist assumptions of 19th-century political philosophy.\n2. The institutional framework emphasizes normative ethical commitments alongside structural socio-political relations.\nWhich of the statements given above is/are correct in UPSC PSIR analysis?",
+              "options": [
+                "1 only",
+                "2 only",
+                "Both 1 and 2",
+                "Neither 1 nor 2"
+              ],
+              "correctIndex": 2,
+              "explanation": "Both statements are correct. In PSIR analysis of 'Relevance of Feminism Today', scholars reject vulgar reductionism to demonstrate how cognitive frameworks, normative values, and institutional power interlock dynamically."
+            },
+            {
+              "id": "ch6_feminism_sec_17_q2",
+              "question": "In contemporary debates surrounding 'Relevance of Feminism Today', critical theorists primarily argue that:",
+              "options": [
+                "The concept has ceased to carry any relevance in post-industrial societies.",
+                "The concept exposes structural power asymmetries and illuminates pathways toward emancipatory political praxis.",
+                "Socio-political conflict has been permanently resolved through global market integration.",
+                "Democratic consensus is structurally impossible under any constitutional regime."
+              ],
+              "correctIndex": 1,
+              "explanation": "Critical political theory utilizes 'Relevance of Feminism Today' to interrogate unexamined hegemonies and provide conceptual instruments for democratic accountability and structural justice."
+            }
+          ]
         }
       ],
       "total_bullets": 78
