@@ -1,17 +1,17 @@
 /* ==========================================================================
    TOP 100 HIGH-YIELD POLITICAL SCIENCE SLANGS & INTELLECTUAL HOOKS
    Curated for UPSC CSE PSIR Optional (Paper 1A, 1B, 2A, 2B)
-   Batches 1 to 4 of 5: Slangs 1 to 80 (Power, Statecraft, Political Economy, Geopolitics)
+   Complete Suite: 100 Slangs Across All 5 Batches • 10 Checkpoint MCQs
    ========================================================================== */
 
 window.KEYTERMS_DATA = {
   "metadata": {
     "title": "Top 100 Political Science Slangs & High-Yield Hooks",
     "subtitle": "Intellectual catchphrases, conceptual metaphors, and answer-cracking hooks",
-    "currentBatch": 4,
+    "currentBatch": 5,
     "totalBatches": 5,
     "batchSize": 20,
-    "totalTerms": 80,
+    "totalTerms": 100,
     "finalTarget": 100
   },
   "batches": [
@@ -37,13 +37,13 @@ window.KEYTERMS_DATA = {
       "batch": 4,
       "title": "Batch 4: Global Order, Geopolitics & Strategy (61–80)",
       "range": "61–80",
-      "status": "active"
+      "status": "completed"
     },
     {
       "batch": 5,
       "title": "Batch 5: Radical Critique & Post-Colonial Theory (81–100)",
       "range": "81–100",
-      "status": "upcoming"
+      "status": "active"
     }
   ],
   "terms": [
@@ -1710,6 +1710,426 @@ window.KEYTERMS_DATA = {
         "foreign policy",
         "mandala theory"
       ]
+    },
+    {
+      "id": "slang_81",
+      "number": 81,
+      "batch": 5,
+      "term": "Epistemicide & Epistemic Violence",
+      "scholar": "Boaventura de Sousa Santos / Gayatri Chakravorty Spivak",
+      "category": "Political Theory",
+      "paper": "Paper 1A & 2A",
+      "topic": "Decolonial Political Theory & Subaltern Epistemologies",
+      "hook": "Western colonial modernity triumphed not merely through military conquest, but through systemic 'epistemicide'—the intellectual murder and delegitimization of Global South knowledge systems.",
+      "definition": "Portuguese sociologist Boaventura de Sousa Santos conceptualizes 'Epistemicide' as the systematic destruction, suppression, and devaluation of non-Western indigenous and subaltern knowledge systems by European imperial science. Gayatri Spivak identifies this as 'epistemic violence'—the process whereby colonial education and legal discourses forcibly re-coded subaltern subjects as primitive, illiterate, and incapable of self-governance, compelling them to articulate grievances exclusively in Western legal vocabulary.",
+      "exam_utility": "Masterstroke for Paper 1A on Post-Colonial Political Theory, Decoloniality, and Critique of Western Enlightenment: 'Boaventura de Sousa Santos's concept of \"epistemicide\" exposes how European colonial expansion enforced cognitive hegemony, demonstrating that true decolonization requires reclaiming \"epistemologies of the South\" against Western intellectual monopoly.'",
+      "keywords": [
+        "epistemicide",
+        "epistemic violence",
+        "sousa santos",
+        "spivak",
+        "decoloniality",
+        "epistemologies of the south"
+      ]
+    },
+    {
+      "id": "slang_82",
+      "number": 82,
+      "batch": 5,
+      "term": "Can the Subaltern Speak?",
+      "scholar": "Gayatri Chakravorty Spivak",
+      "category": "Political Theory",
+      "paper": "Paper 1A & 1B",
+      "topic": "Subaltern Studies, Post-Colonial Feminism & Representation",
+      "hook": "The subaltern cannot speak within the hegemonic grammar of imperial and patriarchal discourse; when they attempt to speak, their voice is re-translated, ventriloquized, or silenced.",
+      "definition": "In her landmark 1988 essay, Gayatri Spivak addressed the profound ethical dilemma of representing marginalized groups. Examining the British colonial abolition of Sati (widow burning), Spivak demonstrated that the subaltern woman had no voice: she was caught between imperialist white male rescue ('white men saving brown women from brown men') and indigenous Brahminical patriarchy. The subaltern 'cannot speak' because the institutional and discursive structures of power deny them authentic agency and voice.",
+      "exam_utility": "Paper 1A on Feminist Political Theory, Post-Colonialism; Paper 1B on Dalit and Tribal Representation: 'Gayatri Spivak's foundational provocation \"Can the Subaltern Speak?\" cautions political theorists against romanticizing representation, exposing how well-meaning bourgeois advocates frequently ventriloquize and silence the authentic agency of marginalized subjects.'",
+      "keywords": [
+        "spivak",
+        "can the subaltern speak",
+        "post-colonial feminism",
+        "subalternity",
+        "representation",
+        "agency"
+      ]
+    },
+    {
+      "id": "slang_83",
+      "number": 83,
+      "batch": 5,
+      "term": "Orientalism & Imaginative Geography",
+      "scholar": "Edward W. Said",
+      "category": "Political Theory",
+      "paper": "Paper 1A & 2A",
+      "topic": "Post-Colonial Theory, Discourse & Cultural Imperialism",
+      "hook": "The 'Orient' was almost a European invention—a theatrical stage of exotic, passive, and despotic caricatures engineered to legitimize Western imperial domination.",
+      "definition": "Edward Said's 'Orientalism' (1978) revolutionized post-colonial theory by drawing on Michel Foucault's power/knowledge nexus. Said demonstrated that European scholarship, literature, and colonial policy constructed an 'imaginative geography' that divided the world into the rational, modern, democratic 'Occident' (West) versus the sensual, irrational, despotic 'Orient' (East). Orientalism was not innocent cultural curiosity, but an imperial discourse that produced and managed the Orient as an object of Western domination.",
+      "exam_utility": "Essential foundation for Paper 1A on Post-Colonialism; Paper 2A on Western Media Narratives and Clash of Civilizations: 'Edward Said's critique of \"Orientalism\" reveals that imperialism was not merely economic extraction, but a cultural apparatus of representation that manufactured European intellectual supremacy while constructing the non-West as inherently incapable of democracy.'",
+      "keywords": [
+        "orientalism",
+        "edward said",
+        "foucault",
+        "discourse",
+        "cultural imperialism",
+        "post-colonialism"
+      ]
+    },
+    {
+      "id": "slang_84",
+      "number": 84,
+      "batch": 5,
+      "term": "Intersectionality",
+      "scholar": "Kimberlé W. Crenshaw",
+      "category": "Political Theory",
+      "paper": "Paper 1A & 1B",
+      "topic": "Feminist Political Theory, Social Justice & Identity Politics",
+      "hook": "Oppression is not a series of isolated, single-axis silos; race, caste, gender, and class intersect like traffic at an intersection, compounding systemic vulnerability.",
+      "definition": "Legal scholar Kimberlé Crenshaw coined 'Intersectionality' to critique the single-axis framework of antidiscrimination law. Using the metaphor of a four-way traffic intersection, Crenshaw demonstrated that a Black woman standing at the intersection of race and gender experiences a composite, qualitative form of oppression that cannot be understood by studying racism or sexism independently. In South Asia, scholars like Sharmila Rege and Gopal Guru extended this to Dalit feminism—analyzing the compounded intersection of Brahminical caste patriarchy, landlessness, and gender violence.",
+      "exam_utility": "Paper 1A on Feminist Political Theory, Theories of Justice; Paper 1B on Dalit Feminism and Social Movements: 'Kimberlé Crenshaw's paradigm of \"intersectionality\" dismantles universalist bourgeois feminism, demonstrating that gender oppression cannot be analyzed in isolation from interlocking structures of caste, race, and economic precarity.'",
+      "keywords": [
+        "intersectionality",
+        "crenshaw",
+        "feminism",
+        "dalit feminism",
+        "social justice",
+        "identity politics"
+      ]
+    },
+    {
+      "id": "slang_85",
+      "number": 85,
+      "batch": 5,
+      "term": "Gender in IR: You Just Add Women and Stir?",
+      "scholar": "Cynthia Enloe / J. Ann Tickner",
+      "category": "International Relations",
+      "paper": "Paper 2A",
+      "topic": "Feminist International Relations Theory & Militarization",
+      "hook": "Where are the women in world politics? Genuinely gendered IR is not about 'adding women and stirring', but about exposing how militarized security invisibilizes female reproductive and diplomatic labor.",
+      "definition": "Cynthia Enloe in 'Bananas, Beaches and Bases' launched the feminist revolution in International Relations. Enloe rejected cosmetic diversity reforms ('add women and stir') and asked: 'Where are the women?' She revealed that world politics relies heavily on women's underpaid and invisibilized labor—as diplomatic wives, military base domestic workers, sex workers around military garrisons, and textile workers in sweatshops. J. Ann Tickner followed by reformulating Hans Morgenthau's six principles of political realism from a feminist perspective, replacing masculine zero-sum domination with ecological interdependence and collective security.",
+      "exam_utility": "Paper 2A on Feminist Theories of International Relations and Critiques of Realism: 'Cynthia Enloe and J. Ann Tickner demonstrate that International Relations is deeply gendered, proving that conventional realist security constructs masculine military power by systematically invisibilizing women's structural labor in global politics.'",
+      "keywords": [
+        "cynthia enloe",
+        "ann tickner",
+        "feminist ir",
+        "militarization",
+        "gender in ir",
+        "critique of realism"
+      ]
+    },
+    {
+      "id": "slang_86",
+      "number": 86,
+      "batch": 5,
+      "term": "Ecofeminism & Maldevelopment",
+      "scholar": "Vandana Shiva / Maria Mies",
+      "category": "Political Theory",
+      "paper": "Paper 1A & 1B",
+      "topic": "Ecofeminism, Green Political Theory & Chipko Movement",
+      "hook": "Western reductionist science and corporate extractivism constitute a violent 'maldevelopment' that simultaneously exploits Mother Nature and marginalizes women who sustain subsistence life.",
+      "definition": "Vandana Shiva and Maria Mies founded the ecofeminist critique of modern capitalist development. Shiva asserts that there is a deep ideological link between the domination of nature by capitalist patriarchal science and the subordination of women. Modern industrial growth is not true development, but 'maldevelopment'—an aggressive extractivism that destroys biodiversity, privatizes community water and seeds, and undermines the traditional ecological knowledge of peasant women (as embodied in the Chipko Movement).",
+      "exam_utility": "Paper 1A on Green Political Theory and Ecofeminism; Paper 1B on Environmental Movements in India: 'Vandana Shiva's ecofeminist critique of \"maldevelopment\" reveals that capitalist resource extraction and patriarchal oppression are co-constitutive, celebrating indigenous women's ecological stewardship against corporate enclosure of the commons.'",
+      "keywords": [
+        "vandana shiva",
+        "ecofeminism",
+        "maldevelopment",
+        "chipko movement",
+        "green politics",
+        "maria mies"
+      ]
+    },
+    {
+      "id": "slang_87",
+      "number": 87,
+      "batch": 5,
+      "term": "The Anthropocene & The Climate Leviathan",
+      "scholar": "Geoff Mann & Joel Wainwright / Paul J. Crutzen",
+      "category": "Political Theory",
+      "paper": "Paper 1A & 2A",
+      "topic": "Climate Geopolitics, The Anthropocene & Green State Theory",
+      "hook": "As human activity pushes Earth past planetary boundaries, humanity faces the rise of a 'Climate Leviathan'—an authoritarian global sovereign claiming emergency power to manage biosphere survival.",
+      "definition": "Geoff Mann and Joel Wainwright theorize the future of global political power in the Anthropocene—the geological epoch where human industrial activity drives planetary climate breakdown. They predict that liberal democratic capitalism will be unable to handle planetary emergencies, paving the way for 'Climate Leviathan': an elite global sovereign alliance (led by major capitalist powers) that uses planetary emergencies to suspend democratic freedoms, managing global carbon budgets and resource distribution through authoritarian technocratic decree.",
+      "exam_utility": "Paper 1A on Environmental Political Theory; Paper 2A on Global Climate Negotiations (UNFCCC, COP): 'Mann and Wainwright's warning of a looming \"Climate Leviathan\" exposes the existential stakes of global climate politics, showing that failure to achieve democratic climate justice will invite planetary authoritarian technocracy.'",
+      "keywords": [
+        "anthropocene",
+        "climate leviathan",
+        "mann",
+        "wainwright",
+        "climate politics",
+        "green state theory"
+      ]
+    },
+    {
+      "id": "slang_88",
+      "number": 88,
+      "batch": 5,
+      "term": "Comedy of the Commons",
+      "scholar": "Carol M. Rose",
+      "category": "Political Theory",
+      "paper": "Paper 1A",
+      "topic": "Public Choice Theory, Property Rights & The Commons",
+      "hook": "While Hardin's tragedy dooms pastures to ruin, the 'comedy of the commons' proves that public squares, digital networks, and cultural spaces increase in social value the more people use them.",
+      "definition": "Legal philosopher Carol Rose formulated 'The Comedy of the Commons' as the definitive philosophical rejoinder to Garrett Hardin's 'Tragedy of the Commons'. Rose demonstrates that for certain public resources—public roads, festival squares, waterways, open-source software, and public dance halls—the economic rule of diminishing returns does not apply. Instead, these resources exhibit 'network effects' and positive externalities: the more citizens congregate, participate, and share, the greater the collective social, democratic, and economic value created.",
+      "exam_utility": "Paper 1A on Theories of Property, Locke vs. Critics, and Public Choice Theory: 'Carol Rose's theory of the \"comedy of the commons\" shatters the neoliberal dogma of universal privatization, proving that shared public spaces and open digital commons generate compounding societal wealth through collective participation.'",
+      "keywords": [
+        "comedy of the commons",
+        "carol rose",
+        "tragedy of the commons",
+        "property rights",
+        "network effects",
+        "public goods"
+      ]
+    },
+    {
+      "id": "slang_89",
+      "number": 89,
+      "batch": 5,
+      "term": "Structural Violence & Positive Peace",
+      "scholar": "Johan Galtung",
+      "category": "International Relations",
+      "paper": "Paper 2A",
+      "topic": "Peace and Conflict Studies, Theories of Peace",
+      "hook": "Peace is not merely the negative absence of direct kinetic war; true positive peace demands the eradication of 'structural violence'—the invisible institutional arrangements that stunt human potential through poverty and inequality.",
+      "definition": "Johan Galtung, the father of modern Peace Studies, decoupled peace into two categories: 'Negative Peace' (the mere absence of organized kinetic violence or war) versus 'Positive Peace' (the restoration of social justice and human flourishing). Galtung introduced 'Structural Violence' to describe situations where people die or suffer not from direct bullet wounds, but from social structures—apartheid, caste untouchability, economic deprivation, institutional racism—that systematically prevent people from realizing their somatic and mental potential.",
+      "exam_utility": "Paper 2A on Approaches to Peace, Human Security, and Conflict Resolution: 'Johan Galtung's conceptualization of \"structural violence and positive peace\" redefines international security, proving that lasting global stability cannot be achieved through ceasefires alone as long as structural socio-economic inequality persists.'",
+      "keywords": [
+        "johan galtung",
+        "structural violence",
+        "positive peace",
+        "negative peace",
+        "peace studies",
+        "human security"
+      ]
+    },
+    {
+      "id": "slang_90",
+      "number": 90,
+      "batch": 5,
+      "term": "Post-Development & The Anti-Politics Machine",
+      "scholar": "Arturo Escobar / James Ferguson",
+      "category": "Political Theory",
+      "paper": "Paper 1A & 2A",
+      "topic": "Critique of Modernization, Development Discourse & Dependency",
+      "hook": "Development is not a neutral altruistic science, but an 'anti-politics machine' invented by the West to depoliticize poverty and recolonize the Global South under the banner of technical expertise.",
+      "definition": "Arturo Escobar in 'Encountering Development' and James Ferguson in 'The Anti-Politics Machine' pioneered the Post-Development school. They argue that 'development' is an imperial discourse invented by Harry Truman in 1949 that divided the world into 'developed' masters and 'underdeveloped' subjects. Ferguson demonstrates that World Bank development projects operate as 'anti-politics machines': they reframe structural political problems (land inequality, state oppression) into sterile technical questions of agricultural fertilizer and road construction, entrenching state bureaucratic power while disempowering local communities.",
+      "exam_utility": "Paper 1A on Theories of Development and Post-Colonial Critiques; Paper 2A on Global Financial Institutions (IMF & World Bank): 'Arturo Escobar and James Ferguson's post-development critique unmasks \"development\" as an anti-politics machine, revealing how Western technocratic aid depoliticizes systemic inequality while expanding state bureaucratic surveillance.'",
+      "keywords": [
+        "arturo escobar",
+        "james ferguson",
+        "post-development",
+        "anti-politics machine",
+        "development discourse",
+        "world bank"
+      ]
+    },
+    {
+      "id": "slang_91",
+      "number": 91,
+      "batch": 5,
+      "term": "Encumbered Self vs. Unencumbered Self",
+      "scholar": "Michael J. Sandel / Charles Taylor",
+      "category": "Political Theory",
+      "paper": "Paper 1A",
+      "topic": "Liberal-Communitarian Debate & Theories of the Self",
+      "hook": "Liberalism imagines an impossible 'unencumbered self' free to choose its ends without prior ties; communitarianism proves that human identity is always an 'encumbered self' embedded in community, history, and moral duties.",
+      "definition": "In 'Liberalism and the Limits of Justice', Michael Sandel launched the definitive communitarian critique of John Rawls's deontological liberalism. Rawls assumes an 'unencumbered self'—a sovereign individual prior to and independent of their social ends. Sandel argues that this self is a philosophical illusion. Human beings are always 'encumbered selves'—constituted by moral ties, religious traditions, family loyalties, and cultural inheritances that we do not freely choose, but discover as part of our identity.",
+      "exam_utility": "Pivotal for Paper 1A on Liberal-Communitarian Debate (Rawls vs. Sandel/Taylor/MacIntyre): 'Michael Sandel's critique of the Rawlsian \"unencumbered self\" anchors the communitarian challenge to liberal atomism, demonstrating that individual liberty is meaningless when detached from constitutive community attachments.'",
+      "keywords": [
+        "michael sandel",
+        "encumbered self",
+        "unencumbered self",
+        "communitarianism",
+        "john rawls",
+        "liberal-communitarian debate"
+      ]
+    },
+    {
+      "id": "slang_92",
+      "number": 92,
+      "batch": 5,
+      "term": "Veil of Ignorance & The Original Position",
+      "scholar": "John Rawls",
+      "category": "Political Theory",
+      "paper": "Paper 1A",
+      "topic": "Theories of Justice: Justice as Fairness & Liberal Egalitarianism",
+      "hook": "Justice as fairness emerges only behind a 'veil of ignorance'—where rational choosers design basic social institutions without knowing their own future caste, class, gender, or natural talents.",
+      "definition": "John Rawls's 'A Theory of Justice' (1971) revitalized political philosophy through his thought experiment of the 'Original Position'. To eliminate self-interested bias, Rawls places rational contractors behind a 'Veil of Ignorance', where they know general economic and sociological laws but are blind to their own future identity (social class, race, gender, intelligence, or moral conception of the good). Under this uncertainty, rational individuals choose two principles of justice: the Greatest Equal Liberty Principle and the Difference Principle (social and economic inequalities are permissible only if they benefit the least advantaged).",
+      "exam_utility": "Paper 1A on Theories of Justice, Rawlsian Egalitarianism, and Social Contract: 'John Rawls's \"veil of ignorance\" remains modern political philosophy's most celebrated thought experiment, operationalizing impartiality to ensure that basic institutional structures protect the most vulnerable.'",
+      "keywords": [
+        "john rawls",
+        "veil of ignorance",
+        "original position",
+        "difference principle",
+        "justice as fairness",
+        "theories of justice"
+      ]
+    },
+    {
+      "id": "slang_93",
+      "number": 93,
+      "batch": 5,
+      "term": "Entitlement Approach to Famines",
+      "scholar": "Amartya Sen",
+      "category": "Indian Politics",
+      "paper": "Paper 1B & 1A",
+      "topic": "Political Economy, Human Rights & Capabilities",
+      "hook": "Famines are not caused by an absolute shortage of food, but by catastrophic collapses in people's legal 'entitlements'—their ability to command food through wages, trade, and social security.",
+      "definition": "In 'Poverty and Famines: An Essay on Entitlement and Deprivation' (1981), Amartya Sen revolutionized developmental economics by disproving the Food Availability Decline (FAD) hypothesis. Studying the 1943 Bengal Famine, Sen showed that total food supply was adequate. People starved because rural agricultural laborers suffered an 'entitlement failure': wage inflation, wartime hoarding, and market speculation stripped them of the purchasing power to acquire food. Sen famously concluded that 'no substantial famine has ever occurred in any independent country with a democratic form of government and a relatively free press.'",
+      "exam_utility": "Paper 1B on Planning and Poverty Alleviation; Paper 1A on Rights and Democratic Accountability: 'Amartya Sen's \"entitlement approach to famines\" shifts focus from Malthusian biological shortages to democratic accountability, establishing that freedom of the press and electoral competition are life-saving socio-economic safeguards.'",
+      "keywords": [
+        "amartya sen",
+        "entitlement approach",
+        "bengal famine",
+        "poverty and famines",
+        "democratic accountability",
+        "capabilities"
+      ]
+    },
+    {
+      "id": "slang_94",
+      "number": 94,
+      "batch": 5,
+      "term": "Banality of Evil & The Unthinking Bureaucrat",
+      "scholar": "Hannah Arendt",
+      "category": "Political Theory",
+      "paper": "Paper 1A",
+      "topic": "Totalitarianism, Bureaucratic Violence & Moral Philosophy",
+      "hook": "Monstrous atrocities in modern totalitarian states are committed not by ideological sadists, but by ordinary, unthinking bureaucrats simply following administrative protocol.",
+      "definition": "Covering the 1961 trial of Nazi logistics organizer Adolf Eichmann in Jerusalem, Hannah Arendt formulated the controversial thesis of the 'Banality of Evil'. Rejecting the idea that Eichmann was a demonic monster driven by fanatical anti-Semitism, Arendt observed a terrifyingly ordinary, petty bureaucrat whose primary flaw was an absolute 'inability to think' from the standpoint of others. Totalitarian rule functions precisely by turning citizens and civil servants into unthinking cogs within a mechanized administrative apparatus of terror.",
+      "exam_utility": "Paper 1A on Hannah Arendt's Political Theory, Totalitarianism, and Ethics in Public Life: 'Hannah Arendt's concept of the \"banality of evil\" serves as a timeless warning against bureaucratic careerism and administrative detachment, proving that catastrophic state violence flourishes when public officials surrender critical moral reasoning to institutional compliance.'",
+      "keywords": [
+        "hannah arendt",
+        "banality of evil",
+        "eichmann",
+        "totalitarianism",
+        "unthinking bureaucrat",
+        "ethics"
+      ]
+    },
+    {
+      "id": "slang_95",
+      "number": 95,
+      "batch": 5,
+      "term": "The Panopticon & Disciplinary Society",
+      "scholar": "Michel Foucault / Jeremy Bentham",
+      "category": "Political Theory",
+      "paper": "Paper 1A",
+      "topic": "Foucault, Surveillance, Disciplinary Power & State Control",
+      "hook": "Modern power no longer requires chains or public executions; it operates through the internalized gaze of the panopticon, where the constant possibility of surveillance compels subjects to police themselves.",
+      "definition": "In 'Discipline and Punish' (1975), Michel Foucault used Jeremy Bentham's circular prison design—the 'Panopticon', where an unseen central inspector can watch every cell—as the supreme architectural metaphor for modern power. In a 'disciplinary society' (prisons, schools, hospitals, barracks, and modern digital platforms), power is not held by a sovereign king, but is diffused as an invisible, continuous gaze. Because inmates never know when they are being watched, they internalize the gaze, becoming the active agents of their own perpetual surveillance and subjection.",
+      "exam_utility": "Paper 1A on Foucault's Theory of Power, Surveillance State, and Bio-Power: 'Michel Foucault's analysis of the \"panoptic disciplinary society\" illustrates the ultimate sophistication of modern state power: replacing violent physical coercion with internalized psychological self-discipline and biometric surveillance.'",
+      "keywords": [
+        "foucault",
+        "panopticon",
+        "disciplinary power",
+        "surveillance society",
+        "bentham",
+        "discipline and punish"
+      ]
+    },
+    {
+      "id": "slang_96",
+      "number": 96,
+      "batch": 5,
+      "term": "War of Position vs. War of Movement",
+      "scholar": "Antonio Gramsci",
+      "category": "Political Theory",
+      "paper": "Paper 1A",
+      "topic": "Gramscian Hegemony, Civil Society & Revolutionary Strategy",
+      "hook": "In advanced capitalist democracies with robust civil societies, revolution cannot be won by a swift frontal military assault ('war of movement'); it demands a protracted, cultural 'war of position' to build counter-hegemony.",
+      "definition": "Antonio Gramsci used military metaphors from World War I trench warfare to resolve why Marxist revolutions failed in Western Europe after 1917. In Tsarist Russia (an autocracy with a weak civil society), a swift frontal insurrection ('War of Movement') succeeded in toppling the state. In Western democracies, the state is shielded by a dense trench network of civil society institutions (schools, media, churches, trade unions). Revolutionary transformation therefore requires a patient 'War of Position'—waged by organic intellectuals within civil society to dismantle ruling-class cultural hegemony and construct an alternative counter-hegemonic historic bloc.",
+      "exam_utility": "Crown jewel of Paper 1A on Antonio Gramsci, Hegemony, and Marxist Theories of the State: 'Antonio Gramsci's strategic distinction between the \"war of movement and war of position\" demonstrates that enduring political power is won not through physical seizure of state palaces, but through the long-term intellectual contest for cultural hegemony in civil society.'",
+      "keywords": [
+        "gramsci",
+        "war of position",
+        "war of movement",
+        "hegemony",
+        "civil society",
+        "counter-hegemony"
+      ]
+    },
+    {
+      "id": "slang_97",
+      "number": 97,
+      "batch": 5,
+      "term": "Relative Autonomy of the State",
+      "scholar": "Nicos Poulantzas / Louis Althusser",
+      "category": "Political Theory",
+      "paper": "Paper 1A",
+      "topic": "Marxist Theory of the State: Instrumental vs. Structural Debate",
+      "hook": "The capitalist state is not a simple instrument directly manipulated by the bourgeoisie; it requires 'relative autonomy' to protect the long-term collective interests of capitalism against the short-sighted greed of individual capitalists.",
+      "definition": "In the famous Miliband-Poulantzas debate, structural Marxist Nicos Poulantzas rejected Ralph Miliband's instrumentalist view that the state is merely a tool of elite businessmen. Poulantzas argued that the capitalist state possesses 'Relative Autonomy'. To preserve the capitalist social order as a whole, the state must have sufficient independence from the capitalist class to grant concessions to the working class (minimum wages, pensions, labor rights) and discipline rogue individual capitalists who threaten systemic stability.",
+      "exam_utility": "Paper 1A on Marxist Theories of the State (Instrumentalism vs. Structuralism): 'Nicos Poulantzas's concept of the \"relative autonomy of the state\" rescues Marxist state theory from economic reductionism, proving that the state functions as the objective factor of social cohesion rather than a passive executive committee of the bourgeoisie.'",
+      "keywords": [
+        "poulantzas",
+        "relative autonomy",
+        "althusser",
+        "marxist state theory",
+        "miliband-poulantzas debate",
+        "structuralism"
+      ]
+    },
+    {
+      "id": "slang_98",
+      "number": 98,
+      "batch": 5,
+      "term": "Passive Revolution in Post-Colonial India",
+      "scholar": "Antonio Gramsci / Sudipta Kaviraj / Partha Chatterjee",
+      "category": "Indian Politics",
+      "paper": "Paper 1B & 1A",
+      "topic": "Theories of the Indian State, Political Economy & Modernity",
+      "hook": "India's post-colonial transition was a 'passive revolution'—a molecular reform from above where the bourgeois elite modernized state capitalism while co-opting feudal elites without an agrarian social revolution.",
+      "definition": "Applying Antonio Gramsci's concept of 'Passive Revolution' to post-colonial India, political theorists Sudipta Kaviraj and Partha Chatterjee explained why India's independence did not abolish caste and feudal landlordism. Rather than undergoing a radical bourgeois revolution that emancipated the peasantry, the Indian national bourgeoisie negotiated a compromised transition: modernizing heavy industrial infrastructure through state planning, while preserving and allying with rural agrarian feudal elites to maintain political stability and electoral control.",
+      "exam_utility": "Paper 1B on Theories of the Indian State; Paper 1A on Gramscian Post-Colonial Applications: 'Sudipta Kaviraj and Partha Chatterjee mobilize Gramsci's \"passive revolution\" to decode the paradox of the post-colonial Indian state: an ambitious developmental modernization accompanied by the deliberate preservation of traditional caste and agrarian power structures.'",
+      "keywords": [
+        "passive revolution",
+        "kaviraj",
+        "partha chatterjee",
+        "gramsci",
+        "theories of the indian state",
+        "post-colonial transition"
+      ]
+    },
+    {
+      "id": "slang_99",
+      "number": 99,
+      "batch": 5,
+      "term": "Democratic Guardrails: Toleration & Forbearance",
+      "scholar": "Steven Levitsky & Daniel Ziblatt",
+      "category": "Political Theory",
+      "paper": "Paper 1A & 1B",
+      "topic": "How Democracies Die, Democratic Backsliding & Constitutional Norms",
+      "hook": "Democracies do not fall by constitutional abolition, but by the slow decay of unwritten guardrails: 'mutual toleration' of political rivals and 'institutional forbearance' in exercising legal power.",
+      "definition": "In 'How Democracies Die' (2018), Harvard political scientists Steven Levitsky and Daniel Ziblatt demonstrate that constitutional parchment alone cannot protect a democracy. The true survival of constitutional democracy rests on two unwritten norms—the 'guardrails of democracy'. First, 'Mutual Toleration': accepting political rivals as legitimate competitors rather than treasonous enemies to be destroyed. Second, 'Institutional Forbearance': exercising self-restraint and not deploying legal executive powers to the maximum constitutional limit (e.g., weaponizing tax agencies or court-packing).",
+      "exam_utility": "Paper 1A & 1B on Contemporary Democratic Decay, Majoritarianism, and Constitutional Morality: 'Levitsky and Ziblatt's framework of \"mutual toleration and institutional forbearance\" provides the indispensable metric for evaluating democratic backsliding, showing that democracies die when leaders legally dismantle democratic guardrails from within.'",
+      "keywords": [
+        "levitsky",
+        "ziblatt",
+        "democratic guardrails",
+        "mutual toleration",
+        "institutional forbearance",
+        "how democracies die"
+      ]
+    },
+    {
+      "id": "slang_100",
+      "number": 100,
+      "batch": 5,
+      "term": "Theory from the South & Epistemic Vanguard",
+      "scholar": "Jean Comaroff & John L. Comaroff / Achille Mbembe",
+      "category": "Political Theory",
+      "paper": "Paper 1A & 2A",
+      "topic": "Decoloniality, Global South in Theory & Future of Modernity",
+      "hook": "The Global South is not playing historical catch-up with the West; rather, it is the 'epistemic vanguard'—the laboratory where the future crises, precarious labor, and fragmented sovereignty of the globalized world are previewed first.",
+      "definition": "Jean and John Comaroff in 'Theory from the South: Or, How Euro-America is Evolving Toward Africa' and Achille Mbembe invert the foundational assumption of Eurocentric modernization theory. Traditionally, the Global North was viewed as the vanguard of modernity, and the Global South as an underdeveloped periphery condemned to follow in its footsteps. The Comaroffs demonstrate the reverse: contemporary Western societies—facing de-industrialization, mass precarity, hyper-privatization, and ethnic populist friction—are evolving toward conditions that the Global South has navigated for generations, making the South the true epistemic frontier for understanding 21st-century global politics.",
+      "exam_utility": "The ultimate concluding hook for Paper 1A & 2A on Decolonial Theory, Future of the Global Order, and Re-imagining the Global South: 'The Comaroffs' thesis of \"Theory from the South\" fundamentally upends Eurocentric teleology, establishing that the Global South is not a developmental laggard, but the epistemic vanguard illuminating the precarious, multi-nodal realities of 21st-century planetary politics.'",
+      "keywords": [
+        "theory from the south",
+        "comaroff",
+        "achille mbembe",
+        "decoloniality",
+        "global south",
+        "epistemic vanguard"
+      ]
     }
   ],
   "checkpoints": [
@@ -1824,6 +2244,34 @@ window.KEYTERMS_DATA = {
       ],
       "correctIndex": 1,
       "explanation": "Alexander Wendt's landmark 1992 declaration 'Anarchy is what states make of it' established that international anarchy has no inherent logic of violent self-help, but is an ongoing intersubjective social construction shaped by collective identities and norms."
+    },
+    {
+      "id": "cp_slang_9",
+      "afterIndex": 90,
+      "batch": 5,
+      "question": "Which pioneer of Peace Studies introduced the concept of 'Structural Violence' to prove that genuine positive peace requires not merely the negative absence of direct war, but the eradication of institutional arrangements that stunt human potential through poverty and inequality?",
+      "options": [
+        "Johan Galtung",
+        "Kenneth Waltz",
+        "Michael Doyle",
+        "Thomas Schelling"
+      ],
+      "correctIndex": 0,
+      "explanation": "Johan Galtung formulated the concepts of 'Structural Violence' and 'Positive Peace', demonstrating that socio-economic injustices and institutional inequalities kill and harm human beings just as lethally as kinetic warfare."
+    },
+    {
+      "id": "cp_slang_10",
+      "afterIndex": 100,
+      "batch": 5,
+      "question": "In Gramscian Marxist theory, which concept explains why a direct frontal assault on state power ('war of movement') failed in Western capitalist democracies, requiring instead a patient cultural 'war of position' to build counter-hegemony in civil society?",
+      "options": [
+        "Passive Revolution",
+        "Relative Autonomy",
+        "Cultural Hegemony",
+        "Historic Compromise"
+      ],
+      "correctIndex": 2,
+      "explanation": "Antonio Gramsci argued that ruling classes in advanced democracies maintain power through 'Cultural Hegemony' embedded in civil society institutions, which can only be dismantled through a protracted, intellectual 'War of Position'."
     }
   ]
 };
