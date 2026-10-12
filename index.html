@@ -1,0 +1,1598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarrthi IAS PSIR • Interactive Complete PDF Study Suite (All 6 Chapters • 77 Pages)</title>
+  <meta name="description" content="Complete Interactive Study Suite based on Sarrthi IAS PSIR Class Notes by Vivek Waghmare. Full 77-page syllabus with live interactive 3-choice evaluation, flower showers, and complete index.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📜</text></svg>">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Outfit:wght@500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* ========================================================
+       SARRTHI IAS INTERACTIVE PDF STUDY SUITE DESIGN SYSTEM
+       ======================================================== */
+    :root {
+      --bg-app: #f4f6fa;
+      --paper-bg: #ffffff;
+      --paper-border: #e2e8f0;
+      --paper-shadow: 0 8px 30px -4px rgba(0, 0, 0, 0.07), 0 0 1px rgba(0, 0, 0, 0.08);
+      
+      --sidebar-bg: #ffffff;
+      --sidebar-border: #e2e8f0;
+      
+      --text-main: #1e293b;
+      --text-muted: #475569;
+      --text-dim: #64748b;
+      
+      --rust-heading: #8b3a2b; /* Authentic header color from Sarrthi PDF */
+      --rust-bg: rgba(139, 58, 43, 0.08);
+      --rust-border: rgba(139, 58, 43, 0.2);
+      
+      --brand-primary: #0284c7;
+      --brand-accent: #b45309;
+      
+      --green-check: #10b981;
+      --green-bg: #ecfdf5;
+      --green-border: #a7f3d0;
+      
+      --red-wrong: #ef4444;
+      --red-bg: #fef2f2;
+      --red-border: #fecaca;
+      
+      --circle-neutral: #f59e0b;
+      --circle-bg: #fffbeb;
+      --circle-border: #fde68a;
+
+      --font-display: 'Outfit', sans-serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      --sidebar-width: 320px;
+      --transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    body.dark-mode {
+      --bg-app: #090d16;
+      --paper-bg: #111726;
+      --paper-border: #1e293b;
+      --paper-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.6);
+      
+      --sidebar-bg: #0f1422;
+      --sidebar-border: #1e293b;
+      
+      --text-main: #f1f5f9;
+      --text-muted: #cbd5e1;
+      --text-dim: #94a3b8;
+      
+      --rust-heading: #fb7185;
+      --rust-bg: rgba(251, 113, 133, 0.12);
+      --rust-border: rgba(251, 113, 133, 0.3);
+      
+      --green-bg: rgba(16, 185, 129, 0.12);
+      --green-border: rgba(16, 185, 129, 0.3);
+      
+      --red-bg: rgba(239, 68, 68, 0.12);
+      --red-border: rgba(239, 68, 68, 0.3);
+      
+      --circle-bg: rgba(245, 158, 11, 0.12);
+      --circle-border: rgba(245, 158, 11, 0.3);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg-app);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.6;
+      overflow-x: hidden;
+      transition: background 0.25s ease;
+    }
+
+    /* FULLSCREEN FLOWER DROP CANVAS */
+    #flowerCanvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 99999;
+    }
+
+    /* ========================================================
+       TOP CONTROLS & SARRTHI APP BAR
+       ======================================================== */
+    .app-top-header {
+      background: var(--paper-bg);
+      border-bottom: 1px solid var(--paper-border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    }
+
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+    .toggle-sidebar-btn {
+      background: rgba(0,0,0,0.04);
+      border: 1px solid var(--paper-border);
+      color: var(--text-main);
+      font-size: 15px;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition);
+    }
+    .toggle-sidebar-btn:hover {
+      background: var(--rust-bg);
+      color: var(--rust-heading);
+      border-color: var(--rust-border);
+    }
+
+    .brand-title-wrap {
+      display: flex;
+      flex-direction: column;
+    }
+    .brand-title {
+      font-family: var(--font-display);
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--text-main);
+      letter-spacing: -0.3px;
+    }
+    .brand-sub {
+      font-size: 11px;
+      color: var(--text-dim);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .brand-sub span {
+      color: var(--brand-primary);
+      font-weight: 700;
+    }
+
+    /* SEARCH BAR IN HEADER */
+    .header-search-wrap {
+      flex: 1;
+      max-width: 420px;
+      position: relative;
+    }
+    .header-search-input {
+      width: 100%;
+      background: rgba(0, 0, 0, 0.03);
+      border: 1px solid var(--paper-border);
+      padding: 8px 14px 8px 36px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-family: inherit;
+      color: var(--text-main);
+      outline: none;
+      transition: var(--transition);
+    }
+    body.dark-mode .header-search-input {
+      background: rgba(255, 255, 255, 0.05);
+    }
+    .header-search-input:focus {
+      border-color: var(--rust-heading);
+      background: var(--paper-bg);
+      box-shadow: 0 0 0 3px rgba(139, 58, 43, 0.15);
+    }
+    .header-search-icon {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 14px;
+      color: var(--text-dim);
+      pointer-events: none;
+    }
+    .search-clear-btn {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      color: var(--text-dim);
+      cursor: pointer;
+      font-size: 14px;
+      display: none;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+
+    .header-score-pill {
+      background: var(--green-bg);
+      border: 1px solid var(--green-border);
+      color: var(--green-check);
+      font-size: 12px;
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .header-score-pill:hover {
+      transform: scale(1.03);
+    }
+
+    .header-btn {
+      background: transparent;
+      border: 1px solid var(--paper-border);
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: var(--transition);
+    }
+    .header-btn:hover {
+      background: rgba(0, 0, 0, 0.04);
+      color: var(--text-main);
+      border-color: var(--rust-heading);
+    }
+
+    /* ========================================================
+       TOP NAVIGATION TABS (CHAPTERS SELECTOR)
+       ======================================================== */
+    .topics-nav-bar {
+      background: var(--paper-bg);
+      border-bottom: 1px solid var(--paper-border);
+      padding: 8px 20px;
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      z-index: 90;
+      scrollbar-width: thin;
+    }
+    .topic-tab-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-muted);
+      font-family: var(--font-display);
+      font-size: 12.5px;
+      font-weight: 700;
+      padding: 7px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .topic-tab-btn:hover {
+      background: rgba(0, 0, 0, 0.04);
+      color: var(--text-main);
+    }
+    .topic-tab-btn.active {
+      background: var(--rust-bg);
+      color: var(--rust-heading);
+      border-color: var(--rust-border);
+    }
+    .tab-counter-badge {
+      font-size: 11px;
+      font-family: var(--font-mono);
+      padding: 2px 6px;
+      border-radius: 6px;
+      background: rgba(0,0,0,0.06);
+    }
+    .topic-tab-btn.active .tab-counter-badge {
+      background: rgba(139, 58, 43, 0.15);
+      color: var(--rust-heading);
+    }
+
+    /* FILTER PILLS (STATUS SELECTOR) */
+    .status-filter-bar {
+      background: var(--paper-bg);
+      border-bottom: 1px solid var(--paper-border);
+      padding: 6px 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      overflow-x: auto;
+    }
+    .status-filter-label {
+      font-weight: 700;
+      color: var(--text-dim);
+      margin-right: 4px;
+    }
+    .filter-chip {
+      background: transparent;
+      border: 1px solid var(--paper-border);
+      color: var(--text-muted);
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 11.5px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: var(--transition);
+    }
+    .filter-chip:hover {
+      background: rgba(0,0,0,0.03);
+    }
+    .filter-chip.active {
+      background: var(--text-main);
+      color: var(--paper-bg);
+      border-color: var(--text-main);
+    }
+
+    /* ========================================================
+       APPLICATION WORKSPACE LAYOUT (SIDEBAR + CONTENT)
+       ======================================================== */
+    .workspace-layout {
+      display: flex;
+      flex: 1;
+      width: 100%;
+      min-height: calc(100vh - 120px);
+      position: relative;
+    }
+
+    /* SIDEBAR (INDEX & TABLE OF CONTENTS) */
+    .syllabus-sidebar {
+      width: var(--sidebar-width);
+      background: var(--sidebar-bg);
+      border-right: 1px solid var(--sidebar-border);
+      flex-shrink: 0;
+      overflow-y: auto;
+      height: calc(100vh - 125px);
+      position: sticky;
+      top: 105px;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s ease, margin 0.25s ease;
+      z-index: 80;
+    }
+    .syllabus-sidebar.collapsed {
+      margin-left: calc(-1 * var(--sidebar-width));
+    }
+
+    .sidebar-header {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--sidebar-border);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      background: var(--paper-bg);
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    .sidebar-title {
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .sidebar-stats-row {
+      display: flex;
+      gap: 6px;
+      margin-top: 4px;
+    }
+    .sidebar-stat-badge {
+      flex: 1;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 6px;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .sidebar-tree {
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex: 1;
+    }
+    .tree-chapter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .tree-chapter-btn {
+      width: 100%;
+      text-align: left;
+      background: rgba(0, 0, 0, 0.02);
+      border: 1px solid var(--paper-border);
+      border-radius: 8px;
+      padding: 8px 12px;
+      font-family: var(--font-display);
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--text-main);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: var(--transition);
+    }
+    .tree-chapter-btn:hover {
+      background: var(--rust-bg);
+      color: var(--rust-heading);
+      border-color: var(--rust-border);
+    }
+    .tree-chapter-btn.active {
+      background: var(--rust-bg);
+      color: var(--rust-heading);
+      border-color: var(--rust-heading);
+    }
+
+    .tree-sections-sublist {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      padding-left: 10px;
+      margin-top: 4px;
+      border-left: 2px solid var(--paper-border);
+    }
+    .tree-section-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 8px;
+      font-size: 11.5px;
+      color: var(--text-muted);
+      text-decoration: none;
+      border-radius: 6px;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+    .tree-section-link:hover {
+      background: rgba(0, 0, 0, 0.04);
+      color: var(--rust-heading);
+    }
+    .tree-section-link.active {
+      color: var(--rust-heading);
+      font-weight: 700;
+      background: var(--rust-bg);
+    }
+
+    /* ========================================================
+       MAIN PDF DOCUMENT PAPER CONTAINER
+       ======================================================== */
+    .main-content-area {
+      flex: 1;
+      padding: 24px 28px 100px;
+      max-width: 1020px;
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    @media (max-width: 900px) {
+      .syllabus-sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        height: 100vh;
+        z-index: 1000;
+        box-shadow: 5px 0 25px rgba(0,0,0,0.2);
+        transform: translateX(0);
+      }
+      .syllabus-sidebar.collapsed {
+        transform: translateX(-100%);
+        margin-left: 0;
+      }
+      .main-content-area {
+        padding: 16px 14px 80px;
+      }
+    }
+
+    /* HERO CELEBRATION CARD */
+    .celebration-hero-card {
+      background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+      color: #ffffff;
+      border-radius: 16px;
+      padding: 24px 28px;
+      box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.4);
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      animation: popBounce 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    @keyframes popBounce {
+      0% { transform: scale(0.92); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    .celebration-badge-icon {
+      font-size: 38px;
+      background: rgba(255, 255, 255, 0.2);
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .celebration-hero-title {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: -0.3px;
+    }
+    .celebration-hero-sub {
+      font-size: 13px;
+      opacity: 0.95;
+      margin-top: 4px;
+    }
+    .celebration-btn {
+      background: #ffffff;
+      color: #065f46;
+      border: none;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 12.5px;
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+    .celebration-btn:hover {
+      background: #f0fdf4;
+      transform: scale(1.05);
+    }
+
+    /* PDF DOCUMENT SHEET */
+    .pdf-sheet {
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      border-radius: 16px;
+      box-shadow: var(--paper-shadow);
+      padding: 36px 44px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+    @media (max-width: 640px) {
+      .pdf-sheet {
+        padding: 22px 18px;
+        gap: 22px;
+      }
+    }
+
+    /* PDF DOCUMENT HEADER (PSIR by Vivek Waghmare) */
+    .pdf-page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--paper-border);
+      padding-bottom: 12px;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--text-dim);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .pdf-source-tag {
+      background: rgba(0, 0, 0, 0.04);
+      padding: 4px 10px;
+      border-radius: 6px;
+      color: var(--text-main);
+    }
+
+    /* CHAPTER TITLE BANNER */
+    .chapter-main-header {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding-bottom: 16px;
+      border-bottom: 2px solid var(--rust-bg);
+    }
+    .chapter-eyebrow {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: var(--rust-heading);
+      text-transform: uppercase;
+    }
+    .chapter-title-text {
+      font-family: var(--font-display);
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--text-main);
+      letter-spacing: -0.5px;
+      line-height: 1.25;
+    }
+    .chapter-subtitle-text {
+      font-size: 13.5px;
+      color: var(--text-muted);
+    }
+
+    /* SECTION BLOCK */
+    .pdf-section-block {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding-top: 10px;
+      border-top: 1px dashed var(--paper-border);
+    }
+    .pdf-section-block:first-of-type {
+      border-top: none;
+      padding-top: 0;
+    }
+
+    /* RUST SECTION HEADER BAR */
+    .section-title-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .section-title-heading {
+      font-family: var(--font-display);
+      font-size: 19px;
+      font-weight: 800;
+      color: var(--rust-heading);
+      letter-spacing: -0.2px;
+    }
+    .section-page-badge {
+      font-size: 11px;
+      font-weight: 700;
+      font-family: var(--font-mono);
+      background: var(--rust-bg);
+      color: var(--rust-heading);
+      padding: 2px 8px;
+      border-radius: 6px;
+      border: 1px solid var(--rust-border);
+    }
+
+    .section-intro-text {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text-main);
+    }
+    .section-intro-text b, .section-intro-text strong {
+      font-weight: 700;
+    }
+    .section-intro-text i, .section-intro-text em {
+      font-style: italic;
+      color: #92400e;
+    }
+    body.dark-mode .section-intro-text i, body.dark-mode .section-intro-text em {
+      color: #fde68a;
+    }
+
+    /* ========================================================
+       THE 3-CHOICE INTERACTIVE BULLET EVALUATOR
+       ======================================================== */
+    .interactive-bullets-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 6px;
+    }
+
+    .bullet-row-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: rgba(0, 0, 0, 0.015);
+      border: 1px solid transparent;
+      padding: 12px 16px;
+      border-radius: 12px;
+      transition: var(--transition);
+    }
+    .bullet-row-item:hover {
+      background: rgba(0, 0, 0, 0.03);
+      border-color: rgba(0, 0, 0, 0.06);
+    }
+    body.dark-mode .bullet-row-item:hover {
+      background: rgba(255, 255, 255, 0.03);
+      border-color: rgba(255, 255, 255, 0.08);
+    }
+
+    /* Status highlight states on the bullet row */
+    .bullet-row-item.status-right {
+      background: var(--green-bg);
+      border-color: var(--green-border);
+    }
+    .bullet-row-item.status-wrong {
+      background: var(--red-bg);
+      border-color: var(--red-border);
+    }
+    .bullet-row-item.status-circle {
+      background: var(--circle-bg);
+      border-color: var(--circle-border);
+    }
+
+    /* THE 3-BUTTON EVALUATION TOGGLE GROUP (REPLACES BLACK DOT) */
+    .bullet-eval-selector {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      padding: 3px;
+      border-radius: 999px;
+      flex-shrink: 0;
+      margin-top: 2px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+    }
+
+    .eval-choice-btn {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 800;
+      cursor: pointer;
+      color: var(--text-dim);
+      transition: var(--transition);
+    }
+    .eval-choice-btn:hover {
+      transform: scale(1.18);
+    }
+
+    /* Right Sign (Checkmark ✓) */
+    .eval-btn-right:hover {
+      color: var(--green-check);
+      background: rgba(16, 185, 129, 0.15);
+    }
+    .eval-choice-btn.selected-right {
+      background: var(--green-check);
+      color: #ffffff;
+      box-shadow: 0 0 10px rgba(16, 185, 129, 0.6);
+      transform: scale(1.1);
+    }
+
+    /* Wrong Sign (Cross ✕) */
+    .eval-btn-wrong:hover {
+      color: var(--red-wrong);
+      background: rgba(239, 68, 68, 0.15);
+    }
+    .eval-choice-btn.selected-wrong {
+      background: var(--red-wrong);
+      color: #ffffff;
+      box-shadow: 0 0 10px rgba(239, 68, 68, 0.6);
+      transform: scale(1.1);
+    }
+
+    /* Circle Sign (Neutral ○) */
+    .eval-btn-circle:hover {
+      color: var(--circle-neutral);
+      background: rgba(245, 158, 11, 0.15);
+    }
+    .eval-choice-btn.selected-circle {
+      background: var(--circle-neutral);
+      color: #ffffff;
+      box-shadow: 0 0 10px rgba(245, 158, 11, 0.6);
+      transform: scale(1.1);
+    }
+
+    /* Bullet Content Text */
+    .bullet-content-body {
+      flex: 1;
+      font-size: 14.5px;
+      line-height: 1.6;
+      color: var(--text-main);
+    }
+    .bullet-label-tag {
+      font-weight: 800;
+      color: var(--rust-heading);
+      margin-right: 4px;
+    }
+    .bullet-label-tag::after {
+      content: " :";
+      color: var(--text-dim);
+    }
+
+    /* SUB-BULLETS / EXAMPLES */
+    .subbullet-box {
+      margin-left: 44px;
+      background: rgba(0, 0, 0, 0.02);
+      border-left: 3px solid var(--brand-primary);
+      padding: 8px 14px;
+      border-radius: 0 8px 8px 0;
+      font-size: 13.5px;
+      color: var(--text-muted);
+    }
+    .subbullet-box strong {
+      color: var(--brand-primary);
+    }
+
+    /* PDF SHEET FOOTER */
+    .pdf-page-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--paper-border);
+      padding-top: 14px;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-dim);
+      margin-top: 10px;
+    }
+    .footer-left-contact {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* TOAST NOTIFICATION PILL */
+    #toastPill {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #0f172a;
+      color: #f8fafc;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 10px 22px;
+      border-radius: 999px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      display: none;
+      z-index: 100000;
+      pointer-events: none;
+      animation: toastFade 0.25s ease;
+    }
+    @keyframes toastFade {
+      0% { opacity: 0; transform: translate(-50%, 15px); }
+      100% { opacity: 1; transform: translate(-50%, 0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fullscreen Flower Shower Canvas Engine -->
+  <canvas id="flowerCanvas"></canvas>
+
+  <!-- Top App Bar & Navigation Controls -->
+  <header class="app-top-header">
+    <div class="brand-wrap">
+      <button id="toggleSidebarBtn" class="toggle-sidebar-btn" title="Toggle Table of Contents / Index">
+        <span>📑</span> <span>Index</span>
+      </button>
+      <div class="brand-title-wrap">
+        <h1 class="brand-title">SARRTHI IAS • PSIR STUDY SUITE</h1>
+        <div class="brand-sub">
+          Class Notes by <span>Vivek Waghmare</span> • 77 Pages
+        </div>
+      </div>
+    </div>
+
+    <!-- Search input -->
+    <div class="header-search-wrap">
+      <span class="header-search-icon">🔍</span>
+      <input type="text" id="globalSearchInput" class="header-search-input" placeholder="Search any thinker, quote or concept across all 77 pages...">
+      <button id="clearSearchBtn" class="search-clear-btn" title="Clear Search">✕</button>
+    </div>
+
+    <div class="header-actions">
+      <!-- Master Score Pill -->
+      <div id="masterScorePill" class="header-score-pill" title="Mastered Bullet Points with ✓">
+        <span>🌸</span>
+        <span id="masteredScoreText">0 / 852</span>
+        <span>Mastered</span>
+      </div>
+
+      <!-- Audio chime toggle -->
+      <button id="soundToggleBtn" class="header-btn" title="Toggle Celebration Chimes">
+        <span id="soundIcon">🔔</span> Sound
+      </button>
+
+      <!-- Dark mode toggle -->
+      <button id="themeToggleBtn" class="header-btn" title="Toggle Light/Dark Paper Mode">
+        <span id="themeIcon">🌙</span> Dark Paper
+      </button>
+
+      <!-- Reset button -->
+      <button id="resetAllBtn" class="header-btn" title="Reset All Interactive Marks">
+        <span>🔄</span> Reset
+      </button>
+    </div>
+  </header>
+
+  <!-- Horizontal Chapter Navigation Bar -->
+  <nav class="topics-nav-bar" id="topicsNavBar">
+    <button class="topic-tab-btn active" data-chapter="all">
+      <span>📚 All Chapters (77 Pages)</span>
+      <span class="tab-counter-badge" id="badgeTabAll">0/852</span>
+    </button>
+    <!-- Chapter Tabs will be dynamically rendered or keyed here -->
+  </nav>
+
+  <!-- Status Filter Bar -->
+  <div class="status-filter-bar">
+    <span class="status-filter-label">Filter View:</span>
+    <button class="filter-chip active" data-status-filter="all">All Points (<span id="filterCountAll">852</span>)</button>
+    <button class="filter-chip" data-status-filter="right">Mastered ✓ (<span id="filterCountRight">0</span>)</button>
+    <button class="filter-chip" data-status-filter="wrong">Needs Work ✕ (<span id="filterCountWrong">0</span>)</button>
+    <button class="filter-chip" data-status-filter="circle">In Review ○ (<span id="filterCountCircle">0</span>)</button>
+    <button class="filter-chip" data-status-filter="unmarked">Unmarked (<span id="filterCountUnmarked">852</span>)</button>
+  </div>
+
+  <!-- Workspace Layout (Sidebar Drawer + Main Content) -->
+  <div class="workspace-layout">
+    
+    <!-- LEFT SIDEBAR: Table of Contents & Index -->
+    <aside class="syllabus-sidebar" id="syllabusSidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-title">
+          <span>Table of Contents</span>
+          <span style="font-size: 11px; font-weight: 700; color: var(--rust-heading);">SARRTHI IAS</span>
+        </div>
+        <div class="sidebar-stats-row">
+          <div class="sidebar-stat-badge" style="background: var(--green-bg); color: var(--green-check);">
+            ✓ <span id="sideStatMastered">0</span> Done
+          </div>
+          <div class="sidebar-stat-badge" style="background: var(--red-bg); color: var(--red-wrong);">
+            ✕ <span id="sideStatReview">0</span> Revise
+          </div>
+          <div class="sidebar-stat-badge" style="background: var(--circle-bg); color: var(--circle-neutral);">
+            ○ <span id="sideStatFlagged">0</span> Flagged
+          </div>
+        </div>
+      </div>
+
+      <!-- Hierarchical Tree Navigation -->
+      <div class="sidebar-tree" id="sidebarTreeContainer">
+        <!-- Dynamically rendered index links -->
+      </div>
+    </aside>
+
+    <!-- MAIN PDF CONTENT VIEWPORT -->
+    <main class="main-content-area" id="mainContentArea">
+
+      <!-- HERO CELEBRATION CARD FOR CORE MARXIST CONCEPTS -->
+      <div id="coreMarxistCelebrationBanner" class="celebration-hero-card">
+        <div class="celebration-badge-icon">🌸</div>
+        <div style="flex: 1;">
+          <h2 class="celebration-hero-title">CORE-MARXIST CONCEPTS COMPLETED!</h2>
+          <p class="celebration-hero-sub">All 4 foundational pillars (Ideology as Class Domination, False Consciousness, Class Consciousness & End of Ideology) fully mastered!</p>
+        </div>
+        <button class="celebration-btn" onclick="resetSection('core_marxist')">Reset Section</button>
+      </div>
+
+      <!-- Container where all 6 chapters & PDF sheets are dynamically rendered -->
+      <div id="dynamicPdfChaptersContainer" style="display: flex; flex-direction: column; gap: 36px;">
+        <!-- Filled by renderSarrthiApp() -->
+      </div>
+
+    </main>
+
+  </div>
+
+  <!-- Toast Notification Pill -->
+  <div id="toastPill">Concept Mastered! 🌸</div>
+
+  <!-- LOAD FULL EXTRACTED SARRTHI IAS DATASET -->
+  <script src="sarrthi_full_data.js"></script>
+
+  <!-- INTERACTIVE EVALUATION & FLOWER PHYSICS LOGIC -->
+  <script>
+    (function () {
+      'use strict';
+
+      // LocalStorage Key for persisted evaluations
+      const STORAGE_KEY = 'sarrthi_psir_interactive_scores';
+      let scores = {};
+      try {
+        const stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) scores = JSON.parse(stored);
+      } catch (e) {
+        scores = {};
+      }
+
+      function saveScores() {
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(scores));
+        } catch (e) {}
+      }
+
+      // Flower Shower Animation Engine
+      const canvas = document.getElementById('flowerCanvas');
+      const ctx = canvas.getContext('2d');
+      let petals = [];
+      let isShowerActive = false;
+
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+      window.addEventListener('resize', resizeCanvas);
+      resizeCanvas();
+
+      class Petal {
+        constructor() {
+          this.x = Math.random() * canvas.width;
+          this.y = -20;
+          this.size = Math.random() * 12 + 8;
+          this.speedY = Math.random() * 3.5 + 2.5;
+          this.speedX = (Math.random() - 0.5) * 2.5;
+          this.rotation = Math.random() * 360;
+          this.rotSpeed = (Math.random() - 0.5) * 5;
+          // Vibrant flower palette: cherry pink, rose red, emerald green, sunflower gold, lotus lavender
+          const colors = ['#f43f5e', '#fb7185', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899', '#38bdf8'];
+          this.color = colors[Math.floor(Math.random() * colors.length)];
+        }
+        update() {
+          this.y += this.speedY;
+          this.x += this.speedX;
+          this.rotation += this.rotSpeed;
+        }
+        draw() {
+          ctx.save();
+          ctx.translate(this.x, this.y);
+          ctx.rotate((this.rotation * Math.PI) / 180);
+          ctx.fillStyle = this.color;
+          ctx.beginPath();
+          ctx.ellipse(0, 0, this.size, this.size * 0.55, 0, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.restore();
+        }
+      }
+
+      window.triggerFlowerShower = function (count = 70) {
+        for (let i = 0; i < count; i++) {
+          petals.push(new Petal());
+        }
+        if (!isShowerActive) {
+          isShowerActive = true;
+          animatePetals();
+        }
+        playChime();
+      };
+
+      function animatePetals() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        let active = 0;
+        petals.forEach(p => {
+          p.update();
+          p.draw();
+          if (p.y < canvas.height + 25) active++;
+        });
+        if (active > 0) {
+          requestAnimationFrame(animatePetals);
+        } else {
+          isShowerActive = false;
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+      }
+
+      // Web Audio API Harmonic Chimes
+      let audioCtx = null;
+      let soundEnabled = true;
+
+      function playChime(isSpecial = false) {
+        if (!soundEnabled) return;
+        try {
+          if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+          if (audioCtx.state === 'suspended') audioCtx.resume();
+          const now = audioCtx.currentTime;
+          const freqs = isSpecial ? [523.25, 659.25, 783.99, 1046.50, 1318.51] : [523.25, 659.25, 783.99];
+          freqs.forEach((freq, idx) => {
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.type = 'triangle';
+            osc.frequency.setValueAtTime(freq, now + idx * 0.08);
+            gain.gain.setValueAtTime(0, now + idx * 0.08);
+            gain.gain.linearRampToValueAtTime(0.16, now + idx * 0.08 + 0.03);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.08 + 0.7);
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.start(now + idx * 0.08);
+            osc.stop(now + idx * 0.08 + 0.75);
+          });
+        } catch (e) {}
+      }
+
+      function showToast(msg) {
+        const toast = document.getElementById('toastPill');
+        toast.textContent = msg;
+        toast.style.display = 'block';
+        setTimeout(() => { toast.style.display = 'none'; }, 2400);
+      }
+
+      // Interactive Score Evaluation Toggle Handler
+      window.setBulletScore = function (id, choice) {
+        const current = scores[id];
+        if (current === choice) {
+          delete scores[id];
+        } else {
+          scores[id] = choice;
+          if (choice === 'right') {
+            window.triggerFlowerShower(65);
+            showToast('🌸 Concept Mastered! Flower drop celebration');
+          } else if (choice === 'wrong') {
+            showToast('❌ Marked for Priority Revision');
+          } else if (choice === 'circle') {
+            showToast('○ In-Progress / Question Flagged');
+          }
+        }
+        applyScoresToDOM();
+        updateScoreBadges();
+        checkCoreMarxistCompletion();
+        saveScores();
+      };
+
+      // Reset section
+      window.resetSection = function (sectionKey) {
+        if (sectionKey === 'core_marxist') {
+          ['marx_1', 'marx_2', 'marx_3', 'marx_4'].forEach(id => delete scores[id]);
+          applyScoresToDOM();
+          updateScoreBadges();
+          checkCoreMarxistCompletion();
+          saveScores();
+          showToast('Core Marxist Concepts Reset. Ready for evaluation!');
+        }
+      };
+
+      // Apply Visual CSS Highlights to DOM
+      function applyScoresToDOM() {
+        document.querySelectorAll('.bullet-row-item').forEach(row => {
+          const id = row.getAttribute('data-id');
+          const choice = scores[id];
+
+          row.classList.remove('status-right', 'status-wrong', 'status-circle');
+          if (choice) {
+            row.classList.add(`status-${choice}`);
+          }
+
+          const btnRight = row.querySelector('.eval-btn-right');
+          const btnWrong = row.querySelector('.eval-btn-wrong');
+          const btnCircle = row.querySelector('.eval-btn-circle');
+
+          if (btnRight) btnRight.classList.toggle('selected-right', choice === 'right');
+          if (btnWrong) btnWrong.classList.toggle('selected-wrong', choice === 'wrong');
+          if (btnCircle) btnCircle.classList.toggle('selected-circle', choice === 'circle');
+        });
+      }
+
+      // Check Core Marxist Concepts Completion (User screenshot requirement)
+      function checkCoreMarxistCompletion() {
+        const coreIds = ['marx_1', 'marx_2', 'marx_3', 'marx_4'];
+        const allRight = coreIds.every(id => scores[id] === 'right');
+        const banner = document.getElementById('coreMarxistCelebrationBanner');
+
+        if (allRight) {
+          if (banner.style.display !== 'flex') {
+            banner.style.display = 'flex';
+            window.triggerFlowerShower(120);
+            playChime(true);
+            showToast('🎉 CORE-MARXIST CONCEPTS COMPLETED! 100% Retained');
+          }
+        } else {
+          banner.style.display = 'none';
+        }
+      }
+
+      // Update Header, Sidebar, and Tab Score Badges
+      function updateScoreBadges() {
+        if (!window.SARRTHI_DATA) return;
+        const allBullets = [];
+        window.SARRTHI_DATA.chapters.forEach(ch => {
+          ch.sections.forEach(sec => {
+            sec.bullets.forEach(b => allBullets.push(b.id));
+          });
+        });
+
+        const totalCount = allBullets.length;
+        const rightCount = allBullets.filter(id => scores[id] === 'right').length;
+        const wrongCount = allBullets.filter(id => scores[id] === 'wrong').length;
+        const circleCount = allBullets.filter(id => scores[id] === 'circle').length;
+        const unmarkedCount = totalCount - (rightCount + wrongCount + circleCount);
+
+        // Header score pill
+        document.getElementById('masteredScoreText').textContent = `${rightCount} / ${totalCount}`;
+
+        // Filter counts
+        document.getElementById('filterCountAll').textContent = totalCount;
+        document.getElementById('filterCountRight').textContent = rightCount;
+        document.getElementById('filterCountWrong').textContent = wrongCount;
+        document.getElementById('filterCountCircle').textContent = circleCount;
+        document.getElementById('filterCountUnmarked').textContent = unmarkedCount;
+
+        // Sidebar stats
+        document.getElementById('sideStatMastered').textContent = rightCount;
+        document.getElementById('sideStatReview').textContent = wrongCount;
+        document.getElementById('sideStatFlagged').textContent = circleCount;
+
+        // Tab "All"
+        document.getElementById('badgeTabAll').textContent = `${rightCount}/${totalCount}`;
+
+        // Individual Chapter Badges
+        window.SARRTHI_DATA.chapters.forEach(ch => {
+          const chBulletIds = [];
+          ch.sections.forEach(s => s.bullets.forEach(b => chBulletIds.push(b.id)));
+          const chRight = chBulletIds.filter(id => scores[id] === 'right').length;
+          
+          const tabBadge = document.getElementById(`tabBadge_${ch.id}`);
+          if (tabBadge) tabBadge.textContent = `${chRight}/${chBulletIds.length}`;
+
+          const treeBadge = document.getElementById(`treeBadge_${ch.id}`);
+          if (treeBadge) treeBadge.textContent = `${chRight}/${chBulletIds.length}`;
+        });
+      }
+
+      // RENDER APP DOM DYNAMICALLY FROM SARRTHI_DATA
+      let activeChapterFilter = 'all';
+      let activeStatusFilter = 'all';
+      let currentSearchQuery = '';
+
+      function renderApp() {
+        if (!window.SARRTHI_DATA) {
+          console.error("SARRTHI_DATA not found!");
+          return;
+        }
+
+        const data = window.SARRTHI_DATA;
+
+        // 1. Render Navigation Tabs
+        const navBar = document.getElementById('topicsNavBar');
+        // Keep the 'All' button, add chapter buttons
+        navBar.innerHTML = `
+          <button class="topic-tab-btn ${activeChapterFilter === 'all' ? 'active' : ''}" data-chapter="all">
+            <span>📚 All Chapters (77 Pages)</span>
+            <span class="tab-counter-badge" id="badgeTabAll">0/852</span>
+          </button>
+        `;
+
+        data.chapters.forEach(ch => {
+          const btn = document.createElement('button');
+          btn.className = `topic-tab-btn ${activeChapterFilter === ch.id ? 'active' : ''}`;
+          btn.setAttribute('data-chapter', ch.id);
+          btn.innerHTML = `
+            <span>${ch.short_title}</span>
+            <span class="tab-counter-badge" id="tabBadge_${ch.id}">0/${ch.total_bullets}</span>
+          `;
+          btn.addEventListener('click', () => {
+            activeChapterFilter = ch.id;
+            updateActiveChapterTabs();
+            renderContent();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          });
+          navBar.appendChild(btn);
+        });
+
+        navBar.querySelector('[data-chapter="all"]').addEventListener('click', () => {
+          activeChapterFilter = 'all';
+          updateActiveChapterTabs();
+          renderContent();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // 2. Render Sidebar Table of Contents
+        const treeContainer = document.getElementById('sidebarTreeContainer');
+        treeContainer.innerHTML = '';
+
+        data.chapters.forEach(ch => {
+          const group = document.createElement('div');
+          group.className = 'tree-chapter-group';
+
+          const chBtn = document.createElement('button');
+          chBtn.className = `tree-chapter-btn ${activeChapterFilter === ch.id ? 'active' : ''}`;
+          chBtn.innerHTML = `
+            <span style="font-size: 12px; font-weight: 800;">${ch.title}</span>
+            <span class="tab-counter-badge" id="treeBadge_${ch.id}">0/${ch.total_bullets}</span>
+          `;
+          chBtn.addEventListener('click', () => {
+            activeChapterFilter = ch.id;
+            updateActiveChapterTabs();
+            renderContent();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          });
+          group.appendChild(chBtn);
+
+          const sublist = document.createElement('div');
+          sublist.className = 'tree-sections-sublist';
+
+          ch.sections.forEach(sec => {
+            const link = document.createElement('a');
+            link.className = 'tree-section-link';
+            link.innerHTML = `
+              <span>${sec.title.length > 32 ? sec.title.slice(0, 32) + '...' : sec.title}</span>
+              <span style="font-family: var(--font-mono); font-size: 10px; opacity: 0.7;">P.${sec.start_page}</span>
+            `;
+            link.addEventListener('click', (e) => {
+              e.preventDefault();
+              if (activeChapterFilter !== 'all' && activeChapterFilter !== ch.id) {
+                activeChapterFilter = ch.id;
+                updateActiveChapterTabs();
+                renderContent();
+              }
+              setTimeout(() => {
+                const el = document.getElementById(`sec_${sec.id}`);
+                if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }, 50);
+            });
+            sublist.appendChild(link);
+          });
+
+          group.appendChild(sublist);
+          treeContainer.appendChild(group);
+        });
+
+        // 3. Render Main Content
+        renderContent();
+      }
+
+      function updateActiveChapterTabs() {
+        document.querySelectorAll('.topic-tab-btn').forEach(btn => {
+          const ch = btn.getAttribute('data-chapter');
+          btn.classList.toggle('active', ch === activeChapterFilter);
+        });
+        document.querySelectorAll('.tree-chapter-btn').forEach(btn => {
+          // highlight active chapter if applicable
+        });
+      }
+
+      function renderContent() {
+        const container = document.getElementById('dynamicPdfChaptersContainer');
+        container.innerHTML = '';
+
+        const data = window.SARRTHI_DATA;
+        const chaptersToRender = activeChapterFilter === 'all' 
+          ? data.chapters 
+          : data.chapters.filter(c => c.id === activeChapterFilter);
+
+        chaptersToRender.forEach(ch => {
+          const sheet = document.createElement('section');
+          sheet.className = 'pdf-sheet';
+          sheet.id = `chapter_${ch.id}`;
+
+          // Sheet Header
+          sheet.innerHTML = `
+            <div class="pdf-page-header">
+              <span>PSIR • Class Notes by Vivek Waghmare</span>
+              <span class="pdf-source-tag">${ch.page_range} • Total ${ch.total_bullets} Points</span>
+            </div>
+            
+            <div class="chapter-main-header">
+              <span class="chapter-eyebrow">UPSC PSIR PAPER 1A • CHAPTER ${ch.num}</span>
+              <h2 class="chapter-title-text">${ch.title}</h2>
+              <p class="chapter-subtitle-text">${ch.subtitle}</p>
+            </div>
+          `;
+
+          // Render Sections in this Chapter
+          ch.sections.forEach(sec => {
+            const secBlock = document.createElement('div');
+            secBlock.className = 'pdf-section-block';
+            secBlock.id = `sec_${sec.id}`;
+
+            // Filter bullets by status & search
+            let visibleBullets = sec.bullets;
+            if (activeStatusFilter !== 'all') {
+              visibleBullets = visibleBullets.filter(b => {
+                const s = scores[b.id];
+                if (activeStatusFilter === 'unmarked') return !s;
+                return s === activeStatusFilter;
+              });
+            }
+            if (currentSearchQuery.trim()) {
+              const q = currentSearchQuery.toLowerCase().trim();
+              visibleBullets = visibleBullets.filter(b => {
+                return (b.label && b.label.toLowerCase().includes(q)) ||
+                       (b.text && b.text.toLowerCase().includes(q)) ||
+                       (sec.title && sec.title.toLowerCase().includes(q));
+              });
+            }
+
+            // Section Header Bar
+            let secHtml = `
+              <div class="section-title-bar">
+                <h3 class="section-title-heading">${sec.title}</h3>
+                <span class="section-page-badge">Page ${sec.start_page}</span>
+              </div>
+            `;
+
+            // Section Intro Paragraphs
+            if (sec.paragraphs && sec.paragraphs.length > 0) {
+              sec.paragraphs.forEach(p => {
+                secHtml += `<p class="section-intro-text">${p.text}</p>`;
+              });
+            }
+
+            // Bullet Items
+            secHtml += `<div class="interactive-bullets-list">`;
+            visibleBullets.forEach(b => {
+              const choice = scores[b.id];
+              const statusClass = choice ? `status-${choice}` : '';
+              secHtml += `
+                <div class="bullet-row-item ${statusClass}" data-id="${b.id}" data-chapter="${ch.id}">
+                  <div class="bullet-eval-selector">
+                    <button class="eval-choice-btn eval-btn-right ${choice === 'right' ? 'selected-right' : ''}" 
+                            title="Mastered (Right Sign - Flower Shower!)" 
+                            onclick="setBulletScore('${b.id}', 'right')">✓</button>
+                    <button class="eval-choice-btn eval-btn-wrong ${choice === 'wrong' ? 'selected-wrong' : ''}" 
+                            title="Needs Revision (Wrong Sign)" 
+                            onclick="setBulletScore('${b.id}', 'wrong')">✕</button>
+                    <button class="eval-choice-btn eval-btn-circle ${choice === 'circle' ? 'selected-circle' : ''}" 
+                            title="In Progress / Question Flagged (Circle Sign)" 
+                            onclick="setBulletScore('${b.id}', 'circle')">○</button>
+                  </div>
+                  <div class="bullet-content-body">
+                    ${b.label ? `<span class="bullet-label-tag">${b.label}</span>` : ''}
+                    ${b.text}
+                  </div>
+                </div>
+              `;
+            });
+            secHtml += `</div>`;
+
+            // Subbullets / Examples
+            if (sec.subbullets && sec.subbullets.length > 0) {
+              sec.subbullets.forEach(sb => {
+                secHtml += `
+                  <div class="subbullet-box">
+                    <strong>${sb.label || 'Example'}</strong>: ${sb.text}
+                  </div>
+                `;
+              });
+            }
+
+            secBlock.innerHTML = secHtml;
+            sheet.appendChild(secBlock);
+          });
+
+          // Sheet Footer
+          const footer = document.createElement('div');
+          footer.className = 'pdf-page-footer';
+          footer.innerHTML = `
+            <div class="footer-left-contact">
+              <span>© Sarrthi IAS</span>
+              <span>•</span>
+              <span>📞 9569093856</span>
+              <span>•</span>
+              <span>Telegram: PSIR by Vivek Waghmare</span>
+            </div>
+            <div>${ch.page_range}</div>
+          `;
+          sheet.appendChild(footer);
+
+          container.appendChild(sheet);
+        });
+
+        applyScoresToDOM();
+        updateScoreBadges();
+        checkCoreMarxistCompletion();
+      }
+
+      // STATUS FILTER CHIPS CLICK HANDLERS
+      document.querySelectorAll('.filter-chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+          document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+          activeStatusFilter = chip.getAttribute('data-status-filter');
+          renderContent();
+        });
+      });
+
+      // SEARCH INPUT HANDLER
+      const searchInput = document.getElementById('globalSearchInput');
+      const clearSearchBtn = document.getElementById('clearSearchBtn');
+      let searchTimeout = null;
+
+      searchInput.addEventListener('input', (e) => {
+        const val = e.target.value;
+        clearSearchBtn.style.display = val ? 'block' : 'none';
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => {
+          currentSearchQuery = val;
+          renderContent();
+        }, 150);
+      });
+
+      clearSearchBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        currentSearchQuery = '';
+        clearSearchBtn.style.display = 'none';
+        renderContent();
+      });
+
+      // SIDEBAR DRAWER TOGGLE
+      const toggleSidebarBtn = document.getElementById('toggleSidebarBtn');
+      const sidebar = document.getElementById('syllabusSidebar');
+      toggleSidebarBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('collapsed');
+      });
+
+      // DARK MODE TOGGLE
+      const themeToggleBtn = document.getElementById('themeToggleBtn');
+      const themeIcon = document.getElementById('themeIcon');
+      themeToggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        const isDark = document.body.classList.contains('dark-mode');
+        themeIcon.textContent = isDark ? '☀️' : '🌙';
+        themeToggleBtn.innerHTML = `${isDark ? '☀️ Light' : '🌙 Dark'} Paper`;
+        showToast(isDark ? 'Dark Study Mode Activated' : 'Light Paper Mode Activated');
+      });
+
+      // SOUND TOGGLE
+      const soundToggleBtn = document.getElementById('soundToggleBtn');
+      const soundIcon = document.getElementById('soundIcon');
+      soundToggleBtn.addEventListener('click', () => {
+        soundEnabled = !soundEnabled;
+        soundIcon.textContent = soundEnabled ? '🔔' : '🔕';
+        soundToggleBtn.innerHTML = `${soundIcon.textContent} Sound`;
+        showToast(soundEnabled ? 'Harmonic Chimes Enabled' : 'Chimes Muted');
+      });
+
+      // RESET ALL BUTTON
+      const resetAllBtn = document.getElementById('resetAllBtn');
+      resetAllBtn.addEventListener('click', () => {
+        if (confirm('Are you sure you want to reset all evaluation marks?')) {
+          scores = {};
+          saveScores();
+          applyScoresToDOM();
+          updateScoreBadges();
+          checkCoreMarxistCompletion();
+          showToast('All evaluation marks reset.');
+        }
+      });
+
+      // INITIAL RENDER
+      renderApp();
+      updateScoreBadges();
+      checkCoreMarxistCompletion();
+
+      console.log('✅ Sarrthi IAS Complete PDF Study Suite Initialized.');
+    })();
+  </script>
+
+  <!-- Interactive Visual Inspector & Markup Tool -->
+  <script src="visual_inspector.js"></script>
+</body>
+</html>

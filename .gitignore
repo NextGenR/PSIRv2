@@ -1,0 +1,45 @@
+# Ignore heavy PDF directories & archived files
+PSIR_PDF_IGNOU/
+PSIR_PDF_SARRTHI/
+PSIR_JSON/
+archive_old_html/
+assets/
+
+# Ignore legacy files from prior experiments
+app.js
+data.js
+dopamine.js
+extracted_topics.txt
+icon-192.png
+icon-512.png
+manifest.json
+marx_slides_data.js
+master_catalog.js
+notion_unit18.css
+page1.js
+page2.js
+page3.js
+psir_database.js
+styles.css
+sw.js
+thinker_templates_data.json
+unit18.js
+unit18_data.js
+units_portal.js
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Local environment / IDE
+.vscode/
+*.log
