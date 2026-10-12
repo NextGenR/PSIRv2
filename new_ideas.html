@@ -1131,14 +1131,15 @@
       </div>
     </div>
 
-    <!-- Filters in Top Bar: Paper 1A Core Syllabus Themes -->
+    <!-- Filters in Top Bar: Paper 1A Core Syllabus Themes & Indian Theorists -->
     <div class="topbar-filters">
       <button class="top-filter-btn active" data-filter="all">All (<span id="countAll">20</span>)</button>
-      <button class="top-filter-btn" data-filter="Justice">Justice (<span id="countJustice">7</span>)</button>
-      <button class="top-filter-btn" data-filter="Equality & Rights">Equality & Rights (<span id="countEquality">4</span>)</button>
-      <button class="top-filter-btn" data-filter="Democracy">Democracy (<span id="countDemocracy">3</span>)</button>
+      <button class="top-filter-btn" data-filter="Indian Scholars" style="color: #7c3aed; font-weight: 800;">🇮🇳 Indian Theorists (<span id="countIndian">12</span>)</button>
+      <button class="top-filter-btn" data-filter="Global Thinkers">🌍 Global (<span id="countGlobal">8</span>)</button>
+      <button class="top-filter-btn" data-filter="Justice">Justice (<span id="countJustice">6</span>)</button>
       <button class="top-filter-btn" data-filter="State & Power">State & Power (<span id="countState">4</span>)</button>
-      <button class="top-filter-btn" data-filter="Ideology & Thinkers">Ideology & Thinkers (<span id="countIdeology">2</span>)</button>
+      <button class="top-filter-btn" data-filter="Democracy">Democracy (<span id="countDemocracy">3</span>)</button>
+      <button class="top-filter-btn" data-filter="Ideology & Thought">Ideologies & Thought (<span id="countIdeology">4</span>)</button>
       <button class="top-filter-btn" data-filter="right" style="color: var(--green-check);">✓ <span id="countRight">0</span></button>
       <button class="top-filter-btn" data-filter="wrong" style="color: var(--red-wrong);">✕ <span id="countWrong">0</span></button>
       <button class="top-filter-btn" data-filter="circle" style="color: var(--circle-neutral);">○ <span id="countCircle">0</span></button>
@@ -1255,28 +1256,28 @@
         {
           id: 'cp-ideas-10',
           afterIndex: 10,
-          question: "Which contemporary political theorist formulated the concept of 'Democratic Equality' (Relational Egalitarianism), arguing that the core of equality is to dismantle social hierarchies of oppression where no person must 'bow and scrape' before another, rather than micro-compensating for luck?",
+          question: "Which Indian political scientist formulated the concept of 'The Conceits of Civil Society', arguing that civil society is not an inherently egalitarian realm of freedom, but is traversed by deep social hierarchies requiring a rights-guaranteeing state?",
           options: [
-            "Elizabeth Anderson",
-            "Ronald Dworkin",
-            "Robert Nozick",
-            "Katrina Forrester"
+            "Neera Chandhoke",
+            "Partha Chatterjee",
+            "Sudipta Kaviraj",
+            "Rajeev Bhargava"
           ],
           correctIndex: 0,
-          explanation: "Elizabeth Anderson pioneered Relational Egalitarianism in 'What Is the Point of Equality?' (1999), reframing equality as a democratic relationship of equal moral standing rather than mere distribution of resources."
+          explanation: "Neera Chandhoke authored 'The Conceits of Civil Society' (2003), demonstrating that civil society can only become a democratic space of emancipation when anchored by a democratic state that guarantees enforceable fundamental rights."
         },
         {
           id: 'cp-ideas-20',
           afterIndex: 20,
-          question: "In 'Undoing the Demos: Neoliberalism's Stealth Revolution', Wendy Brown argues that the modern neoliberal state operates primarily by:",
+          question: "In 'Liberalism and Empire', which contemporary political theorist exposed how classical liberal thinkers like John Locke and J.S. Mill deployed anthropological criteria of 'civilized progress' to justify imperial subjugation?",
           options: [
-            "Deploying state power to economize every sphere of social existence, converting democratic citizens into marketized human capital",
-            "Completely dissolving state power in favor of stateless laissez-faire capitalism",
-            "Reviving the post-war Keynesian welfare state",
-            "Replacing representative democracy with sortition-based citizens' assemblies"
+            "Uday Singh Mehta",
+            "Bhikhu Parekh",
+            "Amartya Sen",
+            "Gopal Guru"
           ],
           correctIndex: 0,
-          explanation: "Wendy Brown demonstrates that neoliberalism is not the retreat of the state, but the deployment of state apparatuses to marketize all domains, transforming political citizens (Homo Politicus) into self-investing human capital (Homo Economicus)."
+          explanation: "Uday Singh Mehta demonstrated that 19th-century British liberalism's professed universalism concealed internal strategies of exclusion, arguing that non-Western societies were 'in their nonage' and needed imperial tutoring."
         }
       ];
 
@@ -1510,16 +1511,19 @@
         document.getElementById('countWrong').textContent = wCount;
         document.getElementById('countCircle').textContent = cCount;
 
+        const indianScholars = ['Rajeev Bhargava', 'Partha Chatterjee', 'Neera Chandhoke', 'Sudipta Kaviraj', 'Gopal Guru', 'Bhikhu Parekh', 'Uday Singh Mehta', 'Valerian Rodrigues', 'Akeel Bilgrami', 'Gurpreet Mahajan', 'Amartya Sen', 'Pratap Bhanu Mehta'];
+        const countIndian = ideas.filter(i => indianScholars.includes(i.scholar)).length;
+        const countGlobal = ideas.filter(i => !indianScholars.includes(i.scholar)).length;
         const countJustice = ideas.filter(i => i.topic.includes('Justice')).length;
-        const countEquality = ideas.filter(i => i.topic.includes('Equality') || i.topic.includes('Rights') || i.topic.includes('Freedom')).length;
-        const countDemocracy = ideas.filter(i => i.topic.includes('Democracy')).length;
         const countState = ideas.filter(i => i.topic.includes('State') || i.topic.includes('Power')).length;
+        const countDemocracy = ideas.filter(i => i.topic.includes('Democracy')).length;
         const countIdeology = ideas.filter(i => i.topic.includes('Ideology') || i.topic.includes('Thought')).length;
 
+        if (document.getElementById('countIndian')) document.getElementById('countIndian').textContent = countIndian;
+        if (document.getElementById('countGlobal')) document.getElementById('countGlobal').textContent = countGlobal;
         if (document.getElementById('countJustice')) document.getElementById('countJustice').textContent = countJustice;
-        if (document.getElementById('countEquality')) document.getElementById('countEquality').textContent = countEquality;
-        if (document.getElementById('countDemocracy')) document.getElementById('countDemocracy').textContent = countDemocracy;
         if (document.getElementById('countState')) document.getElementById('countState').textContent = countState;
+        if (document.getElementById('countDemocracy')) document.getElementById('countDemocracy').textContent = countDemocracy;
         if (document.getElementById('countIdeology')) document.getElementById('countIdeology').textContent = countIdeology;
       }
 
@@ -1694,15 +1698,18 @@
         let list = window.PSIR_NEW_IDEAS;
 
         // Paper 1A Theme or Evaluation Filter
-        if (activeFilter === 'Justice') {
+        const indianScholars = ['Rajeev Bhargava', 'Partha Chatterjee', 'Neera Chandhoke', 'Sudipta Kaviraj', 'Gopal Guru', 'Bhikhu Parekh', 'Uday Singh Mehta', 'Valerian Rodrigues', 'Akeel Bilgrami', 'Gurpreet Mahajan', 'Amartya Sen', 'Pratap Bhanu Mehta'];
+        if (activeFilter === 'Indian Scholars') {
+          list = list.filter(item => indianScholars.includes(item.scholar));
+        } else if (activeFilter === 'Global Thinkers') {
+          list = list.filter(item => !indianScholars.includes(item.scholar));
+        } else if (activeFilter === 'Justice') {
           list = list.filter(item => item.topic.includes('Justice'));
-        } else if (activeFilter === 'Equality & Rights') {
-          list = list.filter(item => item.topic.includes('Equality') || item.topic.includes('Rights') || item.topic.includes('Freedom'));
-        } else if (activeFilter === 'Democracy') {
-          list = list.filter(item => item.topic.includes('Democracy'));
         } else if (activeFilter === 'State & Power') {
           list = list.filter(item => item.topic.includes('State') || item.topic.includes('Power'));
-        } else if (activeFilter === 'Ideology & Thinkers') {
+        } else if (activeFilter === 'Democracy') {
+          list = list.filter(item => item.topic.includes('Democracy'));
+        } else if (activeFilter === 'Ideology & Thought') {
           list = list.filter(item => item.topic.includes('Ideology') || item.topic.includes('Thought'));
         } else if (['right', 'wrong', 'circle'].includes(activeFilter)) {
           list = list.filter(item => scores[item.id] === activeFilter);
