@@ -58,7 +58,7 @@
 
       --font-display: 'Roboto Serif', Georgia, serif;
       --font-reader: 'Roboto Serif', Georgia, serif;
-      --font-mono: 'JetBrains Mono', monospace;
+      --font-mono: 'Roboto Serif', Georgia, serif;
 
       --sidebar-width: 300px;
       --transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
@@ -96,6 +96,12 @@
       --circle-neutral: #d29922;
       --circle-bg: rgba(210, 153, 34, 0.12);
       --circle-border: rgba(210, 153, 34, 0.35);
+    }
+
+    *, *::before, *::after,
+    html, body, button, input, select, textarea,
+    h1, h2, h3, h4, h5, h6, p, span, div, a, label, strong, em, b, i, blockquote, code, pre {
+      font-family: 'Roboto Serif', Georgia, serif !important;
     }
 
     * {
@@ -184,7 +190,7 @@
       flex-shrink: 0;
     }
     .psir-badge-text {
-      font-family: 'Segoe UI Black', 'Arial Black', Impact, sans-serif;
+      font-family: var(--font-display);
       font-size: 12.5px;
       font-weight: 900;
       letter-spacing: 0.8px;
@@ -620,11 +626,11 @@
       white-space: nowrap;
     }
     .deck-counter-badge strong {
-      font-family: var(--font-mono);
+      font-family: var(--font-display);
       font-size: 13.5px;
     }
     .deck-counter-badge span.total-digits {
-      font-family: var(--font-mono);
+      font-family: var(--font-display);
     }
 
     .deck-mode-toggle-btn {
@@ -713,7 +719,7 @@
       flex-wrap: wrap;
     }
     .kt-idx-pill {
-      font-family: var(--font-mono);
+      font-family: var(--font-display);
       font-size: 11px;
       font-weight: 800;
       background: var(--accent-bg);
@@ -801,7 +807,7 @@
     .page-tag {
       font-size: 10.5px;
       font-weight: 700;
-      font-family: var(--font-mono);
+      font-family: var(--font-display);
       background: rgba(0,0,0,0.05);
       color: var(--text-dim);
       padding: 2px 6px;
@@ -852,7 +858,7 @@
     .swipe-hint-text {
       font-size: 10.5px;
       color: var(--text-dim);
-      font-family: var(--font-mono);
+      font-family: var(--font-reader);
       opacity: 0.75;
     }
 
@@ -1325,31 +1331,31 @@
       <div class="sidebar-tree">
         <button class="sidebar-ch-btn" onclick="filterByChapter('all')">
           <span>📚 All Chapters</span>
-          <span style="font-family: var(--font-mono); font-size: 11px;">552 terms</span>
+          <span style="font-family: var(--font-display); font-size: 11px;">552 terms</span>
         </button>
         <button class="sidebar-ch-btn" onclick="filterByChapter(1)">
           <span>1. Political Ideologies</span>
-          <span style="font-family: var(--font-mono); font-size: 11px;">Ch 1</span>
+          <span style="font-family: var(--font-display); font-size: 11px;">Ch 1</span>
         </button>
         <button class="sidebar-ch-btn" onclick="filterByChapter(2)">
           <span>2. Liberalism & State</span>
-          <span style="font-family: var(--font-mono); font-size: 11px;">Ch 2</span>
+          <span style="font-family: var(--font-display); font-size: 11px;">Ch 2</span>
         </button>
         <button class="sidebar-ch-btn" onclick="filterByChapter(3)">
           <span>3. Marxism & State</span>
-          <span style="font-family: var(--font-mono); font-size: 11px;">Ch 3</span>
+          <span style="font-family: var(--font-display); font-size: 11px;">Ch 3</span>
         </button>
         <button class="sidebar-ch-btn" onclick="filterByChapter(4)">
           <span>4. Socialism & Fascism</span>
-          <span style="font-family: var(--font-mono); font-size: 11px;">Ch 4</span>
+          <span style="font-family: var(--font-display); font-size: 11px;">Ch 4</span>
         </button>
         <button class="sidebar-ch-btn" onclick="filterByChapter(5)">
           <span>5. Gandhism</span>
-          <span style="font-family: var(--font-mono); font-size: 11px;">Ch 5</span>
+          <span style="font-family: var(--font-display); font-size: 11px;">Ch 5</span>
         </button>
         <button class="sidebar-ch-btn" onclick="filterByChapter(6)">
           <span>6. Feminism</span>
-          <span style="font-family: var(--font-mono); font-size: 11px;">Ch 6</span>
+          <span style="font-family: var(--font-display); font-size: 11px;">Ch 6</span>
         </button>
       </div>
     </aside>
@@ -1505,8 +1511,12 @@
 
       // 10 Reader Fonts
       const fontPickerBtn = document.getElementById('fontPickerBtn');
-      const fontPickerMenu = document.getElementById('fontPickerMenu');
-      const savedFont = localStorage.getItem('psir_reader_font') || 'Roboto Serif';
+      let savedFont = localStorage.getItem('psir_reader_font');
+      if (!savedFont || savedFont === 'Plus Jakarta Sans') {
+        savedFont = 'Roboto Serif';
+        localStorage.setItem('psir_reader_font', 'Roboto Serif');
+      }
+      document.documentElement.style.setProperty('--font-mono', "'Roboto Serif', Georgia, serif");
 
       function applyReaderFont(fontName) {
         const fontMap = {

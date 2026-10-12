@@ -20,7 +20,7 @@
   <!-- ROBOTO SERIF TYPOGRAPHY SUITE -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,300..900;1,8..144,300..900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,300..900;1,8..144,300..900&display=swap" rel="stylesheet">
 
   <style>
     /* ========================================================
@@ -65,7 +65,7 @@
       --font-display: 'Roboto Serif', Georgia, serif;
       --font-serif: 'Roboto Serif', Georgia, serif;
       --font-reader: 'Roboto Serif', Georgia, serif;
-      --font-mono: 'JetBrains Mono', monospace;
+      --font-mono: 'Roboto Serif', Georgia, serif;
 
       --sidebar-width: 310px;
       --transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
@@ -106,6 +106,12 @@
       --hook-bg: #1e1b4b;
       --hook-border: #7c3aed;
       --hook-text: #e0e7ff;
+    }
+
+    *, *::before, *::after,
+    html, body, button, input, select, textarea,
+    h1, h2, h3, h4, h5, h6, p, span, div, a, label, strong, em, b, i, blockquote, code, pre {
+      font-family: 'Roboto Serif', Georgia, serif !important;
     }
 
     * {
@@ -1398,6 +1404,12 @@
         toast.style.display = 'block';
         setTimeout(() => { toast.style.display = 'none'; }, 2400);
       }
+
+      // ROBOTO SERIF SUITE ENFORCEMENT
+      document.documentElement.style.setProperty('--font-reader', "'Roboto Serif', Georgia, serif");
+      document.documentElement.style.setProperty('--font-display', "'Roboto Serif', Georgia, serif");
+      document.documentElement.style.setProperty('--font-serif', "'Roboto Serif', Georgia, serif");
+      document.documentElement.style.setProperty('--font-mono', "'Roboto Serif', Georgia, serif");
 
       // Font Size Scaler
       const fontSizeDecBtn = document.getElementById('fontSizeDecBtn');
