@@ -1,17 +1,17 @@
 /* ==========================================================================
    TOP 100 HIGH-YIELD POLITICAL SCIENCE SLANGS & INTELLECTUAL HOOKS
    Curated for UPSC CSE PSIR Optional (Paper 1A, 1B, 2A, 2B)
-   Batches 1 & 2 of 5: Slangs 1 to 40 (Power, Statecraft, Hegemony & Order)
+   Batches 1, 2 & 3 of 5: Slangs 1 to 60 (Power, Statecraft, Political Economy)
    ========================================================================== */
 
 window.KEYTERMS_DATA = {
   "metadata": {
     "title": "Top 100 Political Science Slangs & High-Yield Hooks",
     "subtitle": "Intellectual catchphrases, conceptual metaphors, and answer-cracking hooks",
-    "currentBatch": 2,
+    "currentBatch": 3,
     "totalBatches": 5,
     "batchSize": 20,
-    "totalTerms": 40,
+    "totalTerms": 60,
     "finalTarget": 100
   },
   "batches": [
@@ -25,13 +25,13 @@ window.KEYTERMS_DATA = {
       "batch": 2,
       "title": "Batch 2: Statecraft, Democracy & Hegemony (21–40)",
       "range": "21–40",
-      "status": "active"
+      "status": "completed"
     },
     {
       "batch": 3,
       "title": "Batch 3: Political Economy & Social Stratification (41–60)",
       "range": "41–60",
-      "status": "upcoming"
+      "status": "active"
     },
     {
       "batch": 4,
@@ -873,6 +873,419 @@ window.KEYTERMS_DATA = {
         "security",
         "salami slicing"
       ]
+    },
+    {
+      "id": "slang_41",
+      "number": 41,
+      "batch": 3,
+      "term": "Prismatic Society & The Sala Model",
+      "scholar": "Fred W. Riggs",
+      "category": "State & Governance",
+      "paper": "Paper 1A & 1B",
+      "topic": "Comparative Public Administration & Developing Societies",
+      "hook": "Post-colonial developing societies are neither traditional (fused) nor modern (diffracted), but 'prismatic'—where modern legal institutions are subverted by traditional nepotism within the administrative 'Sala'.",
+      "definition": "Fred W. Riggs revolutionized comparative administration by conceptualizing transitional developing polities as 'prismatic societies'. Using the metaphor of light passing through a prism, Riggs argued that developing nations simultaneously exhibit modern constitutional structures alongside deep-rooted traditional feudal loyalties (heterogeneity, formalism, and overlapping). In the administrative office ('the Sala'), formal bureaucratic merit is a facade: actual appointments and decisions are governed by caste, kinship, and family patronage.",
+      "exam_utility": "Paper 1A & 1B on Bureaucracy, Administrative Culture, and Public Administration: 'Fred Riggs's formulation of the \"prismatic society and Sala model\" explains the persistent disconnect between India's formal Weberian civil service regulations and the informal reality of bureaucratic corruption, caste lobbying, and administrative formalism.'",
+      "keywords": [
+        "fred riggs",
+        "prismatic society",
+        "sala model",
+        "bureaucracy",
+        "formalism",
+        "comparative administration"
+      ]
+    },
+    {
+      "id": "slang_42",
+      "number": 42,
+      "batch": 3,
+      "term": "Overdeveloped State",
+      "scholar": "Hamza Alavi",
+      "category": "State & Governance",
+      "paper": "Paper 1B & 2A",
+      "topic": "Post-Colonial State Theory & South Asian Politics",
+      "hook": "The post-colonial state is historically 'overdeveloped' relative to its domestic civil society, inheriting an oversized military-bureaucratic apparatus designed by colonial rulers to subjugate the populace.",
+      "definition": "Hamza Alavi theorized that in post-colonial societies (specifically Pakistan and post-partition South Asia), the state apparatus is not the organic creation of an indigenous ruling class. Instead, colonial powers constructed an administrative and military apparatus far more sophisticated and powerful than the relatively underdeveloped domestic economic classes (the national bourgeoisie, indigenous feudal landowners, and metropolitan capital). Consequently, the military-bureaucratic oligarchy enjoys relative autonomy to dominate society, arbitrating between competing social classes.",
+      "exam_utility": "Paper 1B on Theories of the Indian State; Paper 2A on State in the Post-Colonial World: 'Hamza Alavi's seminal theory of the \"overdeveloped state\" explains why military-bureaucratic institutions in post-colonial South Asia frequently overpower fragile political parties and civil society organizations.'",
+      "keywords": [
+        "hamza alavi",
+        "overdeveloped state",
+        "bureaucratic oligarchy",
+        "post-colonial state",
+        "south asia"
+      ]
+    },
+    {
+      "id": "slang_43",
+      "number": 43,
+      "batch": 3,
+      "term": "Soft State",
+      "scholar": "Gunnar Myrdal",
+      "category": "State & Governance",
+      "paper": "Paper 1B",
+      "topic": "State Capacity, Law Enforcement & Asian Drama",
+      "hook": "A 'soft state' enacts progressive laws with grandiose moral rhetoric, but lacks the institutional will and social discipline to enforce them against entrenched elites.",
+      "definition": "Nobel laureate Gunnar Myrdal in 'Asian Drama: An Inquiry into the Poverty of Nations' diagnosed the critical weakness of South Asian democracies as the 'soft state'. While the state produces voluminous legislation to eliminate poverty, redistribute land, and ban discrimination, it exhibits an institutional unwillingness to impose social discipline, compel compliance, or punish elite non-observance. The result is systemic administrative indiscipline, widespread tax evasion, rampant corruption, and the collusion of politicians with lawbreakers.",
+      "exam_utility": "Paper 1B on Planning and Economic Development, Land Reforms, and Governance Deficit: 'Gunnar Myrdal's critique of India as a \"soft state\" exposes the chronic gap between progressive legislative intent (e.g., land ceiling laws, environmental regulations) and the collapse of enforcement against powerful vested interests.'",
+      "keywords": [
+        "gunnar myrdal",
+        "soft state",
+        "asian drama",
+        "state capacity",
+        "governance deficit",
+        "social discipline"
+      ]
+    },
+    {
+      "id": "slang_44",
+      "number": 44,
+      "batch": 3,
+      "term": "Predatory State vs. Developmental State",
+      "scholar": "Peter Evans / Chalmers Johnson",
+      "category": "Political Theory",
+      "paper": "Paper 1A & 2A",
+      "topic": "Comparative Political Economy & State-Led Development",
+      "hook": "While East Asian 'developmental states' achieve embedded autonomy to drive industrial miracles, 'predatory states' degenerate into kleptocracies devouring citizen surplus.",
+      "definition": "Chalmers Johnson and Peter Evans contrast two polar types of state involvement in capitalist development. The 'Developmental State' (e.g., post-war Japan, South Korea, Taiwan) is staffed by elite Weberian technocrats who set strategic economic priorities, nurture domestic industrial champions, and foster long-term national competitiveness. Conversely, the 'Predatory State' (e.g., Zaire under Mobutu) preys on its own society, looting public assets, extracting personal rents, and destroying market infrastructure for private ruler enrichment.",
+      "exam_utility": "Paper 1A on Theories of the State and Development; Paper 2A on East Asian Miracle vs. Sub-Saharan African Crisis: 'Peter Evans and Chalmers Johnson show that economic development depends not on the size of the state, but on its character: whether it operates as a transformative \"developmental state\" or a rent-extracting \"predatory state\".'",
+      "keywords": [
+        "peter evans",
+        "chalmers johnson",
+        "developmental state",
+        "predatory state",
+        "political economy"
+      ]
+    },
+    {
+      "id": "slang_45",
+      "number": 45,
+      "batch": 3,
+      "term": "Embedded Autonomy",
+      "scholar": "Peter B. Evans",
+      "category": "State & Governance",
+      "paper": "Paper 1A & 1B",
+      "topic": "State Capacity, Industrial Policy & Bureaucratic Design",
+      "hook": "State capacity thrives neither in isolation nor in capture, but in 'embedded autonomy'—a meritocratic Weberian bureaucracy closely tied through informal networks to industrial capital without becoming its hostage.",
+      "definition": "In 'Embedded Autonomy: States and Industrial Transformation', Peter Evans resolves the central paradox of state-market relations. States need 'autonomy'—meritocratic corporate coherence following Weberian bureaucratic norms to resist capture by rent-seeking oligarchs. However, autonomy alone produces detached bureaucratic arrogance. Successful industrial transformation requires this autonomy to be 'embedded' in dense institutional networks with business and industrial leaders, allowing the state to access market information and negotiate collaborative growth.",
+      "exam_utility": "Paper 1A on State Capacity; Paper 1B on Planning, Industrial Policy, and NITI Aayog: 'Peter Evans's conceptualization of \"embedded autonomy\" provides the optimal model for India's economic regulators, demonstrating that public institutions must combine meritocratic bureaucratic independence with collaborative market engagement.'",
+      "keywords": [
+        "embedded autonomy",
+        "peter evans",
+        "bureaucracy",
+        "industrial policy",
+        "state capacity",
+        "weber"
+      ]
+    },
+    {
+      "id": "slang_46",
+      "number": 46,
+      "batch": 3,
+      "term": "The Congress System (Party of Consensus)",
+      "scholar": "Rajni Kothari",
+      "category": "Indian Politics",
+      "paper": "Paper 1B",
+      "topic": "Party System in India & One-Party Dominance",
+      "hook": "The Congress System operated not as an authoritarian monolith, but as an umbrella 'party of consensus' maintaining a coalitional equilibrium that co-opted opposition dissent through internal factions.",
+      "definition": "Rajni Kothari formulated 'The Congress System' to characterize India's unique model of one-party dominance from 1947 to 1967. Unlike totalitarian one-party states, the Indian National Congress functioned as a broad catch-all 'party of consensus' representing diverse castes, classes, and regions. Ideological contestation took place primarily within internal Congress factions, while external opposition parties functioned as 'parties of pressure' on the periphery, influencing the central consensus without needing to capture power directly.",
+      "exam_utility": "Cornerstone of Paper 1B on Party System in India, One-Party Dominance, and Coalitions: 'Rajni Kothari's formulation of the \"Congress System\" remains the foundational framework for analyzing Indian party politics, capturing how an open umbrella coalition managed extraordinary social diversity before the emergence of coalition politics.'",
+      "keywords": [
+        "rajni kothari",
+        "congress system",
+        "party of consensus",
+        "one-party dominance",
+        "party system",
+        "coalition"
+      ]
+    },
+    {
+      "id": "slang_47",
+      "number": 47,
+      "batch": 3,
+      "term": "Second Democratic Upsurge",
+      "scholar": "Yogendra Yadav",
+      "category": "Indian Politics",
+      "paper": "Paper 1B",
+      "topic": "Electoral Politics, Subaltern Assertion & The 1990s Transition",
+      "hook": "The 1990s witnessed India's 'Second Democratic Upsurge'—a participatory revolution where rural, lower-caste, and marginalized plebeians turned out at voting booths in greater proportions than the urban bourgeoisie.",
+      "definition": "Yogendra Yadav identified a transformative historical watershed in Indian electoral politics during the 1990s. While the 'First Democratic Upsurge' (1950s–1960s) was driven by urban, educated elites, the 'Second Democratic Upsurge' saw subaltern social strata (OBCs, Dalits, adivasis, rural poor) flood the political arena. For marginalized voters, the ballot box ceased to be an instrument of elite patronage and became a weapon of self-affirmation and dignity, inverting Western democratic trends where voter turnout is highest among affluent, educated demographics.",
+      "exam_utility": "Paper 1B on Caste Politics, Democratic Deepening, and Political Participation: 'Yogendra Yadav's theory of the \"Second Democratic Upsurge\" demonstrates that Indian democracy deepened precisely when historically silenced subaltern groups mobilized the ballot as an instrument of social dignity rather than mere governance delivery.'",
+      "keywords": [
+        "yogendra yadav",
+        "democratic upsurge",
+        "electoral politics",
+        "subaltern assertion",
+        "caste politics",
+        "mandal"
+      ]
+    },
+    {
+      "id": "slang_48",
+      "number": 48,
+      "batch": 3,
+      "term": "Subaltern Studies & History From Below",
+      "scholar": "Ranajit Guha / Dipesh Chakrabarty",
+      "category": "Political Theory",
+      "paper": "Paper 1A & 1B",
+      "topic": "Subaltern Studies, Post-Colonial Theory & Historiography",
+      "hook": "The politics of the subaltern constituted an autonomous domain that neither colonial rulers nor bourgeois nationalist elites could represent or tame, demanding a radical 'history from below'.",
+      "definition": "Initiated by Ranajit Guha and the Subaltern Studies collective, this movement dismantled elitist colonial and nationalist historiography. Guha argued that bourgeois nationalist history credited Nehru and Gandhi with Indian independence while treating peasant insurgencies as passive mobs. In reality, the 'subaltern domain of politics' operated according to its own autonomous idioms, rebel consciousness, and moral economy, independent of elite nationalist tutelage and resisting the modern state's attempts to discipline it.",
+      "exam_utility": "Paper 1A on Post-Colonial Theory and Gramscian Subalternity; Paper 1B on Grassroots Social Movements: 'Ranajit Guha's founding manifesto for \"Subaltern Studies\" rescued subaltern consciousness from bourgeois nationalist condescension, proving that marginalized peasant and tribal politics operated as an autonomous sovereign force against elite domination.'",
+      "keywords": [
+        "ranajit guha",
+        "subaltern studies",
+        "history from below",
+        "post-colonial theory",
+        "peasant insurgency"
+      ]
+    },
+    {
+      "id": "slang_49",
+      "number": 49,
+      "batch": 3,
+      "term": "Provincializing Europe",
+      "scholar": "Dipesh Chakrabarty",
+      "category": "Political Theory",
+      "paper": "Paper 1A",
+      "topic": "Post-Colonial Political Theory & Critique of Eurocentrism",
+      "hook": "European political thought is both indispensable and inadequate: we must 'provincialize Europe' by denying its claim that Western historical trajectories are the universal template for human modernity.",
+      "definition": "Dipesh Chakrabarty's landmark work 'Provincializing Europe' confronts the paradox that universal concepts of political modernity (citizenship, sovereign state, human rights, secularism) originated in Europe, yet are deployed globally as though European history is universal human history. Chakrabarty does not advocate rejecting European thought (it is 'indispensable'), but insists on 'provincializing' it—recognizing that Europe is merely one regional cultural geography among others, and its categories must be contextualized alongside non-Western modes of being.",
+      "exam_utility": "Gold standard for Paper 1A on Western Political Thought critique, Eurocentrism, and Decolonial Perspectives: 'Dipesh Chakrabarty's call to \"provincialize Europe\" exposes the epistemic violence of treating European historical modernization as a compulsory universal destiny for non-Western post-colonial democracies.'",
+      "keywords": [
+        "dipesh chakrabarty",
+        "provincializing europe",
+        "post-colonial theory",
+        "eurocentrism",
+        "epistemic violence"
+      ]
+    },
+    {
+      "id": "slang_50",
+      "number": 50,
+      "batch": 3,
+      "term": "Internal Colonialism",
+      "scholar": "Michael Hechter",
+      "category": "Political Theory",
+      "paper": "Paper 1A & 1B",
+      "topic": "Regional Imbalances, Ethnic Politics & Resource Extraction",
+      "hook": "National development frequently operates through 'internal colonialism'—where the metropolitan political core exploits the natural resources of peripheral ethnic regions while denying them political and economic parity.",
+      "definition": "Michael Hechter developed 'Internal Colonialism' to explain the persistence of regional ethnic disparities within advanced nation-states (e.g., Celtic fringe in the UK). Rather than national modernization harmonizing all regions, the dominant metropolitan core treats peripheral regions as internal colonies: extracting mineral, energy, and agrarian wealth, establishing a cultural division of labor, and maintaining the peripheral population as low-wage laborers while political power remains monopolized by the core.",
+      "exam_utility": "Paper 1B on Regionalism, Sub-National Movements, Northeast India, and Resource-Rich Peripheral States (Jharkhand, Odisha, Chhattisgarh): 'The paradigm of \"internal colonialism\" explains persistent regional insurgency and resource alienation in India's mineral-rich tribal belts, where local populations suffer developmental displacement while metropolitan centers consume their wealth.'",
+      "keywords": [
+        "internal colonialism",
+        "hechter",
+        "regionalism",
+        "ethnic politics",
+        "resource extraction",
+        "periphery"
+      ]
+    },
+    {
+      "id": "slang_51",
+      "number": 51,
+      "batch": 3,
+      "term": "Caste as Social Capital / Capitalist Caste",
+      "scholar": "Surinder S. Jodhka / Suraj Yengde",
+      "category": "Indian Politics",
+      "paper": "Paper 1B",
+      "topic": "Caste, Neoliberal Capitalism & The Merit Myth",
+      "hook": "Far from dissolving under market capitalism, caste has reinvented itself as corporate 'social capital', allowing upper castes to monopolize elite white-collar networks while branding their inherited privilege as pure 'merit'.",
+      "definition": "Sociologists Surinder S. Jodhka and Katherine Newman examined how caste operates in India's modern private corporate sector. Rather than free-market capitalism functioning as a neutral, meritocratic equalizer, dominant castes deploy family networks, cultural habitus, English-language schooling, and alumni cliques as 'caste social capital'. Simultaneously, Dalit and Bahujan job applicants are excluded through subtle cultural gating mechanisms, exposing the contemporary corporate concept of 'merit' as institutionalized caste inheritance.",
+      "exam_utility": "Paper 1B on Caste in Indian Politics, Reservations, and Affirmative Action in the Private Sector: 'Surinder Jodhka and Suraj Yengde dismantle the liberal myth of market meritocracy, revealing that caste persists in the corporate economy as \"social capital\", reinforcing historic exclusions under the polished discourse of merit.'",
+      "keywords": [
+        "surinder jodhka",
+        "suraj yengde",
+        "caste as social capital",
+        "corporate caste",
+        "merit myth",
+        "reservations"
+      ]
+    },
+    {
+      "id": "slang_52",
+      "number": 52,
+      "batch": 3,
+      "term": "Epistemic Injustice & Testimonial Smothering",
+      "scholar": "Miranda Fricker / Kristie Dotson",
+      "category": "Political Theory",
+      "paper": "Paper 1A",
+      "topic": "Feminist Epistemology, Power & Marginalized Knowledge",
+      "hook": "Epistemic injustice occurs when prejudice causes a hearer to assign a deflated level of credibility to a speaker's word simply because of their marginalized social identity.",
+      "definition": "Philosopher Miranda Fricker identified 'Epistemic Injustice' as a distinct harm where individuals are wronged specifically in their capacity as knowers. It manifests in two forms: 'Testimonial Injustice' (where prejudices based on gender, race, or caste lead institutional hearers to dismiss a victim's testimony) and 'Hermeneutical Injustice' (where marginalized groups lack the collective conceptual vocabulary to make sense of their oppression because dominant elites monopolize knowledge production).",
+      "exam_utility": "Paper 1A on Feminist Political Theory, Theories of Justice, and Power/Knowledge (Foucault): 'Miranda Fricker's framework of \"epistemic injustice\" deepens the study of power by demonstrating that marginalization operates not merely through economic deprivations, but through the systemic silencing of subaltern epistemic credibility.'",
+      "keywords": [
+        "miranda fricker",
+        "epistemic injustice",
+        "testimonial injustice",
+        "feminist theory",
+        "power knowledge"
+      ]
+    },
+    {
+      "id": "slang_53",
+      "number": 53,
+      "batch": 3,
+      "term": "Neopatrimonialism & Big Man Politics",
+      "scholar": "Jean-François Médard / Michael Bratton & Nicolas van de Walle",
+      "category": "State & Governance",
+      "paper": "Paper 1A & 2A",
+      "topic": "Comparative Politics, Clientelism & Developing States",
+      "hook": "Neopatrimonial states wear the formal tailored suit of rational-legal constitutionalism, but their internal circulatory system runs purely on personalized patron-client spoils and Big Man politics.",
+      "definition": "Jean-François Médard and Africanist scholars Bratton and van de Walle theorized 'Neopatrimonialism' to explain why modern state institutions in developing post-colonial polities fail to operate neutrally. In a neopatrimonial regime, modern rational-legal bureaucratic institutions exist on paper, but state power is actually personalized around a 'Big Man' ruler. Public offices, state revenues, contracts, and legal immunities are distributed as private patrimonial gifts to clientelist networks to buy regime survival.",
+      "exam_utility": "Paper 1A on Theories of the State; Paper 2A on Comparative Politics in the Global South: 'The concept of \"neopatrimonialism\" exposes how post-colonial regimes hollow out Weberian legal-rational institutions, converting state offices into private fiefdoms of clientelist patronage.'",
+      "keywords": [
+        "neopatrimonialism",
+        "big man politics",
+        "medard",
+        "clientelism",
+        "state theory",
+        "comparative politics"
+      ]
+    },
+    {
+      "id": "slang_54",
+      "number": 54,
+      "batch": 3,
+      "term": "Grounded Normativity",
+      "scholar": "Glen Sean Coulthard (Yellowknives Dene)",
+      "category": "Political Theory",
+      "paper": "Paper 1A",
+      "topic": "Decolonial Political Theory & Indigenous Sovereignty",
+      "hook": "Decolonization rejects the state's paternalistic politics of recognition; it anchors liberation in 'grounded normativity'—ethical relationships with the land that subvert capitalist extractivism.",
+      "definition": "In 'Red Skin, White Masks: Rejecting the Colonial Politics of Recognition', Glen Coulthard presents a groundbreaking indigenous critique of liberal multicultural recognition (Charles Taylor). Coulthard argues that state recognition simply co-opts indigenous dissent while continuing resource extraction on ancestral lands. True decolonial freedom requires 'grounded normativity'—the ethical frameworks, ontologies, and non-hierarchical community practices rooted in reciprocal ecological relationships with the land.",
+      "exam_utility": "Paper 1A on Decoloniality, Multiculturalism (Kymlicka vs. Critics), and Environmentalism: 'Glen Coulthard's concept of \"grounded normativity\" subverts liberal multiculturalism by proving that subaltern indigenous liberation requires not cosmetic state recognition, but land-based ecological sovereignty against capitalist extractivism.'",
+      "keywords": [
+        "glen coulthard",
+        "grounded normativity",
+        "decoloniality",
+        "indigenous sovereignty",
+        "multiculturalism"
+      ]
+    },
+    {
+      "id": "slang_55",
+      "number": 55,
+      "batch": 3,
+      "term": "Agrarian Distress & The Suicide Economy",
+      "scholar": "P. Sainath / Utsa Patnaik",
+      "category": "Indian Politics",
+      "paper": "Paper 1B",
+      "topic": "Political Economy, Agrarian Crisis & Neoliberal Reforms",
+      "hook": "India's agrarian crisis is not a natural drought of water, but a structural drought of state policy—a 'suicide economy' created by corporate input monopolies and the withdrawal of public agricultural credit.",
+      "definition": "Magsaysay laureate P. Sainath and political economist Utsa Patnaik expose India's recurring agrarian distress not as climatic accidents, but as deliberate policy outcomes of post-1991 neoliberal restructuring. As the state slashed public extension services, privatized seed and pesticide markets, withdrew institutional banking credit, and exposed un-subsidized farmers to volatile global commodity prices, smallholder farming transformed into a debt trap—fueling over 300,000 farmer suicides in what Sainath terms a structural 'suicide economy'.",
+      "exam_utility": "Paper 1B on Agrarian Crisis, Farm Laws, Rural Political Economy, and Peasant Movements: 'P. Sainath's documentation of India's \"suicide economy\" proves that contemporary agrarian distress represents a profound failure of the democratic social contract, wherein the state abdicated peasant welfare to predatory corporate input cartels.'",
+      "keywords": [
+        "p sainath",
+        "agrarian crisis",
+        "suicide economy",
+        "farmer suicides",
+        "political economy",
+        "neoliberalism"
+      ]
+    },
+    {
+      "id": "slang_56",
+      "number": 56,
+      "batch": 3,
+      "term": "Coercive Federalism vs. Bargaining Federalism",
+      "scholar": "Pradeep Chhibber / Louise Tillin",
+      "category": "Indian Politics",
+      "paper": "Paper 1B",
+      "topic": "Indian Federalism, Governor's Office & Fiscal Centralization",
+      "hook": "Indian federalism has shifted from a coalition-era 'bargaining federalism' where regional parties negotiated resources, to a centralized 'coercive federalism' where central financial levers and governors discipline opposition states.",
+      "definition": "Political scientists Louise Tillin and Pradeep Chhibber trace the post-2014 transformation of Indian intergovernmental relations. During the coalition era (1989–2014), Morris-Jones's 'bargaining federalism' flourished as regional parties held central leverage. Under single-party majoritarian rule, federalism has turned 'coercive': central agencies (ED, CBI), politicized Governors, conditional centrally sponsored schemes (CSS), and GST compensation delays are weaponized to fiscally choke and politically undermine opposition-ruled state governments.",
+      "exam_utility": "Paper 1B on Indian Federalism, Governor's Discretionary Powers, and Centre-State Fiscal Relations: 'Louise Tillin and Pradeep Chhibber capture the structural mutation of Indian federalism from Morris-Jones's \"bargaining federalism\" into an assertive \"coercive federalism\", where asymmetric fiscal levers and Raj Bhavan activism constrain regional state autonomy.'",
+      "keywords": [
+        "coercive federalism",
+        "bargaining federalism",
+        "tillin",
+        "chhibber",
+        "governors",
+        "fiscal federalism",
+        "gst"
+      ]
+    },
+    {
+      "id": "slang_57",
+      "number": 57,
+      "batch": 3,
+      "term": "Substantive Democracy vs. Procedural Democracy",
+      "scholar": "Amartya Sen / David Held",
+      "category": "Political Theory",
+      "paper": "Paper 1A & 1B",
+      "topic": "Democratic Theory, Capability Approach & Social Justice",
+      "hook": "Democracy reduced to periodic balloting is a hollow procedural shell; genuine democracy is substantive, evaluated by whether citizens enjoy real capabilities and social freedoms to lead flourishing lives.",
+      "definition": "Amartya Sen emphasizes that democracy must be evaluated along two axes: 'niti' (procedural institutional correctness like elections, parliaments, and court hearings) versus 'nyaya' (substantive, realized justice in the lived reality of human lives). A regime that conducts free elections but tolerates endemic malnutrition, gender violence, illiteracy, and caste apartheid is a mere 'procedural democracy'. Genuine 'substantive democracy' exists only when institutions actively build human capabilities and expand public reasoning.",
+      "exam_utility": "Master key for Paper 1A on Theories of Democracy and Social Justice (Rawls vs. Sen); Paper 1B on Democratic Deepening in India: 'Amartya Sen's distinction between \"niti\" (procedural democracy) and \"nyaya\" (substantive justice) provides the definitive framework for critiquing Indian democracy, establishing that flawless electoral rituals cannot substitute for the substantive expansion of human capabilities.'",
+      "keywords": [
+        "amartya sen",
+        "substantive democracy",
+        "procedural democracy",
+        "niti vs nyaya",
+        "capability approach",
+        "justice"
+      ]
+    },
+    {
+      "id": "slang_58",
+      "number": 58,
+      "batch": 3,
+      "term": "Disposable Humanity & Necropolitics of Labor",
+      "scholar": "Henry A. Giroux / David Harvey",
+      "category": "Political Theory",
+      "paper": "Paper 1A",
+      "topic": "Neoliberalism, Precariat & Modern State Violence",
+      "hook": "Neoliberal governance produces expanding zones of 'disposable humanity'—surplus populations of precarious gig workers and migrant laborers who are discarded as human waste when no longer profitable to capital.",
+      "definition": "Henry Giroux diagnoses the cruelty of late neoliberal capitalism through his concept of 'the politics of disposability'. As social safety nets are dismantled and production is automated or outsourced, vast swathes of human beings (migrant laborers, urban slum dwellers, platform gig workers) are no longer viewed even as an exploitable working class, but as redundant 'waste'. The state ceases to provide welfare to these surplus populations and instead manages them through militarized policing, penal confinement, and border walls.",
+      "exam_utility": "Paper 1A on Critiques of Neoliberalism, Marxist theories of Alienation, and Paper 1B on Informal Labor & Migrant Crisis: 'Henry Giroux's concept of \"disposable humanity\" starkly captured the plight of India's lockdown migrant workers, revealing how neoliberal governance renders informal labor expendable the moment economic profitability halts.'",
+      "keywords": [
+        "henry giroux",
+        "disposable humanity",
+        "precariat",
+        "neoliberalism",
+        "informal labor",
+        "migrant crisis"
+      ]
+    },
+    {
+      "id": "slang_59",
+      "number": 59,
+      "batch": 3,
+      "term": "Two Histories of Capital: History 1 vs. History 2",
+      "scholar": "Dipesh Chakrabarty",
+      "category": "Political Theory",
+      "paper": "Paper 1A",
+      "topic": "Marxist Political Economy, Post-Colonial Critique & Modernity",
+      "hook": "Global capitalism does not homogenize all cultures into a uniform Western mold; universal capital (History 1) constantly collides with, coexists with, and modifies local cultural life-worlds (History 2).",
+      "definition": "In 'Provincializing Europe', Dipesh Chakrabarty introduces a vital modification to Karl Marx's theory of capital. 'History 1' is the universal logic of capital—the commodification of labor, abstract time, money, and factory discipline. Classical Marxism assumes History 1 will steamroll all pre-capitalist traditions. Chakrabarty demonstrates that capital is always entangled with 'History 2'—the persistent cultural, religious, kinship, and affective relationships that do not originate in capital. History 2 continually interrupts and shapes how capitalism actually functions in the Global South.",
+      "exam_utility": "Paper 1A on Marx's Theory of Capital and its Post-Colonial Critiques: 'Dipesh Chakrabarty's dichotomy between \"History 1 and History 2\" rescues Marxist political economy from deterministic teleology, explaining why Indian capitalism thrives alongside temple economies, kinship networks, and cultural idioms.'",
+      "keywords": [
+        "dipesh chakrabarty",
+        "two histories of capital",
+        "history 1 and history 2",
+        "marxism",
+        "post-colonialism"
+      ]
+    },
+    {
+      "id": "slang_60",
+      "number": 60,
+      "batch": 3,
+      "term": "Dominant Caste",
+      "scholar": "M.N. Srinivas",
+      "category": "Indian Politics",
+      "paper": "Paper 1B",
+      "topic": "Caste, Agrarian Power & Rural Power Structure",
+      "hook": "Power in rural India belongs not necessarily to the ritually highest Brahmins, but to the 'dominant caste'—those wielding decisive numerical strength, economic landownership, and political muscle.",
+      "definition": "Sociologist M.N. Srinivas demolished the static, scriptural view of caste hierarchy by conceptualizing the 'Dominant Caste'. Srinivas observed that in actual village politics, ritual purity matters far less than material power. A caste achieves dominance in a region when it possesses four crucial attributes: sizable numerical preponderance, ownership of agricultural land, a respectable place in the local caste hierarchy, and modern education/political connections (e.g., Jats, Marathas, Yadavs, Patidars, Vokkaligas, Reddys).",
+      "exam_utility": "Paper 1B on Caste in Indian Politics, Rural Power Structure, and State Politics: 'M.N. Srinivas's classic concept of the \"dominant caste\" remains indispensable for understanding regional state politics in India, demonstrating that electoral democracy empowers agrarian landowning intermediate castes over traditional ritual elites.'",
+      "keywords": [
+        "mn srinivas",
+        "dominant caste",
+        "rural power structure",
+        "caste politics",
+        "agrarian power"
+      ]
     }
   ],
   "checkpoints": [
@@ -931,6 +1344,34 @@ window.KEYTERMS_DATA = {
       ],
       "correctIndex": 2,
       "explanation": "Robert Michels formulated the 'Iron Law of Oligarchy' after studying democratic socialist parties, proving that organizational scale and bureaucratic necessity sociologically ensure oligarchic elite dominance."
+    },
+    {
+      "id": "cp_slang_5",
+      "afterIndex": 50,
+      "batch": 3,
+      "question": "Which post-colonial political economist coined the concept of the 'Overdeveloped State' to explain why the military-bureaucratic apparatus in post-colonial South Asia frequently overpowers fragile domestic political parties and civil society?",
+      "options": [
+        "Hamza Alavi",
+        "Pranab Bardhan",
+        "Fred W. Riggs",
+        "Atul Kohli"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hamza Alavi in his seminal 1972 paper theorized the 'Overdeveloped State', arguing that post-colonial states inherited an oversized colonial bureaucratic-military machinery built to suppress domestic society, allowing state elites to dominate politics."
+    },
+    {
+      "id": "cp_slang_6",
+      "afterIndex": 60,
+      "batch": 3,
+      "question": "In the sociology of Indian politics, which landmark concept developed by M.N. Srinivas explains how intermediate agrarian castes (e.g., Jats, Marathas, Yadavs, Vokkaligas) dominate regional politics through numerical strength and land ownership rather than ritual Brahminical purity?",
+      "options": [
+        "Sanskritization",
+        "Dominant Caste",
+        "Segmentary Lineage",
+        "Bullock Capitalists"
+      ],
+      "correctIndex": 1,
+      "explanation": "M.N. Srinivas formulated the concept of 'Dominant Caste' to explain how castes with numerical preponderance, substantial landholding, and political muscle exercise local and regional hegemony in Indian democracy."
     }
   ]
 };
