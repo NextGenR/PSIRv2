@@ -1,25 +1,37 @@
 {
   "name": "PSIR Interactive Study Suite",
-  "short_name": "PSIR Suite",
+  "short_name": "PSIR",
   "description": "Complete Interactive Study Suite for UPSC PSIR Paper 1A. All 6 chapters with 3-choice review system, key terms, and active retention tools.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "any",
   "background_color": "#0d1117",
-  "theme_color": "#8b3a2b",
+  "theme_color": "#991b1b",
   "icons": [
     {
       "src": "./icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
       "src": "./icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "categories": [

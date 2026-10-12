@@ -5,9 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PSIR Master Study Suite • Interactive Notes & Evaluation</title>
   <meta name="description" content="Interactive study suite for UPSC PSIR Paper 1A. All 6 chapters with 3-choice review system, key terms, custom typography, text highlighter, and active recall.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📜</text></svg>">
+  <!-- App Icons with Bold PSIR Typography -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#8b3a2b">
+  <meta name="theme-color" content="#991b1b">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="PSIR">
   
   <!-- 10 Reader Fonts from Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -165,13 +172,34 @@
       border-color: var(--accent-border);
     }
 
+    .brand-badge-icon {
+      background: linear-gradient(135deg, #991b1b 0%, #4c0519 100%);
+      color: #ffffff;
+      padding: 3px 8px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 6px rgba(153, 27, 27, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      flex-shrink: 0;
+    }
+    .psir-badge-text {
+      font-family: 'Segoe UI Black', 'Arial Black', Impact, sans-serif;
+      font-size: 12.5px;
+      font-weight: 900;
+      letter-spacing: 0.8px;
+      line-height: 1;
+      color: #ffffff;
+    }
+
     .brand-title-wrap {
       display: flex;
       flex-direction: column;
     }
     .brand-title {
       font-family: var(--font-display);
-      font-size: 14.5px;
+      font-size: 14px;
       font-weight: 800;
       color: var(--text-main);
       letter-spacing: -0.3px;
@@ -435,6 +463,48 @@
       margin-left: calc(-1 * var(--sidebar-width));
     }
 
+    .sidebar-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+      z-index: 999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+    .sidebar-backdrop.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .sidebar-close-btn {
+      background: rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--paper-border);
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--text-dim);
+      transition: var(--transition);
+    }
+    body.dark-mode .sidebar-close-btn {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-muted);
+    }
+    .sidebar-close-btn:hover {
+      background: var(--red-bg);
+      color: var(--red-wrong);
+    }
+
     .sidebar-header {
       padding: 14px 18px;
       border-bottom: 1px solid var(--sidebar-border);
@@ -551,25 +621,213 @@
       gap: 32px;
     }
 
+    /* ========================================================
+       RESPONSIVE & MOBILE-FRIENDLY DESIGN SYSTEM
+       ======================================================== */
     @media (max-width: 900px) {
+      .app-top-header {
+        flex-wrap: wrap;
+        padding: 8px 12px;
+        gap: 8px 10px;
+      }
+      .brand-section {
+        gap: 8px;
+        flex: 1 1 auto;
+      }
+      .brand-title {
+        font-size: 13px;
+      }
+      .brand-sub {
+        font-size: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 170px;
+      }
+      .topbar-filters {
+        order: 3;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        display: flex;
+        gap: 4px;
+        padding: 4px 2px;
+        justify-content: flex-start;
+      }
+      .topbar-filters::-webkit-scrollbar {
+        display: none;
+      }
+      .top-filter-btn {
+        font-size: 11px;
+        padding: 5px 9px;
+        flex-shrink: 0;
+      }
+      .header-actions {
+        gap: 6px;
+        flex-shrink: 0;
+      }
+      .header-action-btn {
+        padding: 5px 8px;
+        font-size: 11px;
+      }
+      .keyterms-nav-btn {
+        padding: 5px 10px;
+      }
+      .header-score-pill {
+        font-size: 11px;
+        padding: 5px 9px;
+      }
+      
+      /* Sidebar slide-over drawer */
       .syllabus-sidebar {
         position: fixed;
         top: 0;
+        left: 0;
         bottom: 0;
         height: 100vh;
+        width: min(340px, 86vw);
         z-index: 1000;
-        box-shadow: 5px 0 25px rgba(0,0,0,0.2);
+        box-shadow: 6px 0 30px rgba(0, 0, 0, 0.35);
+        transform: translateX(-100%);
+        margin-left: 0 !important;
+        transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .syllabus-sidebar.open {
         transform: translateX(0);
       }
-      .syllabus-sidebar.collapsed {
-        transform: translateX(-100%);
-        margin-left: 0;
+      .sidebar-close-btn {
+        display: flex;
       }
+      
       .main-content-area {
-        padding: 16px 14px 80px;
+        padding: 14px 10px 80px;
+        max-width: 100%;
       }
-      .topbar-filters {
-        display: none; /* Hide compact filters on small mobile, show via drawer */
+      .font-picker-menu {
+        right: -10px;
+        width: 220px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .app-top-header {
+        padding: 6px 8px;
+        gap: 6px;
+      }
+      .brand-title {
+        font-size: 12px;
+      }
+      .brand-sub {
+        display: none;
+      }
+      .brand-badge-icon {
+        padding: 2px 6px;
+        border-radius: 6px;
+      }
+      .psir-badge-text {
+        font-size: 11px;
+      }
+      .toggle-sidebar-btn {
+        padding: 5px 8px;
+        font-size: 11.5px;
+      }
+      .header-actions {
+        gap: 4px;
+      }
+      .header-action-btn {
+        padding: 5px 7px;
+        font-size: 11px;
+      }
+      .header-score-pill {
+        padding: 4px 7px;
+        font-size: 10.5px;
+      }
+      .pdf-sheet {
+        padding: 18px 12px;
+        border-radius: 12px;
+        gap: 20px;
+      }
+      .chapter-title-text {
+        font-size: 20px;
+      }
+      .section-title-heading {
+        font-size: 16px;
+      }
+      .bullet-row-item {
+        padding: 10px 8px;
+        gap: 10px;
+        border-radius: 10px;
+      }
+      .bullet-eval-selector {
+        padding: 2px;
+        gap: 2px;
+      }
+      .eval-choice-btn {
+        width: 28px;
+        height: 28px;
+        font-size: 13px;
+      }
+      .bullet-text {
+        font-size: 13.5px;
+        line-height: 1.55;
+      }
+      .mcq-question-card {
+        padding: 12px 10px;
+        border-radius: 10px;
+        gap: 10px;
+      }
+      .mcq-question-text {
+        font-size: 13px;
+      }
+      .mcq-option-btn {
+        padding: 9px 10px;
+        font-size: 12.5px;
+        min-height: 42px;
+      }
+      .mcq-opt-letter {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+      }
+      .mcq-explanation-box {
+        padding: 8px 10px;
+      }
+      .mcq-expl-text {
+        font-size: 12px;
+      }
+      .celebration-hero-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 16px;
+        gap: 10px;
+      }
+      .celebration-badge-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 28px;
+      }
+      .celebration-hero-title {
+        font-size: 16px;
+      }
+      .toast-pill {
+        font-size: 11.5px;
+        padding: 7px 14px;
+        max-width: 90vw;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .header-actions .header-action-btn:not(#nightModeToggleBtn):not(.keyterms-nav-btn) span:not(:first-child) {
+        display: none;
+      }
+      .keyterms-nav-btn {
+        padding: 5px 8px;
+        font-size: 10.5px;
+      }
+      .top-filter-btn {
+        font-size: 10.5px;
+        padding: 4px 7px;
       }
     }
 
@@ -1152,9 +1410,12 @@
       <button id="toggleSidebarBtn" class="toggle-sidebar-btn" title="Toggle Table of Contents / Index">
         <span>📑</span> <span>Index</span>
       </button>
+      <div class="brand-badge-icon" title="PSIR Optional Exam Suite">
+        <span class="psir-badge-text">PSIR</span>
+      </div>
       <div class="brand-title-wrap">
-        <h1 class="brand-title">PSIR MASTER SUITE</h1>
-        <div class="brand-sub">Vivek Waghmare Notes • 6 Chapters (77 Pages)</div>
+        <h1 class="brand-title">MASTER SUITE</h1>
+        <div class="brand-sub">6 Chapters • 77 Pages</div>
       </div>
     </div>
 
@@ -1219,12 +1480,18 @@
   <!-- Workspace Layout (Sidebar Drawer + Main Content) -->
   <div class="workspace-layout">
     
+    <!-- Mobile Backdrop Dimmer -->
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
     <!-- LEFT SIDEBAR: Table of Contents & Index -->
     <aside class="syllabus-sidebar" id="syllabusSidebar">
       <div class="sidebar-header">
         <div class="sidebar-title">
           <span>Table of Contents</span>
-          <span style="font-size: 11px; font-weight: 700; color: var(--accent-heading);">77 Pages</span>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span style="font-size: 11px; font-weight: 700; color: var(--accent-heading);">77 Pages</span>
+            <button id="closeSidebarBtn" class="sidebar-close-btn" title="Close Index" aria-label="Close Index">✕</button>
+          </div>
         </div>
         <div class="sidebar-stats-row">
           <div class="sidebar-stat-badge" style="background: var(--green-bg); color: var(--green-check);">
@@ -1739,6 +2006,7 @@
           chBtn.addEventListener('click', () => {
             const el = document.getElementById(`chapter_${ch.id}`);
             if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            if (window.innerWidth <= 900) closeSidebar();
           });
           group.appendChild(chBtn);
 
@@ -1756,6 +2024,7 @@
               e.preventDefault();
               const el = document.getElementById(`sec_${sec.id}`);
               if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              if (window.innerWidth <= 900) closeSidebar();
             });
             sublist.appendChild(link);
           });
@@ -1939,12 +2208,46 @@
         });
       });
 
-      // Sidebar Drawer Toggle
+      // Sidebar Drawer & Mobile Controls
       const toggleSidebarBtn = document.getElementById('toggleSidebarBtn');
+      const closeSidebarBtn = document.getElementById('closeSidebarBtn');
+      const sidebarBackdrop = document.getElementById('sidebarBackdrop');
       const sidebar = document.getElementById('syllabusSidebar');
+
+      function openSidebar() {
+        if (window.innerWidth <= 900) {
+          sidebar.classList.add('open');
+          if (sidebarBackdrop) sidebarBackdrop.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        } else {
+          sidebar.classList.remove('collapsed');
+        }
+      }
+
+      function closeSidebar() {
+        if (window.innerWidth <= 900) {
+          sidebar.classList.remove('open');
+          if (sidebarBackdrop) sidebarBackdrop.classList.remove('active');
+          document.body.style.overflow = '';
+        } else {
+          sidebar.classList.add('collapsed');
+        }
+      }
+
       toggleSidebarBtn.addEventListener('click', () => {
-        sidebar.classList.toggle('collapsed');
+        if (window.innerWidth <= 900) {
+          if (sidebar.classList.contains('open')) {
+            closeSidebar();
+          } else {
+            openSidebar();
+          }
+        } else {
+          sidebar.classList.toggle('collapsed');
+        }
       });
+
+      if (closeSidebarBtn) closeSidebarBtn.addEventListener('click', closeSidebar);
+      if (sidebarBackdrop) sidebarBackdrop.addEventListener('click', closeSidebar);
 
       // Initial Render
       renderApp();

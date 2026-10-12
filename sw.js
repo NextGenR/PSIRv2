@@ -1,10 +1,14 @@
 // Service Worker for PSIR Interactive Study Suite PWA
-const CACHE_NAME = 'psir-suite-v2';
+const CACHE_NAME = 'psir-suite-v3';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
+  './keyterms.html',
   './sarrthi_full_data.js',
+  './keyterms_data.js',
   './manifest.json',
+  './favicon.svg',
+  './apple-touch-icon.png',
   './icon-192.png',
   './icon-512.png'
 ];
