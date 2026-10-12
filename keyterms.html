@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PSIR Key Terms & Concepts • Interactive Vocabulary Suite</title>
-  <meta name="description" content="Topic-wise foundational key terms for UPSC PSIR Paper 1A. 3-choice review system, MCQs after every 10 terms, 10 reader fonts, text highlighter, and active recall.">
+  <title>Top 100 Political Science Slangs & Hooks • PSIR Masterclass</title>
+  <meta name="description" content="100 High-yield political science slangs, intellectual catchphrases, and UPSC PSIR answer-cracking hooks. Curated in 5 batches with interactive flashcards and checkpoints.">
   <!-- App Icons with Bold PSIR Typography -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
@@ -862,6 +862,251 @@
       opacity: 0.75;
     }
 
+    
+    /* Slang Card Enhancements & Badges */
+    .batch-badge {
+      font-size: 10px;
+      font-weight: 800;
+      background: rgba(139, 58, 43, 0.12);
+      color: var(--accent-heading);
+      padding: 2px 7px;
+      border-radius: 6px;
+      letter-spacing: 0.5px;
+      border: 1px solid var(--accent-border);
+    }
+    .paper-pill {
+      font-size: 10px;
+      font-weight: 800;
+      background: rgba(2, 132, 199, 0.1);
+      color: var(--brand-primary);
+      padding: 2px 7px;
+      border-radius: 6px;
+    }
+    .category-pill {
+      font-size: 10px;
+      font-weight: 700;
+      background: rgba(16, 185, 129, 0.1);
+      color: #059669;
+      padding: 2px 7px;
+      border-radius: 6px;
+    }
+    body.dark-mode .category-pill {
+      color: #34d399;
+      background: rgba(16, 185, 129, 0.15);
+    }
+
+    /* Hook Box & Copy Button */
+    .hook-quote-box {
+      background: linear-gradient(135deg, rgba(139, 58, 43, 0.07) 0%, rgba(217, 119, 6, 0.07) 100%);
+      border-left: 4px solid var(--accent-heading);
+      border-radius: 0 10px 10px 0;
+      padding: 12px 14px;
+      margin: 6px 0 8px 0;
+      position: relative;
+    }
+    body.dark-mode .hook-quote-box {
+      background: linear-gradient(135deg, rgba(247, 129, 102, 0.1) 0%, rgba(210, 153, 34, 0.1) 100%);
+    }
+    .hook-quote-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+    .hook-type-tag {
+      font-size: 10.5px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      color: var(--accent-heading);
+    }
+    .copy-hook-btn {
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      color: var(--text-muted);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 6px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: var(--transition);
+    }
+    .copy-hook-btn:hover {
+      background: var(--accent-bg);
+      color: var(--accent-heading);
+      border-color: var(--accent-border);
+      transform: translateY(-1px);
+    }
+    .hook-quote-text {
+      font-size: calc(14.5px * var(--card-font-scale, 1));
+      font-style: italic;
+      font-weight: 600;
+      color: var(--text-main);
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    /* Concept Breakdown */
+    .concept-breakdown-box {
+      margin: 4px 0;
+    }
+    .concept-section-label {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    /* UPSC Exam Utility Box */
+    .exam-utility-box {
+      background: rgba(2, 132, 199, 0.06);
+      border: 1px solid rgba(2, 132, 199, 0.22);
+      border-radius: 10px;
+      padding: 11px 14px;
+      margin: 6px 0;
+    }
+    body.dark-mode .exam-utility-box {
+      background: rgba(88, 166, 255, 0.08);
+      border-color: rgba(88, 166, 255, 0.25);
+    }
+    .exam-utility-header {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11.5px;
+      font-weight: 800;
+      color: var(--brand-primary);
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+    .exam-utility-content {
+      font-size: calc(13.2px * var(--card-font-scale, 1));
+      line-height: 1.58;
+      color: var(--text-main);
+    }
+
+    /* Keywords Pill Row */
+    .kt-keywords-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 6px;
+    }
+    .kt-keyword-pill {
+      font-size: 10.5px;
+      font-weight: 700;
+      background: rgba(0, 0, 0, 0.04);
+      color: var(--text-dim);
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+    }
+    body.dark-mode .kt-keyword-pill {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(255, 255, 255, 0.08);
+    }
+
+    /* Sidebar Batches & Search */
+    .sidebar-search-box {
+      width: 100%;
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--paper-border);
+      background: var(--paper-bg);
+      color: var(--text-main);
+      font-size: 12px;
+      font-family: inherit;
+      outline: none;
+      transition: var(--transition);
+      margin-bottom: 8px;
+    }
+    .sidebar-search-box:focus {
+      border-color: var(--brand-primary);
+      box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+    }
+    .sidebar-batch-card {
+      padding: 8px 10px;
+      border-radius: 8px;
+      border: 1px solid var(--paper-border);
+      background: rgba(0,0,0,0.02);
+      font-size: 11.5px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+    body.dark-mode .sidebar-batch-card {
+      background: rgba(255,255,255,0.02);
+    }
+    .sidebar-batch-card.active-batch {
+      background: var(--accent-bg);
+      border-color: var(--accent-border);
+    }
+    .sidebar-batch-card .batch-status-tag {
+      font-size: 10px;
+      font-weight: 800;
+      padding: 1px 6px;
+      border-radius: 4px;
+      display: inline-block;
+      width: fit-content;
+    }
+    .batch-status-tag.active {
+      background: var(--green-bg);
+      color: var(--green-check);
+    }
+    .batch-status-tag.upcoming {
+      background: rgba(0,0,0,0.05);
+      color: var(--text-dim);
+    }
+    body.dark-mode .batch-status-tag.upcoming {
+      background: rgba(255,255,255,0.08);
+    }
+    .sidebar-slang-list {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      max-height: 380px;
+      overflow-y: auto;
+      padding-right: 4px;
+      margin-top: 6px;
+    }
+    .sidebar-slang-item {
+      padding: 7px 10px;
+      border-radius: 6px;
+      font-size: 11.5px;
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-main);
+      cursor: pointer;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition);
+      width: 100%;
+    }
+    .sidebar-slang-item:hover {
+      background: rgba(0,0,0,0.04);
+      border-color: var(--paper-border);
+    }
+    body.dark-mode .sidebar-slang-item:hover {
+      background: rgba(255,255,255,0.05);
+    }
+    .card-highlight-pulse {
+      animation: cardPulse 1.5s ease-out;
+    }
+    @keyframes cardPulse {
+      0% { box-shadow: 0 0 0 4px var(--accent-heading); transform: scale(1.02); }
+      100% { box-shadow: none; transform: scale(1); }
+    }
+
     /* Checkpoint MCQ Card (Every 10 Terms) */
     .checkpoint-mcq-wrap {
       background: linear-gradient(135deg, rgba(139, 58, 43, 0.05) 0%, rgba(2, 132, 199, 0.05) 100%);
@@ -1240,21 +1485,21 @@
   <!-- Top App Bar -->
   <header class="app-top-header">
     <div class="brand-section">
-      <button id="toggleSidebarBtn" class="toggle-sidebar-btn" title="Toggle Chapter Filter">
-        <span>📑</span> <span>Chapters</span>
+      <button id="toggleSidebarBtn" class="toggle-sidebar-btn" title="Toggle 100 Slangs Directory">
+        <span>📑</span> <span>Directory</span>
       </button>
       <div class="brand-badge-icon" title="PSIR Vocabulary Suite">
         <span class="psir-badge-text">PSIR</span>
       </div>
       <div class="brand-title-wrap">
-        <h1 class="brand-title">KEY TERMS & CONCEPTS</h1>
-        <div class="brand-sub">552 Core Terms • Checkpoint MCQs</div>
+        <h1 class="brand-title">POLITICAL SLANGS & HOOKS</h1>
+        <div class="brand-sub">100 High-Yield PSIR Catchphrases • Batch 1 of 5 (1–20 Active)</div>
       </div>
     </div>
 
     <!-- Filters on Top Bar -->
     <div class="topbar-filters">
-      <button class="top-filter-btn active" data-filter="all">(<span id="ktCountAll">552</span>)</button>
+      <button class="top-filter-btn active" data-filter="all">All Slangs (<span id="ktCountAll">20</span>)</button>
       <button class="top-filter-btn" data-filter="right">Mastered ✓ (<span id="ktCountRight">0</span>)</button>
       <button class="top-filter-btn" data-filter="wrong">Revise ✕ (<span id="ktCountWrong">0</span>)</button>
       <button class="top-filter-btn" data-filter="circle">In Review ○ (<span id="ktCountCircle">0</span>)</button>
@@ -1320,43 +1565,66 @@
     <!-- Mobile Backdrop Dimmer -->
     <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
 
-    <!-- Left Sidebar: Chapter Filter -->
+    <!-- Left Sidebar: 100 Slangs Directory -->
     <aside class="syllabus-sidebar" id="syllabusSidebar">
       <div class="sidebar-header">
-        <div class="sidebar-title">
-          <span>Filter by Chapter</span>
+        <div class="sidebar-title" style="display:flex; justify-content:space-between; align-items:center;">
+          <span>100 Slangs Directory</span>
           <button id="closeSidebarBtn" class="sidebar-close-btn" title="Close Chapters Drawer" aria-label="Close">✕</button>
         </div>
       </div>
       <div class="sidebar-tree">
-        <button class="sidebar-ch-btn" onclick="filterByChapter('all')">
-          <span>📚 All Chapters</span>
-          <span style="font-family: var(--font-display); font-size: 11px;">552 terms</span>
-        </button>
-        <button class="sidebar-ch-btn" onclick="filterByChapter(1)">
-          <span>1. Political Ideologies</span>
-          <span style="font-family: var(--font-display); font-size: 11px;">Ch 1</span>
-        </button>
-        <button class="sidebar-ch-btn" onclick="filterByChapter(2)">
-          <span>2. Liberalism & State</span>
-          <span style="font-family: var(--font-display); font-size: 11px;">Ch 2</span>
-        </button>
-        <button class="sidebar-ch-btn" onclick="filterByChapter(3)">
-          <span>3. Marxism & State</span>
-          <span style="font-family: var(--font-display); font-size: 11px;">Ch 3</span>
-        </button>
-        <button class="sidebar-ch-btn" onclick="filterByChapter(4)">
-          <span>4. Socialism & Fascism</span>
-          <span style="font-family: var(--font-display); font-size: 11px;">Ch 4</span>
-        </button>
-        <button class="sidebar-ch-btn" onclick="filterByChapter(5)">
-          <span>5. Gandhism</span>
-          <span style="font-family: var(--font-display); font-size: 11px;">Ch 5</span>
-        </button>
-        <button class="sidebar-ch-btn" onclick="filterByChapter(6)">
-          <span>6. Feminism</span>
-          <span style="font-family: var(--font-display); font-size: 11px;">Ch 6</span>
-        </button>
+        <input type="text" id="sidebarSearchInput" placeholder="🔍 Search slangs, scholars..." class="sidebar-search-box" oninput="filterSlangDirectory(this.value)">
+        
+        <div style="font-size: 11px; font-weight: 800; color: var(--text-dim); text-transform: uppercase; margin: 4px 0 2px;">Curated Batches (5 × 20)</div>
+        <div class="sidebar-batch-card active-batch" onclick="filterByBatch(1)">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <strong style="color: var(--accent-heading);">Batch 1: Core Metaphors & Power</strong>
+            <span class="batch-status-tag active">Active (1–20)</span>
+          </div>
+          <span style="font-size: 11px; color: var(--text-muted);">20 Slangs • 2 Checkpoint MCQs</span>
+        </div>
+
+        <div class="sidebar-batch-card" style="opacity: 0.65; cursor: default;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <strong>Batch 2: Statecraft & Hegemony</strong>
+            <span class="batch-status-tag upcoming">Upcoming</span>
+          </div>
+          <span style="font-size: 11px; color: var(--text-muted);">Slangs 21–40 (Awaiting user go-ahead)</span>
+        </div>
+
+        <div class="sidebar-batch-card" style="opacity: 0.65; cursor: default;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <strong>Batch 3: Political Economy</strong>
+            <span class="batch-status-tag upcoming">Upcoming</span>
+          </div>
+          <span style="font-size: 11px; color: var(--text-muted);">Slangs 41–60</span>
+        </div>
+
+        <div class="sidebar-batch-card" style="opacity: 0.65; cursor: default;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <strong>Batch 4: Global Order & Strategy</strong>
+            <span class="batch-status-tag upcoming">Upcoming</span>
+          </div>
+          <span style="font-size: 11px; color: var(--text-muted);">Slangs 61–80</span>
+        </div>
+
+        <div class="sidebar-batch-card" style="opacity: 0.65; cursor: default;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <strong>Batch 5: Radical Critique & Theory</strong>
+            <span class="batch-status-tag upcoming">Upcoming</span>
+          </div>
+          <span style="font-size: 11px; color: var(--text-muted);">Slangs 81–100</span>
+        </div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top: 10px;">
+          <div style="font-size: 11px; font-weight: 800; color: var(--text-dim); text-transform: uppercase;">Batch 1 Slangs Quick Jump</div>
+          <span style="font-size: 10.5px; font-weight: 700; color: var(--brand-primary);" id="slangCountSidebarTag">20 Slangs</span>
+        </div>
+
+        <div class="sidebar-slang-list" id="sidebarSlangList">
+          <!-- Populated dynamically by JS -->
+        </div>
       </div>
     </aside>
 
@@ -1371,7 +1639,7 @@
           
           <div class="deck-counter-badge" id="deckCounterBadge" title="Current Key Term Position">
             <span class="deck-icon">🎴</span>
-            <span class="deck-text">Card <strong id="deckCurIdx">1</strong> of <span id="deckTotalCount" class="total-digits">552</span></span>
+            <span class="deck-text">Slang <strong id="deckCurIdx">1</strong> of <span id="deckTotalCount" class="total-digits">20</span></span>
           </div>
           
           <button class="deck-nav-btn deck-next-btn" id="deckNextBtn" title="Next Key Term Card" aria-label="Next">
@@ -1911,16 +2179,99 @@
         }
       });
 
-      // Rendering Keyterms & MCQs Every 10 Terms
+      // Rendering Slangs, Hooks & Checkpoints
       let activeFilter = 'all';
-      let activeChapter = 'all';
+      let activeBatch = 1;
+      let searchQuery = '';
 
-      window.filterByChapter = function (ch) {
-        activeChapter = ch;
+      window.copyHookQuote = function(id) {
+        if (!window.KEYTERMS_DATA) return;
+        const item = window.KEYTERMS_DATA.terms.find(t => t.id === id);
+        if (!item) return;
+        const textToCopy = `"${item.hook}" — ${item.scholar} (${item.term})`;
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(textToCopy).then(() => {
+            showToast('📋 Copied Hook to Clipboard!');
+          }).catch(() => {
+            fallbackCopy(textToCopy);
+          });
+        } else {
+          fallbackCopy(textToCopy);
+        }
+      };
+
+      function fallbackCopy(text) {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try {
+          document.execCommand('copy');
+          showToast('📋 Copied Hook to Clipboard!');
+        } catch (e) {
+          showToast('Could not copy automatically');
+        }
+        document.body.removeChild(ta);
+      }
+
+      window.jumpToSlang = function(slangId) {
+        const card = document.querySelector(`.keyterm-card[data-id="${slangId}"]`);
+        if (card) {
+          if (isSliderMode) {
+            card.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+          } else {
+            card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+          card.classList.add('card-highlight-pulse');
+          setTimeout(() => card.classList.remove('card-highlight-pulse'), 1500);
+          if (window.innerWidth <= 900 && typeof closeSidebar === 'function') closeSidebar();
+        }
+      };
+
+      window.filterByBatch = function(b) {
+        activeBatch = b;
         renderKeyterms();
         if (window.innerWidth <= 900 && typeof closeSidebar === 'function') closeSidebar();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
       };
+
+      window.filterSlangDirectory = function(q) {
+        searchQuery = (q || '').trim().toLowerCase();
+        renderSidebarSlangsList();
+        renderKeyterms();
+      };
+
+      function renderSidebarSlangsList() {
+        const listContainer = document.getElementById('sidebarSlangList');
+        if (!listContainer || !window.KEYTERMS_DATA) return;
+        listContainer.innerHTML = '';
+
+        let items = window.KEYTERMS_DATA.terms;
+        if (searchQuery) {
+          items = items.filter(t => 
+            t.term.toLowerCase().includes(searchQuery) || 
+            t.scholar.toLowerCase().includes(searchQuery) ||
+            t.hook.toLowerCase().includes(searchQuery) ||
+            (t.keywords && t.keywords.some(k => k.toLowerCase().includes(searchQuery)))
+          );
+        }
+
+        const tag = document.getElementById('slangCountSidebarTag');
+        if (tag) tag.textContent = `${items.length} Slangs`;
+
+        items.forEach((t) => {
+          const btn = document.createElement('button');
+          btn.className = 'sidebar-slang-item';
+          btn.innerHTML = `
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#${t.number}</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${t.term}</span>
+            <span style="font-size: 10px; color: var(--text-dim);">${scores[t.id] === 'right' ? '✓' : scores[t.id] === 'wrong' ? '✕' : scores[t.id] === 'circle' ? '○' : ''}</span>
+          `;
+          btn.onclick = () => jumpToSlang(t.id);
+          listContainer.appendChild(btn);
+        });
+      }
 
       function renderKeyterms() {
         if (!window.KEYTERMS_DATA) return;
@@ -1928,15 +2279,24 @@
         container.innerHTML = '';
 
         let terms = window.KEYTERMS_DATA.terms;
-        if (activeChapter !== 'all') {
-          terms = terms.filter(t => t.chapter_num === parseInt(activeChapter, 10));
+        if (activeBatch !== 'all') {
+          terms = terms.filter(t => t.batch === activeBatch);
+        }
+
+        if (searchQuery) {
+          terms = terms.filter(t => 
+            t.term.toLowerCase().includes(searchQuery) || 
+            t.scholar.toLowerCase().includes(searchQuery) ||
+            t.hook.toLowerCase().includes(searchQuery) ||
+            (t.keywords && t.keywords.some(k => k.toLowerCase().includes(searchQuery)))
+          );
         }
 
         if (activeFilter !== 'all') {
           terms = terms.filter(t => scores[t.id] === activeFilter);
         }
 
-        const checkpoints = window.KEYTERMS_DATA.checkpoints;
+        const checkpoints = window.KEYTERMS_DATA.checkpoints || [];
         const letters = ['A', 'B', 'C', 'D'];
 
         terms.forEach((term, idx) => {
@@ -1944,35 +2304,64 @@
           const card = document.createElement('div');
           card.className = `keyterm-card ${choice ? `status-${choice}` : ''}`;
           card.setAttribute('data-id', term.id);
-          card.setAttribute('data-card-index', idx + 1);
+          card.setAttribute('data-card-index', term.number);
+
+          const keywordsHtml = (term.keywords || []).map(kw => `<span class="kt-keyword-pill">#${kw}</span>`).join('');
 
           card.innerHTML = `
             <div class="keyterm-card-topbar">
               <div class="kt-meta-pills">
-                <span class="kt-idx-pill">#${idx + 1}</span>
-                <span class="page-tag">P.${term.page}</span>
-                <span class="ch-mini-tag">Ch ${term.chapter_num}</span>
+                <span class="kt-idx-pill">#${term.number} of ${window.KEYTERMS_DATA.terms.length}</span>
+                <span class="batch-badge">BATCH ${term.batch}</span>
+                <span class="paper-pill">${term.paper}</span>
+                <span class="category-pill">${term.category}</span>
               </div>
               <div class="bullet-eval-selector">
                 <button class="eval-choice-btn eval-btn-right ${choice === 'right' ? 'selected-right' : ''}" 
-                        title="Mastered (Right Sign - Flowers & Hearts Shower!)" 
+                        title="Mastered (Flowers & Hearts Shower!)" 
                         onclick="setTermScore('${term.id}', 'right')">✓</button>
                 <button class="eval-choice-btn eval-btn-wrong ${choice === 'wrong' ? 'selected-wrong' : ''}" 
-                        title="Needs Work (Wrong Sign)" 
+                        title="Flag for Revision" 
                         onclick="setTermScore('${term.id}', 'wrong')">✕</button>
                 <button class="eval-choice-btn eval-btn-circle ${choice === 'circle' ? 'selected-circle' : ''}" 
-                        title="In Review (Circle Sign)" 
+                        title="Mark for Review" 
                         onclick="setTermScore('${term.id}', 'circle')">○</button>
               </div>
             </div>
+
             <div class="keyterm-body">
               <div class="keyterm-header-line">
                 <span class="keyterm-name">${term.term}</span>
                 ${term.scholar ? `<span class="scholar-tag">🎓 ${term.scholar}</span>` : ''}
               </div>
-              <p class="keyterm-def">${term.definition}</p>
-              <div class="keyterm-topic-sub">Chapter ${term.chapter_num} • ${term.topic}</div>
+
+              <!-- THE HOOK CALLOUT BOX -->
+              <div class="hook-quote-box">
+                <div class="hook-quote-header">
+                  <span class="hook-type-tag">✍️ THE HOOKY OPENER / CATCHPHRASE</span>
+                  <button class="copy-hook-btn" onclick="copyHookQuote('${term.id}')" title="Copy Hook Quote">📋 Copy Hook</button>
+                </div>
+                <blockquote class="hook-quote-text">"${term.hook}"</blockquote>
+              </div>
+
+              <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+              <div class="concept-breakdown-box">
+                <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+                <p class="keyterm-def">${term.definition}</p>
+              </div>
+
+              <!-- UPSC ANSWER APPLICATION -->
+              <div class="exam-utility-box">
+                <div class="exam-utility-header">
+                  <span>🎯 UPSC PSIR Answer Application (${term.paper} • ${term.topic})</span>
+                </div>
+                <div class="exam-utility-content">${term.exam_utility}</div>
+              </div>
+
+              <!-- KEYWORDS ROW -->
+              ${keywordsHtml ? `<div class="kt-keywords-row">${keywordsHtml}</div>` : ''}
             </div>
+
             <div class="keyterm-card-bottom-bar">
               <span class="card-status-badge ${choice ? `status-badge-${choice}` : ''}">
                 ${choice === 'right' ? '✓ Mastered' : choice === 'wrong' ? '✕ Needs Revision' : choice === 'circle' ? '○ In Review' : 'Active Recall Ready'}
@@ -1982,9 +2371,9 @@
           `;
           container.appendChild(card);
 
-          // After every 10 terms, insert a Checkpoint MCQ!
-          if ((idx + 1) % 10 === 0 && activeFilter === 'all') {
-            const cpIdx = Math.floor((idx + 1) / 10);
+          // Checkpoint insertion after term 10 and term 20
+          if ((term.number % 10 === 0) && activeFilter === 'all' && !searchQuery) {
+            const cpIdx = Math.floor(term.number / 10);
             const cp = checkpoints[cpIdx - 1];
             if (cp) {
               const savedAns = mcqAnswers[cp.id];
@@ -1992,17 +2381,11 @@
               cpBox.className = 'checkpoint-mcq-wrap';
               cpBox.id = `cp_${cp.id}`;
 
-              let qTypeBadge = '🎯 UPSC PSIR Conceptual Challenge';
-              if (cp.question.includes('Introduction would you prefer')) qTypeBadge = '✍️ 10-MARK MAINS: INTRO CHOICE';
-              else if (cp.question.includes('Conclusion would you prefer')) qTypeBadge = '✍️ 10-MARK MAINS: CONCLUSION CHOICE';
-              else if (cp.question.includes('Who authored') || cp.question.includes('Who wrote') || cp.question.includes('Which landmark') || cp.question.includes('Which classic') || cp.question.includes('Which 1936')) qTypeBadge = '📖 SEMINAL WORK & AUTHOR';
-              else if (cp.question.includes('Who famously') || cp.question.includes('Who declared') || cp.question.includes('Who stated') || cp.question.includes('Who described')) qTypeBadge = '📜 WHO SAID THIS / FAMOUS QUOTE';
-              else if (cp.question.includes('Whose idea') || cp.question.includes('Whose central') || cp.question.includes('Whose concept') || cp.question.includes('Whose theory') || cp.question.includes('Whose political vision')) qTypeBadge = '💡 WHOSE IDEA / CONCEPT';
-              else if (cp.question.includes('What did') || cp.question.includes('How did') || cp.question.includes('critique')) qTypeBadge = '🔍 THINKER ON THINKER CRITIQUE';
+              let qTypeBadge = '🎯 UPSC PSIR CONCEPT CHECKPOINT';
 
               let cpHtml = `
                 <div class="checkpoint-banner">
-                  <span class="checkpoint-tag">🎯 10-TERM QUIZ #${cpIdx}</span>
+                  <span class="checkpoint-tag">🎯 CHECKPOINT QUIZ #${cpIdx}</span>
                   <span style="font-size: 11px; font-weight: 800; color: var(--accent-heading); background: rgba(139, 58, 43, 0.08); padding: 3px 8px; border-radius: 6px; letter-spacing: 0.3px;">${qTypeBadge}</span>
                 </div>
                 <div class="checkpoint-q-text">${cp.question.replace(/\n/g, '<br>')}</div>
@@ -2035,7 +2418,7 @@
                   <div>${cp.explanation}</div>
                 </div>
                 <div class="keyterm-card-bottom-bar" style="margin-top: auto;">
-                  <span class="card-status-badge" style="color: var(--brand-primary); font-weight: 800;">10-Term Quiz Checkpoint</span>
+                  <span class="card-status-badge" style="color: var(--brand-primary); font-weight: 800;">10-Slang Checkpoint Passed</span>
                   <span class="swipe-hint-text">⟵ Swipe ⟶</span>
                 </div>
               `;
@@ -2103,9 +2486,10 @@
       if (closeSidebarBtn) closeSidebarBtn.addEventListener('click', closeSidebar);
       if (sidebarBackdrop) sidebarBackdrop.addEventListener('click', closeSidebar);
 
+      renderSidebarSlangsList();
       renderKeyterms();
       updateScoreBadges();
-      console.log('✅ PSIR Key Terms & Flashcards Suite Ready.');
+      console.log('✅ PSIR Top 100 Slangs & Hooks Suite Ready.');
     })();
   </script>
 </body>
