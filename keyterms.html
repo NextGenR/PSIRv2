@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PSIR Key Terms & Concepts • Interactive Vocabulary Suite</title>
+  <meta name="description" content="Topic-wise foundational key terms for UPSC PSIR Paper 1A. 3-choice review system, MCQs after every 10 terms, 10 reader fonts, text highlighter, and active recall.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#8b3a2b">
+  
+  <!-- 10 Reader Fonts from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Roboto+Serif:opsz,wght@8..144,400;8..144,600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Outfit:wght@500;600;700;800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Nunito:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* ========================================================
+       PSIR KEY TERMS STUDY SUITE DESIGN SYSTEM
+       ======================================================== */
+    :root {
+      --bg-app: #f4f6fa;
+      --paper-bg: #ffffff;
+      --paper-border: #e2e8f0;
+      --paper-shadow: 0 8px 30px -4px rgba(0, 0, 0, 0.07), 0 0 1px rgba(0, 0, 0, 0.08);
+      
+      --sidebar-bg: #ffffff;
+      --sidebar-border: #e2e8f0;
+      
+      --text-main: #1e293b;
+      --text-muted: #475569;
+      --text-dim: #64748b;
+      
+      --accent-heading: #8b3a2b;
+      --accent-bg: rgba(139, 58, 43, 0.08);
+      --accent-border: rgba(139, 58, 43, 0.2);
+      
+      --brand-primary: #0284c7;
+      
+      --green-check: #10b981;
+      --green-bg: #ecfdf5;
+      --green-border: #a7f3d0;
+      
+      --red-wrong: #ef4444;
+      --red-bg: #fef2f2;
+      --red-border: #fecaca;
+      
+      --circle-neutral: #f59e0b;
+      --circle-bg: #fffbeb;
+      --circle-border: #fde68a;
+
+      --font-display: 'Outfit', sans-serif;
+      --font-reader: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      --sidebar-width: 300px;
+      --transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* Sleek Night Theme */
+    body.dark-mode {
+      --bg-app: #0d1117;
+      --paper-bg: #161b22;
+      --paper-border: #30363d;
+      --paper-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.6);
+      
+      --sidebar-bg: #161b22;
+      --sidebar-border: #30363d;
+      
+      --text-main: #c9d1d9;
+      --text-muted: #8b949e;
+      --text-dim: #6e7681;
+      
+      --accent-heading: #f78166;
+      --accent-bg: rgba(247, 129, 102, 0.12);
+      --accent-border: rgba(247, 129, 102, 0.3);
+      
+      --brand-primary: #58a6ff;
+      
+      --green-check: #3fb950;
+      --green-bg: rgba(63, 185, 80, 0.12);
+      --green-border: rgba(63, 185, 80, 0.35);
+      
+      --red-wrong: #f85149;
+      --red-bg: rgba(248, 81, 73, 0.12);
+      --red-border: rgba(248, 81, 73, 0.35);
+      
+      --circle-neutral: #d29922;
+      --circle-bg: rgba(210, 153, 34, 0.12);
+      --circle-border: rgba(210, 153, 34, 0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg-app);
+      color: var(--text-main);
+      font-family: var(--font-reader);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.6;
+      overflow-x: hidden;
+      transition: background 0.25s ease, color 0.25s ease;
+    }
+
+    /* Fullscreen Celebration Canvas */
+    #celebrationCanvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 99999;
+    }
+
+    /* Top App Bar */
+    .app-top-header {
+      background: var(--paper-bg);
+      border-bottom: 1px solid var(--paper-border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 10px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    }
+
+    .brand-section {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+    .toggle-sidebar-btn {
+      background: rgba(0,0,0,0.04);
+      border: 1px solid var(--paper-border);
+      color: var(--text-main);
+      font-size: 13.5px;
+      font-weight: 700;
+      padding: 7px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition);
+    }
+    body.dark-mode .toggle-sidebar-btn {
+      background: rgba(255,255,255,0.05);
+    }
+    .toggle-sidebar-btn:hover {
+      background: var(--accent-bg);
+      color: var(--accent-heading);
+      border-color: var(--accent-border);
+    }
+
+    .brand-title-wrap {
+      display: flex;
+      flex-direction: column;
+    }
+    .brand-title {
+      font-family: var(--font-display);
+      font-size: 14.5px;
+      font-weight: 800;
+      color: var(--text-main);
+      letter-spacing: -0.3px;
+    }
+    .brand-sub {
+      font-size: 11px;
+      color: var(--text-dim);
+      font-weight: 600;
+    }
+
+    /* Filters on Top Bar */
+    .topbar-filters {
+      display: flex;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.03);
+      border: 1px solid var(--paper-border);
+      padding: 3px;
+      border-radius: 10px;
+      gap: 3px;
+    }
+    body.dark-mode .topbar-filters {
+      background: rgba(255, 255, 255, 0.03);
+    }
+    .top-filter-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 5px 11px;
+      border-radius: 7px;
+      cursor: pointer;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      white-space: nowrap;
+    }
+    .top-filter-btn.active {
+      background: var(--paper-bg);
+      color: var(--text-main);
+      border-color: var(--paper-border);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    /* Actions and Tools */
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+    .header-action-btn {
+      background: transparent;
+      border: 1px solid var(--paper-border);
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 6px 11px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition);
+      text-decoration: none;
+    }
+    .header-action-btn:hover {
+      background: rgba(0, 0, 0, 0.04);
+      color: var(--text-main);
+      border-color: var(--accent-heading);
+    }
+    body.dark-mode .header-action-btn:hover {
+      background: rgba(255, 255, 255, 0.05);
+    }
+    .header-action-btn.active-tool {
+      background: var(--accent-bg);
+      color: var(--accent-heading);
+      border-color: var(--accent-heading);
+    }
+
+    .notes-nav-btn {
+      background: var(--accent-bg);
+      color: var(--accent-heading) !important;
+      border-color: var(--accent-border);
+    }
+
+    .header-score-pill {
+      background: var(--green-bg);
+      border: 1px solid var(--green-border);
+      color: var(--green-check);
+      font-size: 11.5px;
+      font-weight: 800;
+      padding: 6px 12px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+    }
+
+    /* Font Picker */
+    .font-picker-wrapper { position: relative; }
+    .font-picker-menu {
+      position: absolute;
+      top: calc(100% + 8px);
+      right: 0;
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      width: 240px;
+      padding: 8px;
+      display: none;
+      flex-direction: column;
+      gap: 3px;
+      z-index: 1000;
+    }
+    .font-picker-menu.show { display: flex; }
+    .font-picker-title {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--text-dim);
+      padding: 6px 10px;
+      text-transform: uppercase;
+    }
+    .font-option-btn {
+      background: transparent;
+      border: none;
+      text-align: left;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      color: var(--text-main);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: var(--transition);
+    }
+    .font-option-btn:hover { background: rgba(0,0,0,0.04); color: var(--accent-heading); }
+    body.dark-mode .font-option-btn:hover { background: rgba(255,255,255,0.05); }
+    .font-option-btn.active { background: var(--accent-bg); color: var(--accent-heading); font-weight: 700; }
+
+    /* Highlighter Floating Palette */
+    #highlighterFloatToolbar {
+      position: absolute;
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      border-radius: 30px;
+      padding: 5px 10px;
+      display: none;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      z-index: 10000;
+    }
+    .color-swatch-btn {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      border: 2px solid #ffffff;
+      cursor: pointer;
+      transition: transform 0.15s ease;
+    }
+    .color-swatch-btn:hover { transform: scale(1.25); }
+    .clear-highlight-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-dim);
+      cursor: pointer;
+      font-size: 13px;
+      padding: 2px 6px;
+    }
+
+    mark.user-highlight { border-radius: 3px; padding: 1px 3px; color: inherit; }
+    mark.user-highlight.yellow { background-color: #fef08a; }
+    mark.user-highlight.green { background-color: #bbf7d0; }
+    mark.user-highlight.pink { background-color: #fbcfe8; }
+    mark.user-highlight.blue { background-color: #bae6fd; }
+
+    body.dark-mode mark.user-highlight.yellow { background-color: rgba(250, 204, 21, 0.35); color: #fef08a; }
+    body.dark-mode mark.user-highlight.green { background-color: rgba(74, 222, 128, 0.35); color: #bbf7d0; }
+    body.dark-mode mark.user-highlight.pink { background-color: rgba(244, 114, 182, 0.35); color: #fbcfe8; }
+    body.dark-mode mark.user-highlight.blue { background-color: rgba(96, 165, 250, 0.35); color: #bae6fd; }
+
+    /* Workspace Layout */
+    .workspace-layout {
+      display: flex;
+      flex: 1;
+      width: 100%;
+      min-height: calc(100vh - 65px);
+      position: relative;
+    }
+
+    /* Sidebar Drawer */
+    .syllabus-sidebar {
+      width: var(--sidebar-width);
+      background: var(--sidebar-bg);
+      border-right: 1px solid var(--sidebar-border);
+      flex-shrink: 0;
+      overflow-y: auto;
+      height: calc(100vh - 65px);
+      position: sticky;
+      top: 65px;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s ease, margin 0.25s ease;
+      z-index: 80;
+    }
+    .syllabus-sidebar.collapsed { margin-left: calc(-1 * var(--sidebar-width)); }
+
+    .sidebar-header {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--sidebar-border);
+      background: var(--paper-bg);
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    .sidebar-title {
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--text-dim);
+    }
+    .sidebar-tree {
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      flex: 1;
+    }
+    .sidebar-ch-btn {
+      width: 100%;
+      text-align: left;
+      background: rgba(0,0,0,0.02);
+      border: 1px solid var(--paper-border);
+      border-radius: 8px;
+      padding: 8px 12px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-main);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: var(--transition);
+    }
+    body.dark-mode .sidebar-ch-btn { background: rgba(255,255,255,0.02); }
+    .sidebar-ch-btn:hover { background: var(--accent-bg); color: var(--accent-heading); border-color: var(--accent-border); }
+
+    /* Main Content */
+    .main-content-area {
+      flex: 1;
+      padding: 24px 28px 100px;
+      max-width: 980px;
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    @media (max-width: 900px) {
+      .syllabus-sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        height: 100vh;
+        z-index: 1000;
+        transform: translateX(0);
+      }
+      .syllabus-sidebar.collapsed { transform: translateX(-100%); margin-left: 0; }
+      .main-content-area { padding: 16px 14px 80px; }
+      .topbar-filters { display: none; }
+    }
+
+    /* Hero Banner */
+    .keyterms-hero {
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      border-radius: 16px;
+      padding: 28px 32px;
+      box-shadow: var(--paper-shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .hero-eyebrow {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: var(--accent-heading);
+      text-transform: uppercase;
+    }
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--text-main);
+    }
+    .hero-sub {
+      font-size: 13.5px;
+      color: var(--text-muted);
+    }
+
+    /* Key Term Card */
+    .keyterm-card {
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      border-radius: 14px;
+      padding: 20px 24px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+      transition: var(--transition);
+    }
+    .keyterm-card:hover {
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    }
+    .keyterm-card.status-right { background: var(--green-bg); border-color: var(--green-border); }
+    .keyterm-card.status-wrong { background: var(--red-bg); border-color: var(--red-border); }
+    .keyterm-card.status-circle { background: var(--circle-bg); border-color: var(--circle-border); }
+
+    /* 3-Button Selector */
+    .bullet-eval-selector {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      padding: 3px;
+      border-radius: 999px;
+      flex-shrink: 0;
+      margin-top: 2px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+    }
+    .eval-choice-btn {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 800;
+      cursor: pointer;
+      color: var(--text-dim);
+      transition: var(--transition);
+    }
+    .eval-choice-btn:hover { transform: scale(1.18); }
+    .eval-btn-right:hover { color: var(--green-check); background: rgba(16, 185, 129, 0.15); }
+    .eval-choice-btn.selected-right { background: var(--green-check); color: #fff; transform: scale(1.1); }
+    .eval-btn-wrong:hover { color: var(--red-wrong); background: rgba(239, 68, 68, 0.15); }
+    .eval-choice-btn.selected-wrong { background: var(--red-wrong); color: #fff; transform: scale(1.1); }
+    .eval-btn-circle:hover { color: var(--circle-neutral); background: rgba(245, 158, 11, 0.15); }
+    .eval-choice-btn.selected-circle { background: var(--circle-neutral); color: #fff; transform: scale(1.1); }
+
+    .keyterm-body { flex: 1; display: flex; flex-direction: column; gap: 6px; }
+    .keyterm-header-line {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .keyterm-name {
+      font-family: var(--font-display);
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--accent-heading);
+    }
+    .keyterm-tags { display: flex; align-items: center; gap: 6px; }
+    .scholar-tag {
+      font-size: 11px;
+      font-weight: 700;
+      background: rgba(2, 132, 199, 0.1);
+      color: var(--brand-primary);
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+    .page-tag {
+      font-size: 10.5px;
+      font-weight: 700;
+      font-family: var(--font-mono);
+      background: rgba(0,0,0,0.05);
+      color: var(--text-dim);
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+    body.dark-mode .page-tag { background: rgba(255,255,255,0.06); }
+
+    .keyterm-def {
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: var(--text-main);
+    }
+    .keyterm-topic-sub {
+      font-size: 12px;
+      color: var(--text-dim);
+      font-weight: 600;
+    }
+
+    /* Checkpoint MCQ Card (Every 10 Terms) */
+    .checkpoint-mcq-wrap {
+      background: linear-gradient(135deg, rgba(139, 58, 43, 0.05) 0%, rgba(2, 132, 199, 0.05) 100%);
+      border: 2px solid var(--accent-border);
+      border-radius: 16px;
+      padding: 24px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin: 12px 0;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    }
+    .checkpoint-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px dashed var(--paper-border);
+      padding-bottom: 8px;
+    }
+    .checkpoint-tag {
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      background: var(--accent-heading);
+      color: #fff;
+      padding: 3px 10px;
+      border-radius: 6px;
+    }
+    .checkpoint-q-text {
+      font-size: 15px;
+      line-height: 1.65;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+    .checkpoint-options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .cp-option-btn {
+      width: 100%;
+      text-align: left;
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-family: inherit;
+      font-size: 13.5px;
+      color: var(--text-main);
+      cursor: pointer;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      transition: var(--transition);
+    }
+    .cp-option-btn:hover { border-color: var(--accent-heading); }
+    .cp-letter {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--text-dim);
+      flex-shrink: 0;
+    }
+    body.dark-mode .cp-letter { background: rgba(255,255,255,0.08); }
+
+    .cp-option-btn.selected-correct {
+      background: var(--green-bg) !important;
+      border-color: var(--green-check) !important;
+      color: var(--green-check) !important;
+      font-weight: 700;
+    }
+    .cp-option-btn.selected-correct .cp-letter { background: var(--green-check); color: #fff; }
+
+    .cp-option-btn.selected-wrong {
+      background: var(--red-bg) !important;
+      border-color: var(--red-wrong) !important;
+      color: var(--red-wrong) !important;
+      font-weight: 700;
+    }
+    .cp-option-btn.selected-wrong .cp-letter { background: var(--red-wrong); color: #fff; }
+
+    .cp-option-btn.reveal-correct {
+      background: var(--green-bg) !important;
+      border-color: var(--green-border) !important;
+      color: var(--green-check) !important;
+    }
+
+    .cp-explanation-box {
+      background: var(--paper-bg);
+      border-left: 3px solid var(--accent-heading);
+      border-radius: 0 8px 8px 0;
+      padding: 12px 16px;
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--text-main);
+      display: none;
+    }
+
+    /* Toast */
+    #toastPill {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #0f172a;
+      color: #f8fafc;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 10px 22px;
+      border-radius: 999px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      display: none;
+      z-index: 100000;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Celebration Canvas (Flowers & Hearts) -->
+  <canvas id="celebrationCanvas"></canvas>
+
+  <!-- Floating Highlighter Toolbar -->
+  <div id="highlighterFloatToolbar">
+    <button class="color-swatch-btn" style="background-color: #fef08a;" data-color="yellow" title="Yellow Highlight"></button>
+    <button class="color-swatch-btn" style="background-color: #bbf7d0;" data-color="green" title="Green Highlight"></button>
+    <button class="color-swatch-btn" style="background-color: #fbcfe8;" data-color="pink" title="Pink Highlight"></button>
+    <button class="color-swatch-btn" style="background-color: #bae6fd;" data-color="blue" title="Sky Blue Highlight"></button>
+    <button class="clear-highlight-btn" id="removeHighlightBtn" title="Remove Highlight">✕</button>
+  </div>
+
+  <!-- Top App Bar -->
+  <header class="app-top-header">
+    <div class="brand-section">
+      <button id="toggleSidebarBtn" class="toggle-sidebar-btn" title="Toggle Chapter Filter">
+        <span>📑</span> <span>Chapters</span>
+      </button>
+      <div class="brand-title-wrap">
+        <h1 class="brand-title">PSIR KEY TERMS & CONCEPTS</h1>
+        <div class="brand-sub">Vocabulary Mastery • 552 Core Terms • MCQs Every 10 Terms</div>
+      </div>
+    </div>
+
+    <!-- Filters on Top Bar -->
+    <div class="topbar-filters">
+      <button class="top-filter-btn active" data-filter="all">All (<span id="ktCountAll">552</span>)</button>
+      <button class="top-filter-btn" data-filter="right">Mastered ✓ (<span id="ktCountRight">0</span>)</button>
+      <button class="top-filter-btn" data-filter="wrong">Revise ✕ (<span id="ktCountWrong">0</span>)</button>
+      <button class="top-filter-btn" data-filter="circle">In Review ○ (<span id="ktCountCircle">0</span>)</button>
+    </div>
+
+    <!-- Actions & Reader Tools -->
+    <div class="header-actions">
+      <!-- Master Score Pill -->
+      <div class="header-score-pill" title="Mastered Terms">
+        <span>🌸</span>
+        <span id="ktMasteredScoreText">0 / 552</span>
+      </div>
+
+      <!-- Back to Full Notes Button -->
+      <a href="index.html" class="header-action-btn notes-nav-btn" title="Return to Complete 77-Page Study Notes">
+        <span>⬅️</span> Full Notes
+      </a>
+
+      <!-- 10 Reader Fonts Picker -->
+      <div class="font-picker-wrapper">
+        <button id="fontPickerBtn" class="header-action-btn" title="Change Reader Font (10 Curated Fonts)">
+          <span>🔤</span> Font
+        </button>
+        <div class="font-picker-menu" id="fontPickerMenu">
+          <div class="font-picker-title">Select Reader Font</div>
+          <button class="font-option-btn active" data-font="Plus Jakarta Sans" style="font-family: 'Plus Jakarta Sans', sans-serif;">Plus Jakarta Sans <span>✓</span></button>
+          <button class="font-option-btn" data-font="Inter" style="font-family: 'Inter', sans-serif;">Inter</button>
+          <button class="font-option-btn" data-font="Merriweather" style="font-family: 'Merriweather', serif;">Merriweather</button>
+          <button class="font-option-btn" data-font="Lora" style="font-family: 'Lora', serif;">Lora</button>
+          <button class="font-option-btn" data-font="Roboto Serif" style="font-family: 'Roboto Serif', serif;">Roboto Serif</button>
+          <button class="font-option-btn" data-font="Source Serif 4" style="font-family: 'Source Serif 4', serif;">Source Serif 4</button>
+          <button class="font-option-btn" data-font="Outfit" style="font-family: 'Outfit', sans-serif;">Outfit</button>
+          <button class="font-option-btn" data-font="Literata" style="font-family: 'Literata', serif;">Literata</button>
+          <button class="font-option-btn" data-font="Crimson Pro" style="font-family: 'Crimson Pro', serif;">Crimson Pro</button>
+          <button class="font-option-btn" data-font="Nunito" style="font-family: 'Nunito', sans-serif;">Nunito</button>
+        </div>
+      </div>
+
+      <!-- Highlighter Toggle -->
+      <button id="highlighterToggleBtn" class="header-action-btn" title="Toggle Text Highlighter">
+        <span>🖍️</span> Highlighter
+      </button>
+
+      <!-- Night Mode Toggle Icon -->
+      <button id="nightModeToggleBtn" class="header-action-btn" title="Toggle Night Theme">
+        <span id="nightIcon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Workspace Layout (Sidebar + Cards) -->
+  <div class="workspace-layout">
+    
+    <!-- Left Sidebar: Chapter Filter -->
+    <aside class="syllabus-sidebar" id="syllabusSidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-title">Filter by Chapter</div>
+      </div>
+      <div class="sidebar-tree">
+        <button class="sidebar-ch-btn" onclick="filterByChapter('all')">
+          <span>📚 All Chapters</span>
+          <span style="font-family: var(--font-mono); font-size: 11px;">552 terms</span>
+        </button>
+        <button class="sidebar-ch-btn" onclick="filterByChapter(1)">
+          <span>1. Political Ideologies</span>
+          <span style="font-family: var(--font-mono); font-size: 11px;">Ch 1</span>
+        </button>
+        <button class="sidebar-ch-btn" onclick="filterByChapter(2)">
+          <span>2. Liberalism & State</span>
+          <span style="font-family: var(--font-mono); font-size: 11px;">Ch 2</span>
+        </button>
+        <button class="sidebar-ch-btn" onclick="filterByChapter(3)">
+          <span>3. Marxism & State</span>
+          <span style="font-family: var(--font-mono); font-size: 11px;">Ch 3</span>
+        </button>
+        <button class="sidebar-ch-btn" onclick="filterByChapter(4)">
+          <span>4. Socialism & Fascism</span>
+          <span style="font-family: var(--font-mono); font-size: 11px;">Ch 4</span>
+        </button>
+        <button class="sidebar-ch-btn" onclick="filterByChapter(5)">
+          <span>5. Gandhism</span>
+          <span style="font-family: var(--font-mono); font-size: 11px;">Ch 5</span>
+        </button>
+        <button class="sidebar-ch-btn" onclick="filterByChapter(6)">
+          <span>6. Feminism</span>
+          <span style="font-family: var(--font-mono); font-size: 11px;">Ch 6</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content-area" id="mainContentArea">
+      <div class="keyterms-hero">
+        <span class="hero-eyebrow">UPSC PSIR PAPER 1A • FOUNDATIONAL VOCABULARY</span>
+        <h2 class="hero-title">Topic-Wise Conceptual Key Terms</h2>
+        <p class="hero-sub">Complete active recall suite with 3-choice review evaluation (✓ Mastered, ✕ Needs Work, ○ In Review). Every 10 terms features a tough UPSC checkpoint quiz!</p>
+      </div>
+
+      <!-- Container where Key Terms & Checkpoint MCQs are rendered -->
+      <div id="keytermsCardsContainer" style="display: flex; flex-direction: column; gap: 16px;">
+        <!-- Filled by renderKeyterms() -->
+      </div>
+    </main>
+
+  </div>
+
+  <!-- Toast Notification Pill -->
+  <div id="toastPill">Term Mastered! 🌸</div>
+
+  <!-- Load Keyterms Data -->
+  <script src="keyterms_data.js"></script>
+
+  <!-- Interactive Logic Script -->
+  <script>
+    (function () {
+      'use strict';
+
+      const STORAGE_KEY = 'psir_keyterms_scores';
+      let scores = {};
+      try {
+        const stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) scores = JSON.parse(stored);
+      } catch (e) { scores = {}; }
+
+      function saveScores() {
+        try { localStorage.setItem(STORAGE_KEY, JSON.stringify(scores)); } catch (e) {}
+      }
+
+      const MCQ_STORAGE_KEY = 'psir_kt_mcq_answers';
+      let mcqAnswers = {};
+      try {
+        const storedMcq = localStorage.getItem(MCQ_STORAGE_KEY);
+        if (storedMcq) mcqAnswers = JSON.parse(storedMcq);
+      } catch (e) { mcqAnswers = {}; }
+
+      // Flowers & Hearts Canvas Shower
+      const canvas = document.getElementById('celebrationCanvas');
+      const ctx = canvas.getContext('2d');
+      let particles = [];
+      let isShowerActive = false;
+
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+      window.addEventListener('resize', resizeCanvas);
+      resizeCanvas();
+
+      class CelebrationParticle {
+        constructor() {
+          this.x = Math.random() * canvas.width;
+          this.y = -25;
+          this.isHeart = Math.random() > 0.45;
+          this.size = Math.random() * 12 + 8;
+          this.speedY = Math.random() * 3.5 + 2.5;
+          this.speedX = (Math.random() - 0.5) * 2.8;
+          this.rotation = Math.random() * 360;
+          this.rotSpeed = (Math.random() - 0.5) * 5;
+          const flowerColors = ['#f43f5e', '#fb7185', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899', '#38bdf8'];
+          const heartColors = ['#ef4444', '#ec4899', '#f43f5e', '#e11d48', '#ff4d6d'];
+          this.color = this.isHeart 
+            ? heartColors[Math.floor(Math.random() * heartColors.length)]
+            : flowerColors[Math.floor(Math.random() * flowerColors.length)];
+        }
+        update() {
+          this.y += this.speedY;
+          this.x += this.speedX;
+          this.rotation += this.rotSpeed;
+        }
+        draw() {
+          ctx.save();
+          ctx.translate(this.x, this.y);
+          ctx.rotate((this.rotation * Math.PI) / 180);
+          ctx.fillStyle = this.color;
+          if (this.isHeart) {
+            const s = this.size * 0.7;
+            ctx.beginPath();
+            ctx.moveTo(0, s * 0.3);
+            ctx.bezierCurveTo(-s / 2, -s / 2, -s, s / 3, 0, s);
+            ctx.bezierCurveTo(s, s / 3, s / 2, -s / 2, 0, s * 0.3);
+            ctx.closePath();
+            ctx.fill();
+          } else {
+            ctx.beginPath();
+            ctx.ellipse(0, 0, this.size, this.size * 0.55, 0, 0, Math.PI * 2);
+            ctx.fill();
+          }
+          ctx.restore();
+        }
+      }
+
+      window.triggerCelebrationShower = function (count = 75) {
+        for (let i = 0; i < count; i++) particles.push(new CelebrationParticle());
+        if (!isShowerActive) {
+          isShowerActive = true;
+          animateCelebration();
+        }
+      };
+
+      function animateCelebration() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        let active = 0;
+        particles.forEach(p => {
+          p.update();
+          p.draw();
+          if (p.y < canvas.height + 30) active++;
+        });
+        if (active > 0) requestAnimationFrame(animateCelebration);
+        else { isShowerActive = false; ctx.clearRect(0, 0, canvas.width, canvas.height); }
+      }
+
+      function showToast(msg) {
+        const toast = document.getElementById('toastPill');
+        toast.textContent = msg;
+        toast.style.display = 'block';
+        setTimeout(() => { toast.style.display = 'none'; }, 2400);
+      }
+
+      // 10 Reader Fonts
+      const fontPickerBtn = document.getElementById('fontPickerBtn');
+      const fontPickerMenu = document.getElementById('fontPickerMenu');
+      const savedFont = localStorage.getItem('psir_reader_font') || 'Plus Jakarta Sans';
+
+      function applyReaderFont(fontName) {
+        const fontMap = {
+          'Plus Jakarta Sans': "'Plus Jakarta Sans', sans-serif",
+          'Inter': "'Inter', sans-serif",
+          'Merriweather': "'Merriweather', serif",
+          'Lora': "'Lora', serif",
+          'Roboto Serif': "'Roboto Serif', serif",
+          'Source Serif 4': "'Source Serif 4', serif",
+          'Outfit': "'Outfit', sans-serif",
+          'Literata': "'Literata', serif",
+          'Crimson Pro': "'Crimson Pro', serif",
+          'Nunito': "'Nunito', sans-serif"
+        };
+        const family = fontMap[fontName] || fontMap['Plus Jakarta Sans'];
+        document.documentElement.style.setProperty('--font-reader', family);
+        document.body.style.fontFamily = family;
+        localStorage.setItem('psir_reader_font', fontName);
+
+        document.querySelectorAll('.font-option-btn').forEach(btn => {
+          const match = btn.getAttribute('data-font') === fontName;
+          btn.classList.toggle('active', match);
+          btn.querySelector('span')?.remove();
+          if (match) {
+            const check = document.createElement('span');
+            check.textContent = '✓';
+            btn.appendChild(check);
+          }
+        });
+      }
+
+      fontPickerBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        fontPickerMenu.classList.toggle('show');
+      });
+      document.addEventListener('click', (e) => {
+        if (!fontPickerMenu.contains(e.target) && e.target !== fontPickerBtn) fontPickerMenu.classList.remove('show');
+      });
+      document.querySelectorAll('.font-option-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const font = btn.getAttribute('data-font');
+          applyReaderFont(font);
+          fontPickerMenu.classList.remove('show');
+          showToast(`Font: ${font}`);
+        });
+      });
+      applyReaderFont(savedFont);
+
+      // Night Mode
+      const nightModeToggleBtn = document.getElementById('nightModeToggleBtn');
+      const nightIcon = document.getElementById('nightIcon');
+      const isNightSaved = localStorage.getItem('psir_night_mode') === 'true';
+
+      function setNightMode(enable) {
+        document.body.classList.toggle('dark-mode', enable);
+        nightIcon.textContent = enable ? '☀️' : '🌙';
+        localStorage.setItem('psir_night_mode', enable);
+      }
+      if (isNightSaved) setNightMode(true);
+      nightModeToggleBtn.addEventListener('click', () => {
+        const cur = document.body.classList.contains('dark-mode');
+        setNightMode(!cur);
+        showToast(!cur ? 'Night Mode Activated' : 'Light Paper Mode Activated');
+      });
+
+      // Highlighter
+      const highlighterToggleBtn = document.getElementById('highlighterToggleBtn');
+      const highlighterFloatToolbar = document.getElementById('highlighterFloatToolbar');
+      let isHighlighterActive = false;
+
+      highlighterToggleBtn.addEventListener('click', () => {
+        isHighlighterActive = !isHighlighterActive;
+        highlighterToggleBtn.classList.toggle('active-tool', isHighlighterActive);
+        showToast(isHighlighterActive ? 'Highlighter On (Select text)' : 'Highlighter Off');
+      });
+
+      document.addEventListener('mouseup', (e) => {
+        const selection = window.getSelection();
+        if (!selection || selection.isCollapsed || !selection.toString().trim()) {
+          if (!highlighterFloatToolbar.contains(e.target)) highlighterFloatToolbar.style.display = 'none';
+          return;
+        }
+        const range = selection.getRangeAt(0);
+        const rect = range.getBoundingClientRect();
+        if (rect.width > 0) {
+          highlighterFloatToolbar.style.top = `${window.scrollY + rect.top - 46}px`;
+          highlighterFloatToolbar.style.left = `${window.scrollX + rect.left + rect.width / 2 - 80}px`;
+          highlighterFloatToolbar.style.display = 'flex';
+        }
+      });
+
+      highlighterFloatToolbar.querySelectorAll('.color-swatch-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const color = btn.getAttribute('data-color');
+          const selection = window.getSelection();
+          if (selection && selection.rangeCount > 0) {
+            const mark = document.createElement('mark');
+            mark.className = `user-highlight ${color}`;
+            try {
+              selection.getRangeAt(0).surroundContents(mark);
+              selection.removeAllRanges();
+              showToast('Highlighted 🖍️');
+            } catch (err) {}
+          }
+          highlighterFloatToolbar.style.display = 'none';
+        });
+      });
+
+      document.getElementById('removeHighlightBtn').addEventListener('click', (e) => {
+        e.stopPropagation();
+        const selection = window.getSelection();
+        if (selection && selection.rangeCount > 0) {
+          const node = selection.anchorNode.parentElement;
+          if (node && node.tagName === 'MARK') {
+            const parent = node.parentNode;
+            while (node.firstChild) parent.insertBefore(node.firstChild, node);
+            parent.removeChild(node);
+          }
+        }
+        highlighterFloatToolbar.style.display = 'none';
+      });
+
+      // Interactive Score Handling
+      window.setTermScore = function (id, choice) {
+        if (scores[id] === choice) delete scores[id];
+        else {
+          scores[id] = choice;
+          if (choice === 'right') {
+            window.triggerCelebrationShower(75);
+            showToast('🌸 Term Mastered! Celebration');
+          } else if (choice === 'wrong') showToast('❌ Flagged for Revision');
+          else if (choice === 'circle') showToast('○ Marked for Review');
+        }
+        applyScoresToCards();
+        updateScoreBadges();
+        saveScores();
+      };
+
+      function applyScoresToCards() {
+        document.querySelectorAll('.keyterm-card').forEach(card => {
+          const id = card.getAttribute('data-id');
+          const choice = scores[id];
+          card.classList.remove('status-right', 'status-wrong', 'status-circle');
+          if (choice) card.classList.add(`status-${choice}`);
+
+          const btnR = card.querySelector('.eval-btn-right');
+          const btnW = card.querySelector('.eval-btn-wrong');
+          const btnC = card.querySelector('.eval-btn-circle');
+          if (btnR) btnR.classList.toggle('selected-right', choice === 'right');
+          if (btnW) btnW.classList.toggle('selected-wrong', choice === 'wrong');
+          if (btnC) btnC.classList.toggle('selected-circle', choice === 'circle');
+        });
+      }
+
+      function updateScoreBadges() {
+        if (!window.KEYTERMS_DATA) return;
+        const total = window.KEYTERMS_DATA.terms.length;
+        const rCount = Object.values(scores).filter(v => v === 'right').length;
+        const wCount = Object.values(scores).filter(v => v === 'wrong').length;
+        const cCount = Object.values(scores).filter(v => v === 'circle').length;
+
+        document.getElementById('ktMasteredScoreText').textContent = `${rCount} / ${total}`;
+        document.getElementById('ktCountAll').textContent = total;
+        document.getElementById('ktCountRight').textContent = rCount;
+        document.getElementById('ktCountWrong').textContent = wCount;
+        document.getElementById('ktCountCircle').textContent = cCount;
+      }
+
+      // Checkpoint MCQ Logic (Every 10 Terms)
+      window.handleCheckpointChoice = function (cpId, chosenIdx, correctIdx) {
+        mcqAnswers[cpId] = chosenIdx;
+        try { localStorage.setItem(MCQ_STORAGE_KEY, JSON.stringify(mcqAnswers)); } catch (e) {}
+
+        const wrap = document.getElementById(`cp_${cpId}`);
+        if (!wrap) return;
+
+        wrap.querySelectorAll('.cp-option-btn').forEach(btn => {
+          const idx = parseInt(btn.getAttribute('data-opt-index'), 10);
+          btn.classList.remove('selected-correct', 'selected-wrong', 'reveal-correct');
+          if (idx === correctIdx) {
+            btn.classList.add(chosenIdx === correctIdx ? 'selected-correct' : 'reveal-correct');
+          } else if (idx === chosenIdx) {
+            btn.classList.add('selected-wrong');
+          }
+        });
+
+        const expl = document.getElementById(`expl_${cpId}`);
+        if (expl) expl.style.display = 'block';
+
+        if (chosenIdx === correctIdx) {
+          window.triggerCelebrationShower(85);
+          showToast('🎯 Checkpoint Passed! Concept Mastered 🌸❤️');
+        } else {
+          showToast('❌ Incorrect. Review explanation below!');
+        }
+      };
+
+      // Rendering Keyterms & MCQs Every 10 Terms
+      let activeFilter = 'all';
+      let activeChapter = 'all';
+
+      window.filterByChapter = function (ch) {
+        activeChapter = ch;
+        renderKeyterms();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
+
+      function renderKeyterms() {
+        if (!window.KEYTERMS_DATA) return;
+        const container = document.getElementById('keytermsCardsContainer');
+        container.innerHTML = '';
+
+        let terms = window.KEYTERMS_DATA.terms;
+        if (activeChapter !== 'all') {
+          terms = terms.filter(t => t.chapter_num === parseInt(activeChapter, 10));
+        }
+
+        if (activeFilter !== 'all') {
+          terms = terms.filter(t => scores[t.id] === activeFilter);
+        }
+
+        const checkpoints = window.KEYTERMS_DATA.checkpoints;
+        const letters = ['A', 'B', 'C', 'D'];
+
+        terms.forEach((term, idx) => {
+          const choice = scores[term.id];
+          const card = document.createElement('div');
+          card.className = `keyterm-card ${choice ? `status-${choice}` : ''}`;
+          card.setAttribute('data-id', term.id);
+
+          card.innerHTML = `
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right ${choice === 'right' ? 'selected-right' : ''}" 
+                      title="Mastered (Right Sign - Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('${term.id}', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong ${choice === 'wrong' ? 'selected-wrong' : ''}" 
+                      title="Needs Work (Wrong Sign)" 
+                      onclick="setTermScore('${term.id}', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle ${choice === 'circle' ? 'selected-circle' : ''}" 
+                      title="In Review (Circle Sign)" 
+                      onclick="setTermScore('${term.id}', 'circle')">○</button>
+            </div>
+            <div class="keyterm-body">
+              <div class="keyterm-header-line">
+                <span class="keyterm-name">${term.term}</span>
+                <div class="keyterm-tags">
+                  ${term.scholar ? `<span class="scholar-tag">${term.scholar}</span>` : ''}
+                  <span class="page-tag">P.${term.page}</span>
+                </div>
+              </div>
+              <p class="keyterm-def">${term.definition}</p>
+              <div class="keyterm-topic-sub">Chapter ${term.chapter_num} • ${term.topic}</div>
+            </div>
+          `;
+          container.appendChild(card);
+
+          // After every 10 terms, insert a Checkpoint MCQ!
+          if ((idx + 1) % 10 === 0 && activeFilter === 'all') {
+            const cpIdx = Math.floor((idx + 1) / 10);
+            const cp = checkpoints[cpIdx - 1];
+            if (cp) {
+              const savedAns = mcqAnswers[cp.id];
+              const cpBox = document.createElement('div');
+              cpBox.className = 'checkpoint-mcq-wrap';
+              cpBox.id = `cp_${cp.id}`;
+
+              let cpHtml = `
+                <div class="checkpoint-banner">
+                  <span class="checkpoint-tag">🎯 10-TERM CHECKPOINT QUIZ #${cpIdx}</span>
+                  <span style="font-size: 11.5px; font-weight: 700; color: var(--accent-heading);">UPSC PSIR Conceptual Challenge</span>
+                </div>
+                <div class="checkpoint-q-text">${cp.question.replace(/\n/g, '<br>')}</div>
+                <div class="checkpoint-options-grid">
+              `;
+
+              cp.options.forEach((opt, oIdx) => {
+                let optClass = '';
+                if (savedAns !== undefined) {
+                  if (oIdx === cp.correctIndex) optClass = (savedAns === cp.correctIndex) ? 'selected-correct' : 'reveal-correct';
+                  if (savedAns === oIdx && savedAns !== cp.correctIndex) optClass = 'selected-wrong';
+                }
+                cpHtml += `
+                  <button class="cp-option-btn ${optClass}" 
+                          data-opt-index="${oIdx}" 
+                          onclick="handleCheckpointChoice('${cp.id}', ${oIdx}, ${cp.correctIndex})">
+                    <span class="cp-letter">${letters[oIdx]}</span>
+                    <span>${opt}</span>
+                  </button>
+                `;
+              });
+              cpHtml += `</div>`;
+
+              const showExpl = savedAns !== undefined ? 'style="display: block;"' : 'style="display: none;"';
+              cpHtml += `
+                <div class="cp-explanation-box" id="expl_${cp.id}" ${showExpl}>
+                  <div style="font-weight: 800; font-size: 11px; color: var(--accent-heading); margin-bottom: 4px; text-transform: uppercase;">
+                    💡 Conceptual Source & Answer Explanation:
+                  </div>
+                  <div>${cp.explanation}</div>
+                </div>
+              `;
+              cpBox.innerHTML = cpHtml;
+              container.appendChild(cpBox);
+            }
+          }
+        });
+
+        applyScoresToCards();
+        updateScoreBadges();
+      }
+
+      // Filter Buttons Click Handling
+      document.querySelectorAll('.top-filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.top-filter-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.getAttribute('data-filter');
+          renderKeyterms();
+        });
+      });
+
+      // Sidebar Drawer Toggle
+      const toggleSidebarBtn = document.getElementById('toggleSidebarBtn');
+      const sidebar = document.getElementById('syllabusSidebar');
+      toggleSidebarBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('collapsed');
+      });
+
+      renderKeyterms();
+      updateScoreBadges();
+      console.log('✅ PSIR Key Terms & Flashcards Suite Ready.');
+    })();
+  </script>
+</body>
+</html>

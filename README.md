@@ -1,17 +1,19 @@
-# PSIRv2 • Sarrthi IAS Interactive Study Suite
+# PSIRv2 • Interactive Master Study Suite
 > **UPSC Political Science and International Relations (Paper 1A: Political Theory & Thought)**  
-> Complete interactive study companion based on Sarrthi IAS Class Notes by **Vivek Waghmare**.
+> Complete interactive study companion based on PSIR Class Notes by **Vivek Waghmare**.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![UPSC PSIR](https://img.shields.io/badge/UPSC-PSIR_Paper_1A-orange.svg)](#)
 [![Chapters](https://img.shields.io/badge/Chapters-6_Complete-green.svg)](#)
-[![Interactive Points](https://img.shields.io/badge/Evaluated_Points-852-rose.svg)](#)
+[![Evaluated Points](https://img.shields.io/badge/Evaluated_Points-852-rose.svg)](#)
+[![Key Terms](https://img.shields.io/badge/Key_Terms-552-blue.svg)](#)
+[![Tough MCQs](https://img.shields.io/badge/Tough_MCQs-295-purple.svg)](#)
 
 ---
 
 ## 🌟 Overview
 
-**PSIRv2** transforms the complete 77-page Sarrthi IAS PSIR Class Notes into a high-retention, interactive digital learning environment. Every static bullet point is replaced with a 3-choice micro-evaluation system, coupled with immediate positive reinforcement (flower petal showers and harmonic audio feedback).
+**PSIRv2** transforms the complete 77-page PSIR Class Notes into a high-retention, interactive digital learning environment. Every static bullet point is replaced with a 3-choice micro-evaluation system, coupled with immediate positive reinforcement (flower petal & heart showers, custom typography, and toughest UPSC MCQs). Includes a dedicated **Key Terms & Flashcards Suite** (`keyterms.html`) with checkpoint quizzes every 10 terms.
 
 ---
 
