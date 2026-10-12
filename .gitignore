@@ -10,9 +10,6 @@ app.js
 data.js
 dopamine.js
 extracted_topics.txt
-icon-192.png
-icon-512.png
-manifest.json
 marx_slides_data.js
 master_catalog.js
 notion_unit18.css
@@ -21,7 +18,6 @@ page2.js
 page3.js
 psir_database.js
 styles.css
-sw.js
 thinker_templates_data.json
 unit18.js
 unit18_data.js

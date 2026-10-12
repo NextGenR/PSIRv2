@@ -3,17 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sarrthi IAS PSIR • Interactive Complete PDF Study Suite (All 6 Chapters • 77 Pages)</title>
-  <meta name="description" content="Complete Interactive Study Suite based on Sarrthi IAS PSIR Class Notes by Vivek Waghmare. Full 77-page syllabus with live interactive 3-choice evaluation, flower showers, and complete index.">
+  <title>PSIR Master Study Suite • Interactive Notes & Evaluation</title>
+  <meta name="description" content="Interactive study suite for UPSC PSIR Paper 1A. All 6 chapters with 3-choice review system, key terms, custom typography, text highlighter, and active recall.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📜</text></svg>">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#8b3a2b">
   
+  <!-- 10 Reader Fonts from Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Outfit:wght@500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Roboto+Serif:opsz,wght@8..144,400;8..144,600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Outfit:wght@500;600;700;800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Nunito:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   
   <style>
     /* ========================================================
-       SARRTHI IAS INTERACTIVE PDF STUDY SUITE DESIGN SYSTEM
+       PSIR INTERACTIVE STUDY SUITE DESIGN SYSTEM
        ======================================================== */
     :root {
       --bg-app: #f4f6fa;
@@ -28,12 +31,11 @@
       --text-muted: #475569;
       --text-dim: #64748b;
       
-      --rust-heading: #8b3a2b; /* Authentic header color from Sarrthi PDF */
-      --rust-bg: rgba(139, 58, 43, 0.08);
-      --rust-border: rgba(139, 58, 43, 0.2);
+      --accent-heading: #8b3a2b;
+      --accent-bg: rgba(139, 58, 43, 0.08);
+      --accent-border: rgba(139, 58, 43, 0.2);
       
       --brand-primary: #0284c7;
-      --brand-accent: #b45309;
       
       --green-check: #10b981;
       --green-bg: #ecfdf5;
@@ -48,38 +50,44 @@
       --circle-border: #fde68a;
 
       --font-display: 'Outfit', sans-serif;
-      --font-body: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      --font-reader: 'Plus Jakarta Sans', -apple-system, sans-serif;
       --font-mono: 'JetBrains Mono', monospace;
 
       --sidebar-width: 320px;
       --transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
+    /* THEME: Sleek Dark / Night Mode */
     body.dark-mode {
-      --bg-app: #090d16;
-      --paper-bg: #111726;
-      --paper-border: #1e293b;
+      --bg-app: #0d1117;
+      --paper-bg: #161b22;
+      --paper-border: #30363d;
       --paper-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.6);
       
-      --sidebar-bg: #0f1422;
-      --sidebar-border: #1e293b;
+      --sidebar-bg: #161b22;
+      --sidebar-border: #30363d;
       
-      --text-main: #f1f5f9;
-      --text-muted: #cbd5e1;
-      --text-dim: #94a3b8;
+      --text-main: #c9d1d9;
+      --text-muted: #8b949e;
+      --text-dim: #6e7681;
       
-      --rust-heading: #fb7185;
-      --rust-bg: rgba(251, 113, 133, 0.12);
-      --rust-border: rgba(251, 113, 133, 0.3);
+      --accent-heading: #f78166;
+      --accent-bg: rgba(247, 129, 102, 0.12);
+      --accent-border: rgba(247, 129, 102, 0.3);
       
-      --green-bg: rgba(16, 185, 129, 0.12);
-      --green-border: rgba(16, 185, 129, 0.3);
+      --brand-primary: #58a6ff;
       
-      --red-bg: rgba(239, 68, 68, 0.12);
-      --red-border: rgba(239, 68, 68, 0.3);
+      --green-check: #3fb950;
+      --green-bg: rgba(63, 185, 80, 0.12);
+      --green-border: rgba(63, 185, 80, 0.35);
       
-      --circle-bg: rgba(245, 158, 11, 0.12);
-      --circle-border: rgba(245, 158, 11, 0.3);
+      --red-wrong: #f85149;
+      --red-bg: rgba(248, 81, 73, 0.12);
+      --red-border: rgba(248, 81, 73, 0.35);
+      
+      --circle-neutral: #d29922;
+      --circle-bg: rgba(210, 153, 34, 0.12);
+      --circle-border: rgba(210, 153, 34, 0.35);
     }
 
     * {
@@ -91,17 +99,17 @@
     body {
       background: var(--bg-app);
       color: var(--text-main);
-      font-family: var(--font-body);
+      font-family: var(--font-reader);
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       line-height: 1.6;
       overflow-x: hidden;
-      transition: background 0.25s ease;
+      transition: background 0.25s ease, color 0.25s ease;
     }
 
-    /* FULLSCREEN FLOWER DROP CANVAS */
-    #flowerCanvas {
+    /* FULLSCREEN FLOWER & HEART DROP CANVAS */
+    #celebrationCanvas {
       position: fixed;
       top: 0;
       left: 0;
@@ -112,7 +120,7 @@
     }
 
     /* ========================================================
-       TOP CONTROLS & SARRTHI APP BAR
+       TOP APP BAR
        ======================================================== */
     .app-top-header {
       background: var(--paper-bg);
@@ -120,15 +128,15 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      padding: 10px 20px;
+      padding: 10px 18px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 16px;
+      gap: 12px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.03);
     }
 
-    .brand-wrap {
+    .brand-section {
       display: flex;
       align-items: center;
       gap: 12px;
@@ -138,9 +146,9 @@
       background: rgba(0,0,0,0.04);
       border: 1px solid var(--paper-border);
       color: var(--text-main);
-      font-size: 15px;
+      font-size: 13.5px;
       font-weight: 700;
-      padding: 6px 12px;
+      padding: 7px 12px;
       border-radius: 8px;
       cursor: pointer;
       display: flex;
@@ -148,10 +156,13 @@
       gap: 6px;
       transition: var(--transition);
     }
+    body.dark-mode .toggle-sidebar-btn {
+      background: rgba(255,255,255,0.05);
+    }
     .toggle-sidebar-btn:hover {
-      background: var(--rust-bg);
-      color: var(--rust-heading);
-      border-color: var(--rust-border);
+      background: var(--accent-bg);
+      color: var(--accent-heading);
+      border-color: var(--accent-border);
     }
 
     .brand-title-wrap {
@@ -160,7 +171,7 @@
     }
     .brand-title {
       font-family: var(--font-display);
-      font-size: 15px;
+      font-size: 14.5px;
       font-weight: 800;
       color: var(--text-main);
       letter-spacing: -0.3px;
@@ -169,77 +180,107 @@
       font-size: 11px;
       color: var(--text-dim);
       font-weight: 600;
+    }
+
+    /* TOP BAR FILTER VIEW BUTTONS */
+    .topbar-filters {
+      display: flex;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.03);
+      border: 1px solid var(--paper-border);
+      padding: 3px;
+      border-radius: 10px;
+      gap: 3px;
+    }
+    body.dark-mode .topbar-filters {
+      background: rgba(255, 255, 255, 0.03);
+    }
+    .top-filter-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 5px 11px;
+      border-radius: 7px;
+      cursor: pointer;
+      transition: var(--transition);
       display: flex;
       align-items: center;
       gap: 5px;
+      white-space: nowrap;
     }
-    .brand-sub span {
-      color: var(--brand-primary);
-      font-weight: 700;
-    }
-
-    /* SEARCH BAR IN HEADER */
-    .header-search-wrap {
-      flex: 1;
-      max-width: 420px;
-      position: relative;
-    }
-    .header-search-input {
-      width: 100%;
-      background: rgba(0, 0, 0, 0.03);
-      border: 1px solid var(--paper-border);
-      padding: 8px 14px 8px 36px;
-      border-radius: 20px;
-      font-size: 13px;
-      font-family: inherit;
+    .top-filter-btn:hover {
       color: var(--text-main);
-      outline: none;
-      transition: var(--transition);
     }
-    body.dark-mode .header-search-input {
-      background: rgba(255, 255, 255, 0.05);
-    }
-    .header-search-input:focus {
-      border-color: var(--rust-heading);
+    .top-filter-btn.active {
       background: var(--paper-bg);
-      box-shadow: 0 0 0 3px rgba(139, 58, 43, 0.15);
-    }
-    .header-search-icon {
-      position: absolute;
-      left: 12px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 14px;
-      color: var(--text-dim);
-      pointer-events: none;
-    }
-    .search-clear-btn {
-      position: absolute;
-      right: 12px;
-      top: 50%;
-      transform: translateY(-50%);
-      background: transparent;
-      border: none;
-      color: var(--text-dim);
-      cursor: pointer;
-      font-size: 14px;
-      display: none;
+      color: var(--text-main);
+      border-color: var(--paper-border);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
 
+    /* TOP BAR ACTIONS & TOOLS */
     .header-actions {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       flex-shrink: 0;
     }
 
+    .header-action-btn {
+      background: transparent;
+      border: 1px solid var(--paper-border);
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 6px 11px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition);
+      text-decoration: none;
+    }
+    .header-action-btn:hover {
+      background: rgba(0, 0, 0, 0.04);
+      color: var(--text-main);
+      border-color: var(--accent-heading);
+    }
+    body.dark-mode .header-action-btn:hover {
+      background: rgba(255, 255, 255, 0.05);
+    }
+    .header-action-btn.active-tool {
+      background: var(--accent-bg);
+      color: var(--accent-heading);
+      border-color: var(--accent-heading);
+    }
+
+    /* KEY TERMS BUTTON */
+    .keyterms-nav-btn {
+      background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+      color: #ffffff !important;
+      border: none;
+      padding: 6px 13px;
+      box-shadow: 0 2px 8px rgba(2, 132, 199, 0.3);
+    }
+    .keyterms-nav-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.45);
+      border-color: transparent !important;
+    }
+
+    /* MASTER PROGRESS PILL */
     .header-score-pill {
       background: var(--green-bg);
       border: 1px solid var(--green-border);
       color: var(--green-check);
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 800;
-      padding: 6px 14px;
+      padding: 6px 12px;
       border-radius: 999px;
       display: flex;
       align-items: center;
@@ -251,115 +292,118 @@
       transform: scale(1.03);
     }
 
-    .header-btn {
-      background: transparent;
+    /* FONT PICKER DROPDOWN */
+    .font-picker-wrapper {
+      position: relative;
+    }
+    .font-picker-menu {
+      position: absolute;
+      top: calc(100% + 8px);
+      right: 0;
+      background: var(--paper-bg);
       border: 1px solid var(--paper-border);
-      color: var(--text-muted);
-      font-family: inherit;
-      font-size: 12px;
-      font-weight: 700;
-      padding: 6px 12px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      width: 240px;
+      padding: 8px;
+      display: none;
+      flex-direction: column;
+      gap: 3px;
+      z-index: 1000;
+    }
+    .font-picker-menu.show {
+      display: flex;
+    }
+    .font-picker-title {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--text-dim);
+      padding: 6px 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .font-option-btn {
+      background: transparent;
+      border: none;
+      text-align: left;
+      padding: 8px 12px;
       border-radius: 8px;
+      font-size: 13px;
+      color: var(--text-main);
       cursor: pointer;
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      gap: 5px;
       transition: var(--transition);
     }
-    .header-btn:hover {
+    .font-option-btn:hover {
       background: rgba(0, 0, 0, 0.04);
-      color: var(--text-main);
-      border-color: var(--rust-heading);
+      color: var(--accent-heading);
+    }
+    body.dark-mode .font-option-btn:hover {
+      background: rgba(255, 255, 255, 0.05);
+    }
+    .font-option-btn.active {
+      background: var(--accent-bg);
+      color: var(--accent-heading);
+      font-weight: 700;
     }
 
-    /* ========================================================
-       TOP NAVIGATION TABS (CHAPTERS SELECTOR)
-       ======================================================== */
-    .topics-nav-bar {
+    /* FLOATING HIGHLIGHTER COLOR PALETTE */
+    #highlighterFloatToolbar {
+      position: absolute;
       background: var(--paper-bg);
-      border-bottom: 1px solid var(--paper-border);
-      padding: 8px 20px;
-      display: flex;
-      gap: 8px;
-      overflow-x: auto;
-      z-index: 90;
-      scrollbar-width: thin;
-    }
-    .topic-tab-btn {
-      background: transparent;
-      border: 1px solid transparent;
-      color: var(--text-muted);
-      font-family: var(--font-display);
-      font-size: 12.5px;
-      font-weight: 700;
-      padding: 7px 14px;
-      border-radius: 8px;
-      cursor: pointer;
-      white-space: nowrap;
-      transition: var(--transition);
-      display: flex;
+      border: 1px solid var(--paper-border);
+      border-radius: 30px;
+      padding: 5px 10px;
+      display: none;
       align-items: center;
       gap: 6px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      z-index: 10000;
     }
-    .topic-tab-btn:hover {
-      background: rgba(0, 0, 0, 0.04);
-      color: var(--text-main);
+    .color-swatch-btn {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      border: 2px solid #ffffff;
+      cursor: pointer;
+      transition: transform 0.15s ease;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     }
-    .topic-tab-btn.active {
-      background: var(--rust-bg);
-      color: var(--rust-heading);
-      border-color: var(--rust-border);
+    .color-swatch-btn:hover {
+      transform: scale(1.25);
     }
-    .tab-counter-badge {
-      font-size: 11px;
-      font-family: var(--font-mono);
+    .clear-highlight-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-dim);
+      cursor: pointer;
+      font-size: 13px;
       padding: 2px 6px;
       border-radius: 6px;
-      background: rgba(0,0,0,0.06);
-    }
-    .topic-tab-btn.active .tab-counter-badge {
-      background: rgba(139, 58, 43, 0.15);
-      color: var(--rust-heading);
-    }
-
-    /* FILTER PILLS (STATUS SELECTOR) */
-    .status-filter-bar {
-      background: var(--paper-bg);
-      border-bottom: 1px solid var(--paper-border);
-      padding: 6px 20px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 12px;
-      overflow-x: auto;
-    }
-    .status-filter-label {
-      font-weight: 700;
-      color: var(--text-dim);
-      margin-right: 4px;
-    }
-    .filter-chip {
-      background: transparent;
-      border: 1px solid var(--paper-border);
-      color: var(--text-muted);
-      padding: 3px 10px;
-      border-radius: 999px;
-      font-size: 11.5px;
-      font-weight: 700;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 5px;
       transition: var(--transition);
     }
-    .filter-chip:hover {
-      background: rgba(0,0,0,0.03);
+    .clear-highlight-btn:hover {
+      color: var(--red-wrong);
+      background: var(--red-bg);
     }
-    .filter-chip.active {
-      background: var(--text-main);
-      color: var(--paper-bg);
-      border-color: var(--text-main);
+
+    /* USER HIGHLIGHT MARKS */
+    mark.user-highlight {
+      border-radius: 3px;
+      padding: 1px 3px;
+      color: inherit;
     }
+    mark.user-highlight.yellow { background-color: #fef08a; }
+    mark.user-highlight.green { background-color: #bbf7d0; }
+    mark.user-highlight.pink { background-color: #fbcfe8; }
+    mark.user-highlight.blue { background-color: #bae6fd; }
+
+    body.dark-mode mark.user-highlight.yellow { background-color: rgba(250, 204, 21, 0.35); color: #fef08a; }
+    body.dark-mode mark.user-highlight.green { background-color: rgba(74, 222, 128, 0.35); color: #bbf7d0; }
+    body.dark-mode mark.user-highlight.pink { background-color: rgba(244, 114, 182, 0.35); color: #fbcfe8; }
+    body.dark-mode mark.user-highlight.blue { background-color: rgba(96, 165, 250, 0.35); color: #bae6fd; }
 
     /* ========================================================
        APPLICATION WORKSPACE LAYOUT (SIDEBAR + CONTENT)
@@ -368,7 +412,7 @@
       display: flex;
       flex: 1;
       width: 100%;
-      min-height: calc(100vh - 120px);
+      min-height: calc(100vh - 65px);
       position: relative;
     }
 
@@ -379,9 +423,9 @@
       border-right: 1px solid var(--sidebar-border);
       flex-shrink: 0;
       overflow-y: auto;
-      height: calc(100vh - 125px);
+      height: calc(100vh - 65px);
       position: sticky;
-      top: 105px;
+      top: 65px;
       display: flex;
       flex-direction: column;
       transition: transform 0.25s ease, margin 0.25s ease;
@@ -392,7 +436,7 @@
     }
 
     .sidebar-header {
-      padding: 16px 20px;
+      padding: 14px 18px;
       border-bottom: 1px solid var(--sidebar-border);
       display: flex;
       flex-direction: column;
@@ -404,7 +448,7 @@
     }
     .sidebar-title {
       font-family: var(--font-display);
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 800;
       letter-spacing: 0.5px;
       text-transform: uppercase;
@@ -456,15 +500,13 @@
       align-items: center;
       transition: var(--transition);
     }
-    .tree-chapter-btn:hover {
-      background: var(--rust-bg);
-      color: var(--rust-heading);
-      border-color: var(--rust-border);
+    body.dark-mode .tree-chapter-btn {
+      background: rgba(255, 255, 255, 0.02);
     }
-    .tree-chapter-btn.active {
-      background: var(--rust-bg);
-      color: var(--rust-heading);
-      border-color: var(--rust-heading);
+    .tree-chapter-btn:hover {
+      background: var(--accent-bg);
+      color: var(--accent-heading);
+      border-color: var(--accent-border);
     }
 
     .tree-sections-sublist {
@@ -489,12 +531,10 @@
     }
     .tree-section-link:hover {
       background: rgba(0, 0, 0, 0.04);
-      color: var(--rust-heading);
+      color: var(--accent-heading);
     }
-    .tree-section-link.active {
-      color: var(--rust-heading);
-      font-weight: 700;
-      background: var(--rust-bg);
+    body.dark-mode .tree-section-link:hover {
+      background: rgba(255, 255, 255, 0.04);
     }
 
     /* ========================================================
@@ -503,7 +543,7 @@
     .main-content-area {
       flex: 1;
       padding: 24px 28px 100px;
-      max-width: 1020px;
+      max-width: 980px;
       margin: 0 auto;
       width: 100%;
       display: flex;
@@ -527,6 +567,9 @@
       }
       .main-content-area {
         padding: 16px 14px 80px;
+      }
+      .topbar-filters {
+        display: none; /* Hide compact filters on small mobile, show via drawer */
       }
     }
 
@@ -606,7 +649,7 @@
       }
     }
 
-    /* PDF DOCUMENT HEADER (PSIR by Vivek Waghmare) */
+    /* PDF DOCUMENT HEADER */
     .pdf-page-header {
       display: flex;
       justify-content: space-between;
@@ -625,6 +668,9 @@
       border-radius: 6px;
       color: var(--text-main);
     }
+    body.dark-mode .pdf-source-tag {
+      background: rgba(255, 255, 255, 0.05);
+    }
 
     /* CHAPTER TITLE BANNER */
     .chapter-main-header {
@@ -632,13 +678,13 @@
       flex-direction: column;
       gap: 6px;
       padding-bottom: 16px;
-      border-bottom: 2px solid var(--rust-bg);
+      border-bottom: 2px solid var(--accent-bg);
     }
     .chapter-eyebrow {
       font-size: 11px;
       font-weight: 800;
       letter-spacing: 1px;
-      color: var(--rust-heading);
+      color: var(--accent-heading);
       text-transform: uppercase;
     }
     .chapter-title-text {
@@ -667,7 +713,7 @@
       padding-top: 0;
     }
 
-    /* RUST SECTION HEADER BAR */
+    /* SECTION HEADER BAR */
     .section-title-bar {
       display: flex;
       align-items: center;
@@ -676,20 +722,20 @@
     }
     .section-title-heading {
       font-family: var(--font-display);
-      font-size: 19px;
+      font-size: 18.5px;
       font-weight: 800;
-      color: var(--rust-heading);
+      color: var(--accent-heading);
       letter-spacing: -0.2px;
     }
     .section-page-badge {
       font-size: 11px;
       font-weight: 700;
       font-family: var(--font-mono);
-      background: var(--rust-bg);
-      color: var(--rust-heading);
+      background: var(--accent-bg);
+      color: var(--accent-heading);
       padding: 2px 8px;
       border-radius: 6px;
-      border: 1px solid var(--rust-border);
+      border: 1px solid var(--accent-border);
     }
 
     .section-intro-text {
@@ -829,7 +875,7 @@
     }
     .bullet-label-tag {
       font-weight: 800;
-      color: var(--rust-heading);
+      color: var(--accent-heading);
       margin-right: 4px;
     }
     .bullet-label-tag::after {
@@ -863,11 +909,6 @@
       color: var(--text-dim);
       margin-top: 10px;
     }
-    .footer-left-contact {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
 
     /* TOAST NOTIFICATION PILL */
     #toastPill {
@@ -895,73 +936,87 @@
 </head>
 <body>
 
-  <!-- Fullscreen Flower Shower Canvas Engine -->
-  <canvas id="flowerCanvas"></canvas>
+  <!-- Fullscreen Flower & Hearts Celebration Canvas -->
+  <canvas id="celebrationCanvas"></canvas>
 
-  <!-- Top App Bar & Navigation Controls -->
+  <!-- Floating Highlighter Color Palette Toolbar -->
+  <div id="highlighterFloatToolbar">
+    <button class="color-swatch-btn" style="background-color: #fef08a;" data-color="yellow" title="Yellow Highlight"></button>
+    <button class="color-swatch-btn" style="background-color: #bbf7d0;" data-color="green" title="Green Highlight"></button>
+    <button class="color-swatch-btn" style="background-color: #fbcfe8;" data-color="pink" title="Pink Highlight"></button>
+    <button class="color-swatch-btn" style="background-color: #bae6fd;" data-color="blue" title="Sky Blue Highlight"></button>
+    <button class="clear-highlight-btn" id="removeHighlightBtn" title="Remove Highlight">✕</button>
+  </div>
+
+  <!-- Top App Bar -->
   <header class="app-top-header">
-    <div class="brand-wrap">
+    <div class="brand-section">
       <button id="toggleSidebarBtn" class="toggle-sidebar-btn" title="Toggle Table of Contents / Index">
         <span>📑</span> <span>Index</span>
       </button>
       <div class="brand-title-wrap">
-        <h1 class="brand-title">SARRTHI IAS • PSIR STUDY SUITE</h1>
-        <div class="brand-sub">
-          Class Notes by <span>Vivek Waghmare</span> • 77 Pages
-        </div>
+        <h1 class="brand-title">PSIR MASTER SUITE</h1>
+        <div class="brand-sub">Vivek Waghmare Notes • 6 Chapters (77 Pages)</div>
       </div>
     </div>
 
-    <!-- Search input -->
-    <div class="header-search-wrap">
-      <span class="header-search-icon">🔍</span>
-      <input type="text" id="globalSearchInput" class="header-search-input" placeholder="Search any thinker, quote or concept across all 77 pages...">
-      <button id="clearSearchBtn" class="search-clear-btn" title="Clear Search">✕</button>
+    <!-- Filter View Options on Top Bar -->
+    <div class="topbar-filters">
+      <button class="top-filter-btn active" data-filter="all">All Points (<span id="countAll">852</span>)</button>
+      <button class="top-filter-btn" data-filter="right">Mastered ✓ (<span id="countRight">0</span>)</button>
+      <button class="top-filter-btn" data-filter="wrong">Needs Work ✕ (<span id="countWrong">0</span>)</button>
+      <button class="top-filter-btn" data-filter="circle">In Review ○ (<span id="countCircle">0</span>)</button>
     </div>
 
+    <!-- Actions & Reader Tools -->
     <div class="header-actions">
       <!-- Master Score Pill -->
-      <div id="masterScorePill" class="header-score-pill" title="Mastered Bullet Points with ✓">
+      <div id="masterScorePill" class="header-score-pill" title="Mastered Bullet Points">
         <span>🌸</span>
         <span id="masteredScoreText">0 / 852</span>
-        <span>Mastered</span>
       </div>
 
-      <!-- Audio chime toggle -->
-      <button id="soundToggleBtn" class="header-btn" title="Toggle Celebration Chimes">
-        <span id="soundIcon">🔔</span> Sound
+      <!-- Key Terms Page Navigation Button -->
+      <a href="keyterms.html" class="header-action-btn keyterms-nav-btn" title="Open Key Terms Flashcards & Review System">
+        <span>📖</span> Key Terms
+      </a>
+
+      <!-- 10 Reader Fonts Picker -->
+      <div class="font-picker-wrapper">
+        <button id="fontPickerBtn" class="header-action-btn" title="Change Reader Font (10 Curated Fonts)">
+          <span>🔤</span> Font
+        </button>
+        <div class="font-picker-menu" id="fontPickerMenu">
+          <div class="font-picker-title">Select Reader Font</div>
+          <button class="font-option-btn active" data-font="Plus Jakarta Sans" style="font-family: 'Plus Jakarta Sans', sans-serif;">Plus Jakarta Sans <span>✓</span></button>
+          <button class="font-option-btn" data-font="Inter" style="font-family: 'Inter', sans-serif;">Inter</button>
+          <button class="font-option-btn" data-font="Merriweather" style="font-family: 'Merriweather', serif;">Merriweather</button>
+          <button class="font-option-btn" data-font="Lora" style="font-family: 'Lora', serif;">Lora</button>
+          <button class="font-option-btn" data-font="Roboto Serif" style="font-family: 'Roboto Serif', serif;">Roboto Serif</button>
+          <button class="font-option-btn" data-font="Source Serif 4" style="font-family: 'Source Serif 4', serif;">Source Serif 4</button>
+          <button class="font-option-btn" data-font="Outfit" style="font-family: 'Outfit', sans-serif;">Outfit</button>
+          <button class="font-option-btn" data-font="Literata" style="font-family: 'Literata', serif;">Literata</button>
+          <button class="font-option-btn" data-font="Crimson Pro" style="font-family: 'Crimson Pro', serif;">Crimson Pro</button>
+          <button class="font-option-btn" data-font="Nunito" style="font-family: 'Nunito', sans-serif;">Nunito</button>
+        </div>
+      </div>
+
+      <!-- Highlighter Tool Toggle -->
+      <button id="highlighterToggleBtn" class="header-action-btn" title="Toggle Text Highlighter (Select text to highlight)">
+        <span>🖍️</span> Highlighter
       </button>
 
-      <!-- Dark mode toggle -->
-      <button id="themeToggleBtn" class="header-btn" title="Toggle Light/Dark Paper Mode">
-        <span id="themeIcon">🌙</span> Dark Paper
+      <!-- Night Mode Toggle Icon -->
+      <button id="nightModeToggleBtn" class="header-action-btn" title="Toggle Night Theme">
+        <span id="nightIcon">🌙</span>
       </button>
 
-      <!-- Reset button -->
-      <button id="resetAllBtn" class="header-btn" title="Reset All Interactive Marks">
-        <span>🔄</span> Reset
+      <!-- Chrome Install App Button -->
+      <button id="installAppBtn" class="header-action-btn" title="Install as Chrome Web App" style="display: none;">
+        <span>📲</span> Install
       </button>
     </div>
   </header>
-
-  <!-- Horizontal Chapter Navigation Bar -->
-  <nav class="topics-nav-bar" id="topicsNavBar">
-    <button class="topic-tab-btn active" data-chapter="all">
-      <span>📚 All Chapters (77 Pages)</span>
-      <span class="tab-counter-badge" id="badgeTabAll">0/852</span>
-    </button>
-    <!-- Chapter Tabs will be dynamically rendered or keyed here -->
-  </nav>
-
-  <!-- Status Filter Bar -->
-  <div class="status-filter-bar">
-    <span class="status-filter-label">Filter View:</span>
-    <button class="filter-chip active" data-status-filter="all">All Points (<span id="filterCountAll">852</span>)</button>
-    <button class="filter-chip" data-status-filter="right">Mastered ✓ (<span id="filterCountRight">0</span>)</button>
-    <button class="filter-chip" data-status-filter="wrong">Needs Work ✕ (<span id="filterCountWrong">0</span>)</button>
-    <button class="filter-chip" data-status-filter="circle">In Review ○ (<span id="filterCountCircle">0</span>)</button>
-    <button class="filter-chip" data-status-filter="unmarked">Unmarked (<span id="filterCountUnmarked">852</span>)</button>
-  </div>
 
   <!-- Workspace Layout (Sidebar Drawer + Main Content) -->
   <div class="workspace-layout">
@@ -971,7 +1026,7 @@
       <div class="sidebar-header">
         <div class="sidebar-title">
           <span>Table of Contents</span>
-          <span style="font-size: 11px; font-weight: 700; color: var(--rust-heading);">SARRTHI IAS</span>
+          <span style="font-size: 11px; font-weight: 700; color: var(--accent-heading);">77 Pages</span>
         </div>
         <div class="sidebar-stats-row">
           <div class="sidebar-stat-badge" style="background: var(--green-bg); color: var(--green-check);">
@@ -1002,12 +1057,12 @@
           <h2 class="celebration-hero-title">CORE-MARXIST CONCEPTS COMPLETED!</h2>
           <p class="celebration-hero-sub">All 4 foundational pillars (Ideology as Class Domination, False Consciousness, Class Consciousness & End of Ideology) fully mastered!</p>
         </div>
-        <button class="celebration-btn" onclick="resetSection('core_marxist')">Reset Section</button>
+        <button class="celebration-btn" onclick="resetCoreMarxist()">Reset Section</button>
       </div>
 
       <!-- Container where all 6 chapters & PDF sheets are dynamically rendered -->
       <div id="dynamicPdfChaptersContainer" style="display: flex; flex-direction: column; gap: 36px;">
-        <!-- Filled by renderSarrthiApp() -->
+        <!-- Filled by renderContent() -->
       </div>
 
     </main>
@@ -1017,16 +1072,16 @@
   <!-- Toast Notification Pill -->
   <div id="toastPill">Concept Mastered! 🌸</div>
 
-  <!-- LOAD FULL EXTRACTED SARRTHI IAS DATASET -->
+  <!-- LOAD FULL EXTRACTED DATASET -->
   <script src="sarrthi_full_data.js"></script>
 
-  <!-- INTERACTIVE EVALUATION & FLOWER PHYSICS LOGIC -->
+  <!-- INTERACTIVE EVALUATION, HIGHLIGHTER, FONTS & CELEBRATION SCRIPT -->
   <script>
     (function () {
       'use strict';
 
       // LocalStorage Key for persisted evaluations
-      const STORAGE_KEY = 'sarrthi_psir_interactive_scores';
+      const STORAGE_KEY = 'psir_interactive_scores';
       let scores = {};
       try {
         const stored = localStorage.getItem(STORAGE_KEY);
@@ -1041,10 +1096,12 @@
         } catch (e) {}
       }
 
-      // Flower Shower Animation Engine
-      const canvas = document.getElementById('flowerCanvas');
+      // ========================================================
+      // FLOWERS + HEARTS CANVAS CELEBRATION ENGINE
+      // ========================================================
+      const canvas = document.getElementById('celebrationCanvas');
       const ctx = canvas.getContext('2d');
-      let petals = [];
+      let particles = [];
       let isShowerActive = false;
 
       function resizeCanvas() {
@@ -1054,18 +1111,23 @@
       window.addEventListener('resize', resizeCanvas);
       resizeCanvas();
 
-      class Petal {
+      class CelebrationParticle {
         constructor() {
           this.x = Math.random() * canvas.width;
-          this.y = -20;
+          this.y = -25;
+          // Randomly choose between flower petal and heart
+          this.isHeart = Math.random() > 0.45;
           this.size = Math.random() * 12 + 8;
           this.speedY = Math.random() * 3.5 + 2.5;
-          this.speedX = (Math.random() - 0.5) * 2.5;
+          this.speedX = (Math.random() - 0.5) * 2.8;
           this.rotation = Math.random() * 360;
           this.rotSpeed = (Math.random() - 0.5) * 5;
-          // Vibrant flower palette: cherry pink, rose red, emerald green, sunflower gold, lotus lavender
-          const colors = ['#f43f5e', '#fb7185', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899', '#38bdf8'];
-          this.color = colors[Math.floor(Math.random() * colors.length)];
+          
+          const flowerColors = ['#f43f5e', '#fb7185', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899', '#38bdf8'];
+          const heartColors = ['#ef4444', '#ec4899', '#f43f5e', '#e11d48', '#ff4d6d', '#ff758f'];
+          this.color = this.isHeart 
+            ? heartColors[Math.floor(Math.random() * heartColors.length)]
+            : flowerColors[Math.floor(Math.random() * flowerColors.length)];
         }
         update() {
           this.y += this.speedY;
@@ -1077,65 +1139,50 @@
           ctx.translate(this.x, this.y);
           ctx.rotate((this.rotation * Math.PI) / 180);
           ctx.fillStyle = this.color;
-          ctx.beginPath();
-          ctx.ellipse(0, 0, this.size, this.size * 0.55, 0, 0, Math.PI * 2);
-          ctx.fill();
+
+          if (this.isHeart) {
+            // Draw floating heart shape
+            const s = this.size * 0.7;
+            ctx.beginPath();
+            ctx.moveTo(0, s * 0.3);
+            ctx.bezierCurveTo(-s / 2, -s / 2, -s, s / 3, 0, s);
+            ctx.bezierCurveTo(s, s / 3, s / 2, -s / 2, 0, s * 0.3);
+            ctx.closePath();
+            ctx.fill();
+          } else {
+            // Draw delicate flower petal
+            ctx.beginPath();
+            ctx.ellipse(0, 0, this.size, this.size * 0.55, 0, 0, Math.PI * 2);
+            ctx.fill();
+          }
           ctx.restore();
         }
       }
 
-      window.triggerFlowerShower = function (count = 70) {
+      window.triggerCelebrationShower = function (count = 75) {
         for (let i = 0; i < count; i++) {
-          petals.push(new Petal());
+          particles.push(new CelebrationParticle());
         }
         if (!isShowerActive) {
           isShowerActive = true;
-          animatePetals();
+          animateCelebration();
         }
-        playChime();
       };
 
-      function animatePetals() {
+      function animateCelebration() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         let active = 0;
-        petals.forEach(p => {
+        particles.forEach(p => {
           p.update();
           p.draw();
-          if (p.y < canvas.height + 25) active++;
+          if (p.y < canvas.height + 30) active++;
         });
         if (active > 0) {
-          requestAnimationFrame(animatePetals);
+          requestAnimationFrame(animateCelebration);
         } else {
           isShowerActive = false;
           ctx.clearRect(0, 0, canvas.width, canvas.height);
         }
-      }
-
-      // Web Audio API Harmonic Chimes
-      let audioCtx = null;
-      let soundEnabled = true;
-
-      function playChime(isSpecial = false) {
-        if (!soundEnabled) return;
-        try {
-          if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-          if (audioCtx.state === 'suspended') audioCtx.resume();
-          const now = audioCtx.currentTime;
-          const freqs = isSpecial ? [523.25, 659.25, 783.99, 1046.50, 1318.51] : [523.25, 659.25, 783.99];
-          freqs.forEach((freq, idx) => {
-            const osc = audioCtx.createOscillator();
-            const gain = audioCtx.createGain();
-            osc.type = 'triangle';
-            osc.frequency.setValueAtTime(freq, now + idx * 0.08);
-            gain.gain.setValueAtTime(0, now + idx * 0.08);
-            gain.gain.linearRampToValueAtTime(0.16, now + idx * 0.08 + 0.03);
-            gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.08 + 0.7);
-            osc.connect(gain);
-            gain.connect(audioCtx.destination);
-            osc.start(now + idx * 0.08);
-            osc.stop(now + idx * 0.08 + 0.75);
-          });
-        } catch (e) {}
       }
 
       function showToast(msg) {
@@ -1145,7 +1192,195 @@
         setTimeout(() => { toast.style.display = 'none'; }, 2400);
       }
 
-      // Interactive Score Evaluation Toggle Handler
+      // ========================================================
+      // 10 READER FONTS MANAGEMENT
+      // ========================================================
+      const fontPickerBtn = document.getElementById('fontPickerBtn');
+      const fontPickerMenu = document.getElementById('fontPickerMenu');
+      const savedFont = localStorage.getItem('psir_reader_font') || 'Plus Jakarta Sans';
+
+      function applyReaderFont(fontName) {
+        const fontMap = {
+          'Plus Jakarta Sans': "'Plus Jakarta Sans', sans-serif",
+          'Inter': "'Inter', sans-serif",
+          'Merriweather': "'Merriweather', serif",
+          'Lora': "'Lora', serif",
+          'Roboto Serif': "'Roboto Serif', serif",
+          'Source Serif 4': "'Source Serif 4', serif",
+          'Outfit': "'Outfit', sans-serif",
+          'Literata': "'Literata', serif",
+          'Crimson Pro': "'Crimson Pro', serif",
+          'Nunito': "'Nunito', sans-serif"
+        };
+        const family = fontMap[fontName] || fontMap['Plus Jakarta Sans'];
+        document.documentElement.style.setProperty('--font-reader', family);
+        document.body.style.fontFamily = family;
+        localStorage.setItem('psir_reader_font', fontName);
+
+        // Update menu active mark
+        document.querySelectorAll('.font-option-btn').forEach(btn => {
+          const match = btn.getAttribute('data-font') === fontName;
+          btn.classList.toggle('active', match);
+          btn.querySelector('span')?.remove();
+          if (match) {
+            const check = document.createElement('span');
+            check.textContent = '✓';
+            btn.appendChild(check);
+          }
+        });
+      }
+
+      fontPickerBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        fontPickerMenu.classList.toggle('show');
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!fontPickerMenu.contains(e.target) && e.target !== fontPickerBtn) {
+          fontPickerMenu.classList.remove('show');
+        }
+      });
+
+      document.querySelectorAll('.font-option-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const font = btn.getAttribute('data-font');
+          applyReaderFont(font);
+          fontPickerMenu.classList.remove('show');
+          showToast(`Font updated: ${font}`);
+        });
+      });
+
+      applyReaderFont(savedFont);
+
+      // ========================================================
+      // NIGHT THEME (GITHUB-STYLE COLOR PALETTE)
+      // ========================================================
+      const nightModeToggleBtn = document.getElementById('nightModeToggleBtn');
+      const nightIcon = document.getElementById('nightIcon');
+      const isNightSaved = localStorage.getItem('psir_night_mode') === 'true';
+
+      function setNightMode(enable) {
+        document.body.classList.toggle('dark-mode', enable);
+        nightIcon.textContent = enable ? '☀️' : '🌙';
+        localStorage.setItem('psir_night_mode', enable);
+      }
+
+      if (isNightSaved) setNightMode(true);
+
+      nightModeToggleBtn.addEventListener('click', () => {
+        const current = document.body.classList.contains('dark-mode');
+        setNightMode(!current);
+        showToast(!current ? 'Night Study Mode Activated' : 'Light Paper Mode Activated');
+      });
+
+      // ========================================================
+      // INTERACTIVE TEXT HIGHLIGHTER FEATURE
+      // ========================================================
+      const highlighterToggleBtn = document.getElementById('highlighterToggleBtn');
+      const highlighterFloatToolbar = document.getElementById('highlighterFloatToolbar');
+      let isHighlighterActive = false;
+      let currentColor = 'yellow';
+
+      highlighterToggleBtn.addEventListener('click', () => {
+        isHighlighterActive = !isHighlighterActive;
+        highlighterToggleBtn.classList.toggle('active-tool', isHighlighterActive);
+        showToast(isHighlighterActive ? 'Highlighter Activated (Select text)' : 'Highlighter Turned Off');
+      });
+
+      document.addEventListener('mouseup', (e) => {
+        const selection = window.getSelection();
+        if (!selection || selection.isCollapsed || !selection.toString().trim()) {
+          if (!highlighterFloatToolbar.contains(e.target)) {
+            highlighterFloatToolbar.style.display = 'none';
+          }
+          return;
+        }
+
+        // Show floating toolbar above selection
+        const range = selection.getRangeAt(0);
+        const rect = range.getBoundingClientRect();
+        if (rect.width > 0) {
+          highlighterFloatToolbar.style.top = `${window.scrollY + rect.top - 46}px`;
+          highlighterFloatToolbar.style.left = `${window.scrollX + rect.left + rect.width / 2 - 80}px`;
+          highlighterFloatToolbar.style.display = 'flex';
+        }
+      });
+
+      highlighterFloatToolbar.querySelectorAll('.color-swatch-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const color = btn.getAttribute('data-color');
+          currentColor = color;
+          highlightSelectedText(color);
+          highlighterFloatToolbar.style.display = 'none';
+        });
+      });
+
+      document.getElementById('removeHighlightBtn').addEventListener('click', (e) => {
+        e.stopPropagation();
+        removeHighlightFromSelection();
+        highlighterFloatToolbar.style.display = 'none';
+      });
+
+      function highlightSelectedText(color) {
+        const selection = window.getSelection();
+        if (!selection || selection.rangeCount === 0) return;
+        const range = selection.getRangeAt(0);
+
+        const mark = document.createElement('mark');
+        mark.className = `user-highlight ${color}`;
+        try {
+          range.surroundContents(mark);
+          selection.removeAllRanges();
+          showToast('Text highlighted 🖍️');
+        } catch (err) {
+          // If cross-node selection
+          showToast('Select within a single paragraph to highlight');
+        }
+      }
+
+      function removeHighlightFromSelection() {
+        const selection = window.getSelection();
+        if (!selection || selection.rangeCount === 0) return;
+        const node = selection.anchorNode.parentElement;
+        if (node && node.tagName === 'MARK') {
+          const parent = node.parentNode;
+          while (node.firstChild) parent.insertBefore(node.firstChild, node);
+          parent.removeChild(node);
+          showToast('Highlight removed');
+        }
+      }
+
+      // ========================================================
+      // CHROME PWA INSTALL HANDLER
+      // ========================================================
+      let deferredInstallPrompt = null;
+      const installAppBtn = document.getElementById('installAppBtn');
+
+      window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredInstallPrompt = e;
+        installAppBtn.style.display = 'flex';
+      });
+
+      installAppBtn.addEventListener('click', async () => {
+        if (!deferredInstallPrompt) return;
+        deferredInstallPrompt.prompt();
+        const { outcome } = await deferredInstallPrompt.userChoice;
+        if (outcome === 'accepted') {
+          showToast('Installing PSIR Master Suite...');
+        }
+        deferredInstallPrompt = null;
+        installAppBtn.style.display = 'none';
+      });
+
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js').catch(() => {});
+      }
+
+      // ========================================================
+      // INTERACTIVE BULLET SCORING & CELEBRATIONS
+      // ========================================================
       window.setBulletScore = function (id, choice) {
         const current = scores[id];
         if (current === choice) {
@@ -1153,8 +1388,8 @@
         } else {
           scores[id] = choice;
           if (choice === 'right') {
-            window.triggerFlowerShower(65);
-            showToast('🌸 Concept Mastered! Flower drop celebration');
+            window.triggerCelebrationShower(75);
+            showToast('🌸 Concept Mastered! Flower & heart celebration');
           } else if (choice === 'wrong') {
             showToast('❌ Marked for Priority Revision');
           } else if (choice === 'circle') {
@@ -1167,19 +1402,15 @@
         saveScores();
       };
 
-      // Reset section
-      window.resetSection = function (sectionKey) {
-        if (sectionKey === 'core_marxist') {
-          ['marx_1', 'marx_2', 'marx_3', 'marx_4'].forEach(id => delete scores[id]);
-          applyScoresToDOM();
-          updateScoreBadges();
-          checkCoreMarxistCompletion();
-          saveScores();
-          showToast('Core Marxist Concepts Reset. Ready for evaluation!');
-        }
+      window.resetCoreMarxist = function () {
+        ['marx_1', 'marx_2', 'marx_3', 'marx_4'].forEach(id => delete scores[id]);
+        applyScoresToDOM();
+        updateScoreBadges();
+        checkCoreMarxistCompletion();
+        saveScores();
+        showToast('Core Marxist Concepts Reset');
       };
 
-      // Apply Visual CSS Highlights to DOM
       function applyScoresToDOM() {
         document.querySelectorAll('.bullet-row-item').forEach(row => {
           const id = row.getAttribute('data-id');
@@ -1200,7 +1431,6 @@
         });
       }
 
-      // Check Core Marxist Concepts Completion (User screenshot requirement)
       function checkCoreMarxistCompletion() {
         const coreIds = ['marx_1', 'marx_2', 'marx_3', 'marx_4'];
         const allRight = coreIds.every(id => scores[id] === 'right');
@@ -1209,8 +1439,7 @@
         if (allRight) {
           if (banner.style.display !== 'flex') {
             banner.style.display = 'flex';
-            window.triggerFlowerShower(120);
-            playChime(true);
+            window.triggerCelebrationShower(130);
             showToast('🎉 CORE-MARXIST CONCEPTS COMPLETED! 100% Retained');
           }
         } else {
@@ -1218,7 +1447,6 @@
         }
       }
 
-      // Update Header, Sidebar, and Tab Score Badges
       function updateScoreBadges() {
         if (!window.SARRTHI_DATA) return;
         const allBullets = [];
@@ -1232,88 +1460,28 @@
         const rightCount = allBullets.filter(id => scores[id] === 'right').length;
         const wrongCount = allBullets.filter(id => scores[id] === 'wrong').length;
         const circleCount = allBullets.filter(id => scores[id] === 'circle').length;
-        const unmarkedCount = totalCount - (rightCount + wrongCount + circleCount);
 
-        // Header score pill
         document.getElementById('masteredScoreText').textContent = `${rightCount} / ${totalCount}`;
+        document.getElementById('countAll').textContent = totalCount;
+        document.getElementById('countRight').textContent = rightCount;
+        document.getElementById('countWrong').textContent = wrongCount;
+        document.getElementById('countCircle').textContent = circleCount;
 
-        // Filter counts
-        document.getElementById('filterCountAll').textContent = totalCount;
-        document.getElementById('filterCountRight').textContent = rightCount;
-        document.getElementById('filterCountWrong').textContent = wrongCount;
-        document.getElementById('filterCountCircle').textContent = circleCount;
-        document.getElementById('filterCountUnmarked').textContent = unmarkedCount;
-
-        // Sidebar stats
         document.getElementById('sideStatMastered').textContent = rightCount;
         document.getElementById('sideStatReview').textContent = wrongCount;
         document.getElementById('sideStatFlagged').textContent = circleCount;
-
-        // Tab "All"
-        document.getElementById('badgeTabAll').textContent = `${rightCount}/${totalCount}`;
-
-        // Individual Chapter Badges
-        window.SARRTHI_DATA.chapters.forEach(ch => {
-          const chBulletIds = [];
-          ch.sections.forEach(s => s.bullets.forEach(b => chBulletIds.push(b.id)));
-          const chRight = chBulletIds.filter(id => scores[id] === 'right').length;
-          
-          const tabBadge = document.getElementById(`tabBadge_${ch.id}`);
-          if (tabBadge) tabBadge.textContent = `${chRight}/${chBulletIds.length}`;
-
-          const treeBadge = document.getElementById(`treeBadge_${ch.id}`);
-          if (treeBadge) treeBadge.textContent = `${chRight}/${chBulletIds.length}`;
-        });
       }
 
-      // RENDER APP DOM DYNAMICALLY FROM SARRTHI_DATA
-      let activeChapterFilter = 'all';
-      let activeStatusFilter = 'all';
-      let currentSearchQuery = '';
+      // ========================================================
+      // RENDERING APP FROM DATA
+      // ========================================================
+      let activeFilter = 'all';
 
       function renderApp() {
-        if (!window.SARRTHI_DATA) {
-          console.error("SARRTHI_DATA not found!");
-          return;
-        }
-
+        if (!window.SARRTHI_DATA) return;
         const data = window.SARRTHI_DATA;
 
-        // 1. Render Navigation Tabs
-        const navBar = document.getElementById('topicsNavBar');
-        // Keep the 'All' button, add chapter buttons
-        navBar.innerHTML = `
-          <button class="topic-tab-btn ${activeChapterFilter === 'all' ? 'active' : ''}" data-chapter="all">
-            <span>📚 All Chapters (77 Pages)</span>
-            <span class="tab-counter-badge" id="badgeTabAll">0/852</span>
-          </button>
-        `;
-
-        data.chapters.forEach(ch => {
-          const btn = document.createElement('button');
-          btn.className = `topic-tab-btn ${activeChapterFilter === ch.id ? 'active' : ''}`;
-          btn.setAttribute('data-chapter', ch.id);
-          btn.innerHTML = `
-            <span>${ch.short_title}</span>
-            <span class="tab-counter-badge" id="tabBadge_${ch.id}">0/${ch.total_bullets}</span>
-          `;
-          btn.addEventListener('click', () => {
-            activeChapterFilter = ch.id;
-            updateActiveChapterTabs();
-            renderContent();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          });
-          navBar.appendChild(btn);
-        });
-
-        navBar.querySelector('[data-chapter="all"]').addEventListener('click', () => {
-          activeChapterFilter = 'all';
-          updateActiveChapterTabs();
-          renderContent();
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
-        // 2. Render Sidebar Table of Contents
+        // Render Sidebar Table of Contents
         const treeContainer = document.getElementById('sidebarTreeContainer');
         treeContainer.innerHTML = '';
 
@@ -1322,16 +1490,14 @@
           group.className = 'tree-chapter-group';
 
           const chBtn = document.createElement('button');
-          chBtn.className = `tree-chapter-btn ${activeChapterFilter === ch.id ? 'active' : ''}`;
+          chBtn.className = 'tree-chapter-btn';
           chBtn.innerHTML = `
             <span style="font-size: 12px; font-weight: 800;">${ch.title}</span>
-            <span class="tab-counter-badge" id="treeBadge_${ch.id}">0/${ch.total_bullets}</span>
+            <span style="font-family: var(--font-mono); font-size: 11px; opacity: 0.8;">${ch.total_bullets} pts</span>
           `;
           chBtn.addEventListener('click', () => {
-            activeChapterFilter = ch.id;
-            updateActiveChapterTabs();
-            renderContent();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            const el = document.getElementById(`chapter_${ch.id}`);
+            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
           });
           group.appendChild(chBtn);
 
@@ -1342,20 +1508,13 @@
             const link = document.createElement('a');
             link.className = 'tree-section-link';
             link.innerHTML = `
-              <span>${sec.title.length > 32 ? sec.title.slice(0, 32) + '...' : sec.title}</span>
+              <span>${sec.title.length > 30 ? sec.title.slice(0, 30) + '...' : sec.title}</span>
               <span style="font-family: var(--font-mono); font-size: 10px; opacity: 0.7;">P.${sec.start_page}</span>
             `;
             link.addEventListener('click', (e) => {
               e.preventDefault();
-              if (activeChapterFilter !== 'all' && activeChapterFilter !== ch.id) {
-                activeChapterFilter = ch.id;
-                updateActiveChapterTabs();
-                renderContent();
-              }
-              setTimeout(() => {
-                const el = document.getElementById(`sec_${sec.id}`);
-                if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-              }, 50);
+              const el = document.getElementById(`sec_${sec.id}`);
+              if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
             sublist.appendChild(link);
           });
@@ -1364,18 +1523,7 @@
           treeContainer.appendChild(group);
         });
 
-        // 3. Render Main Content
         renderContent();
-      }
-
-      function updateActiveChapterTabs() {
-        document.querySelectorAll('.topic-tab-btn').forEach(btn => {
-          const ch = btn.getAttribute('data-chapter');
-          btn.classList.toggle('active', ch === activeChapterFilter);
-        });
-        document.querySelectorAll('.tree-chapter-btn').forEach(btn => {
-          // highlight active chapter if applicable
-        });
       }
 
       function renderContent() {
@@ -1383,11 +1531,8 @@
         container.innerHTML = '';
 
         const data = window.SARRTHI_DATA;
-        const chaptersToRender = activeChapterFilter === 'all' 
-          ? data.chapters 
-          : data.chapters.filter(c => c.id === activeChapterFilter);
 
-        chaptersToRender.forEach(ch => {
+        data.chapters.forEach(ch => {
           const sheet = document.createElement('section');
           sheet.className = 'pdf-sheet';
           sheet.id = `chapter_${ch.id}`;
@@ -1412,22 +1557,9 @@
             secBlock.className = 'pdf-section-block';
             secBlock.id = `sec_${sec.id}`;
 
-            // Filter bullets by status & search
             let visibleBullets = sec.bullets;
-            if (activeStatusFilter !== 'all') {
-              visibleBullets = visibleBullets.filter(b => {
-                const s = scores[b.id];
-                if (activeStatusFilter === 'unmarked') return !s;
-                return s === activeStatusFilter;
-              });
-            }
-            if (currentSearchQuery.trim()) {
-              const q = currentSearchQuery.toLowerCase().trim();
-              visibleBullets = visibleBullets.filter(b => {
-                return (b.label && b.label.toLowerCase().includes(q)) ||
-                       (b.text && b.text.toLowerCase().includes(q)) ||
-                       (sec.title && sec.title.toLowerCase().includes(q));
-              });
+            if (activeFilter !== 'all') {
+              visibleBullets = visibleBullets.filter(b => scores[b.id] === activeFilter);
             }
 
             // Section Header Bar
@@ -1454,7 +1586,7 @@
                 <div class="bullet-row-item ${statusClass}" data-id="${b.id}" data-chapter="${ch.id}">
                   <div class="bullet-eval-selector">
                     <button class="eval-choice-btn eval-btn-right ${choice === 'right' ? 'selected-right' : ''}" 
-                            title="Mastered (Right Sign - Flower Shower!)" 
+                            title="Mastered (Right Sign - Flower & Heart Shower!)" 
                             onclick="setBulletScore('${b.id}', 'right')">✓</button>
                     <button class="eval-choice-btn eval-btn-wrong ${choice === 'wrong' ? 'selected-wrong' : ''}" 
                             title="Needs Revision (Wrong Sign)" 
@@ -1491,13 +1623,7 @@
           const footer = document.createElement('div');
           footer.className = 'pdf-page-footer';
           footer.innerHTML = `
-            <div class="footer-left-contact">
-              <span>© Sarrthi IAS</span>
-              <span>•</span>
-              <span>📞 9569093856</span>
-              <span>•</span>
-              <span>Telegram: PSIR by Vivek Waghmare</span>
-            </div>
+            <div>PSIR Master Suite • Political Theory</div>
             <div>${ch.page_range}</div>
           `;
           sheet.appendChild(footer);
@@ -1510,89 +1636,30 @@
         checkCoreMarxistCompletion();
       }
 
-      // STATUS FILTER CHIPS CLICK HANDLERS
-      document.querySelectorAll('.filter-chip').forEach(chip => {
-        chip.addEventListener('click', () => {
-          document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
-          chip.classList.add('active');
-          activeStatusFilter = chip.getAttribute('data-status-filter');
+      // Top Filter Buttons Click Handling
+      document.querySelectorAll('.top-filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.top-filter-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.getAttribute('data-filter');
           renderContent();
         });
       });
 
-      // SEARCH INPUT HANDLER
-      const searchInput = document.getElementById('globalSearchInput');
-      const clearSearchBtn = document.getElementById('clearSearchBtn');
-      let searchTimeout = null;
-
-      searchInput.addEventListener('input', (e) => {
-        const val = e.target.value;
-        clearSearchBtn.style.display = val ? 'block' : 'none';
-        clearTimeout(searchTimeout);
-        searchTimeout = setTimeout(() => {
-          currentSearchQuery = val;
-          renderContent();
-        }, 150);
-      });
-
-      clearSearchBtn.addEventListener('click', () => {
-        searchInput.value = '';
-        currentSearchQuery = '';
-        clearSearchBtn.style.display = 'none';
-        renderContent();
-      });
-
-      // SIDEBAR DRAWER TOGGLE
+      // Sidebar Drawer Toggle
       const toggleSidebarBtn = document.getElementById('toggleSidebarBtn');
       const sidebar = document.getElementById('syllabusSidebar');
       toggleSidebarBtn.addEventListener('click', () => {
         sidebar.classList.toggle('collapsed');
       });
 
-      // DARK MODE TOGGLE
-      const themeToggleBtn = document.getElementById('themeToggleBtn');
-      const themeIcon = document.getElementById('themeIcon');
-      themeToggleBtn.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-        const isDark = document.body.classList.contains('dark-mode');
-        themeIcon.textContent = isDark ? '☀️' : '🌙';
-        themeToggleBtn.innerHTML = `${isDark ? '☀️ Light' : '🌙 Dark'} Paper`;
-        showToast(isDark ? 'Dark Study Mode Activated' : 'Light Paper Mode Activated');
-      });
-
-      // SOUND TOGGLE
-      const soundToggleBtn = document.getElementById('soundToggleBtn');
-      const soundIcon = document.getElementById('soundIcon');
-      soundToggleBtn.addEventListener('click', () => {
-        soundEnabled = !soundEnabled;
-        soundIcon.textContent = soundEnabled ? '🔔' : '🔕';
-        soundToggleBtn.innerHTML = `${soundIcon.textContent} Sound`;
-        showToast(soundEnabled ? 'Harmonic Chimes Enabled' : 'Chimes Muted');
-      });
-
-      // RESET ALL BUTTON
-      const resetAllBtn = document.getElementById('resetAllBtn');
-      resetAllBtn.addEventListener('click', () => {
-        if (confirm('Are you sure you want to reset all evaluation marks?')) {
-          scores = {};
-          saveScores();
-          applyScoresToDOM();
-          updateScoreBadges();
-          checkCoreMarxistCompletion();
-          showToast('All evaluation marks reset.');
-        }
-      });
-
-      // INITIAL RENDER
+      // Initial Render
       renderApp();
       updateScoreBadges();
       checkCoreMarxistCompletion();
 
-      console.log('✅ Sarrthi IAS Complete PDF Study Suite Initialized.');
+      console.log('✅ PSIR Master Study Suite Ready (Batch 1 Complete).');
     })();
   </script>
-
-  <!-- Interactive Visual Inspector & Markup Tool -->
-  <script src="visual_inspector.js"></script>
 </body>
 </html>

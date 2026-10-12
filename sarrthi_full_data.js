@@ -1,10 +1,9 @@
-/* Auto-generated Sarrthi IAS PSIR Class Notes Complete Study Suite */
+/* PSIR Class Notes Complete Interactive Study Suite */
 window.SARRTHI_DATA = {
   "metadata": {
-    "title": "Sarrthi IAS PSIR Class Notes",
+    "title": "PSIR Class Notes Master Suite",
     "faculty": "Vivek Waghmare",
-    "telegram": "PSIR by Vivek Waghmare",
-    "contact": "9569093856",
+    "telegram": "PSIR Study Suite",
     "totalChapters": 6,
     "totalPages": 77
   },

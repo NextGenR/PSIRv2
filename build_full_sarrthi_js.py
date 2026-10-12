@@ -249,10 +249,9 @@ def get_bullet_id(ch_id, label, text, pnum):
 
 full_dataset = {
     "metadata": {
-        "title": "Sarrthi IAS PSIR Class Notes",
+        "title": "PSIR Class Notes Master Suite",
         "faculty": "Vivek Waghmare",
-        "telegram": "PSIR by Vivek Waghmare",
-        "contact": "9569093856",
+        "telegram": "PSIR Study Suite",
         "totalChapters": 6,
         "totalPages": 77
     },
