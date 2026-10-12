@@ -1493,13 +1493,13 @@
       </div>
       <div class="brand-title-wrap">
         <h1 class="brand-title">POLITICAL SLANGS & HOOKS</h1>
-        <div class="brand-sub">100 High-Yield PSIR Catchphrases • Batches 1 & 2 Active (1–40 Ultra-Crisp)</div>
+        <div class="brand-sub">100 High-Yield PSIR Catchphrases • Batches 1, 2 & 3 Active (1–60 Ultra-Crisp)</div>
       </div>
     </div>
 
     <!-- Filters on Top Bar -->
     <div class="topbar-filters">
-      <button class="top-filter-btn active" data-filter="all">All Slangs (<span id="ktCountAll">40</span>)</button>
+      <button class="top-filter-btn active" data-filter="all">All Slangs (<span id="ktCountAll">60</span>)</button>
       <button class="top-filter-btn" data-filter="right">Mastered ✓ (<span id="ktCountRight">0</span>)</button>
       <button class="top-filter-btn" data-filter="wrong">Revise ✕ (<span id="ktCountWrong">0</span>)</button>
       <button class="top-filter-btn" data-filter="circle">In Review ○ (<span id="ktCountCircle">0</span>)</button>
@@ -1578,12 +1578,12 @@
         
         <div style="font-size: 11px; font-weight: 800; color: var(--text-dim); text-transform: uppercase; margin: 4px 0 2px;">Curated Batches (5 × 20)</div>
         
-                        <div class="sidebar-batch-card active-batch" id="batchBtn_all" onclick="filterByBatch('all')">
+                                <div class="sidebar-batch-card active-batch" id="batchBtn_all" onclick="filterByBatch('all')">
           <div style="display: flex; justify-content: space-between; align-items: center;">
             <strong>📚 All Batches (Active)</strong>
-            <span class="batch-status-tag active" style="background: rgba(2, 132, 199, 0.12); color: var(--brand-primary);">40 Slangs</span>
+            <span class="batch-status-tag active" style="background: rgba(2, 132, 199, 0.12); color: var(--brand-primary);">60 Slangs</span>
           </div>
-          <span style="font-size: 11px; color: var(--text-muted);">Batches 1 & 2 (Ultra-Crisp) • 4 Checkpoints</span>
+          <span style="font-size: 11px; color: var(--text-muted);">Batches 1, 2 & 3 (Ultra-Crisp) • 6 Checkpoints</span>
         </div>
 
         <div class="sidebar-batch-card" id="batchBtn_1" onclick="filterByBatch(1)">
@@ -1602,12 +1602,12 @@
           <span style="font-size: 11px; color: var(--text-muted);">20 Slangs • 2 Checkpoints</span>
         </div>
 
-        <div class="sidebar-batch-card" style="opacity: 0.65; cursor: default;">
+        <div class="sidebar-batch-card" id="batchBtn_3" onclick="filterByBatch(3)">
           <div style="display: flex; justify-content: space-between; align-items: center;">
-            <strong>Batch 3: Political Economy</strong>
-            <span class="batch-status-tag upcoming">Upcoming</span>
+            <strong style="color: var(--accent-heading);">Batch 3: Political Economy & Stratification</strong>
+            <span class="batch-status-tag active">Slangs 41–60</span>
           </div>
-          <span style="font-size: 11px; color: var(--text-muted);">Slangs 41–60 (Awaiting user go-ahead)</span>
+          <span style="font-size: 11px; color: var(--text-muted);">20 Slangs • 2 Checkpoints</span>
         </div>
 
         <div class="sidebar-batch-card" style="opacity: 0.65; cursor: default;">
@@ -1615,7 +1615,7 @@
             <strong>Batch 4: Global Order & Strategy</strong>
             <span class="batch-status-tag upcoming">Upcoming</span>
           </div>
-          <span style="font-size: 11px; color: var(--text-muted);">Slangs 61–80</span>
+          <span style="font-size: 11px; color: var(--text-muted);">Slangs 61–80 (Awaiting user go-ahead)</span>
         </div>
 
         <div class="sidebar-batch-card" style="opacity: 0.65; cursor: default;">
@@ -1832,6 +1832,106 @@
             <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Grey Zone Warfare &amp; Kinetic Diplomacy</span>
             <span style="font-size: 10px; color: var(--text-dim);"></span>
           </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_41')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#41</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Prismatic Society &amp; The Sala Model</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_42')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#42</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Overdeveloped State</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_43')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#43</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Soft State</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_44')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#44</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Predatory State vs. Developmental State</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_45')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#45</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Embedded Autonomy</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_46')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#46</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">The Congress System (Party of Consensus)</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_47')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#47</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Second Democratic Upsurge</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_48')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#48</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Subaltern Studies &amp; History From Below</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_49')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#49</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Provincializing Europe</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_50')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#50</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Internal Colonialism</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_51')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#51</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Caste as Social Capital / Capitalist Caste</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_52')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#52</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Epistemic Injustice &amp; Testimonial Smothering</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_53')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#53</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Neopatrimonialism &amp; Big Man Politics</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_54')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#54</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Grounded Normativity</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_55')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#55</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Agrarian Distress &amp; The Suicide Economy</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_56')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#56</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Coercive Federalism vs. Bargaining Federalism</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_57')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#57</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Substantive Democracy vs. Procedural Democracy</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_58')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#58</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Disposable Humanity &amp; Necropolitics of Labor</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_59')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#59</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Two Histories of Capital: History 1 vs. History 2</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
+          <button class="sidebar-slang-item" onclick="jumpToSlang('slang_60')">
+            <span style="font-weight: 800; color: var(--accent-heading); font-size: 11px;">#60</span>
+            <span style="flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Dominant Caste</span>
+            <span style="font-size: 10px; color: var(--text-dim);"></span>
+          </button>
         </div>
       </div>
     </aside>
@@ -1847,7 +1947,7 @@
           
           <div class="deck-counter-badge" id="deckCounterBadge" title="Current Key Term Position">
             <span class="deck-icon">🎴</span>
-            <span class="deck-text">Slang <strong id="deckCurIdx">1</strong> of <span id="deckTotalCount" class="total-digits">40</span></span>
+            <span class="deck-text">Slang <strong id="deckCurIdx">1</strong> of <span id="deckTotalCount" class="total-digits">60</span></span>
           </div>
           
           <button class="deck-nav-btn deck-next-btn" id="deckNextBtn" title="Next Key Term Card" aria-label="Next">
@@ -1871,7 +1971,7 @@
         <div class="keyterm-card" data-id="slang_1" data-card-index="1">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#1 of 40</span>
+              <span class="kt-idx-pill">#1 of 60</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">Indian Politics</span>
@@ -1932,7 +2032,7 @@
         <div class="keyterm-card" data-id="slang_2" data-card-index="2">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#2 of 40</span>
+              <span class="kt-idx-pill">#2 of 60</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 2A</span>
               <span class="category-pill">International Relations</span>
@@ -1993,7 +2093,7 @@
         <div class="keyterm-card" data-id="slang_3" data-card-index="3">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#3 of 40</span>
+              <span class="kt-idx-pill">#3 of 60</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">State &amp; Governance</span>
@@ -2054,7 +2154,7 @@
         <div class="keyterm-card" data-id="slang_4" data-card-index="4">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#4 of 40</span>
+              <span class="kt-idx-pill">#4 of 60</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1A &amp; 1B</span>
               <span class="category-pill">Political Theory</span>
@@ -2115,7 +2215,7 @@
         <div class="keyterm-card" data-id="slang_5" data-card-index="5">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#5 of 40</span>
+              <span class="kt-idx-pill">#5 of 60</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">Indian Politics</span>
@@ -2176,7 +2276,7 @@
         <div class="keyterm-card" data-id="slang_6" data-card-index="6">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#6 of 40</span>
+              <span class="kt-idx-pill">#6 of 60</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">Indian Politics</span>
@@ -2237,7 +2337,7 @@
         <div class="keyterm-card" data-id="slang_7" data-card-index="7">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#7 of 40</span>
+              <span class="kt-idx-pill">#7 of 60</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1A &amp; 1B</span>
               <span class="category-pill">Political Theory</span>
@@ -2298,7 +2398,7 @@
         <div class="keyterm-card" data-id="slang_8" data-card-index="8">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#8 of 40</span>
+              <span class="kt-idx-pill">#8 of 60</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">State &amp; Governance</span>
@@ -2359,7 +2459,7 @@
         <div class="keyterm-card" data-id="slang_9" data-card-index="9">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#9 of 40</span>
+              <span class="kt-idx-pill">#9 of 60</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 2A</span>
               <span class="category-pill">International Relations</span>
@@ -2420,7 +2520,7 @@
         <div class="keyterm-card" data-id="slang_10" data-card-index="10">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#10 of 40</span>
+              <span class="kt-idx-pill">#10 of 60</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">State &amp; Governance</span>
@@ -2526,7 +2626,7 @@
         <div class="keyterm-card" data-id="slang_11" data-card-index="11">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#11 of 40</span>
+              <span class="kt-idx-pill">#11 of 60</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">Indian Politics</span>
@@ -2587,7 +2687,7 @@
         <div class="keyterm-card" data-id="slang_12" data-card-index="12">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#12 of 40</span>
+              <span class="kt-idx-pill">#12 of 60</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">Indian Politics</span>
@@ -2648,7 +2748,7 @@
         <div class="keyterm-card" data-id="slang_13" data-card-index="13">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#13 of 40</span>
+              <span class="kt-idx-pill">#13 of 60</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">Indian Politics</span>
@@ -2709,7 +2809,7 @@
         <div class="keyterm-card" data-id="slang_14" data-card-index="14">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#14 of 40</span>
+              <span class="kt-idx-pill">#14 of 60</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">Indian Politics</span>
@@ -2770,7 +2870,7 @@
         <div class="keyterm-card" data-id="slang_15" data-card-index="15">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#15 of 40</span>
+              <span class="kt-idx-pill">#15 of 60</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">Indian Politics</span>
@@ -2831,7 +2931,7 @@
         <div class="keyterm-card" data-id="slang_16" data-card-index="16">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#16 of 40</span>
+              <span class="kt-idx-pill">#16 of 60</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 2B</span>
               <span class="category-pill">International Relations</span>
@@ -2892,7 +2992,7 @@
         <div class="keyterm-card" data-id="slang_17" data-card-index="17">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#17 of 40</span>
+              <span class="kt-idx-pill">#17 of 60</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 2A</span>
               <span class="category-pill">International Relations</span>
@@ -2953,7 +3053,7 @@
         <div class="keyterm-card" data-id="slang_18" data-card-index="18">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#18 of 40</span>
+              <span class="kt-idx-pill">#18 of 60</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1A</span>
               <span class="category-pill">Political Theory</span>
@@ -3014,7 +3114,7 @@
         <div class="keyterm-card" data-id="slang_19" data-card-index="19">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#19 of 40</span>
+              <span class="kt-idx-pill">#19 of 60</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1A</span>
               <span class="category-pill">Political Theory</span>
@@ -3075,7 +3175,7 @@
         <div class="keyterm-card" data-id="slang_20" data-card-index="20">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#20 of 40</span>
+              <span class="kt-idx-pill">#20 of 60</span>
               <span class="batch-badge">BATCH 1</span>
               <span class="paper-pill">Paper 1A &amp; 2A</span>
               <span class="category-pill">Political Theory</span>
@@ -3181,7 +3281,7 @@
         <div class="keyterm-card" data-id="slang_21" data-card-index="21">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#21 of 40</span>
+              <span class="kt-idx-pill">#21 of 60</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1A</span>
               <span class="category-pill">Political Theory</span>
@@ -3242,7 +3342,7 @@
         <div class="keyterm-card" data-id="slang_22" data-card-index="22">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#22 of 40</span>
+              <span class="kt-idx-pill">#22 of 60</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1B &amp; 2A</span>
               <span class="category-pill">State &amp; Governance</span>
@@ -3303,7 +3403,7 @@
         <div class="keyterm-card" data-id="slang_23" data-card-index="23">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#23 of 40</span>
+              <span class="kt-idx-pill">#23 of 60</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1A &amp; 1B</span>
               <span class="category-pill">Political Theory</span>
@@ -3364,7 +3464,7 @@
         <div class="keyterm-card" data-id="slang_24" data-card-index="24">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#24 of 40</span>
+              <span class="kt-idx-pill">#24 of 60</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1A &amp; 2A</span>
               <span class="category-pill">Political Theory</span>
@@ -3425,7 +3525,7 @@
         <div class="keyterm-card" data-id="slang_25" data-card-index="25">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#25 of 40</span>
+              <span class="kt-idx-pill">#25 of 60</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1A</span>
               <span class="category-pill">Political Theory</span>
@@ -3486,7 +3586,7 @@
         <div class="keyterm-card" data-id="slang_26" data-card-index="26">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#26 of 40</span>
+              <span class="kt-idx-pill">#26 of 60</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1A &amp; 1B</span>
               <span class="category-pill">State &amp; Governance</span>
@@ -3547,7 +3647,7 @@
         <div class="keyterm-card" data-id="slang_27" data-card-index="27">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#27 of 40</span>
+              <span class="kt-idx-pill">#27 of 60</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1A</span>
               <span class="category-pill">Political Theory</span>
@@ -3608,7 +3708,7 @@
         <div class="keyterm-card" data-id="slang_28" data-card-index="28">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#28 of 40</span>
+              <span class="kt-idx-pill">#28 of 60</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1A</span>
               <span class="category-pill">Political Theory</span>
@@ -3669,7 +3769,7 @@
         <div class="keyterm-card" data-id="slang_29" data-card-index="29">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#29 of 40</span>
+              <span class="kt-idx-pill">#29 of 60</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1A</span>
               <span class="category-pill">Political Theory</span>
@@ -3730,7 +3830,7 @@
         <div class="keyterm-card" data-id="slang_30" data-card-index="30">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#30 of 40</span>
+              <span class="kt-idx-pill">#30 of 60</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 2A &amp; 2B</span>
               <span class="category-pill">International Relations</span>
@@ -3836,7 +3936,7 @@
         <div class="keyterm-card" data-id="slang_31" data-card-index="31">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#31 of 40</span>
+              <span class="kt-idx-pill">#31 of 60</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1A &amp; 1B</span>
               <span class="category-pill">Indian Politics</span>
@@ -3897,7 +3997,7 @@
         <div class="keyterm-card" data-id="slang_32" data-card-index="32">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#32 of 40</span>
+              <span class="kt-idx-pill">#32 of 60</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1A &amp; 2A</span>
               <span class="category-pill">State &amp; Governance</span>
@@ -3958,7 +4058,7 @@
         <div class="keyterm-card" data-id="slang_33" data-card-index="33">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#33 of 40</span>
+              <span class="kt-idx-pill">#33 of 60</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 2A</span>
               <span class="category-pill">International Relations</span>
@@ -4019,7 +4119,7 @@
         <div class="keyterm-card" data-id="slang_34" data-card-index="34">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#34 of 40</span>
+              <span class="kt-idx-pill">#34 of 60</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 2A</span>
               <span class="category-pill">International Relations</span>
@@ -4080,7 +4180,7 @@
         <div class="keyterm-card" data-id="slang_35" data-card-index="35">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#35 of 40</span>
+              <span class="kt-idx-pill">#35 of 60</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 2A &amp; 2B</span>
               <span class="category-pill">International Relations</span>
@@ -4141,7 +4241,7 @@
         <div class="keyterm-card" data-id="slang_36" data-card-index="36">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#36 of 40</span>
+              <span class="kt-idx-pill">#36 of 60</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1B</span>
               <span class="category-pill">Indian Politics</span>
@@ -4202,7 +4302,7 @@
         <div class="keyterm-card" data-id="slang_37" data-card-index="37">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#37 of 40</span>
+              <span class="kt-idx-pill">#37 of 60</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1A</span>
               <span class="category-pill">Political Theory</span>
@@ -4263,7 +4363,7 @@
         <div class="keyterm-card" data-id="slang_38" data-card-index="38">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#38 of 40</span>
+              <span class="kt-idx-pill">#38 of 60</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1A</span>
               <span class="category-pill">Political Theory</span>
@@ -4324,7 +4424,7 @@
         <div class="keyterm-card" data-id="slang_39" data-card-index="39">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#39 of 40</span>
+              <span class="kt-idx-pill">#39 of 60</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 1A &amp; 1B</span>
               <span class="category-pill">Political Theory</span>
@@ -4385,7 +4485,7 @@
         <div class="keyterm-card" data-id="slang_40" data-card-index="40">
           <div class="keyterm-card-topbar">
             <div class="kt-meta-pills">
-              <span class="kt-idx-pill">#40 of 40</span>
+              <span class="kt-idx-pill">#40 of 60</span>
               <span class="batch-badge">BATCH 2</span>
               <span class="paper-pill">Paper 2A &amp; 2B</span>
               <span class="category-pill">International Relations</span>
@@ -4486,6 +4586,1316 @@
             <span class="swipe-hint-text">⟵ Swipe ⟶</span>
           </div>
         </div>
+
+        <!-- SLANG #41: Prismatic Society &amp; The Sala Model -->
+        <div class="keyterm-card" data-id="slang_41" data-card-index="41">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#41 of 60</span>
+              <span class="batch-badge">BATCH 3</span>
+              <span class="paper-pill">Paper 1A &amp; 1B</span>
+              <span class="category-pill">State &amp; Governance</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_41', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_41', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_41', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Prismatic Society &amp; The Sala Model</span>
+              <span class="scholar-tag">🎓 Fred W. Riggs</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_41')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Developing societies superimpose modern legal formalism over traditional kinship nepotism inside the administrative &#x27;Sala&#x27;."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Transitional polities are &#x27;prismatic&#x27;—exhibiting formalist Weberian laws on paper, while actual bureaucratic appointments and public contracts are governed by caste, family, and feudal loyalties.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 1A &amp; 1B • Comparative Public Administration &amp; Developing Societies)</span>
+              </div>
+              <div class="exam-utility-content">Paper 1A &amp; 1B (Bureaucracy): &#x27;Fred Riggs&#x27;s &quot;prismatic Sala model&quot; explains the persistent disconnect between India&#x27;s formal civil service rules and informal administrative corruption.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#fred riggs</span><span class="kt-keyword-pill">#prismatic society</span><span class="kt-keyword-pill">#sala model</span><span class="kt-keyword-pill">#bureaucracy</span><span class="kt-keyword-pill">#formalism</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #42: Overdeveloped State -->
+        <div class="keyterm-card" data-id="slang_42" data-card-index="42">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#42 of 60</span>
+              <span class="batch-badge">BATCH 3</span>
+              <span class="paper-pill">Paper 1B &amp; 2A</span>
+              <span class="category-pill">State &amp; Governance</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_42', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_42', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_42', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Overdeveloped State</span>
+              <span class="scholar-tag">🎓 Hamza Alavi</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_42')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Post-colonial states inherit an oversized colonial military-bureaucratic apparatus designed to subjugate domestic civil society."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Colonial masters built administrative and military machineries far more developed than indigenous economic classes. Post-colonial bureaucratic-military oligarchies thus enjoy relative autonomy to dominate society and arbitrate class conflicts.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 1B &amp; 2A • Post-Colonial State Theory &amp; South Asian Politics)</span>
+              </div>
+              <div class="exam-utility-content">Paper 1B &amp; 2A (Post-Colonial State): &#x27;Hamza Alavi&#x27;s &quot;overdeveloped state&quot; explains why military-bureaucratic elites in post-colonial South Asia frequently overpower fragile political parties.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#hamza alavi</span><span class="kt-keyword-pill">#overdeveloped state</span><span class="kt-keyword-pill">#bureaucratic oligarchy</span><span class="kt-keyword-pill">#post-colonial state</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #43: Soft State -->
+        <div class="keyterm-card" data-id="slang_43" data-card-index="43">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#43 of 60</span>
+              <span class="batch-badge">BATCH 3</span>
+              <span class="paper-pill">Paper 1B</span>
+              <span class="category-pill">State &amp; Governance</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_43', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_43', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_43', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Soft State</span>
+              <span class="scholar-tag">🎓 Gunnar Myrdal</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_43')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Enacting radical progressive legislation with moral grandiosity, but lacking institutional will to discipline recalcitrant elites."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">South Asian states pass voluminous laws to ban discrimination and redistribute land, but suffer chronic administrative indiscipline—failing to compel compliance, collect taxes, or punish elite violations.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 1B • State Capacity, Law Enforcement &amp; Asian Drama)</span>
+              </div>
+              <div class="exam-utility-content">Paper 1B (Planning &amp; Reforms): &#x27;Gunnar Myrdal&#x27;s &quot;soft state&quot; exposes the chronic gap between India&#x27;s progressive welfare laws and the collapse of grassroots enforcement against powerful interests.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#gunnar myrdal</span><span class="kt-keyword-pill">#soft state</span><span class="kt-keyword-pill">#asian drama</span><span class="kt-keyword-pill">#state capacity</span><span class="kt-keyword-pill">#governance</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #44: Predatory State vs. Developmental State -->
+        <div class="keyterm-card" data-id="slang_44" data-card-index="44">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#44 of 60</span>
+              <span class="batch-badge">BATCH 3</span>
+              <span class="paper-pill">Paper 1A &amp; 2A</span>
+              <span class="category-pill">Political Theory</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_44', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_44', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_44', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Predatory State vs. Developmental State</span>
+              <span class="scholar-tag">🎓 Peter Evans / Chalmers Johnson</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_44')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"East Asian technocratic developmental states engineer industrial miracles, while predatory states loot citizen surplus as kleptocracies."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Developmental states (post-war Japan, South Korea) feature elite Weberian technocrats guiding strategic industrial policy. Predatory states (Zaire under Mobutu) extract private rents, destroying market institutions for ruler enrichment.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 1A &amp; 2A • Comparative Political Economy &amp; State-Led Development)</span>
+              </div>
+              <div class="exam-utility-content">Paper 1A &amp; 2A (Political Economy): &#x27;Evans and Johnson show that economic growth depends on state character: whether it acts as an embedded &quot;developmental state&quot; or an extractive &quot;predatory state&quot;.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#peter evans</span><span class="kt-keyword-pill">#chalmers johnson</span><span class="kt-keyword-pill">#developmental state</span><span class="kt-keyword-pill">#predatory state</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #45: Embedded Autonomy -->
+        <div class="keyterm-card" data-id="slang_45" data-card-index="45">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#45 of 60</span>
+              <span class="batch-badge">BATCH 3</span>
+              <span class="paper-pill">Paper 1A &amp; 1B</span>
+              <span class="category-pill">State &amp; Governance</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_45', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_45', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_45', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Embedded Autonomy</span>
+              <span class="scholar-tag">🎓 Peter B. Evans</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_45')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Meritocratic Weberian bureaucratic independence combined with dense institutional ties to industrial business networks."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">State capacity requires both &#x27;autonomy&#x27; (meritocratic coherence resisting oligarchic capture) and &#x27;embeddedness&#x27; (institutional ties with private industry to exchange market intelligence and negotiate collaborative economic growth).</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 1A &amp; 1B • State Capacity, Industrial Policy &amp; Bureaucratic Design)</span>
+              </div>
+              <div class="exam-utility-content">Paper 1A &amp; 1B (State Capacity): &#x27;Peter Evans&#x27;s &quot;embedded autonomy&quot; provides the optimal blueprint for state regulators: combining professional independence with collaborative market engagement.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#embedded autonomy</span><span class="kt-keyword-pill">#peter evans</span><span class="kt-keyword-pill">#bureaucracy</span><span class="kt-keyword-pill">#industrial policy</span><span class="kt-keyword-pill">#state capacity</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #46: The Congress System (Party of Consensus) -->
+        <div class="keyterm-card" data-id="slang_46" data-card-index="46">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#46 of 60</span>
+              <span class="batch-badge">BATCH 3</span>
+              <span class="paper-pill">Paper 1B</span>
+              <span class="category-pill">Indian Politics</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_46', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_46', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_46', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">The Congress System (Party of Consensus)</span>
+              <span class="scholar-tag">🎓 Rajni Kothari</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_46')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"An umbrella catch-all coalition maintaining consensus by co-opting opposition dissent through internal party factions."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">India&#x27;s 1947–1967 one-party dominance was not authoritarian. The Congress functioned as an inclusive &#x27;party of consensus&#x27; managing caste and regional diversity internally, while peripheral opposition parties acted as pressure groups.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 1B • Party System in India &amp; One-Party Dominance)</span>
+              </div>
+              <div class="exam-utility-content">Paper 1B (Party System): &#x27;Rajni Kothari&#x27;s &quot;Congress System&quot; captures how an umbrella catch-all party managed social pluralism before the emergence of fragmented coalition politics.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#rajni kothari</span><span class="kt-keyword-pill">#congress system</span><span class="kt-keyword-pill">#party of consensus</span><span class="kt-keyword-pill">#one-party dominance</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #47: Second Democratic Upsurge -->
+        <div class="keyterm-card" data-id="slang_47" data-card-index="47">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#47 of 60</span>
+              <span class="batch-badge">BATCH 3</span>
+              <span class="paper-pill">Paper 1B</span>
+              <span class="category-pill">Indian Politics</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_47', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_47', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_47', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Second Democratic Upsurge</span>
+              <span class="scholar-tag">🎓 Yogendra Yadav</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_47')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Rural, lower-caste, and marginalized plebeians turning out at voting booths to claim dignity over elite patronage."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">The 1990s electoral transformation where subaltern social strata (OBCs, Dalits, rural poor) mobilized the ballot as an instrument of social justice and self-affirmation, reversing Western trends of elite-dominated turnout.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 1B • Electoral Politics, Subaltern Assertion &amp; The 1990s Transition)</span>
+              </div>
+              <div class="exam-utility-content">Paper 1B (Caste &amp; Elections): &#x27;Yogendra Yadav&#x27;s &quot;Second Democratic Upsurge&quot; demonstrates that Indian democracy deepened when subaltern groups used the ballot for social dignity.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#yogendra yadav</span><span class="kt-keyword-pill">#democratic upsurge</span><span class="kt-keyword-pill">#electoral politics</span><span class="kt-keyword-pill">#subaltern assertion</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #48: Subaltern Studies &amp; History From Below -->
+        <div class="keyterm-card" data-id="slang_48" data-card-index="48">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#48 of 60</span>
+              <span class="batch-badge">BATCH 3</span>
+              <span class="paper-pill">Paper 1A &amp; 1B</span>
+              <span class="category-pill">Political Theory</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_48', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_48', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_48', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Subaltern Studies &amp; History From Below</span>
+              <span class="scholar-tag">🎓 Ranajit Guha / Dipesh Chakrabarty</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_48')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"The politics of the people constituted an autonomous domain that elite nationalist leaders could neither represent nor tame."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Dismantling elitist colonial and nationalist historiography. Peasant and tribal insurgencies were not passive mobs led by bourgeois leaders, but operated with an autonomous consciousness, moral economy, and sovereign rebel politics.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 1A &amp; 1B • Subaltern Studies, Post-Colonial Theory &amp; Historiography)</span>
+              </div>
+              <div class="exam-utility-content">Paper 1A &amp; 1B (Subalternity): &#x27;Ranajit Guha&#x27;s &quot;Subaltern Studies&quot; rescued peasant consciousness from elite nationalist condescension, recognizing marginalized politics as an autonomous historical force.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#ranajit guha</span><span class="kt-keyword-pill">#subaltern studies</span><span class="kt-keyword-pill">#history from below</span><span class="kt-keyword-pill">#post-colonial theory</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #49: Provincializing Europe -->
+        <div class="keyterm-card" data-id="slang_49" data-card-index="49">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#49 of 60</span>
+              <span class="batch-badge">BATCH 3</span>
+              <span class="paper-pill">Paper 1A</span>
+              <span class="category-pill">Political Theory</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_49', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_49', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_49', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Provincializing Europe</span>
+              <span class="scholar-tag">🎓 Dipesh Chakrabarty</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_49')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"European thought is indispensable yet inadequate: we must treat Europe as a local province, not universal human destiny."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Concepts of political modernity (citizenship, sovereign state, secularism) originated in Europe, but are wrongly treated as universal history. Decolonial theory must provincialize European thought alongside non-Western modes of life.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 1A • Post-Colonial Political Theory &amp; Critique of Eurocentrism)</span>
+              </div>
+              <div class="exam-utility-content">Paper 1A (Post-Colonial Theory): &#x27;Dipesh Chakrabarty&#x27;s &quot;provincializing Europe&quot; exposes the epistemic violence of treating European modernization as the compulsory template for non-Western polities.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#dipesh chakrabarty</span><span class="kt-keyword-pill">#provincializing europe</span><span class="kt-keyword-pill">#post-colonial theory</span><span class="kt-keyword-pill">#eurocentrism</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #50: Internal Colonialism -->
+        <div class="keyterm-card" data-id="slang_50" data-card-index="50">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#50 of 60</span>
+              <span class="batch-badge">BATCH 3</span>
+              <span class="paper-pill">Paper 1A &amp; 1B</span>
+              <span class="category-pill">Political Theory</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_50', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_50', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_50', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Internal Colonialism</span>
+              <span class="scholar-tag">🎓 Michael Hechter</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_50')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"The metropolitan political core exploits the natural resources of peripheral ethnic regions while denying them developmental parity."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Modernization does not equalize geography. Dominant metropolitan centers treat peripheral ethnic regions as internal colonies: extracting mineral and agrarian wealth while maintaining local populations as low-wage laborers without political power.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 1A &amp; 1B • Regional Imbalances, Ethnic Politics &amp; Resource Extraction)</span>
+              </div>
+              <div class="exam-utility-content">Paper 1B (Regionalism &amp; Tribal Belts): &#x27;Michael Hechter&#x27;s &quot;internal colonialism&quot; explains persistent unrest in India&#x27;s mineral-rich tribal states (Jharkhand, Odisha), where resource extraction bypasses local welfare.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#internal colonialism</span><span class="kt-keyword-pill">#hechter</span><span class="kt-keyword-pill">#regionalism</span><span class="kt-keyword-pill">#ethnic politics</span><span class="kt-keyword-pill">#resource extraction</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- CHECKPOINT QUIZ #5 (After Slang #50) -->
+        <div class="checkpoint-mcq-wrap" id="cp_cp_slang_5">
+          <div class="checkpoint-banner">
+            <span class="checkpoint-tag">🎯 CHECKPOINT QUIZ #5</span>
+            <span style="font-size: 11px; font-weight: 800; color: var(--accent-heading); background: rgba(139, 58, 43, 0.08); padding: 3px 8px; border-radius: 6px; letter-spacing: 0.3px;">🎯 UPSC PSIR CONCEPT CHECKPOINT</span>
+          </div>
+          <div class="checkpoint-q-text">Which post-colonial political economist coined the concept of the &#x27;Overdeveloped State&#x27; to explain why the military-bureaucratic apparatus in post-colonial South Asia frequently overpowers fragile domestic political parties?</div>
+          <div class="checkpoint-options-grid">
+            <button class="cp-option-btn " 
+                    data-opt-index="0" 
+                    onclick="handleCheckpointChoice('cp_slang_5', 0, 0)">
+              <span class="cp-letter">A</span>
+              <span>Hamza Alavi</span>
+            </button>
+            <button class="cp-option-btn " 
+                    data-opt-index="1" 
+                    onclick="handleCheckpointChoice('cp_slang_5', 1, 0)">
+              <span class="cp-letter">B</span>
+              <span>Pranab Bardhan</span>
+            </button>
+            <button class="cp-option-btn " 
+                    data-opt-index="2" 
+                    onclick="handleCheckpointChoice('cp_slang_5', 2, 0)">
+              <span class="cp-letter">C</span>
+              <span>Fred W. Riggs</span>
+            </button>
+            <button class="cp-option-btn " 
+                    data-opt-index="3" 
+                    onclick="handleCheckpointChoice('cp_slang_5', 3, 0)">
+              <span class="cp-letter">D</span>
+              <span>Atul Kohli</span>
+            </button>
+          </div>
+          <div class="cp-explanation-box" id="expl_cp_slang_5" style="display: none;">
+            <div style="font-weight: 800; font-size: 11px; color: var(--accent-heading); margin-bottom: 4px; text-transform: uppercase;">
+              💡 Conceptual Source & Answer Explanation:
+            </div>
+            <div>Hamza Alavi theorized the &#x27;Overdeveloped State&#x27;, arguing that post-colonial states inherited an oversized colonial bureaucratic-military machinery built to suppress domestic society.</div>
+          </div>
+          <div class="keyterm-card-bottom-bar" style="margin-top: auto;">
+            <span class="card-status-badge" style="color: var(--brand-primary); font-weight: 800;">10-Slang Checkpoint</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #51: Caste as Social Capital / Capitalist Caste -->
+        <div class="keyterm-card" data-id="slang_51" data-card-index="51">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#51 of 60</span>
+              <span class="batch-badge">BATCH 3</span>
+              <span class="paper-pill">Paper 1B</span>
+              <span class="category-pill">Indian Politics</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_51', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_51', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_51', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Caste as Social Capital / Capitalist Caste</span>
+              <span class="scholar-tag">🎓 Surinder S. Jodhka / Suraj Yengde</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_51')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Far from dissolving under capitalism, caste reinvents itself as corporate &#x27;social capital&#x27;, rebranding privilege as &#x27;merit&#x27;."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Free markets do not eliminate caste. Dominant upper castes leverage family networks, English schooling, and social habitus as corporate capital, while subtle cultural gating excludes Dalit-Bahujan applicants under the guise of merit.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 1B • Caste, Neoliberal Capitalism &amp; The Merit Myth)</span>
+              </div>
+              <div class="exam-utility-content">Paper 1B (Caste &amp; Corporate Sector): &#x27;Surinder Jodhka and Suraj Yengde demonstrate that caste survives in the market economy as &quot;social capital&quot;, preserving historic exclusions under the rhetoric of merit.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#surinder jodhka</span><span class="kt-keyword-pill">#suraj yengde</span><span class="kt-keyword-pill">#caste as social capital</span><span class="kt-keyword-pill">#corporate caste</span><span class="kt-keyword-pill">#merit myth</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #52: Epistemic Injustice &amp; Testimonial Smothering -->
+        <div class="keyterm-card" data-id="slang_52" data-card-index="52">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#52 of 60</span>
+              <span class="batch-badge">BATCH 3</span>
+              <span class="paper-pill">Paper 1A</span>
+              <span class="category-pill">Political Theory</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_52', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_52', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_52', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Epistemic Injustice &amp; Testimonial Smothering</span>
+              <span class="scholar-tag">🎓 Miranda Fricker / Kristie Dotson</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_52')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Prejudice causes institutional hearers to assign a deflated level of credibility to a marginalized speaker&#x27;s word."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">A distinct harm where marginalized persons are wronged as knowers: &#x27;Testimonial Injustice&#x27; (dismissing statements due to gender, race, or caste prejudice) and &#x27;Hermeneutical Injustice&#x27; (lacking collective concepts to articulate oppression).</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 1A • Feminist Epistemology, Power &amp; Marginalized Knowledge)</span>
+              </div>
+              <div class="exam-utility-content">Paper 1A (Feminist Epistemology): &#x27;Miranda Fricker&#x27;s &quot;epistemic injustice&quot; deepens power analysis, showing that marginalization operates through the systematic silencing of subaltern epistemic credibility.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#miranda fricker</span><span class="kt-keyword-pill">#epistemic injustice</span><span class="kt-keyword-pill">#testimonial injustice</span><span class="kt-keyword-pill">#feminist theory</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #53: Neopatrimonialism &amp; Big Man Politics -->
+        <div class="keyterm-card" data-id="slang_53" data-card-index="53">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#53 of 60</span>
+              <span class="batch-badge">BATCH 3</span>
+              <span class="paper-pill">Paper 1A &amp; 2A</span>
+              <span class="category-pill">State &amp; Governance</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_53', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_53', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_53', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Neopatrimonialism &amp; Big Man Politics</span>
+              <span class="scholar-tag">🎓 Jean-François Médard / Bratton &amp; van de Walle</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_53')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Rational-legal constitutional structures running internally on personalized patron-client spoils and Big Man gifts."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Modern bureaucratic institutions exist on paper, but state power is personalized around an autocratic ruler. Public offices, state revenues, and legal immunities are distributed as private patrimonial spoils to buy regime survival.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 1A &amp; 2A • Comparative Politics, Clientelism &amp; Developing States)</span>
+              </div>
+              <div class="exam-utility-content">Paper 1A &amp; 2A (Comparative Politics): &#x27;Neopatrimonialism explains how post-colonial regimes hollow out formal legal institutions, converting public administrative offices into private clientelist fiefdoms.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#neopatrimonialism</span><span class="kt-keyword-pill">#big man politics</span><span class="kt-keyword-pill">#medard</span><span class="kt-keyword-pill">#clientelism</span><span class="kt-keyword-pill">#state theory</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #54: Grounded Normativity -->
+        <div class="keyterm-card" data-id="slang_54" data-card-index="54">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#54 of 60</span>
+              <span class="batch-badge">BATCH 3</span>
+              <span class="paper-pill">Paper 1A</span>
+              <span class="category-pill">Political Theory</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_54', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_54', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_54', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Grounded Normativity</span>
+              <span class="scholar-tag">🎓 Glen Sean Coulthard</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_54')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Decolonization rejects paternalistic state recognition in favor of land-based reciprocal ethics and sovereignty."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Critique of liberal multicultural recognition (Charles Taylor). State recognition merely co-opts dissent while continuing resource extraction. Decolonial freedom requires &#x27;grounded normativity&#x27;—ethical community relationships with land subverting extractivism.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 1A • Decolonial Political Theory &amp; Indigenous Sovereignty)</span>
+              </div>
+              <div class="exam-utility-content">Paper 1A (Decoloniality &amp; Multiculturalism): &#x27;Glen Coulthard&#x27;s &quot;grounded normativity&quot; shows that indigenous liberation requires land-based ecological sovereignty rather than symbolic state recognition.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#glen coulthard</span><span class="kt-keyword-pill">#grounded normativity</span><span class="kt-keyword-pill">#decoloniality</span><span class="kt-keyword-pill">#indigenous sovereignty</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #55: Agrarian Distress &amp; The Suicide Economy -->
+        <div class="keyterm-card" data-id="slang_55" data-card-index="55">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#55 of 60</span>
+              <span class="batch-badge">BATCH 3</span>
+              <span class="paper-pill">Paper 1B</span>
+              <span class="category-pill">Indian Politics</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_55', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_55', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_55', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Agrarian Distress &amp; The Suicide Economy</span>
+              <span class="scholar-tag">🎓 P. Sainath / Utsa Patnaik</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_55')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Agrarian crisis is not a drought of water, but a structural drought of public policy and institutional credit."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Post-1991 neoliberal restructuring slashed agricultural extension, privatized seeds and fertilizers, withdrew institutional banking credit, and exposed farmers to volatile markets, locking peasants into fatal debt traps.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 1B • Political Economy, Agrarian Crisis &amp; Neoliberal Reforms)</span>
+              </div>
+              <div class="exam-utility-content">Paper 1B (Agrarian Crisis): &#x27;P. Sainath&#x27;s documentation of the &quot;suicide economy&quot; shows that agrarian distress reflects the state&#x27;s abdication of peasant welfare to predatory corporate input cartels.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#p sainath</span><span class="kt-keyword-pill">#agrarian crisis</span><span class="kt-keyword-pill">#suicide economy</span><span class="kt-keyword-pill">#farmer suicides</span><span class="kt-keyword-pill">#political economy</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #56: Coercive Federalism vs. Bargaining Federalism -->
+        <div class="keyterm-card" data-id="slang_56" data-card-index="56">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#56 of 60</span>
+              <span class="batch-badge">BATCH 3</span>
+              <span class="paper-pill">Paper 1B</span>
+              <span class="category-pill">Indian Politics</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_56', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_56', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_56', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Coercive Federalism vs. Bargaining Federalism</span>
+              <span class="scholar-tag">🎓 Louise Tillin / Pradeep Chhibber</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_56')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Shifting from coalition-era bargaining to centralized fiscal choking and Raj Bhavan interference in opposition states."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Post-2014 Indian intergovernmental relations moved from Morris-Jones&#x27;s &#x27;bargaining federalism&#x27; to &#x27;coercive federalism&#x27;: central investigative agencies, politicized Governors, and conditional fiscal schemes are leveraged to discipline regional states.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 1B • Indian Federalism, Governor&#x27;s Office &amp; Fiscal Centralization)</span>
+              </div>
+              <div class="exam-utility-content">Paper 1B (Federalism): &#x27;Tillin and Chhibber capture the transition from &quot;bargaining federalism&quot; to &quot;coercive federalism&quot;, where asymmetric fiscal levers and Raj Bhavan activism constrain regional state autonomy.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#coercive federalism</span><span class="kt-keyword-pill">#bargaining federalism</span><span class="kt-keyword-pill">#tillin</span><span class="kt-keyword-pill">#chhibber</span><span class="kt-keyword-pill">#governors</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #57: Substantive Democracy vs. Procedural Democracy -->
+        <div class="keyterm-card" data-id="slang_57" data-card-index="57">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#57 of 60</span>
+              <span class="batch-badge">BATCH 3</span>
+              <span class="paper-pill">Paper 1A &amp; 1B</span>
+              <span class="category-pill">Political Theory</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_57', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_57', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_57', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Substantive Democracy vs. Procedural Democracy</span>
+              <span class="scholar-tag">🎓 Amartya Sen / David Held</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_57')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Democracy is not merely periodic balloting (niti), but the realized expansion of human capabilities and freedoms (nyaya)."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Distinguishing formal procedural elections (&#x27;niti&#x27;) from realized substantive justice (&#x27;nyaya&#x27;). A regime holding free elections while tolerating endemic malnutrition, illiteracy, and caste discrimination remains an incomplete, hollow democracy.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 1A &amp; 1B • Democratic Theory, Capability Approach &amp; Social Justice)</span>
+              </div>
+              <div class="exam-utility-content">Paper 1A &amp; 1B (Democracy &amp; Justice): &#x27;Amartya Sen&#x27;s distinction between &quot;niti&quot; and &quot;nyaya&quot; establishes that electoral rituals cannot substitute for the substantive expansion of human capabilities.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#amartya sen</span><span class="kt-keyword-pill">#substantive democracy</span><span class="kt-keyword-pill">#procedural democracy</span><span class="kt-keyword-pill">#niti vs nyaya</span><span class="kt-keyword-pill">#capability approach</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #58: Disposable Humanity &amp; Necropolitics of Labor -->
+        <div class="keyterm-card" data-id="slang_58" data-card-index="58">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#58 of 60</span>
+              <span class="batch-badge">BATCH 3</span>
+              <span class="paper-pill">Paper 1A</span>
+              <span class="category-pill">Political Theory</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_58', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_58', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_58', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Disposable Humanity &amp; Necropolitics of Labor</span>
+              <span class="scholar-tag">🎓 Henry A. Giroux / David Harvey</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_58')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Precarious gig workers and informal migrants treated as surplus human waste when no longer profitable to capital."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Neoliberal governance views marginalized informal laborers not as an exploitable working class, but as redundant waste. The state dismantles social safety nets, managing surplus populations through militarized policing and penal confinement.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 1A • Neoliberalism, Precariat &amp; Modern State Violence)</span>
+              </div>
+              <div class="exam-utility-content">Paper 1A &amp; 1B (Informal Labor &amp; Migrants): &#x27;Henry Giroux&#x27;s &quot;disposable humanity&quot; exposes how neoliberal governance renders informal migrant labor expendable the moment economic profitability halts.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#henry giroux</span><span class="kt-keyword-pill">#disposable humanity</span><span class="kt-keyword-pill">#precariat</span><span class="kt-keyword-pill">#neoliberalism</span><span class="kt-keyword-pill">#informal labor</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #59: Two Histories of Capital: History 1 vs. History 2 -->
+        <div class="keyterm-card" data-id="slang_59" data-card-index="59">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#59 of 60</span>
+              <span class="batch-badge">BATCH 3</span>
+              <span class="paper-pill">Paper 1A</span>
+              <span class="category-pill">Political Theory</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_59', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_59', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_59', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Two Histories of Capital: History 1 vs. History 2</span>
+              <span class="scholar-tag">🎓 Dipesh Chakrabarty</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_59')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"The universal logic of capital (History 1) is constantly modified by persistent local cultural life-worlds (History 2)."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">Modifying Marx&#x27;s theory of capital. &#x27;History 1&#x27; is capital&#x27;s universal drive for commodification and abstract labor. &#x27;History 2&#x27; comprises local affective, religious, and kinship practices that capital cannot dissolve, shaping how capitalism functions locally.</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 1A • Marxist Political Economy, Post-Colonial Critique &amp; Modernity)</span>
+              </div>
+              <div class="exam-utility-content">Paper 1A (Marxism &amp; Post-Colonialism): &#x27;Dipesh Chakrabarty&#x27;s &quot;History 1 and History 2&quot; shows that capitalism in the Global South thrives alongside cultural life-worlds rather than erasing them.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#dipesh chakrabarty</span><span class="kt-keyword-pill">#two histories of capital</span><span class="kt-keyword-pill">#history 1 and history 2</span><span class="kt-keyword-pill">#marxism</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- SLANG #60: Dominant Caste -->
+        <div class="keyterm-card" data-id="slang_60" data-card-index="60">
+          <div class="keyterm-card-topbar">
+            <div class="kt-meta-pills">
+              <span class="kt-idx-pill">#60 of 60</span>
+              <span class="batch-badge">BATCH 3</span>
+              <span class="paper-pill">Paper 1B</span>
+              <span class="category-pill">Indian Politics</span>
+            </div>
+            <div class="bullet-eval-selector">
+              <button class="eval-choice-btn eval-btn-right" 
+                      title="Mastered (Flowers & Hearts Shower!)" 
+                      onclick="setTermScore('slang_60', 'right')">✓</button>
+              <button class="eval-choice-btn eval-btn-wrong" 
+                      title="Flag for Revision" 
+                      onclick="setTermScore('slang_60', 'wrong')">✕</button>
+              <button class="eval-choice-btn eval-btn-circle" 
+                      title="Mark for Review" 
+                      onclick="setTermScore('slang_60', 'circle')">○</button>
+            </div>
+          </div>
+
+          <div class="keyterm-body">
+            <div class="keyterm-header-line">
+              <span class="keyterm-name">Dominant Caste</span>
+              <span class="scholar-tag">🎓 M.N. Srinivas</span>
+            </div>
+
+            <!-- THE HOOK CALLOUT BOX -->
+            <div class="hook-quote-box">
+              <div class="hook-quote-header">
+                <span class="hook-type-tag">✍️ THE HOOKY OPENER</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote('slang_60')" title="Copy Hook Quote">📋 Copy Hook</button>
+              </div>
+              <blockquote class="hook-quote-text">"Power in rural democracy belongs to intermediate castes wielding numerical strength, land, and muscle over ritual purity."</blockquote>
+            </div>
+
+            <!-- CONCEPTUAL DEFINITION & ANATOMY -->
+            <div class="concept-breakdown-box">
+              <div class="concept-section-label">📖 Concept & Analytical Breakdown:</div>
+              <p class="keyterm-def">In village politics, ritual Brahminical purity matters far less than material power. A caste achieves regional dominance through numerical strength, agricultural landownership, and political connections (e.g., Jats, Marathas, Yadavs, Vokkaligas).</p>
+            </div>
+
+            <!-- UPSC ANSWER APPLICATION -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯 UPSC PSIR Answer Application (Paper 1B • Caste, Agrarian Power &amp; Rural Power Structure)</span>
+              </div>
+              <div class="exam-utility-content">Paper 1B (Caste &amp; Rural Power): &#x27;M.N. Srinivas&#x27;s &quot;dominant caste&quot; remains indispensable for Indian politics, showing that democracy empowered intermediate agrarian landowning castes over traditional ritual elites.&#x27;</div>
+            </div>
+
+            <!-- KEYWORDS ROW -->
+            <div class="kt-keywords-row"><span class="kt-keyword-pill">#mn srinivas</span><span class="kt-keyword-pill">#dominant caste</span><span class="kt-keyword-pill">#rural power structure</span><span class="kt-keyword-pill">#caste politics</span><span class="kt-keyword-pill">#agrarian power</span></div>
+          </div>
+
+          <div class="keyterm-card-bottom-bar">
+            <span class="card-status-badge">Active Recall Ready</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
+
+        <!-- CHECKPOINT QUIZ #6 (After Slang #60) -->
+        <div class="checkpoint-mcq-wrap" id="cp_cp_slang_6">
+          <div class="checkpoint-banner">
+            <span class="checkpoint-tag">🎯 CHECKPOINT QUIZ #6</span>
+            <span style="font-size: 11px; font-weight: 800; color: var(--accent-heading); background: rgba(139, 58, 43, 0.08); padding: 3px 8px; border-radius: 6px; letter-spacing: 0.3px;">🎯 UPSC PSIR CONCEPT CHECKPOINT</span>
+          </div>
+          <div class="checkpoint-q-text">In the sociology of Indian politics, which concept developed by M.N. Srinivas explains how intermediate agrarian castes dominate regional politics through numerical strength and land ownership rather than ritual Brahminical purity?</div>
+          <div class="checkpoint-options-grid">
+            <button class="cp-option-btn " 
+                    data-opt-index="0" 
+                    onclick="handleCheckpointChoice('cp_slang_6', 0, 1)">
+              <span class="cp-letter">A</span>
+              <span>Sanskritization</span>
+            </button>
+            <button class="cp-option-btn " 
+                    data-opt-index="1" 
+                    onclick="handleCheckpointChoice('cp_slang_6', 1, 1)">
+              <span class="cp-letter">B</span>
+              <span>Dominant Caste</span>
+            </button>
+            <button class="cp-option-btn " 
+                    data-opt-index="2" 
+                    onclick="handleCheckpointChoice('cp_slang_6', 2, 1)">
+              <span class="cp-letter">C</span>
+              <span>Segmentary Lineage</span>
+            </button>
+            <button class="cp-option-btn " 
+                    data-opt-index="3" 
+                    onclick="handleCheckpointChoice('cp_slang_6', 3, 1)">
+              <span class="cp-letter">D</span>
+              <span>Bullock Capitalists</span>
+            </button>
+          </div>
+          <div class="cp-explanation-box" id="expl_cp_slang_6" style="display: none;">
+            <div style="font-weight: 800; font-size: 11px; color: var(--accent-heading); margin-bottom: 4px; text-transform: uppercase;">
+              💡 Conceptual Source & Answer Explanation:
+            </div>
+            <div>M.N. Srinivas formulated the concept of &#x27;Dominant Caste&#x27; to explain how castes with numerical preponderance, landholding, and political muscle exercise local hegemony in Indian democracy.</div>
+          </div>
+          <div class="keyterm-card-bottom-bar" style="margin-top: auto;">
+            <span class="card-status-badge" style="color: var(--brand-primary); font-weight: 800;">10-Slang Checkpoint</span>
+            <span class="swipe-hint-text">⟵ Swipe ⟶</span>
+          </div>
+        </div>
       </div>
     </main>
 
@@ -4501,10 +5911,10 @@
   "metadata": {
     "title": "Top 100 Political Science Slangs & High-Yield Hooks",
     "subtitle": "Ultra-Crisp Micro Hooks & Answer-Cracking Metaphors (Batches 1 & 2 Active)",
-    "currentBatch": 2,
+    "currentBatch": 3,
     "totalBatches": 5,
     "batchSize": 20,
-    "totalTerms": 40,
+    "totalTerms": 60,
     "finalTarget": 100
   },
   "batches": [
@@ -4518,13 +5928,13 @@
       "batch": 2,
       "title": "Batch 2: Statecraft, Democracy & Hegemony (21–40)",
       "range": "21–40",
-      "status": "active"
+      "status": "completed"
     },
     {
       "batch": 3,
       "title": "Batch 3: Political Economy & Stratification (41–60)",
       "range": "41–60",
-      "status": "upcoming"
+      "status": "active"
     },
     {
       "batch": 4,
@@ -5343,6 +6753,397 @@
         "hoffman",
         "brands"
       ]
+    },
+    {
+      "id": "slang_41",
+      "number": 41,
+      "batch": 3,
+      "term": "Prismatic Society & The Sala Model",
+      "scholar": "Fred W. Riggs",
+      "category": "State & Governance",
+      "paper": "Paper 1A & 1B",
+      "topic": "Comparative Public Administration & Developing Societies",
+      "hook": "Developing societies superimpose modern legal formalism over traditional kinship nepotism inside the administrative 'Sala'.",
+      "definition": "Transitional polities are 'prismatic'—exhibiting formalist Weberian laws on paper, while actual bureaucratic appointments and public contracts are governed by caste, family, and feudal loyalties.",
+      "exam_utility": "Paper 1A & 1B (Bureaucracy): 'Fred Riggs's \"prismatic Sala model\" explains the persistent disconnect between India's formal civil service rules and informal administrative corruption.'",
+      "keywords": [
+        "fred riggs",
+        "prismatic society",
+        "sala model",
+        "bureaucracy",
+        "formalism"
+      ]
+    },
+    {
+      "id": "slang_42",
+      "number": 42,
+      "batch": 3,
+      "term": "Overdeveloped State",
+      "scholar": "Hamza Alavi",
+      "category": "State & Governance",
+      "paper": "Paper 1B & 2A",
+      "topic": "Post-Colonial State Theory & South Asian Politics",
+      "hook": "Post-colonial states inherit an oversized colonial military-bureaucratic apparatus designed to subjugate domestic civil society.",
+      "definition": "Colonial masters built administrative and military machineries far more developed than indigenous economic classes. Post-colonial bureaucratic-military oligarchies thus enjoy relative autonomy to dominate society and arbitrate class conflicts.",
+      "exam_utility": "Paper 1B & 2A (Post-Colonial State): 'Hamza Alavi's \"overdeveloped state\" explains why military-bureaucratic elites in post-colonial South Asia frequently overpower fragile political parties.'",
+      "keywords": [
+        "hamza alavi",
+        "overdeveloped state",
+        "bureaucratic oligarchy",
+        "post-colonial state"
+      ]
+    },
+    {
+      "id": "slang_43",
+      "number": 43,
+      "batch": 3,
+      "term": "Soft State",
+      "scholar": "Gunnar Myrdal",
+      "category": "State & Governance",
+      "paper": "Paper 1B",
+      "topic": "State Capacity, Law Enforcement & Asian Drama",
+      "hook": "Enacting radical progressive legislation with moral grandiosity, but lacking institutional will to discipline recalcitrant elites.",
+      "definition": "South Asian states pass voluminous laws to ban discrimination and redistribute land, but suffer chronic administrative indiscipline—failing to compel compliance, collect taxes, or punish elite violations.",
+      "exam_utility": "Paper 1B (Planning & Reforms): 'Gunnar Myrdal's \"soft state\" exposes the chronic gap between India's progressive welfare laws and the collapse of grassroots enforcement against powerful interests.'",
+      "keywords": [
+        "gunnar myrdal",
+        "soft state",
+        "asian drama",
+        "state capacity",
+        "governance"
+      ]
+    },
+    {
+      "id": "slang_44",
+      "number": 44,
+      "batch": 3,
+      "term": "Predatory State vs. Developmental State",
+      "scholar": "Peter Evans / Chalmers Johnson",
+      "category": "Political Theory",
+      "paper": "Paper 1A & 2A",
+      "topic": "Comparative Political Economy & State-Led Development",
+      "hook": "East Asian technocratic developmental states engineer industrial miracles, while predatory states loot citizen surplus as kleptocracies.",
+      "definition": "Developmental states (post-war Japan, South Korea) feature elite Weberian technocrats guiding strategic industrial policy. Predatory states (Zaire under Mobutu) extract private rents, destroying market institutions for ruler enrichment.",
+      "exam_utility": "Paper 1A & 2A (Political Economy): 'Evans and Johnson show that economic growth depends on state character: whether it acts as an embedded \"developmental state\" or an extractive \"predatory state\".'",
+      "keywords": [
+        "peter evans",
+        "chalmers johnson",
+        "developmental state",
+        "predatory state"
+      ]
+    },
+    {
+      "id": "slang_45",
+      "number": 45,
+      "batch": 3,
+      "term": "Embedded Autonomy",
+      "scholar": "Peter B. Evans",
+      "category": "State & Governance",
+      "paper": "Paper 1A & 1B",
+      "topic": "State Capacity, Industrial Policy & Bureaucratic Design",
+      "hook": "Meritocratic Weberian bureaucratic independence combined with dense institutional ties to industrial business networks.",
+      "definition": "State capacity requires both 'autonomy' (meritocratic coherence resisting oligarchic capture) and 'embeddedness' (institutional ties with private industry to exchange market intelligence and negotiate collaborative economic growth).",
+      "exam_utility": "Paper 1A & 1B (State Capacity): 'Peter Evans's \"embedded autonomy\" provides the optimal blueprint for state regulators: combining professional independence with collaborative market engagement.'",
+      "keywords": [
+        "embedded autonomy",
+        "peter evans",
+        "bureaucracy",
+        "industrial policy",
+        "state capacity"
+      ]
+    },
+    {
+      "id": "slang_46",
+      "number": 46,
+      "batch": 3,
+      "term": "The Congress System (Party of Consensus)",
+      "scholar": "Rajni Kothari",
+      "category": "Indian Politics",
+      "paper": "Paper 1B",
+      "topic": "Party System in India & One-Party Dominance",
+      "hook": "An umbrella catch-all coalition maintaining consensus by co-opting opposition dissent through internal party factions.",
+      "definition": "India's 1947–1967 one-party dominance was not authoritarian. The Congress functioned as an inclusive 'party of consensus' managing caste and regional diversity internally, while peripheral opposition parties acted as pressure groups.",
+      "exam_utility": "Paper 1B (Party System): 'Rajni Kothari's \"Congress System\" captures how an umbrella catch-all party managed social pluralism before the emergence of fragmented coalition politics.'",
+      "keywords": [
+        "rajni kothari",
+        "congress system",
+        "party of consensus",
+        "one-party dominance"
+      ]
+    },
+    {
+      "id": "slang_47",
+      "number": 47,
+      "batch": 3,
+      "term": "Second Democratic Upsurge",
+      "scholar": "Yogendra Yadav",
+      "category": "Indian Politics",
+      "paper": "Paper 1B",
+      "topic": "Electoral Politics, Subaltern Assertion & The 1990s Transition",
+      "hook": "Rural, lower-caste, and marginalized plebeians turning out at voting booths to claim dignity over elite patronage.",
+      "definition": "The 1990s electoral transformation where subaltern social strata (OBCs, Dalits, rural poor) mobilized the ballot as an instrument of social justice and self-affirmation, reversing Western trends of elite-dominated turnout.",
+      "exam_utility": "Paper 1B (Caste & Elections): 'Yogendra Yadav's \"Second Democratic Upsurge\" demonstrates that Indian democracy deepened when subaltern groups used the ballot for social dignity.'",
+      "keywords": [
+        "yogendra yadav",
+        "democratic upsurge",
+        "electoral politics",
+        "subaltern assertion"
+      ]
+    },
+    {
+      "id": "slang_48",
+      "number": 48,
+      "batch": 3,
+      "term": "Subaltern Studies & History From Below",
+      "scholar": "Ranajit Guha / Dipesh Chakrabarty",
+      "category": "Political Theory",
+      "paper": "Paper 1A & 1B",
+      "topic": "Subaltern Studies, Post-Colonial Theory & Historiography",
+      "hook": "The politics of the people constituted an autonomous domain that elite nationalist leaders could neither represent nor tame.",
+      "definition": "Dismantling elitist colonial and nationalist historiography. Peasant and tribal insurgencies were not passive mobs led by bourgeois leaders, but operated with an autonomous consciousness, moral economy, and sovereign rebel politics.",
+      "exam_utility": "Paper 1A & 1B (Subalternity): 'Ranajit Guha's \"Subaltern Studies\" rescued peasant consciousness from elite nationalist condescension, recognizing marginalized politics as an autonomous historical force.'",
+      "keywords": [
+        "ranajit guha",
+        "subaltern studies",
+        "history from below",
+        "post-colonial theory"
+      ]
+    },
+    {
+      "id": "slang_49",
+      "number": 49,
+      "batch": 3,
+      "term": "Provincializing Europe",
+      "scholar": "Dipesh Chakrabarty",
+      "category": "Political Theory",
+      "paper": "Paper 1A",
+      "topic": "Post-Colonial Political Theory & Critique of Eurocentrism",
+      "hook": "European thought is indispensable yet inadequate: we must treat Europe as a local province, not universal human destiny.",
+      "definition": "Concepts of political modernity (citizenship, sovereign state, secularism) originated in Europe, but are wrongly treated as universal history. Decolonial theory must provincialize European thought alongside non-Western modes of life.",
+      "exam_utility": "Paper 1A (Post-Colonial Theory): 'Dipesh Chakrabarty's \"provincializing Europe\" exposes the epistemic violence of treating European modernization as the compulsory template for non-Western polities.'",
+      "keywords": [
+        "dipesh chakrabarty",
+        "provincializing europe",
+        "post-colonial theory",
+        "eurocentrism"
+      ]
+    },
+    {
+      "id": "slang_50",
+      "number": 50,
+      "batch": 3,
+      "term": "Internal Colonialism",
+      "scholar": "Michael Hechter",
+      "category": "Political Theory",
+      "paper": "Paper 1A & 1B",
+      "topic": "Regional Imbalances, Ethnic Politics & Resource Extraction",
+      "hook": "The metropolitan political core exploits the natural resources of peripheral ethnic regions while denying them developmental parity.",
+      "definition": "Modernization does not equalize geography. Dominant metropolitan centers treat peripheral ethnic regions as internal colonies: extracting mineral and agrarian wealth while maintaining local populations as low-wage laborers without political power.",
+      "exam_utility": "Paper 1B (Regionalism & Tribal Belts): 'Michael Hechter's \"internal colonialism\" explains persistent unrest in India's mineral-rich tribal states (Jharkhand, Odisha), where resource extraction bypasses local welfare.'",
+      "keywords": [
+        "internal colonialism",
+        "hechter",
+        "regionalism",
+        "ethnic politics",
+        "resource extraction"
+      ]
+    },
+    {
+      "id": "slang_51",
+      "number": 51,
+      "batch": 3,
+      "term": "Caste as Social Capital / Capitalist Caste",
+      "scholar": "Surinder S. Jodhka / Suraj Yengde",
+      "category": "Indian Politics",
+      "paper": "Paper 1B",
+      "topic": "Caste, Neoliberal Capitalism & The Merit Myth",
+      "hook": "Far from dissolving under capitalism, caste reinvents itself as corporate 'social capital', rebranding privilege as 'merit'.",
+      "definition": "Free markets do not eliminate caste. Dominant upper castes leverage family networks, English schooling, and social habitus as corporate capital, while subtle cultural gating excludes Dalit-Bahujan applicants under the guise of merit.",
+      "exam_utility": "Paper 1B (Caste & Corporate Sector): 'Surinder Jodhka and Suraj Yengde demonstrate that caste survives in the market economy as \"social capital\", preserving historic exclusions under the rhetoric of merit.'",
+      "keywords": [
+        "surinder jodhka",
+        "suraj yengde",
+        "caste as social capital",
+        "corporate caste",
+        "merit myth"
+      ]
+    },
+    {
+      "id": "slang_52",
+      "number": 52,
+      "batch": 3,
+      "term": "Epistemic Injustice & Testimonial Smothering",
+      "scholar": "Miranda Fricker / Kristie Dotson",
+      "category": "Political Theory",
+      "paper": "Paper 1A",
+      "topic": "Feminist Epistemology, Power & Marginalized Knowledge",
+      "hook": "Prejudice causes institutional hearers to assign a deflated level of credibility to a marginalized speaker's word.",
+      "definition": "A distinct harm where marginalized persons are wronged as knowers: 'Testimonial Injustice' (dismissing statements due to gender, race, or caste prejudice) and 'Hermeneutical Injustice' (lacking collective concepts to articulate oppression).",
+      "exam_utility": "Paper 1A (Feminist Epistemology): 'Miranda Fricker's \"epistemic injustice\" deepens power analysis, showing that marginalization operates through the systematic silencing of subaltern epistemic credibility.'",
+      "keywords": [
+        "miranda fricker",
+        "epistemic injustice",
+        "testimonial injustice",
+        "feminist theory"
+      ]
+    },
+    {
+      "id": "slang_53",
+      "number": 53,
+      "batch": 3,
+      "term": "Neopatrimonialism & Big Man Politics",
+      "scholar": "Jean-François Médard / Bratton & van de Walle",
+      "category": "State & Governance",
+      "paper": "Paper 1A & 2A",
+      "topic": "Comparative Politics, Clientelism & Developing States",
+      "hook": "Rational-legal constitutional structures running internally on personalized patron-client spoils and Big Man gifts.",
+      "definition": "Modern bureaucratic institutions exist on paper, but state power is personalized around an autocratic ruler. Public offices, state revenues, and legal immunities are distributed as private patrimonial spoils to buy regime survival.",
+      "exam_utility": "Paper 1A & 2A (Comparative Politics): 'Neopatrimonialism explains how post-colonial regimes hollow out formal legal institutions, converting public administrative offices into private clientelist fiefdoms.'",
+      "keywords": [
+        "neopatrimonialism",
+        "big man politics",
+        "medard",
+        "clientelism",
+        "state theory"
+      ]
+    },
+    {
+      "id": "slang_54",
+      "number": 54,
+      "batch": 3,
+      "term": "Grounded Normativity",
+      "scholar": "Glen Sean Coulthard",
+      "category": "Political Theory",
+      "paper": "Paper 1A",
+      "topic": "Decolonial Political Theory & Indigenous Sovereignty",
+      "hook": "Decolonization rejects paternalistic state recognition in favor of land-based reciprocal ethics and sovereignty.",
+      "definition": "Critique of liberal multicultural recognition (Charles Taylor). State recognition merely co-opts dissent while continuing resource extraction. Decolonial freedom requires 'grounded normativity'—ethical community relationships with land subverting extractivism.",
+      "exam_utility": "Paper 1A (Decoloniality & Multiculturalism): 'Glen Coulthard's \"grounded normativity\" shows that indigenous liberation requires land-based ecological sovereignty rather than symbolic state recognition.'",
+      "keywords": [
+        "glen coulthard",
+        "grounded normativity",
+        "decoloniality",
+        "indigenous sovereignty"
+      ]
+    },
+    {
+      "id": "slang_55",
+      "number": 55,
+      "batch": 3,
+      "term": "Agrarian Distress & The Suicide Economy",
+      "scholar": "P. Sainath / Utsa Patnaik",
+      "category": "Indian Politics",
+      "paper": "Paper 1B",
+      "topic": "Political Economy, Agrarian Crisis & Neoliberal Reforms",
+      "hook": "Agrarian crisis is not a drought of water, but a structural drought of public policy and institutional credit.",
+      "definition": "Post-1991 neoliberal restructuring slashed agricultural extension, privatized seeds and fertilizers, withdrew institutional banking credit, and exposed farmers to volatile markets, locking peasants into fatal debt traps.",
+      "exam_utility": "Paper 1B (Agrarian Crisis): 'P. Sainath's documentation of the \"suicide economy\" shows that agrarian distress reflects the state's abdication of peasant welfare to predatory corporate input cartels.'",
+      "keywords": [
+        "p sainath",
+        "agrarian crisis",
+        "suicide economy",
+        "farmer suicides",
+        "political economy"
+      ]
+    },
+    {
+      "id": "slang_56",
+      "number": 56,
+      "batch": 3,
+      "term": "Coercive Federalism vs. Bargaining Federalism",
+      "scholar": "Louise Tillin / Pradeep Chhibber",
+      "category": "Indian Politics",
+      "paper": "Paper 1B",
+      "topic": "Indian Federalism, Governor's Office & Fiscal Centralization",
+      "hook": "Shifting from coalition-era bargaining to centralized fiscal choking and Raj Bhavan interference in opposition states.",
+      "definition": "Post-2014 Indian intergovernmental relations moved from Morris-Jones's 'bargaining federalism' to 'coercive federalism': central investigative agencies, politicized Governors, and conditional fiscal schemes are leveraged to discipline regional states.",
+      "exam_utility": "Paper 1B (Federalism): 'Tillin and Chhibber capture the transition from \"bargaining federalism\" to \"coercive federalism\", where asymmetric fiscal levers and Raj Bhavan activism constrain regional state autonomy.'",
+      "keywords": [
+        "coercive federalism",
+        "bargaining federalism",
+        "tillin",
+        "chhibber",
+        "governors"
+      ]
+    },
+    {
+      "id": "slang_57",
+      "number": 57,
+      "batch": 3,
+      "term": "Substantive Democracy vs. Procedural Democracy",
+      "scholar": "Amartya Sen / David Held",
+      "category": "Political Theory",
+      "paper": "Paper 1A & 1B",
+      "topic": "Democratic Theory, Capability Approach & Social Justice",
+      "hook": "Democracy is not merely periodic balloting (niti), but the realized expansion of human capabilities and freedoms (nyaya).",
+      "definition": "Distinguishing formal procedural elections ('niti') from realized substantive justice ('nyaya'). A regime holding free elections while tolerating endemic malnutrition, illiteracy, and caste discrimination remains an incomplete, hollow democracy.",
+      "exam_utility": "Paper 1A & 1B (Democracy & Justice): 'Amartya Sen's distinction between \"niti\" and \"nyaya\" establishes that electoral rituals cannot substitute for the substantive expansion of human capabilities.'",
+      "keywords": [
+        "amartya sen",
+        "substantive democracy",
+        "procedural democracy",
+        "niti vs nyaya",
+        "capability approach"
+      ]
+    },
+    {
+      "id": "slang_58",
+      "number": 58,
+      "batch": 3,
+      "term": "Disposable Humanity & Necropolitics of Labor",
+      "scholar": "Henry A. Giroux / David Harvey",
+      "category": "Political Theory",
+      "paper": "Paper 1A",
+      "topic": "Neoliberalism, Precariat & Modern State Violence",
+      "hook": "Precarious gig workers and informal migrants treated as surplus human waste when no longer profitable to capital.",
+      "definition": "Neoliberal governance views marginalized informal laborers not as an exploitable working class, but as redundant waste. The state dismantles social safety nets, managing surplus populations through militarized policing and penal confinement.",
+      "exam_utility": "Paper 1A & 1B (Informal Labor & Migrants): 'Henry Giroux's \"disposable humanity\" exposes how neoliberal governance renders informal migrant labor expendable the moment economic profitability halts.'",
+      "keywords": [
+        "henry giroux",
+        "disposable humanity",
+        "precariat",
+        "neoliberalism",
+        "informal labor"
+      ]
+    },
+    {
+      "id": "slang_59",
+      "number": 59,
+      "batch": 3,
+      "term": "Two Histories of Capital: History 1 vs. History 2",
+      "scholar": "Dipesh Chakrabarty",
+      "category": "Political Theory",
+      "paper": "Paper 1A",
+      "topic": "Marxist Political Economy, Post-Colonial Critique & Modernity",
+      "hook": "The universal logic of capital (History 1) is constantly modified by persistent local cultural life-worlds (History 2).",
+      "definition": "Modifying Marx's theory of capital. 'History 1' is capital's universal drive for commodification and abstract labor. 'History 2' comprises local affective, religious, and kinship practices that capital cannot dissolve, shaping how capitalism functions locally.",
+      "exam_utility": "Paper 1A (Marxism & Post-Colonialism): 'Dipesh Chakrabarty's \"History 1 and History 2\" shows that capitalism in the Global South thrives alongside cultural life-worlds rather than erasing them.'",
+      "keywords": [
+        "dipesh chakrabarty",
+        "two histories of capital",
+        "history 1 and history 2",
+        "marxism"
+      ]
+    },
+    {
+      "id": "slang_60",
+      "number": 60,
+      "batch": 3,
+      "term": "Dominant Caste",
+      "scholar": "M.N. Srinivas",
+      "category": "Indian Politics",
+      "paper": "Paper 1B",
+      "topic": "Caste, Agrarian Power & Rural Power Structure",
+      "hook": "Power in rural democracy belongs to intermediate castes wielding numerical strength, land, and muscle over ritual purity.",
+      "definition": "In village politics, ritual Brahminical purity matters far less than material power. A caste achieves regional dominance through numerical strength, agricultural landownership, and political connections (e.g., Jats, Marathas, Yadavs, Vokkaligas).",
+      "exam_utility": "Paper 1B (Caste & Rural Power): 'M.N. Srinivas's \"dominant caste\" remains indispensable for Indian politics, showing that democracy empowered intermediate agrarian landowning castes over traditional ritual elites.'",
+      "keywords": [
+        "mn srinivas",
+        "dominant caste",
+        "rural power structure",
+        "caste politics",
+        "agrarian power"
+      ]
     }
   ],
   "checkpoints": [
@@ -5401,6 +7202,34 @@
       ],
       "correctIndex": 2,
       "explanation": "Robert Michels formulated the 'Iron Law of Oligarchy' after studying democratic socialist parties, proving that organizational scale sociologically ensures oligarchic elite dominance."
+    },
+    {
+      "id": "cp_slang_5",
+      "afterIndex": 50,
+      "batch": 3,
+      "question": "Which post-colonial political economist coined the concept of the 'Overdeveloped State' to explain why the military-bureaucratic apparatus in post-colonial South Asia frequently overpowers fragile domestic political parties?",
+      "options": [
+        "Hamza Alavi",
+        "Pranab Bardhan",
+        "Fred W. Riggs",
+        "Atul Kohli"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hamza Alavi theorized the 'Overdeveloped State', arguing that post-colonial states inherited an oversized colonial bureaucratic-military machinery built to suppress domestic society."
+    },
+    {
+      "id": "cp_slang_6",
+      "afterIndex": 60,
+      "batch": 3,
+      "question": "In the sociology of Indian politics, which concept developed by M.N. Srinivas explains how intermediate agrarian castes dominate regional politics through numerical strength and land ownership rather than ritual Brahminical purity?",
+      "options": [
+        "Sanskritization",
+        "Dominant Caste",
+        "Segmentary Lineage",
+        "Bullock Capitalists"
+      ],
+      "correctIndex": 1,
+      "explanation": "M.N. Srinivas formulated the concept of 'Dominant Caste' to explain how castes with numerical preponderance, landholding, and political muscle exercise local hegemony in Indian democracy."
     }
   ]
 };
@@ -5975,7 +7804,7 @@
         renderSidebarSlangsList();
         renderKeyterms();
         if (window.innerWidth <= 900 && typeof closeSidebar === 'function') closeSidebar();
-        showToast(b === 'all' ? 'All Active Slangs (1–40)' : `Batch ${b} Filtered (20 Slangs)`);
+        showToast(b === 'all' ? 'All Active Slangs (1–60)' : `Batch ${b} Filtered (20 Slangs)`);
       };
 
       window.filterSlangDirectory = function(q) {
