@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Top 20 Political Analyst Ideas & Hooks • UPSC PSIR Suite</title>
-  <meta name="description" content="Top 20 recent, non-controversial political analyst ideas, flowery quotes, and intro/conclusion hooks for UPSC PSIR Optional. 3-choice review, active recall, and paper-wise filters.">
+  <title>Top 20 Contemporary Political Theorist Ideas & Hooks • UPSC PSIR Paper 1A</title>
+  <meta name="description" content="Top 20 contemporary political theory and analyst ideas, flowery quotes, and intro/conclusion hooks for UPSC PSIR Paper 1A (Justice, Equality, State, Democracy, Power, Ideologies, and Thinkers). 3-choice review, active recall, and syllabus theme filters.">
   
   <!-- App Icons -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -1131,12 +1131,14 @@
       </div>
     </div>
 
-    <!-- Filters in Top Bar -->
+    <!-- Filters in Top Bar: Paper 1A Core Syllabus Themes -->
     <div class="topbar-filters">
       <button class="top-filter-btn active" data-filter="all">All (<span id="countAll">20</span>)</button>
-      <button class="top-filter-btn" data-filter="Paper 1A">Paper 1A (<span id="countP1A">5</span>)</button>
-      <button class="top-filter-btn" data-filter="Paper 1B">Paper 1B (<span id="countP1B">9</span>)</button>
-      <button class="top-filter-btn" data-filter="Paper 2">Paper 2 (<span id="countP2">6</span>)</button>
+      <button class="top-filter-btn" data-filter="Justice">Justice (<span id="countJustice">7</span>)</button>
+      <button class="top-filter-btn" data-filter="Equality & Rights">Equality & Rights (<span id="countEquality">4</span>)</button>
+      <button class="top-filter-btn" data-filter="Democracy">Democracy (<span id="countDemocracy">3</span>)</button>
+      <button class="top-filter-btn" data-filter="State & Power">State & Power (<span id="countState">4</span>)</button>
+      <button class="top-filter-btn" data-filter="Ideology & Thinkers">Ideology & Thinkers (<span id="countIdeology">2</span>)</button>
       <button class="top-filter-btn" data-filter="right" style="color: var(--green-check);">✓ <span id="countRight">0</span></button>
       <button class="top-filter-btn" data-filter="wrong" style="color: var(--red-wrong);">✕ <span id="countWrong">0</span></button>
       <button class="top-filter-btn" data-filter="circle" style="color: var(--circle-neutral);">○ <span id="countCircle">0</span></button>
@@ -1248,33 +1250,33 @@
         try { localStorage.setItem(STORAGE_KEY, JSON.stringify(scores)); } catch (e) {}
       }
 
-      // Checkpoint MCQs for Analyst Ideas
+      // Checkpoint MCQs for Paper 1A Political Theory
       const CHECKPOINTS = [
         {
           id: 'cp-ideas-10',
           afterIndex: 10,
-          question: "Which political analyst introduced the seminal concept of 'Principled Distance' to describe the Indian state's unique model of secular engagement?",
+          question: "Which contemporary political theorist formulated the concept of 'Democratic Equality' (Relational Egalitarianism), arguing that the core of equality is to dismantle social hierarchies of oppression where no person must 'bow and scrape' before another, rather than micro-compensating for luck?",
           options: [
-            "Pratap Bhanu Mehta",
-            "Rajeev Bhargava",
-            "Suhas Palshikar",
-            "Ashutosh Varshney"
+            "Elizabeth Anderson",
+            "Ronald Dworkin",
+            "Robert Nozick",
+            "Katrina Forrester"
           ],
-          correctIndex: 1,
-          explanation: "Rajeev Bhargava conceptualized 'Principled Distance'—explaining that Indian secularism does not maintain strict wall-of-separation (like the US/France), but purposefully intervenes or abstains to promote freedom, equality, and fraternity."
+          correctIndex: 0,
+          explanation: "Elizabeth Anderson pioneered Relational Egalitarianism in 'What Is the Point of Equality?' (1999), reframing equality as a democratic relationship of equal moral standing rather than mere distribution of resources."
         },
         {
           id: 'cp-ideas-20',
           afterIndex: 20,
-          question: "According to Dani Rodrik's 'Political Trilemma of the World Economy', which three elements cannot be fully attained simultaneously?",
+          question: "In 'Undoing the Demos: Neoliberalism's Stealth Revolution', Wendy Brown argues that the modern neoliberal state operates primarily by:",
           options: [
-            "Democracy, National Sovereignty, and Hyper-Globalization",
-            "Capital Mobility, Fixed Exchange Rates, and Autonomous Monetary Policy",
-            "Free Trade, High Tariffs, and State Subsidies",
-            "Rule of Law, State Capacity, and Democratic Accountability"
+            "Deploying state power to economize every sphere of social existence, converting democratic citizens into marketized human capital",
+            "Completely dissolving state power in favor of stateless laissez-faire capitalism",
+            "Reviving the post-war Keynesian welfare state",
+            "Replacing representative democracy with sortition-based citizens' assemblies"
           ],
           correctIndex: 0,
-          explanation: "Dani Rodrik's Political Trilemma asserts that Democracy, National Sovereignty, and Hyper-Globalization are mutually incompatible in full measure; a society can pick any two, but never all three at once."
+          explanation: "Wendy Brown demonstrates that neoliberalism is not the retreat of the state, but the deployment of state apparatuses to marketize all domains, transforming political citizens (Homo Politicus) into self-investing human capital (Homo Economicus)."
         }
       ];
 
@@ -1508,12 +1510,17 @@
         document.getElementById('countWrong').textContent = wCount;
         document.getElementById('countCircle').textContent = cCount;
 
-        const countP1A = ideas.filter(i => i.paper.includes('Paper 1A')).length;
-        const countP1B = ideas.filter(i => i.paper.includes('Paper 1B')).length;
-        const countP2 = ideas.filter(i => i.paper.includes('Paper 2')).length;
-        document.getElementById('countP1A').textContent = countP1A;
-        document.getElementById('countP1B').textContent = countP1B;
-        document.getElementById('countP2').textContent = countP2;
+        const countJustice = ideas.filter(i => i.topic.includes('Justice')).length;
+        const countEquality = ideas.filter(i => i.topic.includes('Equality') || i.topic.includes('Rights') || i.topic.includes('Freedom')).length;
+        const countDemocracy = ideas.filter(i => i.topic.includes('Democracy')).length;
+        const countState = ideas.filter(i => i.topic.includes('State') || i.topic.includes('Power')).length;
+        const countIdeology = ideas.filter(i => i.topic.includes('Ideology') || i.topic.includes('Thought')).length;
+
+        if (document.getElementById('countJustice')) document.getElementById('countJustice').textContent = countJustice;
+        if (document.getElementById('countEquality')) document.getElementById('countEquality').textContent = countEquality;
+        if (document.getElementById('countDemocracy')) document.getElementById('countDemocracy').textContent = countDemocracy;
+        if (document.getElementById('countState')) document.getElementById('countState').textContent = countState;
+        if (document.getElementById('countIdeology')) document.getElementById('countIdeology').textContent = countIdeology;
       }
 
       // Checkpoint MCQs
@@ -1686,13 +1693,17 @@
 
         let list = window.PSIR_NEW_IDEAS;
 
-        // Paper or Evaluation Filter
-        if (activeFilter === 'Paper 1A') {
-          list = list.filter(item => item.paper.includes('Paper 1A'));
-        } else if (activeFilter === 'Paper 1B') {
-          list = list.filter(item => item.paper.includes('Paper 1B'));
-        } else if (activeFilter === 'Paper 2') {
-          list = list.filter(item => item.paper.includes('Paper 2'));
+        // Paper 1A Theme or Evaluation Filter
+        if (activeFilter === 'Justice') {
+          list = list.filter(item => item.topic.includes('Justice'));
+        } else if (activeFilter === 'Equality & Rights') {
+          list = list.filter(item => item.topic.includes('Equality') || item.topic.includes('Rights') || item.topic.includes('Freedom'));
+        } else if (activeFilter === 'Democracy') {
+          list = list.filter(item => item.topic.includes('Democracy'));
+        } else if (activeFilter === 'State & Power') {
+          list = list.filter(item => item.topic.includes('State') || item.topic.includes('Power'));
+        } else if (activeFilter === 'Ideology & Thinkers') {
+          list = list.filter(item => item.topic.includes('Ideology') || item.topic.includes('Thought'));
         } else if (['right', 'wrong', 'circle'].includes(activeFilter)) {
           list = list.filter(item => scores[item.id] === activeFilter);
         }
