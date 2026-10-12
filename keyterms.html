@@ -1945,10 +1945,18 @@
               cpBox.className = 'checkpoint-mcq-wrap';
               cpBox.id = `cp_${cp.id}`;
 
+              let qTypeBadge = '🎯 UPSC PSIR Conceptual Challenge';
+              if (cp.question.includes('Introduction would you prefer')) qTypeBadge = '✍️ 10-MARK MAINS: INTRO CHOICE';
+              else if (cp.question.includes('Conclusion would you prefer')) qTypeBadge = '✍️ 10-MARK MAINS: CONCLUSION CHOICE';
+              else if (cp.question.includes('Who authored') || cp.question.includes('Who wrote') || cp.question.includes('Which landmark') || cp.question.includes('Which classic') || cp.question.includes('Which 1936')) qTypeBadge = '📖 SEMINAL WORK & AUTHOR';
+              else if (cp.question.includes('Who famously') || cp.question.includes('Who declared') || cp.question.includes('Who stated') || cp.question.includes('Who described')) qTypeBadge = '📜 WHO SAID THIS / FAMOUS QUOTE';
+              else if (cp.question.includes('Whose idea') || cp.question.includes('Whose central') || cp.question.includes('Whose concept') || cp.question.includes('Whose theory') || cp.question.includes('Whose political vision')) qTypeBadge = '💡 WHOSE IDEA / CONCEPT';
+              else if (cp.question.includes('What did') || cp.question.includes('How did') || cp.question.includes('critique')) qTypeBadge = '🔍 THINKER ON THINKER CRITIQUE';
+
               let cpHtml = `
                 <div class="checkpoint-banner">
-                  <span class="checkpoint-tag">🎯 10-TERM CHECKPOINT QUIZ #${cpIdx}</span>
-                  <span style="font-size: 11.5px; font-weight: 700; color: var(--accent-heading);">UPSC PSIR Conceptual Challenge</span>
+                  <span class="checkpoint-tag">🎯 10-TERM QUIZ #${cpIdx}</span>
+                  <span style="font-size: 11px; font-weight: 800; color: var(--accent-heading); background: rgba(139, 58, 43, 0.08); padding: 3px 8px; border-radius: 6px; letter-spacing: 0.3px;">${qTypeBadge}</span>
                 </div>
                 <div class="checkpoint-q-text">${cp.question.replace(/\n/g, '<br>')}</div>
                 <div class="checkpoint-options-grid">

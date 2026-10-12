@@ -5528,721 +5528,722 @@ window.KEYTERMS_DATA = {
       "scholar": "bell hooks"
     }
   ],
-  "checkpoints": [
+  "checkpoints": 
+[
     {
       "checkpoint_index": 10,
       "id": "kt_mcq_10",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Ideology as Class Domination':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "“The executive of the modern state is but a committee for managing the common affairs of the whole bourgeoisie.” Who famously stated this quote?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Vladimir Lenin in 'State and Revolution'",
+        "Karl Marx & Friedrich Engels in 'The Communist Manifesto'",
+        "Antonio Gramsci in 'Prison Notebooks'",
+        "Louis Althusser in 'Ideology and Ideological State Apparatuses'"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Ideology as Class Domination' (Ideology serves the ruling class by making its worldview appear natural and desirable....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "In Section 1 of 'The Communist Manifesto' (1848), Marx and Engels formulated the classical instrumentalist view of the state, defining it as an administrative organ subordinate to the ruling capitalist class."
     },
     {
       "checkpoint_index": 20,
       "id": "kt_mcq_20",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Karl Mannheim':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "What did Karl Marx famously say about G.W.F. Hegel's dialectical philosophy?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "“Hegel was a petty-bourgeois moralist whom history has forgotten.”",
+        "“I found Hegel's dialectic standing on its head, and I turned it right side up on its feet.”",
+        "“Hegel perfected the materialist science of history that I merely popularized.”",
+        "“Hegel's philosophy was purely utopian and devoid of revolutionary praxis.”"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Karl Mannheim' (Though diverging from classical Marxism, he explored ideological pluralism , distinguishing between partial (group-specific) and total (syst...) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "In the Postface to the second German edition of 'Das Kapital' (1873), Marx famously wrote that Hegel's dialectic was 'standing on its head' because it prioritized the ideal realm; Marx inverted it by placing the material economic base at the foundation of historical change."
     },
     {
       "checkpoint_index": 30,
       "id": "kt_mcq_30",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Importance of Action':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "Who authored the seminal work 'The Open Society and Its Enemies' (1945), critiquing Plato, Hegel, and Marx as enemies of freedom?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Friedrich Hayek",
+        "Karl Popper",
+        "Isaiah Berlin",
+        "Leo Strauss"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Importance of Action' (Arendt emphasized political action as the essence of human freedom. Acts of resistance, like the French Resistance or Soviet dissident movem...) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Karl Popper authored 'The Open Society and Its Enemies' (1945), arguing that Plato's philosopher king, Hegel's historicism, and Marx's dialectical teleology represent totalitarian blueprints hostile to piecemeal social engineering."
     },
     {
       "checkpoint_index": 40,
       "id": "kt_mcq_40",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Michael Harrington':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "Whose central thesis was that advanced industrial capitalism creates a 'One-Dimensional Man' through consumerism and 'false needs'?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Herbert Marcuse",
+        "Theodor Adorno",
+        "Max Horkheimer",
+        "Jürgen Habermas"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Michael Harrington' (Saw ideology as essential to addressing poverty, inequality, and injustice , especially in capitalist societies....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 0,
+      "explanation": "Herbert Marcuse in 'One-Dimensional Man' (1964) argued that advanced industrial society integrates the working class through manufactured consumer satisfaction and media manipulation, eliminating critical oppositional thought."
     },
     {
       "checkpoint_index": 50,
       "id": "kt_mcq_50",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Negative Freedom':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of Isaiah Berlin.\nWhich of the statements given above is/are correct?",
+      "question": "[UPSC 10-Marker]: “Examine the relevance of Gramsci’s concept of 'Hegemony' in the contemporary era of algorithmic digital media.” Which Introduction would you prefer?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Antonio Gramsci was an Italian communist thinker who spent ten years in prison under Mussolini and wrote Prison Notebooks.",
+        "Hegemony denotes leadership based on manufactured consent rather than coercion. In the digital age, algorithms and social media platforms function as contemporary 'private trenches of civil society', curating worldview and manufacturing ideological consensus without overt state force.",
+        "Digital media is very widespread in India today and many people use social media, which creates fake news and political tension.",
+        "Gramsci rejected Marx's economic determinism and introduced civil society between the base and political state."
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Negative Freedom' (Defined by Isaiah Berlin as freedom from external constraints—\"freedom to act without interference.\"...) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Option B immediately links Gramsci's theoretical core (manufactured consent in civil society trenches) to the modern contemporary context (algorithmic digital curation), providing maximum analytical punch."
     },
     {
       "checkpoint_index": 60,
       "id": "kt_mcq_60",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Social Safety Nets':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "Who formulated the foundational distinction between 'Repressive State Apparatuses' (RSA) and 'Ideological State Apparatuses' (ISA)?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Louis Althusser",
+        "Nicos Poulantzas",
+        "Michel Foucault",
+        "Antonio Gramsci"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Social Safety Nets' (Welfare programs like universal healthcare, education, and unemployment insurance ensure a baseline standard of living....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 0,
+      "explanation": "French structural Marxist Louis Althusser in his 1970 essay established that the state reproduces capitalist relations not just through violent RSA (police, army, courts), but primarily through plural ISAs (schools, churches, media, family) that 'interpellate' individuals as subjects."
     },
     {
       "checkpoint_index": 70,
       "id": "kt_mcq_70",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Individualism':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "What did C.B. Macpherson famously argue regarding John Locke’s political theory?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Locke was a secret socialist advocating for universal land redistribution.",
+        "Locke's theory of natural rights constitutes an apology for 'Possessive Individualism', viewing society as market relations between self-owning proprietors.",
+        "Locke was a totalitarian thinker who inspired 20th-century fascism.",
+        "Locke completely rejected private property in favor of biblical communal ownership."
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Individualism' (Prioritizes personal choice and responsibility over collective welfare....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "In 'The Political Theory of Possessive Individualism' (1962), C.B. Macpherson argued that Locke’s concept of freedom was essentially bourgeois: the individual is seen as the sole proprietor of their own capacities, owing nothing to society."
     },
     {
       "checkpoint_index": 80,
       "id": "kt_mcq_80",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Environmental Harm':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of Vandana Shiva.\nWhich of the statements given above is/are correct?",
+      "question": "Who authored the landmark 1960 book 'The End of Ideology: On the Exhaustion of Political Ideas in the Fifties'?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Francis Fukuyama",
+        "Daniel Bell",
+        "Seymour Martin Lipset",
+        "Raymond Aron"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Environmental Harm' (Vandana Shiva warns of unsustainable exploitation....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Sociologist Daniel Bell published 'The End of Ideology' (1960), arguing that post-war Keynesian welfare state consensus had exhausted grand 19th-century universalist ideologies in Western democracies."
     },
     {
       "checkpoint_index": 90,
       "id": "kt_mcq_90",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Welfare Reassessment':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "Whose concept was the 'Historic Bloc' (blocco storico), uniting the economic structure and ideological superstructure through organic intellectuals?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Antonio Gramsci",
+        "Vladimir Lenin",
+        "Rosa Luxemburg",
+        "Georg Lukács"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Welfare Reassessment' (Erosion of public services has reignited calls for healthcare, education , and social security as public goods ....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 0,
+      "explanation": "Antonio Gramsci developed the concept of the Historic Bloc in 'Prison Notebooks' to show that a ruling class maintains hegemony only when material economic forces and political-cultural ideas form an organic, enduring historical alliance."
     },
     {
       "checkpoint_index": 100,
       "id": "kt_mcq_100",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'UBI Debates':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "[UPSC 10-Marker]: “Evaluate the validity of the 'End of Ideology' thesis in the 21st century.” Which Conclusion would you prefer?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "In conclusion, Daniel Bell was right because ideology has completely ended and economics now decides all elections.",
+        "While the 'End of Ideology' thesis accurately captured post-war Keynesian consensus, the 21st-century resurgence of hyper-nationalism, climate justice, and identity-based mobilizations proves that ideology never withered—it merely transformed from class teleology into post-materialist and cultural contestation.",
+        "Therefore, Francis Fukuyama and Daniel Bell should be rejected by all developing countries like India.",
+        "Ideology will continue as long as human beings exist on Earth because humans have different political opinions."
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'UBI Debates' (Universal Basic Income gained traction as a response to mass unemployment and economic insecurity. Regulatory Shifts...) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Option B presents a balanced, academically grounded synthesis: it recognizes the historical merit of Bell's post-war context while demonstrating its obsolescence against modern 21st-century ideological revivals."
     },
     {
       "checkpoint_index": 110,
       "id": "kt_mcq_110",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Incommensurability of Values':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "“Man is born free, and everywhere he is in chains.” Who famously wrote this opening line?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Thomas Hobbes in 'Leviathan'",
+        "Jean-Jacques Rousseau in 'The Social Contract'",
+        "John Locke in 'Second Treatise of Government'",
+        "Karl Marx in 'The German Ideology'"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Incommensurability of Values' (No single hierarchy can adjudicate between values like freedom and equality , which may clash in public policy ....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Jean-Jacques Rousseau opened Chapter 1 of 'The Social Contract' (1762) with this famous aphorism, investigating how human beings lost their natural freedom and how legitimate political authority can be reconstituted through the General Will."
     },
     {
       "checkpoint_index": 120,
       "id": "kt_mcq_120",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Alienation':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "What did J.S. Mill say about Jeremy Bentham's utilitarian quantitative calculus (“push-pin is as good as poetry”)?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Mill agreed with Bentham that all pleasures are equal in quality.",
+        "Mill modified utilitarianism by asserting qualitative hierarchy: “It is better to be Socrates dissatisfied than a fool satisfied.”",
+        "Mill rejected utilitarianism completely and converted to Kantian deontological ethics.",
+        "Mill argued that pleasure cannot be experienced by the working class."
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Alienation' (Labor becomes repetitive, estranging workers from their work and creativity....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "In 'Utilitarianism' (1861), Mill humanized Bentham's calculus by differentiating higher intellectual/moral pleasures from lower animal pleasures, defending the qualitative dignity of the thoughtful individual."
     },
     {
       "checkpoint_index": 130,
       "id": "kt_mcq_130",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Alienation':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "Who authored the monumental 1971 work 'A Theory of Justice', introducing the 'Original Position' and 'Veil of Ignorance'?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Robert Nozick",
+        "John Rawls",
+        "Michael Sandel",
+        "Ronald Dworkin"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Alienation' (Workers are estranged from their labor and products....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "John Rawls published 'A Theory of Justice' in 1971, single-handedly reviving normative political theory by offering an egalitarian social contract alternative to prevailing utilitarianism."
     },
     {
       "checkpoint_index": 140,
       "id": "kt_mcq_140",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Freedom from Economic Exploitation':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "Whose central principle is the 'Harm Principle'—that individual liberty can only be restricted by the state to prevent harm to others?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "John Stuart Mill in 'On Liberty'",
+        "Isaiah Berlin in 'Two Concepts of Liberty'",
+        "Thomas Hill Green in 'Lectures on Political Obligation'",
+        "John Locke in 'A Letter Concerning Toleration'"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Freedom from Economic Exploitation' (...) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 0,
+      "explanation": "J.S. Mill in 'On Liberty' (1859) articulated the Harm Principle to demarcate self-regarding actions (where the individual's independence is absolute) from other-regarding actions (where societal intervention is legitimate)."
     },
     {
       "checkpoint_index": 150,
       "id": "kt_mcq_150",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Global Expansion':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "[UPSC 10-Marker]: “Critically analyze J.S. Mill’s concept of Individual Liberty. Is he a 'reluctant democrat'?” Which Introduction would you prefer?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "J.S. Mill was born in London in 1806 and was the son of James Mill who gave him an intense early education.",
+        "While J.S. Mill championed absolute liberty of thought and expression in 'On Liberty', his fear of the 'tyranny of the majority' led him to propose weighted voting and educational franchise—prompting C.L. Wayper to characterize him as a 'reluctant democrat'.",
+        "Democracy is the government of the people, by the people, and for the people, and Mill supported democracy with some limitations.",
+        "Mill wrote Utilitarianism, Considerations on Representative Government, and The Subjection of Women."
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Global Expansion' (Search for raw materials, labor, and markets led to colonialism and exploitation....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Option B sharply captures the central theoretical tension in Mill's thought: his passionate defense of individual eccentricity vs. his deep anxiety regarding uneducated majoritarian conformism."
     },
     {
       "checkpoint_index": 160,
       "id": "kt_mcq_160",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Economic Structure and Ideology':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "“Covenants, without the sword, are but words and of no strength to secure a man at all.” Who wrote this famous statement?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Niccolò Machiavelli in 'The Prince'",
+        "Thomas Hobbes in 'Leviathan'",
+        "John Locke in 'Second Treatise of Government'",
+        "Jean Bodin in 'Six Books of the Commonwealth'"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Economic Structure and Ideology' (Structuralists maintain economic determinism but stress the ideological apparatus that sustains it. Althusser’s concept of Ideological State...) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Thomas Hobbes in 'Leviathan' (Chapter 17, 1651) argued that moral contracts in the state of nature are impotent without an absolute coercive sovereign equipped with the monopoly of force to enforce compliance."
     },
     {
       "checkpoint_index": 170,
       "id": "kt_mcq_170",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Orthodox Marxism':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "What did Robert Nozick in 'Anarchy, State, and Utopia' (1974) say about John Rawls' Difference Principle?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Nozick argued that Rawls was too protective of private property.",
+        "Nozick argued that the Difference Principle treats natural talents as common assets, which violates Kant's principle that individuals are separate ends in themselves: “Taxation of earnings is on a par with forced labor.”",
+        "Nozick argued that Rawls did not give enough power to the central government.",
+        "Nozick claimed that Rawls stole his ideas from Karl Marx."
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Orthodox Marxism' (Adheres strictly to Marx and Engels’ ideas, emphasizing proletarian revolution, the dictatorship of the proletariat, and the eventual emerge...) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Robert Nozick articulated the libertarian critique of Rawls, arguing that redistributive taxation treats individuals and their natural talents as mere instruments for others, violating self-ownership."
     },
     {
       "checkpoint_index": 180,
       "id": "kt_mcq_180",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Early Socialism (Pre-Marxist Utopian Phase)':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of Robert Owen.\nWhich of the statements given above is/are correct?",
+      "question": "Who authored 'Liberalism and the Limits of Justice' (1982), critiquing John Rawls' concept of the 'unencumbered self'?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Michael Sandel",
+        "Alasdair MacIntyre",
+        "Charles Taylor",
+        "Michael Walzer"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Early Socialism (Pre-Marxist Utopian Phase)' (Thinkers like Robert Owen, Charles Fourier, and Henri de Saint-Simon laid the groundwork for socialist thought, envisioning alternatives to ...) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 0,
+      "explanation": "Communitarian philosopher Michael Sandel critiqued Rawlsian liberalism for presupposing an atomized 'unencumbered self' prior to its ends, arguing that human identity is inextricably embedded in communal attachments and moral traditions."
     },
     {
       "checkpoint_index": 190,
       "id": "kt_mcq_190",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Henri de Saint-Simon (1760–1825)':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of Henri de Saint-Simon.\nWhich of the statements given above is/are correct?",
+      "question": "Whose idea was 'Complex Equality', arguing that advantages in one social sphere (wealth) should not buy dominance in separate spheres (politics, education, healthcare)?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Michael Walzer in 'Spheres of Justice'",
+        "Ronald Dworkin in 'Sovereign Virtue'",
+        "Amartya Sen in 'Inequality Reexamined'",
+        "Brian Barry in 'Theories of Justice'"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Henri de Saint-Simon (1760–1825)' (Emphasized technocratic planning and industrial reorganization. He envisioned a society led by scientists and industrialists, focusing on pr...) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 0,
+      "explanation": "Michael Walzer in 'Spheres of Justice' (1983) rejected simple arithmetic equality, proposing complex equality where different social goods have autonomous distributive criteria that must not be dominated by wealth."
     },
     {
       "checkpoint_index": 200,
       "id": "kt_mcq_200",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Armed Revolution':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "[UPSC 10-Marker]: “Examine Amartya Sen's critique of John Rawls' transcendental institutionalism.” Which Conclusion provides the sharpest synthesis?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Therefore, Amartya Sen proved that Rawlsian theory is useless for any country.",
+        "In conclusion, Sen was awarded the Nobel Prize in 1998 and Rawls wrote Political Liberalism in 1993.",
+        "By shifting focus from Rawlsian 'Niti' (transcendental institutional blueprint of perfect justice) to 'Nyaya' (realization-focused elimination of manifest injustices like hunger and illiteracy), Sen democratizes justice for developing nations like India, making public reasoning and capability enhancement the true test of egalitarian politics.",
+        "Both thinkers agreed that liberty is the most important value in modern Western civilization."
       ],
       "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Armed Revolution' (Revolutionary socialists often endorse armed struggle, viewing state machinery (army, police) as protectors of capitalist interests....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "explanation": "Option C articulates the core philosophical divergence (Niti vs Nyaya) and connects Sen's capability perspective directly to democratic public policy in developing nations."
     },
     {
       "checkpoint_index": 210,
       "id": "kt_mcq_210",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Evolutionary Socialism':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "“The philosophers have only interpreted the world in various ways; the point, however, is to change it.” Where does this famous line appear?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Karl Marx in 'Theses on Feuerbach' (Thesis 11)",
+        "Friedrich Engels in 'Anti-Dühring'",
+        "Karl Marx in 'The German Ideology'",
+        "Vladimir Lenin in 'What Is to Be Done?'"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Evolutionary Socialism' (Emphasized gradual change within capitalism using legal, parliamentary, and civic means....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 0,
+      "explanation": "In Thesis 11 on Feuerbach (1845), Karl Marx broke with passive Young Hegelian philosophy, establishing revolutionary praxis (the dialectical unity of philosophical critique and material political action) as the mandate of historical materialism."
     },
     {
       "checkpoint_index": 220,
       "id": "kt_mcq_220",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Decentralization and Local Autonomy':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "In the famous 1970s Miliband-Poulantzas debate on the capitalist state, what was Nicos Poulantzas's central critique of Ralph Miliband?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Poulantzas argued that Miliband was an undercover bourgeois spy.",
+        "Poulantzas argued that Miliband fell into instrumentalism by focusing on the social origins of elite personnel, whereas the state serves capital due to its objective structural position in the capitalist mode of production.",
+        "Poulantzas argued that the state was completely abolished after 1917.",
+        "Miliband argued that the state was purely neutral, while Poulantzas called it a fascist dictatorship."
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Decentralization and Local Autonomy' (Power is distributed among local guilds rather than centralized in the state, fostering community control and democratic decision-making....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Poulantzas established structural Marxism by showing that the capitalist state possesses 'relative autonomy' to preserve systemic capitalist stability, independent of the personal backgrounds or intentions of individual office-holders."
     },
     {
       "checkpoint_index": 230,
       "id": "kt_mcq_230",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Collective Ownership':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "Which classic 1852 work by Karl Marx analyzed how the state achieved temporary relative autonomy from all social classes under Emperor Napoleon III?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "The Class Struggles in France",
+        "The Eighteenth Brumaire of Louis Bonaparte",
+        "Critique of the Gotha Programme",
+        "The Civil War in France"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Collective Ownership' (Supports common ownership of major resources to eliminate monopolies and ensure equitable distribution....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "In 'The Eighteenth Brumaire of Louis Bonaparte' (1852), Marx provided his most nuanced historical analysis of Bonapartism and the relative autonomy of the executive state, famous for opening with: 'Men make their own history, but they do not make it just as they please...'"
     },
     {
       "checkpoint_index": 240,
       "id": "kt_mcq_240",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Corporate Accountability':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "Whose idea was the concept of the 'Ideal Speech Situation' and 'Communicative Rationality'?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Jürgen Habermas",
+        "Michel Foucault",
+        "Jacques Derrida",
+        "Theodor Adorno"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Corporate Accountability' (Critiques corporate influence on governance, promoting finance and lobbying reforms....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 0,
+      "explanation": "Frankfurt School philosopher Jürgen Habermas in 'The Theory of Communicative Action' (1981) proposed that democratic legitimacy rests on communicative discourse governed solely by the 'forceless force of the better argument'."
     },
     {
       "checkpoint_index": 250,
       "id": "kt_mcq_250",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Framework':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "[UPSC 10-Marker]: “Discuss the concept of 'Relative Autonomy of the State' in Marxist political thought.” Which Introduction establishes the most rigorous theoretical frame?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Marxist theory was founded by Karl Marx and Friedrich Engels in the 19th century in London.",
+        "While the Communist Manifesto (1848) presented an instrumentalist view of the state as a mere tool of capital, Marx’s historical analysis in The Eighteenth Brumaire and later structuralist developments by Poulantzas revealed that the capitalist state must maintain 'relative autonomy' from individual capitalists to preserve the long-term systemic stability of the capitalist order itself.",
+        "Autonomy means independence and relative autonomy means partial independence of the government.",
+        "The state is very autonomous in countries like India because the bureaucracy takes decisions through competitive exams."
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Framework' (Intersectionality helps analyze how socio-economic and identity-based injustices interlock....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Option B traces the intellectual progression from the reductionist instrumental model to the sophisticated structural/relative autonomy framework, demonstrating mastery of the core syllabus debate."
     },
     {
       "checkpoint_index": 260,
       "id": "kt_mcq_260",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Spanish Falangism':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "“The crisis consists precisely in the fact that the old is dying and the new cannot be born; in this interregnum a great variety of morbid symptoms appear.” Who wrote this?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Antonio Gramsci in 'Prison Notebooks'",
+        "Rosa Luxemburg in 'Reform or Revolution'",
+        "Karl Marx in 'The German Ideology'",
+        "Walter Benjamin in 'Theses on the Philosophy of History'"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Spanish Falangism' (Franco's Spanish Falange combined fascism with traditionalist conservatism during the Spanish Civil War....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 0,
+      "explanation": "Antonio Gramsci wrote this profound observation in 'Prison Notebooks', diagnosing an organic crisis of hegemony where the traditional ruling bloc has lost popular consent while counter-hegemonic forces have not yet triumphed."
     },
     {
       "checkpoint_index": 270,
       "id": "kt_mcq_270",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Cult of Personality':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "What did Theodor Adorno and Max Horkheimer argue about the European Enlightenment in 'Dialectic of Enlightenment' (1944)?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "They praised the Enlightenment for eradicating all human superstition.",
+        "They argued that instrumental rationality, designed to liberate humans from nature, dialectically inverted into a new form of domination and technological barbarism (Auschwitz).",
+        "They claimed that the Enlightenment had no historical impact on Europe.",
+        "They argued that the Enlightenment was solely a product of Catholic theology."
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Cult of Personality' (The leader is idolized as the embodiment of the nation....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Adorno and Horkheimer argued that Enlightenment reason collapsed into instrumental calculation, subjugating nature and humans alike, culminating in bureaucratic totalitarianism and industrialized destruction."
     },
     {
       "checkpoint_index": 280,
       "id": "kt_mcq_280",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Violent Suppression of Dissent':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "Who authored 'Power: A Radical View' (1974), introducing the landmark 'Three Dimensions of Power'?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Robert Dahl",
+        "Steven Lukes",
+        "Michel Foucault",
+        "Peter Bachrach"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Violent Suppression of Dissent' (Employs state terror, secret police, and extrajudicial killings....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Steven Lukes expanded power analysis beyond Dahl's pluralist 1st dimension (overt decisions) and Bachrach/Baratz's 2nd dimension (non-decision making) to a radical 3rd dimension: shaping people's perceptions and desires so they accept their subjection."
     },
     {
       "checkpoint_index": 290,
       "id": "kt_mcq_290",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Militarism and Totalitarian Discipline':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "Whose concept is 'Biopower' and 'Governmentality'—the modern mechanism of power managing human bodies and populations through disciplinary apparatuses?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Michel Foucault",
+        "Jacques Lacan",
+        "Jean Baudrillard",
+        "Gilles Deleuze"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Militarism and Totalitarian Discipline' (Military values—obedience, sacrifice, strength—are glorified, with the totalitarian state ensuring order....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 0,
+      "explanation": "Michel Foucault in 'The History of Sexuality' and 'Discipline and Punish' demonstrated that modern power transitioned from the sovereign right 'to take life or let live' to the biopolitical management 'to foster life or disallow it to the point of death'."
     },
     {
       "checkpoint_index": 300,
       "id": "kt_mcq_300",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Racial Supremacy':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "[UPSC 10-Marker]: “Differentiate between Steven Lukes' 'Third Face of Power' and Foucault's concept of 'Disciplinary Power'.” Which Conclusion provides the sharpest theoretical distinction?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "In conclusion, both Lukes and Foucault were French philosophers who wrote about power in European universities.",
+        "While Lukes’ third dimension retains a critical-realist belief in 'real objective interests' distorted by ideological manipulation, Foucault rejects any objective pre-power truth—arguing that power is omnipresent, decentralized, and productive, actively constituting the human subject rather than merely repressing it.",
+        "Therefore, power is evil and should be abolished completely in all modern states.",
+        "Lukes wrote his book in 1974 and Foucault wrote Discipline and Punish in 1975."
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Racial Supremacy' (Central to Nazism was the ideology of Aryan superiority and the exclusion of Jews and minorities....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Option B pinpoints the fundamental ontological divide: Lukes operates with an emancipatory humanist view of objective interests, while Foucault's post-structuralist genealogy views the subject as co-produced by power-knowledge networks."
     },
     {
       "checkpoint_index": 310,
       "id": "kt_mcq_310",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Integral Nationalism':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "“Everything in the State, nothing outside the State, nothing against the State.” Who declared this totalitarian doctrine?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Adolf Hitler",
+        "Benito Mussolini",
+        "Giovanni Gentile",
+        "Francisco Franco"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Integral Nationalism' (Emphasized national unity under a strong, centralized state to overcome social divisions....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Benito Mussolini articulated this defining principle of Italian Fascism in his 1925 speech to the Chamber of Deputies, asserting the absolute supremacy and moral totality of the state over the individual."
     },
     {
       "checkpoint_index": 320,
       "id": "kt_mcq_320",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Rhetoric':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "In 'Evolutionary Socialism' (1899), what revisionist heresy did Eduard Bernstein commit according to orthodox Marxists?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Bernstein joined the monarchist Prussian army.",
+        "Bernstein rejected the inevitable economic collapse of capitalism and violent revolution, declaring: “The final goal of socialism is nothing, the movement is everything.”",
+        "Bernstein argued that workers should abandon all trade unions.",
+        "Bernstein declared that feudalism was better than capitalism."
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Rhetoric' (“Drain the swamp,” “Deep state,” and “Globalist conspiracies.”...) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Bernstein pioneered democratic socialism by showing that capitalism was stabilizing rather than collapsing, advocating the pursuit of socialist goals gradually through parliamentary democracy and trade union reforms."
     },
     {
       "checkpoint_index": 330,
       "id": "kt_mcq_330",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Militancy and Violence':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "Who wrote 'The Origins of Totalitarianism' (1951) and coined the phrase 'the banality of evil' in 'Eichmann in Jerusalem'?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Simone Weil",
+        "Hannah Arendt",
+        "Rosa Luxemburg",
+        "Judith Shklar"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Militancy and Violence' (Some movements embrace paramilitary aesthetics or incite lone-wolf terrorism....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Hannah Arendt analyzed how terror and ideology crushed the public space of action in totalitarian regimes, later observing that Nazi bureaucrat Adolf Eichmann committed monstrous deeds out of thoughtless bureaucratic conformity rather than demonic villainy."
     },
     {
       "checkpoint_index": 340,
       "id": "kt_mcq_340",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Truth and Fearlessness':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "Whose idea was 'Functional Democracy' and 'Guild Socialism', proposing that sovereignty should be divided among industrial guilds rather than centralized in the state?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "G.D.H. Cole",
+        "Sidney Webb",
+        "Harold Laski",
+        "Robert Owen"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Truth and Fearlessness' (Truth empowered individuals to resist injustice without violence....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 0,
+      "explanation": "British socialist G.D.H. Cole in 'Guild Socialism Restated' (1920) argued that territorial political representation is an illusion; authentic democracy requires self-governing industrial guilds where workers manage their own workplaces."
     },
     {
       "checkpoint_index": 350,
       "id": "kt_mcq_350",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Conflict Resolution':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "[UPSC 10-Marker]: “Examine Hannah Arendt's critique of Totalitarianism. How does it threaten the essence of human freedom?” Which Introduction would you prefer?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Hannah Arendt was a Jewish German-American political theorist who studied under Martin Heidegger and escaped Nazi Germany.",
+        "In The Origins of Totalitarianism (1951), Hannah Arendt diagnosed totalitarianism not as mere autocracy, but as a novel political form that utilizes terror and ideological total-explanation to destroy 'natality' (the human capacity to begin anew) and pulverize the public space of action into atomized isolation.",
+        "Totalitarianism means total control of society and Hitler and Stalin were totalitarian dictators.",
+        "Arendt wrote The Human Condition in 1958 and On Revolution in 1963."
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Conflict Resolution' (Advocated peaceful dialogue and reconciliation over coercion or class conflict....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Option B introduces Arendt's distinctive philosophical concepts (natality, public space of action, atomization, total-explanation) rather than generic historical descriptions, establishing immediate depth."
     },
     {
       "checkpoint_index": 360,
       "id": "kt_mcq_360",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Decentralization (Gram Swaraj)':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "Who advocated the 'Myth of the General Strike' in 'Reflections on Violence' (1908) as an intuitive catalyst to rouse working-class direct action?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Georges Sorel",
+        "Mikhail Bakunin",
+        "Pierre-Joseph Proudhon",
+        "Peter Kropotkin"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Decentralization (Gram Swaraj)' (Advocates village self-rule and local self-sufficiency....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 0,
+      "explanation": "French revolutionary syndicalist Georges Sorel rejected intellectualist parliamentary socialism, arguing that heroic, intuitive social myths like the general strike rejuvenate working-class militancy against bourgeois decadence."
     },
     {
       "checkpoint_index": 370,
       "id": "kt_mcq_370",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Voluntary Wealth Sharing':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "What did Karl Popper say about Plato's concept of the 'Philosopher King' in 'The Republic'?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Popper praised Plato as the greatest defender of Athenian direct democracy.",
+        "Popper argued that Plato's philosopher king is the prototype of totalitarian rule, demanding closed societies where independent critical inquiry is suppressed.",
+        "Popper claimed that Plato was actually an undercover Spartan spy.",
+        "Popper argued that Plato invented modern liberal constitutionalism."
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Voluntary Wealth Sharing' (The wealthy must share resources willingly for social good....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Popper argued that Plato substituted the democratic question 'How can we organize institutions so that bad rulers do minimal damage?' with the authoritarian question 'Who should rule?', laying the intellectual foundation for totalitarianism."
     },
     {
       "checkpoint_index": 380,
       "id": "kt_mcq_380",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Nonviolent Resistance':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "Who authored 'The Road to Serfdom' (1944), arguing that state economic planning inexorably leads to totalitarian control?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Milton Friedman",
+        "Friedrich Hayek",
+        "Ludwig von Mises",
+        "Ayn Rand"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Nonviolent Resistance' (The state must be held morally accountable. Citizens have the right—and duty—to resist unjust laws through Satyagraha ....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Austrian economist Friedrich Hayek warned in 'The Road to Serfdom' (1944) that government economic intervention dismantles the spontaneous order of free markets and concentrates power that inevitably leads to political tyranny."
     },
     {
       "checkpoint_index": 390,
       "id": "kt_mcq_390",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Spiritual and Moral Values':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "Whose idea was the 'Inevitability of Gradualness', arguing that socialism would arrive through municipal reform, progressive taxation, and administrative efficiency?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Sidney and Beatrice Webb (Fabian Society)",
+        "Karl Marx and Friedrich Engels",
+        "Vladimir Lenin",
+        "Rosa Luxemburg"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Spiritual and Moral Values' (Promotes ethical education and spiritual development over material gain....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 0,
+      "explanation": "Sidney and Beatrice Webb formulated the Fabian doctrine of the 'inevitability of gradualness', arguing that democratic franchise naturally leads to municipalized public services and peaceful social transformation."
     },
     {
       "checkpoint_index": 400,
       "id": "kt_mcq_400",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Decentralization (Gram Swaraj)':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "[UPSC 10-Marker]: “Compare the evolutionary socialism of the Fabians with the revolutionary syndicalism of Sorel.” Which Conclusion provides the sharpest contrast?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Both Fabians and Sorel were socialists who lived in Europe in the early 20th century.",
+        "While the Fabians reposed complete faith in parliamentary democracy, bureaucratic expertise, and constitutional gradualism, Sorel dismissed representative institutions as bourgeois corruption—valorizing irrational myth, working-class direct action, and violent syndicalist rupture.",
+        "Therefore, Fabians were successful in Britain whereas Sorel had no influence anywhere in the world.",
+        "In conclusion, socialism has many branches and students must study all branches carefully."
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Decentralization (Gram Swaraj)' (Advocated village self-governance as the foundation of real democracy....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Option B articulates the polar opposition across institutional methods (parliamentary constitutionalism vs direct action), epistemology (bureaucratic rationalism vs irrational myth), and philosophy of change (gradualism vs violent rupture)."
     },
     {
       "checkpoint_index": 410,
       "id": "kt_mcq_410",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Structural Violence':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "Who described Indian village communities as “a sink of localism, a den of ignorance, narrow-mindedness and communalism” in the Constituent Assembly debates?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Jawaharlal Nehru",
+        "B.R. Ambedkar",
+        "Sardar Vallabhbhai Patel",
+        "K.M. Munshi"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Structural Violence' (Parliamentary democracies can still perpetuate systemic injustice....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "On November 4, 1948, Dr. B.R. Ambedkar introduced the Draft Constitution by defending the individual as the fundamental unit of Indian democracy and ruthlessly rejecting romantic notions of the self-governing village republic."
     },
     {
       "checkpoint_index": 420,
       "id": "kt_mcq_420",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Active Citizenship':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "In 'Hind Swaraj' (1909), how did Mahatma Gandhi characterize modern Western parliamentary democracy?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Gandhi called the British Parliament the 'mother of all moral institutions.'",
+        "Gandhi famously likened the British Parliament to a 'sterile woman' and a 'prostitute', because it acts only under outside pressure and lacks independent moral principle.",
+        "Gandhi argued that India should adopt the British cabinet system without any changes.",
+        "Gandhi praised modern industrial technology as divine blessings."
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Active Citizenship' (Real democracy lies in empowered masses, not voting alone....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "In Chapter 5 of 'Hind Swaraj', Gandhi launched a scathing civilizational critique of modern parliamentarism, arguing that party politicians waver with popular whims and vested interests rather than adhering to unbending moral truth (Satya)."
     },
     {
       "checkpoint_index": 430,
       "id": "kt_mcq_430",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Power in Simplicity':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "Which 1936 undelivered text by Dr. B.R. Ambedkar argued that social reform in India requires the radical destruction of the religious scriptures sanctioning caste?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Castes in India: Their Mechanism, Genesis and Development",
+        "Annihilation of Caste",
+        "Who Were the Shudras?",
+        "The Untouchables: Who Were They and Why They Became Untouchables?"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Power in Simplicity' (Simple living builds moral authority over material greed....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "'Annihilation of Caste' was prepared for the 1936 annual conference of the Jat-Pat Todak Mandal in Lahore. When organizers requested redactions of his critique of the Vedas and Shastras, Ambedkar refused to alter a single word and published the text independently."
     },
     {
       "checkpoint_index": 440,
       "id": "kt_mcq_440",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Civil Disobedience and Non-cooperation':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "Whose political vision was the 'Oceanic Circles' model of decentralized governance, where life is an ever-widening circle of self-reliant villages rather than a top-down pyramid?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Mahatma Gandhi",
+        "Jayaprakash Narayan",
+        "Vinoba Bhave",
+        "Rammanohar Lohia"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Civil Disobedience and Non-cooperation' (Peaceful disobedience against unjust laws through strikes, boycotts, and tax refusal was central....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 0,
+      "explanation": "In 'Harijan' (July 1946), Gandhi articulated his vision of decentralized democracy: an oceanic circle where the outermost circumference does not wield power to crush the inner circle, but gives strength to all, with the individual at the center."
     },
     {
       "checkpoint_index": 450,
       "id": "kt_mcq_450",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Constructive Alternatives':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "[UPSC 10-Marker]: “Examine the Gandhi-Ambedkar debate on the Village Republic in the context of the 73rd Constitutional Amendment.” Which Introduction establishes the sharpest analytical foundation?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Gandhi and Ambedkar were two great leaders of the Indian freedom movement who had many disagreements on caste and politics.",
+        "While Gandhi romanticized the village as an egalitarian, non-exploitative 'oceanic circle' of moral autonomy, Ambedkar unmasked it as a fortress of caste hegemony and local tyranny. The 73rd Constitutional Amendment (1992) dialectically reconciles both: constitutionalizing Panchayati Raj while instituting mandatory SC/ST and women reservations to prevent the re-entrenchment of caste dominance.",
+        "The 73rd Amendment was enacted in 1992 during the Narasimha Rao government and added the 11th Schedule to the Indian Constitution.",
+        "Gandhi lived in an ashram in Gujarat and Ambedkar studied at Columbia University and London School of Economics."
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Constructive Alternatives' (His vision included village republics , Khadi , basic education , and ethical living , offering a model of sustainable development. Gandhi's...) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Option B sets up the theoretical clash (moral romanticism vs sociological realism) and demonstrates how modern Indian constitutionalism synthesizes Gandhi's decentralization with Ambedkar's protective empowerment."
     },
     {
       "checkpoint_index": 460,
       "id": "kt_mcq_460",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Village Revival':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "“There is enough on earth for everybody's need, but not for everybody's greed.” Who formulated this foundational environmental-ethical maxim?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Rabindranath Tagore",
+        "Mahatma Gandhi",
+        "J.C. Kumarappa",
+        "Vinoba Bhave"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Village Revival' (Rebuilding village economies was core to Gandhi’s vision; India’s soul, he said, lived in its villages. Swaraj thus stood for self-realizati...) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Gandhi formulated this principle in his critique of industrial consumerism, laying the philosophical cornerstone for ecological economics, Sarvodaya, and sustainable development."
     },
     {
       "checkpoint_index": 470,
       "id": "kt_mcq_470",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Simplicity over Materialism':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "[UPSC 10-Marker]: “Critically evaluate Mahatma Gandhi's Theory of Trusteeship. Is it practical in modern market capitalism?” Which Conclusion provides the most nuanced assessment?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "In conclusion, Trusteeship was completely impractical and capitalism has proven Gandhi wrong.",
+        "While orthodox Marxists rightly critique Trusteeship for assuming that the bourgeoisie can undergo voluntary moral conversion, its normative essence finds renewed life today in Corporate Social Responsibility (CSR), ESG mandates, and stakeholder capitalism—reminding us that economic ownership carries an inalienable ethical obligation to societal welfare.",
+        "Gandhi was a saint and therefore all businessmen should surrender their property immediately.",
+        "Trusteeship was formulated by Gandhi during his stay in South Africa."
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Simplicity over Materialism' (Gandhi promoted a life of minimal needs and spiritual focus, rejecting the greed-driven consumerism of modernity....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Option B provides a balanced critical assessment: acknowledging the Marxist skepticism of voluntary capitalist benevolence while highlighting modern applications (CSR, ESG, stakeholder capitalism)."
     },
     {
       "checkpoint_index": 480,
       "id": "kt_mcq_480",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Human Rights Movements':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "“One is not born, but rather becomes, a woman.” Which landmark feminist text contains this statement?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Mary Wollstonecraft in 'A Vindication of the Rights of Woman'",
+        "Simone de Beauvoir in 'The Second Sex'",
+        "Betty Friedan in 'The Feminine Mystique'",
+        "Kate Millett in 'Sexual Politics'"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Human Rights Movements' (Leaders like Martin Luther King Jr. and Nelson Mandela adopted his satyagraha model in civil rights struggles....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "In Book II of 'The Second Sex' (1949), French existentialist feminist Simone de Beauvoir established the foundational distinction between biological sex and socially constructed gender, demonstrating that 'femininity' is culturally imposed rather than natural."
     },
     {
       "checkpoint_index": 490,
       "id": "kt_mcq_490",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Global Peace and Dialogue':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "In 'Justice, Gender, and the Family' (1989), what fundamental critique did Susan Moller Okin direct at John Rawls' 'A Theory of Justice'?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Rawls was too focused on economic redistribution.",
+        "Rawls uncritically treated the traditional family as a 'just institution' and ignored gender justice within the private sphere, assuming household heads behind the veil of ignorance were genderless.",
+        "Rawls did not support women voting in elections.",
+        "Rawls took inspiration exclusively from socialist thinkers."
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Global Peace and Dialogue' (His belief in interfaith harmony supports international efforts for peaceful coexistence and cultural understanding....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Okin demonstrated that mainstream liberal theories of justice suffer from a profound blindspot by assuming the family is inherently just; without dismantling the gendered division of domestic labor, true equality of opportunity remains impossible."
     },
     {
       "checkpoint_index": 500,
       "id": "kt_mcq_500",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Core Focus':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "Who wrote 'The Feminine Mystique' (1963), identifying 'the problem that has no name' and catalyzing Second-Wave liberal feminism?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Gloria Steinem",
+        "Betty Friedan",
+        "Shulamith Firestone",
+        "Germaine Greer"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Core Focus' (Liberal feminism advocates for gender equality through legal, political, and institutional reforms within the existing liberal democratic fr...) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Betty Friedan unmasked the post-war domestic myth that women could find fulfillment solely through housewifery and marriage, founding the National Organization for Women (NOW) to fight for equal constitutional and workplace rights."
     },
     {
       "checkpoint_index": 510,
       "id": "kt_mcq_510",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Neglect of Economic Structures':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "Whose idea was the concept of 'Intersectionality', demonstrating that race, gender, and class oppressions compound one another rather than operating separately?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Kimberlé Crenshaw",
+        "Bell Hooks",
+        "Patricia Hill Collins",
+        "Audre Lorde"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Neglect of Economic Structures' (Sylvia Federici and socialist feminists argue it underplays capitalism’s role in sustaining gender inequality....) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 0,
+      "explanation": "Legal scholar Kimberlé Crenshaw coined the term Intersectionality in 1989, illustrating that Black women faced distinct compounded discrimination that neither conventional race-alone nor gender-alone legal frameworks could capture."
     },
     {
       "checkpoint_index": 520,
       "id": "kt_mcq_520",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Complexity of Gender Rejection':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of Judith Butler.\nWhich of the statements given above is/are correct?",
+      "question": "[UPSC 10-Marker]: “How did the Radical Feminist slogan 'The Personal is Political' transform the scope of Political Science?” Which Introduction is most academically compelling?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Carol Hanisch wrote an essay called The Personal is Political in 1969 during the women's liberation movement.",
+        "By exploding the classical liberal dichotomy between the 'public sphere of politics' and the 'private sphere of the domestic household', radical feminism radically expanded political inquiry—demonstrating that power, subordination, and resource allocation operate as pervasively in the family and bedroom as in the legislature.",
+        "Personal life is very political because politicians also have families and wives.",
+        "Feminism has three waves: first wave was for voting, second wave was for equality, and third wave was for diversity."
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Complexity of Gender Rejection' (Judith Butler stresses that challenging gender norms must support trans and non-binary people: “We must reject rigid norms while affirming d...) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Option B directly unpacks the epistemological revolution: deconstructing the public/private dichotomy and expanding the definition of 'power' into intimate and domestic arenas."
     },
     {
       "checkpoint_index": 530,
       "id": "kt_mcq_530",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Revolutionary Feasibility':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of Sylvia Walby.\nWhich of the statements given above is/are correct?",
+      "question": "“I do not wish women to have power over men; but over themselves.” Which pioneering feminist wrote this in 'A Vindication of the Rights of Woman' (1792)?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Olympe de Gouges",
+        "Mary Wollstonecraft",
+        "Harriet Taylor Mill",
+        "Judith Sargent Murray"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Revolutionary Feasibility' (Revolutionary aims may lack practical pathways. Sylvia Walby : “Balance is needed between transformative goals and pragmatic reforms.”...) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Mary Wollstonecraft's 'A Vindication of the Rights of Woman' responded to Rousseau's 'Émile', demanding equal rational education for women so they achieve moral autonomy rather than living as decorative companions to men."
     },
     {
       "checkpoint_index": 540,
       "id": "kt_mcq_540",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Deconstruction of Cultural Stereotypes':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "Whose foundational concept is 'Gender Performativity', arguing in 'Gender Trouble' (1990) that gender is an ongoing social performance constituted through stylized repetition of acts?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "Judith Butler",
+        "Luce Irigaray",
+        "Julia Kristeva",
+        "Hélène Cixous"
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Deconstruction of Cultural Stereotypes' (Counters reductive Western portrayals of non-Western women. Leila Ahmed reinterpreted Muslim women’s roles and agency beyond the colonial le...) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 0,
+      "explanation": "Post-structuralist philosopher Judith Butler challenged biological essentialism, demonstrating that gender identities are fabricated and naturalized through repetitive bodily performances."
     },
     {
       "checkpoint_index": 550,
       "id": "kt_mcq_550",
-      "question": "In the conceptual architecture of UPSC PSIR Paper 1A, consider the following statements regarding 'Anarcha-Feminism':\n1. It functions as an analytical instrument to dissect normative commitments and institutional power structures.\n2. In scholarly discourse, it is directly associated with the critical insights of classical and modern political philosophy.\nWhich of the statements given above is/are correct?",
+      "question": "[UPSC 10-Marker]: “Evaluate Carol Gilligan’s 'Ethic of Care' versus the liberal 'Ethic of Justice'. Can they be reconciled in modern public policy?” Which Conclusion offers the most sophisticated synthesis?",
       "options": [
-        "1 only",
-        "2 only",
-        "Both 1 and 2",
-        "Neither 1 nor 2"
+        "In conclusion, men believe in justice and women believe in care because of biological differences.",
+        "Rather than viewing them as irreconcilable polarities, contemporary theorists like Joan Tronto and Virginia Held advocate a dialectical synthesis: an 'Ethic of Care' provides the relational empathy and contextual sensitivity to human vulnerability, while the 'Ethic of Justice' guarantees the universal constitutional floor of non-discrimination and fundamental rights.",
+        "Gilligan wrote In a Different Voice in 1982 to criticize Lawrence Kohlberg's stages of moral development.",
+        "Public policy in India should ignore both theories and focus only on infrastructure and GDP growth."
       ],
-      "correctIndex": 2,
-      "explanation": "Both statements are correct. 'Anarcha-Feminism' (Combines feminism with anarchist critique of all hierarchies—state, gender, class. Emma Goldman envisioned a society free from domination, r...) forms a foundational conceptual anchor in Political Theory, providing critical analytical leverage for both Prelims conceptual MCQs and Mains answer-writing."
+      "correctIndex": 1,
+      "explanation": "Option B moves beyond binary conflict, offering an integrated public policy synthesis (Joan Tronto & Virginia Held) that combines relational care with universal constitutional justice."
     }
   ]
 };
