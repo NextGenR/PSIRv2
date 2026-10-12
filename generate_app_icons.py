@@ -158,4 +158,4 @@ svg_content = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
 with open("favicon.svg", "w", encoding="utf-8") as f:
     f.write(svg_content)
 
-print("✅ All PSIR bold app icons generated successfully!")
+print("[OK] All PSIR bold app icons generated successfully!")
