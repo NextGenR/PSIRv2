@@ -1,0 +1,1969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top 20 Political Analyst Ideas & Hooks • UPSC PSIR Suite</title>
+  <meta name="description" content="Top 20 recent, non-controversial political analyst ideas, flowery quotes, and intro/conclusion hooks for UPSC PSIR Optional. 3-choice review, active recall, and paper-wise filters.">
+  
+  <!-- App Icons -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#7c3aed">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="PSIR Ideas">
+
+  <!-- Google Fonts: Roboto Serif, Plus Jakarta Sans, Outfit, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Roboto+Serif:ital,opsz,wght@0,8..144,300..900;1,8..144,300..900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ========================================================
+       TOP 20 POLITICAL ANALYST IDEAS DESIGN SYSTEM
+       Consistent with PSIR Suite & Key Terms
+       ======================================================== */
+    :root {
+      --bg-app: #f4f6fa;
+      --paper-bg: #ffffff;
+      --paper-border: #e2e8f0;
+      --paper-shadow: 0 8px 30px -4px rgba(0, 0, 0, 0.07), 0 0 1px rgba(0, 0, 0, 0.08);
+
+      --sidebar-bg: #ffffff;
+      --sidebar-border: #e2e8f0;
+
+      --text-main: #1e293b;
+      --text-muted: #475569;
+      --text-dim: #64748b;
+
+      --accent-heading: #7c3aed;
+      --accent-bg: rgba(124, 58, 237, 0.08);
+      --accent-border: rgba(124, 58, 237, 0.22);
+
+      --brand-primary: #0284c7;
+
+      --green-check: #10b981;
+      --green-bg: #ecfdf5;
+      --green-border: #a7f3d0;
+
+      --red-wrong: #ef4444;
+      --red-bg: #fef2f2;
+      --red-border: #fecaca;
+
+      --circle-neutral: #f59e0b;
+      --circle-bg: #fffbeb;
+      --circle-border: #fde68a;
+
+      --hook-bg: #faf5ff;
+      --hook-border: #c084fc;
+      --hook-text: #581c87;
+
+      --font-display: 'Outfit', sans-serif;
+      --font-serif: 'Roboto Serif', Georgia, serif;
+      --font-reader: 'Roboto Serif', Georgia, serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      --sidebar-width: 310px;
+      --transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      --card-font-scale: 1;
+    }
+
+    body.dark-mode {
+      --bg-app: #0d1117;
+      --paper-bg: #161b22;
+      --paper-border: #30363d;
+      --paper-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.6);
+
+      --sidebar-bg: #161b22;
+      --sidebar-border: #30363d;
+
+      --text-main: #c9d1d9;
+      --text-muted: #8b949e;
+      --text-dim: #6e7681;
+
+      --accent-heading: #a78bfa;
+      --accent-bg: rgba(167, 139, 250, 0.12);
+      --accent-border: rgba(167, 139, 250, 0.3);
+
+      --brand-primary: #58a6ff;
+
+      --green-check: #3fb950;
+      --green-bg: rgba(63, 185, 80, 0.12);
+      --green-border: rgba(63, 185, 80, 0.35);
+
+      --red-wrong: #f85149;
+      --red-bg: rgba(248, 81, 73, 0.12);
+      --red-border: rgba(248, 81, 73, 0.35);
+
+      --circle-neutral: #d29922;
+      --circle-bg: rgba(210, 153, 34, 0.12);
+      --circle-border: rgba(210, 153, 34, 0.35);
+
+      --hook-bg: #1e1b4b;
+      --hook-border: #7c3aed;
+      --hook-text: #e0e7ff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg-app);
+      color: var(--text-main);
+      font-family: var(--font-reader);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.6;
+      overflow-x: hidden;
+      transition: background 0.25s ease, color 0.25s ease;
+    }
+
+    /* Celebration Canvas */
+    #celebrationCanvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 99999;
+    }
+
+    /* Floating Toast */
+    #toastPill {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #1e293b;
+      color: #ffffff;
+      padding: 9px 18px;
+      border-radius: 999px;
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 700;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+      z-index: 99999;
+      display: none;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    body.dark-mode #toastPill {
+      background: #f1f5f9;
+      color: #0f172a;
+    }
+
+    /* Highlighter Toolbar */
+    .highlighter-float-toolbar {
+      position: fixed;
+      z-index: 10000;
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      border-radius: 20px;
+      padding: 4px 8px;
+      display: none;
+      align-items: center;
+      gap: 6px;
+    }
+    .color-swatch-btn {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: transform 0.15s ease;
+    }
+    .color-swatch-btn:hover { transform: scale(1.2); }
+    .clear-highlight-btn {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      color: var(--text-dim);
+      font-size: 12px;
+      font-weight: 800;
+      padding: 2px 4px;
+    }
+
+    /* User Highlights */
+    mark.user-highlight {
+      border-radius: 2px;
+      padding: 0 2px;
+    }
+    mark.user-highlight.yellow { background-color: #fef08a; color: inherit; }
+    mark.user-highlight.green { background-color: #bbf7d0; color: inherit; }
+    mark.user-highlight.blue { background-color: #bae6fd; color: inherit; }
+    body.dark-mode mark.user-highlight.yellow { background-color: rgba(253, 224, 71, 0.35); color: #fef9c3; }
+    body.dark-mode mark.user-highlight.green { background-color: rgba(74, 222, 128, 0.35); color: #dcfce7; }
+    body.dark-mode mark.user-highlight.blue { background-color: rgba(56, 189, 248, 0.35); color: #e0f2fe; }
+
+    /* ========================================================
+       TOP APP HEADER
+       ======================================================== */
+    .app-top-header {
+      background: var(--paper-bg);
+      border-bottom: 1px solid var(--paper-border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 8px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    }
+
+    .brand-section {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+
+    .toggle-sidebar-btn {
+      background: rgba(0,0,0,0.04);
+      border: 1px solid var(--paper-border);
+      color: var(--text-main);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 6px 11px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: var(--transition);
+      font-family: var(--font-display);
+    }
+    body.dark-mode .toggle-sidebar-btn { background: rgba(255,255,255,0.05); }
+    .toggle-sidebar-btn:hover { background: var(--accent-bg); color: var(--accent-heading); border-color: var(--accent-border); }
+
+    .brand-badge-icon {
+      background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%);
+      color: #ffffff;
+      padding: 3px 9px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 7px rgba(124, 58, 237, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      flex-shrink: 0;
+    }
+    .psir-badge-text {
+      font-family: 'Segoe UI Black', 'Arial Black', Impact, sans-serif;
+      font-size: 12.5px;
+      font-weight: 900;
+      letter-spacing: 0.8px;
+      line-height: 1;
+      color: #ffffff;
+    }
+
+    /* Top Nav Links */
+    .topbar-nav-links {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .topbar-nav-link {
+      padding: 5px 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      font-family: var(--font-display);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      text-decoration: none;
+      transition: var(--transition);
+      white-space: nowrap;
+      border: 1px solid var(--paper-border);
+      color: var(--text-muted);
+    }
+    .topbar-nav-link:hover {
+      background: rgba(0,0,0,0.04);
+      color: var(--text-main);
+    }
+    body.dark-mode .topbar-nav-link:hover { background: rgba(255,255,255,0.05); }
+
+    .topbar-nav-notes {
+      background: rgba(139, 58, 43, 0.08);
+      color: #8b3a2b !important;
+      border-color: rgba(139, 58, 43, 0.2);
+    }
+    .topbar-nav-terms {
+      background: rgba(2, 132, 199, 0.08);
+      color: #0284c7 !important;
+      border-color: rgba(2, 132, 199, 0.2);
+    }
+    .topbar-nav-new-active {
+      background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%);
+      color: #ffffff !important;
+      border-color: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 2px 7px rgba(124, 58, 237, 0.35);
+    }
+
+    /* Top Filter Buttons */
+    .topbar-filters {
+      display: flex;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.03);
+      border: 1px solid var(--paper-border);
+      padding: 3px;
+      border-radius: 10px;
+      gap: 3px;
+    }
+    body.dark-mode .topbar-filters { background: rgba(255, 255, 255, 0.03); }
+    .top-filter-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-muted);
+      font-family: var(--font-display);
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 7px;
+      cursor: pointer;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      white-space: nowrap;
+    }
+    .top-filter-btn.active {
+      background: var(--paper-bg);
+      color: var(--accent-heading);
+      border-color: var(--paper-border);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    /* Actions & Tools */
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+    .header-action-btn {
+      background: transparent;
+      border: 1px solid var(--paper-border);
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 6px 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: var(--transition);
+      text-decoration: none;
+    }
+    .header-action-btn:hover {
+      background: rgba(0, 0, 0, 0.04);
+      color: var(--text-main);
+      border-color: var(--accent-heading);
+    }
+    body.dark-mode .header-action-btn:hover { background: rgba(255, 255, 255, 0.05); }
+    .header-action-btn.active-tool {
+      background: var(--accent-bg);
+      color: var(--accent-heading);
+      border-color: var(--accent-heading);
+    }
+
+    /* Font Size Scaler */
+    .font-size-adjuster {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--paper-border);
+      border-radius: 8px;
+      padding: 2px;
+      gap: 2px;
+    }
+    body.dark-mode .font-size-adjuster { background: rgba(255, 255, 255, 0.05); }
+    .font-size-action-btn {
+      background: transparent !important;
+      border: none !important;
+      padding: 4px 8px !important;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px !important;
+      color: var(--text-main) !important;
+      transition: var(--transition);
+      line-height: 1;
+    }
+    .font-size-action-btn:hover { background: var(--accent-bg) !important; color: var(--accent-heading) !important; }
+    .font-size-icon {
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: baseline;
+    }
+    .fs-mark { font-size: 11px; font-weight: 900; margin-left: 1px; }
+
+    /* Layout */
+    .workspace-layout {
+      display: flex;
+      flex: 1;
+      position: relative;
+      width: 100%;
+    }
+
+    /* Sidebar Drawer */
+    .sidebar-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+      z-index: 999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+    .sidebar-backdrop.active { opacity: 1; pointer-events: auto; }
+
+    .syllabus-sidebar {
+      width: var(--sidebar-width);
+      background: var(--sidebar-bg);
+      border-right: 1px solid var(--sidebar-border);
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      height: calc(100vh - 54px);
+      position: sticky;
+      top: 54px;
+      overflow-y: auto;
+      transition: var(--transition);
+      z-index: 50;
+    }
+    .sidebar-header {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--sidebar-border);
+      background: var(--paper-bg);
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    .sidebar-title {
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .sidebar-close-btn {
+      background: rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--paper-border);
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 12px;
+      color: var(--text-dim);
+    }
+    .sidebar-search-box {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      background: rgba(0,0,0,0.03);
+      border: 1px solid var(--paper-border);
+      border-radius: 8px;
+      padding: 6px 10px;
+      gap: 6px;
+    }
+    body.dark-mode .sidebar-search-box { background: rgba(255,255,255,0.04); }
+    .sidebar-search-input {
+      border: none;
+      background: transparent;
+      font-family: inherit;
+      font-size: 12px;
+      color: var(--text-main);
+      width: 100%;
+      outline: none;
+    }
+
+    .sidebar-tree {
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      flex: 1;
+    }
+    .sidebar-idea-item {
+      padding: 8px 10px;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      background: rgba(0,0,0,0.015);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      transition: var(--transition);
+      text-decoration: none;
+      color: var(--text-main);
+    }
+    .sidebar-idea-item:hover {
+      background: var(--accent-bg);
+      border-color: var(--accent-border);
+    }
+    .sidebar-idea-scholar {
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .sidebar-idea-tag {
+      font-size: 10px;
+      font-weight: 800;
+      font-family: var(--font-mono);
+      padding: 2px 5px;
+      border-radius: 4px;
+      background: rgba(0,0,0,0.05);
+      color: var(--text-dim);
+      flex-shrink: 0;
+    }
+    body.dark-mode .sidebar-idea-tag { background: rgba(255,255,255,0.08); }
+    .sidebar-status-icon {
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    /* Main Content Area */
+    .main-content-area {
+      flex: 1;
+      padding: 16px 20px 80px;
+      max-width: 860px;
+      margin: 0 auto;
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    /* Deck Controller Toolbar */
+    .mobile-deck-toolbar {
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      border-radius: 14px;
+      padding: 8px 14px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      position: sticky;
+      top: 54px;
+      z-index: 60;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: var(--transition);
+    }
+    body.dark-mode .mobile-deck-toolbar {
+      background: rgba(22, 27, 34, 0.95);
+      border-color: #30363d;
+      box-shadow: 0 6px 22px rgba(0, 0, 0, 0.5);
+    }
+
+    .deck-controls-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+    }
+    .deck-nav-btn {
+      background: rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--paper-border);
+      color: var(--text-main);
+      font-family: var(--font-display);
+      font-size: 12.5px;
+      font-weight: 700;
+      padding: 6px 13px;
+      border-radius: 9px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: var(--transition);
+      flex-shrink: 0;
+      user-select: none;
+    }
+    body.dark-mode .deck-nav-btn { background: rgba(255, 255, 255, 0.06); color: #c9d1d9; }
+    .deck-nav-btn:hover:not(:disabled) {
+      background: var(--accent-bg);
+      color: var(--accent-heading);
+      border-color: var(--accent-border);
+      transform: translateY(-1px);
+    }
+    .deck-nav-btn:disabled { opacity: 0.35; cursor: not-allowed; transform: none; }
+
+    .deck-counter-badge {
+      background: var(--accent-bg);
+      border: 1px solid var(--accent-border);
+      color: var(--accent-heading);
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-size: 11.5px;
+      font-weight: 800;
+      font-family: var(--font-display);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
+    .deck-counter-badge strong { font-family: var(--font-mono); font-size: 13.5px; }
+
+    .deck-mode-toggle-btn {
+      background: transparent;
+      border: 1px dashed var(--paper-border);
+      color: var(--text-muted);
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 5px 9px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: var(--transition);
+      flex-shrink: 0;
+      margin-left: auto;
+    }
+    .deck-mode-toggle-btn:hover { background: rgba(0, 0, 0, 0.04); color: var(--text-main); border-color: var(--accent-heading); }
+
+    .deck-progress-track {
+      width: 100%;
+      height: 3.5px;
+      background: rgba(0, 0, 0, 0.05);
+      border-radius: 999px;
+      overflow: hidden;
+      position: relative;
+    }
+    body.dark-mode .deck-progress-track { background: rgba(255, 255, 255, 0.08); }
+    .deck-progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #7c3aed 0%, #0284c7 100%);
+      border-radius: 999px;
+      transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* Cards Container */
+    .ideas-cards-container {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      width: 100%;
+      transition: var(--transition);
+    }
+
+    /* Idea Card */
+    .idea-card {
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      border-radius: 18px;
+      padding: 22px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.03);
+      transition: var(--transition);
+      position: relative;
+    }
+    .idea-card:hover {
+      box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    }
+    .idea-card.status-right { background: var(--green-bg); border-color: var(--green-border); }
+    .idea-card.status-wrong { background: var(--red-bg); border-color: var(--red-border); }
+    .idea-card.status-circle { background: var(--circle-bg); border-color: var(--circle-border); }
+
+    /* Card Top Bar */
+    .idea-card-topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--paper-border);
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .idea-meta-pills {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .idea-idx-pill {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 800;
+      background: var(--accent-bg);
+      color: var(--accent-heading);
+      padding: 3px 8px;
+      border-radius: 6px;
+      border: 1px solid var(--accent-border);
+    }
+    .idea-paper-pill {
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: rgba(2, 132, 199, 0.1);
+      color: #0284c7;
+    }
+    .idea-paper-pill.p1b { background: rgba(139, 58, 43, 0.1); color: #8b3a2b; }
+    .idea-paper-pill.p2 { background: rgba(16, 185, 129, 0.1); color: #10b981; }
+    .idea-topic-pill {
+      font-size: 11px;
+      font-weight: 700;
+      background: rgba(0, 0, 0, 0.04);
+      color: var(--text-dim);
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+    body.dark-mode .idea-topic-pill { background: rgba(255, 255, 255, 0.06); }
+
+    /* 3-Button Selector */
+    .bullet-eval-selector {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      padding: 3px;
+      border-radius: 999px;
+      flex-shrink: 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+    }
+    .eval-choice-btn {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13.5px;
+      font-weight: 800;
+      cursor: pointer;
+      color: var(--text-dim);
+      transition: var(--transition);
+    }
+    .eval-choice-btn:hover { transform: scale(1.18); }
+    .eval-btn-right:hover { color: var(--green-check); background: rgba(16, 185, 129, 0.15); }
+    .eval-choice-btn.selected-right { background: var(--green-check); color: #fff; transform: scale(1.1); }
+    .eval-btn-wrong:hover { color: var(--red-wrong); background: rgba(239, 68, 68, 0.15); }
+    .eval-choice-btn.selected-wrong { background: var(--red-wrong); color: #fff; transform: scale(1.1); }
+    .eval-btn-circle:hover { color: var(--circle-neutral); background: rgba(245, 158, 11, 0.15); }
+    .eval-choice-btn.selected-circle { background: var(--circle-neutral); color: #fff; transform: scale(1.1); }
+
+    /* Scholar Row */
+    .scholar-profile-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .scholar-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #7c3aed 0%, #3b82f6 100%);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 800;
+      flex-shrink: 0;
+      box-shadow: 0 3px 8px rgba(124, 58, 237, 0.25);
+    }
+    .scholar-info-wrap {
+      display: flex;
+      flex-direction: column;
+    }
+    .scholar-name {
+      font-family: var(--font-display);
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.25;
+    }
+    .scholar-affil {
+      font-size: 11.5px;
+      color: var(--text-dim);
+      font-weight: 500;
+    }
+
+    /* Concept Title */
+    .idea-concept-title {
+      font-family: var(--font-display);
+      font-size: calc(18px * var(--card-font-scale, 1));
+      font-weight: 800;
+      color: var(--accent-heading);
+      letter-spacing: -0.2px;
+      line-height: 1.35;
+    }
+
+    /* THE FLOWERY HOOK CALLOUT BOX */
+    .hook-quote-box {
+      background: var(--hook-bg);
+      border: 1.5px solid var(--hook-border);
+      border-left: 5px solid var(--accent-heading);
+      border-radius: 12px;
+      padding: 16px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: relative;
+    }
+    .hook-badge-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .hook-type-tag {
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--accent-heading);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .copy-hook-btn {
+      background: rgba(124, 58, 237, 0.1);
+      border: 1px solid var(--hook-border);
+      color: var(--accent-heading);
+      font-family: var(--font-display);
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: var(--transition);
+    }
+    .copy-hook-btn:hover {
+      background: var(--accent-heading);
+      color: #ffffff;
+    }
+    .hook-quote-text {
+      font-family: var(--font-serif);
+      font-size: calc(15.5px * var(--card-font-scale, 1));
+      font-style: italic;
+      line-height: 1.6;
+      color: var(--hook-text);
+      font-weight: 500;
+    }
+
+    /* Explanation & Exam Utility */
+    .idea-explanation-text {
+      font-size: calc(14px * var(--card-font-scale, 1));
+      line-height: 1.65;
+      color: var(--text-main);
+    }
+
+    .exam-utility-box {
+      background: rgba(0, 0, 0, 0.02);
+      border: 1px solid var(--paper-border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    body.dark-mode .exam-utility-box { background: rgba(255, 255, 255, 0.02); }
+    .exam-utility-header {
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 800;
+      color: #0284c7;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .exam-utility-content {
+      font-size: calc(13px * var(--card-font-scale, 1));
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    .source-citation-line {
+      font-size: 11.5px;
+      color: var(--text-dim);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-style: italic;
+    }
+
+    /* Card Bottom Bar */
+    .idea-card-bottombar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding-top: 10px;
+      margin-top: auto;
+      border-top: 1px dashed var(--paper-border);
+      font-size: 11.5px;
+    }
+    .card-status-badge {
+      font-family: var(--font-display);
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--text-dim);
+    }
+    .card-status-badge.status-badge-right { color: var(--green-check); font-weight: 800; }
+    .card-status-badge.status-badge-wrong { color: var(--red-wrong); font-weight: 800; }
+    .card-status-badge.status-badge-circle { color: var(--circle-neutral); font-weight: 800; }
+
+    /* Slider Mode (Horizontal Swipe) */
+    .ideas-cards-container.slider-mode {
+      display: flex !important;
+      flex-direction: row !important;
+      overflow-x: auto !important;
+      overflow-y: hidden !important;
+      scroll-snap-type: x mandatory !important;
+      -webkit-overflow-scrolling: touch !important;
+      scroll-behavior: smooth !important;
+      gap: 16px !important;
+      padding: 4px 0 24px 0 !important;
+      margin: 0 !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+      scrollbar-width: thin;
+      scrollbar-color: var(--accent-heading) transparent;
+    }
+    .ideas-cards-container.slider-mode::-webkit-scrollbar { height: 5px; }
+    .ideas-cards-container.slider-mode::-webkit-scrollbar-thumb {
+      background: var(--accent-heading);
+      border-radius: 999px;
+    }
+    .ideas-cards-container.slider-mode .idea-card {
+      flex: 0 0 100% !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: 100% !important;
+      scroll-snap-align: start !important;
+      scroll-snap-stop: always !important;
+      box-sizing: border-box !important;
+      margin: 0 !important;
+      min-height: 380px !important;
+      max-height: calc(100vh - 190px) !important;
+      overflow-y: auto !important;
+      box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.08) !important;
+    }
+
+    /* Checkpoint MCQ in Ideas */
+    .checkpoint-card-wrap {
+      background: linear-gradient(135deg, rgba(124, 58, 237, 0.05) 0%, rgba(2, 132, 199, 0.05) 100%);
+      border: 2px solid var(--accent-border);
+      border-radius: 18px;
+      padding: 22px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .checkpoint-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px dashed var(--paper-border);
+      padding-bottom: 8px;
+    }
+    .checkpoint-tag {
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      background: var(--accent-heading);
+      color: #fff;
+      padding: 3px 10px;
+      border-radius: 6px;
+    }
+    .cp-option-btn {
+      width: 100%;
+      text-align: left;
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-family: inherit;
+      font-size: calc(13.5px * var(--card-font-scale, 1));
+      color: var(--text-main);
+      cursor: pointer;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      transition: var(--transition);
+      margin-bottom: 8px;
+    }
+    .cp-option-btn:hover { border-color: var(--accent-heading); }
+    .cp-letter {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--text-dim);
+      flex-shrink: 0;
+    }
+    .cp-option-btn.selected-correct { background: var(--green-bg) !important; border-color: var(--green-check) !important; color: var(--green-check) !important; }
+    .cp-option-btn.selected-correct .cp-letter { background: var(--green-check); color: #fff; }
+    .cp-option-btn.selected-wrong { background: var(--red-bg) !important; border-color: var(--red-wrong) !important; color: var(--red-wrong) !important; }
+    .cp-option-btn.selected-wrong .cp-letter { background: var(--red-wrong); color: #fff; }
+    .cp-option-btn.reveal-correct { background: var(--green-bg) !important; border-color: var(--green-border) !important; color: var(--green-check) !important; }
+    .cp-explanation-box {
+      background: var(--paper-bg);
+      border-left: 3px solid var(--accent-heading);
+      border-radius: 0 8px 8px 0;
+      padding: 12px 16px;
+      font-size: calc(13px * var(--card-font-scale, 1));
+      line-height: 1.6;
+      color: var(--text-main);
+      display: none;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 900px) {
+      .app-top-header { flex-wrap: wrap; padding: 8px 12px; gap: 8px; }
+      .brand-section { flex: 1 1 auto; gap: 6px; }
+      .topbar-filters { order: 3; width: 100%; overflow-x: auto; padding: 4px 2px; }
+      .topbar-filters::-webkit-scrollbar { display: none; }
+      .syllabus-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        height: 100vh;
+        width: min(320px, 86vw);
+        z-index: 1000;
+        box-shadow: 6px 0 30px rgba(0, 0, 0, 0.35);
+        transform: translateX(-100%);
+        transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .syllabus-sidebar.open { transform: translateX(0); }
+      .sidebar-close-btn { display: flex; }
+      .main-content-area { padding: 12px 12px 80px; }
+      .scholar-avatar { width: 36px; height: 36px; font-size: 12px; }
+      .idea-concept-title { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fullscreen Celebration Canvas -->
+  <canvas id="celebrationCanvas"></canvas>
+
+  <!-- Toast Notification Pill -->
+  <div id="toastPill"></div>
+
+  <!-- Floating Text Highlighter Toolbar -->
+  <div class="highlighter-float-toolbar" id="highlighterFloatToolbar">
+    <button class="color-swatch-btn" style="background-color: #fef08a;" data-color="yellow" title="Yellow Highlight"></button>
+    <button class="color-swatch-btn" style="background-color: #bbf7d0;" data-color="green" title="Mint Green Highlight"></button>
+    <button class="color-swatch-btn" style="background-color: #bae6fd;" data-color="blue" title="Sky Blue Highlight"></button>
+    <button class="clear-highlight-btn" id="removeHighlightBtn" title="Remove Highlight">✕</button>
+  </div>
+
+  <!-- Top App Bar -->
+  <header class="app-top-header">
+    <div class="brand-section">
+      <button id="toggleSidebarBtn" class="toggle-sidebar-btn" title="Toggle Ideas Index">
+        <span>☰</span> <span>Index</span>
+      </button>
+      <div class="brand-badge-icon" title="PSIR Political Analyst Ideas">
+        <span class="psir-badge-text">PSIR</span>
+      </div>
+      
+      <!-- Seamless Nav Links across Full Notes, Keyterms & New Ideas -->
+      <div class="topbar-nav-links">
+        <a href="index.html" class="topbar-nav-link topbar-nav-notes" title="Back to Full Notes">
+          <span>📖</span> <span>Notes</span>
+        </a>
+        <a href="keyterms.html" class="topbar-nav-link topbar-nav-terms" title="Switch to Key Terms">
+          <span>📚</span> <span>Terms</span>
+        </a>
+        <a href="new_ideas.html" class="topbar-nav-link topbar-nav-new-active" title="Top 20 Political Analyst Ideas">
+          <span>✨</span> <span>NEW</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Filters in Top Bar -->
+    <div class="topbar-filters">
+      <button class="top-filter-btn active" data-filter="all">All (<span id="countAll">20</span>)</button>
+      <button class="top-filter-btn" data-filter="Paper 1A">Paper 1A (<span id="countP1A">5</span>)</button>
+      <button class="top-filter-btn" data-filter="Paper 1B">Paper 1B (<span id="countP1B">9</span>)</button>
+      <button class="top-filter-btn" data-filter="Paper 2">Paper 2 (<span id="countP2">6</span>)</button>
+      <button class="top-filter-btn" data-filter="right" style="color: var(--green-check);">✓ <span id="countRight">0</span></button>
+      <button class="top-filter-btn" data-filter="wrong" style="color: var(--red-wrong);">✕ <span id="countWrong">0</span></button>
+      <button class="top-filter-btn" data-filter="circle" style="color: var(--circle-neutral);">○ <span id="countCircle">0</span></button>
+    </div>
+
+    <!-- Actions & Reader Tools -->
+    <div class="header-actions">
+      <!-- Font Size Scaler (A- / A+) -->
+      <div class="font-size-adjuster" title="Adjust text size">
+        <button id="fontSizeDecBtn" class="font-size-action-btn" title="Decrease font size">
+          <span class="font-size-icon">A<span class="fs-mark">−</span></span>
+        </button>
+        <button id="fontSizeIncBtn" class="font-size-action-btn" title="Increase font size">
+          <span class="font-size-icon">A<span class="fs-mark">+</span></span>
+        </button>
+      </div>
+
+      <!-- Highlighter Tool Toggle -->
+      <button id="highlighterToggleBtn" class="header-action-btn" title="Toggle Text Highlighter">
+        <span>🖍️</span>
+      </button>
+
+      <!-- Night Mode Toggle -->
+      <button id="nightModeToggleBtn" class="header-action-btn" title="Toggle Night Theme">
+        <span id="nightIcon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Workspace Layout -->
+  <div class="workspace-layout">
+    
+    <!-- Mobile Backdrop Dimmer -->
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+    <!-- LEFT SIDEBAR: Thinkers & Ideas Index -->
+    <aside class="syllabus-sidebar" id="syllabusSidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-title">
+          <span>Top 20 Analyst Ideas</span>
+          <button id="closeSidebarBtn" class="sidebar-close-btn">✕</button>
+        </div>
+        <div class="sidebar-search-box">
+          <span>🔍</span>
+          <input type="text" id="sidebarSearchInput" class="sidebar-search-input" placeholder="Search thinkers, hooks, topics...">
+        </div>
+      </div>
+      <div class="sidebar-tree" id="sidebarTree">
+        <!-- Rendered dynamically -->
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="main-content-area">
+
+      <!-- Horizontal Slider Deck Controller -->
+      <section class="mobile-deck-toolbar">
+        <div class="deck-controls-row">
+          <button class="deck-nav-btn" id="deckPrevBtn" title="Previous Idea (Left Arrow)">
+            <span>⟵</span> <span>Prev</span>
+          </button>
+          
+          <div class="deck-counter-badge" id="deckCounterBadge">
+            <span>Idea</span>
+            <strong id="deckCurIdx">1</strong>
+            <span>of</span>
+            <span class="total-digits" id="deckTotalCount">20</span>
+          </div>
+
+          <button class="deck-nav-btn" id="deckNextBtn" title="Next Idea (Right Arrow)">
+            <span>Next</span> <span>⟶</span>
+          </button>
+
+          <button class="deck-mode-toggle-btn" id="deckModeToggleBtn" title="Toggle Horizontal Slider vs Vertical List">
+            <span id="deckToggleIcon">🎴</span>
+            <span id="deckToggleLabel">Slider</span>
+          </button>
+        </div>
+
+        <div class="deck-progress-track">
+          <div class="deck-progress-fill" id="deckProgressFill" style="width: 5%;"></div>
+        </div>
+      </section>
+
+      <!-- Ideas Cards Container -->
+      <section class="ideas-cards-container slider-mode" id="ideasCardsContainer">
+        <!-- Cards rendered via JS -->
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Load Data Files -->
+  <script src="new_ideas_data.js"></script>
+  
+  <!-- Interactive Engine Script -->
+  <script>
+    (function () {
+      'use strict';
+
+      const STORAGE_KEY = 'psir_new_ideas_scores';
+      let scores = {};
+      try {
+        const stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) scores = JSON.parse(stored);
+      } catch (e) { scores = {}; }
+
+      function saveScores() {
+        try { localStorage.setItem(STORAGE_KEY, JSON.stringify(scores)); } catch (e) {}
+      }
+
+      // Checkpoint MCQs for Analyst Ideas
+      const CHECKPOINTS = [
+        {
+          id: 'cp-ideas-10',
+          afterIndex: 10,
+          question: "Which political analyst introduced the seminal concept of 'Principled Distance' to describe the Indian state's unique model of secular engagement?",
+          options: [
+            "Pratap Bhanu Mehta",
+            "Rajeev Bhargava",
+            "Suhas Palshikar",
+            "Ashutosh Varshney"
+          ],
+          correctIndex: 1,
+          explanation: "Rajeev Bhargava conceptualized 'Principled Distance'—explaining that Indian secularism does not maintain strict wall-of-separation (like the US/France), but purposefully intervenes or abstains to promote freedom, equality, and fraternity."
+        },
+        {
+          id: 'cp-ideas-20',
+          afterIndex: 20,
+          question: "According to Dani Rodrik's 'Political Trilemma of the World Economy', which three elements cannot be fully attained simultaneously?",
+          options: [
+            "Democracy, National Sovereignty, and Hyper-Globalization",
+            "Capital Mobility, Fixed Exchange Rates, and Autonomous Monetary Policy",
+            "Free Trade, High Tariffs, and State Subsidies",
+            "Rule of Law, State Capacity, and Democratic Accountability"
+          ],
+          correctIndex: 0,
+          explanation: "Dani Rodrik's Political Trilemma asserts that Democracy, National Sovereignty, and Hyper-Globalization are mutually incompatible in full measure; a society can pick any two, but never all three at once."
+        }
+      ];
+
+      const CP_STORAGE_KEY = 'psir_new_ideas_cp_answers';
+      let cpAnswers = {};
+      try {
+        const storedCp = localStorage.getItem(CP_STORAGE_KEY);
+        if (storedCp) cpAnswers = JSON.parse(storedCp);
+      } catch (e) { cpAnswers = {}; }
+
+      // Canvas Celebration Shower
+      const canvas = document.getElementById('celebrationCanvas');
+      const ctx = canvas.getContext('2d');
+      let particles = [];
+      let isShowerActive = false;
+
+      function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+      window.addEventListener('resize', resizeCanvas);
+      resizeCanvas();
+
+      class CelebrationParticle {
+        constructor() {
+          this.x = Math.random() * canvas.width;
+          this.y = -25;
+          this.isHeart = Math.random() > 0.45;
+          this.size = Math.random() * 12 + 8;
+          this.speedY = Math.random() * 3.5 + 2.5;
+          this.speedX = (Math.random() - 0.5) * 2.8;
+          this.rotation = Math.random() * 360;
+          this.rotSpeed = (Math.random() - 0.5) * 5;
+          const flowerColors = ['#f43f5e', '#7c3aed', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899', '#38bdf8'];
+          const heartColors = ['#ef4444', '#ec4899', '#f43f5e', '#7c3aed', '#a855f7'];
+          this.color = this.isHeart 
+            ? heartColors[Math.floor(Math.random() * heartColors.length)]
+            : flowerColors[Math.floor(Math.random() * flowerColors.length)];
+        }
+        update() {
+          this.y += this.speedY;
+          this.x += this.speedX;
+          this.rotation += this.rotSpeed;
+        }
+        draw() {
+          ctx.save();
+          ctx.translate(this.x, this.y);
+          ctx.rotate((this.rotation * Math.PI) / 180);
+          ctx.fillStyle = this.color;
+          if (this.isHeart) {
+            const s = this.size * 0.7;
+            ctx.beginPath();
+            ctx.moveTo(0, s * 0.3);
+            ctx.bezierCurveTo(-s / 2, -s / 2, -s, s / 3, 0, s);
+            ctx.bezierCurveTo(s, s / 3, s / 2, -s / 2, 0, s * 0.3);
+            ctx.closePath();
+            ctx.fill();
+          } else {
+            ctx.beginPath();
+            ctx.ellipse(0, 0, this.size, this.size * 0.55, 0, 0, Math.PI * 2);
+            ctx.fill();
+          }
+          ctx.restore();
+        }
+      }
+
+      window.triggerCelebrationShower = function (count = 75) {
+        for (let i = 0; i < count; i++) particles.push(new CelebrationParticle());
+        if (!isShowerActive) {
+          isShowerActive = true;
+          animateCelebration();
+        }
+      };
+
+      function animateCelebration() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        let active = 0;
+        particles.forEach(p => {
+          p.update();
+          p.draw();
+          if (p.y < canvas.height + 30) active++;
+        });
+        if (active > 0) requestAnimationFrame(animateCelebration);
+        else { isShowerActive = false; ctx.clearRect(0, 0, canvas.width, canvas.height); }
+      }
+
+      function showToast(msg) {
+        const toast = document.getElementById('toastPill');
+        toast.textContent = msg;
+        toast.style.display = 'block';
+        setTimeout(() => { toast.style.display = 'none'; }, 2400);
+      }
+
+      // Font Size Scaler
+      const fontSizeDecBtn = document.getElementById('fontSizeDecBtn');
+      const fontSizeIncBtn = document.getElementById('fontSizeIncBtn');
+      let currentFontScale = parseFloat(localStorage.getItem('psir_ideas_font_scale')) || 1.0;
+
+      function applyFontScale(scale) {
+        currentFontScale = Math.min(1.35, Math.max(0.85, Math.round(scale * 100) / 100));
+        document.documentElement.style.setProperty('--card-font-scale', currentFontScale);
+        localStorage.setItem('psir_ideas_font_scale', currentFontScale);
+      }
+      if (fontSizeDecBtn) {
+        fontSizeDecBtn.addEventListener('click', () => {
+          applyFontScale(currentFontScale - 0.08);
+          showToast(`Text Size: ${Math.round(currentFontScale * 100)}%`);
+        });
+      }
+      if (fontSizeIncBtn) {
+        fontSizeIncBtn.addEventListener('click', () => {
+          applyFontScale(currentFontScale + 0.08);
+          showToast(`Text Size: ${Math.round(currentFontScale * 100)}%`);
+        });
+      }
+      applyFontScale(currentFontScale);
+
+      // Night Mode
+      const nightModeToggleBtn = document.getElementById('nightModeToggleBtn');
+      const nightIcon = document.getElementById('nightIcon');
+      const isNightSaved = localStorage.getItem('psir_night_mode') === 'true';
+
+      function setNightMode(enable) {
+        document.body.classList.toggle('dark-mode', enable);
+        nightIcon.textContent = enable ? '☀️' : '🌙';
+        localStorage.setItem('psir_night_mode', enable);
+      }
+      if (isNightSaved) setNightMode(true);
+      nightModeToggleBtn.addEventListener('click', () => {
+        const cur = document.body.classList.contains('dark-mode');
+        setNightMode(!cur);
+        showToast(!cur ? 'Night Mode Activated' : 'Light Paper Mode Activated');
+      });
+
+      // Highlighter Tool
+      const highlighterToggleBtn = document.getElementById('highlighterToggleBtn');
+      const highlighterFloatToolbar = document.getElementById('highlighterFloatToolbar');
+      let isHighlighterActive = false;
+      let activeHighlightColor = 'yellow';
+
+      highlighterToggleBtn.addEventListener('click', () => {
+        isHighlighterActive = !isHighlighterActive;
+        highlighterToggleBtn.classList.toggle('active-tool', isHighlighterActive);
+        showToast(isHighlighterActive ? 'Highlighter On (Select text to mark)' : 'Highlighter Off');
+      });
+
+      function applyHighlightToRange(range, color = 'yellow') {
+        if (!range || range.collapsed || !range.toString().trim()) return null;
+        const mark = document.createElement('mark');
+        mark.className = `user-highlight ${color}`;
+        try {
+          range.surroundContents(mark);
+          return mark;
+        } catch (err) {
+          try {
+            const contents = range.extractContents();
+            mark.appendChild(contents);
+            range.insertNode(mark);
+            return mark;
+          } catch (e2) { return null; }
+        }
+      }
+
+      function handleTextSelection(e) {
+        if (highlighterFloatToolbar.contains(e.target)) return;
+        const selection = window.getSelection();
+        if (!selection || selection.isCollapsed || !selection.toString().trim()) {
+          highlighterFloatToolbar.style.display = 'none';
+          return;
+        }
+        if (!isHighlighterActive) return;
+
+        const range = selection.getRangeAt(0);
+        const cardArea = document.getElementById('ideasCardsContainer');
+        if (cardArea && cardArea.contains(range.commonAncestorContainer)) {
+          applyHighlightToRange(range, activeHighlightColor);
+          selection.removeAllRanges();
+          showToast('Text Highlighted ✨');
+        }
+      }
+      document.addEventListener('mouseup', handleTextSelection);
+
+      // Score Handling
+      window.setIdeaScore = function (id, choice) {
+        if (scores[id] === choice) delete scores[id];
+        else {
+          scores[id] = choice;
+          if (choice === 'right') {
+            window.triggerCelebrationShower(75);
+            showToast('🌸 Idea Mastered! Celebration');
+          } else if (choice === 'wrong') showToast('❌ Flagged for Revision');
+          else if (choice === 'circle') showToast('○ Marked for Review');
+        }
+        applyScoresToCards();
+        updateScoreBadges();
+        saveScores();
+        renderSidebarTree();
+      };
+
+      function applyScoresToCards() {
+        document.querySelectorAll('.idea-card').forEach(card => {
+          const id = card.getAttribute('data-id');
+          const choice = scores[id];
+          card.classList.remove('status-right', 'status-wrong', 'status-circle');
+          if (choice) card.classList.add(`status-${choice}`);
+
+          const btnR = card.querySelector('.eval-btn-right');
+          const btnW = card.querySelector('.eval-btn-wrong');
+          const btnC = card.querySelector('.eval-btn-circle');
+          if (btnR) btnR.classList.toggle('selected-right', choice === 'right');
+          if (btnW) btnW.classList.toggle('selected-wrong', choice === 'wrong');
+          if (btnC) btnC.classList.toggle('selected-circle', choice === 'circle');
+
+          const statusBadge = card.querySelector('.card-status-badge');
+          if (statusBadge) {
+            statusBadge.className = `card-status-badge ${choice ? `status-badge-${choice}` : ''}`;
+            statusBadge.textContent = choice === 'right' ? '✓ Mastered' : choice === 'wrong' ? '✕ Needs Revision' : choice === 'circle' ? '○ In Review' : 'Active Recall Ready';
+          }
+        });
+      }
+
+      function updateScoreBadges() {
+        const ideas = window.PSIR_NEW_IDEAS || [];
+        const total = ideas.length;
+        const rCount = Object.values(scores).filter(v => v === 'right').length;
+        const wCount = Object.values(scores).filter(v => v === 'wrong').length;
+        const cCount = Object.values(scores).filter(v => v === 'circle').length;
+
+        document.getElementById('countAll').textContent = total;
+        document.getElementById('countRight').textContent = rCount;
+        document.getElementById('countWrong').textContent = wCount;
+        document.getElementById('countCircle').textContent = cCount;
+
+        const countP1A = ideas.filter(i => i.paper.includes('Paper 1A')).length;
+        const countP1B = ideas.filter(i => i.paper.includes('Paper 1B')).length;
+        const countP2 = ideas.filter(i => i.paper.includes('Paper 2')).length;
+        document.getElementById('countP1A').textContent = countP1A;
+        document.getElementById('countP1B').textContent = countP1B;
+        document.getElementById('countP2').textContent = countP2;
+      }
+
+      // Checkpoint MCQs
+      window.handleCheckpointChoice = function (cpId, chosenIdx, correctIdx) {
+        cpAnswers[cpId] = chosenIdx;
+        try { localStorage.setItem(CP_STORAGE_KEY, JSON.stringify(cpAnswers)); } catch (e) {}
+
+        const wrap = document.getElementById(`cp_${cpId}`);
+        if (!wrap) return;
+
+        wrap.querySelectorAll('.cp-option-btn').forEach(btn => {
+          const idx = parseInt(btn.getAttribute('data-opt-index'), 10);
+          btn.classList.remove('selected-correct', 'selected-wrong', 'reveal-correct');
+          if (idx === correctIdx) {
+            btn.classList.add(chosenIdx === correctIdx ? 'selected-correct' : 'reveal-correct');
+          } else if (idx === chosenIdx) {
+            btn.classList.add('selected-wrong');
+          }
+        });
+
+        const expl = document.getElementById(`expl_${cpId}`);
+        if (expl) expl.style.display = 'block';
+
+        if (chosenIdx === correctIdx) {
+          window.triggerCelebrationShower(85);
+          showToast('🎯 Checkpoint Passed! Concept Mastered 🌸');
+        } else {
+          showToast('❌ Incorrect. Review explanation below!');
+        }
+      };
+
+      // Copy Hook Quote
+      window.copyHookQuote = function (text) {
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(text).then(() => {
+            showToast('📋 Hook Quote Copied to Clipboard!');
+          }).catch(() => {
+            fallbackCopy(text);
+          });
+        } else {
+          fallbackCopy(text);
+        }
+      };
+
+      function fallbackCopy(text) {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        showToast('📋 Hook Quote Copied!');
+      }
+
+      // Get Initials for Avatar
+      function getInitials(name) {
+        const parts = name.split(' ').filter(p => !['and', '&', 'the'].includes(p.toLowerCase()));
+        if (parts.length === 1) return parts[0].substring(0, 2).toUpperCase();
+        return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+      }
+
+      // Slider Deck Logic
+      const deckPrevBtn = document.getElementById('deckPrevBtn');
+      const deckNextBtn = document.getElementById('deckNextBtn');
+      const deckCurIdx = document.getElementById('deckCurIdx');
+      const deckTotalCount = document.getElementById('deckTotalCount');
+      const deckProgressFill = document.getElementById('deckProgressFill');
+      const deckModeToggleBtn = document.getElementById('deckModeToggleBtn');
+      const deckToggleIcon = document.getElementById('deckToggleIcon');
+      const deckToggleLabel = document.getElementById('deckToggleLabel');
+      const cardsContainer = document.getElementById('ideasCardsContainer');
+
+      const savedMode = localStorage.getItem('psir_ideas_view_mode');
+      let isSliderMode = savedMode ? (savedMode === 'slider') : (window.innerWidth <= 768);
+
+      function applyDeckMode() {
+        if (!cardsContainer) return;
+        if (isSliderMode) {
+          cardsContainer.classList.add('slider-mode');
+          if (deckToggleIcon) deckToggleIcon.textContent = '🎴';
+          if (deckToggleLabel) deckToggleLabel.textContent = 'Slider';
+          if (deckModeToggleBtn) deckModeToggleBtn.title = 'Switch to Vertical List Mode';
+          updateSliderIndicator();
+        } else {
+          cardsContainer.classList.remove('slider-mode');
+          if (deckToggleIcon) deckToggleIcon.textContent = '📜';
+          if (deckToggleLabel) deckToggleLabel.textContent = 'List';
+          if (deckModeToggleBtn) deckModeToggleBtn.title = 'Switch to Horizontal Slider Mode';
+        }
+      }
+
+      function slideNext() {
+        if (!isSliderMode || !cardsContainer) return;
+        const card = cardsContainer.querySelector('.idea-card, .checkpoint-card-wrap');
+        if (!card) return;
+        const step = card.offsetWidth + 16;
+        cardsContainer.scrollBy({ left: step, behavior: 'smooth' });
+      }
+
+      function slidePrev() {
+        if (!isSliderMode || !cardsContainer) return;
+        const card = cardsContainer.querySelector('.idea-card, .checkpoint-card-wrap');
+        if (!card) return;
+        const step = card.offsetWidth + 16;
+        cardsContainer.scrollBy({ left: -step, behavior: 'smooth' });
+      }
+
+      function updateSliderIndicator() {
+        if (!isSliderMode || !cardsContainer) return;
+        const cards = cardsContainer.querySelectorAll('.idea-card, .checkpoint-card-wrap');
+        const total = cards.length;
+        if (total === 0) {
+          if (deckCurIdx) deckCurIdx.textContent = '0';
+          if (deckTotalCount) deckTotalCount.textContent = '0';
+          if (deckProgressFill) deckProgressFill.style.width = '0%';
+          return;
+        }
+
+        const card = cards[0];
+        const step = card ? (card.offsetWidth + 16) : (cardsContainer.clientWidth || 1);
+        const curIndex = Math.min(total - 1, Math.max(0, Math.round(cardsContainer.scrollLeft / step)));
+
+        const curNum = curIndex + 1;
+        if (deckCurIdx) deckCurIdx.textContent = curNum;
+        if (deckTotalCount) deckTotalCount.textContent = total;
+        if (deckProgressFill) {
+          const pct = Math.min(100, Math.max(1, (curNum / total) * 100));
+          deckProgressFill.style.width = `${pct}%`;
+        }
+        if (deckPrevBtn) deckPrevBtn.disabled = curIndex === 0;
+        if (deckNextBtn) deckNextBtn.disabled = curIndex === total - 1;
+      }
+
+      let scrollTimeout;
+      if (cardsContainer) {
+        cardsContainer.addEventListener('scroll', () => {
+          if (!isSliderMode) return;
+          clearTimeout(scrollTimeout);
+          scrollTimeout = setTimeout(updateSliderIndicator, 35);
+        }, { passive: true });
+      }
+
+      if (deckPrevBtn) deckPrevBtn.addEventListener('click', slidePrev);
+      if (deckNextBtn) deckNextBtn.addEventListener('click', slideNext);
+
+      if (deckModeToggleBtn) {
+        deckModeToggleBtn.addEventListener('click', () => {
+          isSliderMode = !isSliderMode;
+          localStorage.setItem('psir_ideas_view_mode', isSliderMode ? 'slider' : 'list');
+          applyDeckMode();
+          showToast(isSliderMode ? '🎴 Horizontal Slider Mode' : '📜 Vertical List Mode');
+        });
+      }
+
+      window.addEventListener('keydown', (e) => {
+        if (!isSliderMode) return;
+        if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
+        if (e.key === 'ArrowRight') slideNext();
+        else if (e.key === 'ArrowLeft') slidePrev();
+      });
+
+      // Filter State
+      let activeFilter = 'all';
+      let searchQuery = '';
+
+      function renderIdeas() {
+        if (!window.PSIR_NEW_IDEAS) return;
+        const container = document.getElementById('ideasCardsContainer');
+        container.innerHTML = '';
+
+        let list = window.PSIR_NEW_IDEAS;
+
+        // Paper or Evaluation Filter
+        if (activeFilter === 'Paper 1A') {
+          list = list.filter(item => item.paper.includes('Paper 1A'));
+        } else if (activeFilter === 'Paper 1B') {
+          list = list.filter(item => item.paper.includes('Paper 1B'));
+        } else if (activeFilter === 'Paper 2') {
+          list = list.filter(item => item.paper.includes('Paper 2'));
+        } else if (['right', 'wrong', 'circle'].includes(activeFilter)) {
+          list = list.filter(item => scores[item.id] === activeFilter);
+        }
+
+        // Search Filter
+        if (searchQuery.trim()) {
+          const q = searchQuery.toLowerCase().trim();
+          list = list.filter(item => 
+            item.scholar.toLowerCase().includes(q) ||
+            item.concept_title.toLowerCase().includes(q) ||
+            item.hook_quote.toLowerCase().includes(q) ||
+            item.topic.toLowerCase().includes(q) ||
+            item.explanation.toLowerCase().includes(q) ||
+            item.keywords.some(k => k.toLowerCase().includes(q))
+          );
+        }
+
+        if (list.length === 0) {
+          container.innerHTML = `
+            <div style="text-align: center; padding: 40px 20px; color: var(--text-dim); background: var(--paper-bg); border-radius: 16px; border: 1px dashed var(--paper-border);">
+              <div style="font-size: 32px; margin-bottom: 10px;">🔍</div>
+              <h3 style="font-family: var(--font-display); font-size: 16px; color: var(--text-main); margin-bottom: 6px;">No Analyst Ideas Found</h3>
+              <p style="font-size: 13px;">Try selecting 'All' or clearing your search term.</p>
+            </div>
+          `;
+          updateSliderIndicator();
+          return;
+        }
+
+        const letters = ['A', 'B', 'C', 'D'];
+
+        list.forEach((item, idx) => {
+          const choice = scores[item.id];
+          const card = document.createElement('article');
+          card.className = `idea-card ${choice ? `status-${choice}` : ''}`;
+          card.setAttribute('data-id', item.id);
+          card.id = `card_${item.id}`;
+
+          let paperClass = 'p1a';
+          if (item.paper.includes('Paper 1B')) paperClass = 'p1b';
+          else if (item.paper.includes('Paper 2')) paperClass = 'p2';
+
+          const escapedQuote = item.hook_quote.replace(/"/g, '&quot;');
+
+          card.innerHTML = `
+            <div class="idea-card-topbar">
+              <div class="idea-meta-pills">
+                <span class="idea-idx-pill">#${item.number.toString().padStart(2, '0')}</span>
+                <span class="idea-paper-pill ${paperClass}">${item.paper}</span>
+                <span class="idea-topic-pill">${item.topic}</span>
+              </div>
+              <div class="bullet-eval-selector">
+                <button class="eval-choice-btn eval-btn-right ${choice === 'right' ? 'selected-right' : ''}" 
+                        title="Mastered (Right Sign - Flowers & Hearts Shower!)" 
+                        onclick="setIdeaScore('${item.id}', 'right')">✓</button>
+                <button class="eval-choice-btn eval-btn-wrong ${choice === 'wrong' ? 'selected-wrong' : ''}" 
+                        title="Needs Work (Wrong Sign)" 
+                        onclick="setIdeaScore('${item.id}', 'wrong')">✕</button>
+                <button class="eval-choice-btn eval-btn-circle ${choice === 'circle' ? 'selected-circle' : ''}" 
+                        title="In Review (Circle Sign)" 
+                        onclick="setIdeaScore('${item.id}', 'circle')">○</button>
+              </div>
+            </div>
+
+            <!-- Scholar Profile Line -->
+            <div class="scholar-profile-row">
+              <div class="scholar-avatar" title="${item.scholar}">${getInitials(item.scholar)}</div>
+              <div class="scholar-info-wrap">
+                <h2 class="scholar-name">${item.scholar}</h2>
+                <div class="scholar-affil">${item.affiliation}</div>
+              </div>
+            </div>
+
+            <!-- Concept Title -->
+            <h3 class="idea-concept-title">${item.concept_title}</h3>
+
+            <!-- THE FLOWERY HOOK CALLOUT -->
+            <div class="hook-quote-box">
+              <div class="hook-badge-row">
+                <span class="hook-type-tag">✍️ ${item.hook_type}</span>
+                <button class="copy-hook-btn" onclick="copyHookQuote(\`${escapedQuote}\`)">
+                  <span>📋</span> <span>Copy Hook</span>
+                </button>
+              </div>
+              <blockquote class="hook-quote-text">“${item.hook_quote}”</blockquote>
+            </div>
+
+            <!-- Detailed Analytical Context -->
+            <p class="idea-explanation-text">${item.explanation}</p>
+
+            <!-- Exam Utility Box -->
+            <div class="exam-utility-box">
+              <div class="exam-utility-header">
+                <span>🎯</span> <span>UPSC PSIR Answer Application</span>
+              </div>
+              <div class="exam-utility-content">${item.exam_utility}</div>
+            </div>
+
+            <!-- Source Citation -->
+            <div class="source-citation-line">
+              <span>📖</span> <span><strong>Source:</strong> ${item.source}</span>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="idea-card-bottombar">
+              <span class="card-status-badge ${choice ? `status-badge-${choice}` : ''}">
+                ${choice === 'right' ? '✓ Mastered' : choice === 'wrong' ? '✕ Needs Revision' : choice === 'circle' ? '○ In Review' : 'Active Recall Ready'}
+              </span>
+              <span style="font-size: 11px; color: var(--text-dim); font-family: var(--font-mono); opacity: 0.8;">
+                ${item.keywords.slice(0, 3).map(k => '#' + k).join(' ')}
+              </span>
+            </div>
+          `;
+
+          container.appendChild(card);
+
+          // Checkpoint insertion
+          if (activeFilter === 'all' && !searchQuery.trim()) {
+            const cp = CHECKPOINTS.find(c => c.afterIndex === item.number);
+            if (cp) {
+              const savedAns = cpAnswers[cp.id];
+              const cpBox = document.createElement('div');
+              cpBox.className = 'checkpoint-card-wrap';
+              cpBox.id = `cp_${cp.id}`;
+
+              let cpHtml = `
+                <div class="checkpoint-banner">
+                  <span class="checkpoint-tag">🎯 ANALYST RECALL CHECKPOINT</span>
+                  <span style="font-size: 11px; font-weight: 800; color: var(--accent-heading);">IDEA #${item.number} REVISION</span>
+                </div>
+                <div style="font-size: 14.5px; font-weight: 700; color: var(--text-main); line-height: 1.6;">
+                  ${cp.question}
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 4px;">
+              `;
+
+              cp.options.forEach((opt, oIdx) => {
+                let optClass = '';
+                if (savedAns !== undefined) {
+                  if (oIdx === cp.correctIndex) optClass = (savedAns === cp.correctIndex) ? 'selected-correct' : 'reveal-correct';
+                  if (savedAns === oIdx && savedAns !== cp.correctIndex) optClass = 'selected-wrong';
+                }
+                cpHtml += `
+                  <button class="cp-option-btn ${optClass}" 
+                          data-opt-index="${oIdx}" 
+                          onclick="handleCheckpointChoice('${cp.id}', ${oIdx}, ${cp.correctIndex})">
+                    <span class="cp-letter">${letters[oIdx]}</span>
+                    <span>${opt}</span>
+                  </button>
+                `;
+              });
+
+              cpHtml += `</div>`;
+              const showExpl = savedAns !== undefined ? 'style="display: block;"' : 'style="display: none;"';
+              cpHtml += `
+                <div class="cp-explanation-box" id="expl_${cp.id}" ${showExpl}>
+                  <div style="font-weight: 800; font-size: 11px; color: var(--accent-heading); margin-bottom: 4px; text-transform: uppercase;">
+                    💡 Answer Explanation & Thinker Context:
+                  </div>
+                  <div>${cp.explanation}</div>
+                </div>
+              `;
+              cpBox.innerHTML = cpHtml;
+              container.appendChild(cpBox);
+            }
+          }
+        });
+
+        applyScoresToCards();
+        updateScoreBadges();
+        if (container) container.scrollLeft = 0;
+        if (typeof applyDeckMode === 'function') applyDeckMode();
+        if (typeof updateSliderIndicator === 'function') updateSliderIndicator();
+      }
+
+      // Render Sidebar Tree
+      function renderSidebarTree() {
+        const tree = document.getElementById('sidebarTree');
+        if (!tree || !window.PSIR_NEW_IDEAS) return;
+        tree.innerHTML = '';
+
+        window.PSIR_NEW_IDEAS.forEach(item => {
+          const choice = scores[item.id];
+          const el = document.createElement('a');
+          el.className = 'sidebar-idea-item';
+          el.href = `#card_${item.id}`;
+          el.onclick = (e) => {
+            e.preventDefault();
+            scrollToIdea(item.id);
+          };
+
+          let statusIcon = '○';
+          let statusColor = 'var(--text-dim)';
+          if (choice === 'right') { statusIcon = '✓'; statusColor = 'var(--green-check)'; }
+          else if (choice === 'wrong') { statusIcon = '✕'; statusColor = 'var(--red-wrong)'; }
+          else if (choice === 'circle') { statusIcon = '○'; statusColor = 'var(--circle-neutral)'; }
+
+          el.innerHTML = `
+            <div style="display: flex; align-items: center; gap: 8px; overflow: hidden;">
+              <span class="sidebar-status-icon" style="color: ${statusColor};">${statusIcon}</span>
+              <span class="sidebar-idea-scholar">${item.scholar}</span>
+            </div>
+            <span class="sidebar-idea-tag">${item.paper.replace('Paper ', 'P')}</span>
+          `;
+          tree.appendChild(el);
+        });
+      }
+
+      function scrollToIdea(id) {
+        if (window.innerWidth <= 900) closeSidebar();
+        
+        if (isSliderMode) {
+          const card = document.getElementById(`card_${id}`);
+          if (card && cardsContainer) {
+            cardsContainer.scrollTo({
+              left: card.offsetLeft - cardsContainer.offsetLeft,
+              behavior: 'smooth'
+            });
+          }
+        } else {
+          const card = document.getElementById(`card_${id}`);
+          if (card) {
+            card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      }
+
+      // Filter Buttons
+      document.querySelectorAll('.top-filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.top-filter-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.getAttribute('data-filter');
+          renderIdeas();
+        });
+      });
+
+      // Sidebar Search Input
+      const sidebarSearchInput = document.getElementById('sidebarSearchInput');
+      if (sidebarSearchInput) {
+        sidebarSearchInput.addEventListener('input', (e) => {
+          searchQuery = e.target.value;
+          renderIdeas();
+        });
+      }
+
+      // Sidebar Open / Close
+      const toggleSidebarBtn = document.getElementById('toggleSidebarBtn');
+      const closeSidebarBtn = document.getElementById('closeSidebarBtn');
+      const syllabusSidebar = document.getElementById('syllabusSidebar');
+      const sidebarBackdrop = document.getElementById('sidebarBackdrop');
+
+      function openSidebar() {
+        syllabusSidebar.classList.add('open');
+        sidebarBackdrop.classList.add('active');
+      }
+      function closeSidebar() {
+        syllabusSidebar.classList.remove('open');
+        sidebarBackdrop.classList.remove('active');
+      }
+
+      if (toggleSidebarBtn) toggleSidebarBtn.addEventListener('click', openSidebar);
+      if (closeSidebarBtn) closeSidebarBtn.addEventListener('click', closeSidebar);
+      if (sidebarBackdrop) sidebarBackdrop.addEventListener('click', closeSidebar);
+
+      // Initialize
+      renderIdeas();
+      renderSidebarTree();
+      updateScoreBadges();
+
+    })();
+  </script>
+</body>
+</html>
