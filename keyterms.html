@@ -19,7 +19,7 @@
   <!-- 10 Reader Fonts from Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Roboto+Serif:opsz,wght@8..144,400;8..144,600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Outfit:wght@500;600;700;800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Nunito:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Roboto+Serif:ital,opsz,wght@0,8..144,300..900;1,8..144,300..900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Outfit:wght@500;600;700;800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Nunito:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   
   <style>
     /* ========================================================
@@ -56,8 +56,8 @@
       --circle-bg: #fffbeb;
       --circle-border: #fde68a;
 
-      --font-display: 'Outfit', sans-serif;
-      --font-reader: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      --font-display: 'Roboto Serif', Georgia, serif;
+      --font-reader: 'Roboto Serif', Georgia, serif;
       --font-mono: 'JetBrains Mono', monospace;
 
       --sidebar-width: 300px;
@@ -1506,7 +1506,7 @@
       // 10 Reader Fonts
       const fontPickerBtn = document.getElementById('fontPickerBtn');
       const fontPickerMenu = document.getElementById('fontPickerMenu');
-      const savedFont = localStorage.getItem('psir_reader_font') || 'Plus Jakarta Sans';
+      const savedFont = localStorage.getItem('psir_reader_font') || 'Roboto Serif';
 
       function applyReaderFont(fontName) {
         const fontMap = {
@@ -1521,7 +1521,7 @@
           'Crimson Pro': "'Crimson Pro', serif",
           'Nunito': "'Nunito', sans-serif"
         };
-        const family = fontMap[fontName] || fontMap['Plus Jakarta Sans'];
+        const family = fontMap[fontName] || fontMap['Roboto Serif'];
         document.documentElement.style.setProperty('--font-reader', family);
         document.body.style.fontFamily = family;
         localStorage.setItem('psir_reader_font', fontName);

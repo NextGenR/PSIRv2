@@ -50,9 +50,9 @@ def create_psir_icon(size):
         width=max(1, int(size * 0.008))
     )
 
-    # Text Font for PSIR in bold letters
+    # Text Font for PSIR in bold serif letters
     font_size = int(size * 0.31)
-    font_path = r"C:\Windows\Fonts\ariblk.ttf" # Arial Black
+    font_path = r"C:\Windows\Fonts\georgiab.ttf" # Georgia Bold serif
     if not os.path.exists(font_path):
         font_path = r"C:\Windows\Fonts\arialbd.ttf"
         
@@ -92,7 +92,7 @@ def create_psir_icon(size):
     # Subtitle pill "PREP SUITE" or "UPSC"
     sub_font_size = int(size * 0.08)
     try:
-        sub_font = ImageFont.truetype(r"C:\Windows\Fonts\seguibl.ttf", sub_font_size)
+        sub_font = ImageFont.truetype(r"C:\Windows\Fonts\georgiab.ttf", sub_font_size)
     except:
         try:
             sub_font = ImageFont.truetype(r"C:\Windows\Fonts\arialbd.ttf", sub_font_size)
@@ -148,11 +148,11 @@ svg_content = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <rect width="512" height="512" rx="115" fill="url(#bgGrad)"/>
   <rect x="12" y="12" width="488" height="488" rx="103" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="4"/>
   <!-- Bold PSIR Typography -->
-  <text x="256" y="275" font-family="'Segoe UI Black', 'Arial Black', Impact, sans-serif" font-weight="900" font-size="160" fill="#ffffff" text-anchor="middle" letter-spacing="4" filter="url(#textGlow)">PSIR</text>
+  <text x="256" y="275" font-family="'Roboto Serif', Georgia, serif" font-weight="900" font-size="160" fill="#ffffff" text-anchor="middle" letter-spacing="4" filter="url(#textGlow)">PSIR</text>
   <!-- Gold Accent Divider -->
   <rect x="166" y="318" width="180" height="8" rx="4" fill="url(#goldGrad)"/>
   <!-- Sub-label -->
-  <text x="256" y="375" font-family="'Segoe UI', -apple-system, sans-serif" font-weight="800" font-size="38" fill="#fed7aa" text-anchor="middle" letter-spacing="6">EXAM SUITE</text>
+  <text x="256" y="375" font-family="'Roboto Serif', Georgia, serif" font-weight="800" font-size="38" fill="#fed7aa" text-anchor="middle" letter-spacing="6">EXAM SUITE</text>
 </svg>'''
 
 with open("favicon.svg", "w", encoding="utf-8") as f:
