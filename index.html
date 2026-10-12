@@ -136,11 +136,12 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      padding: 10px 18px;
+      padding: 8px 14px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 12px;
+      gap: 8px;
+      flex-wrap: nowrap !important;
       box-shadow: 0 2px 10px rgba(0,0,0,0.03);
     }
 
@@ -896,6 +897,48 @@
       margin-top: auto;
       border-top: 1px dashed var(--paper-border);
       font-size: 11px;
+      gap: 8px;
+    }
+    .slide-eval-selector {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      padding: 2px 4px;
+      border-radius: 999px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+      flex-shrink: 0;
+    }
+    .slide-nav-prev-btn,
+    .slide-nav-next-btn {
+      background: rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--paper-border);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: var(--transition);
+      user-select: none;
+    }
+    body.dark-mode .slide-nav-prev-btn,
+    body.dark-mode .slide-nav-next-btn {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: #30363d;
+      color: #c9d1d9;
+    }
+    .slide-nav-prev-btn:hover,
+    .slide-nav-next-btn:hover {
+      background: var(--accent-bg);
+      color: var(--accent-heading);
+      border-color: var(--accent-border);
+      transform: translateY(-1px);
     }
     .slide-status-badge {
       font-size: 11px;
@@ -969,16 +1012,17 @@
       background: rgba(255, 255, 255, 0.02);
     }
     .walking-boy-avatar {
-      font-size: 26px;
+      font-size: 28px;
       display: inline-block;
+      transform: scaleX(-1);
       animation: boyWalkBounce 1.2s infinite ease-in-out;
-      transform-origin: bottom center;
+      transform-origin: center center;
       filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));
     }
     @keyframes boyWalkBounce {
-      0%, 100% { transform: translateY(0) rotate(0deg); }
-      25% { transform: translateY(-4px) rotate(-4deg); }
-      75% { transform: translateY(-3px) rotate(4deg); }
+      0%, 100% { transform: scaleX(-1) translateY(0) rotate(0deg); }
+      25% { transform: scaleX(-1) translateY(-4px) rotate(-4deg); }
+      75% { transform: scaleX(-1) translateY(-3px) rotate(4deg); }
     }
     .path-steps-list {
       display: flex;
@@ -1152,31 +1196,12 @@
        ======================================================== */
     @media (max-width: 900px) {
       .app-top-header {
-        flex-wrap: wrap;
+        flex-wrap: nowrap !important;
         padding: 8px 12px;
-        gap: 8px 10px;
+        gap: 8px;
       }
       .brand-section {
         gap: 8px;
-        flex: 1 1 auto;
-      }
-      .topbar-filters {
-        order: 3;
-        width: 100%;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-        display: flex;
-        gap: 4px;
-        padding: 4px 2px;
-        justify-content: flex-start;
-      }
-      .topbar-filters::-webkit-scrollbar {
-        display: none;
-      }
-      .top-filter-btn {
-        font-size: 11px;
-        padding: 5px 9px;
         flex-shrink: 0;
       }
       .header-actions {
@@ -1223,15 +1248,25 @@
 
     @media (max-width: 640px) {
       .app-top-header {
-        padding: 6px 8px;
+        flex-wrap: nowrap !important;
+        padding: 6px 10px;
         gap: 6px;
+      }
+      .brand-section {
+        gap: 6px;
+        flex-shrink: 0;
       }
       .toggle-sidebar-btn {
         padding: 5px 8px;
-        font-size: 11.5px;
+        font-size: 12px;
+      }
+      .topbar-keyterms-nav {
+        padding: 4px 8px;
+        font-size: 11px;
       }
       .header-actions {
         gap: 4px;
+        flex-shrink: 0;
       }
       .header-action-btn {
         padding: 5px 7px;
@@ -2038,13 +2073,6 @@
       </a>
     </div>
 
-    <!-- Filter View Options on Top Bar (Total 852 removed) -->
-    <div class="topbar-filters">
-      <button class="top-filter-btn active" data-filter="all">All Points</button>
-      <button class="top-filter-btn" data-filter="right">Mastered ✓ (<span id="countRight">0</span>)</button>
-      <button class="top-filter-btn" data-filter="wrong">Needs Work ✕ (<span id="countWrong">0</span>)</button>
-      <button class="top-filter-btn" data-filter="circle">In Review ○ (<span id="countCircle">0</span>)</button>
-    </div>
 
     <!-- Actions & Reader Tools (Icon-Only without text to adjust space) -->
     <div class="header-actions">
@@ -2088,10 +2116,6 @@
         <span id="nightIcon">🌙</span>
       </button>
 
-      <!-- Chrome Install App Button -->
-      <button id="installAppBtn" class="header-action-btn icon-only-btn" title="Install as Chrome Web App" style="display: none;" aria-label="Install App">
-        <span>📲</span>
-      </button>
     </div>
   </header>
 
@@ -2106,10 +2130,7 @@
       <div class="sidebar-header">
         <div class="sidebar-title">
           <span>Table of Contents</span>
-          <div style="display: flex; align-items: center; gap: 8px;">
-            <span style="font-size: 11px; font-weight: 700; color: var(--accent-heading);">77 Pages</span>
-            <button id="closeSidebarBtn" class="sidebar-close-btn" title="Close Index" aria-label="Close Index">✕</button>
-          </div>
+          <button id="closeSidebarBtn" class="sidebar-close-btn" title="Close Index" aria-label="Close Index">✕</button>
         </div>
         <div class="sidebar-stats-row">
           <div class="sidebar-stat-badge" style="background: var(--green-bg); color: var(--green-check);">
@@ -2132,30 +2153,6 @@
 
     <!-- MAIN PDF CONTENT VIEWPORT -->
     <main class="main-content-area" id="mainContentArea">
-
-      <!-- Horizontal Slider Deck Controller Toolbar -->
-      <div class="mobile-deck-toolbar" id="mobileDeckToolbar">
-        <div class="deck-controls-row">
-          <button id="deckPrevBtn" class="deck-nav-btn" title="Previous Slide (← Arrow Key)">
-            <span>◀</span> Prev
-          </button>
-          
-          <div class="deck-counter-badge" id="deckCounterBadge">
-            <span>Slide</span> <strong id="currentSlideNum">1</strong> <span>/</span> <span class="total-digits" id="totalSlidesNum">--</span>
-          </div>
-
-          <button id="deckNextBtn" class="deck-nav-btn" title="Next Slide (→ Arrow Key or Swipe)">
-            Next <span>▶</span>
-          </button>
-
-          <button id="deckModeToggleBtn" class="deck-mode-toggle-btn" title="Switch between Horizontal Slider and Continuous List Mode">
-            <span id="deckModeIcon">📑</span> <span id="deckModeLabel">List</span>
-          </button>
-        </div>
-        <div class="deck-progress-track">
-          <div class="deck-progress-fill" id="deckProgressFill" style="width: 0%;"></div>
-        </div>
-      </div>
 
       <!-- HERO CELEBRATION CARD FOR CORE MARXIST CONCEPTS -->
       <div id="coreMarxistCelebrationBanner" class="celebration-hero-card">
@@ -2458,32 +2455,32 @@
         }
       }
 
-      // ========================================================
-      // CHROME PWA INSTALL HANDLER
-      // ========================================================
-      let deferredInstallPrompt = null;
-      const installAppBtn = document.getElementById('installAppBtn');
-
-      window.addEventListener('beforeinstallprompt', (e) => {
-        e.preventDefault();
-        deferredInstallPrompt = e;
-        installAppBtn.style.display = 'flex';
-      });
-
-      installAppBtn.addEventListener('click', async () => {
-        if (!deferredInstallPrompt) return;
-        deferredInstallPrompt.prompt();
-        const { outcome } = await deferredInstallPrompt.userChoice;
-        if (outcome === 'accepted') {
-          showToast('Installing PSIR Master Suite...');
-        }
-        deferredInstallPrompt = null;
-        installAppBtn.style.display = 'none';
-      });
-
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('./sw.js').catch(() => {});
       }
+
+      // ========================================================
+      // SLIDE-LEVEL & TOPIC 3-CHOICE EVALUATION
+      // ========================================================
+      window.setSlideScore = function (secId, choice) {
+        const current = scores[secId];
+        if (current === choice) {
+          delete scores[secId];
+        } else {
+          scores[secId] = choice;
+          if (choice === 'right') {
+            window.triggerCelebrationShower(75);
+            showToast('🌸 Topic Mastered! Flower & heart celebration');
+          } else if (choice === 'wrong') {
+            showToast('❌ Marked for Priority Revision');
+          } else if (choice === 'circle') {
+            showToast('○ In-Progress / Question Flagged');
+          }
+        }
+        applyScoresToDOM();
+        updateScoreBadges();
+        saveScores();
+      };
 
       // ========================================================
       // INTERACTIVE BULLET SCORING & CELEBRATIONS
@@ -2588,6 +2585,19 @@
           if (btnWrong) btnWrong.classList.toggle('selected-wrong', choice === 'wrong');
           if (btnCircle) btnCircle.classList.toggle('selected-circle', choice === 'circle');
         });
+
+        document.querySelectorAll('.slide-eval-selector').forEach(sel => {
+          const secId = sel.getAttribute('data-sec-id');
+          const choice = scores[secId];
+
+          const btnRight = sel.querySelector('.eval-btn-right');
+          const btnWrong = sel.querySelector('.eval-btn-wrong');
+          const btnCircle = sel.querySelector('.eval-btn-circle');
+
+          if (btnRight) btnRight.classList.toggle('selected-right', choice === 'right');
+          if (btnWrong) btnWrong.classList.toggle('selected-wrong', choice === 'wrong');
+          if (btnCircle) btnCircle.classList.toggle('selected-circle', choice === 'circle');
+        });
       }
 
       function checkCoreMarxistCompletion() {
@@ -2608,28 +2618,28 @@
 
       function updateScoreBadges() {
         if (!window.SARRTHI_DATA) return;
-        const allBullets = [];
+        let totalCount = 0;
+        let rightCount = 0;
+        let wrongCount = 0;
+        let circleCount = 0;
+
         window.SARRTHI_DATA.chapters.forEach(ch => {
           ch.sections.forEach(sec => {
-            sec.bullets.forEach(b => allBullets.push(b.id));
+            if (sec.bullets && sec.bullets.length > 0) {
+              sec.bullets.forEach(b => {
+                totalCount++;
+                if (scores[b.id] === 'right') rightCount++;
+                else if (scores[b.id] === 'wrong') wrongCount++;
+                else if (scores[b.id] === 'circle') circleCount++;
+              });
+            } else {
+              totalCount++;
+              if (scores[sec.id] === 'right') rightCount++;
+              else if (scores[sec.id] === 'wrong') wrongCount++;
+              else if (scores[sec.id] === 'circle') circleCount++;
+            }
           });
         });
-
-        const totalCount = allBullets.length;
-        const rightCount = allBullets.filter(id => scores[id] === 'right').length;
-        const wrongCount = allBullets.filter(id => scores[id] === 'wrong').length;
-        const circleCount = allBullets.filter(id => scores[id] === 'circle').length;
-
-        const masterScoreEl = document.getElementById('masteredScoreText');
-        if (masterScoreEl) masterScoreEl.textContent = `${rightCount} / ${totalCount}`;
-        const countAllEl = document.getElementById('countAll');
-        if (countAllEl) countAllEl.textContent = totalCount;
-        const countRightEl = document.getElementById('countRight');
-        if (countRightEl) countRightEl.textContent = rightCount;
-        const countWrongEl = document.getElementById('countWrong');
-        if (countWrongEl) countWrongEl.textContent = wrongCount;
-        const countCircleEl = document.getElementById('countCircle');
-        if (countCircleEl) countCircleEl.textContent = circleCount;
 
         const sideMasteredEl = document.getElementById('sideStatMastered');
         if (sideMasteredEl) sideMasteredEl.textContent = rightCount;
@@ -2704,8 +2714,7 @@
             const link = document.createElement('a');
             link.className = 'tree-section-link';
             link.innerHTML = `
-              <span>${sec.title.length > 30 ? sec.title.slice(0, 30) + '...' : sec.title}</span>
-              <span style="font-family: var(--font-mono); font-size: 10px; opacity: 0.7;">P.${sec.start_page}</span>
+              <span>${sec.title}</span>
             `;
             link.addEventListener('click', (e) => {
               e.preventDefault();
@@ -2795,7 +2804,6 @@
                 <div class="path-step-node upcoming">
                   <div class="path-node-dot">${idx + 1}</div>
                   <div class="path-step-label">
-                    <span style="font-family: var(--font-mono); font-size: 10px; color: var(--brand-primary);">P.${item.sec.start_page}</span>
                     <span>${item.sec.title}</span>
                   </div>
                   <span class="path-step-status-pill status-pending">Ready</span>
@@ -2840,15 +2848,24 @@
           card.id = `sec_${sec.id}`;
           card.setAttribute('data-chapter', ch.id);
 
+          const secChoice = scores[sec.id];
           let cardHtml = `
             <!-- Slide Header Meta Bar -->
             <div class="slide-card-topbar">
               <div class="slide-meta-pills">
                 <span class="slide-ch-badge">Ch ${ch.num}: ${ch.title}</span>
-                <span class="slide-idx-pill">Page ${sec.start_page}</span>
               </div>
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <span style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--text-dim);">${sec.bullets.length} Points</span>
+              <!-- Slide-level 3-choice micro-evaluation selector -->
+              <div class="slide-eval-selector" data-sec-id="${sec.id}" title="Rate this topic">
+                <button class="eval-choice-btn eval-btn-right ${secChoice === 'right' ? 'selected-right' : ''}" 
+                        title="Mastered (Right Sign - Flower & Heart Shower!)" 
+                        onclick="setSlideScore('${sec.id}', 'right')">✓</button>
+                <button class="eval-choice-btn eval-btn-wrong ${secChoice === 'wrong' ? 'selected-wrong' : ''}" 
+                        title="Needs Revision (Wrong Sign)" 
+                        onclick="setSlideScore('${sec.id}', 'wrong')">✕</button>
+                <button class="eval-choice-btn eval-btn-circle ${secChoice === 'circle' ? 'selected-circle' : ''}" 
+                        title="In Progress / Question Flagged (Circle Sign)" 
+                        onclick="setSlideScore('${sec.id}', 'circle')">○</button>
               </div>
             </div>
 
@@ -2903,63 +2920,18 @@
             });
           }
 
-          // Toughest UPSC PSIR MCQs for this Topic / Section
-          if (sec.mcqs && sec.mcqs.length > 0) {
-            cardHtml += `
-              <div class="section-mcq-container">
-                <div class="mcq-section-header">
-                  <span class="mcq-badge-tag">🎯 UPSC CONCEPTUAL MASTERY TEST</span>
-                  <span class="mcq-header-title">2 Toughest Section Questions</span>
-                </div>
-                <div class="mcq-cards-grid">
-            `;
-            const letters = ['A', 'B', 'C', 'D'];
-            sec.mcqs.forEach((mcq, mIdx) => {
-              const savedAns = mcqAnswers[mcq.id];
-              cardHtml += `
-                <div class="mcq-question-card" id="card_${mcq.id}" data-mcq-id="${mcq.id}">
-                  <div class="mcq-card-top">
-                    <span class="mcq-num-pill">Question ${mIdx + 1} of ${sec.mcqs.length}</span>
-                    <span class="mcq-difficulty-pill">🔥 Toughest UPSC Standard</span>
-                  </div>
-                  <div class="mcq-question-text">${mcq.question.replace(/\n/g, '<br>')}</div>
-                  <div class="mcq-options-list">
-              `;
-              mcq.options.forEach((opt, oIdx) => {
-                let optClass = '';
-                if (savedAns !== undefined) {
-                  if (oIdx === mcq.correctIndex) optClass = (savedAns === mcq.correctIndex) ? 'selected-correct' : 'reveal-correct';
-                  if (savedAns === oIdx && savedAns !== mcq.correctIndex) optClass = 'selected-wrong';
-                }
-                cardHtml += `
-                  <button class="mcq-option-btn ${optClass}" 
-                          data-mcq-id="${mcq.id}" 
-                          data-opt-index="${oIdx}" 
-                          onclick="handleMcqChoice('${mcq.id}', ${oIdx}, ${mcq.correctIndex})">
-                    <span class="mcq-opt-letter">${letters[oIdx]}</span>
-                    <span class="mcq-opt-text">${opt}</span>
-                  </button>
-                `;
-              });
-              cardHtml += `</div>`;
 
-              const showExpl = savedAns !== undefined ? 'style="display: flex;"' : 'style="display: none;"';
-              cardHtml += `
-                <div class="mcq-explanation-box" id="expl_${mcq.id}" ${showExpl}>
-                  <div class="mcq-expl-title">💡 Detailed Conceptual Explanation & Source:</div>
-                  <div class="mcq-expl-text">${mcq.explanation}</div>
-                </div>
-              </div>
-              `;
-            });
-            cardHtml += `</div></div>`;
-          }
 
-          // Bottom bar of slide card
+          // Bottom bar of slide card with intuitive prev & next buttons
           cardHtml += `
             <div class="slide-card-bottom-bar">
+              <button class="slide-nav-prev-btn" onclick="window.slidePrev()" title="Previous Slide">
+                <span>◀ Prev</span>
+              </button>
               <span class="slide-status-badge">Topic ${topicCount}</span>
-              <span class="swipe-hint-text">Swipe / Use ▶ for Next Slide ➔</span>
+              <button class="slide-nav-next-btn" onclick="window.slideNext()" title="Next Slide">
+                <span>Next ▶</span>
+              </button>
             </div>
           `;
 
@@ -2981,7 +2953,6 @@
                 <div class="path-step-node ${isRead ? 'completed' : 'upcoming'}">
                   <div class="path-node-dot">${isRead ? '✓' : bIdx + 1}</div>
                   <div class="path-step-label">
-                    <span style="font-family: var(--font-mono); font-size: 10px; color: var(--brand-primary);">P.${bItem.sec.start_page}</span>
                     <span>${bItem.sec.title}</span>
                   </div>
                   <span class="path-step-status-pill ${isRead ? 'status-done' : 'status-pending'}">
@@ -3046,8 +3017,8 @@
               </div>
 
               <div class="journey-action-bar">
-                <button class="deck-nav-btn" onclick="window.slidePrev()">
-                  <span>◀</span> Previous Slide
+                <button class="slide-nav-prev-btn" onclick="window.slidePrev()" title="Previous Slide">
+                  <span>◀ Prev</span>
                 </button>
                 <button class="journey-primary-btn" onclick="window.slideNext()">
                   <span>Continue Walking</span> <span>▶</span>
@@ -3103,6 +3074,12 @@
         }
         if (prevBtn) prevBtn.disabled = currentSlideIndex <= 0;
         if (nextBtn) nextBtn.disabled = currentSlideIndex >= total - 1;
+        if (slides[currentSlideIndex]) {
+          const onCardPrev = slides[currentSlideIndex].querySelector('.slide-nav-prev-btn');
+          const onCardNext = slides[currentSlideIndex].querySelector('.slide-nav-next-btn');
+          if (onCardPrev) onCardPrev.style.visibility = currentSlideIndex <= 0 ? 'hidden' : 'visible';
+          if (onCardNext) onCardNext.style.visibility = currentSlideIndex >= total - 1 ? 'hidden' : 'visible';
+        }
       }
 
       function goToSlide(index) {
