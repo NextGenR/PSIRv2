@@ -16,10 +16,10 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="PSIR">
   
-  <!-- 10 Reader Fonts from Google Fonts -->
+  <!-- ROBOTO SERIF TYPOGRAPHY SUITE -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Roboto+Serif:opsz,wght@8..144,400;8..144,600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Outfit:wght@500;600;700;800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Nunito:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,300..900;1,8..144,300..900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   
   <style>
     /* ========================================================
@@ -56,8 +56,8 @@
       --circle-bg: #fffbeb;
       --circle-border: #fde68a;
 
-      --font-display: 'Outfit', sans-serif;
-      --font-reader: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      --font-display: 'Roboto Serif', Georgia, serif;
+      --font-reader: 'Roboto Serif', Georgia, serif;
       --font-mono: 'JetBrains Mono', monospace;
 
       --sidebar-width: 320px;
@@ -104,10 +104,15 @@
       padding: 0;
     }
 
+    body, h1, h2, h3, h4, h5, h6, .brand-title, .chapter-title-text, .section-title-heading, .section-intro-text, .bullet-text, .bullet-content-body, p, button, a, input, select {
+      font-family: var(--font-reader);
+    }
+    h1, h2, h3, h4, h5, h6, .brand-title, .chapter-title-text, .section-title-heading, .journey-title {
+      font-family: var(--font-display);
+    }
     body {
       background: var(--bg-app);
       color: var(--text-main);
-      font-family: var(--font-reader);
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -157,13 +162,20 @@
       color: var(--text-main);
       font-size: 13.5px;
       font-weight: 700;
-      padding: 7px 12px;
+      padding: 6px 12px;
       border-radius: 8px;
       cursor: pointer;
       display: flex;
       align-items: center;
       gap: 6px;
       transition: var(--transition);
+    }
+    .hamburger-bars-icon {
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 1;
+      display: inline-flex;
+      align-items: center;
     }
     body.dark-mode .toggle-sidebar-btn {
       background: rgba(255,255,255,0.05);
@@ -953,13 +965,17 @@
     }
 
     /* ========================================================
-       JOURNEY MAP ("BOY WALKING ON A PATH") STYLES
+       3-BATCH MILESTONE EXPEDITION MODEL DESIGN SYSTEM
        ======================================================== */
     .journey-map-card {
       background: linear-gradient(145deg, var(--paper-bg) 0%, rgba(2, 132, 199, 0.04) 100%) !important;
       border: 1.5px solid var(--accent-border) !important;
       position: relative;
       overflow-y: auto !important;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding: 24px 22px !important;
     }
     body.dark-mode .journey-map-card {
       background: linear-gradient(145deg, #0d1117 0%, #161b22 100%) !important;
@@ -984,164 +1000,192 @@
       background: rgba(56, 189, 248, 0.12);
       border-color: rgba(56, 189, 248, 0.3);
     }
+    .journey-hero-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin: 4px 0 6px 0;
+    }
     .journey-title {
       font-family: var(--font-display);
-      font-size: 19px;
+      font-size: 20px;
       font-weight: 800;
       color: var(--accent-heading);
-      margin: 4px 0 2px 0;
       letter-spacing: -0.3px;
+      line-height: 1.3;
     }
     .journey-sub {
       font-size: 13px;
       color: var(--text-muted);
       line-height: 1.5;
-    }
-    .journey-path-wrap {
-      background: rgba(0, 0, 0, 0.02);
-      border: 1px dashed var(--paper-border);
-      border-radius: 14px;
-      padding: 16px 14px;
-      margin: 8px 0;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      position: relative;
-    }
-    body.dark-mode .journey-path-wrap {
-      background: rgba(255, 255, 255, 0.02);
+      margin-top: 4px;
     }
     .walking-boy-avatar {
-      font-size: 28px;
+      font-size: 32px;
       display: inline-block;
       transform: scaleX(-1);
       animation: boyWalkBounce 1.2s infinite ease-in-out;
       transform-origin: center center;
       filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));
+      flex-shrink: 0;
     }
     @keyframes boyWalkBounce {
       0%, 100% { transform: scaleX(-1) translateY(0) rotate(0deg); }
       25% { transform: scaleX(-1) translateY(-4px) rotate(-4deg); }
       75% { transform: scaleX(-1) translateY(-3px) rotate(4deg); }
     }
-    .path-steps-list {
+
+    /* 3 BATCHES ROADMAP CARDS */
+    .batches-roadmap-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 10px;
+      margin: 8px 0;
+    }
+    .batch-stage-card {
+      background: rgba(0, 0, 0, 0.02);
+      border: 1px solid var(--paper-border);
+      border-radius: 12px;
+      padding: 12px 14px;
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      position: relative;
-      padding-left: 28px;
+      gap: 6px;
+      transition: var(--transition);
     }
-    .path-steps-list::before {
-      content: '';
-      position: absolute;
-      top: 12px;
-      bottom: 12px;
-      left: 11px;
-      width: 2px;
-      background: linear-gradient(180deg, #10b981 0%, #0284c7 60%, var(--paper-border) 100%);
-      border-radius: 999px;
+    body.dark-mode .batch-stage-card {
+      background: rgba(255, 255, 255, 0.03);
     }
-    .path-step-node {
+    .batch-stage-card.stage-active {
+      border-color: var(--brand-primary);
+      background: rgba(2, 132, 199, 0.06);
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.08);
+    }
+    .batch-stage-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 10px;
-      position: relative;
-      font-size: 12.5px;
     }
-    .path-node-dot {
-      position: absolute;
-      left: -28px;
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 11px;
-      font-weight: 800;
-      background: var(--paper-bg);
-      border: 2px solid var(--paper-border);
-      color: var(--text-dim);
-      box-shadow: 0 2px 5px rgba(0,0,0,0.06);
-      transition: var(--transition);
-    }
-    .path-step-node.completed .path-node-dot {
-      background: #10b981;
-      border-color: #10b981;
-      color: #ffffff;
-    }
-    .path-step-node.current .path-node-dot {
-      background: #0284c7;
-      border-color: #38bdf8;
-      color: #ffffff;
-      box-shadow: 0 0 0 4px rgba(2, 132, 199, 0.2);
-    }
-    .path-step-node.upcoming .path-node-dot {
-      background: var(--paper-bg);
-      border-color: var(--paper-border);
-      color: var(--text-dim);
-    }
-    .path-step-label {
-      flex: 1;
-      font-weight: 600;
-      color: var(--text-main);
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      line-height: 1.4;
-    }
-    .path-step-status-pill {
+    .batch-num-badge {
       font-size: 10.5px;
+      font-weight: 800;
+      color: var(--brand-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .batch-status-pill {
+      font-size: 10px;
       font-weight: 700;
       padding: 2px 7px;
       border-radius: 6px;
       white-space: nowrap;
     }
-    .path-step-status-pill.status-done {
-      background: rgba(16, 185, 129, 0.12);
+    .status-current {
+      background: rgba(2, 132, 199, 0.15);
+      color: var(--brand-primary);
+    }
+    .status-done {
+      background: rgba(16, 185, 129, 0.15);
       color: #10b981;
-      border: 1px solid rgba(16, 185, 129, 0.25);
     }
-    .path-step-status-pill.status-current {
-      background: rgba(2, 132, 199, 0.12);
-      color: #0284c7;
-      border: 1px solid rgba(2, 132, 199, 0.25);
-    }
-    .path-step-status-pill.status-pending {
-      background: rgba(0, 0, 0, 0.04);
+    .status-pending {
+      background: rgba(0, 0, 0, 0.05);
       color: var(--text-dim);
+    }
+    body.dark-mode .status-pending {
+      background: rgba(255, 255, 255, 0.06);
+    }
+    .batch-stage-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+    .batch-stage-desc {
+      font-size: 11.5px;
+      color: var(--text-dim);
+    }
+
+    /* 3 BATCHES HORIZONTAL PROGRESS TIMELINE */
+    .batch-timeline-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 8px 0;
+      padding: 12px 16px;
+      background: rgba(0, 0, 0, 0.02);
+      border-radius: 12px;
       border: 1px dashed var(--paper-border);
     }
-    body.dark-mode .path-step-status-pill.status-pending {
-      background: rgba(255, 255, 255, 0.04);
+    body.dark-mode .batch-timeline-bar {
+      background: rgba(255, 255, 255, 0.02);
     }
-    .ahead-chapters-box {
-      background: rgba(2, 132, 199, 0.05);
-      border: 1px solid rgba(2, 132, 199, 0.18);
-      border-radius: 12px;
-      padding: 12px 14px;
+    .timeline-step {
       display: flex;
       flex-direction: column;
-      gap: 8px;
-      margin-top: 4px;
+      align-items: center;
+      gap: 5px;
+      flex-shrink: 0;
     }
-    body.dark-mode .ahead-chapters-box {
-      background: rgba(2, 132, 199, 0.1);
-      border-color: rgba(56, 189, 248, 0.25);
-    }
-    .ahead-box-title {
+    .timeline-dot {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 11.5px;
       font-weight: 800;
-      color: #0284c7;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
+      background: var(--paper-bg);
+      border: 2px solid var(--paper-border);
+      color: var(--text-dim);
+    }
+    .timeline-step.completed .timeline-dot {
+      background: #10b981;
+      border-color: #10b981;
+      color: #ffffff;
+    }
+    .timeline-step.current .timeline-dot {
+      background: #0284c7;
+      border-color: #38bdf8;
+      color: #ffffff;
+      box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.25);
+    }
+    .timeline-label {
+      font-size: 10.5px;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+    .timeline-line {
+      flex: 1;
+      height: 2px;
+      background: var(--paper-border);
+      margin: 0 10px;
+      margin-bottom: 20px;
+    }
+    .timeline-line.active {
+      background: linear-gradient(90deg, #10b981, #0284c7);
+    }
+    .timeline-line.completed {
+      background: #10b981;
+    }
+
+    .ahead-chapters-box {
+      background: rgba(0, 0, 0, 0.02);
+      border: 1px solid var(--paper-border);
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin: 4px 0;
+    }
+    body.dark-mode .ahead-chapters-box {
+      background: rgba(255, 255, 255, 0.02);
+    }
+    .ahead-box-title {
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--accent-heading);
+      margin-bottom: 8px;
       display: flex;
       align-items: center;
       gap: 6px;
-    }
-    body.dark-mode .ahead-box-title {
-      color: #38bdf8;
     }
     .ahead-items-row {
       display: flex;
@@ -1149,46 +1193,45 @@
       gap: 6px;
     }
     .ahead-pill {
-      font-size: 11px;
-      font-weight: 700;
+      font-size: 11.5px;
+      padding: 4px 9px;
+      border-radius: 6px;
       background: var(--paper-bg);
       border: 1px solid var(--paper-border);
       color: var(--text-main);
-      padding: 3px 8px;
-      border-radius: 6px;
       display: inline-flex;
       align-items: center;
-      gap: 4px;
+      gap: 5px;
     }
     .journey-action-bar {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 10px;
-      margin-top: 10px;
-      padding-top: 10px;
-      border-top: 1px solid var(--paper-border);
+      gap: 12px;
+      margin-top: auto;
+      padding-top: 14px;
+      border-top: 1px dashed var(--paper-border);
     }
     .journey-primary-btn {
       background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
       color: #ffffff;
       border: none;
-      padding: 8px 16px;
-      border-radius: 9px;
       font-family: inherit;
       font-size: 12.5px;
       font-weight: 800;
+      padding: 9px 18px;
+      border-radius: 9px;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.35);
+      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3);
       transition: var(--transition);
       margin-left: auto;
     }
     .journey-primary-btn:hover {
       transform: translateY(-1px);
-      box-shadow: 0 6px 16px rgba(2, 132, 199, 0.5);
+      box-shadow: 0 6px 18px rgba(2, 132, 199, 0.45);
     }
 
     /* ========================================================
@@ -2062,17 +2105,16 @@
   <header class="app-top-header">
     <div class="brand-section">
       <button id="toggleSidebarBtn" class="toggle-sidebar-btn" title="Toggle Table of Contents / Index">
-        <span>📑</span> <span>Index</span>
+        <span class="hamburger-bars-icon">☰</span> <span>Index</span>
       </button>
       <div class="brand-badge-icon" title="PSIR Optional Exam Suite">
         <span class="psir-badge-text">PSIR</span>
       </div>
-      <!-- Key Terms navigation placed prominently where Master Suite was -->
+      <!-- Key Terms navigation shortened to 'Terms' -->
       <a href="keyterms.html" class="topbar-keyterms-nav" title="Switch to Key Terms Flashcard System">
-        <span>📖</span> <span>Key Terms</span>
+        <span>📖</span> <span>Terms</span>
       </a>
     </div>
-
 
     <!-- Actions & Reader Tools (Icon-Only without text to adjust space) -->
     <div class="header-actions">
@@ -2086,26 +2128,6 @@
         </button>
       </div>
 
-      <!-- 10 Reader Fonts Picker (Icon Only) -->
-      <div class="font-picker-wrapper">
-        <button id="fontPickerBtn" class="header-action-btn icon-only-btn" title="Change Reader Font (10 Curated Fonts)" aria-label="Font Type">
-          <span>🔤</span>
-        </button>
-        <div class="font-picker-menu" id="fontPickerMenu">
-          <div class="font-picker-title">Select Reader Font</div>
-          <button class="font-option-btn active" data-font="Plus Jakarta Sans" style="font-family: 'Plus Jakarta Sans', sans-serif;">Plus Jakarta Sans <span>✓</span></button>
-          <button class="font-option-btn" data-font="Inter" style="font-family: 'Inter', sans-serif;">Inter</button>
-          <button class="font-option-btn" data-font="Merriweather" style="font-family: 'Merriweather', serif;">Merriweather</button>
-          <button class="font-option-btn" data-font="Lora" style="font-family: 'Lora', serif;">Lora</button>
-          <button class="font-option-btn" data-font="Roboto Serif" style="font-family: 'Roboto Serif', serif;">Roboto Serif</button>
-          <button class="font-option-btn" data-font="Source Serif 4" style="font-family: 'Source Serif 4', serif;">Source Serif 4</button>
-          <button class="font-option-btn" data-font="Outfit" style="font-family: 'Outfit', sans-serif;">Outfit</button>
-          <button class="font-option-btn" data-font="Literata" style="font-family: 'Literata', serif;">Literata</button>
-          <button class="font-option-btn" data-font="Crimson Pro" style="font-family: 'Crimson Pro', serif;">Crimson Pro</button>
-          <button class="font-option-btn" data-font="Nunito" style="font-family: 'Nunito', sans-serif;">Nunito</button>
-        </div>
-      </div>
-
       <!-- Highlighter Tool Toggle (Icon Only) -->
       <button id="highlighterToggleBtn" class="header-action-btn icon-only-btn" title="Toggle Text Highlighter" aria-label="Highlighter">
         <span>🖍️</span>
@@ -2115,7 +2137,6 @@
       <button id="nightModeToggleBtn" class="header-action-btn icon-only-btn" title="Toggle Night Theme" aria-label="Toggle Night Mode">
         <span id="nightIcon">🌙</span>
       </button>
-
     </div>
   </header>
 
@@ -2297,64 +2318,10 @@
       }
 
       // ========================================================
-      // 10 READER FONTS MANAGEMENT
+      // ROBOTO SERIF TYPOGRAPHY SUITE
       // ========================================================
-      const fontPickerBtn = document.getElementById('fontPickerBtn');
-      const fontPickerMenu = document.getElementById('fontPickerMenu');
-      const savedFont = localStorage.getItem('psir_reader_font') || 'Plus Jakarta Sans';
-
-      function applyReaderFont(fontName) {
-        const fontMap = {
-          'Plus Jakarta Sans': "'Plus Jakarta Sans', sans-serif",
-          'Inter': "'Inter', sans-serif",
-          'Merriweather': "'Merriweather', serif",
-          'Lora': "'Lora', serif",
-          'Roboto Serif': "'Roboto Serif', serif",
-          'Source Serif 4': "'Source Serif 4', serif",
-          'Outfit': "'Outfit', sans-serif",
-          'Literata': "'Literata', serif",
-          'Crimson Pro': "'Crimson Pro', serif",
-          'Nunito': "'Nunito', sans-serif"
-        };
-        const family = fontMap[fontName] || fontMap['Plus Jakarta Sans'];
-        document.documentElement.style.setProperty('--font-reader', family);
-        document.body.style.fontFamily = family;
-        localStorage.setItem('psir_reader_font', fontName);
-
-        // Update menu active mark
-        document.querySelectorAll('.font-option-btn').forEach(btn => {
-          const match = btn.getAttribute('data-font') === fontName;
-          btn.classList.toggle('active', match);
-          btn.querySelector('span')?.remove();
-          if (match) {
-            const check = document.createElement('span');
-            check.textContent = '✓';
-            btn.appendChild(check);
-          }
-        });
-      }
-
-      fontPickerBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        fontPickerMenu.classList.toggle('show');
-      });
-
-      document.addEventListener('click', (e) => {
-        if (!fontPickerMenu.contains(e.target) && e.target !== fontPickerBtn) {
-          fontPickerMenu.classList.remove('show');
-        }
-      });
-
-      document.querySelectorAll('.font-option-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-          const font = btn.getAttribute('data-font');
-          applyReaderFont(font);
-          fontPickerMenu.classList.remove('show');
-          showToast(`Font updated: ${font}`);
-        });
-      });
-
-      applyReaderFont(savedFont);
+      document.documentElement.style.setProperty('--font-reader', "'Roboto Serif', Georgia, serif");
+      document.documentElement.style.setProperty('--font-display', "'Roboto Serif', Georgia, serif");
 
       // ========================================================
       // NIGHT THEME PALETTE
@@ -2747,272 +2714,243 @@
         const data = window.SARRTHI_DATA;
         if (!data || !data.chapters) return;
 
-        // Gather all active section items across all chapters
-        const allSectionItems = [];
-        data.chapters.forEach(ch => {
-          ch.sections.forEach(sec => {
-            let visibleBullets = sec.bullets;
-            if (activeFilter !== 'all') {
-              visibleBullets = visibleBullets.filter(b => scores[b.id] === activeFilter);
-            }
-            if (activeFilter === 'all' || visibleBullets.length > 0) {
-              allSectionItems.push({ ch, sec, visibleBullets });
-            }
-          });
-        });
-
-        if (allSectionItems.length === 0) {
-          container.innerHTML = `<div style="text-align: center; padding: 40px; color: var(--text-muted);">No topics match the selected filter.</div>`;
-          updateSliderIndicator();
-          return;
+        // Helper to check if a section is read
+        function isSectionRead(sec) {
+          if (scores[sec.id] !== undefined) return true;
+          if (sec.bullets && sec.bullets.length > 0) {
+            return sec.bullets.some(b => scores[b.id] !== undefined);
+          }
+          return false;
         }
 
-        // ========================================================
-        // 1. JOURNEY START MAP (Before Slide 1)
-        // ========================================================
-        const startMapCard = document.createElement('div');
-        startMapCard.className = 'notes-slide-card journey-map-card';
-        startMapCard.id = 'journey_start_map';
+        // Helper to count read topics in chapter range
+        function getBatchReadCount(startCh, endCh) {
+          let count = 0;
+          data.chapters.filter(c => c.num >= startCh && c.num <= endCh).forEach(c => {
+            c.sections.forEach(s => {
+              if (isSectionRead(s)) count++;
+            });
+          });
+          return count;
+        }
 
-        startMapCard.innerHTML = `
+        const b1Total = 23; // Ch 1 (12) + Ch 2 (11)
+        const b2Total = 58; // Ch 3 (32) + Ch 4 (26)
+        const b3Total = 39; // Ch 5 (22) + Ch 6 (17)
+
+        const b1Read = getBatchReadCount(1, 2);
+        const b2Read = getBatchReadCount(3, 4);
+        const b3Read = getBatchReadCount(5, 6);
+
+        // ========================================================
+        // 1. EXPEDITION LAUNCHPAD (THE 3-BATCH ROADMAP)
+        // ========================================================
+        const launchpadCard = document.createElement('div');
+        launchpadCard.className = 'notes-slide-card journey-map-card';
+        launchpadCard.id = 'journey_launchpad';
+
+        launchpadCard.innerHTML = `
           <div class="slide-card-topbar">
-            <span class="journey-header-badge">🧭 EXPEDITION LAUNCHPAD</span>
-            <span class="slide-idx-pill">6 Milestone Chapters Ahead</span>
+            <span class="journey-header-badge">🧭 3-BATCH PSIR EXPEDITION ROADMAP</span>
+            <span class="slide-idx-pill">All 6 Chapters • 120 Topics</span>
           </div>
 
-          <div style="margin: 8px 0 4px 0;">
-            <h2 class="journey-title">The Path of Political Theory</h2>
-            <p class="journey-sub">Follow the footsteps of an aspirant walking the path of political thought. Every 5 slides you will encounter a milestone waypoint reviewing your progress!</p>
+          <div class="journey-hero-header">
+            <div class="walking-boy-avatar">🚶‍♂️</div>
+            <div>
+              <h2 class="journey-title">The Path of Political Science</h2>
+              <p class="journey-sub">Follow the footsteps of an aspirant walking the path of political thought. The entire syllabus is organized into 3 distinct learning batches:</p>
+            </div>
           </div>
 
-          <!-- The Walking Boy at the Start Line -->
-          <div class="journey-path-wrap">
-            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; background: rgba(2, 132, 199, 0.08); padding: 12px 14px; border-radius: 12px;">
-              <div style="display: flex; align-items: center; gap: 12px;">
-                <div class="walking-boy-avatar">🚶‍♂️</div>
-                <div>
-                  <strong style="font-size: 13.5px; color: var(--accent-heading);">The Aspirant's Footsteps</strong>
-                  <div style="font-size: 11.5px; color: var(--text-muted);">Starting at Chapter 1: Political Theory & Core Marxist Foundations</div>
-                </div>
+          <!-- 3 Batches Cards Grid -->
+          <div class="batches-roadmap-grid">
+            <div class="batch-stage-card stage-active">
+              <div class="batch-stage-header">
+                <span class="batch-num-badge">BATCH 1</span>
+                <span class="batch-status-pill ${b1Read >= b1Total ? 'status-done' : 'status-current'}">${b1Read >= b1Total ? '✓ Mastered' : `${b1Read}/${b1Total} Read`}</span>
               </div>
-              <span class="path-step-status-pill status-current">Expedition Start</span>
+              <h4 class="batch-stage-title">🏛️ Political Ideologies & State Foundations</h4>
+              <p class="batch-stage-desc">Chapters 1 & 2 • 23 Foundational Topics</p>
             </div>
 
-            <div style="font-size: 11px; font-weight: 800; color: var(--text-dim); text-transform: uppercase; margin-top: 6px;">Next 5 Steps on Your Immediate Path:</div>
-            <div class="path-steps-list">
-              ${allSectionItems.slice(0, 5).map((item, idx) => `
-                <div class="path-step-node upcoming">
-                  <div class="path-node-dot">${idx + 1}</div>
-                  <div class="path-step-label">
-                    <span>${item.sec.title}</span>
-                  </div>
-                  <span class="path-step-status-pill status-pending">Ready</span>
-                </div>
-              `).join('')}
+            <div class="batch-stage-card">
+              <div class="batch-stage-header">
+                <span class="batch-num-badge">BATCH 2</span>
+                <span class="batch-status-pill ${b2Read >= b2Total ? 'status-done' : (b1Read >= 5 ? 'status-current' : 'status-pending')}">${b2Read >= b2Total ? '✓ Mastered' : `${b2Read}/${b2Total} Read`}</span>
+              </div>
+              <h4 class="batch-stage-title">⚖️ Marxism, Socialism & Fascism</h4>
+              <p class="batch-stage-desc">Chapters 3 & 4 • 58 Conceptual Topics</p>
             </div>
-          </div>
 
-          <!-- 6 Landmark Chapters Ahead -->
-          <div class="ahead-chapters-box">
-            <div class="ahead-box-title"><span>🗺️</span> 6 Foundational Peaks Ahead on this Expedition:</div>
-            <div class="ahead-items-row">
-              <span class="ahead-pill"><span>🏛️</span> Ch 1: Political Theory & Marx</span>
-              <span class="ahead-pill"><span>⚖️</span> Ch 2: Theories of the State</span>
-              <span class="ahead-pill"><span>👑</span> Ch 3: Theories of Justice</span>
-              <span class="ahead-pill"><span>🤝</span> Ch 4: Equality & Dworkin</span>
-              <span class="ahead-pill"><span>📜</span> Ch 5: Three Generations of Rights</span>
-              <span class="ahead-pill"><span>🗳️</span> Ch 6: Models of Democracy</span>
+            <div class="batch-stage-card">
+              <div class="batch-stage-header">
+                <span class="batch-num-badge">BATCH 3</span>
+                <span class="batch-status-pill ${b3Read >= b3Total ? 'status-done' : 'status-pending'}">${b3Read >= b3Total ? '✓ Mastered' : `${b3Read}/${b3Total} Read`}</span>
+              </div>
+              <h4 class="batch-stage-title">📜 Gandhism & Feminism</h4>
+              <p class="batch-stage-desc">Chapters 5 & 6 • 39 Discourse Topics</p>
             </div>
           </div>
 
           <div class="journey-action-bar">
             <span class="swipe-hint-text">Swipe left or click button to start ➔</span>
             <button class="journey-primary-btn" onclick="window.slideNext()">
-              <span>Begin Walk</span> <span>▶</span>
+              <span>Begin Batch 1</span> <span>▶</span>
             </button>
           </div>
         `;
-        container.appendChild(startMapCard);
+        container.appendChild(launchpadCard);
 
         // ========================================================
-        // 2. RENDER SECTIONS & INJECT WAYPOINT MAPS EVERY 5 SLIDES
+        // 2. RENDER SECTIONS & INJECT STRATEGIC BATCH MILESTONES
         // ========================================================
         let topicCount = 0;
 
-        allSectionItems.forEach((item, secIdx) => {
-          topicCount++;
-          const { ch, sec, visibleBullets } = item;
+        data.chapters.forEach(ch => {
+          ch.sections.forEach(sec => {
+            topicCount++;
 
-          const card = document.createElement('div');
-          card.className = 'notes-slide-card';
-          card.id = `sec_${sec.id}`;
-          card.setAttribute('data-chapter', ch.id);
+            const card = document.createElement('div');
+            card.className = 'notes-slide-card';
+            card.id = `sec_${sec.id}`;
+            card.setAttribute('data-chapter', ch.id);
 
-          const secChoice = scores[sec.id];
-          let cardHtml = `
-            <!-- Slide Header Meta Bar -->
-            <div class="slide-card-topbar">
-              <div class="slide-meta-pills">
-                <span class="slide-ch-badge">Ch ${ch.num}: ${ch.title}</span>
-              </div>
-              <!-- Slide-level 3-choice micro-evaluation selector -->
-              <div class="slide-eval-selector" data-sec-id="${sec.id}" title="Rate this topic">
-                <button class="eval-choice-btn eval-btn-right ${secChoice === 'right' ? 'selected-right' : ''}" 
-                        title="Mastered (Right Sign - Flower & Heart Shower!)" 
-                        onclick="setSlideScore('${sec.id}', 'right')">✓</button>
-                <button class="eval-choice-btn eval-btn-wrong ${secChoice === 'wrong' ? 'selected-wrong' : ''}" 
-                        title="Needs Revision (Wrong Sign)" 
-                        onclick="setSlideScore('${sec.id}', 'wrong')">✕</button>
-                <button class="eval-choice-btn eval-btn-circle ${secChoice === 'circle' ? 'selected-circle' : ''}" 
-                        title="In Progress / Question Flagged (Circle Sign)" 
-                        onclick="setSlideScore('${sec.id}', 'circle')">○</button>
-              </div>
-            </div>
-
-            <!-- Section Title Heading -->
-            <div class="section-title-bar" style="margin-top: 4px;">
-              <h3 class="section-title-heading">${sec.title}</h3>
-            </div>
-          `;
-
-          // Section Intro Paragraphs
-          if (sec.paragraphs && sec.paragraphs.length > 0) {
-            sec.paragraphs.forEach(p => {
-              cardHtml += `<p class="section-intro-text">${p.text}</p>`;
-            });
-          }
-
-          // Interactive Bullet Items List
-          cardHtml += `<div class="interactive-bullets-list">`;
-          visibleBullets.forEach(b => {
-            const choice = scores[b.id];
-            const statusClass = choice ? `status-${choice}` : '';
-            cardHtml += `
-              <div class="bullet-row-item ${statusClass}" data-id="${b.id}" data-chapter="${ch.id}">
-                <div class="bullet-eval-selector">
-                  <button class="eval-choice-btn eval-btn-right ${choice === 'right' ? 'selected-right' : ''}" 
+            const secChoice = scores[sec.id];
+            let cardHtml = `
+              <!-- Slide Header Meta Bar -->
+              <div class="slide-card-topbar">
+                <div class="slide-meta-pills">
+                  <span class="slide-ch-badge">Ch ${ch.num}: ${ch.title}</span>
+                </div>
+                <!-- Slide-level 3-choice micro-evaluation selector -->
+                <div class="slide-eval-selector" data-sec-id="${sec.id}" title="Rate this topic">
+                  <button class="eval-choice-btn eval-btn-right ${secChoice === 'right' ? 'selected-right' : ''}" 
                           title="Mastered (Right Sign - Flower & Heart Shower!)" 
-                          onclick="setBulletScore('${b.id}', 'right')">✓</button>
-                  <button class="eval-choice-btn eval-btn-wrong ${choice === 'wrong' ? 'selected-wrong' : ''}" 
+                          onclick="setSlideScore('${sec.id}', 'right')">✓</button>
+                  <button class="eval-choice-btn eval-btn-wrong ${secChoice === 'wrong' ? 'selected-wrong' : ''}" 
                           title="Needs Revision (Wrong Sign)" 
-                          onclick="setBulletScore('${b.id}', 'wrong')">✕</button>
-                  <button class="eval-choice-btn eval-btn-circle ${choice === 'circle' ? 'selected-circle' : ''}" 
+                          onclick="setSlideScore('${sec.id}', 'wrong')">✕</button>
+                  <button class="eval-choice-btn eval-btn-circle ${secChoice === 'circle' ? 'selected-circle' : ''}" 
                           title="In Progress / Question Flagged (Circle Sign)" 
-                          onclick="setBulletScore('${b.id}', 'circle')">○</button>
+                          onclick="setSlideScore('${sec.id}', 'circle')">○</button>
                 </div>
-                <div class="bullet-content-body">
-                  ${b.label ? `<span class="bullet-label-tag">${b.label}</span>` : ''}
-                  ${b.text}
-                </div>
+              </div>
+
+              <!-- Section Title Heading -->
+              <div class="section-title-bar" style="margin-top: 4px;">
+                <h3 class="section-title-heading">${sec.title}</h3>
               </div>
             `;
-          });
-          cardHtml += `</div>`;
 
-          // Subbullets / Examples
-          if (sec.subbullets && sec.subbullets.length > 0) {
-            sec.subbullets.forEach(sb => {
-              cardHtml += `
-                <div class="subbullet-box">
-                  <strong>${sb.label || 'Example'}</strong>: ${sb.text}
-                </div>
-              `;
-            });
-          }
+            // Section Intro Paragraphs
+            if (sec.paragraphs && sec.paragraphs.length > 0) {
+              sec.paragraphs.forEach(p => {
+                cardHtml += `<p class="section-intro-text">${p.text}</p>`;
+              });
+            }
 
-
-
-          // Bottom bar of slide card with intuitive prev & next buttons
-          cardHtml += `
-            <div class="slide-card-bottom-bar">
-              <button class="slide-nav-prev-btn" onclick="window.slidePrev()" title="Previous Slide">
-                <span>◀ Prev</span>
-              </button>
-              <span class="slide-status-badge">Topic ${topicCount}</span>
-              <button class="slide-nav-next-btn" onclick="window.slideNext()" title="Next Slide">
-                <span>Next ▶</span>
-              </button>
-            </div>
-          `;
-
-          card.innerHTML = cardHtml;
-          container.appendChild(card);
-
-          // After every 5 topics, inject a MILESTONE WAYPOINT MAP CARD
-          if ((secIdx + 1) % 5 === 0) {
-            const batchNum = Math.floor((secIdx + 1) / 5);
-            const batchItems = allSectionItems.slice(secIdx - 4, secIdx + 1);
-            const upcomingItems = allSectionItems.slice(secIdx + 1, secIdx + 6);
-
-            // Determine read/unread status for topics in this leg
-            let readCount = 0;
-            const batchNodesHtml = batchItems.map((bItem, bIdx) => {
-              const isRead = bItem.sec.bullets.some(b => scores[b.id] !== undefined);
-              if (isRead) readCount++;
-              return `
-                <div class="path-step-node ${isRead ? 'completed' : 'upcoming'}">
-                  <div class="path-node-dot">${isRead ? '✓' : bIdx + 1}</div>
-                  <div class="path-step-label">
-                    <span>${bItem.sec.title}</span>
-                  </div>
-                  <span class="path-step-status-pill ${isRead ? 'status-done' : 'status-pending'}">
-                    ${isRead ? '✓ Read' : '○ Pending'}
-                  </span>
-                </div>
-              `;
-            }).join('');
-
-            const upcomingChapters = data.chapters.filter(c => c.num >= item.ch.num);
-
-            const waypointCard = document.createElement('div');
-            waypointCard.className = 'notes-slide-card journey-map-card';
-            waypointCard.setAttribute('data-milestone-batch', batchNum);
-
-            waypointCard.innerHTML = `
-              <div class="slide-card-topbar">
-                <span class="journey-header-badge">🚶‍♂️ MILESTONE WAYPOINT #${batchNum}</span>
-                <span class="slide-idx-pill">${readCount} of 5 Read in this Leg</span>
-              </div>
-
-              <div style="margin: 6px 0;">
-                <h2 class="journey-title">Milestone Waypoint #${batchNum}</h2>
-                <p class="journey-sub">Look back at the topics you just walked through, then explore the upcoming chapters & concepts ahead!</p>
-              </div>
-
-              <!-- Walking Boy & Topics in This Leg -->
-              <div class="journey-path-wrap">
-                <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; background: rgba(2, 132, 199, 0.08); padding: 10px 14px; border-radius: 12px;">
-                  <div style="display: flex; align-items: center; gap: 10px;">
-                    <div class="walking-boy-avatar">🚶‍♂️</div>
-                    <div>
-                      <strong style="font-size: 13.5px; color: var(--accent-heading);">The Aspirant on the Trail</strong>
-                      <div style="font-size: 11.5px; color: var(--text-muted);">${readCount >= 5 ? 'All 5 topics thoroughly reviewed! 🌸' : `${5 - readCount} topics awaiting review`}</div>
+            // Interactive Bullet Items List
+            if (sec.bullets && sec.bullets.length > 0) {
+              cardHtml += `<div class="interactive-bullets-list">`;
+              sec.bullets.forEach(b => {
+                const choice = scores[b.id];
+                const statusClass = choice ? `status-${choice}` : '';
+                cardHtml += `
+                  <div class="bullet-row-item ${statusClass}" data-id="${b.id}" data-chapter="${ch.id}">
+                    <div class="bullet-eval-selector">
+                      <button class="eval-choice-btn eval-btn-right ${choice === 'right' ? 'selected-right' : ''}" 
+                              title="Mastered (Right Sign - Flower & Heart Shower!)" 
+                              onclick="setBulletScore('${b.id}', 'right')">✓</button>
+                      <button class="eval-choice-btn eval-btn-wrong ${choice === 'wrong' ? 'selected-wrong' : ''}" 
+                              title="Needs Revision (Wrong Sign)" 
+                              onclick="setBulletScore('${b.id}', 'wrong')">✕</button>
+                      <button class="eval-choice-btn eval-btn-circle ${choice === 'circle' ? 'selected-circle' : ''}" 
+                              title="In Progress / Question Flagged (Circle Sign)" 
+                              onclick="setBulletScore('${b.id}', 'circle')">○</button>
+                    </div>
+                    <div class="bullet-content-body">
+                      ${b.label ? `<span class="bullet-label-tag">${b.label}</span>` : ''}
+                      ${b.text}
                     </div>
                   </div>
-                  <span class="path-step-status-pill ${readCount >= 5 ? 'status-done' : 'status-current'}">${readCount}/5 Explored</span>
-                </div>
+                `;
+              });
+              cardHtml += `</div>`;
+            }
 
-                <div style="font-size: 11px; font-weight: 800; color: var(--text-dim); text-transform: uppercase; margin-top: 4px;">Topics in This Leg:</div>
-                <div class="path-steps-list">
-                  ${batchNodesHtml}
+            // Subbullets / Examples
+            if (sec.subbullets && sec.subbullets.length > 0) {
+              sec.subbullets.forEach(sb => {
+                cardHtml += `
+                  <div class="subbullet-box">
+                    <strong>${sb.label || 'Example'}</strong>: ${sb.text}
+                  </div>
+                `;
+              });
+            }
+
+            // Bottom bar of slide card with intuitive prev & next buttons
+            cardHtml += `
+              <div class="slide-card-bottom-bar">
+                <button class="slide-nav-prev-btn" onclick="window.slidePrev()" title="Previous Slide">
+                  <span>◀ Prev</span>
+                </button>
+                <span class="slide-status-badge">Topic ${topicCount}</span>
+                <button class="slide-nav-next-btn" onclick="window.slideNext()" title="Next Slide">
+                  <span>Next ▶</span>
+                </button>
+              </div>
+            `;
+
+            card.innerHTML = cardHtml;
+            container.appendChild(card);
+          });
+
+          // ========================================================
+          // 3. INJECT 3 BATCH MILESTONE CHECKPOINTS AT BOUNDARIES
+          // ========================================================
+          if (ch.num === 2) {
+            // Milestone Batch 1 (After Ch 2)
+            const m1Card = document.createElement('div');
+            m1Card.className = 'notes-slide-card journey-map-card';
+            m1Card.id = 'milestone_batch_1';
+            m1Card.innerHTML = `
+              <div class="slide-card-topbar">
+                <span class="journey-header-badge">🚶‍♂️ MILESTONE BATCH 1 CHECKPOINT</span>
+                <span class="slide-idx-pill">${b1Read} of ${b1Total} Read</span>
+              </div>
+
+              <div class="journey-hero-header">
+                <div class="walking-boy-avatar">🚶‍♂️</div>
+                <div>
+                  <h2 class="journey-title">Milestone 1: Foundations Mastered!</h2>
+                  <p class="journey-sub">Congratulations on traversing Batch 1 (Political Ideologies & Liberal State Theories). You have explored ${b1Read} out of 23 foundational topics!</p>
                 </div>
               </div>
 
-              <!-- Upcoming Topics Ahead -->
-              ${upcomingItems.length > 0 ? `
-                <div class="ahead-chapters-box">
-                  <div class="ahead-box-title"><span>🏔️</span> Ahead on Your Immediate Path (Next 5 Topics):</div>
-                  <div class="ahead-items-row">
-                    ${upcomingItems.map(u => `<span class="ahead-pill"><span>➔</span> ${u.sec.title.length > 28 ? u.sec.title.slice(0, 28) + '...' : u.sec.title}</span>`).join('')}
-                  </div>
+              <div class="batch-timeline-bar">
+                <div class="timeline-step completed">
+                  <span class="timeline-dot">✓</span>
+                  <span class="timeline-label">Batch 1 (Done)</span>
                 </div>
-              ` : ''}
+                <div class="timeline-line active"></div>
+                <div class="timeline-step current">
+                  <span class="timeline-dot">2</span>
+                  <span class="timeline-label">Batch 2 (Next)</span>
+                </div>
+                <div class="timeline-line"></div>
+                <div class="timeline-step upcoming">
+                  <span class="timeline-dot">3</span>
+                  <span class="timeline-label">Batch 3</span>
+                </div>
+              </div>
 
-              <!-- Landmark Chapters Horizon -->
-              <div class="ahead-chapters-box" style="margin-top: 6px;">
-                <div class="ahead-box-title"><span>🗺️</span> Landmark Chapters on the Horizon:</div>
+              <div class="ahead-chapters-box">
+                <div class="ahead-box-title"><span>🏔️</span> Up Next in Batch 2: Marxism, Socialism & Fascism</div>
                 <div class="ahead-items-row">
-                  ${upcomingChapters.slice(0, 4).map(c => `<span class="ahead-pill"><span>Ch ${c.num}:</span> ${c.title}</span>`).join('')}
+                  <span class="ahead-pill"><span>🏛️</span> Ch 3: Marxism, Neo-Marxism & State Theories (32 Topics)</span>
+                  <span class="ahead-pill"><span>⚖️</span> Ch 4: Socialism and Fascism (26 Topics)</span>
                 </div>
               </div>
 
@@ -3021,11 +2959,117 @@
                   <span>◀ Prev</span>
                 </button>
                 <button class="journey-primary-btn" onclick="window.slideNext()">
-                  <span>Continue Walking</span> <span>▶</span>
+                  <span>Enter Batch 2 ➔</span>
                 </button>
               </div>
             `;
-            container.appendChild(waypointCard);
+            container.appendChild(m1Card);
+          } else if (ch.num === 4) {
+            // Milestone Batch 2 (After Ch 4)
+            const m2Card = document.createElement('div');
+            m2Card.className = 'notes-slide-card journey-map-card';
+            m2Card.id = 'milestone_batch_2';
+            m2Card.innerHTML = `
+              <div class="slide-card-topbar">
+                <span class="journey-header-badge">🚶‍♂️ MILESTONE BATCH 2 CHECKPOINT</span>
+                <span class="slide-idx-pill">${b2Read} of ${b2Total} Read</span>
+              </div>
+
+              <div class="journey-hero-header">
+                <div class="walking-boy-avatar">🚶‍♂️</div>
+                <div>
+                  <h2 class="journey-title">Milestone 2: Core Ideologies Completed!</h2>
+                  <p class="journey-sub">You have mastered the critical theoretical debates of Marxism, Socialism, and Fascism across Chapters 3 & 4. Forward to the final summit!</p>
+                </div>
+              </div>
+
+              <div class="batch-timeline-bar">
+                <div class="timeline-step completed">
+                  <span class="timeline-dot">✓</span>
+                  <span class="timeline-label">Batch 1</span>
+                </div>
+                <div class="timeline-line completed"></div>
+                <div class="timeline-step completed">
+                  <span class="timeline-dot">✓</span>
+                  <span class="timeline-label">Batch 2 (Done)</span>
+                </div>
+                <div class="timeline-line active"></div>
+                <div class="timeline-step current">
+                  <span class="timeline-dot">3</span>
+                  <span class="timeline-label">Batch 3 (Summit)</span>
+                </div>
+              </div>
+
+              <div class="ahead-chapters-box">
+                <div class="ahead-box-title"><span>🏔️</span> Up Next in Batch 3: Gandhism & Feminism (Final Leg)</div>
+                <div class="ahead-items-row">
+                  <span class="ahead-pill"><span>📜</span> Ch 5: Gandhism (Swaraj, Satyagraha, Trusteeship - 22 Topics)</span>
+                  <span class="ahead-pill"><span>🗳️</span> Ch 6: Feminism (Schools of Thought - 17 Topics)</span>
+                </div>
+              </div>
+
+              <div class="journey-action-bar">
+                <button class="slide-nav-prev-btn" onclick="window.slidePrev()" title="Previous Slide">
+                  <span>◀ Prev</span>
+                </button>
+                <button class="journey-primary-btn" onclick="window.slideNext()">
+                  <span>Enter Batch 3 ➔</span>
+                </button>
+              </div>
+            `;
+            container.appendChild(m2Card);
+          } else if (ch.num === 6) {
+            // Milestone Summit (After Ch 6)
+            const summitCard = document.createElement('div');
+            summitCard.className = 'notes-slide-card journey-map-card';
+            summitCard.id = 'milestone_summit';
+            summitCard.innerHTML = `
+              <div class="slide-card-topbar">
+                <span class="journey-header-badge">🏆 EXPEDITION SUMMIT REACHED</span>
+                <span class="slide-idx-pill">All 6 Chapters Completed</span>
+              </div>
+
+              <div class="journey-hero-header">
+                <div class="walking-boy-avatar">🚶‍♂️</div>
+                <div>
+                  <h2 class="journey-title">Expedition Summit: PSIR Paper 1A Mastered!</h2>
+                  <p class="journey-sub">Magnificent work! You have navigated all 3 Batches and covered the complete 77-page syllabus for Political Theory & Thinkers! 🌸🎉</p>
+                </div>
+              </div>
+
+              <div class="batch-timeline-bar">
+                <div class="timeline-step completed">
+                  <span class="timeline-dot">✓</span>
+                  <span class="timeline-label">Batch 1 (Done)</span>
+                </div>
+                <div class="timeline-line completed"></div>
+                <div class="timeline-step completed">
+                  <span class="timeline-dot">✓</span>
+                  <span class="timeline-label">Batch 2 (Done)</span>
+                </div>
+                <div class="timeline-line completed"></div>
+                <div class="timeline-step completed">
+                  <span class="timeline-dot">✓</span>
+                  <span class="timeline-label">Batch 3 (Summit)</span>
+                </div>
+              </div>
+
+              <div class="ahead-chapters-box" style="text-align: center; padding: 16px;">
+                <div style="font-size: 26px; margin-bottom: 6px;">🎓 🌸 🏛️</div>
+                <strong style="font-size: 14px; color: var(--accent-heading);">Complete PSIR Paper 1A Theory Covered</strong>
+                <p style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Practice your foundational vocabulary in the Key Terms Suite or review flagged topics in the Index.</p>
+              </div>
+
+              <div class="journey-action-bar">
+                <button class="slide-nav-prev-btn" onclick="window.slidePrev()" title="Previous Slide">
+                  <span>◀ Prev</span>
+                </button>
+                <button class="journey-primary-btn" onclick="window.goToSlide(0)">
+                  <span>Return to Launchpad ↺</span>
+                </button>
+              </div>
+            `;
+            container.appendChild(summitCard);
           }
         });
 
@@ -3040,45 +3084,6 @@
         }
         if (isSliderMode && totalSlides > 0) {
           goToSlide(currentSlideIndex);
-        }
-      }
-
-      // Top Filter Buttons Click Handling
-      document.querySelectorAll('.top-filter-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-          document.querySelectorAll('.top-filter-btn').forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          activeFilter = btn.getAttribute('data-filter');
-          renderContent();
-        });
-      });
-
-      // ========================================================
-      // SLIDER DECK CONTROLS & NAVIGATION ENGINE
-      // ========================================================
-      function updateSliderIndicator() {
-        const container = document.getElementById('dynamicPdfChaptersContainer');
-        const slides = container.querySelectorAll('.notes-slide-card');
-        const total = slides.length;
-        const currentSlideNumEl = document.getElementById('currentSlideNum');
-        const totalSlidesNumEl = document.getElementById('totalSlidesNum');
-        const fillEl = document.getElementById('deckProgressFill');
-        const prevBtn = document.getElementById('deckPrevBtn');
-        const nextBtn = document.getElementById('deckNextBtn');
-
-        if (totalSlidesNumEl) totalSlidesNumEl.textContent = total;
-        if (currentSlideNumEl) currentSlideNumEl.textContent = total === 0 ? 0 : currentSlideIndex + 1;
-        if (fillEl) {
-          const pct = total <= 1 ? 100 : Math.round((currentSlideIndex / (total - 1)) * 100);
-          fillEl.style.width = `${pct}%`;
-        }
-        if (prevBtn) prevBtn.disabled = currentSlideIndex <= 0;
-        if (nextBtn) nextBtn.disabled = currentSlideIndex >= total - 1;
-        if (slides[currentSlideIndex]) {
-          const onCardPrev = slides[currentSlideIndex].querySelector('.slide-nav-prev-btn');
-          const onCardNext = slides[currentSlideIndex].querySelector('.slide-nav-next-btn');
-          if (onCardPrev) onCardPrev.style.visibility = currentSlideIndex <= 0 ? 'hidden' : 'visible';
-          if (onCardNext) onCardNext.style.visibility = currentSlideIndex >= total - 1 ? 'hidden' : 'visible';
         }
       }
 
