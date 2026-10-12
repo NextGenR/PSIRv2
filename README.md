@@ -139,5 +139,5 @@
 ---
 
 ## 📜 Credits
-- **Faculty / Content Source**: Vivek Waghmare (*Sarrthi IAS*)
+- **Faculty / Content Source**: Vivek Waghmare (PSIR Optional Class Notes)
 - **Platform Development**: Antigravity AI Engineering
