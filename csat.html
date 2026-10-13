@@ -652,81 +652,61 @@
     }
 
     /* ========================================================
-       PRACTICE TEST VIEW (SIMPLE, DISTRACTION-FREE)
+       FULLSCREEN PRACTICE TEST VIEW (CLEANEST MINIMALIST INTERFACE)
        ======================================================== */
-    .test-top-bar {
+    body.in-practice-mode {
+      overflow-x: hidden;
+    }
+    body.in-practice-mode .csat-top-header {
+      display: none !important;
+    }
+    body.in-practice-mode .app-main {
+      max-width: 1040px;
+      padding: 12px 18px 48px;
+    }
+
+    .practice-top-strip {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 8px 0 16px;
+      width: 100%;
+    }
+
+    .practice-back-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid var(--paper-border);
       background: var(--paper-card);
-      border: 1px solid var(--paper-border);
-      border-radius: var(--radius-lg);
-      padding: 12px 18px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 20px;
-      box-shadow: var(--paper-shadow);
-      position: sticky;
-      top: 60px;
-      z-index: 90;
-    }
-
-    .test-info-group {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .test-name-badge {
-      font-size: 13.5px;
-      font-weight: 800;
       color: var(--text-main);
-      display: flex;
+      font-size: 22px;
+      line-height: 1;
+      display: inline-flex;
       align-items: center;
-      gap: 6px;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      outline: none;
     }
 
-    .test-q-progress {
-      font-size: 12.5px;
-      color: var(--text-dim);
-      font-weight: 600;
-    }
-
-    .test-timer-badge {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      background: var(--paper-bg);
-      border: 1px solid var(--paper-border);
-      padding: 5px 12px;
-      border-radius: 20px;
-      font-size: 13px;
-      font-weight: 800;
-      color: var(--text-main);
-      font-variant-numeric: tabular-nums;
-    }
-
-    .test-timer-badge.warning {
-      color: var(--danger);
-      border-color: var(--danger-border);
-      background: var(--danger-bg);
-      animation: pulse 1s infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.7; }
+    .practice-back-btn:hover {
+      background: var(--primary-light);
+      color: var(--primary);
+      border-color: var(--primary-border);
+      transform: translateX(-3px);
     }
 
     .submit-test-btn {
       background: linear-gradient(135deg, #10b981 0%, #059669 100%);
       color: #ffffff;
       border: none;
-      padding: 8px 18px;
+      padding: 9px 18px;
       border-radius: var(--radius-sm);
       font-family: inherit;
       font-size: 13px;
-      font-weight: 800;
+      font-weight: 700;
       cursor: pointer;
       box-shadow: 0 3px 10px rgba(16, 185, 129, 0.3);
       transition: var(--transition);
@@ -739,7 +719,7 @@
     /* TEST TWO-COLUMN LAYOUT */
     .test-layout {
       display: grid;
-      grid-template-columns: 1fr 290px;
+      grid-template-columns: 1fr 270px;
       gap: 20px;
       align-items: start;
     }
@@ -1646,28 +1626,11 @@
          ======================================================== -->
     <section id="viewTest" class="view-section">
 
-      <!-- Test Top Bar (Sticky) -->
-      <div class="test-top-bar">
-        <div class="test-info-group">
-          <div class="test-name-badge">
-            <span id="testTitleText">Reasoning Practice Set 1</span>
-            <span class="diff-badge diff-level1" id="testDiffBadge">Level 1</span>
-          </div>
-          <div class="test-q-progress" id="testProgressText">Question 1 of 10</div>
-        </div>
-
-        <div style="display: flex; align-items: center; gap: 10px;">
-          <!-- Timer -->
-          <div class="test-timer-badge" id="testTimerBadge">
-            <span>⏱️</span>
-            <span id="timerDisplay">25:00</span>
-          </div>
-
-          <!-- Submit Button -->
-          <button class="submit-test-btn" onclick="openSubmitModal()">
-            ✓ Submit Test
-          </button>
-        </div>
+      <!-- Top Strip: ONLY ONE OPTION AT TOP = BACK ICON (NO OTHER ICONS OR TEXT) -->
+      <div class="practice-top-strip">
+        <button class="practice-back-btn" id="practiceBackBtn" onclick="confirmExitTest()" title="Back" aria-label="Back">
+          ←
+        </button>
       </div>
 
       <!-- Test Layout (Left: Question, Right: Palette) -->
@@ -1675,16 +1638,6 @@
 
         <!-- Question View Card -->
         <div class="question-card">
-          <div class="q-meta-row">
-            <div style="display: flex; align-items: center; gap: 8px;">
-              <span class="q-number-pill" id="qNumberPill">Question 1</span>
-              <span class="q-topic-pill" id="qTopicPill">Topic</span>
-            </div>
-            <button class="btn-secondary" id="langSwitchBtn" style="padding: 4px 10px; font-size: 11.5px; font-weight: 700;" onclick="toggleLanguage()">
-              🌐 हिंदी
-            </button>
-          </div>
-
           <!-- Question Statement -->
           <div class="q-text" id="qTextDisplay">
             Loading question...
@@ -1699,19 +1652,22 @@
           <div class="q-bottom-nav">
             <div class="nav-btn-group-left">
               <button class="btn-secondary" id="btnPrevQ" onclick="prevQuestion()">
-                ← Previous
+                Previous
               </button>
               <button class="btn-secondary" id="btnClearOption" onclick="clearOption()">
-                Clear Selection
+                Clear
               </button>
             </div>
 
             <div class="nav-btn-group-right">
               <button class="btn-secondary btn-review-toggle" id="btnMarkReview" onclick="toggleMarkReview()">
-                <span>🚩</span> <span>Mark for Review</span>
+                Review
               </button>
               <button class="btn-primary-action" id="btnNextQ" onclick="nextQuestion()">
-                <span>Save & Next</span> <span>→</span>
+                Next
+              </button>
+              <button class="submit-test-btn" id="btnSubmitTest" onclick="openSubmitModal()">
+                Submit
               </button>
             </div>
           </div>
@@ -1719,35 +1675,9 @@
 
         <!-- Right Side: Question Navigator Palette -->
         <aside class="palette-card">
-          <div class="palette-title">
-            <span>Question Palette</span>
-            <span style="font-size: 11.5px; color: var(--text-dim);" id="paletteCountSummary">0/10 Answered</span>
-          </div>
-
-          <div class="palette-legend">
-            <div class="legend-row">
-              <div class="legend-dot dot-ans"></div>
-              <span>Answered (<strong id="legendAnsCount">0</strong>)</span>
-            </div>
-            <div class="legend-row">
-              <div class="legend-dot dot-review"></div>
-              <span>Marked for Review (<strong id="legendReviewCount">0</strong>)</span>
-            </div>
-            <div class="legend-row">
-              <div class="legend-dot dot-unans"></div>
-              <span>Not Attempted (<strong id="legendUnansCount">10</strong>)</span>
-            </div>
-          </div>
-
           <!-- Grid of Question Buttons -->
           <div class="q-grid" id="questionGridContainer">
             <!-- Buttons 1..N rendered by JS -->
-          </div>
-
-          <div style="margin-top: 18px; border-top: 1px solid var(--paper-border); padding-top: 12px;">
-            <button class="btn-secondary" style="width: 100%; text-align: center;" onclick="confirmExitTest()">
-              ✕ Exit to Dashboard
-            </button>
           </div>
         </aside>
 
@@ -2160,7 +2090,37 @@
       };
 
       // ----------------------------------------------------
-      // START PRACTICE TEST
+      // FULLSCREEN HELPERS
+      // ----------------------------------------------------
+      function requestFullScreen() {
+        const elem = document.documentElement;
+        try {
+          if (elem.requestFullscreen) {
+            elem.requestFullscreen().catch(() => {});
+          } else if (elem.webkitRequestFullscreen) {
+            elem.webkitRequestFullscreen();
+          } else if (elem.msRequestFullscreen) {
+            elem.msRequestFullscreen();
+          }
+        } catch (e) {}
+      }
+
+      function exitFullScreen() {
+        try {
+          if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
+            if (document.exitFullscreen) {
+              document.exitFullscreen().catch(() => {});
+            } else if (document.webkitExitFullscreen) {
+              document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) {
+              document.msExitFullscreen();
+            }
+          }
+        } catch (e) {}
+      }
+
+      // ----------------------------------------------------
+      // START PRACTICE TEST (AUTO FULLSCREEN + CLEAN INTERFACE)
       // ----------------------------------------------------
       window.startTest = function (testId) {
         const raw = testDatabase[testId];
@@ -2177,16 +2137,6 @@
         reviewFlags = {};
         currentLang = 'en';
 
-        // Setup UI Header
-        document.getElementById('testTitleText').textContent = data.title || 'CSAT Practice Test';
-        const badge = document.getElementById('testDiffBadge');
-        badge.textContent = data.difficulty || 'Level 1';
-        if (data.difficulty === 'Level 2') {
-          badge.className = 'diff-badge diff-level2';
-        } else {
-          badge.className = 'diff-badge diff-level1';
-        }
-
         // Setup Timer
         const timeLimit = data.timeLimitMinutes || 45;
         timeRemainingSeconds = timeLimit * 60;
@@ -2197,6 +2147,10 @@
         // Build Palette Grid
         renderPaletteGrid();
 
+        // Enable Fullscreen and Minimalist Practice Mode
+        document.body.classList.add('in-practice-mode');
+        requestFullScreen();
+
         // Show Test View
         switchView('test');
 
@@ -2206,15 +2160,11 @@
 
       function startTimer() {
         if (timerInterval) clearInterval(timerInterval);
-        updateTimerDisplay();
-
         timerInterval = setInterval(() => {
           if (!isTimerPaused) {
             totalTimeElapsedSeconds++;
             if (timeRemainingSeconds > 0) {
               timeRemainingSeconds--;
-              updateTimerDisplay();
-
               if (timeRemainingSeconds === 0) {
                 clearInterval(timerInterval);
                 alert('Time is up! Submitting your test automatically.');
@@ -2225,27 +2175,9 @@
         }, 1000);
       }
 
-      function updateTimerDisplay() {
-        const mins = Math.floor(timeRemainingSeconds / 60);
-        const secs = timeRemainingSeconds % 60;
-        const display = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
-        const timerBadge = document.getElementById('testTimerBadge');
-        document.getElementById('timerDisplay').textContent = display;
-
-        if (timeRemainingSeconds < 300) { // under 5 mins
-          timerBadge.classList.add('warning');
-        } else {
-          timerBadge.classList.remove('warning');
-        }
-      }
-
       // Language Switcher
       window.toggleLanguage = function () {
         currentLang = (currentLang === 'en') ? 'hi' : 'en';
-        const btn = document.getElementById('langSwitchBtn');
-        if (btn) {
-          btn.textContent = (currentLang === 'en') ? '🌐 हिंदी' : '🌐 English';
-        }
         renderCurrentQuestion();
       };
 
@@ -2258,24 +2190,11 @@
         const q = questions[currentQIndex];
         const qId = getQId(q, currentQIndex);
 
-        // Progress Text
-        document.getElementById('testProgressText').textContent = `Question ${currentQIndex + 1} of ${total}`;
-        document.getElementById('qNumberPill').textContent = `Question ${currentQIndex + 1}`;
-        document.getElementById('qTopicPill').textContent = getQTopic(q);
-
-        // Language toggle button visibility
-        const langBtn = document.getElementById('langSwitchBtn');
-        if (langBtn) {
-          if (q.question_text_hi) {
-            langBtn.style.display = 'inline-flex';
-            langBtn.textContent = (currentLang === 'en') ? '🌐 हिंदी' : '🌐 English';
-          } else {
-            langBtn.style.display = 'none';
-          }
+        // Text: Clean numbered question
+        const qTextEl = document.getElementById('qTextDisplay');
+        if (qTextEl) {
+          qTextEl.textContent = (currentQIndex + 1) + '. ' + getQText(q, currentLang);
         }
-
-        // Text
-        document.getElementById('qTextDisplay').textContent = getQText(q, currentLang);
 
         // Render Options (Clean cards, no right/wrong reveal!)
         const optContainer = document.getElementById('optionsContainer');
@@ -2297,24 +2216,30 @@
           optContainer.appendChild(optDiv);
         });
 
-        // Review Button State
+        // Review Button State (Clean text, no icons)
         const isReviewed = reviewFlags[qId];
         const reviewBtn = document.getElementById('btnMarkReview');
-        if (isReviewed) {
-          reviewBtn.classList.add('marked');
-          reviewBtn.innerHTML = `<span>✓</span> <span>Marked for Review</span>`;
-        } else {
-          reviewBtn.classList.remove('marked');
-          reviewBtn.innerHTML = `<span>🚩</span> <span>Mark for Review</span>`;
+        if (reviewBtn) {
+          if (isReviewed) {
+            reviewBtn.classList.add('marked');
+            reviewBtn.textContent = 'Marked';
+          } else {
+            reviewBtn.classList.remove('marked');
+            reviewBtn.textContent = 'Review';
+          }
         }
 
         // Prev/Next buttons
-        document.getElementById('btnPrevQ').disabled = (currentQIndex === 0);
+        const prevBtn = document.getElementById('btnPrevQ');
+        if (prevBtn) prevBtn.disabled = (currentQIndex === 0);
+
         const nextBtn = document.getElementById('btnNextQ');
-        if (currentQIndex === total - 1) {
-          nextBtn.innerHTML = `<span>Save & Finish</span> <span>✓</span>`;
-        } else {
-          nextBtn.innerHTML = `<span>Save & Next</span> <span>→</span>`;
+        if (nextBtn) {
+          if (currentQIndex === total - 1) {
+            nextBtn.textContent = 'Finish';
+          } else {
+            nextBtn.textContent = 'Next';
+          }
         }
 
         // Update Palette Focus
@@ -2450,8 +2375,10 @@
       };
 
       window.confirmExitTest = function () {
-        if (confirm('Are you sure you want to exit the test? Your current progress will be lost.')) {
+        if (confirm('Are you sure you want to exit the practice test?')) {
           if (timerInterval) clearInterval(timerInterval);
+          exitFullScreen();
+          document.body.classList.remove('in-practice-mode');
           switchView('dashboard');
         }
       };
@@ -2462,6 +2389,8 @@
       window.finalizeSubmission = function () {
         closeSubmitModal();
         if (timerInterval) clearInterval(timerInterval);
+        exitFullScreen();
+        document.body.classList.remove('in-practice-mode');
 
         const questions = currentTestData.questions;
         const total = questions.length;
@@ -2672,6 +2601,8 @@
       };
 
       window.returnToDashboard = function () {
+        exitFullScreen();
+        document.body.classList.remove('in-practice-mode');
         switchView('dashboard');
       };
 
