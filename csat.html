@@ -2343,10 +2343,14 @@
 
         const unansCount = questions.length - ansCount;
 
-        document.getElementById('legendAnsCount').textContent = ansCount;
-        document.getElementById('legendReviewCount').textContent = reviewCount;
-        document.getElementById('legendUnansCount').textContent = unansCount;
-        document.getElementById('paletteCountSummary').textContent = `${ansCount}/${questions.length} Answered`;
+        const elAns = document.getElementById('legendAnsCount');
+        if (elAns) elAns.textContent = ansCount;
+        const elRev = document.getElementById('legendReviewCount');
+        if (elRev) elRev.textContent = reviewCount;
+        const elUnans = document.getElementById('legendUnansCount');
+        if (elUnans) elUnans.textContent = unansCount;
+        const elSummary = document.getElementById('paletteCountSummary');
+        if (elSummary) elSummary.textContent = `${ansCount}/${questions.length} Answered`;
       }
 
       // ----------------------------------------------------
