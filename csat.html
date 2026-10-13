@@ -1,0 +1,2718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UPSC CSAT Mock Test Portal • Quantitative, Reasoning & English Practice</title>
+  <meta name="description" content="Dedicated CSAT Mock Test Suite for UPSC Prelims Paper II. Practice Reasoning, Quant, and English with Level 1 & Level 2 sets, negative marking, and detailed analytical report.">
+
+  <!-- Icons -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4f46e5">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Roboto+Serif:ital,opsz,wght@0,8..144,400..800;1,8..144,400..700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ========================================================
+       CSAT MOCK TEST SUITE - CLEAN, MODERN & ADAPTIVE STYLES
+       ======================================================== */
+    :root {
+      --bg-app: #f4f6fa;
+      --paper-bg: #ffffff;
+      --paper-card: #ffffff;
+      --paper-border: #e2e8f0;
+      --paper-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05), 0 0 1px rgba(0, 0, 0, 0.08);
+
+      --text-main: #0f172a;
+      --text-muted: #334155;
+      --text-dim: #64748b;
+
+      --primary: #4f46e5;
+      --primary-hover: #4338ca;
+      --primary-light: #eef2ff;
+      --primary-border: #c7d2fe;
+
+      --accent-reasoning: #0284c7;
+      --accent-quant: #059669;
+      --accent-english: #d97706;
+
+      --success: #10b981;
+      --success-bg: #ecfdf5;
+      --success-border: #a7f3d0;
+
+      --danger: #ef4444;
+      --danger-bg: #fef2f2;
+      --danger-border: #fecaca;
+
+      --warning: #f59e0b;
+      --warning-bg: #fffbeb;
+      --warning-border: #fde68a;
+
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-serif: 'Roboto Serif', Georgia, serif;
+
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-xl: 22px;
+      --transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    body.dark-mode {
+      --bg-app: #0b0f19;
+      --paper-bg: #111827;
+      --paper-card: #161f30;
+      --paper-border: #232d42;
+      --paper-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.6);
+
+      --text-main: #f8fafc;
+      --text-muted: #cbd5e1;
+      --text-dim: #94a3b8;
+
+      --primary: #6366f1;
+      --primary-hover: #818cf8;
+      --primary-light: rgba(99, 102, 241, 0.14);
+      --primary-border: rgba(99, 102, 241, 0.35);
+
+      --accent-reasoning: #38bdf8;
+      --accent-quant: #34d399;
+      --accent-english: #fbbf24;
+
+      --success: #34d399;
+      --success-bg: rgba(16, 185, 129, 0.15);
+      --success-border: rgba(16, 185, 129, 0.35);
+
+      --danger: #f87171;
+      --danger-bg: rgba(239, 68, 68, 0.15);
+      --danger-border: rgba(239, 68, 68, 0.35);
+
+      --warning: #fbbf24;
+      --warning-bg: rgba(245, 158, 11, 0.15);
+      --warning-border: rgba(245, 158, 11, 0.35);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg-app);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.55;
+      transition: background 0.25s ease, color 0.25s ease;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ========================================================
+       TOP HEADER BAR
+       ======================================================== */
+    .csat-top-header {
+      background: var(--paper-bg);
+      border-bottom: 1px solid var(--paper-border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 10px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    }
+
+    .header-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .brand-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #4f46e5 0%, #312e81 100%);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      box-shadow: 0 2px 8px rgba(79, 70, 229, 0.35);
+    }
+
+    .brand-titles {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-main-title {
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: -0.2px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .brand-badge {
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 6px;
+      background: var(--primary-light);
+      color: var(--primary);
+      font-weight: 700;
+      border: 1px solid var(--primary-border);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .brand-sub {
+      font-size: 11.5px;
+      color: var(--text-dim);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .header-btn {
+      background: transparent;
+      border: 1px solid var(--paper-border);
+      color: var(--text-muted);
+      padding: 7px 12px;
+      border-radius: var(--radius-sm);
+      font-family: inherit;
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .header-btn:hover {
+      background: var(--primary-light);
+      color: var(--primary);
+      border-color: var(--primary-border);
+    }
+
+    .btn-icon-only {
+      padding: 7px 10px;
+      font-size: 14px;
+    }
+
+    /* ========================================================
+       PAGE VIEWS / CONTAINER
+       ======================================================== */
+    .app-main {
+      flex: 1;
+      max-width: 1180px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 24px 18px 48px;
+    }
+
+    .view-section {
+      display: none;
+    }
+    .view-section.active {
+      display: block;
+      animation: fadeIn 0.25s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ========================================================
+       DASHBOARD VIEW
+       ======================================================== */
+    .hero-banner {
+      background: linear-gradient(135deg, #1e1b4b 0%, #312e81 60%, #4338ca 100%);
+      color: #ffffff;
+      border-radius: var(--radius-xl);
+      padding: 28px 24px;
+      margin-bottom: 28px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 10px 25px -5px rgba(49, 46, 129, 0.4);
+    }
+
+    .hero-banner::after {
+      content: 'CSAT';
+      position: absolute;
+      right: -10px;
+      bottom: -30px;
+      font-size: 120px;
+      font-weight: 900;
+      color: rgba(255, 255, 255, 0.05);
+      letter-spacing: -2px;
+      pointer-events: none;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .hero-title {
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+
+    .hero-desc {
+      font-size: 13.5px;
+      color: #e0e7ff;
+      max-width: 680px;
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+
+    .hero-stats-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      padding-top: 14px;
+    }
+
+    .hero-stat-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: #c7d2fe;
+    }
+
+    .hero-stat-item strong {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    /* SUBJECT CARDS (QUANT, REASONING, ENGLISH) */
+    .section-headline {
+      margin-bottom: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+    }
+
+    .section-subtitle {
+      font-size: 12.5px;
+      color: var(--text-dim);
+    }
+
+    .subject-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 20px;
+      margin-bottom: 32px;
+    }
+
+    .subject-card {
+      background: var(--paper-card);
+      border: 1px solid var(--paper-border);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      cursor: pointer;
+      transition: var(--transition);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--paper-shadow);
+      text-align: left;
+    }
+
+    .subject-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px -6px rgba(0, 0, 0, 0.12);
+    }
+
+    .subject-card.active-choice {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px var(--primary-border), var(--paper-shadow);
+    }
+
+    .subject-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+    }
+
+    .subject-icon-box {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    .icon-reasoning {
+      background: rgba(2, 132, 199, 0.12);
+      color: #0284c7;
+    }
+    .icon-quant {
+      background: rgba(16, 185, 129, 0.12);
+      color: #059669;
+    }
+    .icon-english {
+      background: rgba(217, 119, 6, 0.12);
+      color: #d97706;
+    }
+
+    .subject-tag {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+
+    .tag-live {
+      background: var(--success-bg);
+      color: var(--success);
+      border: 1px solid var(--success-border);
+    }
+    .tag-soon {
+      background: rgba(100, 116, 139, 0.12);
+      color: var(--text-dim);
+      border: 1px solid var(--paper-border);
+    }
+
+    .subject-title {
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .subject-desc {
+      font-size: 13px;
+      color: var(--text-dim);
+      margin-bottom: 16px;
+      flex: 1;
+      line-height: 1.45;
+    }
+
+    .subject-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--paper-border);
+      padding-top: 12px;
+      font-size: 12px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .subject-arrow {
+      font-size: 16px;
+      color: var(--primary);
+      transition: transform 0.2s ease;
+    }
+    .subject-card:hover .subject-arrow {
+      transform: translateX(4px);
+    }
+
+    /* REASONING PRACTICE SETS SUBVIEW */
+    .reasoning-panel {
+      display: none;
+      background: var(--paper-card);
+      border: 1px solid var(--paper-border);
+      border-radius: var(--radius-xl);
+      padding: 24px;
+      margin-top: 8px;
+      box-shadow: var(--paper-shadow);
+      animation: fadeIn 0.25s ease-out;
+    }
+    .reasoning-panel.open {
+      display: block;
+    }
+
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--paper-border);
+    }
+
+    .panel-title-area {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .panel-badge {
+      background: #e0f2fe;
+      color: #0369a1;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 8px;
+      border-radius: 6px;
+    }
+    body.dark-mode .panel-badge {
+      background: rgba(2, 132, 199, 0.2);
+      color: #38bdf8;
+    }
+
+    .panel-title {
+      font-size: 19px;
+      font-weight: 800;
+    }
+
+    .sets-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+    }
+
+    .set-card {
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: var(--transition);
+    }
+
+    .set-card:hover {
+      border-color: var(--primary-border);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px -4px rgba(0,0,0,0.08);
+    }
+
+    .set-card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+
+    .set-title {
+      font-size: 17px;
+      font-weight: 800;
+      margin-bottom: 2px;
+    }
+
+    .diff-badge {
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 6px;
+      letter-spacing: 0.3px;
+    }
+
+    .diff-level1 {
+      background: #ecfdf5;
+      color: #065f46;
+      border: 1px solid #a7f3d0;
+    }
+    body.dark-mode .diff-level1 {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border-color: rgba(16, 185, 129, 0.3);
+    }
+
+    .diff-level2 {
+      background: #fef3c7;
+      color: #92400e;
+      border: 1px solid #fde68a;
+    }
+    body.dark-mode .diff-level2 {
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+      border-color: rgba(245, 158, 11, 0.3);
+    }
+
+    .set-desc {
+      font-size: 13px;
+      color: var(--text-dim);
+      margin-bottom: 16px;
+      line-height: 1.45;
+      flex: 1;
+    }
+
+    .set-features {
+      list-style: none;
+      margin-bottom: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .set-features li {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .set-features li span {
+      color: var(--success);
+      font-weight: 800;
+    }
+
+    .start-btn {
+      background: var(--primary);
+      color: #ffffff;
+      border: none;
+      padding: 11px 18px;
+      border-radius: var(--radius-sm);
+      font-family: inherit;
+      font-size: 13.5px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: var(--transition);
+      box-shadow: 0 4px 12px rgba(79, 70, 229, 0.25);
+    }
+
+    .start-btn:hover {
+      background: var(--primary-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(79, 70, 229, 0.35);
+    }
+
+    /* CUSTOM JSON IMPORT MODAL / STRIP */
+    .json-sync-bar {
+      margin-top: 24px;
+      padding: 12px 16px;
+      background: var(--paper-bg);
+      border: 1px dashed var(--paper-border);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 12px;
+      color: var(--text-dim);
+    }
+
+    .json-sync-btn {
+      background: transparent;
+      border: 1px solid var(--paper-border);
+      color: var(--text-muted);
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 11.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .json-sync-btn:hover {
+      background: var(--primary-light);
+      color: var(--primary);
+    }
+
+    /* ========================================================
+       PRACTICE TEST VIEW (SIMPLE, DISTRACTION-FREE)
+       ======================================================== */
+    .test-top-bar {
+      background: var(--paper-card);
+      border: 1px solid var(--paper-border);
+      border-radius: var(--radius-lg);
+      padding: 12px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 20px;
+      box-shadow: var(--paper-shadow);
+      position: sticky;
+      top: 60px;
+      z-index: 90;
+    }
+
+    .test-info-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .test-name-badge {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .test-q-progress {
+      font-size: 12.5px;
+      color: var(--text-dim);
+      font-weight: 600;
+    }
+
+    .test-timer-badge {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--text-main);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .test-timer-badge.warning {
+      color: var(--danger);
+      border-color: var(--danger-border);
+      background: var(--danger-bg);
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+
+    .submit-test-btn {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      color: #ffffff;
+      border: none;
+      padding: 8px 18px;
+      border-radius: var(--radius-sm);
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 3px 10px rgba(16, 185, 129, 0.3);
+      transition: var(--transition);
+    }
+    .submit-test-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 14px rgba(16, 185, 129, 0.4);
+    }
+
+    /* TEST TWO-COLUMN LAYOUT */
+    .test-layout {
+      display: grid;
+      grid-template-columns: 1fr 290px;
+      gap: 20px;
+      align-items: start;
+    }
+
+    /* QUESTION CARD */
+    .question-card {
+      background: var(--paper-card);
+      border: 1px solid var(--paper-border);
+      border-radius: var(--radius-xl);
+      padding: 26px;
+      box-shadow: var(--paper-shadow);
+      min-height: 440px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .q-meta-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .q-number-pill {
+      font-size: 12px;
+      font-weight: 800;
+      background: var(--primary-light);
+      color: var(--primary);
+      border: 1px solid var(--primary-border);
+      padding: 4px 10px;
+      border-radius: 20px;
+    }
+
+    .q-topic-pill {
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(--text-dim);
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      padding: 3px 9px;
+      border-radius: 6px;
+    }
+
+    .q-text {
+      font-family: var(--font-serif);
+      font-size: 16.5px;
+      line-height: 1.7;
+      color: var(--text-main);
+      margin-bottom: 24px;
+      white-space: pre-line;
+      letter-spacing: -0.15px;
+    }
+
+    /* OPTIONS LIST (NO INSTANT REVEAL!) */
+    .options-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+
+    .option-item {
+      background: var(--paper-bg);
+      border: 1.5px solid var(--paper-border);
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      transition: var(--transition);
+      user-select: none;
+    }
+
+    .option-item:hover {
+      border-color: var(--primary-border);
+      background: var(--primary-light);
+    }
+
+    .option-item.selected {
+      border-color: var(--primary);
+      background: var(--primary-light);
+      box-shadow: 0 0 0 2px var(--primary-border);
+    }
+
+    .opt-indicator {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 2px solid var(--paper-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--text-dim);
+      flex-shrink: 0;
+      margin-top: 1px;
+      transition: var(--transition);
+    }
+
+    .option-item.selected .opt-indicator {
+      border-color: var(--primary);
+      background: var(--primary);
+      color: #ffffff;
+    }
+
+    .opt-label {
+      font-family: var(--font-serif);
+      font-size: 15px;
+      color: var(--text-main);
+      line-height: 1.5;
+    }
+
+    /* BOTTOM CONTROLS */
+    .q-bottom-nav {
+      margin-top: auto;
+      border-top: 1px solid var(--paper-border);
+      padding-top: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .nav-btn-group-left, .nav-btn-group-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-secondary {
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      color: var(--text-muted);
+      padding: 9px 15px;
+      border-radius: var(--radius-sm);
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(0,0,0,0.04);
+      color: var(--text-main);
+    }
+    body.dark-mode .btn-secondary:hover {
+      background: rgba(255,255,255,0.05);
+    }
+
+    .btn-review-toggle {
+      border-color: var(--warning-border);
+      color: var(--warning);
+      background: var(--warning-bg);
+    }
+    .btn-review-toggle.marked {
+      background: var(--warning);
+      color: #ffffff;
+      border-color: var(--warning);
+    }
+
+    .btn-primary-action {
+      background: var(--primary);
+      color: #ffffff;
+      border: none;
+      padding: 9px 18px;
+      border-radius: var(--radius-sm);
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition);
+    }
+    .btn-primary-action:hover {
+      background: var(--primary-hover);
+    }
+
+    /* RIGHT PALETTE (QUESTION GRID) */
+    .palette-card {
+      background: var(--paper-card);
+      border: 1px solid var(--paper-border);
+      border-radius: var(--radius-lg);
+      padding: 18px;
+      box-shadow: var(--paper-shadow);
+      position: sticky;
+      top: 130px;
+    }
+
+    .palette-title {
+      font-size: 13.5px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .palette-legend {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 16px;
+      font-size: 11px;
+      color: var(--text-dim);
+      border-bottom: 1px solid var(--paper-border);
+      padding-bottom: 12px;
+    }
+
+    .legend-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 3px;
+    }
+    .dot-ans { background: var(--success); }
+    .dot-review { background: var(--warning); }
+    .dot-unans { background: var(--paper-border); }
+
+    .q-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+    }
+
+    .q-grid-btn {
+      aspect-ratio: 1;
+      border-radius: 8px;
+      border: 1px solid var(--paper-border);
+      background: var(--paper-bg);
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .q-grid-btn:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .q-grid-btn.current {
+      border: 2px solid var(--primary);
+      box-shadow: 0 0 0 2px var(--primary-border);
+    }
+
+    .q-grid-btn.answered {
+      background: var(--success);
+      color: #ffffff;
+      border-color: var(--success);
+    }
+
+    .q-grid-btn.reviewed {
+      background: var(--warning);
+      color: #ffffff;
+      border-color: var(--warning);
+    }
+
+    .q-grid-btn.answered.reviewed {
+      background: #7c3aed;
+      color: #ffffff;
+      border-color: #7c3aed;
+    }
+
+    /* ========================================================
+       DETAILED ANALYSIS REPORT VIEW
+       ======================================================== */
+    .report-hero {
+      background: var(--paper-card);
+      border: 1px solid var(--paper-border);
+      border-radius: var(--radius-xl);
+      padding: 28px 24px;
+      margin-bottom: 24px;
+      box-shadow: var(--paper-shadow);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .report-hero-left {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .score-circle {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      background: var(--primary-light);
+      border: 3px solid var(--primary);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      flex-shrink: 0;
+    }
+
+    .score-num {
+      font-size: 22px;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .score-max {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-dim);
+    }
+
+    .report-verdict-title {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .report-verdict-desc {
+      font-size: 13px;
+      color: var(--text-dim);
+      max-width: 480px;
+    }
+
+    .report-hero-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    /* METRICS STRIP */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    .metric-card {
+      background: var(--paper-card);
+      border: 1px solid var(--paper-border);
+      border-radius: var(--radius-md);
+      padding: 16px 14px;
+      text-align: center;
+      box-shadow: var(--paper-shadow);
+    }
+
+    .metric-value {
+      font-size: 20px;
+      font-weight: 900;
+      margin-bottom: 2px;
+      color: var(--text-main);
+    }
+
+    .metric-label {
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(--text-dim);
+    }
+
+    /* TOPIC TABLE */
+    .analysis-card {
+      background: var(--paper-card);
+      border: 1px solid var(--paper-border);
+      border-radius: var(--radius-xl);
+      padding: 22px;
+      margin-bottom: 24px;
+      box-shadow: var(--paper-shadow);
+    }
+
+    .card-heading {
+      font-size: 16px;
+      font-weight: 800;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .topic-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    .topic-table th, .topic-table td {
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 1px solid var(--paper-border);
+    }
+
+    .topic-table th {
+      font-weight: 700;
+      color: var(--text-dim);
+      font-size: 11.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* QUESTION REVIEW SECTION */
+    .review-filter-tabs {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 18px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+    }
+
+    .filter-tab-btn {
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      color: var(--text-muted);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+
+    .filter-tab-btn.active {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    .review-questions-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .review-item-card {
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      box-shadow: var(--paper-shadow);
+      transition: var(--transition);
+    }
+
+    .review-item-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .status-badge {
+      font-size: 11.5px;
+      font-weight: 800;
+      padding: 3px 9px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .badge-correct {
+      background: var(--success-bg);
+      color: var(--success);
+      border: 1px solid var(--success-border);
+    }
+
+    .badge-wrong {
+      background: var(--danger-bg);
+      color: var(--danger);
+      border: 1px solid var(--danger-border);
+    }
+
+    .badge-skipped {
+      background: rgba(100, 116, 139, 0.12);
+      color: var(--text-dim);
+      border: 1px solid var(--paper-border);
+    }
+
+    .review-q-text {
+      font-family: var(--font-serif);
+      font-size: 15.5px;
+      color: var(--text-main);
+      line-height: 1.6;
+      margin-bottom: 18px;
+      white-space: pre-line;
+    }
+
+    .review-options-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .review-opt {
+      padding: 10px 14px;
+      border-radius: var(--radius-sm);
+      font-size: 13.5px;
+      border: 1px solid var(--paper-border);
+      background: var(--paper-card);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-family: var(--font-serif);
+    }
+
+    .review-opt.is-correct {
+      background: var(--success-bg);
+      border-color: var(--success-border);
+      color: var(--text-main);
+    }
+
+    .review-opt.user-wrong {
+      background: var(--danger-bg);
+      border-color: var(--danger-border);
+      color: var(--text-main);
+    }
+
+    .explanation-box {
+      background: rgba(79, 70, 229, 0.05);
+      border: 1px solid var(--primary-border);
+      border-left: 4px solid var(--primary);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--text-muted);
+    }
+    body.dark-mode .explanation-box {
+      background: rgba(99, 102, 241, 0.08);
+    }
+
+    .exp-title {
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12.5px;
+    }
+
+    .exp-content {
+      white-space: pre-line;
+      font-family: var(--font-sans);
+    }
+
+    /* CONFIRMATION MODAL */
+    .modal-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+      backdrop-filter: blur(4px);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .modal-backdrop.open {
+      display: flex;
+      animation: fadeIn 0.2s ease-out;
+    }
+
+    .modal-card {
+      background: var(--paper-card);
+      border: 1px solid var(--paper-border);
+      border-radius: var(--radius-xl);
+      max-width: 440px;
+      width: 100%;
+      padding: 24px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+
+    .modal-icon {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+
+    .modal-title {
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .modal-desc {
+      font-size: 13.5px;
+      color: var(--text-dim);
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .modal-stats-summary {
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      border-radius: var(--radius-md);
+      padding: 12px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-around;
+      font-size: 12px;
+    }
+
+    .modal-stat-col strong {
+      display: block;
+      font-size: 16px;
+      color: var(--text-main);
+    }
+
+    .modal-actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .modal-actions button {
+      flex: 1;
+      padding: 10px;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    /* JSON PASTE MODAL */
+    .json-textarea {
+      width: 100%;
+      height: 180px;
+      background: var(--paper-bg);
+      border: 1px solid var(--paper-border);
+      border-radius: var(--radius-sm);
+      color: var(--text-main);
+      padding: 10px;
+      font-family: monospace;
+      font-size: 11.5px;
+      resize: vertical;
+      margin-bottom: 14px;
+    }
+
+    /* ========================================================
+       RESPONSIVE ADAPTATIONS (MOBILE / TABLET)
+       ======================================================== */
+    @media (max-width: 860px) {
+      .test-layout {
+        grid-template-columns: 1fr;
+      }
+      .palette-card {
+        position: static;
+        margin-top: 16px;
+      }
+      .test-top-bar {
+        top: 55px;
+        padding: 10px 14px;
+      }
+      .hero-title {
+        font-size: 20px;
+      }
+      .app-main {
+        padding: 16px 12px 40px;
+      }
+      .question-card {
+        padding: 18px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .q-grid {
+        grid-template-columns: repeat(5, 1fr);
+      }
+      .q-bottom-nav {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .nav-btn-group-left, .nav-btn-group-right {
+        justify-content: space-between;
+      }
+      .btn-secondary, .btn-primary-action {
+        flex: 1;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================================
+       TOP HEADER BAR
+       ======================================================== -->
+  <header class="csat-top-header">
+    <a href="index.html" class="header-brand" title="Return to PSIR Main Study Suite">
+      <div class="brand-icon">🎯</div>
+      <div class="brand-titles">
+        <div class="brand-main-title">
+          <span>CSAT Mock Portal</span>
+          <span class="brand-badge">Paper II</span>
+        </div>
+        <div class="brand-sub">UPSC Prelims Qualifying Practice Suite</div>
+      </div>
+    </a>
+
+    <div class="header-actions">
+      <!-- Back to Notes Navigation Link -->
+      <a href="index.html" class="header-btn" title="Back to PSIR Notes">
+        <span>📖</span> <span>PSIR Notes</span>
+      </a>
+
+      <!-- Theme Switcher -->
+      <button id="themeToggleBtn" class="header-btn btn-icon-only" title="Toggle Theme" aria-label="Toggle Night/Day Mode">
+        <span id="themeIcon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       MAIN APP CONTAINER
+       ======================================================== -->
+  <main class="app-main">
+
+    <!-- ========================================================
+         VIEW 1: DASHBOARD
+         ======================================================== -->
+    <section id="viewDashboard" class="view-section active">
+
+      <!-- Hero Announcement Card -->
+      <div class="hero-banner">
+        <div class="hero-tag">⚡ UPSC Prelims Mock Portal</div>
+        <h1 class="hero-title">Civil Services Aptitude Test (CSAT)</h1>
+        <p class="hero-desc">
+          Master the qualifying hurdle of UPSC Prelims Paper II. Practice timed reasoning sets under realistic exam conditions. Answers are hidden during the test and revealed with comprehensive step-by-step solutions at final submission.
+        </p>
+        <div class="hero-stats-row">
+          <div class="hero-stat-item">
+            <span>🎯</span> <span>Target Cutoff: <strong>66.67 / 200 (33.3%)</strong></span>
+          </div>
+          <div class="hero-stat-item">
+            <span>⚖️</span> <span>Marking Scheme: <strong>+2.5 / -0.83 Marks</strong></span>
+          </div>
+          <div class="hero-stat-item">
+            <span>📊</span> <span>Analytical Report: <strong>Step-by-Step Solutions</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subject Selection Headline -->
+      <div class="section-headline">
+        <div>
+          <h2 class="section-title">Select Practice Subject</h2>
+          <p class="section-subtitle">Choose from the three CSAT pillars below to access practice test sets</p>
+        </div>
+      </div>
+
+      <!-- 3 Subject Options (Quant, Reasoning, English) -->
+      <div class="subject-grid">
+
+        <!-- 1. Logical & Analytical Reasoning (ACTIVE) -->
+        <div class="subject-card active-choice" id="cardReasoning" onclick="selectSubject('reasoning')">
+          <div class="subject-card-header">
+            <div class="subject-icon-box icon-reasoning">🧠</div>
+            <span class="subject-tag tag-live">2 Sets Ready</span>
+          </div>
+          <h3 class="subject-title">Reasoning</h3>
+          <p class="subject-desc">
+            Syllogisms, linear & circular seating arrangements, blood relations, direction sense, and high-difficulty puzzles.
+          </p>
+          <div class="subject-meta">
+            <span>Practice Sets Available (Level 1 & 2)</span>
+            <span class="subject-arrow">→</span>
+          </div>
+        </div>
+
+        <!-- 2. Quantitative Aptitude (Quant) -->
+        <div class="subject-card" id="cardQuant" onclick="selectSubject('quant')">
+          <div class="subject-card-header">
+            <div class="subject-icon-box icon-quant">📐</div>
+            <span class="subject-tag tag-soon">Coming Soon</span>
+          </div>
+          <h3 class="subject-title">Quant</h3>
+          <p class="subject-desc">
+            Number system, percentages, ratios, time & work, permutations, combinations, and data interpretation.
+          </p>
+          <div class="subject-meta">
+            <span>Under preparation</span>
+            <span class="subject-arrow">→</span>
+          </div>
+        </div>
+
+        <!-- 3. English Comprehension -->
+        <div class="subject-card" id="cardEnglish" onclick="selectSubject('english')">
+          <div class="subject-card-header">
+            <div class="subject-icon-box icon-english">📖</div>
+            <span class="subject-tag tag-soon">Coming Soon</span>
+          </div>
+          <h3 class="subject-title">English</h3>
+          <p class="subject-desc">
+            Reading comprehension passages, critical assumptions, logical inferences, and primary message deductions.
+          </p>
+          <div class="subject-meta">
+            <span>Under preparation</span>
+            <span class="subject-arrow">→</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- REASONING PRACTICE SETS SUBVIEW (EXPANDABLE) -->
+      <div class="reasoning-panel open" id="reasoningPanel">
+        <div class="panel-header">
+          <div class="panel-title-area">
+            <span class="panel-badge">REASONING</span>
+            <h3 class="panel-title">Choose Practice Set</h3>
+          </div>
+          <div style="font-size: 12.5px; color: var(--text-dim);">
+            Loaded from <code style="font-size: 11.5px; background: rgba(0,0,0,0.05); padding: 2px 6px; border-radius: 4px;">CSAT_json/</code>
+          </div>
+        </div>
+
+        <div class="sets-grid">
+
+          <!-- Practice Set 1 (Level 1) -->
+          <div class="set-card">
+            <div class="set-card-top">
+              <div>
+                <h4 class="set-title">Practice Set 1</h4>
+                <div style="font-size: 12px; color: var(--text-dim);">Foundational & Moderate</div>
+              </div>
+              <span class="diff-badge diff-level1">Level 1</span>
+            </div>
+            <p class="set-desc" id="set1Desc">
+              Comprehensive UPSC CSAT questions covering Syllogisms, Linear & Circular Seating, Direction Sense, Blood Relations, Coding-Decoding, and Number Series.
+            </p>
+            <ul class="set-features">
+              <li><span>✓</span> <strong id="set1QCount">30</strong> Questions (+2.5 / -0.83 Marks)</li>
+              <li><span>✓</span> Standard 45-minute test timer</li>
+              <li><span>✓</span> Bilingual (English & Hindi) + Full Step-by-Step Solutions</li>
+            </ul>
+            <button class="start-btn" onclick="startTest('reasoning_set1')">
+              <span>🚀</span> <span>Start Practice Set 1</span>
+            </button>
+          </div>
+
+          <!-- Practice Set 2 (Level 2) -->
+          <div class="set-card">
+            <div class="set-card-top">
+              <div>
+                <h4 class="set-title">Practice Set 2</h4>
+                <div style="font-size: 12px; color: var(--text-dim);">Advanced & Complex Traps</div>
+              </div>
+              <span class="diff-badge diff-level2">Level 2</span>
+            </div>
+            <p class="set-desc" id="set2Desc">
+              High-difficulty UPSC CSAT reasoning with multi-constraint puzzles, coded relations, advanced syllogisms, and data sufficiency.
+            </p>
+            <ul class="set-features">
+              <li><span>✓</span> <strong id="set2QCount">10</strong> Questions (+2.5 / -0.83 Marks)</li>
+              <li><span>✓</span> Standard 25-minute test timer</li>
+              <li><span>✓</span> Step-by-step logic explanations</li>
+            </ul>
+            <button class="start-btn" onclick="startTest('reasoning_set2')">
+              <span>⚡</span> <span>Start Practice Set 2</span>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Custom JSON Sync & Status Strip -->
+        <div class="json-sync-bar">
+          <div>
+            📁 <strong>CSAT JSON Data:</strong> Questions stored in <code>CSAT_json/reasoning_set1_level1.json</code> & <code>CSAT_json/reasoning_set2_level2.json</code>.
+          </div>
+          <button class="json-sync-btn" onclick="openJsonModal()">
+            📋 Paste / Inspect Custom JSON
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ========================================================
+         VIEW 2: TEST PRACTICE MODE (CLEAN & SIMPLE)
+         ======================================================== -->
+    <section id="viewTest" class="view-section">
+
+      <!-- Test Top Bar (Sticky) -->
+      <div class="test-top-bar">
+        <div class="test-info-group">
+          <div class="test-name-badge">
+            <span id="testTitleText">Reasoning Practice Set 1</span>
+            <span class="diff-badge diff-level1" id="testDiffBadge">Level 1</span>
+          </div>
+          <div class="test-q-progress" id="testProgressText">Question 1 of 10</div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <!-- Timer -->
+          <div class="test-timer-badge" id="testTimerBadge">
+            <span>⏱️</span>
+            <span id="timerDisplay">25:00</span>
+          </div>
+
+          <!-- Submit Button -->
+          <button class="submit-test-btn" onclick="openSubmitModal()">
+            ✓ Submit Test
+          </button>
+        </div>
+      </div>
+
+      <!-- Test Layout (Left: Question, Right: Palette) -->
+      <div class="test-layout">
+
+        <!-- Question View Card -->
+        <div class="question-card">
+          <div class="q-meta-row">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span class="q-number-pill" id="qNumberPill">Question 1</span>
+              <span class="q-topic-pill" id="qTopicPill">Topic</span>
+            </div>
+            <button class="btn-secondary" id="langSwitchBtn" style="padding: 4px 10px; font-size: 11.5px; font-weight: 700;" onclick="toggleLanguage()">
+              🌐 हिंदी
+            </button>
+          </div>
+
+          <!-- Question Statement -->
+          <div class="q-text" id="qTextDisplay">
+            Loading question...
+          </div>
+
+          <!-- Options List (A, B, C, D) -->
+          <div class="options-list" id="optionsContainer">
+            <!-- Rendered by JS -->
+          </div>
+
+          <!-- Bottom Navigation Bar -->
+          <div class="q-bottom-nav">
+            <div class="nav-btn-group-left">
+              <button class="btn-secondary" id="btnPrevQ" onclick="prevQuestion()">
+                ← Previous
+              </button>
+              <button class="btn-secondary" id="btnClearOption" onclick="clearOption()">
+                Clear Selection
+              </button>
+            </div>
+
+            <div class="nav-btn-group-right">
+              <button class="btn-secondary btn-review-toggle" id="btnMarkReview" onclick="toggleMarkReview()">
+                <span>🚩</span> <span>Mark for Review</span>
+              </button>
+              <button class="btn-primary-action" id="btnNextQ" onclick="nextQuestion()">
+                <span>Save & Next</span> <span>→</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Question Navigator Palette -->
+        <aside class="palette-card">
+          <div class="palette-title">
+            <span>Question Palette</span>
+            <span style="font-size: 11.5px; color: var(--text-dim);" id="paletteCountSummary">0/10 Answered</span>
+          </div>
+
+          <div class="palette-legend">
+            <div class="legend-row">
+              <div class="legend-dot dot-ans"></div>
+              <span>Answered (<strong id="legendAnsCount">0</strong>)</span>
+            </div>
+            <div class="legend-row">
+              <div class="legend-dot dot-review"></div>
+              <span>Marked for Review (<strong id="legendReviewCount">0</strong>)</span>
+            </div>
+            <div class="legend-row">
+              <div class="legend-dot dot-unans"></div>
+              <span>Not Attempted (<strong id="legendUnansCount">10</strong>)</span>
+            </div>
+          </div>
+
+          <!-- Grid of Question Buttons -->
+          <div class="q-grid" id="questionGridContainer">
+            <!-- Buttons 1..N rendered by JS -->
+          </div>
+
+          <div style="margin-top: 18px; border-top: 1px solid var(--paper-border); padding-top: 12px;">
+            <button class="btn-secondary" style="width: 100%; text-align: center;" onclick="confirmExitTest()">
+              ✕ Exit to Dashboard
+            </button>
+          </div>
+        </aside>
+
+      </div>
+
+    </section>
+
+    <!-- ========================================================
+         VIEW 3: DETAILED ANALYSIS REPORT (AFTER SUBMISSION)
+         ======================================================== -->
+    <section id="viewReport" class="view-section">
+
+      <!-- Scorecard Hero -->
+      <div class="report-hero">
+        <div class="report-hero-left">
+          <div class="score-circle">
+            <span class="score-num" id="reportScoreNum">0.0</span>
+            <span class="score-max" id="reportScoreMax">/ 25.0</span>
+          </div>
+          <div>
+            <div class="report-verdict-title" id="reportVerdictTitle">
+              <span>Evaluating...</span>
+            </div>
+            <p class="report-verdict-desc" id="reportVerdictDesc">
+              Performance summary against the standard CSAT 33% qualifying benchmark.
+            </p>
+          </div>
+        </div>
+
+        <div class="report-hero-actions">
+          <button class="btn-secondary" onclick="retakeCurrentTest()">
+            🔄 Retake Test
+          </button>
+          <button class="btn-primary-action" onclick="returnToDashboard()">
+            🏠 Back to Dashboard
+          </button>
+        </div>
+      </div>
+
+      <!-- Key Performance Metrics Grid -->
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-value" id="metricTotalQ">10</div>
+          <div class="metric-label">Total Questions</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value" style="color: var(--primary);" id="metricAttempted">0</div>
+          <div class="metric-label">Attempted</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value" style="color: var(--success);" id="metricCorrect">0</div>
+          <div class="metric-label">Correct (+2.5)</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value" style="color: var(--danger);" id="metricWrong">0</div>
+          <div class="metric-label">Incorrect (-0.83)</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value" style="color: var(--text-dim);" id="metricSkipped">0</div>
+          <div class="metric-label">Skipped (0)</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value" style="color: #7c3aed;" id="metricAccuracy">0%</div>
+          <div class="metric-label">Accuracy</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value" id="metricTimeTaken">00:00</div>
+          <div class="metric-label">Time Taken</div>
+        </div>
+      </div>
+
+      <!-- Topic-wise Performance Breakdown -->
+      <div class="analysis-card">
+        <div class="card-heading">
+          <span>Topic-wise Performance Breakdown</span>
+          <span style="font-size: 12px; color: var(--text-dim);">Analytical Diagnostic</span>
+        </div>
+        <div style="overflow-x: auto;">
+          <table class="topic-table">
+            <thead>
+              <tr>
+                <th>Topic / Category</th>
+                <th>Total</th>
+                <th>Correct</th>
+                <th>Wrong</th>
+                <th>Skipped</th>
+                <th>Accuracy</th>
+              </tr>
+            </thead>
+            <tbody id="topicTableBody">
+              <!-- Rendered by JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Question-by-Question Solution Review -->
+      <div class="analysis-card">
+        <div class="card-heading">
+          <span>Question-by-Question Detailed Solutions</span>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="review-filter-tabs">
+          <button class="filter-tab-btn active" data-filter="all" onclick="filterReviewQuestions('all')">
+            All Questions (<span id="filterCountAll">0</span>)
+          </button>
+          <button class="filter-tab-btn" data-filter="correct" onclick="filterReviewQuestions('correct')">
+            Correct Only (<span id="filterCountCorrect">0</span>)
+          </button>
+          <button class="filter-tab-btn" data-filter="wrong" onclick="filterReviewQuestions('wrong')">
+            Incorrect Only (<span id="filterCountWrong">0</span>)
+          </button>
+          <button class="filter-tab-btn" data-filter="skipped" onclick="filterReviewQuestions('skipped')">
+            Skipped (<span id="filterCountSkipped">0</span>)
+          </button>
+        </div>
+
+        <!-- Questions Review List -->
+        <div class="review-questions-list" id="reviewQuestionsContainer">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ========================================================
+       MODAL 1: SUBMIT CONFIRMATION MODAL
+       ======================================================== -->
+  <div class="modal-backdrop" id="submitModal">
+    <div class="modal-card">
+      <div class="modal-icon">📝</div>
+      <h3 class="modal-title">Ready to Submit Test?</h3>
+      <p class="modal-desc">
+        Once submitted, your final scores and comprehensive analytical report will be calculated. You will see detailed explanations for all questions.
+      </p>
+
+      <div class="modal-stats-summary">
+        <div class="modal-stat-col">
+          <strong id="modalStatAns" style="color: var(--success);">0</strong>
+          <span>Answered</span>
+        </div>
+        <div class="modal-stat-col">
+          <strong id="modalStatReview" style="color: var(--warning);">0</strong>
+          <span>In Review</span>
+        </div>
+        <div class="modal-stat-col">
+          <strong id="modalStatUnans" style="color: var(--danger);">0</strong>
+          <span>Unanswered</span>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn-secondary" onclick="closeSubmitModal()">
+          Continue Test
+        </button>
+        <button class="submit-test-btn" onclick="finalizeSubmission()">
+          Yes, Submit Now
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       MODAL 2: PASTE / CUSTOM JSON INSPECTOR MODAL
+       ======================================================== -->
+  <div class="modal-backdrop" id="jsonModal">
+    <div class="modal-card" style="max-width: 540px; text-align: left;">
+      <h3 class="modal-title" style="text-align: left; margin-bottom: 6px;">📂 CSAT JSON Inspector</h3>
+      <p class="modal-desc" style="text-align: left; margin-bottom: 12px;">
+        View or paste questions in JSON format directly. You can update Practice Set 1 or Practice Set 2 instantly:
+      </p>
+
+      <div style="display: flex; gap: 8px; margin-bottom: 10px;">
+        <button class="btn-secondary" style="font-size: 11px; padding: 4px 8px;" onclick="loadJsonToEditor('reasoning_set1')">Load Set 1 JSON</button>
+        <button class="btn-secondary" style="font-size: 11px; padding: 4px 8px;" onclick="loadJsonToEditor('reasoning_set2')">Load Set 2 JSON</button>
+      </div>
+
+      <textarea id="jsonCustomInput" class="json-textarea" placeholder="Paste your test JSON here..."></textarea>
+
+      <div class="modal-actions">
+        <button class="btn-secondary" onclick="closeJsonModal()">Close</button>
+        <button class="btn-primary-action" onclick="saveCustomJson()">Apply to Current Session</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       DATA SCRIPTS & CONTROLLER
+       ======================================================== -->
+  <!-- 1. Offline fallback bundle store -->
+  <script src="CSAT_json/csat_data.js"></script>
+
+  <!-- 2. Application Logic -->
+  <script>
+    (function () {
+      'use strict';
+
+      // ----------------------------------------------------
+      // STATE & REPOSITORIES
+      // ----------------------------------------------------
+      let testDatabase = {};
+      let currentTestId = null;
+      let currentTestData = null;
+      let currentQIndex = 0;
+      let userAnswers = {}; // { questionId: optionIndex }
+      let reviewFlags = {}; // { questionId: boolean }
+      let currentLang = 'en'; // 'en' or 'hi'
+
+      // Timer State
+      let timerInterval = null;
+      let timeRemainingSeconds = 0;
+      let totalTimeElapsedSeconds = 0;
+      let isTimerPaused = false;
+
+      // Filter State for Report
+      let currentReportFilter = 'all';
+
+      // Helper: Normalize raw data into standard test object
+      function normalizeTestObject(raw, defaultId, defaultTitle, defaultDiff) {
+        if (!raw) return null;
+        if (Array.isArray(raw)) {
+          const totalQ = raw.length;
+          return {
+            testId: defaultId,
+            title: defaultTitle,
+            difficulty: defaultDiff,
+            subject: 'Reasoning',
+            totalMarks: Number((totalQ * 2.5).toFixed(1)),
+            positiveMarks: 2.5,
+            negativeMarks: 0.83,
+            timeLimitMinutes: Math.min(60, Math.max(25, Math.round(totalQ * 1.5))),
+            description: `UPSC CSAT Reasoning Practice Questions (${totalQ} Questions). Full step-by-step solutions with bilingual support.`,
+            questions: raw
+          };
+        }
+        if (raw.questions && Array.isArray(raw.questions)) {
+          if (!raw.totalMarks) raw.totalMarks = Number((raw.questions.length * 2.5).toFixed(1));
+          if (!raw.positiveMarks) raw.positiveMarks = 2.5;
+          if (!raw.negativeMarks) raw.negativeMarks = 0.83;
+          if (!raw.timeLimitMinutes) raw.timeLimitMinutes = Math.min(60, Math.max(25, Math.round(raw.questions.length * 1.5)));
+          return raw;
+        }
+        return raw;
+      }
+
+      // Safe Accessors for Question Fields
+      function getQId(q, idx) {
+        return (q.id !== undefined) ? q.id : (q.question_number !== undefined ? q.question_number : (idx + 1));
+      }
+
+      function getQTopic(q) {
+        return q.topic || q.chapter_name || 'Reasoning';
+      }
+
+      function getQText(q, lang) {
+        if (lang === 'hi' && q.question_text_hi) return q.question_text_hi;
+        return q.question_text || q.question || 'Question content missing.';
+      }
+
+      function getQOptions(q, lang) {
+        const letters = ['a', 'b', 'c', 'd'];
+        if (lang === 'hi' && q.options_hi) {
+          if (Array.isArray(q.options_hi)) return q.options_hi;
+          if (typeof q.options_hi === 'object') {
+            return letters.map(k => q.options_hi[k] || q.options_hi[k.toUpperCase()] || '');
+          }
+        }
+        if (Array.isArray(q.options)) return q.options;
+        if (q.options && typeof q.options === 'object') {
+          return letters.map(k => q.options[k] || q.options[k.toUpperCase()] || '');
+        }
+        return [];
+      }
+
+      function getQCorrectIndex(q) {
+        const raw = (q.correct_option !== undefined) ? q.correct_option : q.correctAnswer;
+        if (typeof raw === 'number') {
+          return (raw >= 1 && raw <= 4 && !Array.isArray(q.options)) ? raw - 1 : raw;
+        }
+        if (typeof raw === 'string') {
+          const map = { 'a': 0, 'b': 1, 'c': 2, 'd': 3, 'A': 0, 'B': 1, 'C': 2, 'D': 3 };
+          if (map[raw.trim()] !== undefined) return map[raw.trim()];
+          const parsed = parseInt(raw, 10);
+          if (!isNaN(parsed)) return (parsed >= 1 && parsed <= 4) ? parsed - 1 : parsed;
+        }
+        return 0;
+      }
+
+      function getQSolution(q, lang) {
+        if (lang === 'hi' && q.solution_text_hi) return q.solution_text_hi;
+        return q.solution_text || q.explanation || 'Detailed step-by-step reasoning will be provided.';
+      }
+
+      // Initialize Database from window.CSAT_DATA or fetch
+      async function initData() {
+        if (window.CSAT_DATA) {
+          testDatabase = JSON.parse(JSON.stringify(window.CSAT_DATA));
+        } else {
+          testDatabase = {};
+        }
+
+        // Fetch external JSON files if on HTTP
+        if (window.location.protocol.startsWith('http')) {
+          try {
+            const res1 = await fetch('CSAT_json/reasoning_set1_level1.json');
+            if (res1.ok) {
+              const data1 = await res1.json();
+              testDatabase['reasoning_set1'] = data1;
+            }
+          } catch (e) {
+            console.log('Using bundled Set 1 fallback');
+          }
+
+          try {
+            const res2 = await fetch('CSAT_json/reasoning_set2_level2.json');
+            if (res2.ok) {
+              const data2 = await res2.json();
+              testDatabase['reasoning_set2'] = data2;
+            }
+          } catch (e) {
+            console.log('Using bundled Set 2 fallback');
+          }
+        }
+
+        // Normalize sets
+        if (testDatabase['reasoning_set1']) {
+          testDatabase['reasoning_set1'] = normalizeTestObject(testDatabase['reasoning_set1'], 'reasoning_set1', 'Reasoning Practice Set 1', 'Level 1');
+        }
+        if (testDatabase['reasoning_set2']) {
+          testDatabase['reasoning_set2'] = normalizeTestObject(testDatabase['reasoning_set2'], 'reasoning_set2', 'Reasoning Practice Set 2', 'Level 2');
+        }
+
+        updateDashboardCounts();
+      }
+
+      function updateDashboardCounts() {
+        const s1 = testDatabase['reasoning_set1'];
+        if (s1 && s1.questions) {
+          document.getElementById('set1QCount').textContent = s1.questions.length;
+          if (s1.description) document.getElementById('set1Desc').textContent = s1.description;
+        }
+
+        const s2 = testDatabase['reasoning_set2'];
+        if (s2 && s2.questions) {
+          document.getElementById('set2QCount').textContent = s2.questions.length;
+          if (s2.description) document.getElementById('set2Desc').textContent = s2.description;
+        }
+      }
+
+      // ----------------------------------------------------
+      // THEME TOGGLE (Night / Day)
+      // ----------------------------------------------------
+      const themeToggleBtn = document.getElementById('themeToggleBtn');
+      const themeIcon = document.getElementById('themeIcon');
+
+      function initTheme() {
+        const savedTheme = localStorage.getItem('csat_theme') || localStorage.getItem('psir_theme');
+        if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.body.classList.add('dark-mode');
+          themeIcon.textContent = '☀️';
+        } else {
+          document.body.classList.remove('dark-mode');
+          themeIcon.textContent = '🌙';
+        }
+      }
+
+      themeToggleBtn.addEventListener('click', () => {
+        const isDark = document.body.classList.toggle('dark-mode');
+        themeIcon.textContent = isDark ? '☀️' : '🌙';
+        localStorage.setItem('csat_theme', isDark ? 'dark' : 'light');
+      });
+
+      // ----------------------------------------------------
+      // NAVIGATION & VIEW SWITCHING
+      // ----------------------------------------------------
+      function switchView(viewName) {
+        document.querySelectorAll('.view-section').forEach(el => el.classList.remove('active'));
+        if (viewName === 'dashboard') {
+          document.getElementById('viewDashboard').classList.add('active');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else if (viewName === 'test') {
+          document.getElementById('viewTest').classList.add('active');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else if (viewName === 'report') {
+          document.getElementById('viewReport').classList.add('active');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      }
+
+      // Subject Selector (Dashboard)
+      window.selectSubject = function (subject) {
+        document.querySelectorAll('.subject-card').forEach(c => c.classList.remove('active-choice'));
+
+        if (subject === 'reasoning') {
+          document.getElementById('cardReasoning').classList.add('active-choice');
+          document.getElementById('reasoningPanel').classList.add('open');
+        } else {
+          document.getElementById('reasoningPanel').classList.remove('open');
+          if (subject === 'quant') {
+            document.getElementById('cardQuant').classList.add('active-choice');
+            alert('Quantitative Aptitude practice sets are coming soon! Currently, Reasoning Practice Sets (Level 1 & Level 2) are fully active.');
+          } else if (subject === 'english') {
+            document.getElementById('cardEnglish').classList.add('active-choice');
+            alert('Reading Comprehension (English) practice sets are coming soon! Currently, Reasoning Practice Sets (Level 1 & Level 2) are fully active.');
+          }
+        }
+      };
+
+      // ----------------------------------------------------
+      // START PRACTICE TEST
+      // ----------------------------------------------------
+      window.startTest = function (testId) {
+        const raw = testDatabase[testId];
+        const data = normalizeTestObject(raw, testId, testId === 'reasoning_set2' ? 'Reasoning Practice Set 2' : 'Reasoning Practice Set 1', testId === 'reasoning_set2' ? 'Level 2' : 'Level 1');
+        if (!data || !data.questions || data.questions.length === 0) {
+          alert('Test data not found for ' + testId);
+          return;
+        }
+
+        currentTestId = testId;
+        currentTestData = data;
+        currentQIndex = 0;
+        userAnswers = {};
+        reviewFlags = {};
+        currentLang = 'en';
+
+        // Setup UI Header
+        document.getElementById('testTitleText').textContent = data.title || 'CSAT Practice Test';
+        const badge = document.getElementById('testDiffBadge');
+        badge.textContent = data.difficulty || 'Level 1';
+        if (data.difficulty === 'Level 2') {
+          badge.className = 'diff-badge diff-level2';
+        } else {
+          badge.className = 'diff-badge diff-level1';
+        }
+
+        // Setup Timer
+        const timeLimit = data.timeLimitMinutes || 45;
+        timeRemainingSeconds = timeLimit * 60;
+        totalTimeElapsedSeconds = 0;
+        isTimerPaused = false;
+        startTimer();
+
+        // Build Palette Grid
+        renderPaletteGrid();
+
+        // Show Test View
+        switchView('test');
+
+        // Render First Question
+        renderCurrentQuestion();
+      };
+
+      function startTimer() {
+        if (timerInterval) clearInterval(timerInterval);
+        updateTimerDisplay();
+
+        timerInterval = setInterval(() => {
+          if (!isTimerPaused) {
+            totalTimeElapsedSeconds++;
+            if (timeRemainingSeconds > 0) {
+              timeRemainingSeconds--;
+              updateTimerDisplay();
+
+              if (timeRemainingSeconds === 0) {
+                clearInterval(timerInterval);
+                alert('Time is up! Submitting your test automatically.');
+                finalizeSubmission();
+              }
+            }
+          }
+        }, 1000);
+      }
+
+      function updateTimerDisplay() {
+        const mins = Math.floor(timeRemainingSeconds / 60);
+        const secs = timeRemainingSeconds % 60;
+        const display = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+        const timerBadge = document.getElementById('testTimerBadge');
+        document.getElementById('timerDisplay').textContent = display;
+
+        if (timeRemainingSeconds < 300) { // under 5 mins
+          timerBadge.classList.add('warning');
+        } else {
+          timerBadge.classList.remove('warning');
+        }
+      }
+
+      // Language Switcher
+      window.toggleLanguage = function () {
+        currentLang = (currentLang === 'en') ? 'hi' : 'en';
+        const btn = document.getElementById('langSwitchBtn');
+        if (btn) {
+          btn.textContent = (currentLang === 'en') ? '🌐 हिंदी' : '🌐 English';
+        }
+        renderCurrentQuestion();
+      };
+
+      // ----------------------------------------------------
+      // QUESTION RENDERING (NO ANSWERS REVEALED!)
+      // ----------------------------------------------------
+      function renderCurrentQuestion() {
+        const questions = currentTestData.questions;
+        const total = questions.length;
+        const q = questions[currentQIndex];
+        const qId = getQId(q, currentQIndex);
+
+        // Progress Text
+        document.getElementById('testProgressText').textContent = `Question ${currentQIndex + 1} of ${total}`;
+        document.getElementById('qNumberPill').textContent = `Question ${currentQIndex + 1}`;
+        document.getElementById('qTopicPill').textContent = getQTopic(q);
+
+        // Language toggle button visibility
+        const langBtn = document.getElementById('langSwitchBtn');
+        if (langBtn) {
+          if (q.question_text_hi) {
+            langBtn.style.display = 'inline-flex';
+            langBtn.textContent = (currentLang === 'en') ? '🌐 हिंदी' : '🌐 English';
+          } else {
+            langBtn.style.display = 'none';
+          }
+        }
+
+        // Text
+        document.getElementById('qTextDisplay').textContent = getQText(q, currentLang);
+
+        // Render Options (Clean cards, no right/wrong reveal!)
+        const optContainer = document.getElementById('optionsContainer');
+        optContainer.innerHTML = '';
+
+        const selectedOption = userAnswers[qId];
+        const optionsList = getQOptions(q, currentLang);
+        const letters = ['A', 'B', 'C', 'D'];
+
+        optionsList.forEach((optText, optIdx) => {
+          const optDiv = document.createElement('div');
+          optDiv.className = 'option-item' + (selectedOption === optIdx ? ' selected' : '');
+          optDiv.onclick = () => selectOption(optIdx);
+
+          optDiv.innerHTML = `
+            <div class="opt-indicator">${letters[optIdx]}</div>
+            <div class="opt-label">${optText}</div>
+          `;
+          optContainer.appendChild(optDiv);
+        });
+
+        // Review Button State
+        const isReviewed = reviewFlags[qId];
+        const reviewBtn = document.getElementById('btnMarkReview');
+        if (isReviewed) {
+          reviewBtn.classList.add('marked');
+          reviewBtn.innerHTML = `<span>✓</span> <span>Marked for Review</span>`;
+        } else {
+          reviewBtn.classList.remove('marked');
+          reviewBtn.innerHTML = `<span>🚩</span> <span>Mark for Review</span>`;
+        }
+
+        // Prev/Next buttons
+        document.getElementById('btnPrevQ').disabled = (currentQIndex === 0);
+        const nextBtn = document.getElementById('btnNextQ');
+        if (currentQIndex === total - 1) {
+          nextBtn.innerHTML = `<span>Save & Finish</span> <span>✓</span>`;
+        } else {
+          nextBtn.innerHTML = `<span>Save & Next</span> <span>→</span>`;
+        }
+
+        // Update Palette Focus
+        updatePaletteStatus();
+      }
+
+      window.selectOption = function (optIdx) {
+        const q = currentTestData.questions[currentQIndex];
+        const qId = getQId(q, currentQIndex);
+        if (userAnswers[qId] === optIdx) {
+          delete userAnswers[qId];
+        } else {
+          userAnswers[qId] = optIdx;
+        }
+        renderCurrentQuestion();
+      };
+
+      window.clearOption = function () {
+        const q = currentTestData.questions[currentQIndex];
+        const qId = getQId(q, currentQIndex);
+        delete userAnswers[qId];
+        renderCurrentQuestion();
+      };
+
+      window.toggleMarkReview = function () {
+        const q = currentTestData.questions[currentQIndex];
+        const qId = getQId(q, currentQIndex);
+        reviewFlags[qId] = !reviewFlags[qId];
+        renderCurrentQuestion();
+      };
+
+      window.prevQuestion = function () {
+        if (currentQIndex > 0) {
+          currentQIndex--;
+          renderCurrentQuestion();
+        }
+      };
+
+      window.nextQuestion = function () {
+        const total = currentTestData.questions.length;
+        if (currentQIndex < total - 1) {
+          currentQIndex++;
+          renderCurrentQuestion();
+        } else {
+          openSubmitModal();
+        }
+      };
+
+      window.jumpToQuestion = function (idx) {
+        currentQIndex = idx;
+        renderCurrentQuestion();
+      };
+
+      // ----------------------------------------------------
+      // QUESTION PALETTE
+      // ----------------------------------------------------
+      function renderPaletteGrid() {
+        const container = document.getElementById('questionGridContainer');
+        container.innerHTML = '';
+        const questions = currentTestData.questions;
+
+        questions.forEach((q, idx) => {
+          const btn = document.createElement('button');
+          btn.className = 'q-grid-btn';
+          btn.id = `paletteBtn_${idx}`;
+          btn.textContent = idx + 1;
+          btn.onclick = () => jumpToQuestion(idx);
+          container.appendChild(btn);
+        });
+
+        updatePaletteStatus();
+      }
+
+      function updatePaletteStatus() {
+        const questions = currentTestData.questions;
+        let ansCount = 0;
+        let reviewCount = 0;
+
+        questions.forEach((q, idx) => {
+          const btn = document.getElementById(`paletteBtn_${idx}`);
+          if (!btn) return;
+
+          btn.className = 'q-grid-btn';
+          const qId = getQId(q, idx);
+
+          const hasAns = (userAnswers[qId] !== undefined);
+          const isReview = !!reviewFlags[qId];
+
+          if (hasAns) {
+            btn.classList.add('answered');
+            ansCount++;
+          }
+          if (isReview) {
+            btn.classList.add('reviewed');
+            reviewCount++;
+          }
+          if (idx === currentQIndex) {
+            btn.classList.add('current');
+          }
+        });
+
+        const unansCount = questions.length - ansCount;
+
+        document.getElementById('legendAnsCount').textContent = ansCount;
+        document.getElementById('legendReviewCount').textContent = reviewCount;
+        document.getElementById('legendUnansCount').textContent = unansCount;
+        document.getElementById('paletteCountSummary').textContent = `${ansCount}/${questions.length} Answered`;
+      }
+
+      // ----------------------------------------------------
+      // SUBMIT MODAL & CONFIRMATION
+      // ----------------------------------------------------
+      window.openSubmitModal = function () {
+        const questions = currentTestData.questions;
+        let ansCount = 0;
+        let reviewCount = 0;
+
+        questions.forEach((q, idx) => {
+          const qId = getQId(q, idx);
+          if (userAnswers[qId] !== undefined) ansCount++;
+          if (reviewFlags[qId]) reviewCount++;
+        });
+
+        document.getElementById('modalStatAns').textContent = ansCount;
+        document.getElementById('modalStatReview').textContent = reviewCount;
+        document.getElementById('modalStatUnans').textContent = questions.length - ansCount;
+
+        document.getElementById('submitModal').classList.add('open');
+      };
+
+      window.closeSubmitModal = function () {
+        document.getElementById('submitModal').classList.remove('open');
+      };
+
+      window.confirmExitTest = function () {
+        if (confirm('Are you sure you want to exit the test? Your current progress will be lost.')) {
+          if (timerInterval) clearInterval(timerInterval);
+          switchView('dashboard');
+        }
+      };
+
+      // ----------------------------------------------------
+      // FINAL EVALUATION & DETAILED REPORT ENGINE
+      // ----------------------------------------------------
+      window.finalizeSubmission = function () {
+        closeSubmitModal();
+        if (timerInterval) clearInterval(timerInterval);
+
+        const questions = currentTestData.questions;
+        const total = questions.length;
+        const posMarks = currentTestData.positiveMarks || 2.5;
+        const negMarks = currentTestData.negativeMarks || 0.83;
+
+        let correctCount = 0;
+        let wrongCount = 0;
+        let skippedCount = 0;
+
+        const topicStats = {};
+
+        questions.forEach((q, idx) => {
+          const qId = getQId(q, idx);
+          const userAns = userAnswers[qId];
+          const topic = getQTopic(q);
+
+          if (!topicStats[topic]) {
+            topicStats[topic] = { total: 0, correct: 0, wrong: 0, skipped: 0 };
+          }
+          topicStats[topic].total++;
+
+          const correctIdx = getQCorrectIndex(q);
+
+          if (userAns === undefined) {
+            skippedCount++;
+            topicStats[topic].skipped++;
+          } else if (userAns === correctIdx) {
+            correctCount++;
+            topicStats[topic].correct++;
+          } else {
+            wrongCount++;
+            topicStats[topic].wrong++;
+          }
+        });
+
+        const attempted = correctCount + wrongCount;
+        const accuracy = attempted > 0 ? Math.round((correctCount / attempted) * 100) : 0;
+        const netScore = Math.max(0, Number(((correctCount * posMarks) - (wrongCount * negMarks)).toFixed(2)));
+        const maxScore = Number((total * posMarks).toFixed(1));
+        const percentage = maxScore > 0 ? ((netScore / maxScore) * 100).toFixed(1) : 0;
+
+        // Populate Score Banner
+        document.getElementById('reportScoreNum').textContent = netScore;
+        document.getElementById('reportScoreMax').textContent = `/ ${maxScore}`;
+
+        const isPassed = (percentage >= 33.3);
+        const verdictTitle = document.getElementById('reportVerdictTitle');
+        const verdictDesc = document.getElementById('reportVerdictDesc');
+
+        if (isPassed) {
+          verdictTitle.innerHTML = `<span style="color: var(--success);">✓ QUALIFIED</span> <span class="brand-badge">Cutoff Cleared</span>`;
+          verdictDesc.textContent = `Excellent performance! You secured ${percentage}% net score, comfortably clearing the UPSC CSAT qualifying threshold of 33.3% (66.67 marks equivalent).`;
+        } else {
+          verdictTitle.innerHTML = `<span style="color: var(--danger);">⚠ NEEDS REVISION</span> <span class="brand-badge">Below Cutoff</span>`;
+          verdictDesc.textContent = `Your net score is ${percentage}%, which is below the 33.3% qualifying cutoff. Review the step-by-step explanations below to eliminate negative marking.`;
+        }
+
+        // Metrics Grid
+        document.getElementById('metricTotalQ').textContent = total;
+        document.getElementById('metricAttempted').textContent = attempted;
+        document.getElementById('metricCorrect').textContent = correctCount;
+        document.getElementById('metricWrong').textContent = wrongCount;
+        document.getElementById('metricSkipped').textContent = skippedCount;
+        document.getElementById('metricAccuracy').textContent = `${accuracy}%`;
+
+        const elapsedMins = Math.floor(totalTimeElapsedSeconds / 60);
+        const elapsedSecs = totalTimeElapsedSeconds % 60;
+        document.getElementById('metricTimeTaken').textContent = `${elapsedMins}m ${elapsedSecs}s`;
+
+        // Topic Breakdown Table
+        const tbody = document.getElementById('topicTableBody');
+        tbody.innerHTML = '';
+        Object.keys(topicStats).forEach(topic => {
+          const st = topicStats[topic];
+          const acc = (st.correct + st.wrong) > 0 ? Math.round((st.correct / (st.correct + st.wrong)) * 100) : 0;
+          const tr = document.createElement('tr');
+          tr.innerHTML = `
+            <td><strong>${topic}</strong></td>
+            <td>${st.total}</td>
+            <td style="color: var(--success); font-weight: 700;">${st.correct}</td>
+            <td style="color: var(--danger); font-weight: 700;">${st.wrong}</td>
+            <td style="color: var(--text-dim);">${st.skipped}</td>
+            <td><strong>${acc}%</strong></td>
+          `;
+          tbody.appendChild(tr);
+        });
+
+        // Filter Counts
+        document.getElementById('filterCountAll').textContent = total;
+        document.getElementById('filterCountCorrect').textContent = correctCount;
+        document.getElementById('filterCountWrong').textContent = wrongCount;
+        document.getElementById('filterCountSkipped').textContent = skippedCount;
+
+        // Render Questions Review List
+        renderDetailedReview();
+
+        // Switch to Report View
+        switchView('report');
+      };
+
+      // ----------------------------------------------------
+      // QUESTION-BY-QUESTION REVIEW RENDERER
+      // ----------------------------------------------------
+      function renderDetailedReview() {
+        const container = document.getElementById('reviewQuestionsContainer');
+        container.innerHTML = '';
+        const questions = currentTestData.questions;
+        const letters = ['A', 'B', 'C', 'D'];
+
+        questions.forEach((q, idx) => {
+          const qId = getQId(q, idx);
+          const userAns = userAnswers[qId];
+          const correctIdx = getQCorrectIndex(q);
+
+          let statusType = 'skipped';
+          if (userAns !== undefined) {
+            statusType = (userAns === correctIdx) ? 'correct' : 'wrong';
+          }
+
+          // Apply current filter
+          if (currentReportFilter !== 'all' && currentReportFilter !== statusType) {
+            return;
+          }
+
+          const card = document.createElement('div');
+          card.className = 'review-item-card';
+
+          let statusBadgeHtml = '';
+          if (statusType === 'correct') {
+            statusBadgeHtml = `<span class="status-badge badge-correct">✓ Correct (+2.5 Marks)</span>`;
+          } else if (statusType === 'wrong') {
+            statusBadgeHtml = `<span class="status-badge badge-wrong">✗ Incorrect (-0.83 Marks)</span>`;
+          } else {
+            statusBadgeHtml = `<span class="status-badge badge-skipped">○ Skipped (0 Marks)</span>`;
+          }
+
+          const optionsList = getQOptions(q, currentLang);
+          let optionsHtml = '';
+          optionsList.forEach((optText, optIdx) => {
+            let optClass = 'review-opt';
+            let markSymbol = letters[optIdx];
+
+            if (optIdx === correctIdx) {
+              optClass += ' is-correct';
+              markSymbol += ' ✓ [Correct Answer]';
+            } else if (optIdx === userAns && statusType === 'wrong') {
+              optClass += ' user-wrong';
+              markSymbol += ' ✗ [Your Choice]';
+            }
+
+            optionsHtml += `
+              <div class="${optClass}">
+                <strong style="min-width: 20px;">${letters[optIdx]}.</strong>
+                <div style="flex: 1;">${optText}</div>
+                ${optIdx === correctIdx ? '<span style="color: var(--success); font-weight: 800;">✓</span>' : ''}
+                ${optIdx === userAns && statusType === 'wrong' ? '<span style="color: var(--danger); font-weight: 800;">✗</span>' : ''}
+              </div>
+            `;
+          });
+
+          const explanationText = getQSolution(q, currentLang);
+          const questionText = getQText(q, currentLang);
+
+          card.innerHTML = `
+            <div class="review-item-top">
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span class="q-number-pill">Question ${idx + 1}</span>
+                <span class="q-topic-pill">${getQTopic(q)}</span>
+              </div>
+              ${statusBadgeHtml}
+            </div>
+
+            <div class="review-q-text">${questionText}</div>
+
+            <div class="review-options-list">
+              ${optionsHtml}
+            </div>
+
+            <div class="explanation-box">
+              <div class="exp-title">
+                <span>💡</span> <span>Step-by-Step Solution & Logical Explanation:</span>
+              </div>
+              <div class="exp-content">${explanationText}</div>
+            </div>
+          `;
+
+          container.appendChild(card);
+        });
+
+        if (container.children.length === 0) {
+          container.innerHTML = `<div style="text-align: center; color: var(--text-dim); padding: 30px;">No questions matching this filter.</div>`;
+        }
+      }
+
+      window.filterReviewQuestions = function (filter) {
+        currentReportFilter = filter;
+        document.querySelectorAll('.filter-tab-btn').forEach(b => {
+          b.classList.toggle('active', b.getAttribute('data-filter') === filter);
+        });
+        renderDetailedReview();
+      };
+
+      window.retakeCurrentTest = function () {
+        if (currentTestId) {
+          startTest(currentTestId);
+        }
+      };
+
+      window.returnToDashboard = function () {
+        switchView('dashboard');
+      };
+
+      // ----------------------------------------------------
+      // JSON INSPECTOR & CUSTOM IMPORT
+      // ----------------------------------------------------
+      window.openJsonModal = function () {
+        document.getElementById('jsonModal').classList.add('open');
+        loadJsonToEditor('reasoning_set1');
+      };
+
+      window.closeJsonModal = function () {
+        document.getElementById('jsonModal').classList.remove('open');
+      };
+
+      window.loadJsonToEditor = function (setKey) {
+        const data = testDatabase[setKey];
+        if (data) {
+          document.getElementById('jsonCustomInput').value = JSON.stringify(data, null, 2);
+        }
+      };
+
+      window.saveCustomJson = function () {
+        try {
+          const raw = document.getElementById('jsonCustomInput').value;
+          const parsed = JSON.parse(raw);
+          const targetKey = Array.isArray(parsed) ? 'reasoning_set1' : (parsed.testId || 'reasoning_set1');
+          testDatabase[targetKey] = normalizeTestObject(parsed, targetKey, targetKey === 'reasoning_set2' ? 'Reasoning Practice Set 2' : 'Reasoning Practice Set 1', targetKey === 'reasoning_set2' ? 'Level 2' : 'Level 1');
+          updateDashboardCounts();
+          alert(`Successfully applied custom questions for ${targetKey} (${testDatabase[targetKey].questions.length} questions)!`);
+          closeJsonModal();
+        } catch (e) {
+          alert('JSON Syntax Error: ' + e.message);
+        }
+      };
+
+      // Boot
+      initTheme();
+      initData();
+
+    })();
+  </script>
+</body>
+</html>

@@ -344,6 +344,131 @@
       box-shadow: 0 4px 12px rgba(124, 58, 237, 0.5);
     }
 
+    /* TOPBAR CSAT NAVIGATION BADGE */
+    .topbar-csat-nav {
+      background: linear-gradient(135deg, #4f46e5 0%, #312e81 100%);
+      color: #ffffff !important;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 5px 11px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      text-decoration: none;
+      box-shadow: 0 2px 7px rgba(79, 70, 229, 0.35);
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+    .topbar-csat-nav:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(79, 70, 229, 0.5);
+    }
+
+    /* QUICK CSAT LAUNCHER STRIP DIRECTLY BELOW TOP BAR */
+    .csat-launcher-subbar {
+      background: var(--paper-bg);
+      border-bottom: 1px solid var(--paper-border);
+      padding: 7px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: sticky;
+      top: 51px;
+      z-index: 95;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+      transition: var(--transition);
+    }
+    .csat-launcher-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      background: linear-gradient(135deg, rgba(79, 70, 229, 0.08) 0%, rgba(99, 102, 241, 0.03) 100%);
+      border: 1px solid rgba(99, 102, 241, 0.25);
+      border-radius: 10px;
+      padding: 6px 14px;
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+      gap: 12px;
+    }
+    body.dark-mode .csat-launcher-link {
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.16) 0%, rgba(49, 46, 129, 0.1) 100%);
+      border-color: rgba(99, 102, 241, 0.35);
+    }
+    .csat-launcher-link:hover {
+      border-color: #6366f1;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 14px rgba(99, 102, 241, 0.2);
+    }
+    .csat-launcher-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      position: relative;
+    }
+    .csat-launcher-icon {
+      font-size: 18px;
+      line-height: 1;
+    }
+    .csat-pulse-dot {
+      width: 8px;
+      height: 8px;
+      background: #10b981;
+      border-radius: 50%;
+      box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.3);
+      animation: csatPulse 2s infinite;
+    }
+    @keyframes csatPulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.3); opacity: 0.7; }
+    }
+    .csat-launcher-text {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex: 1;
+      font-size: 12.5px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .csat-launcher-title {
+      color: #4f46e5;
+      font-weight: 800;
+      letter-spacing: 0.3px;
+    }
+    body.dark-mode .csat-launcher-title {
+      color: #818cf8;
+    }
+    .csat-launcher-sep {
+      color: var(--text-dim);
+    }
+    .csat-launcher-desc {
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+    .csat-launcher-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #4f46e5;
+      color: #ffffff;
+      padding: 4px 11px;
+      border-radius: 6px;
+      font-size: 11.5px;
+      font-weight: 800;
+      white-space: nowrap;
+      transition: var(--transition);
+    }
+    .csat-launcher-link:hover .csat-launcher-action {
+      background: #4338ca;
+      box-shadow: 0 2px 8px rgba(79, 70, 229, 0.4);
+    }
+
     /* TEXT SIZE ADJUSTER (A- / A+) */
     .font-size-adjuster {
       display: inline-flex;
@@ -1332,6 +1457,20 @@
         padding: 4px 8px;
         font-size: 11px;
       }
+      .topbar-csat-nav {
+        padding: 4px 8px;
+        font-size: 11px;
+      }
+      .csat-launcher-subbar {
+        padding: 5px 10px;
+        top: 48px;
+      }
+      .csat-launcher-desc {
+        display: none;
+      }
+      .csat-launcher-sep {
+        display: none;
+      }
       .header-actions {
         gap: 4px;
         flex-shrink: 0;
@@ -2143,6 +2282,10 @@
       <a href="new_ideas.html" class="topbar-newideas-nav" title="Top 20 Recent Political Analyst Ideas & Hooks">
         <span>✨</span> <span>NEW</span>
       </a>
+      <!-- CSAT Mock Test Portal -->
+      <a href="csat.html" class="topbar-csat-nav" title="CSAT Mock Test Portal (Quant • Reasoning • English)">
+        <span>🎯</span> <span>CSAT</span>
+      </a>
     </div>
 
     <!-- Actions & Reader Tools (Icon-Only without text to adjust space) -->
@@ -2168,6 +2311,24 @@
       </button>
     </div>
   </header>
+
+  <!-- QUICK CSAT LAUNCHER STRIP DIRECTLY BELOW TOP BAR -->
+  <div class="csat-launcher-subbar" id="csatLauncherSubbar">
+    <a href="csat.html" class="csat-launcher-link" title="Open CSAT Mock Test Portal">
+      <div class="csat-launcher-badge">
+        <span class="csat-launcher-icon">🎯</span>
+        <span class="csat-pulse-dot"></span>
+      </div>
+      <div class="csat-launcher-text">
+        <strong class="csat-launcher-title">CSAT MOCK TEST SUITE</strong>
+        <span class="csat-launcher-sep">•</span>
+        <span class="csat-launcher-desc">Quant, Reasoning & English Practice Sets (Level 1 & Level 2 with Detailed Analytics)</span>
+      </div>
+      <div class="csat-launcher-action">
+        <span>Take Mock</span> <span>→</span>
+      </div>
+    </a>
+  </div>
 
   <!-- Workspace Layout (Sidebar Drawer + Main Content) -->
   <div class="workspace-layout">
